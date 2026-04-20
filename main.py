@@ -83,27 +83,25 @@ async def run_all():
     except Exception as e:
         print(f"⚠️ Grader failed (skipping): {e}\n")
 
-    # ── STEP 4: SEND EMAIL ─────────────────────────────
+    ## ── STEP 4: SEND EMAIL ─────────────────────────────
     print(f"📧 STEP 4/4 — Sending picks email...")
     try:
         from emailer import send_picks_email
-        if picks:
+
+        # Load picks from file if not in memory
+        picks_file = f"logs/{scrape_date}_picks.json"
+        if os.path.exists(picks_file):
+            with open(picks_file, 'r') as f:
+                picks_data = json.load(f)
             send_picks_email(picks_data, scrape_date, graded_summary, cumulative)
             print(f"✅ Step 4 complete\n")
         else:
-            picks_file = f"logs/{scrape_date}_picks.json"
-            if os.path.exists(picks_file):
-                with open(picks_file, 'r') as f:
-                    picks_data = json.load(f)
-                send_picks_email(picks_data, scrape_date, graded_summary, cumulative)
-                print(f"✅ Step 4 complete\n")
-            else:
-                print(f"❌ No picks to email\n")
+            print(f"❌ No picks file found to email\n")
     except Exception as e:
         print(f"❌ Emailer failed: {e}")
         import traceback
         traceback.print_exc()
-
+        
     # ── DONE ───────────────────────────────────────────
     end_time = datetime.now()
     duration = (end_time - start_time).seconds
