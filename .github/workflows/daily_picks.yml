@@ -38,7 +38,7 @@ jobs:
           mkdir -p data
 
       # ── Step 6: Create .env from secrets ──────────
-      - - name: Create .env file
+      - name: Create .env file
         run: |
           echo "PROPFINDER_EMAIL=${{ secrets.PROPFINDER_EMAIL }}" >> .env
           echo "PROPFINDER_PASSWORD=${{ secrets.PROPFINDER_PASSWORD }}" >> .env
