@@ -38,7 +38,7 @@ jobs:
           mkdir -p data
 
       # ── Step 6: Create .env from secrets ──────────
-      - name: Create .env file
+      - - name: Create .env file
         run: |
           echo "PROPFINDER_EMAIL=${{ secrets.PROPFINDER_EMAIL }}" >> .env
           echo "PROPFINDER_PASSWORD=${{ secrets.PROPFINDER_PASSWORD }}" >> .env
@@ -47,6 +47,7 @@ jobs:
           echo "GMAIL_SENDER=${{ secrets.GMAIL_SENDER }}" >> .env
           echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> .env
           echo "GMAIL_RECIPIENT=${{ secrets.GMAIL_RECIPIENT }}" >> .env
+          echo "HEADLESS=true" >> .env
 
       # ── Step 7: Run the bot ────────────────────────
       - name: Run MLB Picks Bot
