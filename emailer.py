@@ -159,8 +159,134 @@ def format_parlay_section(parlay):
         </div>
     </div>"""
 
-def format_picks_email(picks_data, scrape_date):
+def format_results_section(graded_summary, cumulative):
+    """Format yesterday's results and cumulative record for email"""
+    if not graded_summary and not cumulative:
+        return ""
+
+    category_emojis = {
+        'HR': '💣', 'Hit': '🎯', 'TB': '📊',
+        'K': '🔥', 'Game': '💰'
+    }
+
+    rows_html = ""
+    total_profit = 0
+
+    for cat, stats in graded_summary.items():
+        emoji = category_emojis.get(cat, '📌')
+        w, l, p = stats['wins'], stats['losses'], stats['pushes']
+        pend = stats['pending']
+        total = w + l + p
+        rate = f"{w/total*100:.0f}%" if total > 0 else "—"
+        profit = stats['profit']
+        total_profit += profit
+        color = '#00ff88' if profit >= 0 else '#ff4444'
+        pending_str = f" ({pend} pending)" if pend > 0 else ""
+
+        rows_html += f"""
+        <tr>
+            <td style='padding:8px;color:#ccc;'>{emoji} {cat}{pending_str}</td>
+            <td style='padding:8px;color:#fff;text-align:center;'>{w}W-{l}L-{p}P</td>
+            <td style='padding:8px;text-align:center;color:#aaa;'>{rate}</td>
+            <td style='padding:8px;text-align:right;color:{color};font-weight:bold;'>
+                ${profit:+.2f}
+            </td>
+        </tr>"""
+
+    # Cumulative section
+    cumul_html = ""
+    if cumulative.get('OVERALL'):
+        o = cumulative['OVERALL']
+        best_cat = max(
+            {k: v for k, v in cumulative.items() if k != 'OVERALL'},
+            key=lambda x: cumulative[x].get('win_rate', 0),
+            default=None
+        )
+        worst_cat = min(
+            {k: v for k, v in cumulative.items() if k != 'OVERALL'},
+            key=lambda x: cumulative[x].get('win_rate', 100),
+            default=None
+        )
+
+        roi_color = '#00ff88' if o['roi'] >= 0 else '#ff4444'
+        pl_color = '#00ff88' if o['total_profit'] >= 0 else '#ff4444'
+
+        cumul_html = f"""
+        <div style='background:#1a1a2e;padding:16px;border-radius:8px;
+                    border:1px solid #333;margin-top:12px;'>
+            <h3 style='color:#ffffff;margin:0 0 12px;font-size:14px;'>
+                📈 CUMULATIVE RECORD
+            </h3>
+            <div style='display:flex;gap:12px;flex-wrap:wrap;'>
+                <div style='text-align:center;flex:1;min-width:80px;'>
+                    <div style='color:#4fc3f7;font-size:20px;font-weight:bold;'>
+                        {o['wins']}W-{o['losses']}L
+                    </div>
+                    <div style='color:#666;font-size:11px;'>Record</div>
+                </div>
+                <div style='text-align:center;flex:1;min-width:80px;'>
+                    <div style='color:#ffaa00;font-size:20px;font-weight:bold;'>
+                        {o['win_rate']}%
+                    </div>
+                    <div style='color:#666;font-size:11px;'>Win Rate</div>
+                </div>
+                <div style='text-align:center;flex:1;min-width:80px;'>
+                    <div style='color:{pl_color};font-size:20px;font-weight:bold;'>
+                        ${o['total_profit']:+.2f}
+                    </div>
+                    <div style='color:#666;font-size:11px;'>Total P&L</div>
+                </div>
+                <div style='text-align:center;flex:1;min-width:80px;'>
+                    <div style='color:{roi_color};font-size:20px;font-weight:bold;'>
+                        {o['roi']:+.1f}%
+                    </div>
+                    <div style='color:#666;font-size:11px;'>ROI</div>
+                </div>
+            </div>
+            {f"<div style='margin-top:10px;font-size:12px;color:#888;'>🏆 Best: {best_cat} ({cumulative[best_cat]['win_rate']}%) &nbsp;|&nbsp; ⚠️ Worst: {worst_cat} ({cumulative[worst_cat]['win_rate']}%)</div>" if best_cat and worst_cat else ""}
+        </div>"""
+
+    day_profit_color = '#00ff88' if total_profit >= 0 else '#ff4444'
+
+    return f"""
+    <div style='margin:20px 0;'>
+        <h2 style='color:#ffffff;border-bottom:2px solid #333;
+                   padding-bottom:8px;margin-bottom:12px;'>
+            📊 YESTERDAY'S RESULTS
+        </h2>
+        <table style='width:100%;border-collapse:collapse;'>
+            <thead>
+                <tr style='border-bottom:1px solid #333;'>
+                    <th style='padding:8px;color:#888;text-align:left;
+                               font-size:12px;'>Category</th>
+                    <th style='padding:8px;color:#888;text-align:center;
+                               font-size:12px;'>Record</th>
+                    <th style='padding:8px;color:#888;text-align:center;
+                               font-size:12px;'>Win%</th>
+                    <th style='padding:8px;color:#888;text-align:right;
+                               font-size:12px;'>P&L ($5 flat)</th>
+                </tr>
+            </thead>
+            <tbody>{rows_html}</tbody>
+            <tfoot>
+                <tr style='border-top:1px solid #333;'>
+                    <td colspan='3' style='padding:8px;color:#fff;
+                                          font-weight:bold;'>Daily Total</td>
+                    <td style='padding:8px;text-align:right;
+                               color:{day_profit_color};font-weight:bold;font-size:16px;'>
+                        ${total_profit:+.2f}
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        {cumul_html}
+    </div>"""
+
+def format_picks_email(picks_data, scrape_date, graded_summary=None, cumulative=None):
     """Format all picks into a complete HTML email"""
+
+    results_section = format_results_section(graded_summary, cumulative) \
+                      if graded_summary else ""
 
     hr_picks = picks_data.get('hr_picks', [])
     hits_picks = picks_data.get('hits_picks', [])
@@ -249,6 +375,9 @@ def format_picks_email(picks_data, scrape_date):
         <p style='color:#aaa;font-size:13px;
                   line-height:1.6;margin:0 0 20px;'>{summary}</p>
 
+        <!-- Yesterday's Results -->
+        {results_section}         
+
         <!-- Picks Sections -->
         {format_section("HOME RUN PICKS", "💣", hr_picks)}
         {format_section("HITS PICKS", "🎯", hits_picks)}
@@ -275,7 +404,7 @@ def format_picks_email(picks_data, scrape_date):
 
     return html
 
-def send_picks_email(picks_data, scrape_date):
+def send_picks_email(picks_data, scrape_date, graded_summary=None, cumulative=None):
     """Send picks email via Gmail SMTP"""
 
     sender = os.getenv("GMAIL_SENDER")
@@ -307,7 +436,7 @@ def send_picks_email(picks_data, scrape_date):
     msg['From'] = sender
     msg['To'] = recipient
 
-    html_content = format_picks_email(picks_data, scrape_date)
+    html_content = format_picks_email(picks_data, scrape_date, graded_summary, cumulative)
     msg.attach(MIMEText(html_content, 'html'))
 
     try:
@@ -322,13 +451,24 @@ def send_picks_email(picks_data, scrape_date):
         return False
 
 if __name__ == "__main__":
+    from grader import run_grader
+
     scrape_date = datetime.now().strftime("%Y-%m-%d")
     picks_file = f"logs/{scrape_date}_picks.json"
 
+    # Run grader first
+    graded_summary = None
+    cumulative = None
+    try:
+        graded_summary, cumulative = run_grader()
+    except Exception as e:
+        print(f"⚠️ Grader skipped: {e}")
+
+    # Send email with results included
     if os.path.exists(picks_file):
         with open(picks_file, 'r') as f:
             picks_data = json.load(f)
-        send_picks_email(picks_data, scrape_date)
+        send_picks_email(picks_data, scrape_date, graded_summary, cumulative)
     else:
         print(f"❌ No picks file found at {picks_file}")
         print(f"   Run analyzer.py first")

@@ -72,19 +72,30 @@ async def run_all():
         import traceback
         traceback.print_exc()
 
+    # ── STEP 3.5: GRADE YESTERDAY'S PICKS ─────────────
+    print(f"📊 STEP 3.5 — Grading yesterday's picks...")
+    graded_summary = None
+    cumulative = None
+    try:
+        from grader import run_grader
+        graded_summary, cumulative = run_grader()
+        print(f"✅ Step 3.5 complete\n")
+    except Exception as e:
+        print(f"⚠️ Grader failed (skipping): {e}\n")
+
     # ── STEP 4: SEND EMAIL ─────────────────────────────
     print(f"📧 STEP 4/4 — Sending picks email...")
     try:
         from emailer import send_picks_email
         if picks:
-            send_picks_email(picks, scrape_date)
+            send_picks_email(picks_data, scrape_date, graded_summary, cumulative)
             print(f"✅ Step 4 complete\n")
         else:
             picks_file = f"logs/{scrape_date}_picks.json"
             if os.path.exists(picks_file):
                 with open(picks_file, 'r') as f:
                     picks_data = json.load(f)
-                send_picks_email(picks_data, scrape_date)
+                send_picks_email(picks_data, scrape_date, graded_summary, cumulative)
                 print(f"✅ Step 4 complete\n")
             else:
                 print(f"❌ No picks to email\n")
