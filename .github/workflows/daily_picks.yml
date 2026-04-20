@@ -47,6 +47,8 @@ jobs:
           echo "GMAIL_SENDER=${{ secrets.GMAIL_SENDER }}" >> .env
           echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> .env
           echo "GMAIL_RECIPIENT=${{ secrets.GMAIL_RECIPIENT }}" >> .env
+          echo "GMAIL_RECIPIENT_2=${{ secrets.GMAIL_RECIPIENT_2 }}" >> .env
+          echo "GMAIL_RECIPIENT_3=${{ secrets.GMAIL_RECIPIENT_3 }}" >> .env
           echo "HEADLESS=true" >> .env
 
       # ── Step 7: Run the bot ────────────────────────
