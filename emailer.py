@@ -482,13 +482,11 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
             </div>
             <div style='color:#888;font-size:11px;'>Game Picks</div>
         </div>
-        {f"""<div style='background:#1a1a2e;padding:10px 16px;border-radius:6px;
-                    border-top:3px solid #ff6b35;text-align:center;'>
-            <div style='color:#ff6b35;font-size:20px;font-weight:bold;'>
-                {nba_total}
-            </div>
-            <div style='color:#888;font-size:11px;'>NBA Picks</div>
-        </div>""" if nba_total > 0 else ""}
+        {('<div style="background:#1a1a2e;padding:10px 16px;border-radius:6px;'
+          'border-top:3px solid #ff6b35;text-align:center;">'
+          f'<div style="color:#ff6b35;font-size:20px;font-weight:bold;">{nba_total}</div>'
+          '<div style="color:#888;font-size:11px;">NBA Picks</div>'
+          '</div>') if nba_total > 0 else ''}
     </div>"""
 
     html = f"""
