@@ -163,17 +163,19 @@ Analyze the following data and generate the BEST picks for today organized by ca
 {exit_velo_text}
 
 SELECTION RULES:
+- Generate EXACTLY 7 total picks across ALL categories combined
+- Only include the absolute highest confidence plays regardless of category
+- Do NOT force picks into every category — leave categories empty if no strong plays exist
 - ONLY include picks where you have actual odds data from the odds section above
 - If no odds exist for a prop skip it entirely
 - For each pick choose the BEST book (highest payout for same line)
 - Flag line shopping opportunities where books differ significantly
-- Generate up to 5 picks per category ranked highest to lowest confidence
-- If fewer than 5 picks exist for a category due to limited odds data include as many as available
 - HR picks: prioritize high Barrel%, HardHit%, favorable pitcher HR/9, HR/FB%, park factor, wind
 - Hits picks: high BA, wOBA, low pitcher WHIP
 - Total Bases: combine HR and hits factors
 - K props: pitcher K/9, batter K%, weak contact rates
 - Game picks: large proj run differential, strong pitcher matchup, weather factors
+- Rank all 7 picks by confidence — best pick first
 
 REQUIRED OUTPUT FORMAT (JSON only, no other text, no markdown):
 {{

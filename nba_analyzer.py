@@ -135,7 +135,9 @@ DATE: {scrape_date}
 {odds_text}
 
 INSTRUCTIONS:
-Generate NBA picks for today's games. Focus on players whose season averages, defensive matchup advantages, and hit rate history align to create high-confidence props.
+Generate EXACTLY 7 total NBA picks across ALL categories combined for today's games.
+Quality over quantity — only the highest confidence plays regardless of category.
+Do NOT force picks into every category — leave categories empty if no strong plays exist.
 
 Key factors to analyze:
 - Player season averages vs the ACTUAL prop line from the odds data above
@@ -145,6 +147,11 @@ Key factors to analyze:
 - Confirmed starting lineup — is the player starting?
 - Pace of play and team offensive tendencies from team stats
 - Line shopping — identify the best book for each pick
+
+Only pick games being played TODAY based on the odds data.
+Ignore players who are Out on the injury report.
+Always reference the actual prop line from the odds data.
+Return ONLY valid JSON. No markdown fences, no explanation outside JSON.
 
 Generate picks in this EXACT JSON format with no markdown, no backticks, just pure JSON:
 
