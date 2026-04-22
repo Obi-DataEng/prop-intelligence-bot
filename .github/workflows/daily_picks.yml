@@ -27,9 +27,20 @@ jobs:
           pip install playwright anthropic python-dotenv \
                       schedule requests
 
-      # ── Step 4: Install Playwright browsers ───────
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        id: playwright-cache
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-1208
+
       - name: Install Playwright Chromium
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
         run: python -m playwright install chromium --with-deps
+      
+      - name: Install Playwright deps only (cached)
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        run: python -m playwright install-deps chromium
 
       # ── Step 5: Create required directories ───────
       - name: Create directories
