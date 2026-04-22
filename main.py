@@ -82,6 +82,35 @@ async def run_all():
         print(f"✅ Step 3.5 complete\n")
     except Exception as e:
         print(f"⚠️ Grader failed (skipping): {e}\n")
+    
+    # ── STEP 3.6: NBA SCRAPE ───────────────────────────
+    print(f"🏀 STEP 3.6 — Scraping NBA data...")
+    try:
+        from scraper import run_nba_scraper
+        await run_nba_scraper()
+        print(f"✅ Step 3.6 complete\n")
+    except Exception as e:
+        print(f"⚠️ NBA scraper failed (skipping): {e}\n")
+
+    # ── STEP 3.7: NBA ODDS ─────────────────────────────
+    print(f"🏀 STEP 3.7 — Fetching NBA odds...")
+    nba_odds = None
+    try:
+        from odds_fetcher import fetch_nba_odds
+        nba_odds = fetch_nba_odds()
+        print(f"✅ Step 3.7 complete\n")
+    except Exception as e:
+        print(f"⚠️ NBA odds failed (skipping): {e}\n")
+
+    # ── STEP 3.8: NBA PICKS ────────────────────────────
+    print(f"🏀 STEP 3.8 — Generating NBA picks...")
+    nba_picks = None
+    try:
+        from nba_analyzer import run_nba_analyzer
+        nba_picks = run_nba_analyzer(scrape_date, nba_odds)
+        print(f"✅ Step 3.8 complete\n")
+    except Exception as e:
+        print(f"⚠️ NBA analyzer failed (skipping): {e}\n")
 
     ## ── STEP 4: SEND EMAIL ─────────────────────────────
     print(f"📧 STEP 4/4 — Sending picks email...")
@@ -101,6 +130,23 @@ async def run_all():
         print(f"❌ Emailer failed: {e}")
         import traceback
         traceback.print_exc()
+
+# ── STEP 5: NBA SCRAPE + PICKS ─────────────────────
+    print(f"🏀 STEP 5/5 — Running NBA picks bot...")
+    try:
+        from scraper import run_nba_scraper
+        from nba_analyzer import run_nba_analyzer
+        from odds_fetcher import fetch_nba_odds  # we'll build this next
+
+        nba_results = await run_nba_scraper()
+        print(f"✅ NBA scraping complete\n")
+
+        nba_picks = run_nba_analyzer(scrape_date)
+        print(f"✅ NBA picks generated\n")
+
+    except Exception as e:
+        print(f"⚠️ NBA step failed (skipping): {e}")
+        nba_picks = None
         
     # ── DONE ───────────────────────────────────────────
     end_time = datetime.now()

@@ -225,5 +225,202 @@ def fetch_all_odds():
 
     return output
 
+def fetch_nba_odds():
+    """Fetch NBA game odds and player props from The Odds API"""
+    print(f"\n{'='*50}")
+    print(f"🏀 Fetching NBA Odds — {datetime.now().strftime('%Y-%m-%d')}")
+    print(f"📚 Books: FanDuel | BetMGM | Caesars | theScore")
+    print(f"{'='*50}\n")
+
+    headers = {"apiKey": API_KEY}
+    all_odds = {"games": [], "player_props": {}}
+
+    # ── STEP 1: Game odds ──────────────────────────────
+    print("🏀 Fetching NBA game odds...")
+    url = f"{BASE_URL}/sports/basketball_nba/odds"
+    params = {
+        "apiKey": API_KEY,
+        "regions": "us,us2",
+        "markets": "h2h,spreads,totals",
+        "bookmakers": "fanduel,betmgm,williamhill_us,us2espnbet",
+        "oddsFormat": "american"
+    }
+
+    response = requests.get(url, params=params)
+    remaining = response.headers.get('x-requests-remaining', 'N/A')
+    print(f"   📊 Requests remaining: {remaining}")
+
+    if response.status_code != 200:
+        print(f"   ❌ Game odds error: {response.status_code}")
+        return all_odds
+
+    games = response.json()
+    if not games:
+        print("   ⚠️ No NBA games found today")
+        return all_odds
+
+    print(f"   ✅ {len(games)} games found\n")
+
+    for game in games:
+        home = game['home_team']
+        away = game['away_team']
+        game_id = game['id']
+        commence = game.get('commence_time', '')
+
+        game_odds = {
+            "game_id": game_id,
+            "home_team": home,
+            "away_team": away,
+            "commence_time": commence,
+            "bookmakers": {}
+        }
+
+        for bm in game.get('bookmakers', []):
+            book = bm['key']
+            book_label = {
+                'fanduel': 'FD',
+                'betmgm': 'MGM',
+                'williamhill_us': 'CZS',
+                'us2espnbet': 'ESPN'
+            }.get(book, book)
+
+            book_data = {}
+            for market in bm.get('markets', []):
+                key = market['key']
+                if key == 'h2h':
+                    for outcome in market['outcomes']:
+                        if outcome['name'] == home:
+                            book_data['home_ml'] = outcome['price']
+                        else:
+                            book_data['away_ml'] = outcome['price']
+                elif key == 'spreads':
+                    for outcome in market['outcomes']:
+                        if outcome['name'] == home:
+                            book_data['home_spread'] = outcome['point']
+                            book_data['home_spread_odds'] = outcome['price']
+                        else:
+                            book_data['away_spread'] = outcome['point']
+                            book_data['away_spread_odds'] = outcome['price']
+                elif key == 'totals':
+                    for outcome in market['outcomes']:
+                        if outcome['name'] == 'Over':
+                            book_data['total'] = outcome['point']
+                            book_data['over_odds'] = outcome['price']
+                        else:
+                            book_data['under_odds'] = outcome['price']
+
+            game_odds['bookmakers'][book_label] = book_data
+
+        # Print game summary
+        fd = game_odds['bookmakers'].get('FD', {})
+        czs = game_odds['bookmakers'].get('CZS', {})
+        mgm = game_odds['bookmakers'].get('MGM', {})
+
+        print(f"   🏀 {away} @ {home}")
+        if fd:
+            print(f"       FD: ML {fd.get('away_ml','N/A')}/{fd.get('home_ml','N/A')} | "
+                  f"Spread {fd.get('away_spread','N/A')} | "
+                  f"O/U {fd.get('total','N/A')}")
+        if czs:
+            print(f"      CZS: ML {czs.get('away_ml','N/A')}/{czs.get('home_ml','N/A')} | "
+                  f"Spread {czs.get('away_spread','N/A')} | "
+                  f"O/U {czs.get('total','N/A')}")
+        if mgm:
+            print(f"      MGM: ML {mgm.get('away_ml','N/A')}/{mgm.get('home_ml','N/A')} | "
+                  f"Spread {mgm.get('away_spread','N/A')} | "
+                  f"O/U {mgm.get('total','N/A')}")
+        print()
+
+        all_odds['games'].append(game_odds)
+
+    # ── STEP 2: Player props ───────────────────────────
+    print("🎯 Fetching NBA player props...")
+
+    nba_prop_markets = [
+        "player_points",
+        "player_rebounds",
+        "player_assists",
+        "player_threes",
+        "player_points_rebounds_assists",
+        "player_points_rebounds",
+        "player_points_assists",
+        "player_steals",
+        "player_blocks"
+    ]
+
+    for game in all_odds['games']:
+        game_id = game['game_id']
+        home = game['home_team']
+        away = game['away_team']
+        game_key = f"{away}@{home}"
+
+        url = f"{BASE_URL}/sports/basketball_nba/events/{game_id}/odds"
+        params = {
+            "apiKey": API_KEY,
+            "regions": "us,us2",
+            "markets": ",".join(nba_prop_markets),
+            "bookmakers": "fanduel,betmgm,williamhill_us,us2espnbet",
+            "oddsFormat": "american"
+        }
+
+        response = requests.get(url, params=params)
+        remaining = response.headers.get('x-requests-remaining', 'N/A')
+
+        if response.status_code != 200:
+            print(f"   ❌ Props error for {game_key}: {response.status_code}")
+            continue
+
+        event_data = response.json()
+        game_props = {}
+
+        for bm in event_data.get('bookmakers', []):
+            book = bm['key']
+            book_label = {
+                'fanduel': 'FD',
+                'betmgm': 'MGM',
+                'williamhill_us': 'CZS',
+                'us2espnbet': 'ESPN'
+            }.get(book, book)
+
+            for market in bm.get('markets', []):
+                market_key = market['key']
+                if market_key not in game_props:
+                    game_props[market_key] = {}
+
+                for outcome in market.get('outcomes', []):
+                    player = outcome.get('description', outcome.get('name', ''))
+                    name = outcome['name']  # Over/Under
+                    price = outcome['price']
+                    point = outcome.get('point')
+
+                    if player not in game_props[market_key]:
+                        game_props[market_key][player] = {'line': point}
+
+                    if name == 'Over':
+                        if book_label not in game_props[market_key][player]:
+                            game_props[market_key][player][book_label] = {}
+                        game_props[market_key][player][book_label]['over'] = price
+                        game_props[market_key][player]['line'] = point
+                    elif name == 'Under':
+                        if book_label not in game_props[market_key][player]:
+                            game_props[market_key][player][book_label] = {}
+                        game_props[market_key][player][book_label]['under'] = price
+
+        all_odds['player_props'][game_key] = game_props
+
+        # Count props
+        total_props = sum(len(v) for v in game_props.values())
+        print(f"   ✅ {away}@{home}: {total_props} props | Remaining: {remaining}")
+
+    # Save odds
+    date_str = datetime.now().strftime("%Y-%m-%d")
+    output_file = f"logs/{date_str}_nba_odds.json"
+    with open(output_file, 'w') as f:
+        json.dump(all_odds, f, indent=2)
+    print(f"\n💾 NBA odds saved to {output_file}")
+    print(f"✅ {len(all_odds['games'])} games, props fetched")
+
+    return all_odds
+
 if __name__ == "__main__":
     fetch_all_odds()
