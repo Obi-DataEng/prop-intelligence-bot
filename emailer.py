@@ -130,6 +130,72 @@ def format_section(title, emoji, picks, show_pick_type=False):
     </div>"""
 
 
+def format_laser_section(picks):
+    """Format Laser candidates (110+ mph EV) into HTML"""
+    if not picks:
+        return ""
+
+    picks_html = ""
+    for pick in picks:
+        tier = pick.get('confidence_tier', 'Medium')
+        color = {'Elite': '#00ff88', 'High': '#ffaa00',
+                 'Medium': '#aaaaaa'}.get(tier, '#aaaaaa')
+
+        picks_html += f"""
+        <div style='background:#1a1a2e;border-left:4px solid {color};
+                    padding:14px;margin:8px 0;border-radius:6px;'>
+            <div style='display:flex;justify-content:space-between;align-items:center;'>
+                <div>
+                    <span style='color:{color};font-weight:bold;font-size:15px;'>
+                        #{pick.get('rank')} {pick.get('player_name')}
+                    </span>
+                    <span style='color:#888;font-size:12px;margin-left:8px;'>
+                        {pick.get('team')} vs {pick.get('opponent')}
+                    </span>
+                </div>
+                <span style='background:{color};color:#000;padding:2px 8px;
+                             border-radius:12px;font-size:11px;font-weight:bold;'>
+                    {tier}
+                </span>
+            </div>
+            <div style='color:#888;font-size:12px;margin:6px 0;'>
+                📅 {pick.get('game')} | {pick.get('game_time')}
+            </div>
+            <div style='display:flex;gap:16px;margin:8px 0;flex-wrap:wrap;'>
+                <span style='color:#4fc3f7;font-size:12px;'>
+                    🔥 Recent Max EV: {pick.get('recent_max_ev')}
+                </span>
+                <span style='color:#ce93d8;font-size:12px;'>
+                    📊 Avg EV: {pick.get('avg_exit_velo')}
+                </span>
+                <span style='color:#ffaa00;font-size:12px;'>
+                    💥 Barrel%: {pick.get('barrel_rate')}
+                </span>
+                <span style='color:#00ff88;font-size:12px;'>
+                    🎯 Hard Hit%: {pick.get('hard_hit_rate')}
+                </span>
+            </div>
+            <div style='color:#ccc;font-size:13px;margin:8px 0;line-height:1.5;'>
+                {pick.get('reasoning', '')}
+            </div>
+            <div style='color:#666;font-size:11px;margin-top:6px;'>
+                🔑 {' • '.join(pick.get('key_factors', [])[:3])}
+            </div>
+        </div>"""
+
+    return f"""
+    <div style='margin:20px 0;'>
+        <h2 style='color:#ffffff;border-bottom:2px solid #333;
+                   padding-bottom:8px;margin-bottom:12px;'>
+            ⚡ LASER CANDIDATES (110+ MPH EXIT VELO)
+            <span style='color:#555;font-size:13px;font-weight:normal;'>
+                — Check FanDuel for odds
+            </span>
+        </h2>
+        {picks_html}
+    </div>"""
+
+
 def format_parlay_section(parlay):
     """Format the best parlay into HTML"""
     if not parlay or not parlay.get('legs'):
@@ -396,7 +462,6 @@ def format_nba_section(nba_picks):
 
         html += "</div>"
 
-    # NBA Parlay
     parlay = nba_picks.get('best_parlay', {})
     if parlay:
         legs_html = "".join([
@@ -425,7 +490,6 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
 
     results_section = format_results_section(graded_summary, cumulative) \
                       if graded_summary else ""
-
     nba_section = format_nba_section(nba_picks) if nba_picks else ""
 
     hr_picks = picks_data.get('hr_picks', [])
@@ -433,12 +497,14 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
     tb_picks = picks_data.get('total_bases_picks', [])
     k_picks = picks_data.get('strikeout_picks', [])
     game_picks = picks_data.get('game_picks', [])
+    laser_picks = picks_data.get('laser_picks', [])
     parlay = picks_data.get('best_parlay', {})
     summary = picks_data.get('daily_summary', '')
     best_bet = picks_data.get('best_bet', '')
 
     mlb_total = len(hr_picks) + len(hits_picks) + len(tb_picks) + \
                 len(k_picks) + len(game_picks)
+    laser_count = len(laser_picks)
 
     nba_total = sum(len(nba_picks.get(k, [])) for k in [
         'points_picks', 'rebounds_picks', 'assists_picks',
@@ -482,6 +548,11 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
             </div>
             <div style='color:#888;font-size:11px;'>Game Picks</div>
         </div>
+        {('<div style="background:#1a1a2e;padding:10px 16px;border-radius:6px;'
+          'border-top:3px solid #4fc3f7;text-align:center;">'
+          f'<div style="color:#4fc3f7;font-size:20px;font-weight:bold;">{laser_count}</div>'
+          '<div style="color:#888;font-size:11px;">⚡ Lasers</div>'
+          '</div>') if laser_count > 0 else ''}
         {('<div style="background:#1a1a2e;padding:10px 16px;border-radius:6px;'
           'border-top:3px solid #ff6b35;text-align:center;">'
           f'<div style="color:#ff6b35;font-size:20px;font-weight:bold;">{nba_total}</div>'
@@ -537,6 +608,7 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
         {format_section("TOTAL BASES PICKS", "📊", tb_picks)}
         {format_section("STRIKEOUT PICKS", "🔥", k_picks, show_pick_type=True)}
         {format_section("GAME PICKS", "💰", game_picks)}
+        {format_laser_section(laser_picks)}
         {format_parlay_section(parlay)}
 
         <!-- NBA Picks Section -->
@@ -579,6 +651,7 @@ def send_picks_email(picks_data, scrape_date, graded_summary=None,
     tb_count = len(picks_data.get('total_bases_picks', []))
     k_count = len(picks_data.get('strikeout_picks', []))
     game_count = len(picks_data.get('game_picks', []))
+    laser_count = len(picks_data.get('laser_picks', []))
     mlb_total = hr_count + hits_count + tb_count + k_count + game_count
 
     nba_total = sum(len(nba_picks.get(k, [])) for k in [
@@ -591,7 +664,7 @@ def send_picks_email(picks_data, scrape_date, graded_summary=None,
     msg = MIMEMultipart('alternative')
     msg['Subject'] = (
         f"⚾🏀 Picks {scrape_date} | "
-        f"MLB:{mlb_total} NBA:{nba_total} | "
+        f"MLB:{mlb_total} NBA:{nba_total} ⚡{laser_count} | "
         f"💣{hr_count} 🎯{hits_count} 📊{tb_count} 🔥{k_count} 💰{game_count}"
     )
     msg['From'] = sender
@@ -621,7 +694,6 @@ if __name__ == "__main__":
     picks_file = f"logs/{scrape_date}_picks.json"
     nba_picks_file = f"logs/{scrape_date}_nba_picks.json"
 
-    # Run grader first
     graded_summary = None
     cumulative = None
     try:
@@ -629,14 +701,12 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"⚠️ Grader skipped: {e}")
 
-    # Load NBA picks if available
     nba_picks = None
     if os.path.exists(nba_picks_file):
         with open(nba_picks_file, 'r') as f:
             nba_picks = json.load(f)
         print(f"📂 Loaded NBA picks")
 
-    # Send email
     if os.path.exists(picks_file):
         with open(picks_file, 'r') as f:
             picks_data = json.load(f)

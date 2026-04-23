@@ -176,9 +176,36 @@ SELECTION RULES:
 - K props: pitcher K/9, batter K%, weak contact rates
 - Game picks: large proj run differential, strong pitcher matchup, weather factors
 - Rank all 7 picks by confidence — best pick first
+LASER PICKS: Identify 3-5 players most likely to hit a ball 110+ mph exit velocity today.
+Prioritize players who:
+- Have recent BBE at 110+ mph in the exit velo data
+- Have elite barrel rates (15%+) and hard hit rates (50%+)
+- Face pitchers who allow high hard hit rates
+- Play in HR-friendly parks (park factor 1.10+)
+- Play in warm weather (65°F+)
+Note: These are NOT tied to odds — purely data-driven laser candidates.
 
 REQUIRED OUTPUT FORMAT (JSON only, no other text, no markdown):
 {{
+    "laser_picks": [
+    {{
+      "rank": 1,
+      "player_name": "name",
+      "team": "team name",
+      "opponent": "opponent name",
+      "game": "AWAY @ HOME",
+      "game_time": "time",
+      "confidence_tier": "Elite | High | Medium",
+      "recent_max_ev": "115.3 mph on 4/21",
+      "avg_exit_velo": "94.5 mph",
+      "barrel_rate": "18%",
+      "hard_hit_rate": "55%",
+      "pitcher_hard_hit_allowed": "42%",
+      "park_factor_hr": 1.15,
+      "key_factors": ["factor 1", "factor 2", "factor 3"],
+      "reasoning": "2-3 sentence explanation of why this player is likely to hit 110+ EV today"
+    }}
+  ],
   "hr_picks": [
     {{
       "rank": 1,
