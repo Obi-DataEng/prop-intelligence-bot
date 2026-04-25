@@ -113,6 +113,11 @@ def build_nba_prompt(data, odds_text, scrape_date):
 
 DATE: {scrape_date}
 
+GAMES BEING PLAYED TODAY ({scrape_date}) — ONLY these games exist:
+{[f"{g['away_team']} @ {g['home_team']}" for g in odds_data.get('games', [])]}
+
+Any player not on these teams today should be ignored entirely.
+
 === PLAYER STATS (Season Averages) ===
 {player_stats_text}
 
@@ -138,6 +143,12 @@ INSTRUCTIONS:
 Generate EXACTLY 7 total NBA picks across ALL categories combined for today's games.
 Quality over quantity — only the highest confidence plays regardless of category.
 Do NOT force picks into every category — leave categories empty if no strong plays exist.
+
+CRITICAL RULE: Only generate picks for games being played on {scrape_date} specifically.
+Do NOT generate picks for any other date.
+Only include players and games that appear in the TODAY'S ODDS section above.
+If a game does not appear in the odds data, it is NOT being played today — ignore it completely.
+The odds data is the single source of truth for which games are happening today.
 
 Key factors to analyze:
 - Player season averages vs the ACTUAL prop line from the odds data above
