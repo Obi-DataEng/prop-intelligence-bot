@@ -9,80 +9,101 @@
       "game_time": "12:05 AM",
       "confidence_tier": "Elite",
       "recent_max_ev": "113.0 mph on 4/27",
-      "avg_exit_velo": "94.2 mph",
-      "barrel_rate": "16%",
+      "avg_exit_velo": "94.8 mph",
+      "barrel_rate": "18.5%",
       "hard_hit_rate": "58%",
-      "pitcher_hard_hit_allowed": "39%",
+      "pitcher_hard_hit_allowed": "52%",
       "park_factor_hr": 0.97,
       "key_factors": [
-        "Recent 113 mph HR on 4/27",
-        "Elite hard hit rate 58%",
-        "Facing deGrom with elevated HR/FB%"
+        "Recent 113 mph HR on curveball",
+        "Elite exit velo track record",
+        "Consistent barrel production"
       ],
-      "reasoning": "Judge just hit a 113 mph home run 2 days ago and maintains elite hard hit rates. Despite Globe Life Field not being HR-friendly, his recent exit velo trajectory and barrel consistency makes another 110+ EV event highly likely against deGrom's 1.42 HR/9."
+      "reasoning": "Judge hit 113 mph HR just 1 day ago and maintains elite bat speed (95%+ percentile). deGrom's high WHIFF% (34.7%) creates weak contact opportunities for power hitters, though Globe Life Field suppresses HRs slightly. Judge's aggressive approach vs velocity-dependent pitchers makes 110+ EV highly likely."
     },
     {
       "rank": 2,
+      "player_name": "Nick Kurtz",
+      "team": "Orioles",
+      "opponent": "Astros",
+      "game": "HOU @ BAL",
+      "game_time": "10:35 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "115.9 mph on 4/24",
+      "avg_exit_velo": "95.2 mph",
+      "barrel_rate": "20%",
+      "hard_hit_rate": "62%",
+      "pitcher_hard_hit_allowed": "48%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "115.9 mph HR just 4 days ago",
+        "20%+ barrel rate elite level",
+        "Baz allows 38.5% hard contact"
+      ],
+      "reasoning": "Kurtz produced 115.9 mph exit velo HR vs Nathan Eovaldi and shows elite hard hit rate (62%). Shane Baz's elevated hard hit allowed rate (38.5%) and 0.64 HR/9 present minimal resistance. Kurtz's consistent 110+ mph power stroke makes another hard-hit today highly probable."
+    },
+    {
+      "rank": 3,
       "player_name": "Elly De La Cruz",
       "team": "Reds",
       "opponent": "Rockies",
       "game": "COL @ CIN",
       "game_time": "10:40 PM",
-      "confidence_tier": "Elite",
-      "recent_max_ev": "115.3 mph on 4/25",
-      "avg_exit_velo": "94.8 mph",
-      "barrel_rate": "17%",
-      "hard_hit_rate": "52%",
-      "pitcher_hard_hit_allowed": "46%",
-      "park_factor_hr": 1.02,
-      "key_factors": [
-        "115.3 mph line drive 2 days ago",
-        "17% barrel rate",
-        "Great American Ball Park pitching data"
-      ],
-      "reasoning": "De La Cruz posted a 115.3 mph exit velo just 2 days ago and faces a Rockies pitching staff that allows elevated hard contact. His consistent 94.8+ mph average exit velo combined with 17% barrel rate positions him as elite for another 110+ EV event."
-    },
-    {
-      "rank": 3,
-      "player_name": "Yordan Alvarez",
-      "team": "Astros",
-      "opponent": "Orioles",
-      "game": "HOU @ BAL",
-      "game_time": "10:35 PM",
       "confidence_tier": "High",
-      "recent_max_ev": "113.2 mph (season avg)",
-      "avg_exit_velo": "94.5 mph",
-      "barrel_rate": "16%",
+      "recent_max_ev": "115.3 mph on 4/25",
+      "avg_exit_velo": "94.1 mph",
+      "barrel_rate": "17%",
       "hard_hit_rate": "54%",
-      "pitcher_hard_hit_allowed": "38.5%",
+      "pitcher_hard_hit_allowed": "50%",
       "park_factor_hr": 1.02,
       "key_factors": [
-        "Consistent 94.5+ mph exit velo",
-        "High hard hit rate 54%",
-        "Shane Baz allows 7.9% hard contact"
+        "115.3 mph line drive 3 days ago",
+        "Consistent hard contact producer",
+        "Kyle Leahy allows 50% hard contact"
       ],
-      "reasoning": "Alvarez maintains elite exit velo consistency and hard hit rates. Against Shane Baz's controlled stuff with lower hard hit allowed, Alvarez's elite approach and barrel rates make 110+ EV highly probable in this matchup."
+      "reasoning": "De La Cruz hit 115.3 mph exit velo just 3 days ago vs live pitching and maintains top-tier bat speed. Leahy allows high hard hit rate (50%) with inflated ERA, suggesting contact vulnerability. De La Cruz's pure hitting ability with recent 110+ mph evidence makes elite EV attainment very likely."
     },
     {
       "rank": 4,
-      "player_name": "Nathaniel Lowe",
-      "team": "Rangers",
-      "opponent": "Yankees",
-      "game": "NYY @ TEX",
-      "game_time": "12:05 AM",
-      "confidence_tier": "High",
-      "recent_max_ev": "112.7 mph on 4/24",
-      "avg_exit_velo": "93.8 mph",
-      "barrel_rate": "15%",
-      "hard_hit_rate": "51%",
-      "pitcher_hard_hit_allowed": "39.0%",
-      "park_factor_hr": 0.97,
+      "player_name": "Vladimir Guerrero Jr.",
+      "team": "Blue Jays",
+      "opponent": "Red Sox",
+      "game": "BOS @ TOR",
+      "game_time": "11:10 PM",
+      "confidence_tier": "Medium",
+      "recent_max_ev": "116.0 mph on 4/24",
+      "avg_exit_velo": "94.3 mph",
+      "barrel_rate": "16.5%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "45%",
+      "park_factor_hr": 1.01,
       "key_factors": [
-        "112.7 mph HR just 4 days ago",
-        "Against deGrom's 1.42 HR/9",
-        "Consistent hard contact approach"
+        "116.0 mph exit velo 4 days ago",
+        "Indoor park may suppress some hard contact",
+        "Above-average hard hit rate"
       ],
-      "reasoning": "Lowe hit 112.7 mph just 4 days ago and maintains solid exit velo average. While the park is neutral, deGrom's elevated HR/9 and Lowe's recent momentum make another 110+ EV event a strong probability."
+      "reasoning": "Guerrero's 116.0 mph exit velo from 4/24 demonstrates consistent elite power capability. Though Rogers Centre reduces fly ball distance slightly (0.80 HR factor), his elite bat speed translates to 110+ mph events regularly. Payton Tolle's pedestrian stuff creates contact opportunities."
+    },
+    {
+      "rank": 5,
+      "player_name": "Coby Mayo",
+      "team": "Orioles",
+      "opponent": "Astros",
+      "game": "HOU @ BAL",
+      "game_time": "10:35 PM",
+      "confidence_tier": "Medium",
+      "recent_max_ev": "112.8 mph on 4/25",
+      "avg_exit_velo": "93.8 mph",
+      "barrel_rate": "15.2%",
+      "hard_hit_rate": "51%",
+      "pitcher_hard_hit_allowed": "48%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "112.8 mph double 3 days ago",
+        "Young prospect with rising power",
+        "Baz allows moderate hard contact"
+      ],
+      "reasoning": "Mayo's 112.8 mph exit velo on a line drive just 3 days ago shows emerging power. At 20 years old with Orioles lineup momentum, he faces Baz (38.5% hard hit allowed). While less proven than Judge/Kurtz, Mayo's recent hard contact and growing profile support 110+ EV potential."
     }
   ],
   "hr_picks": [
@@ -95,68 +116,21 @@
       "game_time": "10:35 PM",
       "best_book": "CZS",
       "fd_odds": null,
-      "mgm_odds": "115",
+      "mgm_odds": null,
       "czs_odds": "205",
       "scr_odds": null,
       "fd_line": null,
       "confidence_score": 82,
       "confidence_tier": "Elite",
       "key_factors": [
-        "205 odds at CZS is best value",
-        "0.64 HR/9 allowed by Baz",
-        "Alvarez elite power metrics"
+        "Elite power hitter vs. vulnerable starter",
+        "Baz's 0.64 HR/9 is extremely low",
+        "Alvarez career-long power consistency"
       ],
-      "reasoning": "Alvarez faces Shane Baz who allows only 0.64 HR/9 but Alvarez's elite barrel and hard hit rates overcome this. CZS +205 offers superior value to MGM +115 on same line, representing 78% better odds."
+      "reasoning": "Alvarez faces Shane Baz who has allowed only 0.64 HR/9 (concerning stat suggesting vulnerability), with 38.5% hard hit allowed rate. Alvarez's elite power and +205 CZS odds provide strong value for a perennial 30+ HR threat. Baz's limited power prevention creates prime HR opportunity."
     },
     {
       "rank": 2,
-      "player_name": "Aaron Judge",
-      "team": "Yankees",
-      "opponent": "Rangers",
-      "game": "NYY @ TEX",
-      "game_time": "12:05 AM",
-      "best_book": "CZS",
-      "fd_odds": "100",
-      "mgm_odds": "105",
-      "czs_odds": "105",
-      "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 78,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Recent 113 mph HR",
-        "Judge 1.42 HR/9 matchup favorable",
-        "deGrom elevated HR/9 at 1.42"
-      ],
-      "reasoning": "Judge's recent elite exit velo (113 mph on 4/27) combined with deGrom's 1.42 HR/9 rate presents excellent value at CZS/MGM +105 compared to FD -136. Judge maintains consistent barrel production against premium pitchers."
-    },
-    {
-      "rank": 3,
-      "player_name": "Juan Soto",
-      "team": "Nationals",
-      "opponent": "Mets",
-      "game": "WSH @ NYM",
-      "game_time": "11:10 PM",
-      "best_book": "CZS",
-      "fd_odds": "158",
-      "mgm_odds": "145",
-      "czs_odds": "158",
-      "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 72,
-      "confidence_tier": "High",
-      "key_factors": [
-        "114.2 mph recent exit velo",
-        "Clay Holmes 0.90 HR/9",
-        "Soto's elite plate discipline"
-      ],
-      "reasoning": "Soto's recent 114.2 mph exit velo demonstrates peak power potential. At CZS +158 vs MGM +145, Soto's elite consistency and Holmes' elevated HR/9 rate make this a strong value play."
-    }
-  ],
-  "hits_picks": [],
-  "total_bases_picks": [
-    {
-      "rank": 1,
       "player_name": "Kyle Schwarber",
       "team": "Phillies",
       "opponent": "Giants",
@@ -165,21 +139,47 @@
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "106",
+      "czs_odds": "210",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Schwarber vs. left-handed pitcher matchup",
+        "Jesus Luzardo vulnerable (0.99 HR/9)",
+        "67\u00b0F park temperature favorable"
+      ],
+      "reasoning": "Schwarber's +210 CZS odds offer excellent value against Luzardo, who allows 0.99 HR/9 (above-average for elite pitchers). Philadelphia's Citizens Bank Park with 67\u00b0F temperature supports fly balls. Schwarber's aggressive approach vs. Luzardo's 10.87 K/9 rate creates power opportunity window."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Jose Ramirez",
+      "team": "Guardians",
+      "opponent": "Rays",
+      "game": "TB @ CLE",
+      "game_time": "10:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "109",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
       "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "1.5 TB line available",
-        "Schwarber 0.299 wOBA",
-        "Luzardo 0.99 HR/9 allowed"
+        "0.343 wOBA vs Martinez",
+        "16.9% BB rate creates baserunning",
+        "Martinez allows 0.221 BAA vs RHB"
       ],
-      "reasoning": "Schwarber's consistent offensive production and high exit velo profile combined with Luzardo's elevated HR/9 rate (0.99) makes over 1.5 total bases a strong value. CZS offers +106 odds on this line."
-    },
+      "reasoning": "Ramirez's -109 CZS total bases over 1.5 provides value as a disciplined contact hitter (16.9% BB rate, 0.343 wOBA). Martinez's pedestrian stuff (6.00 K/9) suggests extended AB opportunities. Ramirez's consistency in reaching base supports total bases accumulation past 1.5."
+    }
+  ],
+  "total_bases_picks": [
     {
-      "rank": 2,
+      "rank": 1,
       "player_name": "Julio Rodriguez",
       "team": "Mariners",
       "opponent": "Twins",
@@ -192,25 +192,25 @@
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 74,
+      "confidence_score": 79,
       "confidence_tier": "High",
       "key_factors": [
-        "1.5 TB line",
-        "Rodriguez 0.327 wOBA",
-        "Joe Ryan 0.84 HR/9 allowed"
+        "Elite exit velo profile (94.1 mph avg)",
+        "Joe Ryan allows 34.8% HR/FB rate",
+        "Target Field favorable for power (1.08 ISO factor)"
       ],
-      "reasoning": "Rodriguez maintains elite offensive metrics (0.327 wOBA) and Joe Ryan allows only 0.84 HR/9 making hits likely. The combination yields solid odds for over 1.5 TB at CZS -135."
+      "reasoning": "Rodriguez's +135 total bases over 1.5 line offers value given Joe Ryan's elevated HR/FB rate (34.8%) and 0.84 HR/9. Target Field's 1.08 ISO park factor supports extra-base hit probability. Rodriguez's elite bat speed and consistent hard contact make baseline 2+ total bases highly probable."
     }
   ],
   "strikeout_picks": [
     {
       "rank": 1,
       "player_name": "Jacob deGrom",
-      "pick_type": "pitcher",
       "team": "Rangers",
       "opponent": "Yankees",
       "game": "NYY @ TEX",
       "game_time": "12:05 AM",
+      "pick_type": "pitcher",
       "best_book": "FD",
       "fd_odds": "118",
       "mgm_odds": null,
@@ -218,72 +218,48 @@
       "scr_odds": null,
       "fd_line": "7.5",
       "over_under_pick": "over",
-      "confidence_score": 79,
-      "confidence_tier": "High",
+      "confidence_score": 81,
+      "confidence_tier": "Elite",
       "key_factors": [
-        "deGrom 12.43 K/9",
-        "34.7% whiff rate",
-        "FD +118 value"
+        "12.43 K/9 elite strikeout rate",
+        "34.7% WHIFF rate elite contact loss",
+        "Yankees team K rate 21.5% above average"
       ],
-      "reasoning": "deGrom's elite 12.43 K/9 and 34.7% whiff rate make over 7.5 strikeouts a strong value at FD +118. His recent form shows consistent triple-digit strikeout production in limited appearances."
-    },
-    {
-      "rank": 2,
-      "player_name": "Chase Burns",
-      "pick_type": "pitcher",
-      "team": "Reds",
-      "opponent": "Rockies",
-      "game": "COL @ CIN",
-      "game_time": "10:40 PM",
-      "best_book": "FD",
-      "fd_odds": "-136",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "6.5",
-      "over_under_pick": "over",
-      "confidence_score": 70,
-      "confidence_tier": "Medium",
-      "key_factors": [
-        "Chase Burns 9.64 K/9",
-        "32.5% whiff rate",
-        "Home game advantage"
-      ],
-      "reasoning": "Burns' excellent 9.64 K/9 and elite whiff rate makes over 6.5 K attractive despite -136 odds. The Great American Ball Park provides neutral conditions for his strikeout-heavy approach."
+      "reasoning": "deGrom's 12.43 K/9 is elite-level production with 34.7% WHIFF rate (top 5% league-wide). Yankees lineup carries above-average strikeout propensity. FD +118 over 7.5 K offers strong value; deGrom's historical strikeout patterns suggest 8+ K result highly likely on today's slate."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
       "prop_category": "ML",
-      "game": "NYY @ TEX",
-      "game_time": "12:05 AM",
-      "pick": "New York Yankees",
+      "game": "SEA @ MIN",
+      "game_time": "11:40 PM",
+      "pick": "Seattle Mariners",
       "best_book": "CZS",
-      "fd_odds": "-118",
-      "mgm_odds": "-125",
-      "czs_odds": "-125",
+      "fd_odds": "-126",
+      "mgm_odds": "-130",
+      "czs_odds": "-130",
       "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 71,
+      "fd_line": "108",
+      "confidence_score": 74,
       "confidence_tier": "High",
       "key_factors": [
-        "deGrom elite strikeout rate",
-        "Yankees offensive consistency",
-        "CZS/MGM -125 better than FD -118"
+        "Mariners superior rotation",
+        "Target Field neutral park factor 1.02",
+        "Logan Gilbert elite control (1.27 WHIP)"
       ],
-      "reasoning": "Yankees offense matches well against deGrom's strikeout profile and their pitching advantage with potential deeper innings. CZS and MGM offer -125 which is 6 points better than FD -118."
+      "reasoning": "Seattle's -130 ML via CZS offers value against Twins. Logan Gilbert's elite 1.27 WHIP and 2.98 ERA (9.55 K/9) significantly outpace Joe Ryan's pedestrian metrics. Mariners' deeper bullpen and road split advantage support ML favorite status at reasonable juice."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Yordan Alvarez HR @ +205 (CZS)",
-      "Jacob deGrom Over 7.5 K @ +118 (FD)",
-      "Yankees ML @ -125 (CZS)"
+      "Jacob deGrom Over 7.5 K (FD +118)",
+      "Yordan Alvarez HR (CZS +205)",
+      "Seattle Mariners ML (CZS -130)"
     ],
-    "reasoning": "Three correlated plays maximizing positive expected value: Alvarez's elite power vs elevated HR/9 rate, deGrom's elite strikeout profile ensuring Yankees don't score heavily, and Yankees ML as the derivative leg. Each play has 70%+ individual confidence.",
-    "estimated_odds": "+625 (implied 6.2:1 return)"
+    "reasoning": "Three uncorrelated outcomes: elite pitcher strikeout rate, power hitter vs. weak starter, and superior rotation advantage. deGrom's 12.43 K/9 vs. strikeout-prone Yankees, Alvarez's elite power vs. Baz's minimal HR prevention, and Gilbert's dominance create natural separation from chalky picks.",
+    "estimated_odds": "+575"
   },
-  "daily_summary": "Today's slate features elite exit velocity opportunities with Judge, De La Cruz, and Alvarez all showing 113+ mph recent events. The Yankees-Rangers matchup presents sharp value with deGrom's strikeout profile and Judge's recent power surge. Multiple high-confidence plays converge in the late-night window with strong park factor and pitcher matchup edges.",
-  "best_bet": "Yordan Alvarez HR @ +205 (CZS) in HOU @ BAL \u2014 elite hard hit metrics and exit velo consistency overcome Baz's controlled stuff with 78% better odds than alternate books."
+  "daily_summary": "Today's slate features strong pitching performances (deGrom 12.43 K/9, Gilbert 9.55 K/9) against vulnerable lineups, creating strikeout value opportunities. Power hitters face several sub-1.0 HR/9 starters (Baz 0.64, Martinez 0.90), suggesting HR+ environment. Elite exit velo candidates (Judge 113 mph recent, Kurtz 115.9 mph recent, De La Cruz 115.3 mph recent) all face pitchers allowing 45%+ hard contact.",
+  "best_bet": "Jacob deGrom Over 7.5 K at +118 (FD) represents the single highest-confidence play given his elite 12.43 K/9 rate, 34.7% WHIFF rate, and Yankees' above-average strikeout propensity."
 }
