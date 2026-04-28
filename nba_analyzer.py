@@ -57,13 +57,11 @@ def format_nba_odds_for_prompt(odds_data):
 
         text += f"\n{away} @ {home}\n"
 
-        # Game lines
         for book, data in books.items():
             text += (f"  {book}: ML {data.get('away_ml','N/A')}/{data.get('home_ml','N/A')} | "
                      f"Spread {data.get('away_spread','N/A')} | "
                      f"O/U {data.get('total','N/A')}\n")
 
-        # Player props
         props = player_props.get(game_key, {})
         if props:
             text += "  PLAYER PROPS:\n"
@@ -91,8 +89,11 @@ def format_nba_odds_for_prompt(odds_data):
     return text[:6000]
 
 
-def build_nba_prompt(data, odds_text, scrape_date):
+def build_nba_prompt(data, odds_text, scrape_date, odds_data=None):
     """Build the Claude prompt with all NBA context"""
+
+    if odds_data is None:
+        odds_data = {}
 
     player_stats_text = data.get('nba_player_stats', {}).get('fullText', '')[:4000]
     def_matchups_text = data.get('nba_def_matchups', {}).get('fullText', '')[:3000]
@@ -109,12 +110,19 @@ def build_nba_prompt(data, odds_text, scrape_date):
     lineups_full = data.get('nba_lineups', {}).get('fullText', '')
     lineups_text = lineups_full[:3000]
 
+    games_today = [
+        f"{g['away_team']} @ {g['home_team']}"
+        for g in odds_data.get('games', [])
+    ]
+    games_today_str = '\n'.join(f"  - {g}" for g in games_today) \
+                      if games_today else "  No games found"
+
     prompt = f"""You are an expert NBA sports betting analyst. Analyze today's NBA slate and generate picks.
 
 DATE: {scrape_date}
 
 GAMES BEING PLAYED TODAY ({scrape_date}) — ONLY these games exist:
-{[f"{g['away_team']} @ {g['home_team']}" for g in odds_data.get('games', [])]}
+{games_today_str}
 
 Any player not on these teams today should be ignored entirely.
 
@@ -279,7 +287,14 @@ Generate picks in this EXACT JSON format with no markdown, no backticks, just pu
   }}
 }}
 
-Generate 3-5 picks per category. Only pick games being played TODAY based on the odds data. Ignore players who are Out on the injury report. Always reference the actual prop line from the odds data."""
+SELECTION RULES:
+- Generate EXACTLY 7 total picks across ALL categories combined
+- Only include the absolute highest confidence plays regardless of category
+- Do NOT force picks into every category — leave categories empty if no strong plays exist
+- ONLY include picks where you have actual odds data from the odds section above
+- If no odds exist for a prop skip it entirely
+- For each pick choose the BEST book (highest payout for same line)
+- Rank all 7 picks by confidence — best pick first"""
 
     return prompt
 
@@ -303,8 +318,8 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
     # Format odds for prompt
     odds_text = format_nba_odds_for_prompt(odds_data)
 
-    # Build prompt
-    prompt = build_nba_prompt(data, odds_text, scrape_date)
+    # Build prompt — pass odds_data so games list is available
+    prompt = build_nba_prompt(data, odds_text, scrape_date, odds_data)
 
     # Call Claude
     print("\n🤖 Claude Haiku analyzing NBA slate...")
