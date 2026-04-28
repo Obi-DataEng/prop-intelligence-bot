@@ -163,7 +163,7 @@ Analyze the following data and generate the BEST picks for today organized by ca
 {exit_velo_text}
 
 SELECTION RULES:
-- Generate EXACTLY 7 total picks across ALL categories combined
+- Generate EXACTLY 8 total picks across ALL categories combined
 - Only include the absolute highest confidence plays regardless of category
 - Do NOT force picks into every category — leave categories empty if no strong plays exist
 - ONLY include picks where you have actual odds data from the odds section above
@@ -176,7 +176,7 @@ SELECTION RULES:
 - K props: pitcher K/9, batter K%, weak contact rates
 - Game picks: large proj run differential, strong pitcher matchup, weather factors
 - Rank all 7 picks by confidence — best pick first
-LASER PICKS: Identify 3-5 players most likely to hit a ball 110+ mph exit velocity today.
+LASER PICKS: Identify 2 players most likely to hit a ball 110+ mph exit velocity today.
 Prioritize players who:
 - Have recent BBE at 110+ mph in the exit velo data
 - Have elite barrel rates (15%+) and hard hit rates (50%+)

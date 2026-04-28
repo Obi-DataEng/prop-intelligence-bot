@@ -158,7 +158,7 @@ COLUMNS: PF_Rating | Team | Pos | Player | Prop | L10_Avg | L5_Avg | Odds | Stre
 {odds_text}
 
 INSTRUCTIONS:
-Generate EXACTLY 7 total NBA picks across ALL categories combined for today's games.
+Generate EXACTLY 8 total NBA picks across ALL categories combined for today's games.
 Quality over quantity — only the highest confidence plays regardless of category.
 Do NOT force picks into every category — leave categories empty if no strong plays exist.
 
@@ -176,6 +176,7 @@ Key factors to analyze:
 - Confirmed starting lineup — is the player starting?
 - Pace of play and team offensive tendencies from team stats
 - Line shopping — identify the best book for each pick
+- Remember it is playoffs so make sure to look at streaks happening as teams are playing the same team for 7 game series
 
 Only pick games being played TODAY based on the odds data.
 Ignore players who are Out on the injury report.
