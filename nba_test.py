@@ -21,6 +21,7 @@ async def login(page):
     await page.wait_for_timeout(3000)
     print("✅ Logged in")
 
+
 async def test_nba_research():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
@@ -32,51 +33,89 @@ async def test_nba_research():
         print("\n📄 Navigating to NBA Research...")
         await page.goto(f"{BASE_URL}/nba")
         await page.wait_for_load_state("networkidle")
-        await page.wait_for_timeout(8000)  # More time
+        await page.wait_for_timeout(8000)
 
-        # Try scrolling to trigger lazy load
-        await page.evaluate("window.scrollTo(0, 500)")
-        await page.wait_for_timeout(3000)
+        print("   📜 Scrolling MuiDataGrid-virtualScroller...")
+        all_rows = set()
+        scroll_pos = 0
+        scroll_step = 400
+        no_change_count = 0
+        last_count = 0
 
-        # Try clicking somewhere on the page to activate it
-        try:
-            await page.locator('body').click()
-            await page.wait_for_timeout(3000)
-        except:
-            pass
+        while True:
+            result = await page.evaluate(f'''() => {{
+                const scroller = document.querySelector(
+                    ".MuiDataGrid-virtualScroller"
+                );
+                if (!scroller) return {{ rows: [], height: 0 }};
 
-        await page.screenshot(path="logs/nba_test_loaded.png")
+                scroller.scrollTop = {scroll_pos};
 
-        # Check what's actually on the page
-        content = await page.evaluate('''() => {
-            const rows = Array.from(document.querySelectorAll("tr"))
-                .map(r => r.innerText.trim()).filter(Boolean);
-            const fullText = document.body.innerText;
+                return new Promise(resolve => {{
+                    setTimeout(() => {{
+                        const rows = Array.from(
+                            document.querySelectorAll(".MuiDataGrid-row")
+                        ).map(row => {{
+                            const cells = Array.from(
+                                row.querySelectorAll(".MuiDataGrid-cell")
+                            ).map(cell => cell.innerText.trim());
+                            return cells.join(" | ");
+                        }}).filter(r => r.length > 10);
 
-            // Also check for any loading indicators
-            const loading = document.querySelector('[class*="loading"], [class*="spinner"]');
-            const tables = document.querySelectorAll("table").length;
-            const divCount = document.querySelectorAll("div").length;
+                        resolve({{
+                            rows,
+                            height: scroller.scrollHeight
+                        }});
+                    }}, 600);
+                }});
+            }}''')
 
-            return { rows, fullText, tables, divCount,
-                     isLoading: loading ? true : false };
-        }''')
+            if not result['height']:
+                print("   ❌ Scroller not found")
+                break
 
-        print(f"✅ Rows found: {len(content['rows'])}")
-        print(f"✅ Tables on page: {content['tables']}")
-        print(f"✅ Divs on page: {content['divCount']}")
-        print(f"✅ Is loading: {content['isLoading']}")
-        print(f"✅ Full text length: {len(content['fullText'])} chars")
-        print(f"\nFull text:")
-        print(content['fullText'][:800])
+            new_rows = set(result['rows'])
+            before = len(all_rows)
+            all_rows.update(new_rows)
+            after = len(all_rows)
 
-        # Save raw data
+            print(f"   Scroll {scroll_pos}px / {result['height']}px: "
+                  f"{len(new_rows)} visible, {after} total unique (+{after - before})")
+
+            if after == last_count:
+                no_change_count += 1
+            else:
+                no_change_count = 0
+                last_count = after
+
+            if no_change_count >= 6:
+                print("   ✅ Done — no new rows")
+                break
+
+            scroll_pos += scroll_step
+            if scroll_pos > result['height']:
+                print("   ✅ Reached end of scroller")
+                break
+
+            await page.wait_for_timeout(200)
+
+        print(f"\n   📊 Total unique rows captured: {len(all_rows)}")
+        print(f"\n   📝 Sample rows:")
+        sample = [r for r in all_rows if len(r) > 30][:15]
+        for row in sample:
+            print(f"      {row[:150]}")
+
         with open("logs/nba_research_test.json", "w") as f:
-            json.dump(content, f, indent=2)
-        print(f"\n💾 Saved to logs/nba_research_test.json")
+            json.dump({
+                'total_rows': len(all_rows),
+                'rows': list(all_rows)
+            }, f, indent=2)
 
+        print(f"\n💾 Saved to logs/nba_research_test.json")
+        await page.screenshot(path="logs/nba_research_test.png")
         input("\nPress Enter to close browser...")
         await browser.close()
+
 
 async def test_nba_def_matchups():
     async with async_playwright() as p:
@@ -96,20 +135,15 @@ async def test_nba_def_matchups():
 
         try:
             print("   🔧 Opening positions dropdown...")
-
-            # Click the dropdown showing "PG" directly
             await page.get_by_text("PG", exact=True).click()
             await page.wait_for_timeout(1500)
-            await page.screenshot(path="logs/nba_def_dropdown_open.png")
 
-            # Check what options are available
             options = await page.locator('[role="option"]').all()
             print(f"   Found {len(options)} options in dropdown")
             for opt in options:
                 text = await opt.inner_text()
                 print(f"   Option: '{text.strip()}'")
 
-            # Click each missing position
             for pos in ['SG', 'PF', 'SF', 'C']:
                 try:
                     await page.get_by_role("option", name=pos, exact=True).click()
@@ -144,6 +178,7 @@ async def test_nba_def_matchups():
         input("\nPress Enter to close browser...")
         await browser.close()
 
+
 async def test_nba_hit_rate():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
@@ -160,7 +195,6 @@ async def test_nba_hit_rate():
         await page.evaluate("window.scrollTo(0, 300)")
         await page.wait_for_timeout(2000)
 
-        # Step 1 — Set Game Count to 2025-26 Season
         try:
             print("   🔧 Setting Game Count to 2025-26 Season...")
             await page.get_by_text("Last 5 Games", exact=True).first.click()
@@ -178,7 +212,6 @@ async def test_nba_hit_rate():
         except Exception as e:
             print(f"   ⚠️ Game Count error: {e}")
 
-        # Step 2 — Cycle through all categories
         categories = [
             'Points', 'Rebounds', 'Assists', 'Three Pointers',
             'Points + Rebounds', 'Points + Assists',
@@ -186,20 +219,16 @@ async def test_nba_hit_rate():
         ]
 
         all_data = {}
-        current_cat = 'Points'  # Track current category
+        current_cat = 'Points'
 
         for cat in categories:
             try:
                 print(f"\n   📊 Selecting category: {cat}")
-
-                # Click whichever category is currently shown
                 await page.get_by_text(current_cat, exact=True).first.click()
                 await page.wait_for_timeout(1000)
-
                 await page.get_by_role("option", name=cat, exact=True).click()
                 await page.wait_for_timeout(2000)
-
-                current_cat = cat  # Update tracker
+                current_cat = cat
 
                 content = await page.evaluate('''() => {
                     return { fullText: document.body.innerText };
@@ -210,7 +239,6 @@ async def test_nba_hit_rate():
 
             except Exception as e:
                 print(f"   ⚠️ {cat} error: {e}")
-                # Try reloading page and resetting if stuck
                 await page.goto(f"{BASE_URL}/nba/cheatsheets/hit-rate-matrix")
                 await page.wait_for_load_state("networkidle")
                 await page.wait_for_timeout(4000)
@@ -230,9 +258,12 @@ async def test_nba_hit_rate():
             json.dump(all_data, f, indent=2)
         print(f"\n💾 Saved to logs/nba_hit_rate_test.json")
         print(f"✅ Categories collected: {len(all_data)}")
+        print(f"\n📊 Sample of Points data:")
+        print(all_data.get('Points', '')[:1000])
 
         input("\nPress Enter to close browser...")
         await browser.close()
+
 
 async def test_nba_simple_pages():
     async with async_playwright() as p:
@@ -252,7 +283,6 @@ async def test_nba_simple_pages():
             await page.wait_for_timeout(5000)
 
             if name == "lineups":
-                # Use ALL TEAMS tab — more reliable than TODAY'S GAMES
                 try:
                     await page.get_by_text("ALL TEAMS").click()
                     await page.wait_for_timeout(3000)
@@ -260,7 +290,6 @@ async def test_nba_simple_pages():
                 except:
                     pass
 
-                # Wait for actual content to load
                 try:
                     await page.wait_for_selector("text=Today's Lineup", timeout=15000)
                     print("   ✅ Lineup content detected")
@@ -268,7 +297,6 @@ async def test_nba_simple_pages():
                     print("   ⚠️ Still waiting...")
                     await page.wait_for_timeout(5000)
 
-                # Scroll through page to trigger lazy loading
                 for scroll_pos in [500, 1000, 1500, 2000, 2500]:
                     await page.evaluate(f"window.scrollTo(0, {scroll_pos})")
                     await page.wait_for_timeout(800)
@@ -294,6 +322,7 @@ async def test_nba_simple_pages():
 
         input("\nPress Enter to close browser...")
         await browser.close()
+
 
 async def test_player_stats_summary():
     async with async_playwright() as p:
@@ -327,20 +356,6 @@ async def test_player_stats_summary():
         input("\nPress Enter to close browser...")
         await browser.close()
 
+
 if __name__ == "__main__":
-    asyncio.run(test_player_stats_summary())
-
-
-"""if __name__ == "__main__":
-    asyncio.run(test_nba_simple_pages())"""
-
-
-"""if __name__ == "__main__":
-    asyncio.run(test_nba_hit_rate())"""
-
-
-"""if __name__ == "__main__":
-    asyncio.run(test_nba_def_matchups())"""
-
-"""if __name__ == "__main__":
-    asyncio.run(test_nba_research())"""
+    asyncio.run(test_nba_research())

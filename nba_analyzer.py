@@ -8,7 +8,6 @@ load_dotenv()
 
 
 def load_nba_data(scrape_date):
-    """Load all scraped NBA data files"""
     data = {}
     files = [
         "nba_player_stats",
@@ -16,7 +15,8 @@ def load_nba_data(scrape_date):
         "nba_hit_rate",
         "nba_injury_reports",
         "nba_lineups",
-        "nba_team_stats"
+        "nba_team_stats",
+        "nba_research"      # ← ADD THIS
     ]
     for name in files:
         filepath = f"logs/{scrape_date}_{name}.json"
@@ -95,6 +95,12 @@ def build_nba_prompt(data, odds_text, scrape_date, odds_data=None):
     if odds_data is None:
         odds_data = {}
 
+    # Add research data
+    research_data = data.get('nba_research', {})
+    research_rows = research_data.get('rows', [])
+    # Limit to 300 rows to avoid token overload — sorted keeps best rated first
+    research_text = '\n'.join(research_rows[:300])
+
     player_stats_text = data.get('nba_player_stats', {}).get('fullText', '')[:4000]
     def_matchups_text = data.get('nba_def_matchups', {}).get('fullText', '')[:3000]
 
@@ -134,6 +140,10 @@ Any player not on these teams today should be ignored entirely.
 
 === HIT RATE MATRIX (Historical prop hit rates this season) ===
 {hit_rate_text}
+
+=== NBA RESEARCH (Today's Props — Hit Rates + Odds + Matchup %) ===
+COLUMNS: PF_Rating | Team | Pos | Player | Prop | L10_Avg | L5_Avg | Odds | Streak | Matchup | 24-25_Hit% | 25-26_Hit%
+{research_text}
 
 === INJURY REPORTS ===
 {injury_text}

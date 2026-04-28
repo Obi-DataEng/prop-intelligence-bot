@@ -92,6 +92,23 @@ async def run_all():
     except Exception as e:
         print(f"⚠️ NBA scraper failed (skipping): {e}\n")
 
+    print("\n🏀 STEP 3.65 — Scraping NBA Research page...")
+    try:
+        async def run_research():
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=headless)
+                context = await browser.new_context()
+                page = await context.new_page()
+                await scraper.login(page)
+                result = await scraper.scrape_nba_research(page, scrape_date)
+                await browser.close()
+                return result
+        import asyncio
+        research_data = asyncio.run(run_research())
+        print(f"   ✅ Step 3.65 complete — {research_data['total']} research rows")
+    except Exception as e:
+        print(f"   ⚠️ Research scrape failed: {e}")
+
     # ── STEP 3.7: NBA ODDS ─────────────────────────────
     print(f"🏀 STEP 3.7 — Fetching NBA odds...")
     nba_odds = None

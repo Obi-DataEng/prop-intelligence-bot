@@ -300,6 +300,99 @@ async def scrape_nba_injury_reports(page, url):
     print(f"   ✅ nba_injury_reports: {len(content['rows'])} rows")
     return content
 
+async def scrape_nba_research(page, scrape_date):
+    """Scrape NBA Research tab - all today's props with hit rates"""
+    print("\n📄 Scraping nba_research...")
+    
+    try:
+        await page.goto(f"{BASE_URL}/nba")
+        await page.wait_for_load_state("networkidle")
+        await page.wait_for_timeout(8000)
+
+        all_rows = set()
+        scroll_pos = 0
+        scroll_step = 400
+        no_change_count = 0
+        last_count = 0
+
+        while True:
+            result = await page.evaluate(f'''() => {{
+                const scroller = document.querySelector(
+                    ".MuiDataGrid-virtualScroller"
+                );
+                if (!scroller) return {{ rows: [], height: 0 }};
+
+                scroller.scrollTop = {scroll_pos};
+
+                return new Promise(resolve => {{
+                    setTimeout(() => {{
+                        const rows = Array.from(
+                            document.querySelectorAll(".MuiDataGrid-row")
+                        ).map(row => {{
+                            const cells = Array.from(
+                                row.querySelectorAll(".MuiDataGrid-cell")
+                            ).map(cell => cell.innerText.trim());
+                            return cells.join(" | ");
+                        }}).filter(r => r.length > 10);
+
+                        resolve({{
+                            rows,
+                            height: scroller.scrollHeight
+                        }});
+                    }}, 600);
+                }});
+            }}''')
+
+            if not result['height']:
+                print("   ⚠️ Scroller not found")
+                break
+
+            new_rows = set(result['rows'])
+            before = len(all_rows)
+            all_rows.update(new_rows)
+            after = len(all_rows)
+
+            if after != last_count:
+                no_change_count = 0
+                last_count = after
+            else:
+                no_change_count += 1
+
+            if no_change_count >= 6:
+                break
+
+            scroll_pos += scroll_step
+            if scroll_pos > result['height']:
+                break
+
+            await page.wait_for_timeout(200)
+
+        # Clean up rows — remove malformed ones
+        clean_rows = []
+        for row in all_rows:
+            # Must contain a player-like pattern and a prop
+            if ' | ' in row and len(row) > 30:
+                # Collapse internal newlines
+                cleaned = ' '.join(row.split())
+                clean_rows.append(cleaned)
+
+        print(f"   ✅ nba_research: {len(clean_rows)} rows")
+
+        data = {
+            'rows': clean_rows,
+            'total': len(clean_rows)
+        }
+
+        filepath = f"logs/{scrape_date}_nba_research.json"
+        with open(filepath, 'w') as f:
+            json.dump(data, f, indent=2)
+
+        return data
+
+    except Exception as e:
+        print(f"   ❌ nba_research scrape failed: {e}")
+        return {'rows': [], 'total': 0}
+
 async def scrape_nba_lineups(page, url):
     print(f"\n📄 Scraping nba_lineups...")
     await page.goto(url)
