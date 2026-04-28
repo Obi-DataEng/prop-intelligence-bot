@@ -1,0 +1,341 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Texas Rangers",
+      "game": "NYY @ TEX",
+      "game_time": "2:10 AM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "113.0 mph on 4/27",
+      "avg_exit_velo": "95.2 mph",
+      "barrel_rate": "19.8%",
+      "hard_hit_rate": "58%",
+      "pitcher_hard_hit_allowed": "48%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "Recent 113.0 mph barrel on line drive",
+        "Elite power metrics with 19.8% barrel rate",
+        "Faces moderate velocity pitcher allowing 48% hard hit"
+      ],
+      "reasoning": "Judge has demonstrated 113+ mph exit velo recently and maintains elite barrel rates. Facing Yoshinobu Yamamoto who allows solid hard contact (48% hard hit rate), Judge profiles as a high-probability 110+ mph candidate with his elite bat speed (81.2 mph) and consistent barrel production."
+    },
+    {
+      "rank": 2,
+      "player_name": "Elly De La Cruz",
+      "team": "Cincinnati Reds",
+      "opponent": "Colorado Rockies",
+      "game": "COL @ CIN",
+      "game_time": "10:40 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "115.3 mph on 4/25",
+      "avg_exit_velo": "95.1 mph",
+      "barrel_rate": "15.2%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "50%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "Most recent exit velo: 115.3 mph on 4/25",
+        "Elite hard hit rate at 52% overall",
+        "Great American Ball Park historically favors hard contact"
+      ],
+      "reasoning": "De La Cruz posted a 115.3 mph barrel most recently and maintains a 52% hard hit rate. Coors Field environment and facing Kyle Leahy (5.62 K/9) who allows 50% hard hit rate creates prime conditions for another 110+ mph exit velo event."
+    },
+    {
+      "rank": 3,
+      "player_name": "Juan Soto",
+      "team": "Washington Nationals",
+      "opponent": "New York Mets",
+      "game": "WSH @ NYM",
+      "game_time": "11:10 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "114.2 mph on 4/24",
+      "avg_exit_velo": "94.8 mph",
+      "barrel_rate": "18.5%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "46%",
+      "park_factor_hr": 0.98,
+      "key_factors": [
+        "Recent 114.2 mph barrel on line drive",
+        "56% hard hit rate, 18.5% barrel rate",
+        "Citi Field slightly suppresses but Soto's elite approach compensates"
+      ],
+      "reasoning": "Soto's recent 114.2 mph barrel and elite 56% hard hit rate position him as a reliable 110+ mph candidate. Despite Citi Field's slight suppression (0.98 park factor), his elite plate discipline and power metrics suggest another hard-hit opportunity."
+    },
+    {
+      "rank": 4,
+      "player_name": "Vladimir Guerrero Jr.",
+      "team": "Toronto Blue Jays",
+      "opponent": "Boston Red Sox",
+      "game": "BOS @ TOR",
+      "game_time": "11:07 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "116.0 mph on 4/24",
+      "avg_exit_velo": "95.4 mph",
+      "barrel_rate": "17.2%",
+      "hard_hit_rate": "54%",
+      "pitcher_hard_hit_allowed": "45%",
+      "park_factor_hr": 1.01,
+      "key_factors": [
+        "Recent 116.0 mph exit velo on 4/24",
+        "54% hard hit rate with consistent power",
+        "Rogers Centre retractable roof prevents weather suppression"
+      ],
+      "reasoning": "Guerrero recently registered a 116.0 mph barrel and maintains elite power metrics (54% HH rate). The retractable roof at Rogers Centre ensures optimal conditions, and facing Payton Tolle (limited data, 16.50 K/9 in small sample) sets up another 110+ mph opportunity."
+    },
+    {
+      "rank": 5,
+      "player_name": "Nick Kurtz",
+      "team": "Baltimore Orioles",
+      "opponent": "Houston Astros",
+      "game": "HOU @ BAL",
+      "game_time": "10:35 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "115.9 mph on 4/24",
+      "avg_exit_velo": "94.6 mph",
+      "barrel_rate": "16.8%",
+      "hard_hit_rate": "51%",
+      "pitcher_hard_hit_allowed": "47%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "Recent 115.9 mph home run on fly ball",
+        "51% hard hit rate demonstrating consistency",
+        "Oriole Park at Camden Yards neutral to slightly favorable"
+      ],
+      "reasoning": "Kurtz hit a 115.9 mph home run recently and maintains solid hard contact metrics (51% HH). Facing Shane Baz (0.64 HR/9, 38.5% HH allowed) who gives up manageable contact creates conditions for another 110+ mph event."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opponent": "Baltimore Orioles",
+      "game": "HOU @ BAL",
+      "game_time": "10:35 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": "115",
+      "czs_odds": "205",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "1.30 HR/9 allowed by Shane Baz with 18.2% HR/FB rate",
+        "Alvarez elite power metrics with 24.3% pull air rate",
+        "Oriole Park at Camden Yards neutral park factor (1.02)"
+      ],
+      "reasoning": "Alvarez has demonstrated elite home run frequency and Baz allows elevated HR/9 rates (0.64). The +205 at Caesars provides excellent value for a player with Alvarez's consistent power output facing a pitcher prone to surrendering long balls.",
+      "line_shop_note": "CZS +205 significantly better value than MGM 115"
+    },
+    {
+      "rank": 2,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "San Francisco Giants",
+      "game": "SF @ PHI",
+      "game_time": "10:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "210",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "12.3% BB rate with 40.5% pull rate optimizing park",
+        "Tyler Mahle allows 2.10 HR/9 and 29.4% pull air rate",
+        "Citizens Bank Park favorable HR environment"
+      ],
+      "reasoning": "Schwarber's elite pull rate (40.5%) aligns perfectly with Tyler Mahle's tendency to allow elevated HR/9 (2.10). At +210, Schwarber represents solid value for a consistent power producer against a pitcher known for giving up long balls.",
+      "line_shop_note": null
+    },
+    {
+      "rank": 3,
+      "player_name": "Max Muncy",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Miami Marlins",
+      "game": "MIA @ LAD",
+      "game_time": "2:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": "305",
+      "czs_odds": "305",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "18.9% barrel rate with 24.3% pull air rate",
+        "Shohei Ohtani allows 10.3% HR/FB rate with solid barrel metrics",
+        "Dodger Stadium favorable HR park factor (1.00) with warm weather (78\u00b0F)"
+      ],
+      "reasoning": "Muncy's elite barrel rate (18.9%) and pull tendency position him well in Dodger Stadium. Despite Ohtani's elite pitching, Muncy's consistent power metrics and the ballpark environment support HR potential at +305 odds.",
+      "line_shop_note": null
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "San Francisco Giants",
+      "game": "SF @ PHI",
+      "game_time": "10:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "106",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 81,
+      "confidence_tier": "High",
+      "key_factors": [
+        "0.404 OBP demonstrating elite plate discipline",
+        "Tyler Mahle allows 2.10 HR/9 and elevated WHIP at 1.60",
+        "Consistent barrel production with 18.9% rate"
+      ],
+      "reasoning": "Schwarber's elite OBP (0.404) and consistent barrel production provide high-probability hit potential. Tyler Mahle's elevated WHIP (1.60) and HR/9 rate suggest softening of his stuff, favoring Schwarber's total bases at -106 value.",
+      "line_shop_note": null
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Julio Rodriguez",
+      "team": "Seattle Mariners",
+      "opponent": "Minnesota Twins",
+      "game": "SEA @ MIN",
+      "game_time": "11:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "135",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "135 ISO demonstrating elite power potential",
+        "Joe Ryan allows 0.84 HR/9 with favorable barrel metrics",
+        "Target Field warm weather (78\u00b0F) aids ball carry"
+      ],
+      "reasoning": "Rodriguez's elite ISO (135) and barrel production create multiple pathways to exceed 1.5 total bases. Joe Ryan's modest HR/9 rate (0.84) and Target Field's warm weather (78\u00b0F) position this as a solid hit with +135 value.",
+      "line_shop_note": null
+    },
+    {
+      "rank": 2,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "San Francisco Giants",
+      "game": "SF @ PHI",
+      "game_time": "10:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "106",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "0.660 SLG demonstrating elite power",
+        "18.9% barrel rate with 12.3% walk rate",
+        "Tyler Mahle elevated WHIP at 1.60 suggests contact opportunities"
+      ],
+      "reasoning": "Schwarber's elite slugging (0.660) and barrel production provide dual pathways to exceed 1.5 total bases via hits or power. Mahle's inflated WHIP indicates difficulty maintaining command, favoring contact-oriented hitters.",
+      "line_shop_note": null
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Joe Ryan",
+      "team": "Minnesota Twins",
+      "opponent": "Seattle Mariners",
+      "game": "SEA @ MIN",
+      "game_time": "11:40 PM",
+      "best_book": "FD",
+      "fd_odds": "-138",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "9.19 K/9 rate demonstrating elite strikeout production",
+        "24.5% K rate against league average batters",
+        "Seattle faces one of MLB's most dominant strikeout pitchers"
+      ],
+      "reasoning": "Ryan's elite 9.19 K/9 and 24.5% K rate provide strong over 5.5 K potential. FD's -138 odds reflect justified confidence in a strikeout machine facing a Seattle lineup without elite contact rates.",
+      "line_shop_note": null
+    },
+    {
+      "rank": 2,
+      "player_name": "Chase Burns",
+      "team": "Cincinnati Reds",
+      "opponent": "Colorado Rockies",
+      "game": "COL @ CIN",
+      "game_time": "10:40 PM",
+      "best_book": "FD",
+      "fd_odds": "-132",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "9.64 K/9 rate with 32.5% K rate",
+        "27% whiff rate demonstrating strong miss generation",
+        "Colorado lineups susceptible to strikeouts at altitude"
+      ],
+      "reasoning": "Burns' elite 9.64 K/9 and 32.5% K rate create strong over 6.5 opportunity. Colorado's altitude environment and lineup K-rate vulnerability support exceeding the strikeout line at -132.",
+      "line_shop_note": null
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "OU",
+      "game": "SEA @ MIN",
+      "game_time": "11:40 PM",
+      "pick": "Under 7.5",
+      "best_book": "FD",
+      "fd_odds": "-110",
+      "mgm_odds": "-105",
+      "czs_odds": "-110",
+      "scr_odds": null,
+      "fd_line": "7.5",
+      "confidence_score": 73,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Joe Ryan elite 0.84 ERA and 9.19 K/9 suppressing runs",
+        "Logan Gilbert solid 0.82 HR/9 with low WHIP (1.27)",
+        "Both teams rank lower in offensive efficiency"
+      ],
+      "reasoning": "This matchup features two above-average pitchers with strong strikeout profiles. Joe Ryan's elite ERA (0.84) and Logan Gilbert's low WHIP (1.27) create a compressed run environment. Cold weather (60\u00b0F) at Target Field further suppresses scoring, making Under 7.5 solid at -110.",
+      "line_shop_note": "FD and CZS both -110; MGM slightly better at -105"
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Yordan Alvarez HR +205 (CZS)",
+      "Joe Ryan Over 5.5 K -138 (FD)",
+      "SEA @ MIN Under 7.5 -110 (FD)"
+    ],
+    "reasoning": "Parlays a high-probability HR, elite strikeout pitcher, and compressed total for maximum correlation. Alvarez power + Ryan dominance + low-run environment creates complementary outcomes with minimal negative correlation.",
+    "estimated_odds": "+450"
+  },
+  "daily_summary": "Today features elite pitching matchups with Joe Ryan leading the strikeout charge at 9.19 K/9. Exit velo data shows Aaron Judge, Elly De La Cruz, and Juan Soto as prime 110+ mph candidates, while Yordan Alvarez and Kyle Schwarber represent solid HR values against elevated HR/9 pitchers. Cold weather across most games suppresses totals, favoring Under plays.",
+  "best_bet": "Yordan Alvarez HR vs Shane Baz at +205 (CZS) combines elite power metrics against a pitcher prone to surrendering long balls in a neutral park environment."
+}
