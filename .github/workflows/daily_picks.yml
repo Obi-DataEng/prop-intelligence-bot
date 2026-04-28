@@ -1,16 +1,12 @@
 name: MLB Daily Picks Bot
 
 on:
-  schedule:
-    - cron: '0 16 * * *'   # 12:00 PM ET — full picks run
-    - cron: '0 13 * * *'   # 9:00 AM ET  — grading only
   workflow_dispatch:
 
 jobs:
 
-  # ── JOB 1: Full picks run at 12pm ET ──────────────
+  # ── JOB 1: Full picks run ──────────────────────────
   run-picks-bot:
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 16 * * *'
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
@@ -76,7 +72,7 @@ jobs:
         run: |
           git config --global user.email "bot@github.com"
           git config --global user.name "Picks Bot"
-          git add logs/*.json
+          git add -f logs/*.json
           git commit -m "Add picks logs for $(date +%Y-%m-%d)" || echo "No changes to commit"
           git push
         env:
@@ -87,48 +83,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: picks-logs-${{ github.run_id }}
-          path: logs/
-          retention-days: 7
-
-  # ── JOB 2: Grading only at 9am ET ─────────────────
-  run-grader:
-    if: github.event.schedule == '0 13 * * *'
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install Python dependencies
-        run: pip install python-dotenv requests
-
-      - name: Create directories
-        run: |
-          mkdir -p logs
-          mkdir -p data
-
-      - name: Create .env file
-        run: |
-          echo "ODDS_API_KEY=${{ secrets.ODDS_API_KEY }}" >> .env
-          echo "GMAIL_SENDER=${{ secrets.GMAIL_SENDER }}" >> .env
-          echo "GMAIL_APP_PASSWORD=${{ secrets.GMAIL_APP_PASSWORD }}" >> .env
-          echo "GMAIL_RECIPIENT=${{ secrets.GMAIL_RECIPIENT }}" >> .env
-          echo "GMAIL_RECIPIENT_2=${{ secrets.GMAIL_RECIPIENT_2 }}" >> .env
-          echo "GMAIL_RECIPIENT_3=${{ secrets.GMAIL_RECIPIENT_3 }}" >> .env
-
-      - name: Run Grader
-        run: python grader.py
-
-      - name: Upload grader logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: grader-logs-${{ github.run_id }}
           path: logs/
           retention-days: 7
