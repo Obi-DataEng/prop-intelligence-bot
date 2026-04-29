@@ -1,0 +1,204 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Ronald Acuna Jr.",
+      "team": "Atlanta Braves",
+      "opponent": "Detroit Tigers",
+      "game": "Detroit Tigers @ Atlanta Braves",
+      "game_time": "TBD",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "Unknown - limited data",
+      "avg_exit_velo": "92.3 mph",
+      "barrel_rate": "16%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "45%",
+      "park_factor_hr": 1.08,
+      "key_factors": [
+        "Elite speed/power combo",
+        "JR Ritchie allows hard contact",
+        "Warm Atlanta conditions"
+      ],
+      "reasoning": "Acuna's elite athleticism and recent form make him a prime candidate for 110+ EV. Faces JR Ritchie who allows elevated hard hit rates, and Truist Park provides moderate HR advantage with warm April conditions."
+    },
+    {
+      "rank": 2,
+      "player_name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Miami Marlins",
+      "game": "Miami Marlins @ Los Angeles Dodgers",
+      "game_time": "TBD",
+      "confidence_tier": "High",
+      "recent_max_ev": "Unknown - limited data",
+      "avg_exit_velo": "93.8 mph",
+      "barrel_rate": "17%",
+      "hard_hit_rate": "54%",
+      "pitcher_hard_hit_allowed": "44%",
+      "park_factor_hr": 1.12,
+      "key_factors": [
+        "Elite power metrics",
+        "Dodger Stadium HR-friendly",
+        "Sandy Alcantara vulnerable to hard contact"
+      ],
+      "reasoning": "Ohtani's consistent hard contact and Dodger Stadium's 1.12 park factor create opportunity for 110+ EV. Alcantara allows decent hard hit rates and Ohtani's approach generates consistent elite contact."
+    }
+  ],
+  "hr_picks": [],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Steven Kwan",
+      "team": "Cleveland Guardians",
+      "opponent": "Tampa Bay Rays",
+      "game": "Tampa Bay Rays @ Cleveland Guardians",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-225",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite contact hitter",
+        "High BA vs righties",
+        "Drew Rasmussen allows contact"
+      ],
+      "reasoning": "Kwan's elite contact skills and consistency make 0.5 hits highly probable. High odds of -225 at MGM reflect fair value on proven performer facing permissive pitcher in favorable environment."
+    },
+    {
+      "rank": 2,
+      "player_name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Miami Marlins",
+      "game": "Miami Marlins @ Los Angeles Dodgers",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Consistent hitter",
+        "Home park advantage",
+        "Sandy Alcantara matchup"
+      ],
+      "reasoning": "Freeman's elite batting average and home field advantage make hit prop a strong play. Even at -250 odds, the probability of 1+ hit is well above break-even for a .300+ hitter."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Kyle Tucker",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Miami Marlins",
+      "game": "Miami Marlins @ Los Angeles Dodgers",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "138",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Power threat vs Alcantara",
+        "Good park factor",
+        "Plus value at +138"
+      ],
+      "reasoning": "Tucker's power profile targets 1.5 total bases threshold effectively. At +138 odds, value exists for a player who can reach this via single hit or double in favorable Dodger Stadium environment."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Tyler Glasnow",
+      "pick_type": "pitcher",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Miami Marlins",
+      "game": "Miami Marlins @ Los Angeles Dodgers",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": "-158",
+      "mgm_odds": "-155",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite K/9 pitcher",
+        "Facing weak Marlins lineup",
+        "Home field advantage"
+      ],
+      "reasoning": "Glasnow's elite strikeout ability and the Marlins' weak contact profile support the over 6.5 Ks. At -155 on MGM, the implied probability matches his recent performance trends."
+    },
+    {
+      "rank": 2,
+      "player_name": "Randy Arozarena",
+      "pick_type": "batter",
+      "team": "Seattle Mariners",
+      "opponent": "Minnesota Twins",
+      "game": "Seattle Mariners @ Minnesota Twins",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-275",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "under",
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "High strikeout rate",
+        "Taj Bradley strong K pitcher",
+        "Poor contact recent form"
+      ],
+      "reasoning": "Arozarena's elevated strikeout tendency and Taj Bradley's 5.5 K/9 rate support the under 0.5 Ks. At -275 odds, this represents strong value on a vulnerable batter."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "ML",
+      "game": "Detroit Tigers @ Atlanta Braves",
+      "game_time": "TBD",
+      "pick": "Detroit Tigers",
+      "best_book": "MGM",
+      "fd_odds": "-144",
+      "mgm_odds": "-150",
+      "czs_odds": "-145",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Strong pitcher matchup",
+        "Tigers recent form",
+        "Skubal elite K ability"
+      ],
+      "reasoning": "Detroit's pitching advantage with Tarik Skubal against Braves' vulnerable lineup provides edge. While favorites, Tigers at -144 to -150 offer reasonable value in strong pitching matchup."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Steven Kwan OVER 0.5 Hits vs TB (MGM -225)",
+      "Tyler Glasnow OVER 6.5 Ks vs MIA (MGM -155)",
+      "Randy Arozarena UNDER 0.5 Ks vs MIN (MGM -275)"
+    ],
+    "reasoning": "Elite contact hitter meets strikeout specialist; paired with strikeout-prone batter facing K-heavy pitcher. All three components are high-confidence plays with strong underlying metrics.",
+    "estimated_odds": "-155 (approximately -200 combined)"
+  },
+  "daily_summary": "Today's slate features several elite pitchers (Glasnow, Skubal) facing vulnerable lineups, creating strong strikeout and game-level opportunities. Contact-oriented hitters like Kwan and Freeman provide stable hits props in favorable matchups. Strong pitching-focused slate with limited massive run production anticipated.",
+  "best_bet": "Steven Kwan OVER 0.5 Hits at MGM -225 \u2014 elite contact hitter with proven consistency against permissive pitcher in high-opportunity environment."
+}
