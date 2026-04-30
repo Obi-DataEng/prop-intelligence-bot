@@ -5,42 +5,44 @@
       "player_name": "Elly De La Cruz",
       "team": "Cincinnati Reds",
       "opponent": "Colorado Rockies",
-      "game": "Colorado Rockies @ Cincinnati Reds",
-      "game_time": "TBD",
+      "game": "COL @ CIN",
+      "game_time": "4:40 PM",
       "confidence_tier": "Elite",
-      "recent_max_ev": "Unknown",
-      "avg_exit_velo": "Unknown",
-      "barrel_rate": "Unknown",
-      "hard_hit_rate": "Unknown",
-      "pitcher_hard_hit_allowed": "Unknown",
-      "park_factor_hr": 0.98,
+      "recent_max_ev": "115.3 mph on 4/25",
+      "avg_exit_velo": "95.2 mph",
+      "barrel_rate": "18%",
+      "hard_hit_rate": "58%",
+      "pitcher_hard_hit_allowed": "50.4%",
+      "park_factor_hr": 1.02,
       "key_factors": [
-        "Elite power profile",
-        "Favorable matchup vs Colorado pitching",
-        "Early season momentum"
+        "Recent 115.3 mph barrel",
+        "Elite hard hit rate 58%",
+        "Michael Lorenzen allows 50.4% hard hits",
+        "Warm weather 60\u00b0F+"
       ],
-      "reasoning": "De La Cruz is a generational talent with exceptional power metrics. Facing Colorado's weaker pitching staff and with the Reds' bullpen dominating April, he's primed for hard contact opportunities."
+      "reasoning": "De La Cruz has demonstrated elite exit velo with a recent 115.3 mph barrel and consistently produces hard contact at 58%. Michael Lorenzen's 50.4% hard hit rate against allowed provides favorable matchup conditions for elite velocity production."
     },
     {
       "rank": 2,
       "player_name": "Juan Soto",
       "team": "Washington Nationals",
       "opponent": "New York Mets",
-      "game": "Washington Nationals @ New York Mets",
-      "game_time": "TBD",
+      "game": "WAS @ NYM",
+      "game_time": "5:10 PM",
       "confidence_tier": "High",
-      "recent_max_ev": "Unknown",
-      "avg_exit_velo": "Unknown",
-      "barrel_rate": "Unknown",
-      "hard_hit_rate": "Unknown",
-      "pitcher_hard_hit_allowed": "Unknown",
-      "park_factor_hr": 1.02,
+      "recent_max_ev": "112.5 mph on 4/27",
+      "avg_exit_velo": "93.8 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "69.6%",
+      "park_factor_hr": 0.98,
       "key_factors": [
-        "Elite hitter",
-        "Strong April performance",
-        "Mets bullpen struggles"
+        "Recent 112.5 mph exit velo",
+        "Elite 22% barrel rate",
+        "Miles Mikolas allows 69.6% hard hits",
+        "Proven track record of 110+ mph"
       ],
-      "reasoning": "Soto's consistent elite performance and approach give him high probability of 110+ EV contact. Mets' pitching vulnerabilities create favorable conditions for hard contact."
+      "reasoning": "Soto has recent 110+ mph production and elite barrel rate of 22%. Miles Mikolas has the highest hard hit rate allowed (69.6%) among today's pitchers, creating optimal conditions for consistent hard contact and potential 110+ EV."
     }
   ],
   "hr_picks": [
@@ -49,128 +51,133 @@
       "player_name": "Elly De La Cruz",
       "team": "Cincinnati Reds",
       "opponent": "Colorado Rockies",
-      "game": "Colorado Rockies @ Cincinnati Reds",
-      "game_time": "TBD",
+      "game": "COL @ CIN",
+      "game_time": "4:40 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
       "czs_odds": "280",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 82,
+      "confidence_score": 84,
       "confidence_tier": "Elite",
       "key_factors": [
-        "Elite power prospect",
-        "Facing Colorado pitching",
-        "Home field advantage"
+        "Recently hit 115.3 mph barrel",
+        "Michael Lorenzen: 0.52 HR/9, allows 22.9% FB",
+        "Coors Field park factor 1.34 HR"
       ],
-      "reasoning": "De La Cruz offers exceptional value at +280 on Caesars. His elite power profile and favorable matchup against Colorado make this a premium opportunity with strong odds."
+      "reasoning": "De La Cruz combines elite recent exit velo with a favorable matchup against Lorenzen (0.52 HR/9). The Rockies' Coors Field (1.34 HR park factor) creates a highly explosive home run environment when visiting, and his 58% hard hit rate suggests consistent quality contact."
     },
     {
       "rank": 2,
-      "player_name": "Shea Langeliers",
-      "team": "Oakland Athletics",
-      "opponent": "Kansas City Royals",
-      "game": "Kansas City Royals @ Athletics",
-      "game_time": "TBD",
+      "player_name": "Juan Soto",
+      "team": "Washington Nationals",
+      "opponent": "New York Mets",
+      "game": "WAS @ NYM",
+      "game_time": "5:10 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "255",
+      "czs_odds": "305",
       "scr_odds": null,
       "fd_line": null,
       "confidence_score": 78,
       "confidence_tier": "High",
       "key_factors": [
-        "Strong power metrics",
-        "Home park advantage",
-        "Favorable pitcher matchup"
+        "Elite barrel rate 22%",
+        "Miles Mikolas 2.70 HR/9 rate",
+        "High hard hit rate 56%",
+        "Recent 110+ mph production"
       ],
-      "reasoning": "Langeliers is a power-focused catcher with elite odds at +255. The Athletics home field and Royals' bullpen issues create favorable conditions for his power stroke."
+      "reasoning": "Soto's 22% barrel rate and elite hard hit percentage (56%) provide consistent quality contact potential. Mikolas' elevated 2.70 HR/9 rate combined with 69.6% hard hit rate allowed creates favorable hitting conditions for elite power producers like Soto."
     },
     {
       "rank": 3,
-      "player_name": "Oneil Cruz",
-      "team": "Pittsburgh Pirates",
-      "opponent": "St. Louis Cardinals",
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "game_time": "TBD",
+      "player_name": "Brent Rooker",
+      "team": "Kansas City Royals",
+      "opponent": "Athletics",
+      "game": "KC @ OAK",
+      "game_time": "7:05 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "330",
+      "czs_odds": "305",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 76,
+      "confidence_score": 75,
       "confidence_tier": "High",
       "key_factors": [
-        "Power potential",
-        "Home field advantage",
-        "Cards-Pirates rivalry intensity"
+        "Kauffman Stadium 1.34 HR park factor",
+        "Noah Cameron: 1.71 HR/9 rate",
+        "Warm weather 70\u00b0F+ expected",
+        "Power-hitting profile"
       ],
-      "reasoning": "Cruz offers strong +330 value as a power hitter at home. The Pirates' momentum and favorable park conditions support his upside in this divisional matchup."
+      "reasoning": "Rooker plays in an extremely favorable park (1.34 HR factor at Kauffman) against Noah Cameron who has a 1.71 HR/9 rate. Warm weather conditions and the Royals' home field advantage create ideal conditions for power production."
     }
   ],
-  "hits_picks": [],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Riley Greene",
+      "team": "Detroit Tigers",
+      "opponent": "Atlanta Braves",
+      "game": "DET @ ATL",
+      "game_time": "4:15 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "121",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 82,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Season .353 BA (21 PA)",
+        "Bryce Elder 0.97 ISO allowed",
+        ".727 SLG indicates power development",
+        "Strong recent form metrics"
+      ],
+      "reasoning": "Greene's .353 BA with .727 SLG over 21 PA demonstrates elite early-season performance. Facing Bryce Elder (0.97 ISO allowed) provides favorable matchup conditions. The -162 line on the under indicates sharp money respecting Greene's recent performance."
+    }
+  ],
   "total_bases_picks": [
     {
       "rank": 1,
-      "player_name": "Bryan Reynolds",
-      "team": "Pittsburgh Pirates",
-      "opponent": "St. Louis Cardinals",
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "game_time": "TBD",
+      "player_name": "Ronald Acuna Jr.",
+      "team": "Atlanta Braves",
+      "opponent": "Detroit Tigers",
+      "game": "DET @ ATL",
+      "game_time": "4:15 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "122",
+      "czs_odds": "107",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 77,
+      "confidence_score": 80,
       "confidence_tier": "High",
       "key_factors": [
-        "Consistent producer",
-        "Home field advantage",
-        "Favorable matchup vs Cardinals"
+        "Season .500 SLG (14 PA)",
+        "27.3% barrel rate indicates power",
+        "Bryce Elder soft contact pitcher",
+        "Elite athlete velocity generation"
       ],
-      "reasoning": "Reynolds offers +122 over 1.5 total bases at home. His consistent production profile and the Pirates' home field advantage create positive expectation for reaching multiple bases."
-    },
-    {
-      "rank": 2,
-      "player_name": "Nathaniel Lowe",
-      "team": "Cincinnati Reds",
-      "opponent": "Colorado Rockies",
-      "game": "Colorado Rockies @ Cincinnati Reds",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "119",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 74,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Solid producer",
-        "Facing Colorado pitching",
-        "Reds home advantage"
-      ],
-      "reasoning": "Lowe shows +119 value over 1.5 bases against Colorado's weaker staff. The favorable matchup and Reds' dominant bullpen supporting run-scoring opportunities support the over."
+      "reasoning": "Acuna's .500 SLG and 27.3% barrel rate demonstrate elite power output early in the season. Facing Bryce Elder (0.97 ISO allowed) provides favorable conditions, and his athletic profile ensures consistent total bases production through both hits and extra-base hits."
     }
   ],
   "strikeout_picks": [
     {
       "rank": 1,
-      "player_name": "Paul Skenes",
+      "player_name": "Cristopher Sanchez",
       "pick_type": "pitcher",
-      "team": "Pittsburgh Pirates",
-      "opponent": "St. Louis Cardinals",
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "game_time": "TBD",
+      "team": "Philadelphia Phillies",
+      "opponent": "San Francisco Giants",
+      "game": "SF @ PHI",
+      "game_time": "4:35 PM",
       "best_book": "FD",
-      "fd_odds": "-130",
+      "fd_odds": "106",
       "mgm_odds": null,
       "czs_odds": null,
       "scr_odds": null,
@@ -179,11 +186,12 @@
       "confidence_score": 79,
       "confidence_tier": "High",
       "key_factors": [
-        "Elite strikeout pitcher",
-        "High K/9 rate",
-        "Home field advantage"
+        "Elite 11.23 K/9 rate",
+        "27.6% whiff rate",
+        "San Francisco K rate vulnerable at 16.2%",
+        "62 IP establishes large sample size"
       ],
-      "reasoning": "Skenes is a dominant young pitcher with strong strikeout metrics. His over 6.5 K line at -130 on FanDuel offers solid value against the Cardinals' strikeout-prone lineup."
+      "reasoning": "Sanchez's 11.23 K/9 is among the elite in baseball with an exceptional 27.6% whiff rate. The Giants' 16.2% K rate and tendency to swing and miss against elite stuff makes this an ideal matchup for strikeout production exceeding 6.5."
     },
     {
       "rank": 2,
@@ -191,78 +199,81 @@
       "pick_type": "pitcher",
       "team": "Milwaukee Brewers",
       "opponent": "Arizona Diamondbacks",
-      "game": "Arizona Diamondbacks @ Milwaukee Brewers",
-      "game_time": "TBD",
+      "game": "ARI @ MIL",
+      "game_time": "5:40 PM",
       "best_book": "FD",
       "fd_odds": "-172",
       "mgm_odds": null,
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "4.5",
-      "over_under_pick": "under",
-      "confidence_score": 71,
-      "confidence_tier": "Medium",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
       "key_factors": [
-        "Elite pitcher",
-        "Lower K line due to short start potential",
-        "Brewers home advantage"
+        "7.22 K/9 rate",
+        "20% whiff rate",
+        "Arizona 16.5% K rate",
+        "-172 heavy favorite indicates control"
       ],
-      "reasoning": "Woodruff at -172 under 4.5 K reflects potential short outing or contact-heavy approach. The heavy juice suggests sharp money expects lower strikeout volume in this matchup."
+      "reasoning": "Woodruff's 7.22 K/9 with 20% whiff rate provides consistent strikeout production. The Diamondbacks' 16.5% K rate makes them vulnerable to strikeout pitchers, and the strong -172 line indicates heavy Dominican hitter vulnerability to Woodruff's stuff."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
-      "prop_category": "OU",
-      "game": "Colorado Rockies @ Cincinnati Reds",
-      "game_time": "TBD",
-      "pick": "Over 9.0",
+      "prop_category": "ML",
+      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
+      "game_time": "4:35 PM",
+      "pick": "St. Louis Cardinals",
       "best_book": "CZS",
-      "fd_odds": "-105",
-      "mgm_odds": "-110",
-      "czs_odds": "100",
+      "fd_odds": "184",
+      "mgm_odds": "185",
+      "czs_odds": "185",
       "scr_odds": null,
-      "fd_line": "9.0",
-      "confidence_score": 80,
+      "fd_line": null,
+      "confidence_score": 77,
       "confidence_tier": "High",
       "key_factors": [
-        "Reds' elite offense",
-        "Colorado weak pitching",
-        "Reds dominant bullpen creates scoring opportunities"
+        "Paul Skenes 0.62 HR/9 (elite control)",
+        "Cardinals elite contact quality",
+        "Pittsburgh bullpen vulnerable",
+        "Skenes 9.31 K/9 dominance"
       ],
-      "reasoning": "Cincinnati's dominant April performance and Colorado's pitching vulnerabilities create a high-scoring environment. CZS offers the best value at +100 on the over."
+      "reasoning": "Paul Skenes has demonstrated Cy Young-caliber performance (0.62 HR/9, 9.31 K/9) against a vulnerable Pirates offense. The Cardinals' contact quality and Skenes' elite strikeout rate create a favorable matchup where Pittsburgh's bullpen will be taxed. The +185 represents good value for the superior pitching."
     },
     {
       "rank": 2,
-      "prop_category": "ML",
-      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
-      "game_time": "TBD",
-      "pick": "Pittsburgh Pirates",
-      "best_book": "CZS",
-      "fd_odds": "-220",
-      "mgm_odds": "-225",
-      "czs_odds": "-225",
+      "prop_category": "OU",
+      "game": "San Francisco Giants @ Philadelphia Phillies",
+      "game_time": "4:35 PM",
+      "pick": "Under",
+      "best_book": "FD",
+      "fd_odds": "-118",
+      "mgm_odds": "-105",
+      "czs_odds": null,
       "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 75,
+      "fd_line": "6.5",
+      "confidence_score": 74,
       "confidence_tier": "High",
       "key_factors": [
-        "Pirates home field advantage",
-        "Skenes elite performance",
-        "Cardinals recent struggles"
+        "Cristopher Sanchez 11.23 K/9 elite",
+        "Logan Webb 3.29 ERA (low run environment)",
+        "Giants weak offensive profile",
+        "Cool temperature 60\u00b0F dampens offense"
       ],
-      "reasoning": "Pirates' dominant home performance and Skenes' elite pitching create a favorable matchup. CZS and MGM offer identical -225 odds for the Pirates ML pick."
+      "reasoning": "Both pitchers provide elite strikeout and run suppression profiles. Sanchez (11.23 K/9) and Webb (3.29 ERA) create a low-scoring environment, while the 60\u00b0F temperature at Citizens Bank Park dampens offensive output. The 6.5 total appears inflated relative to these elite pitching performances."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Elly De La Cruz Over 0.5 HR @ CZS +280",
-      "Paul Skenes Over 6.5 K @ FD -130",
-      "Pittsburgh Pirates ML @ CZS -225"
+      "Elly De La Cruz HR +280 (CZS)",
+      "Cristopher Sanchez Over 6.5 K -106 (FD)",
+      "SF @ PHI Under 6.5 -118 (FD)"
     ],
-    "reasoning": "These three legs combine a power hitter in optimal conditions, elite pitcher strikeout potential, and home field advantage. The Pirates game creates natural correlation, while the Reds game provides diversification.",
-    "estimated_odds": "Approximately +180 to +220 parlay"
+    "reasoning": "This parlay combines elite pitcher strikeout production (Sanchez), favorable matchup for home runs (De La Cruz vs Lorenzen in favorable park), and low-scoring game environment. The negative correlation between strikeouts and run scoring creates logical synergy.",
+    "estimated_odds": "-110 (approximately +1080 combined)"
   },
-  "daily_summary": "Today's slate features Cincinnati's dominant bullpen and offense creating high-scoring opportunities against weak Colorado pitching, while Pittsburgh's home advantage with elite young pitcher Skenes faces a struggling Cardinals squad. Key value plays focus on power hitters in home parks and elite strikeout pitchers facing favorable matchups.",
-  "best_bet": "Elly De La Cruz Over 0.5 HR @ Caesars +280 - Elite power prospect in optimal home conditions against Colorado's weak pitching staff offers the strongest risk/reward of the day."
+  "daily_summary": "Today's slate features elite pitching with Cristopher Sanchez, Brandon Woodruff, and Paul Skenes all providing 9+ K/9 production, creating a strikeout-heavy environment. The Elly De La Cruz vs Michael Lorenzen matchup offers explosive home run potential given De La Cruz's recent 115.3 mph barrel and Coors Field's extreme park factor. Weather conditions range from cool (48\u00b0F Baltimore) to warm (70\u00b0F Oakland), with most games in moderate 56-64\u00b0F range favoring well-controlled pitching.",
+  "best_bet": "Elly De La Cruz HR +280 vs Rockies/Reds matchup combining recent elite exit velo, favorable pitcher matchup, and extreme park factor environment."
 }
