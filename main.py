@@ -28,13 +28,31 @@ async def run_all():
 
     # ── STEP 2: FETCH MLB ODDS ─────────────────────────
     print(f"💰 STEP 2 — Fetching MLB odds from 4 books...")
+    odds_data = {}
     try:
         from odds_fetcher import fetch_all_odds
         fetch_all_odds()
+
+        # Load the saved odds so we can pass games to news fetcher
+        odds_file = f"logs/{scrape_date}_odds.json"
+        if os.path.exists(odds_file):
+            with open(odds_file, 'r') as f:
+                odds_data = json.load(f)
+
         print(f"✅ Step 2 complete\n")
     except Exception as e:
         print(f"❌ Odds fetcher failed: {e}")
         print(f"⚠️  Continuing without fresh odds...\n")
+
+    # ── STEP 2.5: FETCH MLB NEWS ───────────────────────
+    print(f"📰 STEP 2.5 — Fetching MLB news...")
+    mlb_news = {}
+    try:
+        from news_fetcher import fetch_mlb_news
+        mlb_news = fetch_mlb_news(odds_data.get('games', []), scrape_date)
+        print(f"✅ Step 2.5 complete\n")
+    except Exception as e:
+        print(f"⚠️ MLB news failed (skipping): {e}\n")
 
     # ── STEP 3: GENERATE MLB PICKS ─────────────────────
     print(f"🧠 STEP 3 — Generating MLB picks with Claude...")
@@ -92,32 +110,56 @@ async def run_all():
     except Exception as e:
         print(f"⚠️ NBA scraper failed (skipping): {e}\n")
 
-    print("\n🏀 STEP 3.65 — Scraping NBA Research page...")
+    # ── STEP 3.65: NBA RESEARCH PAGE ──────────────────
+    print(f"🏀 STEP 3.65 — Scraping NBA Research page...")
     try:
+        import scraper as scraper_module
+        from playwright.async_api import async_playwright
+
+        headless = os.getenv("HEADLESS", "false").lower() == "true"
+
         async def run_research():
             async with async_playwright() as p:
                 browser = await p.chromium.launch(headless=headless)
                 context = await browser.new_context()
                 page = await context.new_page()
-                await scraper.login(page)
-                result = await scraper.scrape_nba_research(page, scrape_date)
+                await scraper_module.login(page)
+                result = await scraper_module.scrape_nba_research(page, scrape_date)
                 await browser.close()
                 return result
-        import asyncio
-        research_data = asyncio.run(run_research())
-        print(f"   ✅ Step 3.65 complete — {research_data['total']} research rows")
+
+        research_data = await run_research()
+        print(f"✅ Step 3.65 complete — {research_data['total']} research rows\n")
     except Exception as e:
-        print(f"   ⚠️ Research scrape failed: {e}")
+        print(f"⚠️ Research scrape failed (skipping): {e}\n")
 
     # ── STEP 3.7: NBA ODDS ─────────────────────────────
     print(f"🏀 STEP 3.7 — Fetching NBA odds...")
     nba_odds = None
+    nba_odds_data = {}
     try:
         from odds_fetcher import fetch_nba_odds
         nba_odds = fetch_nba_odds()
+
+        # Load saved NBA odds for news fetcher
+        nba_odds_file = f"logs/{scrape_date}_nba_odds.json"
+        if os.path.exists(nba_odds_file):
+            with open(nba_odds_file, 'r') as f:
+                nba_odds_data = json.load(f)
+
         print(f"✅ Step 3.7 complete\n")
     except Exception as e:
         print(f"⚠️ NBA odds failed (skipping): {e}\n")
+
+    # ── STEP 3.75: FETCH NBA NEWS ──────────────────────
+    print(f"📰 STEP 3.75 — Fetching NBA news...")
+    nba_news = {}
+    try:
+        from news_fetcher import fetch_nba_news
+        nba_news = fetch_nba_news(nba_odds_data.get('games', []), scrape_date)
+        print(f"✅ Step 3.75 complete\n")
+    except Exception as e:
+        print(f"⚠️ NBA news failed (skipping): {e}\n")
 
     # ── STEP 3.8: NBA PICKS ────────────────────────────
     print(f"🏀 STEP 3.8 — Generating NBA picks...")

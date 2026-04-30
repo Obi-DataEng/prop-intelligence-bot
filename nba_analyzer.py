@@ -3,6 +3,7 @@ import json
 import os
 from datetime import datetime
 from dotenv import load_dotenv
+from news_fetcher import load_news, format_news_for_prompt
 
 load_dotenv()
 
@@ -100,6 +101,8 @@ def build_nba_prompt(data, odds_text, scrape_date, odds_data=None):
     research_rows = research_data.get('rows', [])
     # Limit to 300 rows to avoid token overload — sorted keeps best rated first
     research_text = '\n'.join(research_rows[:300])
+    news_data = load_news(scrape_date, sport="nba")  # or "nba"
+    news_text = format_news_for_prompt(news_data)
 
     player_stats_text = data.get('nba_player_stats', {}).get('fullText', '')[:4000]
     def_matchups_text = data.get('nba_def_matchups', {}).get('fullText', '')[:3000]
@@ -156,6 +159,9 @@ COLUMNS: PF_Rating | Team | Pos | Player | Prop | L10_Avg | L5_Avg | Odds | Stre
 
 === TODAY'S ODDS (Lines + Player Props) ===
 {odds_text}
+
+=== RECENT NEWS & INJURY CONTEXT ===
+{news_text}
 
 INSTRUCTIONS:
 Generate EXACTLY 8 total NBA picks across ALL categories combined for today's games.

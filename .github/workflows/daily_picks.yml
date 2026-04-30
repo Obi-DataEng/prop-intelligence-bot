@@ -56,6 +56,7 @@ jobs:
           echo "GMAIL_RECIPIENT_2=${{ secrets.GMAIL_RECIPIENT_2 }}" >> .env
           echo "GMAIL_RECIPIENT_3=${{ secrets.GMAIL_RECIPIENT_3 }}" >> .env
           echo "HEADLESS=true" >> .env
+          echo "NEWS_API_KEY=${{ secrets.NEWS_API_KEY }}" >> .env
 
       - name: Run MLB Picks Bot
         run: python main.py

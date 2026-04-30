@@ -3,6 +3,7 @@ import json
 import os
 from datetime import datetime
 from dotenv import load_dotenv
+from news_fetcher import load_news, format_news_for_prompt
 
 load_dotenv()
 
@@ -137,6 +138,8 @@ def build_prompt(parsed_data, odds_data, scrape_date):
     park_text = json.dumps(parsed_data.get('park_factors', [])[:15], indent=2)
     exit_velo_text = parsed_data.get('exit_velo_text', '')[:1500]
     odds_text = format_odds_for_prompt(odds_data)
+    news_data = load_news(scrape_date, sport="mlb")  # or "nba"
+    news_text = format_news_for_prompt(news_data)
 
     prompt = f"""You are an elite MLB sports betting analyst. Today is {scrape_date}.
 
@@ -161,6 +164,9 @@ Analyze the following data and generate the BEST picks for today organized by ca
 
 == EXIT VELO (Recent) ==
 {exit_velo_text}
+
+=== RECENT NEWS & INJURY CONTEXT ===
+{news_text}
 
 SELECTION RULES:
 - Generate EXACTLY 8 total picks across ALL categories combined
