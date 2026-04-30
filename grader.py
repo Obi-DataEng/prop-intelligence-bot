@@ -10,10 +10,8 @@ import unicodedata
 load_dotenv()
 
 API_KEY = os.getenv("ODDS_API_KEY")
-BALLDONTLIE_KEY = os.getenv("BALLDONTLIE_API_KEY")
 BASE_URL = "https://api.the-odds-api.com/v4"
 MLB_STATS_URL = "https://statsapi.mlb.com/api/v1"
-BDL_URL = "https://api.balldontlie.io/v1"
 FLAT_BET = 5.00
 DB_PATH = "data/mlb_picks.db"
 
@@ -190,68 +188,103 @@ def get_mlb_boxscores(date_str):
 # ─────────────────────────────────────────────
 
 def get_nba_boxscores(date_str):
-    """Fetch all NBA box scores for a given date."""
+    """Fetch all NBA box scores for a given date using NBA Stats API (no key needed)."""
     print(f"\n   🔍 Fetching NBA box scores for {date_str}...")
     try:
-        headers = {}
-        if BALLDONTLIE_KEY:
-            headers['Authorization'] = BALLDONTLIE_KEY
-
-        params = {
-            "dates[]": date_str,
-            "per_page": 100
+        # NBA Stats API — free, no key required
+        headers = {
+            'User-Agent': 'Mozilla/5.0',
+            'Referer': 'https://www.nba.com/',
+            'Accept': 'application/json'
         }
-        r = requests.get(
-            f"{BDL_URL}/stats",
-            headers=headers,
-            params=params,
-            timeout=30
-        )
 
+        # Get scoreboard for the date
+        scoreboard_url = "https://stats.nba.com/stats/scoreboardV2"
+        params = {
+            "GameDate": date_str,
+            "LeagueID": "00",
+            "DayOffset": "0"
+        }
+        r = requests.get(scoreboard_url, headers=headers, params=params, timeout=30)
         if r.status_code != 200:
-            print(f"   ❌ BallDontLie error: {r.status_code}")
+            print(f"   ❌ NBA scoreboard error: {r.status_code}")
             return {}
 
-        data = r.json().get('data', [])
+        data = r.json()
+        result_sets = {rs['name']: rs for rs in data.get('resultSets', [])}
+        game_header = result_sets.get('GameHeader', {})
+        headers_list = game_header.get('headers', [])
+        rows = game_header.get('rowSet', [])
+
+        game_ids = []
+        game_id_idx = headers_list.index('GAME_ID') if 'GAME_ID' in headers_list else None
+        status_idx = headers_list.index('GAME_STATUS_TEXT') if 'GAME_STATUS_TEXT' in headers_list else None
+
+        for row in rows:
+            if game_id_idx is not None:
+                status = row[status_idx] if status_idx is not None else ''
+                if 'Final' in str(status):
+                    game_ids.append(row[game_id_idx])
+
+        if not game_ids:
+            print(f"   ⚠️ No final NBA games found for {date_str}")
+            return {}
+
         player_stats = {}
 
-        for entry in data:
-            player = entry.get('player', {})
-            name = f"{player.get('first_name', '')} {player.get('last_name', '')}".strip()
-
-            min_str = entry.get('min', '0') or '0'
-            try:
-                if ':' in str(min_str):
-                    mins = int(min_str.split(':')[0])
-                else:
-                    mins = int(float(min_str))
-            except:
-                mins = 0
-
-            did_play = mins > 0
-
-            pts = entry.get('pts', 0) or 0
-            reb = entry.get('reb', 0) or 0
-            ast = entry.get('ast', 0) or 0
-            fg3m = entry.get('fg3m', 0) or 0
-            stl = entry.get('stl', 0) or 0
-            blk = entry.get('blk', 0) or 0
-
-            player_stats[name] = {
-                'did_play': did_play,
-                'pts': pts,
-                'reb': reb,
-                'ast': ast,
-                'fg3m': fg3m,
-                'stl': stl,
-                'blk': blk,
-                'pra': pts + reb + ast,
-                'pr': pts + reb,
-                'pa': pts + ast,
-                'min': mins
+        for game_id in game_ids:
+            box_url = "https://stats.nba.com/stats/boxscoretraditionalv2"
+            box_params = {
+                "GameID": game_id,
+                "StartPeriod": 0,
+                "EndPeriod": 10,
+                "StartRange": 0,
+                "EndRange": 0,
+                "RangeType": 0
             }
+            box_r = requests.get(box_url, headers=headers, params=box_params, timeout=30)
+            if box_r.status_code != 200:
+                continue
 
-        print(f"   ✅ {len(player_stats)} NBA players found")
+            box_data = box_r.json()
+            for rs in box_data.get('resultSets', []):
+                if rs['name'] == 'PlayerStats':
+                    h = rs['headers']
+                    for row in rs['rowSet']:
+                        rd = dict(zip(h, row))
+                        name = rd.get('PLAYER_NAME', '')
+                        min_str = rd.get('MIN', '0') or '0'
+                        try:
+                            if ':' in str(min_str):
+                                mins = int(min_str.split(':')[0])
+                            else:
+                                mins = int(float(min_str))
+                        except:
+                            mins = 0
+
+                        did_play = mins > 0
+                        pts = rd.get('PTS', 0) or 0
+                        reb = rd.get('REB', 0) or 0
+                        ast = rd.get('AST', 0) or 0
+                        fg3m = rd.get('FG3M', 0) or 0
+                        stl = rd.get('STL', 0) or 0
+                        blk = rd.get('BLK', 0) or 0
+
+                        player_stats[name] = {
+                            'did_play': did_play,
+                            'pts': pts,
+                            'reb': reb,
+                            'ast': ast,
+                            'fg3m': fg3m,
+                            'stl': stl,
+                            'blk': blk,
+                            'pra': pts + reb + ast,
+                            'pr': pts + reb,
+                            'pa': pts + ast,
+                            'min': mins
+                        }
+
+        print(f"   ✅ {len(player_stats)} NBA players found across {len(game_ids)} games")
         return player_stats
 
     except Exception as e:
