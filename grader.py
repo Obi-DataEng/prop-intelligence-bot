@@ -73,7 +73,6 @@ def grade_result(actual, line, over_under, did_play, odds, bet=FLAT_BET):
     Universal grading function for all props.
     Returns (result, profit_loss)
     """
-    # Player didn't play = push
     if not did_play:
         return 'push', 0
 
@@ -83,7 +82,6 @@ def grade_result(actual, line, over_under, did_play, odds, bet=FLAT_BET):
     except:
         return 'pending', 0
 
-    # Exactly on the line = push
     if actual == line:
         return 'push', 0
 
@@ -94,7 +92,7 @@ def grade_result(actual, line, over_under, did_play, odds, bet=FLAT_BET):
             return 'win', calc_payout(odds, bet)
         else:
             return 'loss', -bet
-    else:  # under
+    else:
         if actual < line:
             return 'win', calc_payout(odds, bet)
         else:
@@ -105,13 +103,9 @@ def grade_result(actual, line, over_under, did_play, odds, bet=FLAT_BET):
 # ─────────────────────────────────────────────
 
 def get_mlb_boxscores(date_str):
-    """
-    Fetch all MLB box scores for a given date.
-    Returns dict of {player_name: stats}
-    """
+    """Fetch all MLB box scores for a given date."""
     print(f"\n   🔍 Fetching MLB box scores for {date_str}...")
     try:
-        # Get schedule
         schedule_url = f"{MLB_STATS_URL}/schedule"
         params = {
             "sportId": 1,
@@ -152,7 +146,6 @@ def get_mlb_boxscores(date_str):
                     'total': home_score + away_score
                 })
 
-                # Get box score
                 box_url = f"{MLB_STATS_URL}/game/{game_pk}/boxscore"
                 box_r = requests.get(box_url, timeout=30)
                 if box_r.status_code != 200:
@@ -168,7 +161,6 @@ def get_mlb_boxscores(date_str):
                         batting = stats.get('batting', {})
                         pitching = stats.get('pitching', {})
 
-                        # Check if player actually played
                         at_bats = batting.get('atBats', 0)
                         plate_appearances = batting.get('plateAppearances', 0)
                         innings_pitched = pitching.get('inningsPitched', '0')
@@ -198,10 +190,7 @@ def get_mlb_boxscores(date_str):
 # ─────────────────────────────────────────────
 
 def get_nba_boxscores(date_str):
-    """
-    Fetch all NBA box scores for a given date.
-    Returns dict of {player_name: stats}
-    """
+    """Fetch all NBA box scores for a given date."""
     print(f"\n   🔍 Fetching NBA box scores for {date_str}...")
     try:
         headers = {}
@@ -231,7 +220,6 @@ def get_nba_boxscores(date_str):
             name = f"{player.get('first_name', '')} {player.get('last_name', '')}".strip()
 
             min_str = entry.get('min', '0') or '0'
-            # Parse minutes — format is "MM:SS" or just "0"
             try:
                 if ':' in str(min_str):
                     mins = int(min_str.split(':')[0])
@@ -271,7 +259,7 @@ def get_nba_boxscores(date_str):
         return {}
 
 # ─────────────────────────────────────────────
-# GAME PICK GRADING (from scores)
+# GAME PICK GRADING
 # ─────────────────────────────────────────────
 
 def grade_game_pick(pick, game_results):
@@ -331,6 +319,7 @@ def grade_game_pick(pick, game_results):
 
 def init_db():
     """Initialize database with correct schema"""
+    os.makedirs("data", exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
@@ -371,6 +360,21 @@ def init_db():
     conn.commit()
     conn.close()
 
+def already_graded(pick_date, sport):
+    """Check if picks for this date/sport are already graded in the DB"""
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cursor = conn.cursor()
+        cursor.execute('''
+            SELECT COUNT(*) FROM pick_results
+            WHERE pick_date = ? AND sport = ?
+        ''', (pick_date, sport))
+        count = cursor.fetchone()[0]
+        conn.close()
+        return count > 0
+    except:
+        return False
+
 def save_pick_result(pick_date, graded_date, sport, category, player_name,
                      game, over_under, line, odds, best_book,
                      result, actual_value, profit_loss):
@@ -405,13 +409,13 @@ def save_parlay_result(pick_date, graded_date, sport, legs,
     conn.close()
 
 def get_cumulative_stats():
-    """Get cumulative W-L-P and ROI per category"""
+    """Get cumulative W-L-P and ROI per category across ALL dates"""
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     stats = {}
 
     try:
-        # Per category stats
+        # Per category stats — ALL time
         cursor.execute('''
             SELECT
                 sport,
@@ -445,7 +449,7 @@ def get_cumulative_stats():
                 'roi': round(roi, 1)
             }
 
-        # Parlay stats
+        # Parlay stats — ALL time
         cursor.execute('''
             SELECT
                 sport,
@@ -476,7 +480,7 @@ def get_cumulative_stats():
                 'roi': round(roi, 1)
             }
 
-        # Overall
+        # Overall — ALL time
         cursor.execute('''
             SELECT
                 SUM(CASE WHEN result = 'win' THEN 1 ELSE 0 END),
@@ -514,6 +518,45 @@ def get_cumulative_stats():
     conn.close()
     return stats
 
+def get_daily_summary_from_db(pick_date):
+    """Pull today's graded results from DB for the email summary"""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    summary = {}
+
+    try:
+        cursor.execute('''
+            SELECT
+                sport,
+                category,
+                SUM(CASE WHEN result = 'win' THEN 1 ELSE 0 END) as wins,
+                SUM(CASE WHEN result = 'loss' THEN 1 ELSE 0 END) as losses,
+                SUM(CASE WHEN result = 'push' THEN 1 ELSE 0 END) as pushes,
+                SUM(CASE WHEN result = 'pending' THEN 1 ELSE 0 END) as pending,
+                SUM(profit_loss) as profit
+            FROM pick_results
+            WHERE pick_date = ?
+            GROUP BY sport, category
+        ''', (pick_date,))
+        rows = cursor.fetchall()
+
+        for row in rows:
+            sport, cat, wins, losses, pushes, pending, profit = row
+            key = f"{sport} - {cat}"
+            summary[key] = {
+                'wins': wins or 0,
+                'losses': losses or 0,
+                'pushes': pushes or 0,
+                'pending': pending or 0,
+                'profit': round(profit or 0, 2)
+            }
+
+    except Exception as e:
+        print(f"   ❌ Daily summary error: {e}")
+
+    conn.close()
+    return summary
+
 # ─────────────────────────────────────────────
 # MLB GRADER
 # ─────────────────────────────────────────────
@@ -542,17 +585,14 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
             ou = pick.get(ou_field, 'over') if ou_field else 'over'
             odds = pick.get('fd_odds') or pick.get('czs_odds') or pick.get('mgm_odds')
 
-            # HR picks always over
             if cat == 'HR':
                 ou = 'over'
                 line = 0.5
 
-            # Strikeouts — check pick_type for pitcher vs batter
             if cat == 'K':
                 stat_field = 'strikeouts_pitcher' if 'pitcher' in str(pick_type).lower() \
                              else 'strikeouts_batter'
 
-            # Fuzzy match player name
             matched_name, score = fuzzy_match_player(player_name, api_players)
 
             if not matched_name:
@@ -570,14 +610,10 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
                     result, pl = 'pending', 0
                     actual_value = None
 
-                if result == 'win':
-                    wins += 1
-                elif result == 'loss':
-                    losses += 1
-                elif result == 'push':
-                    pushes += 1
-                else:
-                    pending += 1
+                if result == 'win': wins += 1
+                elif result == 'loss': losses += 1
+                elif result == 'push': pushes += 1
+                else: pending += 1
 
                 profit += pl
 
@@ -745,27 +781,22 @@ def grade_nba_picks(nba_picks_data, nba_player_stats, pick_date, graded_date):
         'profit': round(profit, 2)
     }
 
-    # NBA Game picks
+    # NBA Game picks — pending until scores added
     game_picks = nba_picks_data.get('game_picks', [])
     wins = losses = pushes = pending = 0
-    profit = 0
 
     for pick in game_picks:
-        pick_type = pick.get('pick_type', 'ML')
         pick_team = pick.get('pick', '')
         line = pick.get('line')
-        odds = line  # for NBA game picks the line is the odds
+        odds = line
         game = pick.get('game', '')
-        ou = 'over'
 
-        # NBA game picks need scores — mark pending for now
-        # Will be graded when we add NBA scores API
         result, pl = 'pending', 0
         pending += 1
 
         save_pick_result(
             pick_date, graded_date, 'NBA', 'Game',
-            pick_team, game, ou, None, odds,
+            pick_team, game, 'over', None, odds,
             pick.get('best_book', ''), result, None, pl
         )
 
@@ -782,17 +813,13 @@ def grade_nba_picks(nba_picks_data, nba_player_stats, pick_date, graded_date):
 # ─────────────────────────────────────────────
 
 def grade_parlay(parlay, pick_date, graded_date, sport):
-    """
-    Parlay grading — marked pending until we can verify all legs.
-    In future we can auto-grade if all leg results are known.
-    """
+    """Save parlay as pending for manual grading"""
     if not parlay or not parlay.get('legs'):
         return
 
     legs = parlay.get('legs', [])
     estimated_odds = parlay.get('estimated_odds', 'N/A')
 
-    # For now mark as pending — manual grade via update script
     save_parlay_result(
         pick_date, graded_date, sport,
         legs, estimated_odds, 'pending', 0
@@ -804,7 +831,7 @@ def grade_parlay(parlay, pick_date, graded_date, sport):
 # ─────────────────────────────────────────────
 
 def run_grader():
-    """Main grader — runs at 9 AM ET to grade yesterday's picks"""
+    """Main grader — grades yesterday's picks, returns daily + cumulative stats"""
     print(f"\n{'='*50}")
     print(f"📊 Grading yesterday's picks...")
     print(f"{'='*50}\n")
@@ -812,10 +839,8 @@ def run_grader():
     yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
     graded_date = datetime.now().strftime("%Y-%m-%d")
 
-    # Init DB
     init_db()
 
-    # Load yesterday's MLB picks
     mlb_file = f"logs/{yesterday}_picks.json"
     nba_file = f"logs/{yesterday}_nba_picks.json"
 
@@ -837,53 +862,68 @@ def run_grader():
         print(f"   ⚠️ No NBA picks file for {yesterday}")
 
     if not mlb_picks and not nba_picks:
-        return None, None
+        cumulative = get_cumulative_stats()
+        return None, cumulative
 
     # Fetch box scores
-    mlb_player_stats, game_results = get_mlb_boxscores(yesterday)
+    mlb_player_stats, game_results = get_mlb_boxscores(yesterday) if mlb_picks else ({}, [])
     nba_player_stats = get_nba_boxscores(yesterday) if nba_picks else {}
 
     graded_summary = {}
 
-    # Grade MLB
+    # Grade MLB — skip if already graded
     if mlb_picks and mlb_player_stats:
-        print(f"\n⚾ Grading MLB picks...")
-        mlb_summary = grade_mlb_picks(
-            mlb_picks, mlb_player_stats,
-            game_results, yesterday, graded_date
-        )
+        if already_graded(yesterday, 'MLB'):
+            print(f"   ⚠️ MLB picks for {yesterday} already graded — skipping duplicates")
+            mlb_summary = get_daily_summary_from_db(yesterday)
+            mlb_summary = {k.replace('MLB - ', ''): v
+                           for k, v in mlb_summary.items() if k.startswith('MLB')}
+        else:
+            print(f"\n⚾ Grading MLB picks...")
+            mlb_summary = grade_mlb_picks(
+                mlb_picks, mlb_player_stats,
+                game_results, yesterday, graded_date
+            )
+            grade_parlay(mlb_picks.get('best_parlay'), yesterday, graded_date, 'MLB')
+
         graded_summary.update({f"MLB - {k}": v for k, v in mlb_summary.items()})
-        grade_parlay(mlb_picks.get('best_parlay'), yesterday, graded_date, 'MLB')
 
-    # Grade NBA
+    # Grade NBA — skip if already graded
     if nba_picks and nba_player_stats:
-        print(f"\n🏀 Grading NBA picks...")
-        nba_summary = grade_nba_picks(
-            nba_picks, nba_player_stats,
-            yesterday, graded_date
-        )
-        graded_summary.update({f"NBA - {k}": v for k, v in nba_summary.items()})
-        grade_parlay(nba_picks.get('best_parlay'), yesterday, graded_date, 'NBA')
+        if already_graded(yesterday, 'NBA'):
+            print(f"   ⚠️ NBA picks for {yesterday} already graded — skipping duplicates")
+            nba_summary = get_daily_summary_from_db(yesterday)
+            nba_summary = {k.replace('NBA - ', ''): v
+                           for k, v in nba_summary.items() if k.startswith('NBA')}
+        else:
+            print(f"\n🏀 Grading NBA picks...")
+            nba_summary = grade_nba_picks(
+                nba_picks, nba_player_stats,
+                yesterday, graded_date
+            )
+            grade_parlay(nba_picks.get('best_parlay'), yesterday, graded_date, 'NBA')
 
-    # Get cumulative stats
+        graded_summary.update({f"NBA - {k}": v for k, v in nba_summary.items()})
+
+    # Get cumulative stats across ALL dates
     cumulative = get_cumulative_stats()
 
-    # Print summary
+    # Print daily summary
     print(f"\n📊 RESULTS FOR {yesterday}")
     print(f"{'='*50}")
-
     for cat, stats in graded_summary.items():
         w = stats['wins']
         l = stats['losses']
         p = stats['pushes']
-        pend = stats['pending']
+        pend = stats.get('pending', 0)
         total = w + l + p
         rate = f"{w/total*100:.0f}%" if total > 0 else "—"
         print(f"  {cat:25} {w}W - {l}L - {p}P"
               f"{f' ({pend} pending)' if pend else ''}"
               f" | {rate} | ${stats['profit']:+.2f}")
 
-    print(f"\n📈 CUMULATIVE RECORD")
+    # Print cumulative
+    print(f"\n📈 CUMULATIVE RECORD (All Time)")
     print(f"{'='*50}")
     for cat, stats in cumulative.items():
         if cat == 'OVERALL':

@@ -55,8 +55,8 @@ jobs:
           echo "GMAIL_RECIPIENT=${{ secrets.GMAIL_RECIPIENT }}" >> .env
           echo "GMAIL_RECIPIENT_2=${{ secrets.GMAIL_RECIPIENT_2 }}" >> .env
           echo "GMAIL_RECIPIENT_3=${{ secrets.GMAIL_RECIPIENT_3 }}" >> .env
-          echo "HEADLESS=true" >> .env
           echo "NEWS_API_KEY=${{ secrets.NEWS_API_KEY }}" >> .env
+          echo "HEADLESS=true" >> .env
 
       - name: Run MLB Picks Bot
         run: python main.py
@@ -68,13 +68,24 @@ jobs:
           GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           GMAIL_RECIPIENT: ${{ secrets.GMAIL_RECIPIENT }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
 
       - name: Commit logs to repo
         run: |
           git config --global user.email "bot@github.com"
           git config --global user.name "Picks Bot"
           git add -f logs/*.json
-          git commit -m "Add picks logs for $(date +%Y-%m-%d)" || echo "No changes to commit"
+          git commit -m "Add picks logs for $(date +%Y-%m-%d)" || echo "No log changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit DB to repo
+        run: |
+          git config --global user.email "bot@github.com"
+          git config --global user.name "Picks Bot"
+          git add -f data/mlb_picks.db
+          git commit -m "Update picks DB for $(date +%Y-%m-%d)" || echo "No DB changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
