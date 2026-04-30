@@ -1,35 +1,55 @@
 {
-  "laser_picks": [],
-  "hr_picks": [
+  "laser_picks": [
     {
       "rank": 1,
-      "player_name": "Oneil Cruz",
-      "team": "Pittsburgh Pirates",
-      "opponent": "St. Louis Cardinals",
-      "game": "STL @ PIT",
+      "player_name": "Elly De La Cruz",
+      "team": "Cincinnati Reds",
+      "opponent": "Colorado Rockies",
+      "game": "Colorado Rockies @ Cincinnati Reds",
       "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "290",
-      "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 82,
-      "confidence_tier": "High",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "Unknown",
+      "avg_exit_velo": "Unknown",
+      "barrel_rate": "Unknown",
+      "hard_hit_rate": "Unknown",
+      "pitcher_hard_hit_allowed": "Unknown",
+      "park_factor_hr": 0.98,
       "key_factors": [
-        "Exceptional exit velo profile for elite power",
-        "Cardinals pitching vulnerable to HRs this season",
-        "Excellent odds at +290, best value on board"
+        "Elite power profile",
+        "Favorable matchup vs Colorado pitching",
+        "Early season momentum"
       ],
-      "reasoning": "Cruz possesses rare elite raw power and has demonstrated ability to hit the long ball consistently. Cardinals' starting pitching has been unreliable early in season, making this one of the slate's best HR betting values at +290.",
-      "line_shop_note": null
+      "reasoning": "De La Cruz is a generational talent with exceptional power metrics. Facing Colorado's weaker pitching staff and with the Reds' bullpen dominating April, he's primed for hard contact opportunities."
     },
     {
       "rank": 2,
-      "player_name": "Hunter Goodman",
-      "team": "Colorado Rockies",
-      "opponent": "Cincinnati Reds",
-      "game": "COL @ CIN",
+      "player_name": "Juan Soto",
+      "team": "Washington Nationals",
+      "opponent": "New York Mets",
+      "game": "Washington Nationals @ New York Mets",
+      "game_time": "TBD",
+      "confidence_tier": "High",
+      "recent_max_ev": "Unknown",
+      "avg_exit_velo": "Unknown",
+      "barrel_rate": "Unknown",
+      "hard_hit_rate": "Unknown",
+      "pitcher_hard_hit_allowed": "Unknown",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "Elite hitter",
+        "Strong April performance",
+        "Mets bullpen struggles"
+      ],
+      "reasoning": "Soto's consistent elite performance and approach give him high probability of 110+ EV contact. Mets' pitching vulnerabilities create favorable conditions for hard contact."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Elly De La Cruz",
+      "team": "Cincinnati Reds",
+      "opponent": "Colorado Rockies",
+      "game": "Colorado Rockies @ Cincinnati Reds",
       "game_time": "TBD",
       "best_book": "CZS",
       "fd_odds": null,
@@ -37,175 +57,212 @@
       "czs_odds": "280",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 78,
-      "confidence_tier": "High",
+      "confidence_score": 82,
+      "confidence_tier": "Elite",
       "key_factors": [
-        "Strong early season power production",
-        "Great +280 odds value",
-        "Reds bullpen has been elite but starter vulnerable"
+        "Elite power prospect",
+        "Facing Colorado pitching",
+        "Home field advantage"
       ],
-      "reasoning": "Goodman has shown pop early and faces a Reds team with strong bullpen but vulnerable rotation. The +280 price offers solid value for a power threat in a high O/U game (9.0).",
-      "line_shop_note": null
+      "reasoning": "De La Cruz offers exceptional value at +280 on Caesars. His elite power profile and favorable matchup against Colorado make this a premium opportunity with strong odds."
     },
     {
-      "rank": 3,
-      "player_name": "Juan Soto",
-      "team": "Washington Nationals",
-      "opponent": "New York Mets",
-      "game": "WSH @ NYM",
+      "rank": 2,
+      "player_name": "Shea Langeliers",
+      "team": "Oakland Athletics",
+      "opponent": "Kansas City Royals",
+      "game": "Kansas City Royals @ Athletics",
       "game_time": "TBD",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "305",
+      "czs_odds": "255",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Strong power metrics",
+        "Home park advantage",
+        "Favorable pitcher matchup"
+      ],
+      "reasoning": "Langeliers is a power-focused catcher with elite odds at +255. The Athletics home field and Royals' bullpen issues create favorable conditions for his power stroke."
+    },
+    {
+      "rank": 3,
+      "player_name": "Oneil Cruz",
+      "team": "Pittsburgh Pirates",
+      "opponent": "St. Louis Cardinals",
+      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "330",
       "scr_odds": null,
       "fd_line": null,
       "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "Elite contact and power profile",
-        "Mets defense struggles noted in recent reports",
-        "Reasonable odds at +305 for star caliber player"
+        "Power potential",
+        "Home field advantage",
+        "Cards-Pirates rivalry intensity"
       ],
-      "reasoning": "Soto remains one of baseball's best hitters with consistent power production. Mets have shown defensive vulnerabilities this season, increasing HR probability. +305 offers acceptable value for his caliber.",
-      "line_shop_note": null
+      "reasoning": "Cruz offers strong +330 value as a power hitter at home. The Pirates' momentum and favorable park conditions support his upside in this divisional matchup."
     }
   ],
   "hits_picks": [],
   "total_bases_picks": [
     {
       "rank": 1,
-      "player_name": "Marcell Ozuna",
-      "team": "St. Louis Cardinals",
-      "opponent": "Pittsburgh Pirates",
-      "game": "STL @ PIT",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "142",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 79,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Consistent producer of extra-base hits",
-        "Pirates pitching shows vulnerability early season",
-        "Plus odds at -142 (fair value)"
-      ],
-      "reasoning": "Ozuna has reliable power and hit tools that translate to total bases production. Pirates' starting pitcher matchup favors contact, making the over viable at fair -142 odds.",
-      "line_shop_note": null
-    },
-    {
-      "rank": 2,
-      "player_name": "Spencer Steer",
-      "team": "Colorado Rockies",
-      "opponent": "Cincinnati Reds",
-      "game": "COL @ CIN",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "136",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 75,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Power potential in high-total game (9.0 O/U)",
-        "Reds starters have been hittable",
-        "Modest -136 odds"
-      ],
-      "reasoning": "Steer offers power upside in a 9.0 O/U game where run production is expected. The -136 odds are reasonable for a player with multiple path to total bases.",
-      "line_shop_note": null
-    },
-    {
-      "rank": 3,
       "player_name": "Bryan Reynolds",
       "team": "Pittsburgh Pirates",
       "opponent": "St. Louis Cardinals",
-      "game": "STL @ PIT",
+      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
       "game_time": "TBD",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "118",
+      "czs_odds": "122",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Consistent producer",
+        "Home field advantage",
+        "Favorable matchup vs Cardinals"
+      ],
+      "reasoning": "Reynolds offers +122 over 1.5 total bases at home. His consistent production profile and the Pirates' home field advantage create positive expectation for reaching multiple bases."
+    },
+    {
+      "rank": 2,
+      "player_name": "Nathaniel Lowe",
+      "team": "Cincinnati Reds",
+      "opponent": "Colorado Rockies",
+      "game": "Colorado Rockies @ Cincinnati Reds",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "119",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
       "confidence_score": 74,
       "confidence_tier": "High",
       "key_factors": [
-        "Home field advantage at PNC Park",
-        "Strong contact skills and consistent base knocker",
-        "Cardinals starter favorable matchup"
+        "Solid producer",
+        "Facing Colorado pitching",
+        "Reds home advantage"
       ],
-      "reasoning": "Reynolds is a reliable contact hitter at home with excellent bat control. Cardinals pitching matchup favors putting the ball in play, supporting total bases upside.",
-      "line_shop_note": null
+      "reasoning": "Lowe shows +119 value over 1.5 bases against Colorado's weaker staff. The favorable matchup and Reds' dominant bullpen supporting run-scoring opportunities support the over."
     }
   ],
   "strikeout_picks": [
     {
       "rank": 1,
+      "player_name": "Paul Skenes",
+      "pick_type": "pitcher",
+      "team": "Pittsburgh Pirates",
+      "opponent": "St. Louis Cardinals",
+      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
+      "game_time": "TBD",
+      "best_book": "FD",
+      "fd_odds": "-130",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite strikeout pitcher",
+        "High K/9 rate",
+        "Home field advantage"
+      ],
+      "reasoning": "Skenes is a dominant young pitcher with strong strikeout metrics. His over 6.5 K line at -130 on FanDuel offers solid value against the Cardinals' strikeout-prone lineup."
+    },
+    {
+      "rank": 2,
       "player_name": "Brandon Woodruff",
       "pick_type": "pitcher",
       "team": "Milwaukee Brewers",
       "opponent": "Arizona Diamondbacks",
-      "game": "ARI @ MIL",
+      "game": "Arizona Diamondbacks @ Milwaukee Brewers",
       "game_time": "TBD",
       "best_book": "FD",
-      "fd_odds": "-174",
+      "fd_odds": "-172",
       "mgm_odds": null,
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "4.5",
-      "over_under_pick": "over",
-      "confidence_score": 81,
-      "confidence_tier": "High",
+      "over_under_pick": "under",
+      "confidence_score": 71,
+      "confidence_tier": "Medium",
       "key_factors": [
-        "Elite strikeout pitcher with strong K/9 metrics",
-        "Diamondbacks have poor contact discipline",
-        "Strong -174 moneyline (under heavy favorite)"
+        "Elite pitcher",
+        "Lower K line due to short start potential",
+        "Brewers home advantage"
       ],
-      "reasoning": "Woodruff is an elite strikeout producer facing a Diamondbacks lineup prone to K's. The -174 odds reflect his quality, making over 4.5 Ks a high-probability play despite high juice.",
-      "line_shop_note": null
+      "reasoning": "Woodruff at -172 under 4.5 K reflects potential short outing or contact-heavy approach. The heavy juice suggests sharp money expects lower strikeout volume in this matchup."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
-      "prop_category": "ML",
-      "game": "STL @ PIT",
+      "prop_category": "OU",
+      "game": "Colorado Rockies @ Cincinnati Reds",
       "game_time": "TBD",
-      "pick": "St. Louis Cardinals",
+      "pick": "Over 9.0",
       "best_book": "CZS",
-      "fd_odds": "184",
-      "mgm_odds": "185",
-      "czs_odds": "185",
+      "fd_odds": "-105",
+      "mgm_odds": "-110",
+      "czs_odds": "100",
       "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 77,
+      "fd_line": "9.0",
+      "confidence_score": 80,
       "confidence_tier": "High",
       "key_factors": [
-        "Cardinals favored at consistent +185 across books",
-        "Pirates bullpen noted in reports as unreliable",
-        "Cardinals stronger overall talent composition"
+        "Reds' elite offense",
+        "Colorado weak pitching",
+        "Reds dominant bullpen creates scoring opportunities"
       ],
-      "reasoning": "Cardinals are clear favorites with consistent +185 pricing across multiple books. Recent reports highlight Pirates bullpen concerns, supporting the higher-seeded team with superior roster depth.",
-      "line_shop_note": "Consistent odds across FD/MGM/CZS at +185 shows market agreement"
+      "reasoning": "Cincinnati's dominant April performance and Colorado's pitching vulnerabilities create a high-scoring environment. CZS offers the best value at +100 on the over."
+    },
+    {
+      "rank": 2,
+      "prop_category": "ML",
+      "game": "St. Louis Cardinals @ Pittsburgh Pirates",
+      "game_time": "TBD",
+      "pick": "Pittsburgh Pirates",
+      "best_book": "CZS",
+      "fd_odds": "-220",
+      "mgm_odds": "-225",
+      "czs_odds": "-225",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Pirates home field advantage",
+        "Skenes elite performance",
+        "Cardinals recent struggles"
+      ],
+      "reasoning": "Pirates' dominant home performance and Skenes' elite pitching create a favorable matchup. CZS and MGM offer identical -225 odds for the Pirates ML pick."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Oneil Cruz HR (+290)",
-      "Brandon Woodruff Over 4.5 Ks (-174)",
-      "St. Louis Cardinals ML (+185)"
+      "Elly De La Cruz Over 0.5 HR @ CZS +280",
+      "Paul Skenes Over 6.5 K @ FD -130",
+      "Pittsburgh Pirates ML @ CZS -225"
     ],
-    "reasoning": "Combines three independent plays from different games with varied confidence tiers. Power play + pitcher K advantage + moneyline creates balanced parlay without correlating heavily to single outcome.",
-    "estimated_odds": "+835 (approximately 3-leg parlay)"
+    "reasoning": "These three legs combine a power hitter in optimal conditions, elite pitcher strikeout potential, and home field advantage. The Pirates game creates natural correlation, while the Reds game provides diversification.",
+    "estimated_odds": "Approximately +180 to +220 parlay"
   },
-  "daily_summary": "Today's slate features several undervalued power plays and a strong pitcher strikeout opportunity. St. Louis-Pittsburgh matchup shows clearest moneyline value with Cardinals' superior roster. Total bases production likely in high O/U games like Rockies-Reds (9.0).",
-  "best_bet": "Oneil Cruz HR vs St. Louis at +290 represents the day's best risk-reward in a vulnerable Cardinals pitching matchup."
+  "daily_summary": "Today's slate features Cincinnati's dominant bullpen and offense creating high-scoring opportunities against weak Colorado pitching, while Pittsburgh's home advantage with elite young pitcher Skenes faces a struggling Cardinals squad. Key value plays focus on power hitters in home parks and elite strikeout pitchers facing favorable matchups.",
+  "best_bet": "Elly De La Cruz Over 0.5 HR @ Caesars +280 - Elite power prospect in optimal home conditions against Colorado's weak pitching staff offers the strongest risk/reward of the day."
 }
