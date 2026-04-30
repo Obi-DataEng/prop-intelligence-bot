@@ -3,196 +3,235 @@
     {
       "rank": 1,
       "player_name": "Elly De La Cruz",
-      "team": "Cincinnati Reds",
-      "opponent": "Colorado Rockies",
+      "team": "Reds",
+      "opponent": "Rockies",
       "game": "COL @ CIN",
       "game_time": "4:40 PM",
       "confidence_tier": "Elite",
       "recent_max_ev": "115.3 mph on 4/25",
-      "avg_exit_velo": "94.8 mph",
-      "barrel_rate": "18%",
-      "hard_hit_rate": "54%",
-      "pitcher_hard_hit_allowed": "47%",
-      "park_factor_hr": 1.02,
+      "avg_exit_velo": "96.5 mph",
+      "barrel_rate": "27.3%",
+      "hard_hit_rate": "54.5%",
+      "pitcher_hard_hit_allowed": "43.2%",
+      "park_factor_hr": 1.13,
       "key_factors": [
-        "Recent 115.3 mph barrel on 4/25",
-        "Coors Field experience advantage",
-        "Michael Lorenzen allows 50.4% hard hit rate",
-        "Elevated 9.4% BB rate creates pitches to hit"
+        "Recent 115.3 mph barrel against Drew Anderson",
+        "Elite 27.3% barrel rate with 54.5% hard hit rate",
+        "Facing Lorenzen with elevated hard hit rate allowed"
       ],
-      "reasoning": "De La Cruz has elite exit velo and hard hit rates with a recent 115.3 mph barrel. Lorenzen's high hard hit rate (50.4%) and elevated walk rate create favorable counting opportunities. Temperature at 52\u00b0F is cool but his consistent power metrics suggest another 110+ event is likely."
+      "reasoning": "De La Cruz has the most recent 110+ exit velo event in the data and maintains elite contact quality metrics. Coors Field elevation and warm weather (52\u00b0F ballpark temp) support hard contact, making 110+ EV highly likely today."
     },
     {
       "rank": 2,
-      "player_name": "Aaron Judge",
-      "team": "New York Yankees",
-      "opponent": "Toronto Blue Jays",
-      "game": "TOR @ NYY",
-      "game_time": "not specified",
-      "confidence_tier": "Elite",
-      "recent_max_ev": "113.0 mph on 4/27, 112.7 mph on 4/28",
-      "avg_exit_velo": "94.2 mph",
-      "barrel_rate": "22%",
-      "hard_hit_rate": "58%",
-      "pitcher_hard_hit_allowed": "45%",
-      "park_factor_hr": 0.88,
+      "player_name": "James Wood",
+      "team": "Nationals",
+      "opponent": "Mets",
+      "game": "WSH @ NYM",
+      "game_time": "5:10 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "114.6 mph on 4/29",
+      "avg_exit_velo": "95.2 mph",
+      "barrel_rate": "25.8%",
+      "hard_hit_rate": "52.1%",
+      "pitcher_hard_hit_allowed": "38.8%",
+      "park_factor_hr": 0.98,
       "key_factors": [
-        "Back-to-back 110+ mph barrels (4/27, 4/28)",
-        "Elite barrel rate and hard hit consistency",
-        "Yankee Stadium power pen despite park factor",
-        "Facing Blue Jays pitching allows soft contact"
+        "114.6 mph double on 4/29 shows consistent elite velo",
+        "Above-average barrel rate and hard hit metrics",
+        "Faces Peralta with moderate hard hit rate"
       ],
-      "reasoning": "Judge has consecutive games with 110+ mph exit velos and maintains elite barrel/hard hit rates. Despite Yankee Stadium's park suppression, his sustained power output across multiple games suggests high probability of another 110+ EV event today."
+      "reasoning": "Wood's recent 114.6 mph event demonstrates sustained power capacity. Elite contact rates combined with warm NYC weather (64\u00b0F) create favorable conditions for 110+ EV exit velocity despite neutral park factor."
     }
   ],
   "hr_picks": [
     {
       "rank": 1,
-      "player_name": "Oneil Cruz",
-      "team": "Pittsburgh Pirates",
-      "opponent": "St. Louis Cardinals",
-      "game": "STL @ PIT",
-      "game_time": "4:35 PM",
+      "player_name": "Elly De La Cruz",
+      "team": "Reds",
+      "opponent": "Rockies",
+      "game": "COL @ CIN",
+      "game_time": "4:40 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "330",
+      "czs_odds": "305",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 82,
+      "confidence_score": 84,
       "confidence_tier": "High",
       "key_factors": [
-        "Lowest HR odds on Pirates (330 vs 500-1100 for others)",
-        "Paul Skenes allows elite contact rates (28.2% barrel allowed)",
-        "Elevated ISO and power metrics vs RHB",
-        "PNC Park favorable for power (0.97 HR factor but good flyball environment)"
+        "Recent 115.3 mph barrel event demonstrates power",
+        "Coors Field park factor 1.13 HR friendly",
+        "Lorenzen allows 0.52 HR/9 with elevated meatball rate"
       ],
-      "reasoning": "Cruz offers the best odds among Pirates batters at +330 and has demonstrated power capability. While Skenes is elite, the matchup data shows he allows hard contact to righties. The aggressive pricing presents strong value."
+      "reasoning": "De La Cruz combines recent elite exit velo with Coors' extreme HR park factor. At +305 (CZS), this offers premium value for a player with proven recent power against a pitcher yielding solid HR rates."
     },
     {
       "rank": 2,
-      "player_name": "Ketel Marte",
-      "team": "Arizona Diamondbacks",
-      "opponent": "Milwaukee Brewers",
-      "game": "ARI @ MIL",
-      "game_time": "5:40 PM",
+      "player_name": "Hunter Goodman",
+      "team": "Reds",
+      "opponent": "Rockies",
+      "game": "COL @ CIN",
+      "game_time": "4:40 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
       "czs_odds": "280",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 80,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Lowest HR odds on slate (+280)",
-        "Elite power metrics and recent hard contact",
-        "Brandon Woodruff strong K pitcher but allows HRs to quality hitters",
-        "American Family Field neutral park (0.98 factor)"
-      ],
-      "reasoning": "Marte's +280 odds are the best value on the board and reflect his legitimate power threat. Despite Woodruff's excellence, Marte's elite contact quality and consistent power make this the highest-probability HR play."
-    },
-    {
-      "rank": 3,
-      "player_name": "Shea Langeliers",
-      "team": "Oakland Athletics",
-      "opponent": "Kansas City Royals",
-      "game": "KC @ OAK",
-      "game_time": "7:05 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "255",
-      "scr_odds": null,
-      "fd_line": null,
       "confidence_score": 78,
       "confidence_tier": "High",
       "key_factors": [
-        "Best odds on slate (+255) with catcher power upside",
-        "Oakland in warm weather (70-83\u00b0F range ideal for fly balls)",
-        "Jeffrey Springs allows elevated hard hit rates (64.8%)",
-        "Kauffman Stadium neutral but good visibility"
+        "Coors Field HR park factor 1.34 vs righties",
+        "Favorable matchup against Lorenzen",
+        "Solid season power metrics at home"
       ],
-      "reasoning": "Langeliers gets best odds on the entire slate at +255. Catchers hitting HRs carry high variance but the pricing is aggressive and Springs allows hard contact. Late game timing with warm weather enhances fly ball trajectory."
-    }
-  ],
-  "hits_picks": [
+      "reasoning": "Coors Field elevation is the primary driver for Goodman's value. Home park advantage against a moderate pitcher creates edge at +280 pricing in high-offense environment."
+    },
     {
-      "rank": 1,
+      "rank": 3,
       "player_name": "Juan Soto",
-      "team": "Washington Nationals",
-      "opponent": "New York Mets",
+      "team": "Nationals",
+      "opponent": "Mets",
       "game": "WSH @ NYM",
       "game_time": "5:10 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "101",
+      "czs_odds": "290",
       "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 81,
+      "fd_line": null,
+      "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "Season wOBA (.334) indicates consistent contact",
-        "Miles Mikolas allows 69.6% hard hit rate",
-        "Elite plate discipline and contact rates",
-        "Citi Field neutral environment"
+        "Elite power hitter consistency",
+        "Peralta allows 1.11 HR/9 with elevated meatball rate",
+        "Citi Field neutral for HR but Soto elite talent floor"
       ],
-      "reasoning": "Soto's elite batting profile with .286 BA and .334 wOBA against Mikolas's high hard hit rate projection makes 1.5+ total bases highly likely. At -136 value (101 to -136 comparison), this offers solid risk-reward for a premium hitter in his wheelhouse."
+      "reasoning": "Soto provides elite talent floor at +290 pricing against Peralta. While Citi Field is neutral, Soto's elite barrel rates and consistency against average pitching support HR upside."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Riley Greene",
+      "team": "Tigers",
+      "opponent": "Braves",
+      "game": "DET @ ATL",
+      "game_time": "4:15 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-275",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 82,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Season BA 0.353 with strong wOBA metrics",
+        "Bryce Elder allows 0.97 ISO with elevated meatball rate",
+        "Favorable left-handed matchup against righty pitcher"
+      ],
+      "reasoning": "Greene's exceptional season .353 BA and .476 OBP create elite hit probability against Elder. At -275, this represents the highest confidence hits play with favorable handedness and pitcher metrics supporting consistent contact."
+    },
+    {
+      "rank": 2,
+      "player_name": "Nick Gonzales",
+      "team": "Pirates",
+      "opponent": "Cardinals",
+      "game": "STL @ PIT",
+      "game_time": "4:35 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-235",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Strong season offensive profile",
+        "Paul Skenes allows low WOBA despite elite talent",
+        "Pirates home field advantage"
+      ],
+      "reasoning": "Gonzales faces Skenes who is still adjusting to MLB, creating hit opportunity despite elite pitcher talent. Reasonable -235 pricing reflects fair value for solid hitter against promising but still-developing pitcher."
     }
   ],
   "total_bases_picks": [
     {
       "rank": 1,
-      "player_name": "Ronald Acuna Jr.",
-      "team": "Atlanta Braves",
-      "opponent": "Detroit Tigers",
-      "game": "DET @ ATL",
-      "game_time": "4:15 PM",
+      "player_name": "Matt McLain",
+      "team": "Reds",
+      "opponent": "Rockies",
+      "game": "COL @ CIN",
+      "game_time": "4:40 PM",
       "best_book": "CZS",
       "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "107",
+      "mgm_odds": "130",
+      "czs_odds": "134",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 79,
+      "confidence_score": 77,
       "confidence_tier": "High",
       "key_factors": [
-        "Season .500 SLG with 27.3% barrel rate",
-        "Bryce Elder allows 29% whiff rate (chase pitches)",
-        "Elite exit velo (96.3 mph average) creates consistent hard contact",
-        "Temperature 64-72\u00b0F favorable for line drives"
+        "Coors Field elevated total bases park factor",
+        "Lorenzen allows elevated barrel rate",
+        "High offense environment in Cincinnati"
       ],
-      "reasoning": "Acuna's elite power and hard contact rates combined with Elder's elevated whiff rate creating more hittable pitches make 1.5+ total bases a strong probability. The +107 pricing provides value for his consistent output."
+      "reasoning": "McLain's total bases benefit from Coors/Cincinnati high-offense environment and Lorenzen's moderate defensive metrics. At 130-134 odds, the over represents value in run-heavy matchup."
     }
   ],
   "strikeout_picks": [
     {
       "rank": 1,
-      "player_name": "Freddy Peralta",
+      "player_name": "Paul Skenes",
       "pick_type": "pitcher",
-      "team": "Milwaukee Brewers",
-      "opponent": "Arizona Diamondbacks",
-      "game": "ARI @ MIL",
-      "game_time": "5:40 PM",
+      "team": "Pirates",
+      "opponent": "Cardinals",
+      "game": "STL @ PIT",
+      "game_time": "4:35 PM",
       "best_book": "FD",
-      "fd_odds": "-130",
-      "mgm_odds": null,
+      "fd_odds": "-132",
+      "mgm_odds": "-140",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite 9.31 K/9 rate demonstrates strikeout stuff",
+        "Season 27.5% whiff rate shows swing-and-miss ability",
+        "Cardinals mediocre contact quality allows strikeouts"
+      ],
+      "reasoning": "Skenes' elite K/9 and whiff rates support over 6.5 strikeouts against Cardinals lineup lacking elite contact discipline. At -132 FD, this represents strong pitcher strikeout value."
+    },
+    {
+      "rank": 2,
+      "player_name": "Kevin Gausman",
+      "pick_type": "pitcher",
+      "team": "Twins",
+      "opponent": "Blue Jays",
+      "game": "TOR @ MIN",
+      "game_time": "11:40 PM",
+      "best_book": "FD",
+      "fd_odds": "-114",
+      "mgm_odds": "-120",
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "5.5",
       "over_under_pick": "over",
-      "confidence_score": 77,
+      "confidence_score": 72,
       "confidence_tier": "High",
       "key_factors": [
-        "10.02 K/9 with 30.1% whiff rate (elite strikeout metrics)",
-        "Diamondbacks 19.7% K rate matches Peralta strength",
-        "Brandon Woodruff K props show batter K susceptibility",
-        "Over 5.5 is beatable for elite pitcher"
+        "Elite 9.77 K/9 rate among league leaders",
+        "27.5% whiff rate demonstrates elite spin metrics",
+        "Blue Jays middle order presents strikeout opportunities"
       ],
-      "reasoning": "Peralta's elite 10.02 K/9 and 30.1% whiff rate against Arizona's elevated K rate (19.7%) create strong over 5.5 Ks probability. At -130 odds, this represents a calculated risk on an elite strikeout pitcher in prime conditions."
+      "reasoning": "Gausman's elite K/9 and whiff rates support over 5.5 strikeouts against Blue Jays. Despite -114/-120 pricing, elite pitcher metrics create sustainable value in this matchup."
     }
   ],
   "game_picks": [
@@ -202,32 +241,31 @@
       "game": "Toronto Blue Jays @ Minnesota Twins",
       "game_time": "11:40 PM",
       "pick": "Minnesota Twins",
-      "best_book": "CZS",
-      "fd_odds": "-136",
+      "best_book": "MGM",
+      "fd_odds": "-134",
       "mgm_odds": "-135",
       "czs_odds": "-135",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 76,
+      "confidence_score": 71,
       "confidence_tier": "High",
       "key_factors": [
-        "Twins home-field advantage with Bailey Ober (3.85 ERA, 7.59 K/9)",
-        "Kevin Gausman slightly better than Ober but Twins bats superior",
-        "Target Field 1.02 park factor neutral",
-        "Twins 88.6\u00b0F warm weather boosts run production"
+        "Gausman elite K/9 and WHIP advantage",
+        "Twins home field advantage at Target Field",
+        "Blue Jays pitcher matchup less favorable"
       ],
-      "reasoning": "Twins are favored -135 across multiple books with solid pitching advantage and home field. Warm weather conditions and Target Field's offensive environment favor Minnesota's lineup over Blue Jays road trip scenario."
+      "reasoning": "Minnesota's superior pitching matchup with Gausman creates home field advantage. Consistent -135 pricing across books indicates fair value for home favorite with pitcher edge."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Ketel Marte HR (+280 CZS)",
-      "Freddy Peralta Over 5.5 K (-130 FD)",
-      "Minnesota Twins ML (-135 CZS)"
+      "Elly De La Cruz Over 0.5 HR (+305 CZS)",
+      "Riley Greene Over 0.5 Hits (-275 MGM)",
+      "Paul Skenes Over 6.5 K (-132 FD)"
     ],
-    "reasoning": "Combines three high-confidence plays across different categories: elite value HR bet, elite pitcher strikeout, and favored home team. The parlay balances risk with correlated but distinct outcomes.",
-    "estimated_odds": "+480 to +520 (3-leg parlay)"
+    "reasoning": "Combines elite pitcher strikeout value with two high-confidence position player plays in favorable matchups. De La Cruz's Coors advantage, Greene's elite hit rate, and Skenes' K/9 create coherent parlay with strong individual confidence.",
+    "estimated_odds": "+485"
   },
-  "daily_summary": "April 30 slate features elite strikeout pitching (Peralta, Woodruff, Gausman) meeting quality opponents, creating opportunity in both pitcher K props and HR props for hitters willing to chase against premium arms. Weather ranges from cool (46-48\u00b0F in Milwaukee/Pittsburgh) to warm (70-83\u00b0F Oakland), creating bifurcated slate dynamics favoring power in warmer climates and strikeout totals in cooler parks. Two laser-pick candidates (De La Cruz, Judge) show recent 110+ EV patterns suggesting high-velocity event probability.",
-  "best_bet": "Ketel Marte HR at +280 (CZS) offers elite value against Brandon Woodruff with strong correlated factors in warm Arizona matchup."
+  "daily_summary": "Today's slate features exceptional value in Colorado (Reds-Rockies) with Coors Field elevation creating HR and run-scoring environment. Elite pitcher strikeouts from Skenes and Gausman provide floor for betting cards. Avoid overpaying for neutral matchups; focus on Coors environment and elite pitcher K/9 metrics.",
+  "best_bet": "Riley Greene Over 0.5 Hits vs Braves (-275 MGM) \u2014 elite season BA and favorable matchup create highest-confidence single play."
 }
