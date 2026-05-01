@@ -1,0 +1,247 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Miami Marlins",
+      "game": "PHI @ MIA",
+      "game_time": "11:10 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "113.0 mph on 4/30",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "18%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "44%",
+      "park_factor_hr": 0.95,
+      "key_factors": [
+        "113 mph recent barrel confirmed",
+        "Elite hard hit rate 56%",
+        "Aggressive swing profile vs fastballs"
+      ],
+      "reasoning": "Schwarber just hit 113 mph with a barrel on 4/30 and maintains 56% hard hit rate. He has consistent 110+ mph exit velo events and faces Eury Perez (5.01 ERA, allows 44% hard contact). Warm Miami weather at 82\u00b0F supports continued elevation."
+    },
+    {
+      "rank": 2,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Baltimore Orioles",
+      "game": "BAL @ NYY",
+      "game_time": "11:05 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "112.7 mph on 4/28",
+      "avg_exit_velo": "95.1 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "58%",
+      "pitcher_hard_hit_allowed": "46%",
+      "park_factor_hr": 1.04,
+      "key_factors": [
+        "112.7 mph recent barrel on 4/28",
+        "Elite 22% barrel rate",
+        "58% hard hit rate vs righties"
+      ],
+      "reasoning": "Judge has multiple 112+ mph events recently with elite barrel and hard hit rates. Yankee Stadium (1.04 park factor) and 64\u00b0F warm conditions favor power. Will Warren (2.75 ERA) allows elevated hard contact rates, making Judge a prime 110+ EV candidate."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Baltimore Orioles",
+      "game": "BAL @ NYY",
+      "game_time": "11:05 PM",
+      "best_book": "CZS",
+      "fd_odds": "142",
+      "mgm_odds": "145",
+      "czs_odds": "143",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 88,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Recent 112.7 mph barrel on 4/28 (home run)",
+        "Elite 22% barrel rate and 58% hard hit rate",
+        "Will Warren allows 46% hard contact with 2.75 ERA"
+      ],
+      "reasoning": "Judge has proven power with recent 112.7 mph home run and maintains elite contact quality metrics. Facing Will Warren's mediocre stuff (2.75 ERA, allows hard contact) at home makes this a high-probability HR play. Betting CZS at 143 for +143 payout."
+    },
+    {
+      "rank": 2,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Miami Marlins",
+      "game": "PHI @ MIA",
+      "game_time": "11:10 PM",
+      "best_book": "CZS",
+      "fd_odds": "265",
+      "mgm_odds": null,
+      "czs_odds": "265",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 113.0 mph barrel on 4/30 (home run)",
+        "56% hard hit rate and 18% barrel rate",
+        "Faces Eury Perez (5.01 ERA, poor strikeout metrics)"
+      ],
+      "reasoning": "Schwarber just homered on 113 mph contact and maintains elite hard hit rate. Eury Perez (5.01 ERA) allows 44% hard contact and is vulnerable to left-handed power. Warm 82\u00b0F conditions at Miami support strong ball flight."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Nico Hoerner",
+      "team": "Chicago Cubs",
+      "opponent": "Arizona Diamondbacks",
+      "game": "ARI @ CHC",
+      "game_time": "6:20 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "129",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Strong .298 BA vs RHP this season",
+        "Colin Rea allows 47% hard contact",
+        "Home park advantage at Wrigley (neutral field)"
+      ],
+      "reasoning": "Hoerner is a contact-first hitter facing Colin Rea (3.87 ERA, 47% hard contact allowed). His quick-twitch approach and home field advantage support getting 1.5+ total bases. CZS -110 odds offer fair value on this line."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Oneil Cruz",
+      "team": "Cincinnati Reds",
+      "opponent": "Pittsburgh Pirates",
+      "game": "CIN @ PIT",
+      "game_time": "10:45 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "104",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "88 ballpark with Coors-like conditions (humid)",
+        "Mitch Keller allows low hard contact (39% HR/FB)",
+        "Home park PNC favorable for right-handed power"
+      ],
+      "reasoning": "Oneil Cruz shows strong recent power metrics and faces Mitch Keller (3.13 ERA but only 39% HR/FB rate). Home PNC Park conditions and 53\u00b0F evening temps favor his power stroke. CZS -137 odds are actionable at 1.5 total bases over."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Brady Singer",
+      "pick_type": "pitcher",
+      "team": "Cincinnati Reds",
+      "opponent": "Pittsburgh Pirates",
+      "game": "CIN @ PIT",
+      "game_time": "10:45 PM",
+      "best_book": "FD",
+      "fd_odds": "102",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "4.5",
+      "over_under_pick": "over",
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Brady Singer K/9: 7.0 (solid strikeout pitcher)",
+        "21.0% swinging strike rate",
+        "Pirates rank lower in strikeout avoidance"
+      ],
+      "reasoning": "Singer maintains solid 7.0 K/9 with 21% swinging strike rate and 5.90 whiff rate. Pirates lineup is vulnerable to strikeouts. FD +102 odds offer plus-money value on over 4.5 Ks with solid K/9 metrics."
+    },
+    {
+      "rank": 2,
+      "player_name": "Bryan Woo",
+      "pick_type": "pitcher",
+      "team": "Seattle Mariners",
+      "opponent": "Kansas City Royals",
+      "game": "KC @ SEA",
+      "game_time": "1:45 AM",
+      "best_book": "FD",
+      "fd_odds": "-122",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "under",
+      "confidence_score": 71,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "Bryan Woo K/9: 6.94",
+        "Lower strikeout rate despite strong ERA",
+        "Royals not strikeout-prone lineup"
+      ],
+      "reasoning": "Woo's 6.94 K/9 doesn't support heavy strikeout production despite 3.73 ERA. Under 5.5 Ks is supported by his contact rate and Royals' ability to put ball in play. FD -122 odds reflect modest lean to under."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "ML",
+      "game": "Los Angeles Dodgers @ St. Louis Cardinals",
+      "game_time": "12:15 AM",
+      "pick": "Los Angeles Dodgers",
+      "best_book": "MGM",
+      "fd_odds": "-176",
+      "mgm_odds": "-190",
+      "czs_odds": "-178",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 84,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Dodgers -190 ML (MGM best value)",
+        "Dodgers have elite pitching (Sheehan 4.09 ERA)",
+        "Cardinals starting Matthew Liberatore (6.36 ERA) with 8 HRs allowed"
+      ],
+      "reasoning": "Dodgers are -190 favorites facing weak Cardinals pitching (Liberatore 6.36 ERA, 8 HRs in 30 IP). Dodgers' superior pitching depth and lineup vs vulnerable Cardinals staff makes this a strong ML play. MGM -190 represents best value."
+    },
+    {
+      "rank": 2,
+      "prop_category": "ML",
+      "game": "Atlanta Braves @ Colorado Rockies",
+      "game_time": "12:40 AM",
+      "pick": "Atlanta Braves",
+      "best_book": "MGM",
+      "fd_odds": "-196",
+      "mgm_odds": "-200",
+      "czs_odds": "-195",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 81,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Braves -200 ML (overwhelming favorite)",
+        "Colorado Jose Quintana ERA 6.75 with 4 HRs in 18 IP",
+        "Braves elite offense vs poor Rockies pitching"
+      ],
+      "reasoning": "Braves are prohibitive -200 favorites with elite lineup facing Rockies' struggling starter Quintana (6.75 ERA). Colorado's pitching vulnerability combined with Braves' offensive depth makes this a heavy favorite situation with sharp odds movement. Even at -200, this is a strong lean."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Aaron Judge HR (BAL @ NYY) at +143",
+      "Los Angeles Dodgers ML at -190",
+      "Bryan Woo Under 5.5 Ks at -122"
+    ],
+    "reasoning": "Judge's recent 112.7 mph barrel and elite contact metrics align with weak Will Warren. Dodgers overwhelming favorite with elite pitching vs Cardinals' 6.36 ERA starter. Woo's lower K/9 (6.94) doesn't support heavy strikeout production against KC. Three high-confidence plays with independent logic.",
+    "estimated_odds": "+225 to +275 parlay range"
+  },
+  "daily_summary": "May 1st slate features strong pitching mismatches with Dodgers-Cardinals and Braves-Rockies offering elite-level favorites. Aaron Judge and Kyle Schwarber present elite laser candidates with recent 112+ mph barrels. Weather supports power plays across warm locations (Miami 82\u00b0F, Colorado elevation), while strikeout markets offer value on pitcher underdogs with modest K/9 rates.",
+  "best_bet": "Aaron Judge HR (BAL @ NYY) at CZS +143 odds \u2014 recent 112.7 mph home run barrel with elite contact metrics facing weak Will Warren (2.75 ERA, 46% hard contact allowed) at home represents the day's highest-confidence single play."
+}
