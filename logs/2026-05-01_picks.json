@@ -9,17 +9,19 @@
       "game_time": "11:10 PM",
       "confidence_tier": "Elite",
       "recent_max_ev": "113.0 mph on 4/30",
-      "avg_exit_velo": "94.2 mph",
-      "barrel_rate": "18%",
-      "hard_hit_rate": "56%",
-      "pitcher_hard_hit_allowed": "44%",
-      "park_factor_hr": 0.95,
+      "avg_exit_velo": "92.1 mph",
+      "barrel_rate": "16.2%",
+      "hard_hit_rate": "54%",
+      "pitcher_hard_hit_allowed": "47%",
+      "park_factor_hr": 0.97,
       "key_factors": [
-        "113 mph recent barrel confirmed",
-        "Elite hard hit rate 56%",
-        "Aggressive swing profile vs fastballs"
+        "Recent 113 mph barrel on 4/30",
+        "16%+ barrel rate elite tier",
+        "Strong exit velo consistency",
+        "Hot weather at Miami (82\u00b0F)",
+        "Facing Eury Perez with 9.48 K/9"
       ],
-      "reasoning": "Schwarber just hit 113 mph with a barrel on 4/30 and maintains 56% hard hit rate. He has consistent 110+ mph exit velo events and faces Eury Perez (5.01 ERA, allows 44% hard contact). Warm Miami weather at 82\u00b0F supports continued elevation."
+      "reasoning": "Schwarber just hit 113 mph exit velo yesterday and maintains elite barrel rates consistently. His recent hot streak and elite hard hit percentage make him prime candidate to reach 110+ mph today in warm Miami conditions against a pitcher allowing 47% hard contact."
     },
     {
       "rank": 2,
@@ -27,44 +29,48 @@
       "team": "New York Yankees",
       "opponent": "Baltimore Orioles",
       "game": "BAL @ NYY",
-      "game_time": "11:05 PM",
+      "game_time": "8:05 PM",
       "confidence_tier": "Elite",
       "recent_max_ev": "112.7 mph on 4/28",
-      "avg_exit_velo": "95.1 mph",
-      "barrel_rate": "22%",
-      "hard_hit_rate": "58%",
-      "pitcher_hard_hit_allowed": "46%",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "17.8%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "49%",
       "park_factor_hr": 1.04,
       "key_factors": [
-        "112.7 mph recent barrel on 4/28",
-        "Elite 22% barrel rate",
-        "58% hard hit rate vs righties"
+        "Multiple recent 110+ mph events",
+        "Elite 17.8% barrel rate",
+        "56% hard hit rate elite threshold",
+        "Yankee Stadium favorable park factor",
+        "Facing Will Warren 10.63 K/9 with high hard hit allowed"
       ],
-      "reasoning": "Judge has multiple 112+ mph events recently with elite barrel and hard hit rates. Yankee Stadium (1.04 park factor) and 64\u00b0F warm conditions favor power. Will Warren (2.75 ERA) allows elevated hard contact rates, making Judge a prime 110+ EV candidate."
+      "reasoning": "Judge has demonstrated multiple 110+ mph events in recent games with elite barrel metrics. His consistent 56% hard hit rate and recent 112.7 mph reading make him a lock candidate for another 110+ mph event in tonight's crucial AL East matchup."
     }
   ],
   "hr_picks": [
     {
       "rank": 1,
-      "player_name": "Aaron Judge",
-      "team": "New York Yankees",
-      "opponent": "Baltimore Orioles",
-      "game": "BAL @ NYY",
-      "game_time": "11:05 PM",
+      "player_name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "opponent": "St. Louis Cardinals",
+      "game": "LAD @ STL",
+      "game_time": "12:15 AM",
       "best_book": "CZS",
-      "fd_odds": "142",
-      "mgm_odds": "145",
-      "czs_odds": "143",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "305",
       "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 88,
-      "confidence_tier": "Elite",
+      "fd_line": null,
+      "confidence_score": 82,
+      "confidence_tier": "High",
       "key_factors": [
-        "Recent 112.7 mph barrel on 4/28 (home run)",
-        "Elite 22% barrel rate and 58% hard hit rate",
-        "Will Warren allows 46% hard contact with 2.75 ERA"
+        "Dodger Stadium elite park (73 HR factor)",
+        "Warm weather conditions (75\u00b0F)",
+        "Matthew Liberatore 2.37 HR/9 allowed",
+        "Recent 112.5+ mph contact patterns",
+        "Elite power metrics career baseline"
       ],
-      "reasoning": "Judge has proven power with recent 112.7 mph home run and maintains elite contact quality metrics. Facing Will Warren's mediocre stuff (2.75 ERA, allows hard contact) at home makes this a high-probability HR play. Betting CZS at 143 for +143 payout."
+      "reasoning": "Ohtani's exceptional plate discipline and power combine perfectly against Matthew Liberatore's elevated HR/9 rate at Dodger Stadium, which suppresses home runs slightly. Warm conditions and his recent contact quality make this a high-probability HR spot."
     },
     {
       "rank": 2,
@@ -74,174 +80,187 @@
       "game": "PHI @ MIA",
       "game_time": "11:10 PM",
       "best_book": "CZS",
-      "fd_odds": "265",
+      "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "265",
+      "czs_odds": "280",
       "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 82,
+      "fd_line": null,
+      "confidence_score": 80,
       "confidence_tier": "High",
       "key_factors": [
-        "Recent 113.0 mph barrel on 4/30 (home run)",
-        "56% hard hit rate and 18% barrel rate",
-        "Faces Eury Perez (5.01 ERA, poor strikeout metrics)"
+        "Recent 113 mph barrel recorded",
+        "Elite 16%+ barrel rate",
+        "Warm Miami weather (82\u00b0F) favorable",
+        "Eury Perez 1.72 HR/9 allowed",
+        "Strong recent power momentum"
       ],
-      "reasoning": "Schwarber just homered on 113 mph contact and maintains elite hard hit rate. Eury Perez (5.01 ERA) allows 44% hard contact and is vulnerable to left-handed power. Warm 82\u00b0F conditions at Miami support strong ball flight."
+      "reasoning": "Schwarber's recent 113 mph barrel and consistent elite metrics position him for HR success against Eury Perez's elevated HR allowance rate. Warm Miami conditions amplify his power potential in this late-night matchup."
     }
   ],
   "hits_picks": [
     {
       "rank": 1,
-      "player_name": "Nico Hoerner",
-      "team": "Chicago Cubs",
-      "opponent": "Arizona Diamondbacks",
+      "player_name": "Dansby Swanson",
+      "team": "Arizona Diamondbacks",
+      "opponent": "Chicago Cubs",
       "game": "ARI @ CHC",
       "game_time": "6:20 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "129",
+      "best_book": "MGM",
+      "fd_odds": "-120",
+      "mgm_odds": "-120",
+      "czs_odds": null,
       "scr_odds": null,
-      "fd_line": "1.5",
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "406 OBP elite contact rate",
+        "25% BB rate elite plate discipline",
+        "Colin Rea 3.87 ERA weak control",
+        "Swanson 56.2% pull rate situational advantage",
+        "Recent 174 BA strong hitting form"
+      ],
+      "reasoning": "Swanson's elite 406 OBP and 25% walk rate set him up perfectly against Colin Rea's weaker control profile. His recent hitting improvements and ability to work counts make hitting safely a high-probability event."
+    },
+    {
+      "rank": 2,
+      "player_name": "Julio Rodriguez",
+      "team": "Seattle Mariners",
+      "opponent": "Kansas City Royals",
+      "game": "KC @ SEA",
+      "game_time": "1:45 AM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-190",
+      "czs_odds": null,
+      "scr_ops": null,
+      "fd_line": "0.5",
       "over_under_pick": "over",
       "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "Strong .298 BA vs RHP this season",
-        "Colin Rea allows 47% hard contact",
-        "Home park advantage at Wrigley (neutral field)"
+        "Elite exit velo 92+ mph average",
+        "Strong recent hot streak indicators",
+        "Cole Ragans 6.03 ERA vulnerable pitcher",
+        "Mariners home field advantage",
+        "Weather warm conditions favorable (61\u00b0F)"
       ],
-      "reasoning": "Hoerner is a contact-first hitter facing Colin Rea (3.87 ERA, 47% hard contact allowed). His quick-twitch approach and home field advantage support getting 1.5+ total bases. CZS -110 odds offer fair value on this line."
+      "reasoning": "Rodriguez's recent strong contact quality and elite exit velo patterns align perfectly against Cole Ragans' elevated ERA and weak contact prevention. Home field advantage at Seattle amplifies his hit probability."
     }
   ],
   "total_bases_picks": [
     {
       "rank": 1,
-      "player_name": "Oneil Cruz",
-      "team": "Cincinnati Reds",
-      "opponent": "Pittsburgh Pirates",
-      "game": "CIN @ PIT",
-      "game_time": "10:45 PM",
-      "best_book": "CZS",
+      "player_name": "Corbin Carroll",
+      "team": "Arizona Diamondbacks",
+      "opponent": "Chicago Cubs",
+      "game": "ARI @ CHC",
+      "game_time": "6:20 PM",
+      "best_book": "MGM",
       "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "104",
+      "mgm_odds": "135",
+      "czs_odds": "144",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
       "confidence_score": 77,
       "confidence_tier": "High",
       "key_factors": [
-        "88 ballpark with Coors-like conditions (humid)",
-        "Mitch Keller allows low hard contact (39% HR/FB)",
-        "Home park PNC favorable for right-handed power"
+        "Elite 185 wOBA exceptional output",
+        "27.3% barrel rate elite power",
+        "40.9% pull rate situational advantage",
+        "Colin Rea 25.3% HR/FB rate vulnerable",
+        "Chase Field neutral park factor"
       ],
-      "reasoning": "Oneil Cruz shows strong recent power metrics and faces Mitch Keller (3.13 ERA but only 39% HR/FB rate). Home PNC Park conditions and 53\u00b0F evening temps favor his power stroke. CZS -137 odds are actionable at 1.5 total bases over."
+      "reasoning": "Carroll's elite wOBA and 27.3% barrel rate position him to exceed 1.5 total bases against Colin Rea's vulnerable HR/FB rate. His consistent power generation and ability to drive balls makes this a high-probability over."
     }
   ],
   "strikeout_picks": [
     {
       "rank": 1,
-      "player_name": "Brady Singer",
-      "pick_type": "pitcher",
-      "team": "Cincinnati Reds",
-      "opponent": "Pittsburgh Pirates",
-      "game": "CIN @ PIT",
-      "game_time": "10:45 PM",
-      "best_book": "FD",
-      "fd_odds": "102",
-      "mgm_odds": null,
+      "player_name": "Ian Happ",
+      "pick_type": "batter",
+      "team": "Chicago Cubs",
+      "opponent": "Arizona Diamondbacks",
+      "game": "ARI @ CHC",
+      "game_time": "6:20 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
       "czs_odds": null,
       "scr_odds": null,
-      "fd_line": "4.5",
+      "fd_line": "0.5",
       "over_under_pick": "over",
-      "confidence_score": 74,
+      "confidence_score": 75,
       "confidence_tier": "High",
       "key_factors": [
-        "Brady Singer K/9: 7.0 (solid strikeout pitcher)",
-        "21.0% swinging strike rate",
-        "Pirates rank lower in strikeout avoidance"
+        "29.2% K rate elevated strikeout prone",
+        "32.9% whiff rate high swing misses",
+        "Zac Gallen 5.34 K/9 plus strikeout pitcher",
+        "Recent 63.0% pull rate aggressive approach",
+        "Catcher frame visibility advantages Gallen"
       ],
-      "reasoning": "Singer maintains solid 7.0 K/9 with 21% swinging strike rate and 5.90 whiff rate. Pirates lineup is vulnerable to strikeouts. FD +102 odds offer plus-money value on over 4.5 Ks with solid K/9 metrics."
-    },
-    {
-      "rank": 2,
-      "player_name": "Bryan Woo",
-      "pick_type": "pitcher",
-      "team": "Seattle Mariners",
-      "opponent": "Kansas City Royals",
-      "game": "KC @ SEA",
-      "game_time": "1:45 AM",
-      "best_book": "FD",
-      "fd_odds": "-122",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "5.5",
-      "over_under_pick": "under",
-      "confidence_score": 71,
-      "confidence_tier": "Medium",
-      "key_factors": [
-        "Bryan Woo K/9: 6.94",
-        "Lower strikeout rate despite strong ERA",
-        "Royals not strikeout-prone lineup"
-      ],
-      "reasoning": "Woo's 6.94 K/9 doesn't support heavy strikeout production despite 3.73 ERA. Under 5.5 Ks is supported by his contact rate and Royals' ability to put ball in play. FD -122 odds reflect modest lean to under."
+      "reasoning": "Happ's 29.2% strikeout rate and 32.9% whiff rate combine perfectly against Zac Gallen's strong 5.34 K/9 performance. His aggressive pull-heavy approach plays into Gallen's strikeout-inducing arsenal."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
+      "prop_category": "OU",
+      "game": "Atlanta Braves @ Colorado Rockies",
+      "game_time": "12:40 AM",
+      "pick": "Over 11.0",
+      "best_book": "FD",
+      "fd_odds": "100",
+      "mgm_odds": "-102",
+      "czs_odds": "-105",
+      "scr_odds": null,
+      "fd_line": "11.0",
+      "confidence_score": 73,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Coors Field 1.34 HR factor extreme elevation",
+        "Jose Quintana 6.75 ERA vulnerable starter",
+        "Grant Holmes 4.50 K/9 weak strikeout rate",
+        "Warm weather (83\u00b0F) ball carries well",
+        "Ronald Acuna elite power matchup"
+      ],
+      "reasoning": "Coors Field's extreme 1.34 HR factor combined with Jose Quintana's vulnerable 6.75 ERA creates perfect conditions for run inflation. Warm weather and elite Braves power lineup make 11+ runs highly probable."
+    },
+    {
+      "rank": 2,
       "prop_category": "ML",
       "game": "Los Angeles Dodgers @ St. Louis Cardinals",
       "game_time": "12:15 AM",
       "pick": "Los Angeles Dodgers",
       "best_book": "MGM",
-      "fd_odds": "-176",
-      "mgm_odds": "-190",
+      "fd_odds": "-185",
+      "mgm_odds": "-185",
       "czs_odds": "-178",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 84,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "Dodgers -190 ML (MGM best value)",
-        "Dodgers have elite pitching (Sheehan 4.09 ERA)",
-        "Cardinals starting Matthew Liberatore (6.36 ERA) with 8 HRs allowed"
-      ],
-      "reasoning": "Dodgers are -190 favorites facing weak Cardinals pitching (Liberatore 6.36 ERA, 8 HRs in 30 IP). Dodgers' superior pitching depth and lineup vs vulnerable Cardinals staff makes this a strong ML play. MGM -190 represents best value."
-    },
-    {
-      "rank": 2,
-      "prop_category": "ML",
-      "game": "Atlanta Braves @ Colorado Rockies",
-      "game_time": "12:40 AM",
-      "pick": "Atlanta Braves",
-      "best_book": "MGM",
-      "fd_odds": "-196",
-      "mgm_odds": "-200",
-      "czs_odds": "-195",
-      "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 81,
+      "confidence_score": 71,
       "confidence_tier": "High",
       "key_factors": [
-        "Braves -200 ML (overwhelming favorite)",
-        "Colorado Jose Quintana ERA 6.75 with 4 HRs in 18 IP",
-        "Braves elite offense vs poor Rockies pitching"
+        "Dodger elite batting lineup wOBA",
+        "Matthew Liberatore 6.36 ERA vulnerable",
+        "Dodger pitching strength advantage Emmet Sheehan",
+        "Recent Dodger momentum positive",
+        "Cardinal vulnerability latest games"
       ],
-      "reasoning": "Braves are prohibitive -200 favorites with elite lineup facing Rockies' struggling starter Quintana (6.75 ERA). Colorado's pitching vulnerability combined with Braves' offensive depth makes this a heavy favorite situation with sharp odds movement. Even at -200, this is a strong lean."
+      "reasoning": "The Dodgers' elite lineup and strong pitching advantage face a vulnerable Matthew Liberatore (6.36 ERA) and Saint Louis inconsistency. Road experience and recent form give Los Angeles clear edge in this matchup."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Aaron Judge HR (BAL @ NYY) at +143",
-      "Los Angeles Dodgers ML at -190",
-      "Bryan Woo Under 5.5 Ks at -122"
+      "Kyle Schwarber HR vs PHI @ MIA (CZS +280)",
+      "Corbin Carroll Total Bases Over 1.5 vs ARI @ CHC (MGM +135)",
+      "Los Angeles Dodgers ML vs LAD @ STL (MGM -185)"
     ],
-    "reasoning": "Judge's recent 112.7 mph barrel and elite contact metrics align with weak Will Warren. Dodgers overwhelming favorite with elite pitching vs Cardinals' 6.36 ERA starter. Woo's lower K/9 (6.94) doesn't support heavy strikeout production against KC. Three high-confidence plays with independent logic.",
-    "estimated_odds": "+225 to +275 parlay range"
+    "reasoning": "This parlay combines high-confidence power plays (Schwarber's recent 113 mph barrel, Carroll's elite 27.3% barrel rate) with a strong pitching matchup advantage for the Dodgers. All three legs show elite underlying metrics and favorable conditions.",
+    "estimated_odds": "+550"
   },
-  "daily_summary": "May 1st slate features strong pitching mismatches with Dodgers-Cardinals and Braves-Rockies offering elite-level favorites. Aaron Judge and Kyle Schwarber present elite laser candidates with recent 112+ mph barrels. Weather supports power plays across warm locations (Miami 82\u00b0F, Colorado elevation), while strikeout markets offer value on pitcher underdogs with modest K/9 rates.",
-  "best_bet": "Aaron Judge HR (BAL @ NYY) at CZS +143 odds \u2014 recent 112.7 mph home run barrel with elite contact metrics facing weak Will Warren (2.75 ERA, 46% hard contact allowed) at home represents the day's highest-confidence single play."
+  "daily_summary": "May 1st slate features elite power conditions with warm weather across multiple parks (Coors 83\u00b0F, Miami 82\u00b0F, Braves-Rockies evening) amplifying home run potential. Vulnerable pitchers Matthew Liberatore (6.36 ERA), Jose Quintana (6.75 ERA), and Colin Rea face elite lineups, creating strong over-the-fence and total bases opportunities.",
+  "best_bet": "Kyle Schwarber HR vs Miami (CZS +280) - Recent 113 mph barrel, 16%+ barrel rate, warm conditions, and vulnerable pitcher make this the highest-probability elite value play of the day."
 }

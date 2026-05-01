@@ -1,6 +1,6 @@
 {
-  "slate_summary": "May 1st features five playoff games with key storylines: Pistons-Magic and Cavaliers-Raptors are pivotal series moments, while Lakers-Rockets continues their tight battle. Brandon Ingram's heel injury status clouds the Toronto matchup, while Tobias Harris (ankle) is questionable for Detroit. The Cavaliers and Lakers emerge as strong favorites in their respective series.",
-  "best_bet": "Donovan Mitchell OVER 2.5 Three Pointers vs Raptors - Mitchell has hit 51/80 (64%) on this line all season and is scoring 25.4-26.5 PPG against Toronto's middle-tier perimeter defense (#17). His L5 average of 3.2 3PM suggests strong volume continuing in a high-pressure playoff game.",
+  "slate_summary": "Playoff basketball on 5/1 features five crucial games with Pistons-Magic, Cavaliers-Raptors, Lakers-Rockets, 76ers-Celtics, and Timberwolves-Spurs. Multiple star players are dealing with injuries (Durant, Doncic, Ingram doubtful), creating expanded roles and scoring opportunities for secondary stars and role players stepping up.",
+  "best_bet": "James Harden OVER 6.5 assists vs Toronto - Harden averages 8.0 AST on the season with 79% hit rate on 6+ assists this season. Toronto's defense ranks #29 in assists allowed, and in a playoff series where the Cavs need pace and ball movement, Harden should facilitate at high volume.",
   "points_picks": [
     {
       "player_name": "Donovan Mitchell",
@@ -8,19 +8,19 @@
       "opponent": "TOR",
       "prop_line": 26.5,
       "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -118,
+      "best_book": "MGM",
+      "best_odds": -115,
       "confidence": "High",
       "season_avg": 27.9,
       "l5_avg": 25.4,
-      "def_rank_vs_pos": "#17 (Avg)",
-      "hit_rate_season": "39%",
+      "def_rank_vs_pos": "#17 (Ok)",
+      "hit_rate_season": "45%",
       "key_factors": [
-        "Season average exceeds line",
-        "Playoff momentum in series",
-        "Raptors allow 27.2 PPG to SG (#17 defense)"
+        "Season average of 27.9 PPG exceeds 26.5 line",
+        "Cavaliers are 4-point favorites needing early scoring",
+        "Mitchell has escalated production in playoff series against Toronto"
       ],
-      "reasoning": "Mitchell's 27.9 season average comfortably clears 26.5. Against Toronto's mediocre perimeter defense, he's averaged 25.4 in L10 and maintains strong usage in playoff games. The Cavaliers lean heavily on Mitchell in crunch time."
+      "reasoning": "Mitchell's season average of 27.9 PPG sits comfortably above the 26.5 line. As the Cavaliers' primary scorer in a playoff matchup where they're favored, Mitchell should see consistent offensive opportunities and high usage rate needed to advance the series."
     },
     {
       "player_name": "Paolo Banchero",
@@ -29,18 +29,18 @@
       "prop_line": 23.5,
       "over_under": "OVER",
       "best_book": "MGM",
-      "best_odds": -111,
+      "best_odds": -110,
       "confidence": "High",
       "season_avg": 22.2,
       "l5_avg": 22.9,
-      "def_rank_vs_pos": "#19 (Avg)",
+      "def_rank_vs_pos": "#19 (Ok)",
       "hit_rate_season": "60%",
       "key_factors": [
-        "L5 average near line",
-        "Averaging 25.8 vs Pistons this series",
-        "Strong playoff performance trajectory"
+        "Averages 22.2 PPG with 60% hit rate on 23.5+ line",
+        "Magic are slight favorites with home court",
+        "Banchero has been named superstar in Game 5 elimination performance"
       ],
-      "reasoning": "Banchero's 22.2 season average is tight to the line, but he's been explosive vs Detroit throughout the series, posting 25.8 PPG in recent matchups. As Orlando's offensive engine, he sees consistent usage and the Pistons' PF defense ranks #19 (average)."
+      "reasoning": "Banchero's 22.2 season average is just under the 23.5 line, but his recent Game 5 performance in elimination action and 60% hit rate on this exact line suggest upside. As the Magic's focal point offensively, he should generate enough scoring to clear the threshold."
     }
   ],
   "rebounds_picks": [
@@ -50,19 +50,19 @@
       "opponent": "ORL",
       "prop_line": 9.5,
       "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": 116,
-      "confidence": "High",
+      "best_book": "MGM",
+      "best_odds": 105,
+      "confidence": "Medium",
       "season_avg": 10.5,
-      "l5_avg": 10.8,
-      "def_rank_vs_pos": "#23 (Bad)",
-      "hit_rate_season": "57%",
+      "l5_avg": 9.0,
+      "def_rank_vs_pos": "#23 (Ok)",
+      "hit_rate_season": "58%",
       "key_factors": [
-        "Season average 10.5 exceeds 9.5 line",
-        "Magic allow 19.4 rebound chances to C (#28 worst)",
-        "Playoff rebounding intensity increase"
+        "Season average of 10.5 REB exceeds 9.5 line",
+        "Pistons rank #3 in offensive rebounding (13.1 OREB)",
+        "58% hit rate on this specific line shows positive track record"
       ],
-      "reasoning": "Duren's 10.5 season rebounding average clearly exceeds 9.5. Orlando's poor defensive rebounding (ranking 28th in rebound chances allowed) creates consistent opportunities, and playoff basketball amplifies his rebounding edge as a physical presence."
+      "reasoning": "Duren's 10.5 season rebounding average gives clean cushion above the 9.5 line. The Pistons' elite offensive rebounding prowess creates additional opportunities for second chances, and Duren's 58% historical hit rate on this line validates the over play."
     }
   ],
   "assists_picks": [
@@ -71,111 +71,110 @@
       "team": "CLE",
       "opponent": "TOR",
       "prop_line": 6.5,
-      "over_under": "UNDER",
-      "best_book": "FD",
-      "best_odds": -152,
-      "confidence": "Medium",
-      "season_avg": 8.0,
-      "l5_avg": 7.5,
-      "def_rank_vs_pos": "#30 (Excellent)",
-      "hit_rate_season": "59%",
-      "key_factors": [
-        "Raptors allow only 5.4 assists to PG (#30 best defense)",
-        "L5 average trending down to 7.5",
-        "Playoff defensive intensity vs playmaking"
-      ],
-      "reasoning": "Despite Harden's 8.0 season average, Toronto's exceptional perimeter defense (#30) suppresses assist opportunities. His L5 average dropping to 7.5 and the Raptors holding opponents significantly below average makes the UNDER attractive."
-    }
-  ],
-  "threes_picks": [
-    {
-      "player_name": "Donovan Mitchell",
-      "team": "CLE",
-      "opponent": "TOR",
-      "prop_line": 2.5,
       "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -120,
+      "best_book": "MGM",
+      "best_odds": -125,
       "confidence": "Elite",
-      "season_avg": 3.2,
-      "l5_avg": 3.2,
-      "def_rank_vs_pos": "#21 (Avg)",
-      "hit_rate_season": "64%",
+      "season_avg": 8.0,
+      "l5_avg": 21.5,
+      "def_rank_vs_pos": "#29 (Bad)",
+      "hit_rate_season": "75%",
       "key_factors": [
-        "Season and L5 average both 3.2",
-        "64% hit rate on this exact line",
-        "2-game streak hitting line"
+        "Season average 8.0 AST far exceeds 6.5 line",
+        "Toronto defense ranks #29 in assists allowed (7.4 per game)",
+        "Elite 75% hit rate on 6+ assists in playoffs this year"
       ],
-      "reasoning": "Mitchell has been remarkably consistent at 3.2 3PM both season-long and in his last 5 games, with 64% hit rate on this exact prop. Toronto's average perimeter defense provides no relief, making this one of the day's most reliable props."
-    }
-  ],
-  "combo_picks": [
+      "reasoning": "Harden's 8.0 AST season average significantly exceeds the 6.5 line, and Toronto's historically poor defensive ranking against assists makes this a high-probability play. His 75% hit rate on 6+ assists in recent playoff games confirms positive momentum and usage patterns."
+    },
     {
       "player_name": "Cade Cunningham",
       "team": "DET",
       "opponent": "ORL",
-      "prop_type": "PRA",
-      "prop_line": 45.5,
-      "over_under": "OVER",
-      "best_book": "MGM",
-      "best_odds": -118,
-      "confidence": "High",
-      "season_avg": 39.4,
-      "l5_avg": 47.0,
-      "def_rank_vs_pos": "#13 (Avg)",
-      "hit_rate_season": "34%",
-      "key_factors": [
-        "L5 average 47.0 exceeds 45.5 line",
-        "High usage playoff performer",
-        "Magic defense allows 25.4 PPG to PG (#13 rank)"
-      ],
-      "reasoning": "Cunningham's L5 average of 47.0 PRA substantially clears 45.5. As Detroit's primary facilitator and scorer, he's been elevated in playoff games, and Orlando's mid-tier PG defense provides no resistance to his combined production."
-    },
-    {
-      "player_name": "Jakob Poeltl",
-      "team": "TOR",
-      "opponent": "CLE",
-      "prop_type": "PR",
-      "prop_line": 12.5,
+      "prop_line": 9.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -118,
+      "best_odds": -102,
       "confidence": "High",
-      "season_avg": 18.2,
-      "l5_avg": 18.4,
-      "def_rank_vs_pos": "#21 (Avg)",
-      "hit_rate_season": "93%",
+      "season_avg": 9.9,
+      "l5_avg": 7.5,
+      "def_rank_vs_pos": "#23 (Ok)",
+      "hit_rate_season": "45%",
       "key_factors": [
-        "Season average 18.2 well above 12.5",
-        "Elite 93% hit rate on this line",
-        "3-game streak hitting prop"
+        "Season average of 9.9 AST exceeds 9.5 line",
+        "Cunningham named superstar in Game 5 with expanded offensive role",
+        "Pistons rank #10 in AST (27.8 per game), run through Cunningham"
       ],
-      "reasoning": "Poeltl's dominant 18.2 season average and outstanding 93% hit rate on this exact line makes this nearly a lock. His consistent double-double production provides reliable rebounding and scoring in a playoff setting against Cleveland's average interior defense."
+      "reasoning": "Cunningham's season average of 9.9 assists sits just above the 9.5 line, and his Game 5 star performance in elimination action suggests elevated usage. As Detroit's primary ball-handler and playmaker, he should facilitate at high volume to overcome Magic's defensive intensity."
+    }
+  ],
+  "threes_picks": [],
+  "combo_picks": [
+    {
+      "player_name": "Scottie Barnes",
+      "team": "TOR",
+      "opponent": "CLE",
+      "prop_type": "PA",
+      "prop_line": 29.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": -101,
+      "confidence": "High",
+      "season_avg": 25.9,
+      "l5_avg": 26.2,
+      "def_rank_vs_pos": "#1 (Elite)",
+      "hit_rate_season": "34%",
+      "key_factors": [
+        "Barnes ranks #1 in PTS+REB vs PF position defensively (Cavs allow 24.2)",
+        "Raptors need secondary scoring if Ingram remains questionable",
+        "Defensive matchup heavily favors expanded role for Barnes"
+      ],
+      "reasoning": "Despite modest 34% historical hit rate, Barnes' defensive matchup against Cleveland is elite (Cavs allow only 24.2 PTS+REB to PFs, lowest in league). If Ingram's status is limited, Barnes should assume expanded scoring responsibility in a must-win playoff game."
+    },
+    {
+      "player_name": "Duncan Robinson",
+      "team": "ORL",
+      "opponent": "DET",
+      "prop_type": "PA",
+      "prop_line": 11.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": 100,
+      "confidence": "Medium",
+      "season_avg": 12.2,
+      "l5_avg": 12.2,
+      "def_rank_vs_pos": "#18 (Ok)",
+      "hit_rate_season": "67%",
+      "key_factors": [
+        "Season average 12.2 PTS+AST exceeds 11.5 line",
+        "67% hit rate shows strong historical performance on this threshold",
+        "Magic need three-point shooting spacing in series against Pistons"
+      ],
+      "reasoning": "Robinson's season average of 12.2 PTS+AST sits above the 11.5 line with a strong 67% historical hit rate. As Orlando's primary three-point threat needed for spacing against Detroit's defense, he should see consistent offensive touches and generate the modest 11.5 threshold."
     }
   ],
   "game_picks": [
     {
       "game": "Cleveland Cavaliers @ Toronto Raptors",
-      "pick_type": "ML",
-      "pick": "Cleveland Cavaliers",
-      "line": -180,
-      "best_book": "CZS",
+      "pick_type": "Spread",
+      "pick": "Cavaliers -4.5",
+      "line": -110,
+      "best_book": "MGM",
       "confidence": "High",
       "key_factors": [
-        "Cavaliers favored 3.5-4 points across books",
-        "Brandon Ingram questionable with heel injury",
-        "Donovan Mitchell's consistent scoring in series"
+        "Cavaliers rank #4 in offensive efficiency (119.5 PPG)",
+        "Toronto missing key rotation pieces (Ingram doubtful, Quickley/Hepburn out)",
+        "Cavs' elite perimeter defense can contain Raptors' limited ball movement"
       ],
-      "reasoning": "The Cavaliers' offensive depth with Mitchell and Harden should overcome Toronto's defensive efforts, especially with Ingram's status uncertain. Cleveland's 119.5 PPG season average and strong playoff execution justify the favorite role in a must-win environment."
+      "reasoning": "Cleveland's superior offensive firepower and defensive intensity, combined with Toronto's mounting injury concerns, favors the Cavs to cover the -4.5 spread on the road. The Raptors' lack of backcourt depth without Quickley forces increased reliance on Barnes and aging veterans."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Donovan Mitchell OVER 2.5 3PM (-120)",
-      "Jalen Duren OVER 9.5 REB (116)",
-      "Jakob Poeltl OVER 12.5 PR (-118)"
+      "James Harden OVER 6.5 assists (CLE vs TOR) -125 MGM",
+      "Donovan Mitchell OVER 26.5 points (CLE vs TOR) -115 MGM",
+      "Cavaliers -4.5 spread vs Toronto -110 MGM"
     ],
-    "estimated_odds": "+285",
-    "reasoning": "All three legs feature elite hit rates (64%, 57%, 93%) and fundamental mismatches favoring the over. Mitchell's consistency at 3.2 3PM, Duren's rebounding advantage vs poor Orlando defense, and Poeltl's elite track record create a highly correlated three-leg system all hitting today."
+    "estimated_odds": "+280",
+    "reasoning": "All three legs correlate positively: Cavaliers' offensive firepower (evidenced by Harden's assists and Mitchell's scoring) directly drives the spread. Harden's playmaking enables Mitchell's scoring opportunities, and both offensive metrics are enhanced by Toronto's weak defensive ranking against guards. This parlay captures the Cavs' edge across multiple scoring vectors."
   }
 }
