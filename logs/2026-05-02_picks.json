@@ -1,0 +1,271 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Aaron Judge",
+      "team": "Yankees",
+      "opponent": "Orioles",
+      "game": "BAL @ NYY",
+      "game_time": "5:35 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "113.0 mph on 4/27",
+      "avg_exit_velo": "90.5 mph",
+      "barrel_rate": "22.2%",
+      "hard_hit_rate": "61.1%",
+      "pitcher_hard_hit_allowed": "38.6%",
+      "park_factor_hr": 1.04,
+      "key_factors": [
+        "Recent 113 mph barrel on curveball",
+        "22.2% barrel rate elite tier",
+        "61.1% hard hit rate vs Kyle Bradish allowing 38.6%"
+      ],
+      "reasoning": "Judge has demonstrated elite exit velo recently with 113 mph barrel and maintains 22.2% barrel rate with 61.1% hard hit rate. Bradish allows 38.6% hard contact, creating mismatch for Judge's aggressive approach in Yankee Stadium."
+    },
+    {
+      "rank": 2,
+      "player_name": "Kyle Schwarber",
+      "team": "Phillies",
+      "opponent": "Marlins",
+      "game": "PHI @ MIA",
+      "game_time": "8:10 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "113.0 mph on 4/30",
+      "avg_exit_velo": "91.0 mph",
+      "barrel_rate": "19.5%",
+      "hard_hit_rate": "59.2%",
+      "pitcher_hard_hit_allowed": "41.9%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "Recent 113 mph barrel on cutter",
+        "Consistent 19.5% barrel rate",
+        "59.2% hard hit rate vs soft contact pitcher"
+      ],
+      "reasoning": "Schwarber just recorded 113 mph barrel on cutter and maintains elite contact metrics. Facing Connelly Early (41.9% hard hit allowed) creates favorable exit velo environment for repeat 110+ mph contact."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Ben Rice",
+      "team": "Yankees",
+      "opponent": "Orioles",
+      "game": "BAL @ NYY",
+      "game_time": "5:35 PM",
+      "best_book": "CZS",
+      "fd_odds": "+333",
+      "mgm_odds": "+145",
+      "czs_odds": "+305",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "47% ISO with 21.9% barrel rate in 50 PA",
+        "59.4% hard hit rate elite contact",
+        "Kyle Bradish 0.90 HR/9 allows 15.8% HR/FB"
+      ],
+      "reasoning": "Ben Rice has elite power metrics (.789 SLG, .447 ISO) with 21.9% barrel rate. Bradish's 0.90 HR/9 and 15.8% HR/FB rate create favorable home run environment for Rice's demonstrated power."
+    },
+    {
+      "rank": 2,
+      "player_name": "Junior Caminero",
+      "team": "Rays",
+      "opponent": "Giants",
+      "game": "SF @ TB",
+      "game_time": "10:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "390",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 112.9 mph HR off Four-seam FB",
+        "Tropicana Field dome HR-friendly",
+        "Griffin Jax 2.38 HR/9 allows 37.5% HR/FB"
+      ],
+      "reasoning": "Caminero just hit 112.9 mph home run yesterday and faces Griffin Jax with elevated 2.38 HR/9 and 37.5% HR/FB. Tropicana's enclosed environment helps power play despite neutral park factors."
+    },
+    {
+      "rank": 3,
+      "player_name": "Ozzie Albies",
+      "team": "Braves",
+      "opponent": "Rockies",
+      "game": "ATL @ COL",
+      "game_time": "8:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "475",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 76,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "Coors Field 1.34 HR park factor elite",
+        "71\u00b0F warm weather conditions",
+        "Chris Sale 7.5 K/9 allows elevated hard contact"
+      ],
+      "reasoning": "Albies plays at Coors Field with best HR park factor (1.34) and warm conditions (71\u00b0F) create optimal home run environment. Sale's 7.5 K/9 indicates lower control resulting in mistakes."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Byron Buxton",
+      "team": "Twins",
+      "opponent": "Blue Jays",
+      "game": "TOR @ MIN",
+      "game_time": "6:10 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-155",
+      "czs_odds": "370",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 81,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Dylan Cease 1.86 BAA elite pitcher control issues",
+        "Buxton consistent contact hitter Target Field",
+        "38% hard hit rate vs 34.8% whiff rate pitcher"
+      ],
+      "reasoning": "Byron Buxton maintains solid contact rates facing Dylan Cease who allows 1.86 BAA. Despite Cease's strikeout capability, his elevated WHIP (1.37) and contact profile favor Buxton's line drive approach."
+    },
+    {
+      "rank": 2,
+      "player_name": "Ketel Marte",
+      "team": "Diamondbacks",
+      "opponent": "Cubs",
+      "game": "ARI @ CHC",
+      "game_time": "6:20 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-235",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "34.2% BA elite contact rate",
+        ".480 OBP vs Shota Imanaga 1.50 WHIP",
+        "Marte 31.2% LA sweet spot rate favorable"
+      ],
+      "reasoning": "Ketel Marte .342 BA and .480 OBP represent elite contact profile. Imanaga's 1.50 WHIP and 20.2% BB rate create elevated free pass opportunities for Marte to reach base."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Josh Jung",
+      "team": "Rangers",
+      "opponent": "Tigers",
+      "game": "TEX @ DET",
+      "game_time": "11:15 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "135",
+      "czs_odds": "112",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        ".622 SLG .220 ISO elite power",
+        "Keider Montero 1.00 ISO allows hard contact",
+        "54.5% hard hit rate Jung elite contact"
+      ],
+      "reasoning": "Josh Jung .622 SLG and strong hard hit rate face Keider Montero with elevated 1.00 ISO and 0.98 BAA. Montero's contact-allowing profile creates multiple-base opportunity for Jung's power metrics."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Dylan Cease",
+      "team": "Blue Jays",
+      "pick_type": "pitcher",
+      "opponent": "Twins",
+      "game": "TOR @ MIN",
+      "game_time": "6:10 PM",
+      "best_book": "FD",
+      "fd_odds": "-146",
+      "mgm_odds": "-115",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "13.79 K/9 elite strikeout rate",
+        "34.8% whiff rate pitcher dominance",
+        "38% BB rate moderate control concerns"
+      ],
+      "reasoning": "Dylan Cease maintains elite 13.79 K/9 with 34.8% whiff rate indicating strong strikeout potential. Despite 38% BB rate, elite K/9 and whiff rate suggest 6.5 strikeout line is achievable."
+    },
+    {
+      "rank": 2,
+      "player_name": "Chris Sale",
+      "team": "Braves",
+      "pick_type": "pitcher",
+      "opponent": "Rockies",
+      "game": "ATL @ COL",
+      "game_time": "8:10 PM",
+      "best_book": "MGM",
+      "fd_odds": "106",
+      "mgm_odds": "105",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "7.5",
+      "over_under_pick": "over",
+      "confidence_score": 75,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "High velocity elite strikeout pitcher",
+        "Coors Field elevation reduces batted ball distance",
+        "Rockies weak contact rates vs elite pitchers"
+      ],
+      "reasoning": "Chris Sale elite strikeout pitcher facing Coors elevation (thin air reduces distance). Sale's pedigree and Rockies' elevated strikeout rates suggest 7.5 K line presents value at favorable odds."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "ML",
+      "game": "Milwaukee @ Washington",
+      "game_time": "8:05 PM",
+      "pick": "Milwaukee Brewers",
+      "best_book": "CZS",
+      "fd_odds": "-134",
+      "mgm_odds": "-130",
+      "czs_odds": "-135",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Kyle Harrison elite pitcher 104 FIP",
+        "Foster Griffin 4.32 ERA vs Brewers lineup strength",
+        "Milwaukee -135 fair value quality pitcher matchup"
+      ],
+      "reasoning": "Milwaukee's Kyle Harrison (104 FIP, 5.5 K/9) provides quality starting pitching against Foster Griffin's 4.32 ERA. Brewers lineup advantages justify moneyline play at -135 CZS offering."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Ben Rice Over 0.5 HR vs Kyle Bradish",
+      "Dylan Cease Over 6.5 K vs Minnesota",
+      "Milwaukee Brewers ML @ Washington"
+    ],
+    "reasoning": "Three correlated plays based on matchup quality: Rice's elite power metrics vs pitcher allowing 0.90 HR/9, Cease's elite strikeout rate against weak-contact Twins lineup, and Brewers' superior pitching advantage on the road.",
+    "estimated_odds": "+330"
+  },
+  "daily_summary": "Today's slate offers strong home run environment at Coors Field and elite pitching matchups that create strikeout value. Aaron Judge and Ben Rice present best exit velo/power combinations against Kyle Bradish's elevated HR rate, while Dylan Cease's 13.79 K/9 dominates against Minnesota contact weakness.",
+  "best_bet": "Ben Rice Over 0.5 HR at +305 (CZS) - Elite power metrics (.447 ISO, 21.9% barrel) face Kyle Bradish's 0.90 HR/9 and 15.8% HR/FB rate in Yankee Stadium."
+}
