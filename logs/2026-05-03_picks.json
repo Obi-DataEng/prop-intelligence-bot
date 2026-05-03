@@ -1,0 +1,224 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Miami Marlins",
+      "game": "PHI @ MIA",
+      "game_time": "5:40 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "113.0 mph on 4/30",
+      "avg_exit_velo": "91.5 mph",
+      "barrel_rate": "18%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "47%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "Recent 113.0 mph barrel on 4/30 against similar pitching",
+        "High barrel rate at 18% with consistent hard contact",
+        "Faces Jesus Luzardo with 10.75 K/9 but elevated hard hit rate"
+      ],
+      "reasoning": "Schwarber has elite bat speed (91.5 avg EV) with recent 113 mph exit velocity on a barrel. His 18% barrel rate and 52% hard hit rate are among elite sluggers, making 110+ mph contact highly probable today against Luzardo's pitch profile."
+    },
+    {
+      "rank": 2,
+      "player_name": "Pete Alonso",
+      "team": "Baltimore Orioles",
+      "opponent": "New York Yankees",
+      "game": "BAL @ NYY",
+      "game_time": "1:05 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "114.6 mph on 5/2",
+      "avg_exit_velo": "93.2 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "58%",
+      "pitcher_hard_hit_allowed": "45%",
+      "park_factor_hr": 0.88,
+      "key_factors": [
+        "Just hit 114.6 mph HR on 5/2 at Yankee Stadium",
+        "League-leading 22% barrel rate with 58% hard hit rate",
+        "Yankee Stadium suppresses HRs but elite exit velo likely to generate 110+ EV"
+      ],
+      "reasoning": "Alonso's recent 114.6 mph home run at Yankee Stadium demonstrates his ability to generate elite exit velocity in this exact ballpark. His 22% barrel rate and 58% hard hit rate are elite, making multiple 110+ mph contacts expected in a full game."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Byron Buxton",
+      "team": "Minnesota Twins",
+      "opponent": "Toronto Blue Jays",
+      "game": "TOR @ MIN",
+      "game_time": "4:45 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": 320,
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "16.4% barrel rate with 41% hard hit rate",
+        "Joe Ryan allows 9.16 K/9 but 5.52 HR/9 in small sample",
+        "Buxton's 86.8 mph avg exit velo supports HR potential"
+      ],
+      "reasoning": "Buxton has elite power metrics with 16.4% barrel rate and 41% hard hit rate. Against Joe Ryan's elevated 5.52 HR/9 rate, Buxton's +316 odds at 320 on CZS represents value with his consistent hard contact profile."
+    },
+    {
+      "rank": 2,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Baltimore Orioles",
+      "game": "BAL @ NYY",
+      "game_time": "1:05 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": 198,
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 112.7 mph HR on 4/28 at same ballpark",
+        "Max Fried allows elite -140 FD odds with elevated HR/FB%",
+        "Yankee Stadium park factor favorable for power"
+      ],
+      "reasoning": "Judge's recent 112.7 mph home run at Yankee Stadium shows established ability at this venue. At -198 CZS odds, this is appropriately priced for his elite power profile facing Max Fried's pitch mix."
+    },
+    {
+      "rank": 3,
+      "player_name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opponent": "San Francisco Giants",
+      "game": "SF @ TB",
+      "game_time": "5:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": 320,
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 112.9 mph home run on 5/1 at home",
+        "Tropicana Field has 1.29 HR park factor despite dome",
+        "Young power prospect with escalating exit velo trends"
+      ],
+      "reasoning": "Caminero just hit a 112.9 mph home run at Tropicana Field on 5/1, showing recent power surge. The dome stadium's 1.29 HR park factor combined with his rising exit velo makes the +320 CZS odds attractive for continued power production."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "opponent": "Miami Marlins",
+      "game": "PHI @ MIA",
+      "game_time": "5:40 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": -275,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 85,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Career .382 wOBA against similar pitcher archetypes",
+        "Jesus Luzardo allows 0.259 wOBA with elevated WHIP",
+        "Harper's discipline (20%+ BB rate) exploits elevated walk rates"
+      ],
+      "reasoning": "Harper's elite offensive profile (.407 wOBA season) faces Luzardo's defensive limitations (0.259 opponent wOBA, elevated WHIP of 1.28). The -275 MGM pricing undervalues Harper's elite contact rate and discipline against this pitcher profile."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Jose Altuve",
+      "team": "Houston Astros",
+      "opponent": "Boston Red Sox",
+      "game": "HOU @ BOS",
+      "game_time": "6:37 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": 130,
+      "czs_odds": 136,
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Season 1.49 ISO with elevated hard hit rate",
+        "Ranger Suarez allows 0.496 opponent wOBA with high HR/9",
+        "MGM +130 over 1.5 TB offers value against elite pitcher"
+      ],
+      "reasoning": "Altuve's 1.49 ISO and consistent hard contact against Ranger Suarez's elevated wOBA (0.496) makes the over 1.5 total bases likely. MGM's +130 odds provide positive expected value for a player with his offensive profile."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Joe Ryan",
+      "pick_type": "pitcher",
+      "team": "Minnesota Twins",
+      "opponent": "Toronto Blue Jays",
+      "game": "TOR @ MIN",
+      "game_time": "4:45 PM",
+      "best_book": "FD",
+      "fd_odds": 108,
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "9.16 K/9 rate with 37.1% strikeout rate",
+        "Blue Jays 25% K rate faces elite strikeout pitcher",
+        "FD +108 over 5.5 K offers strong positive EV"
+      ],
+      "reasoning": "Joe Ryan's 9.16 K/9 and 37.1% strikeout rate provide excellent strikeout potential against Toronto's 25% strikeout rate. The +108 FD odds over 5.5 K represent strong value for Ryan's elite strikeout profile."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "OU",
+      "game": "Arizona Diamondbacks @ Chicago Cubs",
+      "game_time": "6:20 PM",
+      "pick": "Over 11.5",
+      "best_book": "FD",
+      "fd_odds": "-106",
+      "mgm_odds": "-105",
+      "czs_odds": "-105",
+      "scr_odds": null,
+      "fd_line": "11.5",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Merrill Kelly allows 8.76 ERA with 12.2% HR rate",
+        "Matthew Boyd allows 1.77 ERA but only 50 IP sample",
+        "Cubs home run friendly environment with multiple power threats"
+      ],
+      "reasoning": "The Cubs-Diamondbacks matchup projects for over 11.5 runs given Kelly's elevated 8.76 ERA and both offenses' power capabilities. Merrill Kelly's 12.2% HR rate creates elevated scoring potential at wrigley."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Kyle Schwarber 110+ mph exit velocity (laser pick)",
+      "Joe Ryan Over 5.5 Strikeouts at +108",
+      "Arizona Diamondbacks @ Chicago Cubs Over 11.5"
+    ],
+    "reasoning": "Combining elite exit velocity generation with pitcher strikeout upside and elevated game total creates synergistic parlay with independent probability paths. Power hitter against permissive pitcher environment with high-scoring expectation.",
+    "estimated_odds": "+285"
+  },
+  "daily_summary": "May 3rd slate features elite power generation opportunities with Schwarber and Alonso primed for 110+ mph contact. Joe Ryan strikeout upside against Toronto's elevated K rate combined with Cubs-Diamondbacks over-total projection creates balanced parlay structure.",
+  "best_bet": "Kyle Schwarber Over 0.5 HR vs Miami (5:40 PM) - Elite recent exit velo (113.0 mph), 18% barrel rate, and favorable pitcher matchup makes +320 CZS odds excellent value."
+}
