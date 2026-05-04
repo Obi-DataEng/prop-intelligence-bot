@@ -9,40 +9,38 @@
       "game_time": "10:40 PM",
       "confidence_tier": "Elite",
       "recent_max_ev": "113.0 mph on 4/30",
-      "avg_exit_velo": "93.8 mph",
-      "barrel_rate": "16%",
-      "hard_hit_rate": "52%",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "18.5%",
+      "hard_hit_rate": "56%",
       "pitcher_hard_hit_allowed": "48%",
       "park_factor_hr": 1.02,
       "key_factors": [
-        "Recent 113.0 mph barrel in HR",
-        "Consistent hard hit rate above 50%",
-        "Faces Janson Junk with 5.73 K/9 (hittable)",
-        "Warm weather 79\u00b0F favorable"
+        "Recent 113 mph barrel on similar pitcher",
+        "Elite barrel rate 18.5%",
+        "Janson Junk allows 48% HH rate, weak pitcher"
       ],
-      "reasoning": "Schwarber has elite exit velo demonstrated by recent 113 mph barrel. He maintains top-tier hard hit rates and will face a relatively hittable pitcher in Junk. Warm Miami conditions favor power production."
+      "reasoning": "Schwarber has demonstrated 110+ mph capability recently with elite barrel metrics. Junk's mediocre stuff (5.73 K/9, 39 K rate) and high hard-hit allowance make him vulnerable to Schwarber's aggressive approach and power stroke."
     },
     {
       "rank": 2,
       "player_name": "Pete Alonso",
-      "team": "Baltimore Orioles",
-      "opponent": "New York Yankees",
-      "game": "BAL @ NYY",
-      "game_time": "11:05 PM",
+      "team": "New York Mets",
+      "opponent": "Colorado Rockies",
+      "game": "NYM @ COL",
+      "game_time": "9:40 PM",
       "confidence_tier": "High",
       "recent_max_ev": "114.6 mph on 5/2",
-      "avg_exit_velo": "94.2 mph",
-      "barrel_rate": "15%",
-      "hard_hit_rate": "51%",
-      "pitcher_hard_hit_allowed": "50%",
-      "park_factor_hr": 0.98,
+      "avg_exit_velo": "93.8 mph",
+      "barrel_rate": "17.2%",
+      "hard_hit_rate": "54%",
+      "pitcher_hard_hit_allowed": "42%",
+      "park_factor_hr": 1.14,
       "key_factors": [
-        "Recent 114.6 mph home run on 5/2",
-        "Consistent elite barrel and hard hit rates",
-        "Yankee Stadium familiar home run park",
-        "71\u00b0F warm weather in NY"
+        "114.6 mph recent hit at Yankee Stadium",
+        "Coors Field park factor 1.14 (elite HR factor)",
+        "Sugano allows weak contact, high meatball rate 6.0%"
       ],
-      "reasoning": "Alonso just hit 114.6 mph HR two days ago, showing elite power. His barrel rate and hard hit rate are top-tier. Yankee Stadium's dimensions favor his left-handed pull power despite neutral park factor."
+      "reasoning": "Alonso's recent 114+ mph display combined with Coors' extreme elevation and HR-friendly environment creates elite 110+ EV probability. Sugano's higher meatball rate and low strikeout rate suggest fastball-heavy approach Alonso can elevate."
     }
   ],
   "hr_picks": [
@@ -54,95 +52,91 @@
       "game": "NYM @ COL",
       "game_time": "9:40 PM",
       "best_book": "CZS",
-      "fd_odds": null,
+      "fd_odds": "+122",
       "mgm_odds": null,
-      "czs_odds": "210",
+      "czs_odds": "+210",
       "scr_odds": null,
-      "fd_line": null,
+      "fd_line": 0.5,
       "confidence_score": 82,
-      "confidence_tier": "High",
+      "confidence_tier": "Elite",
       "key_factors": [
-        "Coors Field park factor 1.35 (elite HR environment)",
-        "Elite batter facing moderate pitcher Sugano",
-        "71\u00b0F warm temperature favorable",
-        "High-altitude thin air increases HR distance"
+        "Coors Field park factor 1.12 (HR boost)",
+        "Sugano HR/9 1.42 (vulnerable)",
+        "Soto wOBA .390 elite contact"
       ],
-      "reasoning": "Soto at Coors Field is one of the best HR matchups on the slate. Coors has the highest HR park factor (1.35) in baseball. Sugano allows 5.97 K/9 and has weak contact prevention. The altitude and temperature create perfect storm for power."
+      "reasoning": "Soto faces one of baseball's most HR-friendly parks against a pitcher allowing 1.42 HR/9. His elite contact skills and Coors' elevation create premium HR probability. CZS offers best value at +210 vs FD -144."
     },
     {
       "rank": 2,
-      "player_name": "Shohei Ohtani",
-      "team": "Los Angeles Dodgers",
-      "opponent": "Houston Astros",
-      "game": "LAD @ HOU",
-      "game_time": "12:10 AM",
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Miami Marlins",
+      "game": "PHI @ MIA",
+      "game_time": "10:40 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "220",
+      "czs_odds": "+265",
       "scr_odds": null,
-      "fd_line": null,
+      "fd_line": 0.5,
       "confidence_score": 78,
       "confidence_tier": "High",
       "key_factors": [
-        "Elite power hitter in warm 81\u00b0F Houston",
-        "Faces Yamamoto with 3.58 ERA but exposed to power",
-        "Dodger Stadium park factor 1.00 neutral",
-        "Ohtani's elite plate discipline vs. contact-prone pitcher"
+        "Recent 113 mph barrel (4/30)",
+        "Elite barrel rate 18.5%",
+        "Junk weak pitcher profile, 5.73 K/9"
       ],
-      "reasoning": "Ohtani is baseball's most elite power hitter facing average Astros starter. Houston's warm temperature (81\u00b0F) maximizes ball flight. Yamamoto's 0.96 WHIP suggests some control issues that Ohtani will exploit."
+      "reasoning": "Schwarber's recent power display and elite barrel metrics suggest strong HR probability. Junk's mediocre velocity (88-91 mph range) and high meatball rate create elevated elevation opportunity."
     }
   ],
   "hits_picks": [
     {
       "rank": 1,
-      "player_name": "Bryce Harper",
-      "team": "Philadelphia Phillies",
-      "opponent": "Miami Marlins",
-      "game": "PHI @ MIA",
-      "game_time": "10:40 PM",
+      "player_name": "Brenton Doyle",
+      "team": "Colorado Rockies",
+      "opponent": "New York Mets",
+      "game": "NYM @ COL",
+      "game_time": "9:40 PM",
       "best_book": "MGM",
       "fd_odds": null,
-      "mgm_odds": "-275",
+      "mgm_odds": "-250",
       "czs_odds": null,
       "scr_odds": null,
-      "fd_line": "0.5",
+      "fd_line": 0.5,
       "over_under_pick": "over",
-      "confidence_score": 81,
+      "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "Strong -275 odds indicate sharp confidence",
-        "Elite hitter vs. Junk's mediocre 5.73 K/9",
-        "Harper's career performance in Miami favorable",
-        "Warm 79\u00b0F conditions support offensive environment"
+        "Coors Field elevation boosts hit rates",
+        "Sugano WHIP 1.17 (high contact allowed)",
+        "Doyle BA .333 recent stretch"
       ],
-      "reasoning": "Harper's -275 MGM odds reflect strong sharp support. Junk is a hittable pitcher with high K/9 but weak results (3.43 ERA). Harper's elite plate discipline makes him a hits lock against this weak opponent."
+      "reasoning": "Doyle's contact skills against Sugano's high-WHIP profile in Coors' hit-friendly environment create strong over probability. MGM's -250 pricing reflects sharp money on this overlap."
     }
   ],
   "total_bases_picks": [
     {
       "rank": 1,
-      "player_name": "Kyle Tucker",
+      "player_name": "Carlos Correa",
       "team": "Houston Astros",
       "opponent": "Los Angeles Dodgers",
       "game": "LAD @ HOU",
       "game_time": "12:10 AM",
       "best_book": "CZS",
       "fd_odds": null,
-      "mgm_odds": "130",
-      "czs_odds": "126",
+      "mgm_odds": "-185",
+      "czs_odds": "+130",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 76,
+      "confidence_score": 74,
       "confidence_tier": "High",
       "key_factors": [
-        "CZS offers +126 vs MGM +130 (slight MGM edge)",
-        "Tucker's elite power in warm 81\u00b0F Houston",
-        "Yamamoto allows 3.58 ERA exposing power",
-        "1.5 line is very achievable for elite power hitter"
+        "Correa SLG .365 vs RHP strong",
+        "Yamamoto allows 8.6% HH rate, vulnerable",
+        "Astros home park favorable (81\u00b0F temp)"
       ],
-      "reasoning": "Tucker is a top-tier power hitter facing a beatable starter. The 1.5 total bases line at +126 CZS offers strong value. Houston's warm temperature and his elite power profile make this a high-probability over."
+      "reasoning": "Correa's consistent production against right-handed pitchers combined with Yamamoto's pedestrian hard-hit allowance suggests total bases over probability. CZS offers sharp +130 vs MGM -185."
     }
   ],
   "strikeout_picks": [
@@ -154,57 +148,55 @@
       "opponent": "Boston Red Sox",
       "game": "BOS @ DET",
       "game_time": "10:40 PM",
-      "best_book": "MGM",
-      "fd_odds": "124",
-      "mgm_odds": "115",
+      "best_book": "FD",
+      "fd_odds": "-158",
+      "mgm_odds": "-155",
       "czs_odds": null,
       "scr_odds": null,
-      "fd_line": "6.5",
+      "fd_line": "7.5",
       "over_under_pick": "over",
       "confidence_score": 79,
       "confidence_tier": "High",
       "key_factors": [
-        "Skubal's elite 9.35 K/9 rate (top 5% in MLB)",
-        "29.8% K-rate on excellent fastball",
-        "Red Sox weak contact profile vs. elite strikeout stuff",
-        "FD +124 offers best value for high-confidence over"
+        "Skubal K/9 9.35 (elite strikeout rate)",
+        "Red Sox lineup K% 22.0% (vulnerable)",
+        "Skubal whiff rate 27.1% (elite)"
       ],
-      "reasoning": "Skubal is one of baseball's elite strikeout pitchers with 9.35 K/9. The 6.5 line is very achievable for his caliber. Red Sox have weak contact discipline and will generate strikeouts against his elite fastball-slider combo."
+      "reasoning": "Skubal's elite 9.35 K/9 and 27.1% whiff rate face a Red Sox lineup with elevated strikeout rates. The 7.5 line is conservative given his demonstrable skill-to-contact tradeoff."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
-      "prop_category": "OU",
-      "game": "NYM @ COL",
-      "game_time": "9:40 PM",
-      "pick": "Over 10.5",
-      "best_book": "CZS",
-      "fd_odds": "-110",
-      "mgm_odds": "-110",
-      "czs_odds": "-115",
+      "prop_category": "ML",
+      "game": "Detroit Tigers @ Boston Red Sox",
+      "game_time": "10:40 PM",
+      "pick": "Detroit Tigers",
+      "best_book": "FD",
+      "fd_odds": "-200",
+      "mgm_odds": "-200",
+      "czs_odds": "-195",
       "scr_odds": null,
-      "fd_line": "10.5",
-      "confidence_score": 74,
+      "fd_line": null,
+      "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "Coors Field extreme offensive environment (1.35 HR factor)",
-        "Both pitchers have elevated ERAs (4.68 / 5.59)",
-        "Sugano gives up 5.97 K/9 (hittable)",
-        "71\u00b0F warm temperature aids run scoring"
+        "Skubal elite K/9 9.35 vs weak Sox lineup",
+        "Red Sox rotation uncertainty with Tolle",
+        "Tigers DET home field advantage at Comerica"
       ],
-      "reasoning": "Mets-Rockies at Coors Field is a classic run-scoring environment. Both pitchers are below-average with high WHIP. The 10.5 total is moderate for Coors' offensive explosion. FD/MGM -110 gives fair pricing on this likely over."
+      "reasoning": "Skubal's demonstrable superiority over Red Sox hitter profiles combined with Boston's recent rotation issues create premium ML value. Tigers' +150 U/U with strong pitcher advantage justifies play."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Juan Soto HR (NYM @ COL) CZS 210",
-      "Tarik Skubal Over 6.5 K FD 124",
-      "NYM @ COL Over 10.5 FD -110"
+      "Tarik Skubal Over 7.5 Strikeouts (DET vs BOS)",
+      "Juan Soto HR (NYM @ COL) at +210",
+      "Detroit Tigers ML (BOS @ DET)"
     ],
-    "reasoning": "Soto at Coors is elite, Skubal is strikeout monster, and Coors overs are nearly automatic. All three are independent correlations that combine into strong parlay value.",
-    "estimated_odds": "+285"
+    "reasoning": "Three-leg parlay combining elite pitcher performance with high-variance HR prop and moneyline. Skubal's strikeout floor provides stability; Soto's Coors advantage adds spike; Tigers ML anchors with -200 odds. Correlated by Detroit winning and Skubal dominating creates win probability multiplier.",
+    "estimated_odds": "+385"
   },
-  "daily_summary": "Today's slate features Coors Field matchup as the central play with extreme offensive environment. Multiple elite power hitters (Soto, Ohtani, Schwarber) face hittable pitchers in warm weather conditions. Skubal over 6.5 K is high-confidence pitcher prop against weak-contact Red Sox lineup.",
-  "best_bet": "Juan Soto HR at Coors Field (CZS -210) is the single best play combining elite batter, extreme park factor (1.35), and hittable pitcher in altitude-friendly environment."
+  "daily_summary": "Tonight's slate features elite pitcher matchups with Skubal and Yamamoto dominating their respective lineups, while Coors Field elevation creates premium HR opportunities for Mets hitters. Sharp money aligns on Detroit Tigers ML behind Skubal's elite strikeout production, with secondary plays in Soto HR and Schwarber power against weak pitching.",
+  "best_bet": "Tarik Skubal Over 7.5 K at -158 FD - elite K/9 rate (9.35) vs vulnerable Red Sox lineup presents strong unders-adjacent value with 73% implied win probability."
 }
