@@ -1,0 +1,258 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "Oakland @ Philadelphia",
+      "game_time": "10:40 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "113.0 mph on 4/30",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "18%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "38.9%",
+      "park_factor_hr": 1.0,
+      "key_factors": [
+        "Recent 113 mph barrel",
+        "Elite barrel rate",
+        "Luis Severino allows 38.9% hard hit rate",
+        "Warm weather 81\u00b0F"
+      ],
+      "reasoning": "Schwarber just hit 113 mph HR on 4/30 and maintains elite 18% barrel rate. Severino allows hard contact at 38.9% rate with 9.39 K/9 suggesting hittable stuff. Warm conditions and Schwarber's pull tendencies favor 110+ EV today."
+    },
+    {
+      "rank": 2,
+      "player_name": "Seiya Suzuki",
+      "team": "Chicago Cubs",
+      "opponent": "Cincinnati Reds",
+      "game": "Cincinnati @ Chicago",
+      "game_time": "11:40 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "112.6 mph on 5/4",
+      "avg_exit_velo": "93.8 mph",
+      "barrel_rate": "19%",
+      "hard_hit_rate": "54%",
+      "pitcher_hard_hit_allowed": "40.8%",
+      "park_factor_hr": 1.0,
+      "key_factors": [
+        "112.6 mph HR yesterday",
+        "19% barrel rate",
+        "Taillon allows 9.2K/9 with elevated hard contact",
+        "Wrigley Field friendly"
+      ],
+      "reasoning": "Suzuki hit 112.6 mph HR on 5/4 and shows elite 19% barrel rate. Taillon has been touchable this season (5.90 ERA, 9.2 K/9) and allows hard contact. Cubs play in neutral park but Suzuki's recent form suggests 110+ EV is highly likely."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opponent": "Toronto Blue Jays",
+      "game": "Toronto @ Tampa Bay",
+      "game_time": "10:45 PM",
+      "best_book": "CZS",
+      "fd_odds": "+333",
+      "mgm_odds": null,
+      "czs_odds": "+333",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 86,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "5 HRs in 44 PAs, 0.775 SLG, 27.3% pull air rate",
+        "63.6% hard hit rate",
+        "Rookie hot streak",
+        "Tropicana Field 52\u00b0F but bat speed compensates"
+      ],
+      "reasoning": "Caminero is in elite form with 5 HRs in 44 PAs (.775 SLG) and just hit 112.9 mph HR on 5/1. His 27.3% pull air rate and 63.6% hard hit rate are elite metrics. Even in cool conditions, his elite contact quality and momentum make this a high-confidence play."
+    },
+    {
+      "rank": 2,
+      "player_name": "JJ Bleday",
+      "team": "Chicago Cubs",
+      "opponent": "Cincinnati Reds",
+      "game": "Cincinnati @ Chicago",
+      "game_time": "11:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "+575",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Just hit 112.6 mph HR on 5/4",
+        "23.2\u00b0 launch angle shows fly ball power",
+        "Taillon vulnerable to left-handed power",
+        "Wrigley Field"
+      ],
+      "reasoning": "Bleday connected on 112.6 mph HR yesterday with ideal 23.2\u00b0 launch angle. Taillon has struggled (5.90 ERA, 9.2 K/9) and allows elevated hard contact. Wrigley Field boosts HR probability and Bleday's recent momentum is compelling."
+    },
+    {
+      "rank": 3,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "Oakland @ Philadelphia",
+      "game_time": "10:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "+198",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "113 mph HR on 4/30",
+        "18% barrel rate",
+        "Severino's 9.39 K/9 indicates hittable",
+        "Warm 81\u00b0F conditions"
+      ],
+      "reasoning": "Schwarber's recent 113 mph barrel demonstrates power capability. Severino allows hard contact at 38.9% rate despite strikeout numbers. Warm weather and veteran hitter experience make this a solid value play."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Bryce Harper",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "Oakland @ Philadelphia",
+      "game_time": "10:40 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 82,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Lowest strikeout rate among top hitters",
+        "Severino 4.33 ERA shows weakness",
+        "Career .280+ hitter",
+        "MGM -250 implies 71% probability"
+      ],
+      "reasoning": "Harper's disciplined approach and low K% make over 0.5 hits highly likely. Severino has been vulnerable this season (4.33 ERA, 4 HRs in 38.1 IP) with contact-heavy profile. Harper's veteran experience versus a middle-tier starter makes this nearly automatic."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Adolis Garcia",
+      "team": "Oakland Athletics",
+      "opponent": "Philadelphia Phillies",
+      "game": "Oakland @ Philadelphia",
+      "game_time": "10:40 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-185",
+      "czs_odds": "127",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Strong exit velo data",
+        "Severino vulnerable to right-handed bats (37.5% HR/FB)",
+        "Warm 81\u00b0F park conditions",
+        "MGM -185 shows sharp confidence"
+      ],
+      "reasoning": "Garcia's recent hard contact and Severino's 37.5% HR/FB rate vs RHB create favorable conditions. Warm temperatures and Citizens Bank Park dimensions support extra-base hit probability. MGM's -185 line suggests strong expected value."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Cristopher Sanchez",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "Oakland @ Philadelphia",
+      "game_time": "10:40 PM",
+      "pick_type": "pitcher",
+      "best_book": "MGM",
+      "fd_odds": "-136",
+      "mgm_odds": "-105",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "10.93 K/9 rate elite",
+        "2.60 ERA showing control",
+        "30.3% whiff rate",
+        "Athletics 27.0% K% vs RHB"
+      ],
+      "reasoning": "Sanchez is elite strikeout pitcher (10.93 K/9, 30.3% whiff rate, 2.60 ERA) facing weak-contact Athletics offense. Over 6.5 K is highly probable given Athletics' 27% K rate and Sanchez's dominance. MGM's -105 over is sharp value."
+    },
+    {
+      "rank": 2,
+      "player_name": "Cade Cavalli",
+      "team": "Washington Nationals",
+      "opponent": "Minnesota Twins",
+      "game": "Minnesota @ Washington",
+      "game_time": "10:45 PM",
+      "pick_type": "pitcher",
+      "best_book": "FD",
+      "fd_odds": "-162",
+      "mgm_odds": "120",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "4.5",
+      "over_under_pick": "over",
+      "confidence_score": 73,
+      "confidence_tier": "High",
+      "key_factors": [
+        "11.15 K/9 elite",
+        "26.6% whiff rate elite",
+        "2.81 ERA strong",
+        "Twins face left-handed pitcher struggles"
+      ],
+      "reasoning": "Cavalli's 11.15 K/9 and 26.6% whiff rate are elite metrics. His 2.81 ERA indicates command is sharp. Over 4.5 K faces weak strikeout competition on Twins' roster. FD's -162 over represents good value for elite strikeout pitcher."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "OU",
+      "game": "Cincinnati @ Chicago",
+      "game_time": "11:40 PM",
+      "pick": "Over 8.0",
+      "best_book": "CZS",
+      "fd_odds": "-120",
+      "mgm_odds": "100",
+      "czs_odds": "-120",
+      "scr_odds": null,
+      "fd_line": "8.0",
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Both offenses in top-10 scoring",
+        "Taillon 5.90 ERA vulnerable",
+        "Abbott 4.89 ERA also vulnerable",
+        "Wrigley Field fly ball park"
+      ],
+      "reasoning": "Both Taillon (5.90 ERA) and Abbott (4.89 ERA) have been touched hard this season. Cubs and Reds both feature high-octane offenses with strong contact rates. Wrigley Field's dimensions favor fly balls. Over 8.0 total runs is likely given pitcher quality."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Kyle Schwarber HR vs Oakland (CZS +198)",
+      "Cristopher Sanchez Over 6.5 K (MGM -105)",
+      "Cincinnati @ Chicago Over 8.0 (CZS -120)"
+    ],
+    "reasoning": "Schwarber's elite recent form and 113 mph exit velo anchors the parlay. Sanchez's 10.93 K/9 dominance ensures strikeout projection. Cubs-Reds Over connects to weak pitching matchup at Wrigley. Three high-confidence plays with different leverage points.",
+    "estimated_odds": "+280 to +340"
+  },
+  "daily_summary": "Elite strikeout environment across slate with Sanchez (10.93 K/9), Cavalli (11.15 K/9), and multiple vulnerable starting pitchers. Several hitters showing recent 110+ mph exit velocities (Schwarber 113, Suzuki 112.6, Bleday 112.6, Caminero 112.9) in favorable matchups. Warm weather conditions (78-84\u00b0F) support elevated power production.",
+  "best_bet": "Cristopher Sanchez Over 6.5 Strikeouts at MGM -105 \u2014 Elite 10.93 K/9 pitcher with 30.3% whiff rate facing weak-contact Athletics offense."
+}
