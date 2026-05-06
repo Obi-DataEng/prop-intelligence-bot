@@ -6,20 +6,20 @@
       "team": "Houston Astros",
       "opponent": "Los Angeles Dodgers",
       "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
+      "game_time": "6:10 PM",
       "confidence_tier": "Elite",
       "recent_max_ev": "113.4 mph on 5/5",
-      "avg_exit_velo": "93.2 mph",
-      "barrel_rate": "18%",
-      "hard_hit_rate": "52%",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "58%",
       "pitcher_hard_hit_allowed": "48%",
-      "park_factor_hr": 1.02,
+      "park_factor_hr": 1.09,
       "key_factors": [
-        "Multiple 112+ mph exits in last week",
-        "Faces Tyler Glasnow with 7.5K line (over trending)",
-        "Warm 84\u00b0F weather favors hard contact"
+        "110+ mph exit velo twice in last 4 games",
+        "Faces Dodgers LHP Glasnow who allows 27.1% FB rate",
+        "78\u00b0F warm weather, elite barrel rate of 22%"
       ],
-      "reasoning": "Alvarez has recorded three 112+ mph exits in the last five days, showcasing elite bat speed and consistency. Glasnow allows hard contact at high rates, and warm Houston weather enhances carry distances for potential 110+ mph contact."
+      "reasoning": "Alvarez has demonstrated elite exit velocity production with back-to-back 110+ mph events and consistent hard contact. Glasnow's pitch profile allows elevated hard hit rates, and the warm Houston conditions favor explosive contact from this elite slugger."
     },
     {
       "rank": 2,
@@ -27,20 +27,20 @@
       "team": "Chicago Cubs",
       "opponent": "Cincinnati Reds",
       "game": "CIN @ CHC",
-      "game_time": "1:40 AM",
+      "game_time": "1:20 AM",
       "confidence_tier": "High",
       "recent_max_ev": "112.6 mph on 5/4",
-      "avg_exit_velo": "92.1 mph",
-      "barrel_rate": "16%",
-      "hard_hit_rate": "51%",
-      "pitcher_hard_hit_allowed": "45%",
-      "park_factor_hr": 1.08,
+      "avg_exit_velo": "93.8 mph",
+      "barrel_rate": "19%",
+      "hard_hit_rate": "54%",
+      "pitcher_hard_hit_allowed": "36%",
+      "park_factor_hr": 1.06,
       "key_factors": [
-        "Recent 112.6 mph home run exit velocity",
-        "Above-average barrel and hard-hit rates",
-        "Wrigley Field park factor 1.08"
+        "110+ mph exit velo on 5/4 against inferior pitching",
+        "Wrigley Field park factor of 1.06 supports power",
+        "Elite 19% barrel rate with consistent hard contact"
       ],
-      "reasoning": "Suzuki just recorded a 112.6 mph barrel on 5/4 that resulted in a homer at Wrigley. His consistent barrel rate (16%) and Wrigley's favorable conditions support another 110+ mph contact day against Brady Singer."
+      "reasoning": "Suzuki just produced a 112.6 mph home run and maintains excellent barrel rates. Playing at home in Wrigley with favorable wind conditions should support another explosive contact opportunity."
     }
   ],
   "hr_picks": [
@@ -50,116 +50,70 @@
       "team": "Los Angeles Dodgers",
       "opponent": "Houston Astros",
       "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
+      "game_time": "6:10 PM",
       "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": "255",
-      "czs_odds": "255",
+      "fd_odds": "-205",
+      "mgm_odds": "-210",
+      "czs_odds": "-220",
       "scr_odds": null,
       "fd_line": "0.5",
       "confidence_score": 82,
       "confidence_tier": "High",
       "key_factors": [
-        "Best power hitter vs RHP with 1.15 HR/9 vs RHB",
-        "Warm 84\u00b0F weather at Minute Maid",
-        "Facing McCullers Jr. who allows 23.1% HR/FB vs RHB"
+        "Recent 114.6 mph home run vs Weathers",
+        "Faces Lance McCullers with 2.25 HR/9 vs RHB",
+        "78\u00b0F warm weather favors power production"
       ],
-      "reasoning": "Ohtani is the Dodgers' most consistent power threat and faces McCullers Jr. who surrenders home runs at elevated rates to right-handed hitters. Warm Houston conditions amplify carry distances for elite exit velo."
+      "reasoning": "Ohtani just demonstrated elite exit velocity capability with a 413-foot home run in the exit velo data. McCullers gives up elevated home run rates to right-handed batters, and warm Houston weather supports power. Roberts' reported lineup adjustments suggest aggressive game plan."
     },
     {
       "rank": 2,
-      "player_name": "Yordan Alvarez",
-      "team": "Houston Astros",
-      "opponent": "Los Angeles Dodgers",
-      "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": "265",
-      "czs_odds": "265",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 80,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Three 112+ mph exits in past 5 days",
-        "28.0% ISO and 0.524 wOBA season stats",
-        "Home park advantage with warm weather"
-      ],
-      "reasoning": "Alvarez's recent exit velo data shows elite power generation. He hits with authority at home and Glasnow's 7.5K prop allows room for multiple hard-hit opportunities, one potentially leaving the yard."
-    },
-    {
-      "rank": 3,
-      "player_name": "Aaron Judge",
-      "team": "New York Yankees",
-      "opponent": "Texas Rangers",
-      "game": "TEX @ NYY",
-      "game_time": "1:40 AM",
+      "player_name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opponent": "Toronto Blue Jays",
+      "game": "TOR @ TB",
+      "game_time": "5:10 PM",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "225",
+      "czs_odds": "305",
       "scr_odds": null,
       "fd_line": "0.5",
       "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "22% barrel rate and 56.5% hard-hit rate",
-        "Yankee Stadium's 0.89 HR factor vs LHP favorable",
-        "Recent power surge with 4 HRs in 38 PA"
+        "Recent 112.9 mph home run on 5/1",
+        "67\u00b0F warm enough for power, Tropicana Field favorable",
+        "Young prospect hot streak over last week"
       ],
-      "reasoning": "Judge's elite contact quality (22% barrel) and Yankee Stadium's homer-friendly dimensions support HR value. While facing Will Warren (LHP), Judge's recent power trend and hard-hit rate support optimism."
+      "reasoning": "Caminero demonstrated explosive power with a 432-foot home run in early May and continues red-hot. Corbin allows 1.35 HR/9 with elevated hard hit rates, creating advantage for this emerging power threat."
+    },
+    {
+      "rank": 3,
+      "player_name": "Max Muncy",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Houston Astros",
+      "game": "LAD @ HOU",
+      "game_time": "6:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "350",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Career 118 barrel rate, elite power potential",
+        "McCullers allows 23.1% HR/FB to RHB",
+        "Warm 78\u00b0F Houston conditions support pop"
+      ],
+      "reasoning": "Muncy's elite barrel rate and aggressive swing profile makes him dangerous against McCullers' elevated fastball usage. Astros ballpark and warm weather create optimal power conditions for this proven slugger."
     }
   ],
   "hits_picks": [
     {
       "rank": 1,
-      "player_name": "Mike Trout",
-      "team": "Los Angeles Angels",
-      "opponent": "Chicago White Sox",
-      "game": "CWS @ LAA",
-      "game_time": "8:07 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": null,
-      "over_under_pick": "over",
-      "confidence_score": 88,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "0.367 BA and 0.500 OBP (elite production)",
-        "30.4% pull-air rate shows aggressive approach",
-        "Warm 81\u00b0F weather supports contact"
-      ],
-      "reasoning": "Trout is in elite hitting form with 0.367 BA across 38 PA. His high contact rate (92.6%) and strong plate discipline (18.4% BB%) indicate consistent hit generation against CWS arms."
-    },
-    {
-      "rank": 2,
-      "player_name": "Trea Turner",
-      "team": "Philadelphia Phillies",
-      "opponent": "Oakland Athletics",
-      "game": "OAK @ PHI",
-      "game_time": "10:40 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "101",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 79,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Strong speed game with 52.6% FB rate",
-        "Facing Jeffrey Springs with elevated WHIP",
-        "Consistent liner/GB approach for hits"
-      ],
-      "reasoning": "Turner's speed-based game produces consistent hits, and Springs' control issues (elevated WHIP) create additional on-base opportunities. His aggressive approach supports hitting over 1.5 TB line."
-    },
-    {
-      "rank": 3,
       "player_name": "George Springer",
       "team": "Toronto Blue Jays",
       "opponent": "Tampa Bay Rays",
@@ -172,47 +126,45 @@
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 75,
+      "confidence_score": 78,
       "confidence_tier": "High",
       "key_factors": [
-        "34.8% LA SS% indicates quality contact zones",
-        "McClanahan K-rate is manageable for contact hitter",
-        "Home plate approach favors line drives"
+        "0.367 BA this season, elite 0.500 OBP",
+        "Corbin allows 0.629 WOBA, 1.98 WHIP",
+        "34.8% LA sweet spot rate, quality contact"
       ],
-      "reasoning": "Springer's sophisticated hitting approach and tendency toward line drives provides consistent hit potential. McClanahan's 5.5K line suggests pitcher will throw strikes Springer can handle."
-    }
-  ],
-  "total_bases_picks": [
-    {
-      "rank": 1,
-      "player_name": "Shohei Ohtani",
-      "team": "Los Angeles Dodgers",
-      "opponent": "Houston Astros",
-      "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "-110",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 81,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Elite barrel rate and hard-hit consistency",
-        "McCullers Jr. allows 23.1% HR/FB vs RHB",
-        "High wOBA and ISO metrics support power"
-      ],
-      "reasoning": "Ohtani's combination of hit frequency (0.500 OBP season level) and power (0.767 SLG in recent games) supports easy clearance of 1.5 TB line. Warm weather and favorable pitcher matchup enhance probability."
+      "reasoning": "Springer maintains elite batting average and plate discipline against a struggling starter. Corbin's WHIP and WOBA allowed suggest significant baseline hits opportunity from this contact-focused hitter."
     },
     {
       "rank": 2,
-      "player_name": "Yordan Alvarez",
-      "team": "Houston Astros",
-      "opponent": "Los Angeles Dodgers",
-      "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
+      "player_name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "OAK @ PHI",
+      "game_time": "1:05 AM",
+      "best_book": "CZS",
+      "fd_odds": "101",
+      "mgm_odds": null,
+      "czs_odds": "101",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Consistent speed/contact player with +40% pull air rate",
+        "Zack Wheeler K/9 9.62 but allows 4.3 BB/9",
+        "Career vs inferior pitching matchup"
+      ],
+      "reasoning": "Turner's aggressive approach and speed create consistent hits opportunities. Wheeler's elevated walk rate and contact profile suggest multiple hits probability from this aggressive leadoff type."
+    },
+    {
+      "rank": 3,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "OAK @ PHI",
+      "game_time": "1:05 AM",
       "best_book": "CZS",
       "fd_odds": "109",
       "mgm_odds": null,
@@ -220,37 +172,85 @@
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 80,
+      "confidence_score": 73,
       "confidence_tier": "High",
       "key_factors": [
-        "Recent 112.9 mph and 112.4 mph exits",
-        "Consistent multi-hit potential with speed",
-        "Home field advantage in warm weather"
+        "Elite 0.445 WOBA season rate, 30% barrel rate",
+        "Springs allows 0.484 WHIP and 4.91 K/9",
+        "Aggressive power/contact approach"
       ],
-      "reasoning": "Alvarez's recent exit velo and wOBA metrics suggest multi-total-base games at home. His barrel rate consistency means even non-HR games likely exceed 1.5 TB threshold via 2+ hits."
-    },
+      "reasoning": "Schwarber's elite WOBA and barrel rates create consistent hard contact baseline. Springs' elevated walk rate and moderate strikeout rate favor this aggressive slugger's hit probability."
+    }
+  ],
+  "total_bases_picks": [
     {
-      "rank": 3,
-      "player_name": "Kyle Tucker",
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
       "team": "Houston Astros",
       "opponent": "Los Angeles Dodgers",
       "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
+      "game_time": "6:10 PM",
       "best_book": "CZS",
-      "fd_odds": "127",
+      "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "127",
+      "czs_odds": "107",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 76,
+      "confidence_score": 81,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "110+ mph exit velo evidence in last week",
+        "McCullers allows 23.1% HR/FB, 6.75 K/9 vs RHB",
+        "Elite 22% barrel rate creates consistent bases production"
+      ],
+      "reasoning": "Alvarez combines recent elite power demonstration with favorable pitcher matchup and park conditions. McCullers' elevated fastball usage plays directly into his wheelhouse for multiple bases."
+    },
+    {
+      "rank": 2,
+      "player_name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Houston Astros",
+      "game": "LAD @ HOU",
+      "game_time": "6:10 PM",
+      "best_book": "CZS",
+      "fd_odds": "-110",
+      "mgm_odds": null,
+      "czs_odds": "-110",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "0.524 WOBA season average, elite power floor",
+        "McCullers moderate 4.45 K/9 allows contact opportunity",
+        "Warm weather and recent power demonstration"
+      ],
+      "reasoning": "Ohtani's elite WOBA and proven power production create multiple pathways to 1.5+ bases. Roberts' reported strategic adjustments suggest aggressive offensive approach against McCullers."
+    },
+    {
+      "rank": 3,
+      "player_name": "Kyle Stowers",
+      "team": "Baltimore Orioles",
+      "opponent": "Miami Marlins",
+      "game": "BAL @ MIA",
+      "game_time": "10:40 PM",
+      "best_book": "CZS",
+      "fd_odds": "115",
+      "mgm_odds": null,
+      "czs_odds": "115",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 72,
       "confidence_tier": "High",
       "key_factors": [
-        "Home field advantage with warm weather",
-        "Glasnow's 7.5K line creates offensive opportunity",
-        "Consistent power in Houston lineup"
+        "Power prospect with emerging HR capability",
+        "Eury Perez allows 9.66 K/9, 1.49 HR/9, 44.6% hard hit rate",
+        "Miami warm weather at 81\u00b0F favors power"
       ],
-      "reasoning": "Tucker's power metrics and home-park advantage support Total Bases over 1.5. As a core Astros bat facing Glasnow's K-heavy approach, Tucker will see fastballs to hit."
+      "reasoning": "Stowers faces an elevated hard hit rate pitcher in warm conditions, creating baseline power opportunity. Perez's elevated home run rate suggests both hits and power are accessible from this prospect."
     }
   ],
   "strikeout_picks": [
@@ -261,7 +261,7 @@
       "team": "Los Angeles Dodgers",
       "opponent": "Houston Astros",
       "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
+      "game_time": "6:10 PM",
       "best_book": "FD",
       "fd_odds": "114",
       "mgm_odds": null,
@@ -269,14 +269,14 @@
       "scr_odds": null,
       "fd_line": "7.5",
       "over_under_pick": "over",
-      "confidence_score": 82,
+      "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "9.48 K/9 season rate vs LHB matchups",
-        "27.9% whiff rate indicates swing-and-miss stuff",
-        "Facing Houston lineup with elevated K%"
+        "Elite career K/9 rate with proven strikeout upside",
+        "Astros lineup vulnerable to elevated fastball rates",
+        "Game context favors dominant performance"
       ],
-      "reasoning": "Glasnow's elite strikeout rate (9.48 K/9) and whiff metrics support the 7.5 line. Houston has respectable K% but Glasnow's filthy stuff in short outings typically yields 8+ Ks."
+      "reasoning": "Glasnow's elite strikeout arsenal and aggressive fastball approach create over 7.5 strikeout baseline against Astros hitters. His career dominance in high-leverage games suggests full concentration for strikeout production."
     },
     {
       "rank": 2,
@@ -293,14 +293,14 @@
       "scr_odds": null,
       "fd_line": "5.5",
       "over_under_pick": "over",
-      "confidence_score": 77,
+      "confidence_score": 71,
       "confidence_tier": "High",
       "key_factors": [
-        "9.62 K/9 rate with strong whiff profile",
-        "Boston lineup has 25.0% K% season rate",
-        "Recent form shows elevated strikeout totals"
+        "9.62 K/9 season rate, 22% whiff rate",
+        "Tigers vulnerable to strikeouts, cool 58\u00b0F reduces fly ball",
+        "Flaherty elite stuff generates baseline strikeouts"
       ],
-      "reasoning": "Flaherty's 9.62 K/9 and Boston's elevated K rate support over 5.5. His 25.0% putaway rate indicates ability to finish hitters, favoring strikeout-heavy outings."
+      "reasoning": "Flaherty's elite strikeout rate and elevated whiff percentage create comfortable over 5.5 strikeout opportunity. Cool weather suppresses fly balls and keeps batters off balance against his dominant arsenal."
     },
     {
       "rank": 3,
@@ -311,20 +311,20 @@
       "game": "ATL @ SEA",
       "game_time": "8:10 PM",
       "best_book": "FD",
-      "fd_odds": "110",
+      "fd_odds": "112",
       "mgm_odds": null,
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "5.5",
       "over_under_pick": "over",
-      "confidence_score": 74,
-      "confidence_tier": "High",
+      "confidence_score": 68,
+      "confidence_tier": "Medium",
       "key_factors": [
-        "6.37 K/9 with 17.5% whiff rate",
-        "Braves have elevated strikeout tendency",
-        "Cool 55\u00b0F weather supports late-inning effectiveness"
+        "6.37 K/9 with 17.3% whiff rate, 48.1% hard hit allowed",
+        "Braves lineup vulnerability to elevated fastballs",
+        "Cool 55\u00b0F Seattle conditions aid strikeout potential"
       ],
-      "reasoning": "Woo's 6.37 K/9 and strong whiff profile support the over 5.5 line. Cool Seattle weather benefits pitching, and Braves' K% creates strikeout opportunity."
+      "reasoning": "Woo's solid strikeout rate and cool Seattle weather create favorable over 5.5 baseline. While not elite, the Braves' recent struggles suggest opportunity for clean strikeout performance."
     }
   ],
   "game_picks": [
@@ -332,28 +332,28 @@
       "rank": 1,
       "prop_category": "ML",
       "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
-      "pick": "Houston Astros",
+      "game_time": "6:10 PM",
+      "pick": "Los Angeles Dodgers",
       "best_book": "CZS",
       "fd_odds": "-205",
       "mgm_odds": "-210",
       "czs_odds": "-220",
       "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 84,
-      "confidence_tier": "Elite",
+      "fd_line": "-205",
+      "confidence_score": 78,
+      "confidence_tier": "High",
       "key_factors": [
-        "Astros home-field advantage with warm weather",
-        "Glasnow K-rate creates offensive opportunity",
-        "Dodgers struggling (0-17 slump recent news)"
+        "Glasnow elite strikeout pitcher vs Astros lineup",
+        "Ohtani/Muncy power edge in warm conditions",
+        "Roberts' reported aggressive adjustments suggest offensive focus"
       ],
-      "reasoning": "Houston's home-field advantage, warm conditions favoring contact, and Dodgers' recent offensive struggles support the Astros. Glasnow's K rate allows Houston to see fastballs they can square up."
+      "reasoning": "Dodgers' elite pitching advantage with Glasnow and power ceiling from Ohtani/Muncy creates ML value. Astros' recent struggles and Dodgers' personnel upgrades favor visiting team despite road status."
     },
     {
       "rank": 2,
       "prop_category": "OU",
       "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
+      "game_time": "6:10 PM",
       "pick": "Over 8.5",
       "best_book": "MGM",
       "fd_odds": "-128",
@@ -361,67 +361,67 @@
       "czs_odds": "-125",
       "scr_odds": null,
       "fd_line": "8.5",
-      "confidence_score": 79,
+      "confidence_score": 75,
       "confidence_tier": "High",
       "key_factors": [
-        "Glasnow's 7.5K prop suggests high offense",
-        "Both lineups have power potential",
-        "Warm weather enhances carry distances"
+        "Glasnow K/9 efficiency reduces walks, aids scoring",
+        "Both lineups contain elite power threats",
+        "78\u00b0F warm weather supports offensive production"
       ],
-      "reasoning": "The 8.5 total is soft given Glasnow's K-rate inviting contact and both lineups' power. Warm 84\u00b0F weather amplifies ball carry, supporting over bet."
+      "reasoning": "Both offenses contain proven power while Glasnow's strikeout rate minimizes free baserunners. Warm Houston conditions and elite hitter matchups support combined run total exceeding 8.5."
     },
     {
       "rank": 3,
       "prop_category": "Spread",
-      "game": "LAD @ HOU",
-      "game_time": "1:40 AM",
-      "pick": "Astros -1.5",
-      "best_book": "CZS",
-      "fd_odds": "-128",
-      "mgm_odds": "-135",
-      "czs_odds": "-125",
+      "game": "MIN @ WAS",
+      "game_time": "1:38 AM",
+      "pick": "Minnesota Twins -1.5",
+      "best_book": "MGM",
+      "fd_odds": "114",
+      "mgm_odds": "125",
+      "czs_odds": "118",
       "scr_odds": null,
       "fd_line": "-1.5",
-      "confidence_score": 76,
+      "confidence_score": 71,
       "confidence_tier": "High",
       "key_factors": [
-        "Houston's superior run production setup",
-        "Astros' home-field advantage in playoff-like atmosphere",
-        "Dodgers' recent offensive malaise"
+        "Twins elite -135 ML favorite, clear talent edge",
+        "Nationals' pitching struggles documented in news",
+        "Miles Mikolas allows 3.5 K/9, vulnerable to Twins lineup"
       ],
-      "reasoning": "Houston's superior talent and home conditions support winning by 2+ runs. Glasnow's high-K approach paradoxically helps Houston by reducing strikeouts and creating contact situations."
+      "reasoning": "Twins' significant moneyline edge converts to spread value at -1.5. Minnesota's superior offensive capability and pitching advantage over struggling Nationals create comfortable victory margin."
     },
     {
       "rank": 4,
       "prop_category": "ML",
       "game": "NYM @ COL",
-      "game_time": "1:40 AM",
+      "game_time": "8:40 PM",
       "pick": "New York Mets",
-      "best_book": "CZS",
+      "best_book": "MGM",
       "fd_odds": "-166",
       "mgm_odds": "-165",
       "czs_odds": "-165",
       "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 78,
+      "fd_line": "-166",
+      "confidence_score": 72,
       "confidence_tier": "High",
       "key_factors": [
-        "Mets' -1.5 RL at 143 value superior to -110 consensus",
-        "Juan Soto elite power against Soroka",
-        "Coors elevation reduces pitcher effectiveness"
+        "Mets elite -165 ML favorite with strong pitching",
+        "Rockies' pitching staff recently crashed per news",
+        "Colorado home field disadvantage, Coors Field volatility documented"
       ],
-      "reasoning": "Mets' lineup with Juan Soto provides sufficient firepower to overcome Coors Field's elevated scoring environment. Soroka's 5.5K prop suggests pitching struggles that New York can exploit."
+      "reasoning": "Mets' clear pitching advantage over Rockies' struggling staff creates reliable ML value. New York's personnel edge and recent form trends support visiting team success at Coors Field."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Houston Astros ML (-220 CZS)",
-      "LAD @ HOU Over 8.5 (100 MGM)",
-      "Yordan Alvarez 0.5+ HR (265 CZS)"
+      "Yordan Alvarez HR vs McCullers (CZS -220)",
+      "Tyler Glasnow Over 7.5 K (FD +114)",
+      "Dodgers ML vs Astros (CZS -220)"
     ],
-    "reasoning": "All three legs correlate strongly: Houston winning requires offensive output from Alvarez; both offensive production legs support total going over; warm weather and Glasnow's approach optimize all three outcomes simultaneously.",
-    "estimated_odds": "+425 to +475"
+    "reasoning": "Dodgers-Astros matchup creates correlated opportunity with Glasnow's strikeout dominance and Alvarez power upside. Glasnow's K/9 elite rate synergizes with Dodgers' pathway to victory while Alvarez provides hedge with opposite team power edge.",
+    "estimated_odds": "2.8-3.2 range"
   },
-  "daily_summary": "Today's elite slate features the high-profile LAD @ HOU matchup with clear betting advantages favoring the Astros and over total given Glasnow's K-rate and warm weather conditions. Dodgers' recent offensive struggles combined with Houston's home-field power potential creates multiple aligned profitable angles, particularly on Yordan Alvarez and Shohei Ohtani HR props.",
-  "best_bet": "Houston Astros ML vs Los Angeles Dodgers (-220 CZS) with supporting Astros +8.5 total and Alvarez HR parlay for +425 value"
+  "daily_summary": "Today's slate features elite pitching vs. power matchup in LAD @ HOU as centerpiece, with Glasnow and McCullers creating strikeout opportunities while Ohtani, Alvarez, and Muncy provide power ceiling. MIN @ WAS offers clear talent-based ML value with Twins' superior lineup facing vulnerable Nationals pitching. Cool-weather conditions in Seattle and Boston may suppress fly balls while 78\u00b0F Houston heat supports power production.",
+  "best_bet": "Yordan Alvarez HR vs Houston Astros at -220 (CZS) - Elite exit velocity history, favorable pitcher matchup, and warm weather create high-confidence power opportunity"
 }
