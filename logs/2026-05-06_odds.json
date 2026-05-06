@@ -181,9 +181,9 @@
           "ml_home": -108,
           "ml_away": -108,
           "spread_home": 1.5,
-          "spread_home_odds": -192,
+          "spread_home_odds": -184,
           "spread_away": -1.5,
-          "spread_away_odds": 158,
+          "spread_away_odds": 152,
           "total_line": 9.0,
           "over_odds": -105,
           "under_odds": -115
@@ -219,19 +219,19 @@
       "commence_time": "2026-05-06T20:10:00Z",
       "odds_by_book": {
         "FD": {
-          "ml_home": -162,
-          "ml_away": 136,
+          "ml_home": -154,
+          "ml_away": 130,
           "spread_home": -1.5,
-          "spread_home_odds": 136,
+          "spread_home_odds": 140,
           "spread_away": 1.5,
-          "spread_away_odds": -164,
+          "spread_away_odds": -170,
           "total_line": 8.0,
           "over_odds": -118,
           "under_odds": -104
         },
         "CZS": {
-          "ml_home": -135,
-          "ml_away": 115,
+          "ml_home": -140,
+          "ml_away": 118,
           "spread_home": -1.5,
           "spread_home_odds": 150,
           "spread_away": 1.5,
@@ -242,7 +242,7 @@
         },
         "MGM": {
           "ml_home": -135,
-          "ml_away": 115,
+          "ml_away": 110,
           "spread_home": null,
           "spread_home_odds": null,
           "spread_away": null,
@@ -282,8 +282,8 @@
           "under_odds": -110
         },
         "MGM": {
-          "ml_home": -175,
-          "ml_away": 145,
+          "ml_home": -170,
+          "ml_away": 140,
           "spread_home": -1.5,
           "spread_home_odds": 125,
           "spread_away": 1.5,
@@ -438,9 +438,9 @@
           "ml_home": -190,
           "ml_away": 158,
           "spread_home": -1.5,
-          "spread_home_odds": 115,
+          "spread_home_odds": 110,
           "spread_away": 1.5,
-          "spread_away_odds": -135,
+          "spread_away_odds": -130,
           "total_line": 8.5,
           "over_odds": -115,
           "under_odds": -105
@@ -643,7 +643,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 400,
+          "odds": 425,
           "pick": "Kazuma Okamoto",
           "book": "CZS"
         },
@@ -797,14 +797,14 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 400,
+          "odds": 425,
           "pick": "Kazuma Okamoto",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 4000,
+          "odds": 4500,
           "pick": "Kazuma Okamoto",
           "book": "CZS"
         },
@@ -1223,14 +1223,14 @@
           "player": "Over",
           "line": 0.5,
           "odds": 390,
-          "pick": "Dalton Rushing",
+          "pick": "Freddie Freeman",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 400,
-          "pick": "Freddie Freeman",
+          "odds": 390,
+          "pick": "Dalton Rushing",
           "book": "CZS"
         },
         {
@@ -1432,7 +1432,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 400,
+          "odds": 390,
           "pick": "Freddie Freeman",
           "book": "CZS"
         },
@@ -1477,14 +1477,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 118,
+          "odds": 116,
           "pick": "Max Muncy",
           "book": "CZS"
         },
         {
           "player": "Under",
           "line": 1.5,
-          "odds": -159,
+          "odds": -154,
           "pick": "Max Muncy",
           "book": "CZS"
         },
@@ -2022,14 +2022,14 @@
         {
           "player": "Over",
           "line": 5.5,
-          "odds": 108,
+          "odds": 106,
           "pick": "Noah Schultz",
           "book": "FD"
         },
         {
           "player": "Under",
           "line": 5.5,
-          "odds": -144,
+          "odds": -140,
           "pick": "Noah Schultz",
           "book": "FD"
         }
@@ -2069,7 +2069,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 425,
+          "odds": 400,
           "pick": "Julio Rodriguez",
           "book": "CZS"
         },
@@ -2097,14 +2097,21 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 625,
+          "odds": 575,
           "pick": "Randy Arozarena",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 625,
+          "odds": 700,
+          "pick": "Dominic Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
           "pick": "Luke Raley",
           "book": "CZS"
         },
@@ -2113,13 +2120,6 @@
           "line": 0.5,
           "odds": 700,
           "pick": "Mike Yastrzemski",
-          "book": "CZS"
-        },
-        {
-          "player": "Over",
-          "line": 0.5,
-          "odds": 750,
-          "pick": "Dominic Smith",
           "book": "CZS"
         },
         {
@@ -2146,7 +2146,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 850,
+          "odds": 950,
           "pick": "J.P. Crawford",
           "book": "CZS"
         },
@@ -2162,6 +2162,20 @@
           "line": 0.5,
           "odds": 1100,
           "pick": "Leo Rivas",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Randy Arozarena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Randy Arozarena",
           "book": "CZS"
         },
         {
@@ -2251,14 +2265,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 4500,
+          "odds": 4000,
           "pick": "Julio Rodriguez",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 425,
+          "odds": 400,
           "pick": "Julio Rodriguez",
           "book": "CZS"
         },
@@ -2366,14 +2380,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 109,
+          "odds": 102,
           "pick": "Julio Rodriguez",
           "book": "CZS"
         },
         {
           "player": "Under",
           "line": 1.5,
-          "odds": -145,
+          "odds": -136,
           "pick": "Julio Rodriguez",
           "book": "CZS"
         },
@@ -2410,14 +2424,14 @@
         {
           "player": "Over",
           "line": 5.5,
-          "odds": 112,
+          "odds": 110,
           "pick": "Bryan Woo",
           "book": "FD"
         },
         {
           "player": "Under",
           "line": 5.5,
-          "odds": -148,
+          "odds": -146,
           "pick": "Bryan Woo",
           "book": "FD"
         }
@@ -2429,7 +2443,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 255,
+          "odds": 245,
           "pick": "Kyle Schwarber",
           "book": "CZS"
         },
@@ -2646,14 +2660,14 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 255,
+          "odds": 245,
           "pick": "Kyle Schwarber",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 1900,
+          "odds": 1750,
           "pick": "Kyle Schwarber",
           "book": "CZS"
         },
@@ -2677,14 +2691,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 101,
+          "odds": 103,
           "pick": "Trea Turner",
           "book": "CZS"
         },
         {
           "player": "Under",
           "line": 1.5,
-          "odds": -136,
+          "odds": -137,
           "pick": "Trea Turner",
           "book": "CZS"
         },
@@ -2775,14 +2789,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 109,
+          "odds": 107,
           "pick": "Kyle Schwarber",
           "book": "CZS"
         },
         {
           "player": "Under",
           "line": 1.5,
-          "odds": -145,
+          "odds": -143,
           "pick": "Kyle Schwarber",
           "book": "CZS"
         }
@@ -5026,7 +5040,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 390,
+          "odds": 370,
           "pick": "Hunter Goodman",
           "book": "CZS"
         },
@@ -5047,7 +5061,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 575,
+          "odds": 525,
           "pick": "Bo Bichette",
           "book": "CZS"
         },
@@ -5096,28 +5110,28 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 390,
+          "odds": 370,
           "pick": "Hunter Goodman",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 4000,
+          "odds": 3500,
           "pick": "Hunter Goodman",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 575,
+          "odds": 525,
           "pick": "Bo Bichette",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 8000,
+          "odds": 7000,
           "pick": "Bo Bichette",
           "book": "CZS"
         },
@@ -5259,7 +5273,7 @@
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 500,
+          "odds": 475,
           "pick": "Ketel Marte",
           "book": "CZS"
         },
@@ -5337,6 +5351,13 @@
           "player": "Over",
           "line": 0.5,
           "odds": 950,
+          "pick": "Ildemaro Vargas",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
           "pick": "Nick Gonzales",
           "book": "CZS"
         },
@@ -5345,13 +5366,6 @@
           "line": 0.5,
           "odds": 950,
           "pick": "Jose Fernandez",
-          "book": "CZS"
-        },
-        {
-          "player": "Over",
-          "line": 0.5,
-          "odds": 1100,
-          "pick": "Ildemaro Vargas",
           "book": "CZS"
         },
         {
@@ -5399,14 +5413,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 6000,
+          "odds": 5500,
           "pick": "Ketel Marte",
           "book": "CZS"
         },
         {
           "player": "Over",
           "line": 0.5,
-          "odds": 500,
+          "odds": 475,
           "pick": "Ketel Marte",
           "book": "CZS"
         },
@@ -5472,14 +5486,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 108,
+          "odds": 111,
           "pick": "Ryan O'Hearn",
           "book": "CZS"
         },
         {
           "player": "Under",
           "line": 1.5,
-          "odds": -143,
+          "odds": -148,
           "pick": "Ryan O'Hearn",
           "book": "CZS"
         },
@@ -5528,14 +5542,14 @@
         {
           "player": "Over",
           "line": 1.5,
-          "odds": 149,
+          "odds": 146,
           "pick": "Gabriel Moreno",
           "book": "CZS"
         },
         {
           "player": "Under",
           "line": 1.5,
-          "odds": -200,
+          "odds": -197,
           "pick": "Gabriel Moreno",
           "book": "CZS"
         }
