@@ -685,10 +685,10 @@ def send_picks_email(picks_data, scrape_date, graded_summary=None,
     sender = os.getenv("GMAIL_SENDER")
     password = os.getenv("GMAIL_APP_PASSWORD")
     recipient = os.getenv("GMAIL_RECIPIENT")
-    #recipient2 = os.getenv("GMAIL_RECIPIENT_2")
-    #recipient3 = os.getenv("GMAIL_RECIPIENT_3")
-    #recipients = [r for r in [recipient, recipient2, recipient3] if r]
-    recipients = [recipient]
+    recipient2 = os.getenv("GMAIL_RECIPIENT_2")
+    recipient3 = os.getenv("GMAIL_RECIPIENT_3")
+    recipients = [r for r in [recipient, recipient2, recipient3] if r]
+    #recipients = [recipient]
 
     if not all([sender, password, recipient]):
         print("❌ Missing email credentials in .env file")
