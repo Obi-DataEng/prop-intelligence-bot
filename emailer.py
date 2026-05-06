@@ -224,6 +224,52 @@ def format_parlay_section(parlay):
     </div>"""
 
 
+def format_category_breakdown_table(cumulative, sport_prefix, accent_color='#00ff88'):
+    """Build a per-category breakdown table for a given sport (MLB or NBA)"""
+    rows_html = ""
+    sport_cats = {k: v for k, v in cumulative.items()
+                  if k.startswith(sport_prefix) and k != 'OVERALL'}
+
+    if not sport_cats:
+        return ""
+
+    for key, stats in sorted(sport_cats.items()):
+        label = key.replace(f"{sport_prefix} - ", "")
+        w = stats.get('wins', 0)
+        l = stats.get('losses', 0)
+        p = stats.get('pushes', 0)
+        total = w + l + p
+        win_rate = stats.get('win_rate', 0)
+        profit = stats.get('total_profit', 0)
+        roi = stats.get('roi', 0)
+        rate_str = f"{win_rate:.0f}%" if total > 0 else "—"
+        profit_color = '#00ff88' if profit >= 0 else '#ff4444'
+        roi_color = '#00ff88' if roi >= 0 else '#ff4444'
+
+        rows_html += f"""
+        <tr style='border-bottom:1px solid #1a1a2e;'>
+            <td style='padding:7px 8px;color:#ccc;font-size:12px;'>{label}</td>
+            <td style='padding:7px 8px;color:#fff;text-align:center;font-size:12px;'>{w}W-{l}L-{p}P</td>
+            <td style='padding:7px 8px;text-align:center;color:#aaa;font-size:12px;'>{rate_str}</td>
+            <td style='padding:7px 8px;text-align:right;color:{profit_color};font-size:12px;font-weight:bold;'>${profit:+.2f}</td>
+            <td style='padding:7px 8px;text-align:right;color:{roi_color};font-size:12px;'>{roi:+.1f}%</td>
+        </tr>"""
+
+    return f"""
+    <table style='width:100%;border-collapse:collapse;margin-top:8px;'>
+        <thead>
+            <tr style='border-bottom:2px solid {accent_color};'>
+                <th style='padding:6px 8px;color:#888;text-align:left;font-size:11px;'>Category</th>
+                <th style='padding:6px 8px;color:#888;text-align:center;font-size:11px;'>Record</th>
+                <th style='padding:6px 8px;color:#888;text-align:center;font-size:11px;'>Win%</th>
+                <th style='padding:6px 8px;color:#888;text-align:right;font-size:11px;'>P&L</th>
+                <th style='padding:6px 8px;color:#888;text-align:right;font-size:11px;'>ROI</th>
+            </tr>
+        </thead>
+        <tbody>{rows_html}</tbody>
+    </table>"""
+
+
 def format_results_section(graded_summary, cumulative):
     """Format yesterday's results and cumulative record for email"""
     if not graded_summary and not cumulative:
@@ -231,16 +277,20 @@ def format_results_section(graded_summary, cumulative):
 
     category_emojis = {
         'HR': '💣', 'Hit': '🎯', 'TB': '📊',
-        'K': '🔥', 'Game': '💰'
+        'K': '🔥', 'Game': '💰', 'Points': '🏀',
+        'Rebounds': '💪', 'Assists': '🎯', 'Threes': '3️⃣',
+        'Combo': '📊', 'Parlay': '🎰'
     }
 
+    # ── Daily results table ──────────────────────────────────────────
     rows_html = ""
     total_profit = 0
 
     for cat, stats in graded_summary.items():
-        emoji = category_emojis.get(cat, '📌')
+        # pick a matching emoji
+        emoji = next((v for k, v in category_emojis.items() if k in cat), '📌')
         w, l, p = stats['wins'], stats['losses'], stats['pushes']
-        pend = stats['pending']
+        pend = stats.get('pending', 0)
         total = w + l + p
         rate = f"{w/total*100:.0f}%" if total > 0 else "—"
         profit = stats['profit']
@@ -258,33 +308,46 @@ def format_results_section(graded_summary, cumulative):
             </td>
         </tr>"""
 
+    day_profit_color = '#00ff88' if total_profit >= 0 else '#ff4444'
+
+    daily_table = f"""
+    <table style='width:100%;border-collapse:collapse;'>
+        <thead>
+            <tr style='border-bottom:1px solid #333;'>
+                <th style='padding:8px;color:#888;text-align:left;font-size:12px;'>Category</th>
+                <th style='padding:8px;color:#888;text-align:center;font-size:12px;'>Record</th>
+                <th style='padding:8px;color:#888;text-align:center;font-size:12px;'>Win%</th>
+                <th style='padding:8px;color:#888;text-align:right;font-size:12px;'>P&L ($5 flat)</th>
+            </tr>
+        </thead>
+        <tbody>{rows_html}</tbody>
+        <tfoot>
+            <tr style='border-top:1px solid #333;'>
+                <td colspan='3' style='padding:8px;color:#fff;font-weight:bold;'>Daily Total</td>
+                <td style='padding:8px;text-align:right;color:{day_profit_color};font-weight:bold;font-size:16px;'>
+                    ${total_profit:+.2f}
+                </td>
+            </tr>
+        </tfoot>
+    </table>"""
+
+    # ── Cumulative overall cards ─────────────────────────────────────
     cumul_html = ""
     if cumulative.get('OVERALL'):
         o = cumulative['OVERALL']
-        best_cat = max(
-            {k: v for k, v in cumulative.items() if k != 'OVERALL'},
-            key=lambda x: cumulative[x].get('win_rate', 0),
-            default=None
-        )
-        worst_cat = min(
-            {k: v for k, v in cumulative.items() if k != 'OVERALL'},
-            key=lambda x: cumulative[x].get('win_rate', 100),
-            default=None
-        )
-
         roi_color = '#00ff88' if o['roi'] >= 0 else '#ff4444'
         pl_color = '#00ff88' if o['total_profit'] >= 0 else '#ff4444'
 
         cumul_html = f"""
         <div style='background:#1a1a2e;padding:16px;border-radius:8px;
-                    border:1px solid #333;margin-top:12px;'>
+                    border:1px solid #333;margin-top:16px;'>
             <h3 style='color:#ffffff;margin:0 0 12px;font-size:14px;'>
-                📈 CUMULATIVE RECORD
+                📈 OVERALL CUMULATIVE RECORD (All Time)
             </h3>
             <div style='display:flex;gap:12px;flex-wrap:wrap;'>
                 <div style='text-align:center;flex:1;min-width:80px;'>
                     <div style='color:#4fc3f7;font-size:20px;font-weight:bold;'>
-                        {o['wins']}W-{o['losses']}L
+                        {o['wins']}W-{o['losses']}L-{o['pushes']}P
                     </div>
                     <div style='color:#666;font-size:11px;'>Record</div>
                 </div>
@@ -307,10 +370,29 @@ def format_results_section(graded_summary, cumulative):
                     <div style='color:#666;font-size:11px;'>ROI</div>
                 </div>
             </div>
-            {f"<div style='margin-top:10px;font-size:12px;color:#888;'>🏆 Best: {best_cat} ({cumulative[best_cat]['win_rate']}%) &nbsp;|&nbsp; ⚠️ Worst: {worst_cat} ({cumulative[worst_cat]['win_rate']}%)</div>" if best_cat and worst_cat else ""}
         </div>"""
 
-    day_profit_color = '#00ff88' if total_profit >= 0 else '#ff4444'
+    # ── MLB per-category breakdown ───────────────────────────────────
+    mlb_breakdown = format_category_breakdown_table(cumulative, 'MLB', '#00ff88')
+    mlb_breakdown_section = f"""
+    <div style='background:#111;padding:14px;border-radius:8px;
+                border:1px solid #1e3a1e;margin-top:12px;'>
+        <h3 style='color:#00ff88;margin:0 0 8px;font-size:13px;'>
+            ⚾ MLB Breakdown (All Time)
+        </h3>
+        {mlb_breakdown}
+    </div>""" if mlb_breakdown else ""
+
+    # ── NBA per-category breakdown ───────────────────────────────────
+    nba_breakdown = format_category_breakdown_table(cumulative, 'NBA', '#ff6b35')
+    nba_breakdown_section = f"""
+    <div style='background:#111;padding:14px;border-radius:8px;
+                border:1px solid #3a1e0e;margin-top:12px;'>
+        <h3 style='color:#ff6b35;margin:0 0 8px;font-size:13px;'>
+            🏀 NBA Breakdown (All Time)
+        </h3>
+        {nba_breakdown}
+    </div>""" if nba_breakdown else ""
 
     return f"""
     <div style='margin:20px 0;'>
@@ -318,32 +400,10 @@ def format_results_section(graded_summary, cumulative):
                    padding-bottom:8px;margin-bottom:12px;'>
             📊 YESTERDAY'S RESULTS
         </h2>
-        <table style='width:100%;border-collapse:collapse;'>
-            <thead>
-                <tr style='border-bottom:1px solid #333;'>
-                    <th style='padding:8px;color:#888;text-align:left;
-                               font-size:12px;'>Category</th>
-                    <th style='padding:8px;color:#888;text-align:center;
-                               font-size:12px;'>Record</th>
-                    <th style='padding:8px;color:#888;text-align:center;
-                               font-size:12px;'>Win%</th>
-                    <th style='padding:8px;color:#888;text-align:right;
-                               font-size:12px;'>P&L ($5 flat)</th>
-                </tr>
-            </thead>
-            <tbody>{rows_html}</tbody>
-            <tfoot>
-                <tr style='border-top:1px solid #333;'>
-                    <td colspan='3' style='padding:8px;color:#fff;
-                                          font-weight:bold;'>Daily Total</td>
-                    <td style='padding:8px;text-align:right;
-                               color:{day_profit_color};font-weight:bold;font-size:16px;'>
-                        ${total_profit:+.2f}
-                    </td>
-                </tr>
-            </tfoot>
-        </table>
+        {daily_table}
         {cumul_html}
+        {mlb_breakdown_section}
+        {nba_breakdown_section}
     </div>"""
 
 
@@ -515,38 +575,28 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
     <div style='display:flex;gap:10px;margin:16px 0;flex-wrap:wrap;'>
         <div style='background:#1a1a2e;padding:10px 16px;border-radius:6px;
                     border-top:3px solid #00ff88;text-align:center;'>
-            <div style='color:#00ff88;font-size:20px;font-weight:bold;'>
-                {len(hr_picks)}
-            </div>
-            <div style='color:#888;font-size:11px;'>HR Picks</div>
+            <div style='color:#00ff88;font-size:20px;font-weight:bold;'>{len(hr_picks)}</div>
+            <div style='color:#888;font-size:11px;'>💣 HR</div>
         </div>
         <div style='background:#1a1a2e;padding:10px 16px;border-radius:6px;
                     border-top:3px solid #4fc3f7;text-align:center;'>
-            <div style='color:#4fc3f7;font-size:20px;font-weight:bold;'>
-                {len(hits_picks)}
-            </div>
-            <div style='color:#888;font-size:11px;'>Hits Picks</div>
+            <div style='color:#4fc3f7;font-size:20px;font-weight:bold;'>{len(hits_picks)}</div>
+            <div style='color:#888;font-size:11px;'>🎯 Hits</div>
         </div>
         <div style='background:#1a1a2e;padding:10px 16px;border-radius:6px;
                     border-top:3px solid #ce93d8;text-align:center;'>
-            <div style='color:#ce93d8;font-size:20px;font-weight:bold;'>
-                {len(tb_picks)}
-            </div>
-            <div style='color:#888;font-size:11px;'>TB Picks</div>
+            <div style='color:#ce93d8;font-size:20px;font-weight:bold;'>{len(tb_picks)}</div>
+            <div style='color:#888;font-size:11px;'>📊 TB</div>
         </div>
         <div style='background:#1a1a2e;padding:10px 16px;border-radius:6px;
                     border-top:3px solid #ff7043;text-align:center;'>
-            <div style='color:#ff7043;font-size:20px;font-weight:bold;'>
-                {len(k_picks)}
-            </div>
-            <div style='color:#888;font-size:11px;'>K Picks</div>
+            <div style='color:#ff7043;font-size:20px;font-weight:bold;'>{len(k_picks)}</div>
+            <div style='color:#888;font-size:11px;'>🔥 K</div>
         </div>
         <div style='background:#1a1a2e;padding:10px 16px;border-radius:6px;
                     border-top:3px solid #ffaa00;text-align:center;'>
-            <div style='color:#ffaa00;font-size:20px;font-weight:bold;'>
-                {len(game_picks)}
-            </div>
-            <div style='color:#888;font-size:11px;'>Game Picks</div>
+            <div style='color:#ffaa00;font-size:20px;font-weight:bold;'>{len(game_picks)}</div>
+            <div style='color:#888;font-size:11px;'>💰 Game</div>
         </div>
         {('<div style="background:#1a1a2e;padding:10px 16px;border-radius:6px;'
           'border-top:3px solid #4fc3f7;text-align:center;">'
@@ -556,7 +606,7 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
         {('<div style="background:#1a1a2e;padding:10px 16px;border-radius:6px;'
           'border-top:3px solid #ff6b35;text-align:center;">'
           f'<div style="color:#ff6b35;font-size:20px;font-weight:bold;">{nba_total}</div>'
-          '<div style="color:#888;font-size:11px;">NBA Picks</div>'
+          '<div style="color:#888;font-size:11px;">🏀 NBA</div>'
           '</div>') if nba_total > 0 else ''}
     </div>"""
 
@@ -583,19 +633,16 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None,
         <!-- MLB Best Bet -->
         <div style='background:#1a2a1a;border:1px solid #00ff88;
                     padding:16px;margin:16px 0;border-radius:8px;'>
-            <p style='color:#00ff88;font-weight:bold;
-                      margin:0 0 6px;font-size:13px;'>
+            <p style='color:#00ff88;font-weight:bold;margin:0 0 6px;font-size:13px;'>
                 ⚾ MLB BEST BET OF THE DAY
             </p>
-            <p style='color:#ffffff;margin:0;font-size:15px;
-                      line-height:1.5;'>{best_bet}</p>
+            <p style='color:#ffffff;margin:0;font-size:15px;line-height:1.5;'>{best_bet}</p>
         </div>
 
         <!-- Summary -->
-        <p style='color:#aaa;font-size:13px;
-                  line-height:1.6;margin:0 0 20px;'>{summary}</p>
+        <p style='color:#aaa;font-size:13px;line-height:1.6;margin:0 0 20px;'>{summary}</p>
 
-        <!-- Yesterday's Results -->
+        <!-- Yesterday's Results + Cumulative (with per-category breakdown) -->
         {results_section}
 
         <!-- MLB Picks Sections -->
@@ -641,7 +688,7 @@ def send_picks_email(picks_data, scrape_date, graded_summary=None,
     #recipient2 = os.getenv("GMAIL_RECIPIENT_2")
     #recipient3 = os.getenv("GMAIL_RECIPIENT_3")
     #recipients = [r for r in [recipient, recipient2, recipient3] if r]
-    recipients = [recipient]  # only send to recipient 1
+    recipients = [recipient]
 
     if not all([sender, password, recipient]):
         print("❌ Missing email credentials in .env file")

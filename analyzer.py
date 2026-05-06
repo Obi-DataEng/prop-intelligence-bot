@@ -138,7 +138,7 @@ def build_prompt(parsed_data, odds_data, scrape_date):
     park_text = json.dumps(parsed_data.get('park_factors', [])[:15], indent=2)
     exit_velo_text = parsed_data.get('exit_velo_text', '')[:1500]
     odds_text = format_odds_for_prompt(odds_data)
-    news_data = load_news(scrape_date, sport="mlb")  # or "nba"
+    news_data = load_news(scrape_date, sport="mlb")
     news_text = format_news_for_prompt(news_data)
 
     prompt = f"""You are an elite MLB sports betting analyst. Today is {scrape_date}.
@@ -169,19 +169,24 @@ Analyze the following data and generate the BEST picks for today organized by ca
 {news_text}
 
 SELECTION RULES:
-- Generate EXACTLY 8 total picks across ALL categories combined
-- Only include the absolute highest confidence plays regardless of category
-- Do NOT force picks into every category — leave categories empty if no strong plays exist
+- Generate picks in EXACTLY these quantities per category:
+  * hr_picks: EXACTLY 3 picks
+  * hits_picks: EXACTLY 3 picks
+  * total_bases_picks: EXACTLY 3 picks
+  * strikeout_picks: EXACTLY 3 picks
+  * game_picks: EXACTLY 4 picks (mix of ML, OU, and Spread — at least one of each type)
+  * laser_picks: EXACTLY 2 picks
 - ONLY include picks where you have actual odds data from the odds section above
-- If no odds exist for a prop skip it entirely
+- If no odds exist for a prop skip it and pick the next best option
 - For each pick choose the BEST book (highest payout for same line)
 - Flag line shopping opportunities where books differ significantly
 - HR picks: prioritize high Barrel%, HardHit%, favorable pitcher HR/9, HR/FB%, park factor, wind
 - Hits picks: high BA, wOBA, low pitcher WHIP
 - Total Bases: combine HR and hits factors
 - K props: pitcher K/9, batter K%, weak contact rates
-- Game picks: large proj run differential, strong pitcher matchup, weather factors
-- Rank all 7 picks by confidence — best pick first
+- Game picks: large proj run differential, strong pitcher matchup, weather factors — include a mix of ML, OU, and Spread picks
+- Rank picks within each category by confidence — best pick first
+
 LASER PICKS: Identify 2 players most likely to hit a ball 110+ mph exit velocity today.
 Prioritize players who:
 - Have recent BBE at 110+ mph in the exit velo data
@@ -360,7 +365,6 @@ def print_picks_section(title, emoji, picks, show_pick_type=False):
         pick_type = pick.get('pick_type', '')
         prop_cat = pick.get('prop_category', '')
 
-        # Build odds string — only show books with actual odds
         book_odds = []
         if fd_odds and str(fd_odds) != 'None':
             book_odds.append(f"FD:{fd_odds}")
@@ -371,7 +375,6 @@ def print_picks_section(title, emoji, picks, show_pick_type=False):
         if scr_odds and str(scr_odds) != 'None':
             book_odds.append(f"SCR:{scr_odds}")
 
-        # Format line display
         if line and over_under:
             line_display = f"{over_under.upper()} {line}"
         elif line:
@@ -415,7 +418,6 @@ def analyze_and_generate_picks(parsed_data, odds_data, scrape_date):
         print(f"💰 Tokens used: {message.usage.input_tokens} in / "
               f"{message.usage.output_tokens} out")
 
-        # Strip markdown if present
         clean = raw_response.strip()
         if clean.startswith("```"):
             clean = clean.split("```")[1]
@@ -426,11 +428,9 @@ def analyze_and_generate_picks(parsed_data, odds_data, scrape_date):
         picks_data = json.loads(clean)
         print(f"✅ JSON parsed successfully")
 
-        # Summary
         print(f"\n🎯 BEST BET: {picks_data.get('best_bet', 'N/A')}")
         print(f"📋 {picks_data.get('daily_summary', 'N/A')}")
 
-        # Print all sections
         print_picks_section("HOME RUN PICKS", "💣",
                            picks_data.get('hr_picks', []))
         print_picks_section("HITS PICKS", "🎯",
@@ -443,7 +443,6 @@ def analyze_and_generate_picks(parsed_data, odds_data, scrape_date):
         print_picks_section("GAME PICKS", "💰",
                            picks_data.get('game_picks', []))
 
-        # Best parlay
         parlay = picks_data.get('best_parlay', {})
         if parlay:
             print(f"\n{'='*50}")
@@ -454,7 +453,6 @@ def analyze_and_generate_picks(parsed_data, odds_data, scrape_date):
             print(f"  Est. Odds: {parlay.get('estimated_odds', 'N/A')}")
             print(f"  📝 {parlay.get('reasoning', '')}")
 
-        # Total count
         total = (len(picks_data.get('hr_picks', [])) +
                  len(picks_data.get('hits_picks', [])) +
                  len(picks_data.get('total_bases_picks', [])) +
@@ -477,7 +475,6 @@ if __name__ == "__main__":
     scrape_date = datetime.now().strftime("%Y-%m-%d")
     raw_data = {}
 
-    # Load PropFinder data
     tabs = ['hr_matchups', 'exit_velo', 'pitcher_summary',
             'park_factors', 'weather', 'projections']
     for tab in tabs:
@@ -489,14 +486,10 @@ if __name__ == "__main__":
         else:
             print(f"⚠️  Missing {filepath}")
 
-    # Load odds data
     print(f"\n💰 Loading odds data...")
     odds_data = load_odds(scrape_date)
 
-    # Parse PropFinder data
     parsed = run_parser(raw_data, scrape_date)
-
-    # Generate picks
     picks = analyze_and_generate_picks(parsed, odds_data, scrape_date)
 
     if picks:

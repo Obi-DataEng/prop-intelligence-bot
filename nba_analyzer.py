@@ -17,7 +17,7 @@ def load_nba_data(scrape_date):
         "nba_injury_reports",
         "nba_lineups",
         "nba_team_stats",
-        "nba_research"      # ← ADD THIS
+        "nba_research"
     ]
     for name in files:
         filepath = f"logs/{scrape_date}_{name}.json"
@@ -32,7 +32,6 @@ def load_nba_data(scrape_date):
 
 
 def load_nba_odds(scrape_date):
-    """Load NBA odds from file"""
     filepath = f"logs/{scrape_date}_nba_odds.json"
     if os.path.exists(filepath):
         with open(filepath, 'r') as f:
@@ -42,7 +41,6 @@ def load_nba_odds(scrape_date):
 
 
 def format_nba_odds_for_prompt(odds_data):
-    """Format NBA odds into readable text for Claude"""
     if not odds_data:
         return "No odds data available"
 
@@ -91,17 +89,13 @@ def format_nba_odds_for_prompt(odds_data):
 
 
 def build_nba_prompt(data, odds_text, scrape_date, odds_data=None):
-    """Build the Claude prompt with all NBA context"""
-
     if odds_data is None:
         odds_data = {}
 
-    # Add research data
     research_data = data.get('nba_research', {})
     research_rows = research_data.get('rows', [])
-    # Limit to 300 rows to avoid token overload — sorted keeps best rated first
     research_text = '\n'.join(research_rows[:300])
-    news_data = load_news(scrape_date, sport="nba")  # or "nba"
+    news_data = load_news(scrape_date, sport="nba")
     news_text = format_news_for_prompt(news_data)
 
     player_stats_text = data.get('nba_player_stats', {}).get('fullText', '')[:4000]
@@ -164,9 +158,13 @@ COLUMNS: PF_Rating | Team | Pos | Player | Prop | L10_Avg | L5_Avg | Odds | Stre
 {news_text}
 
 INSTRUCTIONS:
-Generate EXACTLY 8 total NBA picks across ALL categories combined for today's games.
-Quality over quantity — only the highest confidence plays regardless of category.
-Do NOT force picks into every category — leave categories empty if no strong plays exist.
+Generate picks in EXACTLY these quantities per category:
+- points_picks: EXACTLY 3 picks
+- rebounds_picks: EXACTLY 3 picks
+- assists_picks: EXACTLY 3 picks
+- threes_picks: EXACTLY 3 picks
+- combo_picks: EXACTLY 3 picks (mix of PRA, PR, PA)
+- game_picks: UP TO 4 picks — only generate picks for games where you have strong conviction. Do NOT force picks if confidence is low. If multiple bet types (ML, Spread, OU) exist for a game, pick the single best one per game only. Include a mix of types where available but do not require all three.
 
 CRITICAL RULE: Only generate picks for games being played on {scrape_date} specifically.
 Do NOT generate picks for any other date.
@@ -305,13 +303,12 @@ Generate picks in this EXACT JSON format with no markdown, no backticks, just pu
 }}
 
 SELECTION RULES:
-- Generate EXACTLY 7 total picks across ALL categories combined
-- Only include the absolute highest confidence plays regardless of category
-- Do NOT force picks into every category — leave categories empty if no strong plays exist
+- Generate EXACTLY the pick counts specified above per category — no more, no less
 - ONLY include picks where you have actual odds data from the odds section above
 - If no odds exist for a prop skip it entirely
 - For each pick choose the BEST book (highest payout for same line)
-- Rank all 7 picks by confidence — best pick first"""
+- game_picks must have UP TO 4 picks — only include picks with strong conviction, do not force picks to hit the limit
+- Rank picks within each category by confidence — best pick first"""
 
     return prompt
 
@@ -324,21 +321,15 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
     print(f"🏀 NBA Analyzer — {scrape_date}")
     print(f"{'='*50}\n")
 
-    # Load scraped data
     data = load_nba_data(scrape_date)
 
-    # Load odds if not passed in
     if not odds_data:
         odds_data = load_nba_odds(scrape_date)
         print(f"   📂 Loaded nba_odds ({len(odds_data.get('games', []))} games)")
 
-    # Format odds for prompt
     odds_text = format_nba_odds_for_prompt(odds_data)
-
-    # Build prompt — pass odds_data so games list is available
     prompt = build_nba_prompt(data, odds_text, scrape_date, odds_data)
 
-    # Call Claude
     print("\n🤖 Claude Haiku analyzing NBA slate...")
     client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
@@ -352,7 +343,6 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
     print(f"✅ Claude responded ({len(response_text)} chars)")
     print(f"💰 Tokens: {message.usage.input_tokens} in / {message.usage.output_tokens} out")
 
-    # Strip markdown fences if present
     clean = response_text.strip()
     if clean.startswith("```"):
         clean = clean.split("```")[1]
@@ -360,7 +350,6 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
             clean = clean[4:]
     clean = clean.strip()
 
-    # Parse JSON
     try:
         picks_data = json.loads(clean)
         print("✅ JSON parsed successfully")
@@ -369,7 +358,6 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
         print(f"Raw response: {response_text[:500]}")
         return None
 
-    # Print summary
     print(f"\n🎯 BEST BET: {picks_data.get('best_bet', 'N/A')}")
     print(f"📋 {picks_data.get('slate_summary', '')}")
 
@@ -412,7 +400,6 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
                           f"Def: {pick.get('def_rank_vs_pos')}")
                     print(f"     📝 {pick.get('reasoning', '')[:120]}...")
 
-    # Print parlay
     parlay = picks_data.get('best_parlay', {})
     if parlay:
         print(f"\n{'='*50}")
@@ -425,7 +412,6 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
 
     print(f"\n📊 Total NBA picks: {total_picks}")
 
-    # Save picks
     output_file = f"logs/{scrape_date}_nba_picks.json"
     with open(output_file, 'w') as f:
         json.dump(picks_data, f, indent=2)
