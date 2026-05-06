@@ -175,110 +175,131 @@ def _nba_get(url, params, headers, max_retries=3, timeout=60):
 
 
 def get_nba_boxscores(date_str):
-    """Fetch all NBA box scores for a given date using NBA Stats API (no key needed)."""
+    """Fetch all NBA box scores for a given date using ESPN public API (no key, no rate limiting)."""
     print(f"\n   🔍 Fetching NBA box scores for {date_str}...")
     try:
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-            'Referer': 'https://www.nba.com/',
-            'Accept': 'application/json, text/plain, */*',
-            'Accept-Language': 'en-US,en;q=0.9',
-            'Origin': 'https://www.nba.com',
-            'x-nba-stats-origin': 'stats',
-            'x-nba-stats-token': 'true',
-            'Connection': 'keep-alive',
-        }
+        # ESPN public scoreboard — open, no auth, bot-friendly
+        date_compact = date_str.replace('-', '')
+        scoreboard_url = (
+            f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard"
+            f"?dates={date_compact}"
+        )
 
-        # Step 1 — scoreboard
-        scoreboard_url = "https://stats.nba.com/stats/scoreboardV2"
-        params = {"GameDate": date_str, "LeagueID": "00", "DayOffset": "0"}
-
-        try:
-            r = _nba_get(scoreboard_url, params, headers)
-        except Exception as e:
-            print(f"   ❌ NBA scoreboard failed after retries: {e}")
-            return {}
-
+        r = requests.get(scoreboard_url, timeout=30)
         if r.status_code != 200:
-            print(f"   ❌ NBA scoreboard error: {r.status_code}")
+            print(f"   ❌ ESPN scoreboard error: {r.status_code}")
             return {}
 
         data = r.json()
-        result_sets = {rs['name']: rs for rs in data.get('resultSets', [])}
-        game_header = result_sets.get('GameHeader', {})
-        headers_list = game_header.get('headers', [])
-        rows = game_header.get('rowSet', [])
+        events = data.get('events', [])
 
-        game_ids = []
-        game_id_idx = headers_list.index('GAME_ID') if 'GAME_ID' in headers_list else None
-        status_idx = headers_list.index('GAME_STATUS_TEXT') if 'GAME_STATUS_TEXT' in headers_list else None
-
-        for row in rows:
-            if game_id_idx is not None:
-                status = row[status_idx] if status_idx is not None else ''
-                if 'Final' in str(status):
-                    game_ids.append(row[game_id_idx])
-
-        if not game_ids:
-            print(f"   ⚠️ No final NBA games found for {date_str}")
+        if not events:
+            print(f"   ⚠️ No NBA games found for {date_str}")
             return {}
 
-        print(f"   📋 Found {len(game_ids)} final NBA games, fetching box scores...")
+        # Filter to completed games only
+        finished_events = [
+            e for e in events
+            if e.get('status', {}).get('type', {}).get('completed', False)
+        ]
+
+        if not finished_events:
+            print(f"   ⚠️ No completed NBA games found for {date_str}")
+            return {}
+
+        print(f"   📋 Found {len(finished_events)} completed NBA games, fetching box scores...")
         player_stats = {}
 
-        # Step 2 — box score per game with polite delay between calls
-        for i, game_id in enumerate(game_ids):
-            if i > 0:
-                time.sleep(3)
-
-            box_url = "https://stats.nba.com/stats/boxscoretraditionalv2"
-            box_params = {
-                "GameID": game_id, "StartPeriod": 0, "EndPeriod": 10,
-                "StartRange": 0, "EndRange": 0, "RangeType": 0
-            }
-
-            try:
-                box_r = _nba_get(box_url, box_params, headers)
-            except Exception as e:
-                print(f"   ⚠️ Box score failed for game {game_id}: {e}")
+        for event in finished_events:
+            game_id = event.get('id')
+            if not game_id:
                 continue
 
+            # ESPN box score endpoint
+            box_url = (
+                f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba"
+                f"/summary?event={game_id}"
+            )
+
+            box_r = requests.get(box_url, timeout=30)
             if box_r.status_code != 200:
                 print(f"   ⚠️ Box score error {box_r.status_code} for game {game_id}")
                 continue
 
             box_data = box_r.json()
-            for rs in box_data.get('resultSets', []):
-                if rs['name'] == 'PlayerStats':
-                    h = rs['headers']
-                    for row in rs['rowSet']:
-                        rd = dict(zip(h, row))
-                        name = rd.get('PLAYER_NAME', '')
-                        min_str = rd.get('MIN', '0') or '0'
+
+            # ESPN box score is under 'boxscore' -> 'players'
+            boxscore = box_data.get('boxscore', {})
+            teams = boxscore.get('players', [])
+
+            for team in teams:
+                statistics = team.get('statistics', [])
+                if not statistics:
+                    continue
+
+                # First stats block has the player rows
+                stat_block = statistics[0]
+                labels = stat_block.get('labels', [])  # column headers e.g. ["MIN","FG","3PT","FT","OREB","DREB","REB","AST","STL","BLK","TO","PF","PTS"]
+                athletes = stat_block.get('athletes', [])
+
+                for athlete in athletes:
+                    name = athlete.get('athlete', {}).get('displayName', '')
+                    stats_list = athlete.get('stats', [])
+
+                    if not stats_list or not name:
+                        continue
+
+                    # Map label -> value
+                    stat_map = {}
+                    for label, val in zip(labels, stats_list):
+                        stat_map[label] = val
+
+                    # Parse minutes
+                    min_str = stat_map.get('MIN', '0') or '0'
+                    try:
+                        if ':' in str(min_str):
+                            mins = int(min_str.split(':')[0])
+                        else:
+                            mins = int(float(min_str))
+                    except:
+                        mins = 0
+
+                    did_play = mins > 0
+
+                    def safe_int(val):
                         try:
-                            mins = int(min_str.split(':')[0]) if ':' in str(min_str) else int(float(min_str))
+                            return int(val) if val not in (None, '--', '') else 0
                         except:
-                            mins = 0
+                            return 0
 
-                        did_play = mins > 0
-                        pts  = rd.get('PTS',  0) or 0
-                        reb  = rd.get('REB',  0) or 0
-                        ast  = rd.get('AST',  0) or 0
-                        fg3m = rd.get('FG3M', 0) or 0
-                        stl  = rd.get('STL',  0) or 0
-                        blk  = rd.get('BLK',  0) or 0
+                    pts  = safe_int(stat_map.get('PTS',  0))
+                    reb  = safe_int(stat_map.get('REB',  0))
+                    ast  = safe_int(stat_map.get('AST',  0))
+                    stl  = safe_int(stat_map.get('STL',  0))
+                    blk  = safe_int(stat_map.get('BLK',  0))
 
-                        player_stats[name] = {
-                            'did_play': did_play,
-                            'pts': pts, 'reb': reb, 'ast': ast,
-                            'fg3m': fg3m, 'stl': stl, 'blk': blk,
-                            'pra': pts + reb + ast,
-                            'pr':  pts + reb,
-                            'pa':  pts + ast,
-                            'min': mins
-                        }
+                    # 3PM — ESPN label is '3PT' but value is 'made-attempted'
+                    fg3_raw = stat_map.get('3PT', '0-0') or '0-0'
+                    try:
+                        fg3m = int(str(fg3_raw).split('-')[0])
+                    except:
+                        fg3m = 0
 
-        print(f"   ✅ {len(player_stats)} NBA players found across {len(game_ids)} games")
+                    player_stats[name] = {
+                        'did_play': did_play,
+                        'pts':  pts,
+                        'reb':  reb,
+                        'ast':  ast,
+                        'fg3m': fg3m,
+                        'stl':  stl,
+                        'blk':  blk,
+                        'pra':  pts + reb + ast,
+                        'pr':   pts + reb,
+                        'pa':   pts + ast,
+                        'min':  mins
+                    }
+
+        print(f"   ✅ {len(player_stats)} NBA players found across {len(finished_events)} games")
         return player_stats
 
     except Exception as e:
