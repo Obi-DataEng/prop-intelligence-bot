@@ -1,0 +1,427 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Seiya Suzuki",
+      "team": "Chicago Cubs",
+      "opponent": "Cincinnati Reds",
+      "game": "Cincinnati Reds @ Chicago Cubs",
+      "game_time": "6:20 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "112.6 mph on 5/4",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "16.5%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "42.5%",
+      "park_factor_hr": 1.12,
+      "key_factors": [
+        "Recent 112.6 mph barrel on 5/4",
+        "Favorable park factor at Wrigley (1.12)",
+        "Soft-tossing Rhett Lowder allows hard contact"
+      ],
+      "reasoning": "Suzuki has shown elite exit velo recently with a 112.6 mph barrel just days ago. Wrigley Field's favorable park factor combined with his consistent hard-hit rates makes him a prime candidate to exceed 110 mph today against Lowder's modest hard-hit allowed rate."
+    },
+    {
+      "rank": 2,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Texas Rangers",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "4:35 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "92.2 mph",
+      "avg_exit_velo": "92.2 mph",
+      "barrel_rate": "25.0%",
+      "hard_hit_rate": "50.0%",
+      "pitcher_hard_hit_allowed": "42.5%",
+      "park_factor_hr": 0.98,
+      "key_factors": [
+        "Elite 25% barrel rate in small sample",
+        "Consistent hard-hit production",
+        "Gore allows 42.5% hard contact rate"
+      ],
+      "reasoning": "Judge's exceptional barrel rate (25%) and hard-hit profile give him legitimate 110+ mph potential despite modest recent exit velo. Gore's elevated hard-hit allowed rate provides favorable matchup conditions for elite raw power expression."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Cody Bellinger",
+      "team": "New York Yankees",
+      "opponent": "Texas Rangers",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "4:35 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "475",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "36.7% pull air rate with 30.0% LD rate",
+        "2 HRs in 37 PA (high frequency)",
+        "MacKenzie Gore allows 17.4% HR/FB rate"
+      ],
+      "reasoning": "Bellinger has elite pull tendencies (36.7%) and recent HR production in limited ABs. Gore's elevated HR/FB rate (17.4%) combined with the lefty-on-righty matchup creates favorable conditions for a home run."
+    },
+    {
+      "rank": 2,
+      "player_name": "Pete Alonso",
+      "team": "Miami Marlins",
+      "opponent": "Baltimore Orioles",
+      "game": "Baltimore Orioles @ Miami Marlins",
+      "game_time": "10:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "425",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 114.6 mph home run (5/2)",
+        "Coors Field-caliber power potential",
+        "Cade Povich allows modest 0.206 hard-hit rate"
+      ],
+      "reasoning": "Alonso's recent 114.6 mph barrel converted to a homer demonstrates current form. Miami's warm weather (84\u00b0F) and Marlins Park's slight HR boost (1.00 park factor) set up well for power production."
+    },
+    {
+      "rank": 3,
+      "player_name": "Manny Machado",
+      "team": "San Diego Padres",
+      "opponent": "St. Louis Cardinals",
+      "game": "St. Louis Cardinals @ San Diego Padres",
+      "game_time": "2:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "390",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite 210+ PA plate discipline history",
+        "Warm ballpark conditions (86\u00b0F)",
+        "Matthew Liberatore allows 2.00 HR/9 rate"
+      ],
+      "reasoning": "Machado's consistent offensive production against left-handed pitchers combined with favorable ballpark conditions makes him a solid HR candidate. Liberatore's elevated HR rate provides betting value at +390 odds."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Texas Rangers",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "4:35 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-220",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "20.8% BB rate shows discipline",
+        "MacKenzie Gore allows 0.221 BAA",
+        "Judge's 0.375 OBP elite for position"
+      ],
+      "reasoning": "Judge's elite plate discipline (20.8% BB rate) and Gore's modest BAA (0.221) create value on the Over at -220. Judge will likely reach base through either hit or walk in this matchup."
+    },
+    {
+      "rank": 2,
+      "player_name": "Ezequiel Duran",
+      "team": "Texas Rangers",
+      "opponent": "New York Yankees",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "4:35 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 70,
+      "confidence_tier": "High",
+      "key_factors": [
+        "0.323 BA in recent sample",
+        "27 PA recent plate appearances",
+        "Gore allows 0.226 BAA"
+      ],
+      "reasoning": "Duran's elevated batting average (.323) in limited recent action suggests strong current form. Gore's BAA of 0.226 is suppressed by elite strikeout rate, but Duran's selectivity keeps him in play for a hit."
+    },
+    {
+      "rank": 3,
+      "player_name": "Trea Turner",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "Oakland Athletics @ Philadelphia Phillies",
+      "game_time": "10:40 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-275",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 68,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite speed and contact skills",
+        "Andrew Painter allows 0.306 BAA",
+        "Phillies home field advantage"
+      ],
+      "reasoning": "Turner's elite contact rate and speed profile creates high likelihood of a hit against Painter's modest BAA. The -275 odds reflect confidence but align with his consistent offensive performance."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Jasson Dominguez",
+      "team": "New York Yankees",
+      "opponent": "Texas Rangers",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "4:35 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": "-185",
+      "czs_odds": "-170",
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "0.5 TB line with -170 at CZS",
+        "Recent 42.9% pull air rate",
+        "28.6% barrel rate in limited action"
+      ],
+      "reasoning": "Dominguez's elite pull tendency (42.9%) and Yankee Stadium's favorable park factor (0.98 but short porch) create consistent total base accumulation opportunities. Gore's elevated HR/FB allows extra bases via the long ball."
+    },
+    {
+      "rank": 2,
+      "player_name": "Juan Soto",
+      "team": "New York Mets",
+      "opponent": "Colorado Rockies",
+      "game": "New York Mets @ Colorado Rockies",
+      "game_time": "7:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": "-120",
+      "czs_odds": "-132",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Coors Field 1.14 HR park factor",
+        "Soto elite 0.280+ ISO power profile",
+        "Christian Scott limited MLB exposure"
+      ],
+      "reasoning": "Soto at Coors Field with its exceptional HR park factor (1.14) creates significant total bases upside. His elite ISO combined with the home run-friendly environment makes Over 1.5 total bases highly probable."
+    },
+    {
+      "rank": 3,
+      "player_name": "Manny Machado",
+      "team": "San Diego Padres",
+      "opponent": "St. Louis Cardinals",
+      "game": "St. Louis Cardinals @ San Diego Padres",
+      "game_time": "2:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": "130",
+      "czs_odds": "124",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 71,
+      "confidence_tier": "High",
+      "key_factors": [
+        "1.5 TB line with +124 CZS odds",
+        "Machado's consistent 1.5+ TB output",
+        "Matthew Liberatore HR/9 rate elevated"
+      ],
+      "reasoning": "Machado's reliable plate appearances combined with Liberatore's HR/9 rate (2.00) create multiple pathways to exceed 1.5 total bases. The +124 odds at CZS provide value on this likely outcome."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Shota Imanaga",
+      "pick_type": "pitcher",
+      "team": "Chicago Cubs",
+      "opponent": "Cincinnati Reds",
+      "game": "Cincinnati Reds @ Chicago Cubs",
+      "game_time": "6:20 PM",
+      "best_book": "MGM",
+      "fd_odds": "116",
+      "mgm_odds": "105",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "9.36 K/9 rate elite for starters",
+        "31.7% Whiff rate demonstrates strikeout profile",
+        "Reds K% at 10.8% allows for elevated strikeouts"
+      ],
+      "reasoning": "Imanaga's elite 9.36 K/9 rate and 31.7% whiff rate creates strong Over 6.5 strikeout potential. The Reds' modest K% means he should maintain velocity against their lineup throughout his outing."
+    },
+    {
+      "rank": 2,
+      "player_name": "Jarren Duran",
+      "pick_type": "batter",
+      "team": "Boston Red Sox",
+      "opponent": "Tampa Bay Rays",
+      "game": "Tampa Bay Rays @ Boston Red Sox",
+      "game_time": "11:10 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 73,
+      "confidence_tier": "High",
+      "key_factors": [
+        "-250 odds indicate projection of 71% K rate against Jax",
+        "Griffin Jax 9.00 K/9 rate elevated",
+        "Duran 25% K rate in recent sample"
+      ],
+      "reasoning": "Jax's strong 9.00 K/9 rate combined with Duran's recent strikeout profile creates favorable Over odds at -250. The matchup dynamics favor the pitcher's ability to generate whiffs against this Red Sox lineup."
+    },
+    {
+      "rank": 3,
+      "player_name": "Zac Gallen",
+      "pick_type": "pitcher",
+      "team": "Arizona Diamondbacks",
+      "opponent": "Pittsburgh Pirates",
+      "game": "Pittsburgh Pirates @ Arizona Diamondbacks",
+      "game_time": "7:40 PM",
+      "best_book": "FD",
+      "fd_odds": "-125",
+      "mgm_odds": "-150",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "4.5",
+      "over_under_pick": "under",
+      "confidence_score": 68,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "5.57 K/9 rate modest for top starter",
+        "Keller comparison shows elevated control",
+        "Pirates selective approach reduces strikeout opportunity"
+      ],
+      "reasoning": "Gallen's 5.57 K/9 rate is respectable but not elite, and the Pirates' selective plate discipline limits strikeout accumulation potential. Under 4.5 at -125 provides value on this pitcher's actual skill set."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "ML",
+      "game": "New York Mets @ Colorado Rockies",
+      "game_time": "7:10 PM",
+      "pick": "New York Mets",
+      "best_book": "CZS",
+      "fd_odds": "-142",
+      "mgm_odds": "-145",
+      "czs_odds": "-155",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Mets favorites with -155 CZS odds",
+        "Jose Quintana elite 0.244 ERA talent",
+        "Coors Field elevation negated by Mets pitching depth"
+      ],
+      "reasoning": "The Mets' pitching advantage through Quintana's elite ERA (0.244 first-year profile) outweighs Coors Field's HR-friendly environment. The -155 odds at CZS represent good value for a quality pitching matchup at high altitude."
+    },
+    {
+      "rank": 2,
+      "prop_category": "OU",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "4:35 PM",
+      "pick": "Over",
+      "best_book": "FD",
+      "fd_odds": "-120",
+      "mgm_odds": "-115",
+      "czs_odds": "-115",
+      "scr_ops": null,
+      "fd_line": "8.5",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "8.5 O/U line with multiple MLB sluggers",
+        "Yankee Stadium's short porch favorable",
+        "Gore's elevated HR/FB rate permits run scoring"
+      ],
+      "reasoning": "The 8.5 total with elite power bats on both sides (Judge, Bellinger, Seager) creates high probability of run accumulation. Gore's elevated HR/FB combined with Yankee Stadium's short porch favors the Over."
+    },
+    {
+      "rank": 3,
+      "prop_category": "Spread",
+      "game": "Cleveland Guardians @ Kansas City Royals",
+      "game_time": "6:10 PM",
+      "pick": "Kansas City Royals",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-155",
+      "czs_odds": "-170",
+      "scr_ops": null,
+      "fd_line": "-1.5",
+      "confidence_score": 71,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Slade Cecconi elevated 5.79 ERA",
+        "Seth Lugo elite 2.53 ERA matchup",
+        "Royals' home field advantage"
+      ],
+      "reasoning": "The massive pitching gap (Cecconi's 5.79 ERA vs Lugo's 2.53 ERA) gives the Royals strong advantage to win by spread at home. The -1.5 spread at -155 MGM represents good value given the pitching disparity."
+    },
+    {
+      "rank": 4,
+      "prop_category": "ML",
+      "game": "Oakland Athletics @ Philadelphia Phillies",
+      "game_time": "10:40 PM",
+      "pick": "Philadelphia Phillies",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-140",
+      "czs_odds": "-135",
+      "scr_ops": null,
+      "fd_line": null,
+      "confidence_score": 73,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Andrew Painter elite 0.306 BAA as rookie",
+        "Phillies home field advantage",
+        "Athletics' struggling offense on road"
+      ],
+      "reasoning": "Painter's elite BAA profile as a first-year starter combined with Philadelphia's home advantage creates strong favorite conditions. The -140 odds at MGM provide fair value on a team with clear talent advantage."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Shota Imanaga Over 6.5 K (CIN@CHC) at -140 (FD)",
+      "Aaron Judge Over 0.5 Hits (TEX@NYY) at -220 (MGM)",
+      "Philadelphia Phillies ML (OAK@PHI) at -140 (MGM)"
+    ],
+    "reasoning": "This three-leg parlay combines elite strikeout pitcher against K-prone lineup, elite batter over contact line, and strong team favorite. The legs are independent events with solid individual confidence scores (79%, 72%, 73%) creating ~2.8:1 parlay odds.",
+    "estimated_odds": "+265 to +280"
+  },
+  "daily_summary": "Today's slate features strong pitching matchups (Imanaga, Painter, Quintana) opposing struggling offensive units. The Texas-Yankees game at Yankee Stadium offers high run-scoring potential with both teams' power bats matching up favorably. Colorado's Coors Field advantage is negated by the Mets' elite pitching depth.",
+  "best_bet": "Shota Imanaga Over 6.5 Strikeouts (FD -120) - elite K/9 rate meets K-prone Reds lineup in favorable NL Central matchup."
+}
