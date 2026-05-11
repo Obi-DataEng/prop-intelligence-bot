@@ -27,7 +27,7 @@ NBA_URLS = {
     "nba_lineups":        f"{BASE_URL}/nba/cheatsheets/lineups",
 }
 
-NRFI_URL = f"{BASE_URL}/mlb/nrfi"
+NRFI_URL = f"{BASE_URL}/nrfi"
 
 # ─────────────────────────────────────────────
 # SHARED
@@ -117,11 +117,27 @@ async def scrape_projections(page, url):
 # ─────────────────────────────────────────────
 
 async def scrape_nrfi(page, scrape_date):
-    """Scrape NRFI/YRFI Research page — all 4 tabs"""
+    """Scrape NRFI/YRFI Research page — click tabs by text, grab rows"""
+    import re
     print(f"\n📄 Scraping nrfi...")
-    await page.goto(NRFI_URL)
+
+    # Navigate with retry
+    try:
+        await page.goto(NRFI_URL, wait_until="domcontentloaded", timeout=30000)
+    except Exception:
+        print(f"   ⚠️ First nav failed, retrying...")
+        await page.wait_for_timeout(3000)
+        await page.goto(NRFI_URL, wait_until="domcontentloaded", timeout=30000)
+
     await page.wait_for_load_state("networkidle")
-    await page.wait_for_timeout(3000)
+    await page.wait_for_timeout(4000)
+
+    # Sanity check
+    body_text = await page.evaluate('() => document.body.innerText')
+    if len(body_text.strip()) < 200:
+        print(f"   ❌ Page body too short — likely not logged in")
+        await page.screenshot(path="logs/nrfi_empty.png")
+        return {}
 
     result = {
         'team_records': [],
@@ -132,49 +148,58 @@ async def scrape_nrfi(page, scrape_date):
         'date': scrape_date
     }
 
-    # Tab 1: Team Records
-    try:
-        await page.get_by_role("tab", name="Team Records").click()
+    def get_tab_selector(name):
+        """Return JS to click a tab by its visible text"""
+        # Use JSON.stringify to safely escape the name (handles apostrophes)
+        import json
+        safe_name = json.dumps(name)
+        return f"""
+            Array.from(document.querySelectorAll('button, [role="tab"], li, div'))
+                .find(el => el.innerText.trim() === {safe_name})?.click();
+        """
+
+    async def grab_rows():
         await page.wait_for_timeout(2000)
-        content = await page.evaluate('''() => {
-            return Array.from(document.querySelectorAll("tr")).map(r => r.innerText.trim()).filter(Boolean);
+        return await page.evaluate('''() => {
+            return Array.from(document.querySelectorAll("tr"))
+                .map(r => r.innerText.trim())
+                .filter(Boolean);
         }''')
-        result['team_records'] = content
-        print(f"   ✅ Team Records: {len(content)} rows")
+
+    # Tab 1: Team Records (default — already loaded)
+    try:
+        rows = await grab_rows()
+        result['team_records'] = rows
+        print(f"   ✅ Team Records: {len(rows)} rows")
     except Exception as e:
         print(f"   ⚠️ Team Records error: {e}")
 
     # Tab 2: Batting Records
     try:
-        await page.get_by_role("tab", name="Batting Records").click()
-        await page.wait_for_timeout(2000)
-        content = await page.evaluate('''() => {
-            return Array.from(document.querySelectorAll("tr")).map(r => r.innerText.trim()).filter(Boolean);
-        }''')
-        result['batting_records'] = content
-        print(f"   ✅ Batting Records: {len(content)} rows")
+        await page.evaluate(get_tab_selector("Batting Records"))
+        rows = await grab_rows()
+        result['batting_records'] = rows
+        print(f"   ✅ Batting Records: {len(rows)} rows")
     except Exception as e:
         print(f"   ⚠️ Batting Records error: {e}")
 
     # Tab 3: Pitcher Records
     try:
-        await page.get_by_role("tab", name="Pitcher Records").click()
-        await page.wait_for_timeout(2000)
-        content = await page.evaluate('''() => {
-            return Array.from(document.querySelectorAll("tr")).map(r => r.innerText.trim()).filter(Boolean);
-        }''')
-        result['pitcher_records'] = content
-        print(f"   ✅ Pitcher Records: {len(content)} rows")
+        await page.evaluate(get_tab_selector("Pitcher Records"))
+        rows = await grab_rows()
+        result['pitcher_records'] = rows
+        print(f"   ✅ Pitcher Records: {len(rows)} rows")
     except Exception as e:
         print(f"   ⚠️ Pitcher Records error: {e}")
 
     # Tab 4: Today's Matchups
     try:
-        await page.get_by_role("tab", name="Today's Matchups").click()
+        await page.evaluate(get_tab_selector("Today's Matchups"))
         await page.wait_for_timeout(3000)
         matchups_raw = await page.evaluate('''() => {
             const cards = Array.from(document.querySelectorAll("table")).map(table => {
-                return Array.from(table.querySelectorAll("tr")).map(r => r.innerText.trim()).filter(Boolean);
+                return Array.from(table.querySelectorAll("tr"))
+                    .map(r => r.innerText.trim()).filter(Boolean);
             }).filter(rows => rows.length >= 2);
             const fullText = document.body.innerText;
             return { cards, fullText };
@@ -182,9 +207,8 @@ async def scrape_nrfi(page, scrape_date):
         if matchups_raw['cards']:
             result['matchups'] = matchups_raw['cards']
         else:
-            result['matchups'] = [{'raw_text': matchups_raw['fullText'][:5000]}]
+            result['matchups'] = [{'raw_text': matchups_raw['fullText'][:8000]}]
 
-        import re
         score_matches = re.findall(r'NRFI Score\s*[\n\r]*\s*([\d.]+)', matchups_raw['fullText'])
         result['nrfi_scores'] = score_matches
         print(f"   ✅ Today's Matchups: {len(result['matchups'])} cards, {len(result['nrfi_scores'])} NRFI scores")
@@ -192,7 +216,7 @@ async def scrape_nrfi(page, scrape_date):
         print(f"   ⚠️ Today's Matchups error: {e}")
         try:
             full_text = await page.evaluate('() => document.body.innerText')
-            result['matchups'] = [{'raw_text': full_text[:5000]}]
+            result['matchups'] = [{'raw_text': full_text[:8000]}]
         except:
             pass
 
