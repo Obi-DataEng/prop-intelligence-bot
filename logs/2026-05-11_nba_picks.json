@@ -1,69 +1,114 @@
 {
-  "slate_summary": "Playoff intensity defines today's three-game slate with Pistons-Cavaliers in a tight series, Thunder looking to go up 3-0 against the Lakers, and Timberwolves facing the Spurs. Key factors include Jalen Williams (Lakers) being out, which opens scoring opportunities, and James Harden's elite playmaking continuing to shine in the Cavs' Game 3 victory.",
-  "best_bet": "James Harden OVER 6.5 Assists vs DET \u2014 Harden averaged 6.0 AST in the season but hit 6.5 in 77% of games vs Detroit's #27 ranked assist defense. He's on a hot streak with 5.8 L5 average and the Cavs' pace favors guard distribution.",
+  "slate_summary": "Three playoff games feature high-stakes matchups with the Thunder commanding a 3-0 series lead over the Lakers, while the Cavaliers and Pistons are locked in a tight Eastern Conference battle. Key injury absences (Jalen Williams for LAL, Thomas Sorber for OKC) create favorable scoring environments for star players and role players filling expanded minutes.",
+  "best_bet": "Shai Gilgeous-Alexander Over 28.5 Points vs Lakers (FD -120) \u2014 SGA is averaging 26.3 PPG in L10 and 27.2 in L5 against a Lakers defense that ranks #20 in points allowed to PGs. With the Thunder up 3-0 and playing with confidence, SGA should exceed this line with ease in what could be a series-clinching game.",
   "points_picks": [
-    {
-      "player_name": "Donovan Mitchell",
-      "team": "CLE",
-      "opponent": "DET",
-      "prop_line": 26.5,
-      "over_under": "OVER",
-      "best_book": "CZS",
-      "best_odds": -112,
-      "confidence": "High",
-      "season_avg": 27.9,
-      "l5_avg": 27.0,
-      "def_rank_vs_pos": "#18 (Bad)",
-      "hit_rate_season": "43%",
-      "key_factors": [
-        "Season avg 27.9 sits above line",
-        "Recent momentum with 2-game hitting streak",
-        "Pistons SG defense ranks #18 allowing 27.2 PPG"
-      ],
-      "reasoning": "Mitchell's season average of 27.9 PPG exceeds the 26.5 line, and he's been aggressive in the playoff series. The Pistons' perimeter defense has been vulnerable, and Mitchell has shown consistency in this matchup."
-    },
     {
       "player_name": "Shai Gilgeous-Alexander",
       "team": "OKC",
       "opponent": "LAL",
       "prop_line": 28.5,
       "over_under": "OVER",
-      "best_book": "CZS",
-      "best_odds": -121,
-      "confidence": "High",
+      "best_book": "FD",
+      "best_odds": -120,
+      "confidence": "Elite",
       "season_avg": 31.1,
       "l5_avg": 27.2,
       "def_rank_vs_pos": "#20 (Bad)",
       "hit_rate_season": "69%",
       "key_factors": [
-        "Season avg 31.1 well above line",
-        "69% hit rate on 28.5+ line this season",
-        "Lakers PG defense ranks #20 allowing 24.0 PPG"
+        "Season avg 31.1 PPG well above line",
+        "Lakers defense ranks #20 vs PG",
+        "Thunder up 3-0 with momentum, playing for series clinch",
+        "69% hit rate on season"
       ],
-      "reasoning": "SGA is a scoring machine with 31.1 season PPG, and the Lakers' guard defense has been exploitable. With the Thunder on the verge of series dominance, expect aggressive offensive rhythm from their star."
+      "reasoning": "SGA is the most dominant player on the court and faces a favorable matchup against a Lakers team that allows the 20th-most points to point guards. With OKC positioned to close out the series, SGA should be aggressive and easily clear 28.5 points."
     },
     {
-      "player_name": "Cade Cunningham",
-      "team": "DET",
-      "opponent": "CLE",
+      "player_name": "Donovan Mitchell",
+      "team": "CLE",
+      "opponent": "DET",
       "prop_line": 26.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -130,
-      "confidence": "Medium",
-      "season_avg": 23.9,
-      "l5_avg": 23.2,
-      "def_rank_vs_pos": "#27 (Bad)",
-      "hit_rate_season": "43%",
+      "best_odds": -132,
+      "confidence": "High",
+      "season_avg": 27.9,
+      "l5_avg": 27.0,
+      "def_rank_vs_pos": "#18 (Bad)",
+      "hit_rate_season": "64%",
       "key_factors": [
-        "Season avg 23.9 below line but improving trend",
-        "Cavs PG defense ranks #27 allowing 23.6 PPG",
-        "43% hit rate suggests coin flip but playoff intensity may boost output"
+        "Season average 27.9 PPG above line",
+        "Pistons defense ranks #18 vs SG",
+        "Mitchell averaging 27.0 in L5 games",
+        "High-volume scorer in playoff mode"
       ],
-      "reasoning": "While Cunningham's season average sits slightly below, the Cavaliers' perimeter defense has been inconsistent. His usage rate of 29.4% and playoff aggression could push him over the total in a must-win scenario."
+      "reasoning": "Mitchell is a consistent 27+ PPG scorer and the Pistons' secondary defense (ranked #18 vs SG) provides a good opportunity. In a tight series, Mitchell should maintain his scoring pace and easily surpass 26.5."
+    },
+    {
+      "player_name": "James Harden",
+      "team": "CLE",
+      "opponent": "DET",
+      "prop_line": 18.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": -136,
+      "confidence": "High",
+      "season_avg": 23.6,
+      "l5_avg": 17.0,
+      "def_rank_vs_pos": "#23 (Neutral)",
+      "hit_rate_season": "64%",
+      "key_factors": [
+        "Season average 23.6 PPG above line",
+        "Pistons defense ranks #23 vs PG",
+        "64% historical hit rate on season",
+        "Clutch playoff performer in high-leverage games"
+      ],
+      "reasoning": "Harden's 23.6 PPG season average comfortably exceeds the 18.5 line despite L5 regression. The Pistons' middle-tier PG defense (#23) combined with Harden's experience in playoff moments suggests he clears this line with reasonable frequency."
     }
   ],
   "rebounds_picks": [
+    {
+      "player_name": "Evan Mobley",
+      "team": "CLE",
+      "opponent": "DET",
+      "prop_line": 7.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": -148,
+      "confidence": "Elite",
+      "season_avg": 9.0,
+      "l5_avg": 7.8,
+      "def_rank_vs_pos": "#19 (Neutral)",
+      "hit_rate_season": "66%",
+      "key_factors": [
+        "Season average 9.0 RPG well above 7.5",
+        "L5 average still above line at 7.8",
+        "66% season hit rate",
+        "Physical frontcourt matchup favors Mobley"
+      ],
+      "reasoning": "Mobley's 9.0 RPG season average sits 1.5 rebounds above the line, and he's cleared this threshold in 66% of his games. Against Detroit's interior defense, Mobley should generate ample rebounding opportunities as a key defensive rebounder for the Cavs."
+    },
+    {
+      "player_name": "Isaiah Hartenstein",
+      "team": "OKC",
+      "opponent": "LAL",
+      "prop_line": 8.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": -102,
+      "confidence": "High",
+      "season_avg": 9.4,
+      "l5_avg": 8.4,
+      "def_rank_vs_pos": "#26 (Bad)",
+      "hit_rate_season": "61%",
+      "key_factors": [
+        "Season average 9.4 RPG above line",
+        "Lakers defense ranks #26 vs C",
+        "61% hit rate on rebounds over 8.5",
+        "Thunder playing with possession control, more rebound opportunities"
+      ],
+      "reasoning": "Hartenstein averages 9.4 RPG on the season and the Lakers' poor rim defense (#26 ranking vs centers) creates favorable conditions. His L5 average of 8.4 is close to the line, making the OVER attractive given defensive matchup advantage."
+    },
     {
       "player_name": "Jalen Duren",
       "team": "DET",
@@ -74,55 +119,16 @@
       "best_odds": -118,
       "confidence": "High",
       "season_avg": 10.5,
-      "l5_avg": 10.6,
-      "def_rank_vs_pos": "#21 (Bad)",
-      "hit_rate_season": "50%",
+      "l5_avg": 10.0,
+      "def_rank_vs_pos": "#21 (Neutral)",
+      "hit_rate_season": "52%",
       "key_factors": [
-        "Season avg exactly matches line at 10.5 REB",
-        "L5 average of 10.6 shows recent consistency",
-        "Cavaliers C defense ranks #23 allowing 18.3 PPG, vulnerable to interior pressure"
+        "Season average exactly matches 10.5 line",
+        "L5 average just below at 10.0",
+        "Monster rebounder in playoff intensity",
+        "Playing heavy minutes in elimination scenario"
       ],
-      "reasoning": "Duren's elite rebounding prowess (10.5 season average) aligns perfectly with the line. The Cavaliers' interior defense has been soft, and in playoff basketball, possession battles matter immensely."
-    },
-    {
-      "player_name": "Evan Mobley",
-      "team": "CLE",
-      "opponent": "DET",
-      "prop_line": 7.5,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -148,
-      "confidence": "High",
-      "season_avg": 9.0,
-      "l5_avg": 8.0,
-      "def_rank_vs_pos": "#19 (Bad)",
-      "hit_rate_season": "66%",
-      "key_factors": [
-        "Season avg 9.0 well above 7.5 line",
-        "66% hit rate demonstrates consistency",
-        "Pistons PF defense ranks #19 allowing 20.8 PPG but weak rebounding"
-      ],
-      "reasoning": "Mobley's 9.0 season rebounding average significantly exceeds this conservative line. His 66% hit rate and elite length make him a reliable rebounder against Detroit's front court."
-    },
-    {
-      "player_name": "Isaiah Hartenstein",
-      "team": "OKC",
-      "opponent": "LAL",
-      "prop_line": 9.0,
-      "over_under": "OVER",
-      "best_book": "MGM",
-      "best_odds": -106,
-      "confidence": "Medium",
-      "season_avg": 9.4,
-      "l5_avg": 11.4,
-      "def_rank_vs_pos": "#26 (Bad)",
-      "hit_rate_season": "65%",
-      "key_factors": [
-        "L5 average of 11.4 well above season average",
-        "Lakers C defense ranks #26 allowing 18.0 PPG",
-        "Recent strong rebounding trend with 65% hit rate"
-      ],
-      "reasoning": "Hartenstein's recent form has been elite (11.4 L5 average) and the Lakers' interior defense has been porous. His upward trend in the playoffs suggests continued rebounding success."
+      "reasoning": "Duren's 10.5 RPG season average matches the line exactly, with his L5 average hovering right around that mark. In a playoff game where the Pistons may need extended floor time for Duren, he should hit this line at reasonable frequency."
     }
   ],
   "assists_picks": [
@@ -131,6 +137,7 @@
       "team": "CLE",
       "opponent": "DET",
       "prop_line": 6.5,
+      "over_under": "OVER",
       "best_book": "FD",
       "best_odds": -140,
       "confidence": "Elite",
@@ -139,11 +146,12 @@
       "def_rank_vs_pos": "#27 (Bad)",
       "hit_rate_season": "77%",
       "key_factors": [
-        "Season avg 8.0 significantly above 6.5 line",
-        "77% hit rate vs Detroit this season (27 games)",
-        "Pistons PG defense ranks #27 allowing 23.7 PPG to playmakers"
+        "Season average 8.0 AST well above line",
+        "Pistons defense allows 7.6 AST to PG (#27 ranking)",
+        "77% hit rate on season",
+        "Harden controls Cavs offensive flow in playoff mode"
       ],
-      "reasoning": "Harden is a facilitating machine with 8.0 season AST average and exceptional 77% historical success against Detroit. The Pistons' inability to defend the perimeter creates driving lanes for Cavs ball movement."
+      "reasoning": "Harden's 8.0 APG season average and elite 77% hit rate make this a strong play. The Pistons rank #27 in assist defense, and Harden's playmaking role in the Cavs' offense ensures he racks up assists in extended playoff minutes."
     },
     {
       "player_name": "Cade Cunningham",
@@ -156,14 +164,15 @@
       "confidence": "High",
       "season_avg": 9.9,
       "l5_avg": 8.4,
-      "def_rank_vs_pos": "#10 (Bad)",
+      "def_rank_vs_pos": "#27 (Bad)",
       "hit_rate_season": "45%",
       "key_factors": [
-        "Season avg 9.9 sits just above 9.5 line",
-        "Cavs PG defense ranks #10 allowing 8.8 AST",
-        "High usage rate of 29.4% keeps him as primary playmaker"
+        "Season average 9.9 AST above line",
+        "Cavaliers defense allows 8.8 AST to PG (#10 ranking)",
+        "Cunningham as lead playmaker on Pistons",
+        "Playoff intensity increases scoring opportunities for cutters"
       ],
-      "reasoning": "Cunningham's 9.9 season average narrowly exceeds the line, and his 29.4% usage rate makes him the Pistons' primary facilitator. Despite the 45% hit rate, the slight cushion above line provides edge."
+      "reasoning": "Cunningham's 9.9 APG season average sits slightly above the 9.5 line. While his L5 average dipped to 8.4, his primary role as the Pistons' lead facilitator combined with playoff pace suggests he can clear this threshold."
     },
     {
       "player_name": "LeBron James",
@@ -175,15 +184,16 @@
       "best_odds": -114,
       "confidence": "High",
       "season_avg": 7.2,
-      "l5_avg": 7.0,
-      "def_rank_vs_pos": "#15 (Bad)",
-      "hit_rate_season": "60%",
+      "l5_avg": 7.4,
+      "def_rank_vs_pos": "#11 (Neutral)",
+      "hit_rate_season": "64%",
       "key_factors": [
-        "Season avg 7.2 slightly above 7.5 line",
-        "60% hit rate provides solid confidence",
-        "Thunder SF defense ranks #15 allowing 21.2 PPG to wings"
+        "Season average 7.2 AST near line",
+        "L5 average 7.4 AST above line",
+        "64% hit rate on assists",
+        "LeBron's floor general role essential with deficit"
       ],
-      "reasoning": "LeBron's 7.2 season AST average sits just below this line but his playmaking instincts in tight playoff games tend to elevate his distribution. The Thunder's wing defense isn't elite, allowing free movement."
+      "reasoning": "LeBron's 7.2 APG season average sits just below the 7.5 line, but his L5 average of 7.4 and consistent playmaking role suggest he can push over this mark. Down 3-0 in a potential elimination game, LeBron should be more aggressive facilitating offensive flow."
     }
   ],
   "threes_picks": [
@@ -201,132 +211,139 @@
       "def_rank_vs_pos": "#25 (Bad)",
       "hit_rate_season": "64%",
       "key_factors": [
-        "Season avg 3.2 well above 2.5 line",
-        "64% hit rate demonstrates consistency",
-        "Pistons SG defense ranks #25 allowing 3.6 3PM"
+        "Season average 3.2 3PM well above 2.5",
+        "Pistons allow 3.6 3PM to SG (#25 ranking)",
+        "64% hit rate on 2.5 line this season",
+        "Mitchell high-volume shooter in playoffs"
       ],
-      "reasoning": "Mitchell is a volume three-point shooter with 3.2 season average significantly above this line. His 64% hit rate and the Pistons' perimeter vulnerability make this a strong play."
+      "reasoning": "Mitchell's 3.2 3PM season average comfortably exceeds 2.5, and the Pistons' poor perimeter defense (#25) makes this an easy over. His consistent high-volume shooting in the playoffs should help him clear this line."
     },
-    {
-      "player_name": "Cade Cunningham",
-      "team": "DET",
-      "opponent": "CLE",
-      "prop_line": 2.5,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": 146,
-      "confidence": "Medium",
-      "season_avg": 2.0,
-      "l5_avg": 2.6,
-      "def_rank_vs_pos": "#12 (Bad)",
-      "hit_rate_season": "32%",
-      "key_factors": [
-        "L5 average 2.6 slightly above line",
-        "Cavs PG defense ranks #12 allowing 3.3 3PM",
-        "32% hit rate is concerning but recent form trending positive"
-      ],
-      "reasoning": "While Cunningham's season average (2.0) sits below the line, his L5 average of 2.6 and recent playoff confidence suggest he's heating up. The positive odds provide value on the improvement trend."
-    },
-    {
-      "player_name": "Shai Gilgeous-Alexander",
-      "team": "OKC",
-      "opponent": "LAL",
-      "prop_line": 1.7,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -137,
-      "confidence": "High",
-      "season_avg": 1.7,
-      "l5_avg": 3.6,
-      "def_rank_vs_pos": "#24 (Bad)",
-      "hit_rate_season": "77%",
-      "key_factors": [
-        "L5 average 3.6 more than double season avg",
-        "77% hit rate on 4 3PA line shows volume surge",
-        "Lakers SG defense ranks #27 allowing 2.9 3PM"
-      ],
-      "reasoning": "SGA's recent playoff explosion (3.6 L5 average) significantly exceeds his season mark, indicating increased aggression. The Lakers' three-point defense has been vulnerable to his scoring bursts."
-    }
-  ],
-  "combo_picks": [
     {
       "player_name": "James Harden",
       "team": "CLE",
       "opponent": "DET",
-      "prop_type": "PRA",
-      "prop_line": 31.5,
+      "prop_line": 2.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -110,
-      "confidence": "Elite",
-      "season_avg": 32.6,
-      "l5_avg": 29.0,
-      "def_rank_vs_pos": "#27 (Bad)",
-      "hit_rate_season": "72%",
+      "best_odds": -108,
+      "confidence": "High",
+      "season_avg": 3.1,
+      "l5_avg": 1.2,
+      "def_rank_vs_pos": "#28 (Bad)",
+      "hit_rate_season": "53%",
       "key_factors": [
-        "Season avg 32.6 above 31.5 line",
-        "72% hit rate on this exact line vs Detroit",
-        "Pistons ranked #27 in PG defense across all categories"
+        "Season average 3.1 3PM above line",
+        "Pistons allow 2.9 3PM to PG (#28 ranking)",
+        "Recent L5 regression to 1.2 is slight concern",
+        "Harden streaky shooter in playoffs"
       ],
-      "reasoning": "Harden's elite all-around production (32.6 PRA season average) exceeds this line with 72% historical success. His playmaking and scoring in the playoffs make him a consistent combo threat."
+      "reasoning": "Harden's 3.1 3PM season average sits above the 2.5 line, and the Pistons rank #28 in three-point defense. While his L5 average shows regression, his season-long volume and playoff experience suggest he bounces back with threes in this matchup."
     },
     {
-      "player_name": "Donovan Mitchell",
-      "team": "CLE",
-      "opponent": "DET",
-      "prop_type": "PRA",
-      "prop_line": 35.5,
+      "player_name": "Cason Wallace",
+      "team": "OKC",
+      "opponent": "LAL",
+      "prop_line": 1.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -115,
-      "confidence": "High",
-      "season_avg": 35.6,
-      "l5_avg": 35.0,
-      "def_rank_vs_pos": "#29 (Bad)",
-      "hit_rate_season": "44%",
+      "best_odds": -106,
+      "confidence": "Medium",
+      "season_avg": 1.3,
+      "l5_avg": 2.2,
+      "def_rank_vs_pos": "#20 (Bad)",
+      "hit_rate_season": "52%",
       "key_factors": [
-        "Season avg 35.6 marginally above 35.5 line",
-        "L5 average 35.0 shows consistency at line",
-        "Pistons SG defense ranked #18 in pts but weak overall"
+        "L5 average 2.2 3PM above line",
+        "Lakers defense allows 3.7 3PM to SG (#20 ranking)",
+        "Recent upward trajectory in shooting volume",
+        "Role player benefiting from expanded role"
       ],
-      "reasoning": "Mitchell's well-rounded game (35.6 PRA average) sits right at this line with L5 consistency. His 44% hit rate is balanced by the minimal gap between average and line."
+      "reasoning": "Wallace's recent L5 average of 2.2 3PM sits well above the 1.5 line, and he's shown improvement in shooting volume. The Lakers' poor perimeter defense provides opportunities for the young Thunder guard to continue his hot streak."
+    }
+  ],
+  "combo_picks": [
+    {
+      "player_name": "Cade Cunningham",
+      "team": "DET",
+      "opponent": "CLE",
+      "prop_type": "PRA",
+      "prop_line": 42.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": -106,
+      "confidence": "Elite",
+      "season_avg": 39.4,
+      "l5_avg": 41.6,
+      "def_rank_vs_pos": "#27 (Bad)",
+      "hit_rate_season": "43%",
+      "key_factors": [
+        "Season average 39.4 PRA approaching line",
+        "L5 average 41.6 PRA very close to line",
+        "Cavaliers defense poor vs PG at #27",
+        "Lead playmaker getting heavy playoff minutes"
+      ],
+      "reasoning": "Cunningham's combo production of 39.4 PPG+RPG+APG on the season sits within striking distance of 42.5. His L5 average of 41.6 is nearly at the line, and in an extended playoff game, his three-way contributions should push him over this threshold."
     },
     {
       "player_name": "Shai Gilgeous-Alexander",
       "team": "OKC",
       "opponent": "LAL",
       "prop_type": "PRA",
-      "prop_line": 35.5,
+      "prop_line": 40.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -123,
+      "best_odds": -108,
       "confidence": "Elite",
-      "season_avg": 37.8,
-      "l5_avg": 33.8,
+      "season_avg": 41.9,
+      "l5_avg": 36.6,
       "def_rank_vs_pos": "#20 (Bad)",
-      "hit_rate_season": "65%",
+      "hit_rate_season": "60%",
       "key_factors": [
-        "Season avg 37.8 well above 35.5 line",
-        "65% hit rate on similar lines this season",
-        "Lakers ranked #27 in PG defense allowing 22.1 PPG"
+        "Season average 41.9 PRA above line",
+        "Lakers allow 24.0 PPG to PG (#20 ranking)",
+        "60% hit rate on PRA over season",
+        "Series-clinching opportunity brings aggressive play"
       ],
-      "reasoning": "SGA's elite production (37.8 PRA average) significantly exceeds the line, and his 65% hit rate provides strong confidence. The Thunder star is in playoff mode with increased aggression."
+      "reasoning": "SGA's 41.9 PRA season average sits above the 40.5 line with a 60% hit rate. Despite L5 regression to 36.6, his elite scoring ability and the Lakers' poor defensive matchup make this an elite combo play for a potential series-clincher."
+    },
+    {
+      "player_name": "LeBron James",
+      "team": "LAL",
+      "opponent": "OKC",
+      "prop_type": "PRA",
+      "prop_line": 28.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": -112,
+      "confidence": "High",
+      "season_avg": 28.2,
+      "l5_avg": 31.4,
+      "def_rank_vs_pos": "#16 (Neutral)",
+      "hit_rate_season": "64%",
+      "key_factors": [
+        "Season average 28.2 PRA at line",
+        "L5 average 31.4 PRA well above line",
+        "Thunder defense neutral at #16 vs SF",
+        "LeBron expanded role in elimination game"
+      ],
+      "reasoning": "LeBron's 28.2 PRA season average sits right at the line, but his L5 average of 31.4 and 64% hit rate suggest upside. In a potential elimination game, LeBron should be more aggressive across scoring, playmaking, and rebounding categories."
     }
   ],
   "game_picks": [
     {
       "game": "Oklahoma City Thunder @ Los Angeles Lakers",
       "pick_type": "Spread",
-      "pick": "Thunder -10.5",
+      "pick": "Oklahoma City Thunder -10.5",
       "line": -110,
       "best_book": "FD",
-      "confidence": "High",
+      "confidence": "Elite",
       "key_factors": [
-        "Thunder poised for 3-0 series lead",
-        "Lakers missing Jalen Williams (hamstring)",
-        "Thunder elite defense (#2 steals, #6 blocks) stifles Lakers offense"
+        "Thunder up 3-0 in series",
+        "Thunder won last game 131-108 by 23 points",
+        "Lakers missing key rotation players",
+        "Thunder on 7-game playoff winning streak with franchise record momentum"
       ],
-      "reasoning": "The Thunder are one win away from series dominance and the Lakers are without their utility wing in Jalen Williams. OKC's superior defensive scheme and SGA's playmaking should control this matchup comfortably."
+      "reasoning": "The Thunder are in complete control of this series with a 3-0 lead and just decimated the Lakers 131-108 in Game 4. Thunder have won 7 straight playoff games (franchise record) with dominant defense and efficient offense. A 10.5-point spread in a potential series-clincher heavily favors OKC."
     },
     {
       "game": "Detroit Pistons @ Cleveland Cavaliers",
@@ -336,20 +353,21 @@
       "best_book": "MGM",
       "confidence": "High",
       "key_factors": [
-        "Cavs won Game 3 convincingly despite possession disadvantage",
-        "James Harden and Donovan Mitchell combination overwhelming",
-        "Pistons rank #8 in scoring but poor defensive efficiency"
+        "Cavaliers won Game 3 despite possession disadvantage",
+        "James Harden and Donovan Mitchell in rhythm",
+        "Cavaliers stronger at rim defense",
+        "Series tied suggests Cavs have answer for Pistons offense"
       ],
-      "reasoning": "The Cavaliers have seized momentum in this series with superior guard play from Harden and Mitchell. Despite the Pistons' scoring prowess, Cleveland's perimeter defense and playmaking give them the edge in a critical game."
+      "reasoning": "The Cavaliers won Game 3 despite the Pistons attempting 17 more FGs, indicating superior offensive efficiency and defensive execution. With Harden and Mitchell both playing at elite levels and the series locked, the Cavs' experience and defensive anchors (Mobley, Allen) position them favorably for Game 5."
     }
   ],
   "best_parlay": {
     "legs": [
-      "James Harden OVER 6.5 Assists (CLE vs DET)",
-      "Donovan Mitchell OVER 26.5 Points (CLE vs DET)",
-      "Shai Gilgeous-Alexander OVER 28.5 Points (OKC vs LAL)"
+      "Shai Gilgeous-Alexander Over 28.5 Points (FD -120)",
+      "James Harden Over 6.5 Assists (FD -140)",
+      "Evan Mobley Over 7.5 Rebounds (FD -148)"
     ],
-    "estimated_odds": "+180",
-    "reasoning": "All three legs feature elite offensive players with favorable defensive matchups. Harden's elite playmaking against weak Pistons guard defense, Mitchell's scoring consistency, and SGA's prolific scoring combine for a high-confidence three-leg parlay with solid correlation through team offensive momentum."
+    "estimated_odds": "+320",
+    "reasoning": "These three legs correlate positively: SGA's dominant scoring creates more possessions for Harden's assist opportunities, while Mobley's rim protection and rebounding activity scales with game pace. All three face favorable defensive matchups and have strong season-long hit rates (69%, 77%, 66% respectively). The high confidence across all three legs provides parlay value."
   }
 }
