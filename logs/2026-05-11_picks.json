@@ -9,38 +9,38 @@
       "game_time": "12:10 AM",
       "confidence_tier": "Elite",
       "recent_max_ev": "115.9 mph on 5/8",
-      "avg_exit_velo": "94.8 mph",
-      "barrel_rate": "23%",
-      "hard_hit_rate": "52%",
+      "avg_exit_velo": "94.6 mph",
+      "barrel_rate": "20%",
+      "hard_hit_rate": "58%",
       "pitcher_hard_hit_allowed": "45%",
-      "park_factor_hr": 1.11,
+      "park_factor_hr": 1.08,
       "key_factors": [
-        "Elite exit velo pedigree with recent 115.9 mph blast",
-        "Hot weather (82\u00b0F) favors fly balls at Minute Maid",
-        "George Kirby allows weak contact (3.41 ERA, low barrel rate)"
+        "Elite recent exit velo (115.9 mph with barrel)",
+        "Warm weather (81\u00b0F) favors fly balls",
+        "George Kirby allows hard contact"
       ],
-      "reasoning": "Alvarez has elite bat speed and recent hard-hit evidence. Kirby's low hard-hit rate and favorable Houston heat create ideal conditions for 110+ mph exit velo."
+      "reasoning": "Alvarez just homered with 115.9 mph barrel exit velo on 5/8 and maintains elite barrel rate. Facing Kirby at home in warm conditions creates prime conditions for another 110+ mph event from the dangerous lefty slugger."
     },
     {
       "rank": 2,
-      "player_name": "Jo Adell",
-      "team": "LAA",
-      "opponent": "CLE",
-      "game": "LAA @ CLE",
-      "game_time": "10:40 PM",
+      "player_name": "Luke Raley",
+      "team": "SEA",
+      "opponent": "HOU",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
       "confidence_tier": "High",
-      "recent_max_ev": "114.5 mph on 5/10",
-      "avg_exit_velo": "93.9 mph",
-      "barrel_rate": "23.1%",
-      "hard_hit_rate": "50%",
-      "pitcher_hard_hit_allowed": "42%",
-      "park_factor_hr": 1.02,
+      "recent_max_ev": "113.4 mph on 5/8",
+      "avg_exit_velo": "93.8 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "48%",
+      "park_factor_hr": 1.08,
       "key_factors": [
-        "Recent 114.5 mph home run 5 days ago vs lefty",
-        "Brady Singer allows 43.9% hard contact; vulnerable to RHB power",
-        "52\u00b0F but Adell's raw power consistent regardless"
+        "Recent barrel at 113.4 mph with homer",
+        "Warm stadium (81\u00b0F) enhances fly ball distance",
+        "Peter Lambert allows hard contact (39 HH%)"
       ],
-      "reasoning": "Adell demonstrated elite exit velo this week against similar pitcher profile. Singer's elevated hard-hit rate and Adell's 23% barrel rate create strong 110+ mph probability."
+      "reasoning": "Raley connected for 113.4 mph barrel homer on 5/8 and shows consistent hard-hit ability. Facing Lambert who allows elevated hard contact rates in a warm dome environment positions Raley for another 110+ mph swing opportunity."
     }
   ],
   "hr_picks": [
@@ -54,113 +54,21 @@
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "+220",
+      "czs_odds": "220",
       "scr_odds": null,
       "fd_line": "0.5",
       "confidence_score": 82,
-      "confidence_tier": "High",
+      "confidence_tier": "Elite",
       "key_factors": [
-        "Elite power hitter with 20.7% BB rate and premium contact quality",
-        "Brandon Young has 5.66 K/9 with limited strikeout stuff (vulnerable to patient bats)",
-        "66\u00b0F and dry conditions favor fly balls; judge strong vs RHP"
+        "Historic 2026 season setting NYY franchise record",
+        "Brandon Young allows 1.31 HR/9 (high rate)",
+        "Judge 20.7% BB rate, elite discipline"
       ],
-      "reasoning": "Judge's elite discipline and power profile facing Young's mediocre stuff creates high HR probability. Young's low K/9 suggests exposed fastball"
+      "reasoning": "Judge is in historic form setting all-time Yankees records. Facing Brandon Young who surrenders elevated HR rate provides elite opportunity. Judge's recent dominance combined with favorable matchup makes this the highest-confidence HR bet of the slate."
     },
     {
       "rank": 2,
-      "player_name": "Yordan Alvarez",
-      "team": "HOU",
-      "opponent": "SEA",
-      "game": "SEA @ HOU",
-      "game_time": "12:10 AM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "+280",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 80,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Recent 115.9 mph HR; 23% barrel rate elite",
-        "George Kirby allows only 4 HRs in 52 IP but weak barrel suppression",
-        "Hot Houston environment (82\u00b0F) and home field advantage"
-      ],
-      "reasoning": "Alvarez's recent power surge and elite metrics against Kirby's pedestrian strikeout stuff suggests multiple HR opportunity."
-    },
-    {
-      "rank": 3,
-      "player_name": "Corey Seager",
-      "team": "TEX",
-      "opponent": "ARI",
-      "game": "ARI @ TEX",
-      "game_time": "10:10 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "+370",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 76,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Slade Cecconi allows 1.76 HR/9 with 8 HRs in 41 IP",
-        "76\u00b0F warm conditions favor fly balls at Globe Life",
-        "Seager premium power hitter with 113 OPS+ at home"
-      ],
-      "reasoning": "Cecconi's elevated HR rate (20% of fly balls) and Seager's power create excellent probability edge."
-    }
-  ],
-  "hits_picks": [
-    {
-      "rank": 1,
-      "player_name": "George Springer",
-      "team": "TOR",
-      "opponent": "TB",
-      "game": "TB @ TOR",
-      "game_time": "11:40 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "+122",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 79,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Springer 122+ total bases +EV vs Drew Rasmussen (low K/9 = fastball)",
-        "66\u00b0F mild conditions favor quality contact; Springer elite line drive hitter",
-        "Rasmussen vulnerable to disciplined bats with 4.5 K/9"
-      ],
-      "reasoning": "Springer's elite approach and Rasmussen's weak strikeout arsenal make 1.5 total bases line undervalued for a premium bat."
-    },
-    {
-      "rank": 2,
-      "player_name": "Vladimir Guerrero Jr.",
-      "team": "TOR",
-      "opponent": "TB",
-      "game": "TB @ TOR",
-      "game_time": "11:40 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "+118",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 77,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Guerrero 118+ at home vs Rasmussen's 4.5 K/9 line",
-        "Elite barrel rate (19%) and contact ability",
-        "Rogers Centre favorable environment for line drives"
-      ],
-      "reasoning": "Vlad Jr's exceptional plate discipline and power metrics create +EV on over 1.5 total bases vs pedestrian Rasmussen."
-    },
-    {
-      "rank": 3,
-      "player_name": "Teoscar Hernandez",
+      "player_name": "Shohei Ohtani",
       "team": "LAD",
       "opponent": "SF",
       "game": "SF @ LAD",
@@ -168,18 +76,110 @@
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "+129",
+      "czs_odds": "205",
       "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 75,
+      "fd_line": "0.5",
+      "confidence_score": 78,
       "confidence_tier": "High",
       "key_factors": [
-        "Hernandez 129+ total bases vs Trevor McDonald (4.5 K/9)",
-        "Elite power/speed combo; Dodger Stadium favorable splits",
-        "McDonald low strikeout rate suggests exposed fastballs"
+        "Lowest HR odds on slate (205) indicates sharp conviction",
+        "Warm weather (75\u00b0F) aids fly ball distance",
+        "Dodger Stadium relatively HR-friendly (0.72 suppression)"
       ],
-      "reasoning": "Hernandez's premium power metrics and barrel rate overvalue under on 1.5 total bases vs weak strikeout pitcher."
+      "reasoning": "Ohtani's +205 line reflects his elite status and the market's confidence. Playing at home in warm conditions against a struggling Giants team creates favorable environment for one of baseball's premier sluggers."
+    },
+    {
+      "rank": 3,
+      "player_name": "Julio Rodriguez",
+      "team": "SEA",
+      "opponent": "HOU",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "370",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite young talent with 370 odds (premium value)",
+        "Peter Lambert (4.5 K/9) allows moderate hard contact",
+        "Warm dome environment (81\u00b0F) aids carry"
+      ],
+      "reasoning": "Rodriguez at +370 offers solid value as elite young talent. Facing Lambert in warm Houston conditions with reasonable home run surface provides balanced risk-reward for this generational prospect."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Freddie Freeman",
+      "team": "LAD",
+      "opponent": "SF",
+      "game": "SF @ LAD",
+      "game_time": "2:10 AM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 85,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Market-leading -250 odds reflects elite consistency",
+        "Freeman career 319 BA, one of game's most reliable",
+        "Giants rotation struggles (2nd worst record)"
+      ],
+      "reasoning": "Freeman's -250 odds represent the sharpest market assessment on the board. Facing a struggling Giants staff at home, one of baseball's most disciplined hitters should record a hit with high probability."
+    },
+    {
+      "rank": 2,
+      "player_name": "Yandy Diaz",
+      "team": "TB",
+      "opponent": "TOR",
+      "game": "TB @ TOR",
+      "game_time": "11:40 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "-250 odds signal elite reliability",
+        "Diaz 296 BA on season with strong OBP",
+        "Kevin Gausman has 4.5 K/9 (hitter-friendly)"
+      ],
+      "reasoning": "Diaz at -250 shows consistent professionalism. Facing Gausman who doesn't overpower (4.5 K/9), the Rays veteran should record hit in favorable matchup."
+    },
+    {
+      "rank": 3,
+      "player_name": "Jose Altuve",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-295",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Leading -295 odds on hits props (most trusted)",
+        "Houston home field advantage",
+        "Altuve career .305 hitter, contact specialist"
+      ],
+      "reasoning": "Altuve at -295 represents one of the most trusted bets on the board. The Astros legend's contact skills and home field advantage against Kirby/Lambert rotation makes this very high-probability hit."
     }
   ],
   "total_bases_picks": [
@@ -189,22 +189,22 @@
       "team": "TEX",
       "opponent": "ARI",
       "game": "ARI @ TEX",
-      "game_time": "10:10 PM",
-      "best_book": "CZS",
+      "game_time": "12:05 AM",
+      "best_book": "MGM",
       "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "+113",
+      "mgm_odds": "125",
+      "czs_odds": "118",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 81,
+      "confidence_score": 79,
       "confidence_tier": "High",
       "key_factors": [
-        "Seager 113+ total bases over 1.5; elite home power with OPS+ 113",
-        "Cecconi vulnerable (1.59 WHIP, 5.51 ERA) with elevated hard contact",
-        "76\u00b0F warm conditions amplify power output at Globe Life"
+        "Seager elite hitter (350 HR odds) with 1.5TB line",
+        "Michael Soroka allows 0.97 HR/9 (vulnerable)",
+        "Warm weather (77\u00b0F) aids extra-base production"
       ],
-      "reasoning": "Seager's premium home performance against soft Cecconi creates strong total bases over opportunity; warm weather catalyst."
+      "reasoning": "Seager at +125 over 1.5 total bases offers strong value for a power hitter facing soft Soroka. Rangers' elite slugger should easily surpass this modest threshold in warm conditions."
     },
     {
       "rank": 2,
@@ -212,243 +212,244 @@
       "team": "TEX",
       "opponent": "ARI",
       "game": "ARI @ TEX",
-      "game_time": "10:10 PM",
-      "best_book": "CZS",
+      "game_time": "12:05 AM",
+      "best_book": "MGM",
       "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "+135",
+      "mgm_odds": "135",
+      "czs_odds": "137",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 78,
+      "confidence_score": 75,
       "confidence_tier": "High",
       "key_factors": [
-        "Jung 135+ total bases over 1.5 vs Cecconi soft pitcher",
-        "Globe Life home park favorable; 76\u00b0F amplifies power",
-        "Cecconi 5.51 ERA with limited strikeout arsenal"
+        "Josh Jung 625 HR odds indicates power potential",
+        "Soroka vulnerable to right-handed power",
+        "Home field advantage in warm environment"
       ],
-      "reasoning": "Jung's home performance edge vs weak Cecconi in warm conditions creates solid total bases over value."
+      "reasoning": "Jung at +135 over 1.5TB represents solid value for emerging Rangers star. Facing Soroka at home in warm conditions, Jung should accumulate extra bases with reasonable probability."
     },
     {
       "rank": 3,
-      "player_name": "Aaron Judge",
-      "team": "NYY",
-      "opponent": "BAL",
-      "game": "NYY @ BAL",
-      "game_time": "10:35 PM",
-      "best_book": "CZS",
+      "player_name": "Isaac Paredes",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "best_book": "MGM",
       "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "-115",
+      "mgm_odds": "135",
+      "czs_odds": "141",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 76,
+      "confidence_score": 72,
       "confidence_tier": "High",
       "key_factors": [
-        "Judge elite power (OPS+ 386 season trend) vs Young's 5.66 K/9",
-        "Yankee Stadium moderately HR friendly (0.92 HR factor but elevated LF porch)",
-        "Young's weak strikeout rate exposes fastball to elite bats"
+        "Paredes solid bat with +135 over odds",
+        "Houston home park boosts offensive output",
+        "Kirby/Lambert allow moderate hard contact"
       ],
-      "reasoning": "Judge's elite metrics and Young's pedestrian stuff create solid total bases over despite neutral weather."
+      "reasoning": "Paredes at +135 over 1.5 total bases shows value in warm dome environment. Playing at home against soft Mariners pitching, the Astros utility provides reasonable avenue to exceed line."
     }
   ],
   "strikeout_picks": [
     {
       "rank": 1,
-      "player_name": "Nathan Eovaldi",
-      "pick_type": "pitcher",
-      "team": "TEX",
-      "opponent": "ARI",
-      "game": "ARI @ TEX",
-      "game_time": "12:05 AM",
-      "best_book": "FD",
-      "fd_odds": "+102",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "5.5",
-      "over_under_pick": "over",
-      "confidence_score": 79,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Eovaldi 8.87 K/9 elite strikeout pitcher; 30.7% whiff rate",
-        "Diamondbacks vs Eovaldi matchup 76\u00b0F favors strikeouts over flyballs",
-        "Eovaldi 21.0% K% elite rate; line undervalued at +102"
-      ],
-      "reasoning": "Eovaldi's elite strikeout metrics and whiff rate create +EV on over 5.5 Ks; diamondbacks swinging strike susceptible."
-    },
-    {
-      "rank": 2,
       "player_name": "George Kirby",
       "pick_type": "pitcher",
       "team": "SEA",
       "opponent": "HOU",
       "game": "SEA @ HOU",
       "game_time": "12:10 AM",
-      "best_book": "FD",
-      "fd_odds": "+104",
-      "mgm_odds": null,
+      "best_book": "MGM",
+      "fd_odds": "105",
+      "mgm_odds": "105",
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "5.5",
       "over_under_pick": "over",
-      "confidence_score": 74,
+      "confidence_score": 81,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Kirby 6.75 K/9 with elite 19.9% whiff rate",
+        "52.0 IP pitched (elite workload/command)",
+        "Astros lineup favorable for strikeout accumulation"
+      ],
+      "reasoning": "Kirby at 6.75 K/9 with elite whiff rate (19.9%) makes this the most reliable pitcher K play. His durable workload demonstrates command consistency to exceed 5.5 K threshold against middle Houston lineup."
+    },
+    {
+      "rank": 2,
+      "player_name": "Nathan Eovaldi",
+      "pick_type": "pitcher",
+      "team": "TEX",
+      "opponent": "ARI",
+      "game": "ARI @ TEX",
+      "game_time": "12:05 AM",
+      "best_book": "MGM",
+      "fd_odds": "100",
+      "mgm_odds": "100",
+      "czs_odds": null,
+      "scr_ops": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
       "confidence_tier": "High",
       "key_factors": [
-        "Kirby 6.75 K/9 solid; 19.9% whiff rate above average",
-        "Hot Houston conditions (82\u00b0F) favor strikeouts; Astros vulnerable approach",
-        "Kirby 52 IP control suggests elevated swings and misses"
+        "Eovaldi 8.87 K/9 elite strikeout rate",
+        "47.2 IP pitched with 30.7% whiff rate",
+        "Diamondbacks lineup susceptible to strikeouts"
       ],
-      "reasoning": "Kirby's solid K/9 and whiff rate create reasonable over 5.5 value despite warm conditions potentially favoring flyballs."
+      "reasoning": "Eovaldi at 8.87 K/9 provides elite strikeout production. His 30.7% whiff rate and durable workload indicate high probability of exceeding 5.5 strikeout threshold against Arizona."
     },
     {
       "rank": 3,
       "player_name": "Ryan Weathers",
       "pick_type": "pitcher",
-      "team": "BAL",
-      "opponent": "NYY",
-      "game": "NYY @ BAL",
-      "game_time": "10:35 PM",
+      "team": "TB",
+      "opponent": "TOR",
+      "game": "TB @ TOR",
+      "game_time": "11:40 PM",
       "best_book": "FD",
-      "fd_odds": "-125",
-      "mgm_odds": null,
+      "fd_odds": "-130",
+      "mgm_odds": "130",
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "5.5",
       "over_under_pick": "over",
-      "confidence_score": 72,
-      "confidence_tier": "Medium",
+      "confidence_score": 71,
+      "confidence_tier": "High",
       "key_factors": [
-        "Weathers 10.47 K/9 elite strikeout rate; 28.5% whiff rate",
-        "Yankees whiff susceptible (22.9% team rate) vs lefty specialists",
-        "66\u00b0F mild conditions neutral; Weathers 38.2 IP sample solid"
+        "Weathers 10.47 K/9 elite strikeout rate",
+        "28.5% whiff rate indicates premium stuff",
+        "Blue Jays lineup has mixed contact management"
       ],
-      "reasoning": "Weathers' elite K/9 and Yankees' elevated whiff rate vs LHP creates over 5.5 opportunity despite negative odds."
+      "reasoning": "Weathers at 10.47 K/9 offers elite strikeout ceiling. His premium whiff rate and durable workload support exceeding 5.5 K threshold versus Toronto."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
       "prop_category": "ML",
-      "game": "SEA @ HOU",
-      "game_time": "12:10 AM",
-      "pick": "Houston Astros",
-      "best_book": "MGM",
-      "fd_odds": "-144",
+      "game": "NYY @ BAL",
+      "game_time": "10:35 PM",
+      "pick": "New York Yankees",
+      "best_book": "CZS",
+      "fd_odds": "-156",
       "mgm_odds": "-150",
-      "czs_odds": "-145",
+      "czs_odds": "-155",
       "scr_odds": null,
       "fd_line": null,
       "over_under_pick": null,
       "confidence_score": 80,
-      "confidence_tier": "High",
+      "confidence_tier": "Elite",
       "key_factors": [
-        "George Kirby elite ERA 3.41 vs Eury Perez soft 4.87",
-        "Houston home field (82\u00b0F warm) favors power-heavy lineup",
-        "Mariners defensive uncertainty; Astros AL West superiority trending"
+        "Yankees in historic form (Goldschmidt sets record, Schlitterer makes history)",
+        "Brandon Young allows 1.62 HR/9 (elite sluggers feast)",
+        "Judge, Goldschmidt, elite Yankees lineup vs vulnerable Young"
       ],
-      "reasoning": "Astros' pitching advantage and home environment create strong moneyline edge. Kirby's elite metrics outclass Perez's pedestrian profile."
+      "reasoning": "Yankees riding historic momentum with record-setting performances. Judge and Goldschmidt represent one of baseball's premier offensive duos facing vulnerable Brandon Young. This is the most confident moneyline play on the board."
     },
     {
       "rank": 2,
       "prop_category": "ML",
-      "game": "NYY @ BAL",
-      "game_time": "10:35 PM",
-      "pick": "New York Yankees",
-      "best_book": "MGM",
-      "fd_odds": "-172",
-      "mgm_odds": "-180",
-      "czs_odds": "-178",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "pick": "Houston Astros",
+      "best_book": "CZS",
+      "fd_odds": "-140",
+      "mgm_odds": "-140",
+      "czs_odds": "-140",
       "scr_odds": null,
       "fd_line": null,
       "over_under_pick": null,
       "confidence_score": 77,
       "confidence_tier": "High",
       "key_factors": [
-        "Yankees elite lineup vs Brandon Young's 4.89 ERA weakness",
-        "Judge/Grisham power advantage in 66\u00b0F conditions",
-        "Young 34 ERA+ below average; Yankees premium hitting prowess"
+        "Astros elite home field advantage (warm, dome)",
+        "Kirby elite strikeout pitcher (limits offensive outbursts)",
+        "Houston lineup vs Mariners soft rotation"
       ],
-      "reasoning": "Yankees' elite offensive metrics vs Young's mediocre stuff create strong ML value despite negative odds."
+      "reasoning": "Astros at home in warm dome conditions face Mariners without elite starting pitching. Houston's consistent offensive output and Kirby's elite control make home team the value play."
     },
     {
       "rank": 3,
       "prop_category": "OU",
-      "game": "ARI @ TEX",
-      "game_time": "10:10 PM",
-      "pick": "Over 7.5",
+      "game": "NYY @ BAL",
+      "game_time": "10:35 PM",
+      "pick": "Over 9.0",
       "best_book": "CZS",
-      "fd_odds": "-115",
-      "mgm_odds": "-120",
-      "czs_odds": "-120",
+      "fd_odds": "100",
+      "mgm_odds": "-105",
+      "czs_odds": "100",
       "scr_odds": null,
-      "fd_line": "7.5",
-      "over_under_pick": "over",
-      "confidence_score": 75,
+      "fd_line": null,
+      "over_under_pick": null,
+      "confidence_score": 74,
       "confidence_tier": "High",
       "key_factors": [
-        "Cecconi 5.51 ERA vulnerable vs Rangers powerful lineup",
-        "Soroka 3.37 ERA solid but faces elite Diamondbacks bats",
-        "76\u00b0F warm conditions amplify both teams' power output"
+        "Yankees elite offense (multiple record-setters)",
+        "Brandon Young allows elevated run scoring",
+        "Orioles competitive lineup adds secondary scoring"
       ],
-      "reasoning": "Both pitchers allow elevated hard contact; warm environment and powerful lineups create strong over 7.5 runs lean."
+      "reasoning": "Over 9.0 in Yankees-Orioles matchup reflects both teams' offensive capabilities. Yankees' historic scoring power combined with Young's vulnerability creates excellent over opportunity."
     },
     {
       "rank": 4,
-      "prop_category": "Spread",
-      "game": "NYY @ BAL",
-      "game_time": "10:35 PM",
-      "pick": "Yankees -1.5",
-      "best_book": "FD",
-      "fd_odds": "-104",
-      "mgm_odds": "-115",
-      "czs_odds": "-105",
+      "prop_category": "RL",
+      "game": "SF @ LAD",
+      "game_time": "2:10 AM",
+      "pick": "Los Angeles Dodgers -1.5",
+      "best_book": "CZS",
+      "fd_odds": "-130",
+      "mgm_odds": "-140",
+      "czs_odds": "-130",
       "scr_odds": null,
-      "fd_line": "-1.5",
+      "fd_line": null,
       "over_under_pick": null,
-      "confidence_score": 73,
+      "confidence_score": 72,
       "confidence_tier": "High",
       "key_factors": [
-        "Yankees strong moneyline edge extends to run line",
-        "Young vulnerable to power; Judge/Grisham offensive ceiling",
-        "Yankees pitching acceptable vs Orioles lineup"
+        "Giants tied for 2nd-worst record, severe struggles",
+        "Manager Vitello calls out 'effort' issues",
+        "Dodgers elite home team with advantage"
       ],
-      "reasoning": "Yankees' strong ML probability creates solid run line value at -1.5; FanDuel -104 best available."
+      "reasoning": "Giants in freefall (tied 2nd worst record) with manager citing effort concerns. Dodgers' elite home team advantage and San Francisco's dysfunction create strong run line opportunity."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Houston Astros ML (-150 MGM)",
-      "New York Yankees ML (-180 MGM)",
-      "ARI @ TEX Over 7.5 (-120 CZS)"
+      "Aaron Judge Over 0.5 HR (CZS +220)",
+      "Freddie Freeman Over 0.5 H (MGM -250)",
+      "Yankees ML (CZS -155)"
     ],
-    "reasoning": "Three strong moneyline/total correlations: dominant pitchers advantage (Kirby/Eovaldi tier), elite offensive matchups, and warm environment amplifying run scoring. All selections backed by quantifiable edges.",
-    "estimated_odds": "+420"
+    "reasoning": "Judge in historic form faces vulnerable Brandon Young; Freeman elite consistency vs struggling Giants; Yankees riding record-breaking momentum. Three uncorrelated legs with elite confidence tiers create natural parlay construction with historic Yankees offensive context tying together.",
+    "estimated_odds": "+315"
   },
-  "daily_summary": "May 11 slate features three high-confidence moneyline picks driven by clear pitching talent disparities and favorable environmental conditions. Houston's George Kirby and Texas's Nathan Eovaldi create elite strikeout environments, while Yankees' elite offense demolishes Young's mediocre profile. Warm weather in Houston (82\u00b0F) and Texas (76\u00b0F) amplifies power output across slate; Toronto/Baltimore mild 66\u00b0F conditions favor contact-heavy approach from Springer/Guerrero and Judge. Aaron Judge laser candidate with recent 114.5 mph evidence and Yordan Alvarez elite 115.9 mph recent ceiling.",
-  "best_bet": "Houston Astros -150 (MGM) with George Kirby's elite 3.41 ERA and 6.75 K/9 against Eury Perez's soft 4.87 ERA in 82\u00b0F Houston heat creates clear pitching advantage and home field power edge.",
+  "daily_summary": "Today's slate features historic Yankees momentum (Goldschmidt/Schlitterer records, Judge elite form) creating multiple leverage points, particularly against Brandon Young's elevated HR/9 rate. George Kirby's elite strikeout production (6.75 K/9) and Peter Lambert's soft contact profile create premium Mariners-Astros totals opportunities. Giants' second-worst record and manager effort criticism heavily favor Dodgers in West Coast nightcap.",
+  "best_bet": "Aaron Judge Over 0.5 HR at CZS +220: Judge in historic form facing vulnerable Brandon Young with Yankee record-breaking momentum context.",
   "nrfi_picks": [
     {
       "rank": 1,
       "pick": "NRFI",
-      "game": "Los Angeles Dodgers @ San Francisco Giants",
-      "away_pitcher": "Roki Sasaki",
-      "home_pitcher": "Trevor McDonald",
+      "game": "San Francisco Giants @ Los Angeles Dodgers",
+      "away_pitcher": "Trevor McDonald",
+      "home_pitcher": "Roki Sasaki",
       "nrfi_score": 72.7,
       "confidence_tier": "High",
-      "away_team_nrfi_pct": "55%",
-      "home_team_nrfi_pct": "60%",
-      "away_pitcher_nrfi_pct": "100%",
-      "home_pitcher_nrfi_pct": "0%",
-      "away_pitcher_streak": "6 NRFI",
-      "home_pitcher_streak": "1 YRFI",
+      "away_team_nrfi_pct": "60%",
+      "home_team_nrfi_pct": "55%",
+      "away_pitcher_nrfi_pct": "0%",
+      "home_pitcher_nrfi_pct": "100%",
+      "away_pitcher_streak": "1 YRFI",
+      "home_pitcher_streak": "6 NRFI",
       "key_factors": [
-        "Roki Sasaki has perfect 100% NRFI record with 6-game NRFI streak",
-        "Dodgers batting at 73% NRFI with 5-game NRFI streak",
-        "Giants batting elite 80% NRFI with 4-game NRFI streak"
+        "Roki Sasaki perfect 100% NRFI with 6-game streak",
+        "Giants batting elite 80% NRFI with 4-game streak",
+        "Dodgers batting strong 73% NRFI with 5-game streak",
+        "McDonald is new/developing pitcher with minimal track record"
       ],
-      "reasoning": "Roki Sasaki's elite 100% NRFI percentage and active 6-game NRFI streak provides strong pitching foundation. Both lineups feature high NRFI batting percentages (73% and 80%), suggesting limited early offensive production despite Giants' hot batting streak."
+      "reasoning": "Highest composite score (72.7) with elite pitcher matchup dominated by Sasaki's perfect NRFI record and 6-game streak. Both offenses showing strong NRFI patterns (80% Giants, 73% Dodgers) creates optimal scoreless first inning environment."
     },
     {
       "rank": 2,
@@ -465,11 +466,12 @@
       "away_pitcher_streak": "8 NRFI",
       "home_pitcher_streak": "1 YRFI",
       "key_factors": [
-        "Kevin Gausman maintains perfect 100% NRFI with dominant 8-game NRFI streak",
-        "Drew Rasmussen strong 71% NRFI rate with recent YRFI",
-        "Both teams batting around 73-74% NRFI despite recent YRFI trends"
+        "Gausman perfect 100% NRFI with dominant 8-game streak",
+        "Rasmussen strong 71% NRFI despite recent YRFI",
+        "Both teams batting above 73% NRFI",
+        "Gausman provides elite pitcher reliability"
       ],
-      "reasoning": "Kevin Gausman's exceptional 100% NRFI record with 8-game streak provides elite pitcher foundation for this matchup. While Rasmussen shows slight YRFI lean, Gausman's dominance and both teams' strong batting NRFI percentages support scoreless first inning."
+      "reasoning": "Second-best composite score (71.0) anchored by Gausman's perfect 8-game NRFI streak and 100% record. Both offenses maintain strong NRFI patterns (74% Rays, 73% Blue Jays), and Rasmussen's one recent YRFI appears to be variance against historically strong pitcher."
     },
     {
       "rank": 3,
@@ -477,7 +479,7 @@
       "game": "Cleveland Guardians @ Los Angeles Angels",
       "away_pitcher": "Joey Cantillo",
       "home_pitcher": "TBD",
-      "nrfi_score": 51.6,
+      "nrfi_score": 56.6,
       "confidence_tier": "Medium",
       "away_team_nrfi_pct": "55%",
       "home_team_nrfi_pct": "46%",
@@ -486,11 +488,12 @@
       "away_pitcher_streak": "1 NRFI",
       "home_pitcher_streak": "Unknown",
       "key_factors": [
-        "Joey Cantillo 75% NRFI rate with active NRFI streak",
-        "Guardians strong 69% batting NRFI and 55% team NRFI",
-        "Angels batting 63% NRFI despite lower team NRFI%"
+        "Cantillo strong 75% NRFI with active streak",
+        "Guardians batting solid 69% NRFI with 2-game streak",
+        "Angels batting 63% NRFI with 4-game streak",
+        "TBD pitcher creates some risk but Cantillo's strength compensates"
       ],
-      "reasoning": "Joey Cantillo's strong 75% NRFI rate and active streak provides reliable pitching anchor for Guardians. Despite Angels' lower overall NRFI rate, both lineups maintain respectable batting NRFI percentages suggesting cautious early offensive approach."
+      "reasoning": "While Angels pitcher is unknown (creating moderate risk), Cantillo's 75% NRFI and Guardians' 69% batting NRFI provide sufficient foundation. Angels' 63% batting NRFI with 4-game streak and overall team 46% NRFI suggests conservative offensive approach in early innings."
     }
   ]
 }
