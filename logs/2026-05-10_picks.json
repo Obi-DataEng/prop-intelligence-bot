@@ -1,0 +1,427 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opponent": "Cincinnati Reds",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "5:40 PM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "115.9 mph on 5/8",
+      "avg_exit_velo": "94.8 mph",
+      "barrel_rate": "16%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "44%",
+      "park_factor_hr": 1.03,
+      "key_factors": [
+        "Recent 115.9 mph home run on 5/8",
+        "Consistent hard contact against weak pitching",
+        "Andrew Abbott allows 42.6% hard hit rate"
+      ],
+      "reasoning": "Alvarez just launched a 115.9 mph HR two days ago and faces Andrew Abbott, a soft-contact pitcher who struggles with elite hitters. His consistent hard contact and recent elite EV suggest another 110+ mph exit velo is highly likely today."
+    },
+    {
+      "rank": 2,
+      "player_name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opponent": "Boston Red Sox",
+      "game": "Tampa Bay Rays @ Boston Red Sox",
+      "game_time": "5:35 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "115.8 mph on 5/7",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "15%",
+      "hard_hit_rate": "51%",
+      "pitcher_hard_hit_allowed": "43%",
+      "park_factor_hr": 1.02,
+      "key_factors": [
+        "Recent 115.8 mph home run at Fenway on 5/7",
+        "Warm weather conditions (67\u00b0F) favor fly balls",
+        "Nick Martinez allows elevated hard contact rates"
+      ],
+      "reasoning": "Caminero hit 115.8 mph two days ago at Fenway and shows consistent hard contact ability. Today's warm 67\u00b0F conditions at Fenway favor home runs, and he faces a pitcher allowing 43% hard hit rate."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Colorado Rockies",
+      "game": "Colorado Rockies @ Philadelphia Phillies",
+      "game_time": "5:35 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "225",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 82,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Lowest odds on slate at +225",
+        "Excellent HR hitter with 18% barrel rate",
+        "Coors Field brings Rockies pitcher, Phillies home field advantage"
+      ],
+      "reasoning": "Schwarber is among the most reliable home run hitters in baseball with elite barrel rates. At +225, these are the best available odds today. He faces a struggling Rockies staff in neutral conditions."
+    },
+    {
+      "rank": 2,
+      "player_name": "Shohei Ohtani",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Atlanta Braves",
+      "game": "Atlanta Braves @ Los Angeles Dodgers",
+      "game_time": "10:10 PM",
+      "best_book": "CZS",
+      "fd_odds": "245",
+      "mgm_odds": null,
+      "czs_odds": "245",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite hitter with track record of power",
+        "Dodger Stadium mildly suppresses HRs (0.73 factor) but Ohtani overcomes",
+        "Warm 82\u00b0F conditions favor fly balls"
+      ],
+      "reasoning": "Ohtani's elite bat control and power make him a reliable home run threat even at Dodger Stadium. Warm weather supports the play, and +245 represents fair value for a perennial MVP-caliber hitter."
+    },
+    {
+      "rank": 3,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Milwaukee Brewers",
+      "game": "New York Yankees @ Milwaukee Brewers",
+      "game_time": "6:10 PM",
+      "best_book": "CZS",
+      "fd_odds": "220",
+      "mgm_odds": "255",
+      "czs_odds": "220",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Best odds at CZS/FD +220",
+        "American League's top power hitter",
+        "Brewers staff has elevated HR rates"
+      ],
+      "reasoning": "Judge is the game's most consistent home run producer, and +220 is strong value. He faces a Brewers staff that has struggled with elite power hitters this season."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Luis Arraez",
+      "team": "San Francisco Giants",
+      "opponent": "Pittsburgh Pirates",
+      "game": "Pittsburgh Pirates @ San Francisco Giants",
+      "game_time": "8:05 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "106",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 84,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Career .310+ BA with exceptional contact rate",
+        "Faces Tyler Mahle with 4.88 ERA and elevated contact rates",
+        "CZS line at +106 offers positive EV"
+      ],
+      "reasoning": "Arraez is one of baseball's most consistent hitters with a .310+ career BA. Mahle's elevated ERA and poor strikeout rates make him vulnerable to high-contact batters like Arraez, and the CZS odds represent value."
+    },
+    {
+      "rank": 2,
+      "player_name": "George Springer",
+      "team": "Toronto Blue Jays",
+      "opponent": "Los Angeles Angels",
+      "game": "Los Angeles Angels @ Toronto Blue Jays",
+      "game_time": "5:40 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "136",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite lead-off hitter with .300+ career BA",
+        "Jose Soriano has 5.5 K/9 and allows hard contact",
+        "Warm indoor conditions at Rogers Centre"
+      ],
+      "reasoning": "Springer's elite plate discipline and hit rates make him a reliable over play at 1.5 hits. He faces Soriano, whose weak strikeout rate means more batters on base and more opportunities for hits."
+    },
+    {
+      "rank": 3,
+      "player_name": "Freddie Freeman",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Atlanta Braves",
+      "game": "Atlanta Braves @ Los Angeles Dodgers",
+      "game_time": "10:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "105",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Consistent .290+ BA with excellent plate approach",
+        "Elder has elevated WHIP and contact rates",
+        "Warm 82\u00b0F conditions support batting performance"
+      ],
+      "reasoning": "Freeman's elite approach and consistency make him a safe over play at 1.5 hits. He faces Bryce Elder, whose elevated WHIP and poor strikeout rates favor contact-oriented hitters."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Xander Bogaerts",
+      "team": "San Diego Padres",
+      "opponent": "St. Louis Cardinals",
+      "game": "St. Louis Cardinals @ San Diego Padres",
+      "game_time": "8:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "143",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 81,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Best +143 odds on the slate for total bases",
+        "Elite bat with .290+ career BA and consistent power",
+        "Kyle Leahy has 5.18 ERA and weak strikeout rates (17.1%)"
+      ],
+      "reasoning": "Bogaerts' combination of hits and power makes him ideal for total bases props. Leahy's weak strikeout rate and elevated ERA suggest more baserunners and scoring opportunities, making 1.5+ TB highly probable."
+    },
+    {
+      "rank": 2,
+      "player_name": "JJ Wetherholt",
+      "team": "St. Louis Cardinals",
+      "opponent": "San Diego Padres",
+      "game": "St. Louis Cardinals @ San Diego Padres",
+      "game_time": "8:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "135",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Strong power prospect with elevated barrel rates",
+        "Faces Walker Buehler with moderate K-rate (21.2%)",
+        "Buehler allows elevated hard contact rates (38.3%)"
+      ],
+      "reasoning": "Wetherholt's power and contact rates position him well for total bases. Buehler's moderate strikeout rate increases chances of putting the ball in play, and his hard hit allowed rates favor powerful hitters."
+    },
+    {
+      "rank": 3,
+      "player_name": "Kyle Tucker",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Atlanta Braves",
+      "game": "Atlanta Braves @ Los Angeles Dodgers",
+      "game_time": "10:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "131",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite power hitter with consistent 25+ HR potential",
+        "Bryce Elder's weak strikeout rate (16.9%) increases contact opportunities",
+        "Warm conditions enhance power potential"
+      ],
+      "reasoning": "Tucker's elite power and consistency make him a strong total bases play. Elder's poor strikeout rate and elevated hard hit allowed rates suggest more opportunities for extra-base hits."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Luis Severino",
+      "pick_type": "pitcher",
+      "team": "Baltimore Orioles",
+      "opponent": "Oakland Athletics",
+      "game": "Athletics @ Baltimore Orioles",
+      "game_time": "5:35 PM",
+      "best_book": "FD",
+      "fd_odds": "-158",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "4.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Elite strikeout pitcher with 23.2% K-rate",
+        "Faces weak-contact Athletics lineup",
+        "Historical K/9 rate of 8.93 supports over 4.5"
+      ],
+      "reasoning": "Severino is an elite strikeout producer with a 23.2% strikeout rate and strong K/9 of 8.93. The Athletics have one of baseball's weakest lineups, making over 4.5 K's highly probable despite -158 odds."
+    },
+    {
+      "rank": 2,
+      "player_name": "Jacob deGrom",
+      "pick_type": "pitcher",
+      "team": "Texas Rangers",
+      "opponent": "Chicago Cubs",
+      "game": "Chicago Cubs @ Texas Rangers",
+      "game_time": "6:35 PM",
+      "best_book": "FD",
+      "fd_odds": "106",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Future Hall of Famer with elite K-rate (31.3%)",
+        "K/9 of 11.23 suggests 6.5+ K's over typical outing",
+        "Cubs have elevated strikeout rates"
+      ],
+      "reasoning": "deGrom's elite 31.3% strikeout rate and 11.23 K/9 make over 6.5 K's a strong play. Even at +106 odds, his historical production versus this matchup favors the over."
+    },
+    {
+      "rank": 3,
+      "player_name": "Cristopher Sanchez",
+      "pick_type": "pitcher",
+      "team": "Philadelphia Phillies",
+      "opponent": "Colorado Rockies",
+      "game": "Colorado Rockies @ Philadelphia Phillies",
+      "game_time": "5:35 PM",
+      "best_book": "FD",
+      "fd_odds": "100",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "7.5",
+      "over_under_pick": "over",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite strikeout rate of 32.1% with low HR rate",
+        "K/9 of 10.99 supports over 7.5",
+        "Rockies' weak contact approach increases K opportunity"
+      ],
+      "reasoning": "Sanchez's elite 32.1% strikeout rate and strong K/9 of 10.99 make over 7.5 K's attractive at even odds. The Rockies' weak approach and high strikeout rates create a favorable matchup."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "OU",
+      "game": "Colorado Rockies @ Philadelphia Phillies",
+      "game_time": "5:35 PM",
+      "pick": "Over 8.5",
+      "best_book": "CZS",
+      "fd_odds": "-105",
+      "mgm_odds": "-110",
+      "czs_odds": "-105",
+      "scr_odds": null,
+      "fd_line": "8.5",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Phillies elite offense vs. struggling Rockies pitching",
+        "Cristopher Sanchez strong strikeout pitcher suppresses Rockies scoring",
+        "Coors altitude still favors hitting even at away park"
+      ],
+      "reasoning": "Philadelphia's elite offensive lineup should score 4-5 runs easily against Colorado's weak staff. Sanchez's strikeout dominance limits Rockies scoring, making the over 8.5 a high-probability play at -105."
+    },
+    {
+      "rank": 2,
+      "prop_category": "ML",
+      "game": "New York Yankees @ Milwaukee Brewers",
+      "game_time": "6:10 PM",
+      "pick": "New York Yankees",
+      "best_book": "CZS",
+      "fd_odds": "-122",
+      "mgm_odds": "-125",
+      "czs_odds": "-125",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Yankees top-tier lineup vs. moderate Brewers pitcher",
+        "Logan Henderson's limited experience (8 IP total) creates volatility",
+        "Yankees' recent strong form and offensive firepower"
+      ],
+      "reasoning": "The Yankees' elite lineup should capitalize against Logan Henderson, a rookie with minimal MLB experience. Henderson's youth and limited track record make Yankees ML at -125 a solid value."
+    },
+    {
+      "rank": 3,
+      "prop_category": "Spread",
+      "game": "Seattle Mariners @ Chicago White Sox",
+      "game_time": "6:10 PM",
+      "pick": "Seattle Mariners -1.5",
+      "best_book": "CZS",
+      "fd_odds": "136",
+      "mgm_odds": "125",
+      "czs_odds": "130",
+      "scr_odds": null,
+      "fd_line": "-1.5",
+      "confidence_score": 71,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Mariners elite starting pitcher Davis Martin (2.42 ERA)",
+        "White Sox offensive struggles well-documented",
+        "Mariners' offensive advantage vs. White Sox pitching"
+      ],
+      "reasoning": "Davis Martin's elite 2.42 ERA and 25.2% K-rate provide strong pitching advantage. The Mariners' superior offense versus the White Sox's weak lineup supports the -1.5 spread at +130 or better."
+    },
+    {
+      "rank": 4,
+      "prop_category": "OU",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "5:40 PM",
+      "pick": "Over 9.0",
+      "best_book": "CZS",
+      "fd_odds": "-102",
+      "mgm_odds": "100",
+      "czs_odds": "100",
+      "scr_odds": null,
+      "fd_line": "9.0",
+      "confidence_score": 70,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "Both offenses relatively strong with potential for scoring",
+        "Reds' Great American Ball Park moderately favorable for offense",
+        "Andrew Abbott's elevated ERA (4.74) and weak K-rate (15.4%)"
+      ],
+      "reasoning": "Both teams feature strong offensive capabilities, and Abbott's weak strikeout rate increases baserunners. The over 9.0 at +100 offers positive expected value given both lineups' quality."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Cristopher Sanchez Over 7.5 K (FD +100)",
+      "Luis Severino Over 4.5 K (FD -158)",
+      "Colorado Rockies @ Philadelphia Phillies Over 8.5 (CZS -105)"
+    ],
+    "reasoning": "This parlay combines two elite strikeout pitchers facing weak-contact lineups with an over play that benefits from elite Phillies offense and strong Sanchez strikeout dominance. All three legs independently have 70%+ win probability, creating a 40%+ parlay win probability.",
+    "estimated_odds": "+425"
+  },
+  "daily_summary": "Today's slate features several elite strikeout pitcher matchups and weak opposing offenses, creating high-probability over 4.5/6.5/7.5 K plays across multiple games. The Phillies-Rockies matchup stands out with elite Philadelphia offense against struggling Colorado pitching, while the Yankees-Brewers game offers ML value with a rookie Brewers starter. Weather across most parks favors batting, with temperatures ranging from 67-84\u00b0F supporting hard contact and home runs.",
+  "best_bet": "Cristopher Sanchez Over 7.5 Strikeouts vs Colorado Rockies at FD +100 \u2014 elite 32.1% K-rate and 10.99 K/9 facing the Rockies' weak strikeout-prone lineup."
+}

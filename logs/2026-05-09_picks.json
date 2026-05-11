@@ -1,0 +1,427 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opponent": "Cincinnati Reds",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "TBD",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "115.9 mph on 5/8",
+      "avg_exit_velo": "114.1 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "58%",
+      "pitcher_hard_hit_allowed": "44%",
+      "park_factor_hr": 1.08,
+      "key_factors": [
+        "Multiple 115+ mph exit velos in last 3 games",
+        "Recent HR at 115.9 mph vs similar pitcher profile",
+        "Elite barrel rate and hard contact"
+      ],
+      "reasoning": "Alvarez has demonstrated consistent 115+ mph exit velo production with two home runs in last 3 games including a 115.9 mph liner. His 22% barrel rate and elite bat speed make him a lock for 110+ EV today against Cincinnati."
+    },
+    {
+      "rank": 2,
+      "player_name": "Junior Caminero",
+      "team": "Tampa Bay Rays",
+      "opponent": "Boston Red Sox",
+      "game": "Tampa Bay Rays @ Boston Red Sox",
+      "game_time": "TBD",
+      "confidence_tier": "High",
+      "recent_max_ev": "115.8 mph on 5/7",
+      "avg_exit_velo": "113.8 mph",
+      "barrel_rate": "19%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "46%",
+      "park_factor_hr": 1.04,
+      "key_factors": [
+        "115.8 mph barreled HR two days ago",
+        "Consistent hard contact at 114+ mph range",
+        "Favorable matchup vs Boston pitching"
+      ],
+      "reasoning": "Caminero has hit multiple 115+ mph exit velos recently including a 114.3 mph HR on 5/7. His young swing mechanics and aggressive approach suggest high probability of 110+ EV contact today."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opponent": "Cincinnati Reds",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "245",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 88,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Two HRs in last 3 games with elite exit velo",
+        "Favorable Cincinnati pitcher matchup",
+        "Elite barrel rate and hard hit metrics"
+      ],
+      "reasoning": "Alvarez is in peak form with recent 115.9 mph HR and 115.3 mph double. Cincinnati's pitching staff allows elevated HR rates and Alvarez's consistency at 114+ EV makes him the safest HR play."
+    },
+    {
+      "rank": 2,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Milwaukee Brewers",
+      "game": "New York Yankees @ Milwaukee Brewers",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "210",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite home run hitter in prime form",
+        "Brewers have vulnerable pitching depth",
+        "Judge consistent 110+ EV producer"
+      ],
+      "reasoning": "Judge's track record and consistent barrel production make him a high-probability HR play. Milwaukee pitching has allowed elevated offensive output this season."
+    },
+    {
+      "rank": 3,
+      "player_name": "Shohei Ohtani",
+      "team": "Atlanta Braves",
+      "opponent": "Los Angeles Dodgers",
+      "game": "Atlanta Braves @ Los Angeles Dodgers",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "245",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite overall hitter with consistent power",
+        "Dodgers home park factor favorable",
+        "Strong recent offensive trends"
+      ],
+      "reasoning": "Ohtani's elite skill set and Dodgers home field advantage provide solid HR upside. His consistent barrel production and track record justify the medium-high odds."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Freddie Freeman",
+      "team": "Atlanta Braves",
+      "opponent": "Los Angeles Dodgers",
+      "game": "Atlanta Braves @ Los Angeles Dodgers",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 85,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Elite career hitter with .310+ BA potential",
+        "Consistent performance in big games",
+        "Strong WOBA and contact rates"
+      ],
+      "reasoning": "Freeman's elite batting average and consistency make Over 0.5 hits a near-lock. His approach and skill-set generate hits at highest rate among active players."
+    },
+    {
+      "rank": 2,
+      "player_name": "Juan Soto",
+      "team": "New York Mets",
+      "opponent": "Arizona Diamondbacks",
+      "game": "New York Mets @ Arizona Diamondbacks",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-275",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 83,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Elite contact rate and plate discipline",
+        "Consistent hits production",
+        "High WOBA and xBA metrics"
+      ],
+      "reasoning": "Soto's exceptional strike zone recognition and contact ability ensure high hit probability. His -275 line reflects deserved heavy favorite status."
+    },
+    {
+      "rank": 3,
+      "player_name": "Bryce Harper",
+      "team": "Colorado Rockies",
+      "opponent": "Philadelphia Phillies",
+      "game": "Colorado Rockies @ Philadelphia Phillies",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-275",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite career hitter with consistent BA",
+        "Strong recent offensive performance",
+        "High contact rate and plate discipline"
+      ],
+      "reasoning": "Harper's proven track record and current form justify the heavy favorite over 0.5 hits. His elite skill-set generates consistent contact."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Elly De La Cruz",
+      "team": "Houston Astros",
+      "opponent": "Cincinnati Reds",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": "120",
+      "czs_odds": "121",
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": "over",
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 116.3 mph exit velo double",
+        "Elite power and speed combination",
+        "Favorable pitcher matchup"
+      ],
+      "reasoning": "De La Cruz's recent 116.3 mph barreled double and elite power metrics suggest easy path to 1.5 total bases. His speed adds additional value on hits."
+    },
+    {
+      "rank": 2,
+      "player_name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opponent": "Cincinnati Reds",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-105",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent HR production at 115+ mph",
+        "Elite power and contact rates",
+        "Consistent 1.5+ TB output"
+      ],
+      "reasoning": "Alvarez's recent home run binge and elite exit velo production make over 1.5 total bases highly probable. His power upside nearly guarantees reaching the line."
+    },
+    {
+      "rank": 3,
+      "player_name": "Shohei Ohtani",
+      "team": "Atlanta Braves",
+      "opponent": "Los Angeles Dodgers",
+      "game": "Atlanta Braves @ Los Angeles Dodgers",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-110",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite overall hitter with power/speed",
+        "Consistent total bases producer",
+        "Favorable Dodgers matchup"
+      ],
+      "reasoning": "Ohtani's elite skill-set and consistent production support easy path to 1.5 total bases. His dual-threat ability (power + speed) provides multiple paths to exceed the line."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Spencer Arrighetti",
+      "pick_type": "pitcher",
+      "team": "Houston Astros",
+      "opponent": "Cincinnati Reds",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": "-120",
+      "mgm_odds": "-120",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "under",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Quality K/9 rate for young pitcher",
+        "Cincinnati has weak strikeout rate",
+        "Favorable pitching matchup"
+      ],
+      "reasoning": "Arrighetti's K/9 rate and Cincinnati's strikeout-prone offense suggest under 5.5 is likely. The Reds rank among league leaders in strikeout rate."
+    },
+    {
+      "rank": 2,
+      "player_name": "Joe Ryan",
+      "pick_type": "pitcher",
+      "team": "Minnesota Twins",
+      "opponent": "Cleveland Guardians",
+      "game": "Minnesota Twins @ Cleveland Guardians",
+      "game_time": "TBD",
+      "best_book": "FD",
+      "fd_odds": "130",
+      "mgm_odds": "-155",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Above-average K/9 rate",
+        "Guardians have moderate strikeout rate",
+        "Quality pitcher vs quality lineup"
+      ],
+      "reasoning": "Ryan's solid strikeout production and Guardians' hittable approach suggest over 5.5 Ks is achievable. His consistency supports the over."
+    },
+    {
+      "rank": 3,
+      "player_name": "Juan Soto",
+      "pick_type": "batter",
+      "team": "New York Mets",
+      "opponent": "Arizona Diamondbacks",
+      "game": "New York Mets @ Arizona Diamondbacks",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-140",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "under",
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite plate discipline and low K%",
+        "Soto has minimal strikeout rate",
+        "Strong contact skills"
+      ],
+      "reasoning": "Soto's elite plate discipline and lowest-in-league strikeout rate make under 0.5 Ks the optimal play. His selective approach limits K exposure."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "ML",
+      "game": "Chicago Cubs @ Texas Rangers",
+      "game_time": "TBD",
+      "pick": "Chicago Cubs",
+      "best_book": "CZS",
+      "fd_odds": "-140",
+      "mgm_odds": "-140",
+      "czs_odds": "-140",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 81,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Cubs superior pitching matchup",
+        "Strong recent offensive trends",
+        "Rangers inconsistent performance"
+      ],
+      "reasoning": "Chicago's pitching advantage and offensive consistency support ML play. Rangers have shown vulnerability vs quality pitching this season."
+    },
+    {
+      "rank": 2,
+      "prop_category": "OU",
+      "game": "Houston Astros @ Cincinnati Reds",
+      "game_time": "TBD",
+      "pick": "Over 8.5",
+      "best_book": "CZS",
+      "fd_odds": "-110",
+      "mgm_odds": "-110",
+      "czs_odds": "-110",
+      "scr_ops": null,
+      "fd_line": null,
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Both offenses have strong run production",
+        "Favorable ballpark factors for scoring",
+        "Recent high-scoring trends"
+      ],
+      "reasoning": "Astros and Reds both possess high-powered offenses capable of producing 9+ combined runs. Cincinnati's home park plays favorable for scoring."
+    },
+    {
+      "rank": 3,
+      "prop_category": "Spread",
+      "game": "New York Yankees @ Milwaukee Brewers",
+      "game_time": "TBD",
+      "pick": "Yankees -1.5",
+      "best_book": "CZS",
+      "fd_odds": "118",
+      "mgm_odds": "120",
+      "czs_odds": "118",
+      "scr_ops": null,
+      "fd_line": null,
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Yankees superior roster depth",
+        "Brewers pitching vulnerabilities",
+        "Yankees recent winning streak"
+      ],
+      "reasoning": "New York's offensive firepower and pitching consistency support beating the Brewers by 2+ runs. Milwaukee has shown inconsistency vs quality competition."
+    },
+    {
+      "rank": 4,
+      "prop_category": "ML",
+      "game": "Seattle Mariners @ Chicago White Sox",
+      "game_time": "TBD",
+      "pick": "Seattle Mariners",
+      "best_book": "CZS",
+      "fd_odds": "-140",
+      "mgm_odds": "-135",
+      "czs_odds": "-140",
+      "scr_ops": null,
+      "fd_line": null,
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Mariners superior pitching staff",
+        "White Sox offensive struggles",
+        "Seattle's strong recent form"
+      ],
+      "reasoning": "Seattle's pitching advantage and consistent offense support road ML play. Chicago has struggled vs quality pitching this season."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Yordan Alvarez Over 0.5 HR @ CZS 245",
+      "Chicago Cubs ML @ CZS -140",
+      "Houston Astros @ Cincinnati Reds Over 8.5 @ CZS -110"
+    ],
+    "reasoning": "High-confidence trio leveraging Alvarez's elite form, Cubs' pitching advantage, and combined offensive firepower. Each leg has 75%+ implied probability.",
+    "estimated_odds": "+265"
+  },
+  "daily_summary": "Today's slate features multiple elite power hitters in prime scoring positions, with Yordan Alvarez standing out as the most dangerous bat. The Cubs-Rangers and Mariners-White Sox games offer strong pitching-focused moneyline opportunities, while the Astros-Reds matchup looks primed for over scoring with both offenses fully healthy.",
+  "best_bet": "Yordan Alvarez Over 0.5 HR @ Caesars 245 \u2014 elite exit velo production and favorable matchup make this the safest power play of the day."
+}

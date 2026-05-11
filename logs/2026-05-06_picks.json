@@ -2,45 +2,45 @@
   "laser_picks": [
     {
       "rank": 1,
-      "player_name": "Yordan Alvarez",
-      "team": "Houston Astros",
-      "opponent": "Los Angeles Dodgers",
-      "game": "LAD @ HOU",
+      "player_name": "Seiya Suzuki",
+      "team": "Chicago Cubs",
+      "opponent": "Cincinnati Reds",
+      "game": "Cincinnati Reds @ Chicago Cubs",
       "game_time": "TBD",
       "confidence_tier": "Elite",
-      "recent_max_ev": "113.4 mph on 5/5",
-      "avg_exit_velo": "112.6 mph",
-      "barrel_rate": "18%",
-      "hard_hit_rate": "56%",
-      "pitcher_hard_hit_allowed": "45%",
-      "park_factor_hr": 1.03,
+      "recent_max_ev": "112.6 mph on 5/4",
+      "avg_exit_velo": "94.8 mph",
+      "barrel_rate": "16%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "44%",
+      "park_factor_hr": 1.12,
       "key_factors": [
-        "Recent 113.4 EV vs Dodgers pitching",
-        "Elite barrel rate and hard hit rate",
-        "Warm weather 84\u00b0F park advantage"
+        "Recent 112.6 mph barrel on 5/4",
+        "Wrigley Field HR-friendly environment",
+        "Strong barrel and hard-hit rates"
       ],
-      "reasoning": "Alvarez has multiple recent 110+ EV events including a 113.4 mph hit on 5/5 this season. His elite barrel rate (18%) and hard hit rate (56%) combined with warm Houston weather (84\u00b0F) create high probability of another 110+ EV event against Dodgers pitching."
+      "reasoning": "Suzuki just recorded a 112.6 mph barrel exit velocity on 5/4 against a soft-tossing pitcher. Playing in Wrigley Field with its elevated park factor and favorable wind conditions, he's primed for another 110+ EV event today against Brady Singer."
     },
     {
       "rank": 2,
       "player_name": "Pete Alonso",
       "team": "Baltimore Orioles",
       "opponent": "Miami Marlins",
-      "game": "BAL @ MIA",
+      "game": "Baltimore Orioles @ Miami Marlins",
       "game_time": "TBD",
       "confidence_tier": "High",
       "recent_max_ev": "114.6 mph on 5/2",
-      "avg_exit_velo": "112.8 mph",
-      "barrel_rate": "16%",
-      "hard_hit_rate": "52%",
-      "pitcher_hard_hit_allowed": "44%",
-      "park_factor_hr": 1.02,
+      "avg_exit_velo": "95.2 mph",
+      "barrel_rate": "18%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "40%",
+      "park_factor_hr": 1.08,
       "key_factors": [
-        "Recent 114.6 EV home run on 5/2",
-        "Consistent barrel rate above 15%",
-        "Warm Miami weather 82\u00b0F"
+        "Recent 114.6 mph HR on 5/2 vs Weathers",
+        "Elite barrel rate of 18%",
+        "Facing mediocre Marlins pitching staff"
       ],
-      "reasoning": "Alonso recorded a 114.6 mph home run just 3 days ago and maintains elite exit velocity metrics. His sustained hard contact (52% hard hit rate) against Miami's pitching staff in warm conditions supports another 110+ EV event likelihood."
+      "reasoning": "Alonso just launched a 114.6 mph HR two days ago, showcasing elite exit velo. With an 18% barrel rate and 56% hard-hit rate, he's among baseball's most dangerous hitters facing a Marlins rotation that designated Chris Paddack for assignment mid-season."
     }
   ],
   "hr_picks": [
@@ -49,208 +49,208 @@
       "player_name": "Shohei Ohtani",
       "team": "Los Angeles Dodgers",
       "opponent": "Houston Astros",
-      "game": "LAD @ HOU",
+      "game": "Los Angeles Dodgers @ Houston Astros",
       "game_time": "TBD",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "255",
+      "czs_odds": "245",
       "scr_odds": null,
-      "fd_line": "0.5",
+      "fd_line": null,
       "confidence_score": 82,
       "confidence_tier": "High",
       "key_factors": [
-        "Best book odds 255 on CZS",
-        "Warm 84\u00b0F park conditions favor HR",
-        "Astros allow solid HR rate"
+        "Elite contact hitter with power upside",
+        "Dave Roberts rest/reset strategy may improve performance",
+        "0-17 slump suggests mean reversion incoming"
       ],
-      "reasoning": "Ohtani offers strong value at 255 on Caesars in warm Houston conditions. Despite recent 0-17 slump mentioned in news, regression to mean and favorable park factor (1.03) create positive EV for this play."
+      "reasoning": "Ohtani is getting a much-needed reset after an 0-17 slump per reported Dave Roberts plan change. His elite plate skills and power profile make him a prime regression candidate with fresh momentum heading into this matchup against Houston."
     },
     {
       "rank": 2,
-      "player_name": "Aaron Judge",
-      "team": "New York Yankees",
-      "opponent": "Texas Rangers",
-      "game": "TEX @ NYY",
+      "player_name": "Kyle Schwarber",
+      "team": "Philadelphia Phillies",
+      "opponent": "Oakland Athletics",
+      "game": "Oakland Athletics @ Philadelphia Phillies",
       "game_time": "TBD",
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
       "czs_odds": "225",
       "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 79,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Best odds 225 on Caesars",
-        "Yankee Stadium park factor 1.04",
-        "Cold weather 69\u00b0F slightly suppresses but elite bat speed compensates"
-      ],
-      "reasoning": "Judge at 225 offers excellent value given his elite HR consistency and strong park factor. Yankee Stadium's pull-favorable dimensions combined with Judge's 55% pull rate create sustainable edge."
-    },
-    {
-      "rank": 3,
-      "player_name": "Yordan Alvarez",
-      "team": "Houston Astros",
-      "opponent": "Los Angeles Dodgers",
-      "game": "LAD @ HOU",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": "265",
-      "czs_odds": "265",
-      "scr_odds": null,
-      "fd_line": "0.5",
+      "fd_line": null,
       "confidence_score": 78,
       "confidence_tier": "High",
       "key_factors": [
-        "Recent 113.4 EV exit",
-        "Warm 84\u00b0F conditions optimal",
-        "Line shop: CZS/MGM both 265"
+        "Power hitter in homer-friendly Citizens Bank Park",
+        "Facing soft Athletics bullpen depth",
+        "Strong 2026 power metrics"
       ],
-      "reasoning": "Alvarez's recent elite exit velocity metrics and warm Houston conditions support HR probability. His 56% hard hit rate and 18% barrel rate create strong foundation for this prop at 265."
+      "reasoning": "Schwarber's combination of power ceiling and Citizens Bank Park's friendly confines creates a strong HR opportunity. The Athletics' depleted pitching staff and focus on selling depth at deadline provides favorable matchup conditions."
+    },
+    {
+      "rank": 3,
+      "player_name": "Aaron Judge",
+      "team": "New York Yankees",
+      "opponent": "Texas Rangers",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "220",
+      "scr_odds": null,
+      "fd_line": null,
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite power hitter with consistent barrel production",
+        "Yankee Stadium park factor 1.12",
+        "Home game advantage"
+      ],
+      "reasoning": "Judge's elite power profile and Yankee Stadium's elevated HR park factor (1.12) create natural advantage. His consistency in producing barrels makes him a reliable daily HR target at premium odds."
     }
   ],
   "hits_picks": [
     {
       "rank": 1,
-      "player_name": "George Springer",
-      "team": "Toronto Blue Jays",
-      "opponent": "Tampa Bay Rays",
-      "game": "TOR @ TB",
+      "player_name": "Sal Frelick",
+      "team": "Milwaukee Brewers",
+      "opponent": "St. Louis Cardinals",
+      "game": "Milwaukee Brewers @ St. Louis Cardinals",
       "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": "115",
-      "mgm_odds": null,
-      "czs_odds": "115",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-275",
+      "czs_odds": null,
       "scr_odds": null,
-      "fd_line": "1.5",
+      "fd_line": "0.5",
       "over_under_pick": "over",
-      "confidence_score": 76,
-      "confidence_tier": "High",
+      "confidence_score": 85,
+      "confidence_tier": "Elite",
       "key_factors": [
-        "Over line 1.5 at favorable -152 on FD",
-        "Elite BA .285 career",
-        "Springer consistent performer"
+        "Heavy favorite odds at -275",
+        "Elite contact rate and plate discipline",
+        "Cardinals pitching staff shows vulnerability"
       ],
-      "reasoning": "Springer's consistent hitting profile and 1.5 total bases line offer strong over opportunity. His career BA and season performance suggest high probability of exceeding 1.5 total bases against Rays pitching."
+      "reasoning": "Frelick's -275 over odds indicate sharp money backing this pick. His elite plate approach and consistency against St. Louis's exposed pitching rotation make this a high-conviction play for base hits."
     },
     {
       "rank": 2,
-      "player_name": "Trea Turner",
-      "team": "Philadelphia Phillies",
-      "opponent": "Oakland Athletics",
-      "game": "OAK @ PHI",
+      "player_name": "Juan Soto",
+      "team": "New York Mets",
+      "opponent": "Colorado Rockies",
+      "game": "New York Mets @ Colorado Rockies",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "160",
+      "czs_odds": null,
+      "scr_ops": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite contact hitter and on-base machine",
+        "Coors Field elevation favors hitter performance",
+        "Rockies pitching vulnerabilities"
+      ],
+      "reasoning": "Soto's elite wOBA and plate discipline make him a prime candidate for 2+ hits in high-altitude Coors Field. The +160 over at 1.5 hits offers solid value against Colorado's mediocre rotation."
+    },
+    {
+      "rank": 3,
+      "player_name": "Freddy Fermin",
+      "team": "San Francisco Giants",
+      "opponent": "San Diego Padres",
+      "game": "San Diego Padres @ San Francisco Giants",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-190",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Heavy favorite suggests strong matchup edge",
+        "San Francisco catching production is up",
+        "Padres bullpen depth weakness"
+      ],
+      "reasoning": "Fermin's -190 over odds reflect a favorable hitting environment. The Giants' offensive surge this season and San Diego's vulnerable pitching create a plus matchup for base hits."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "Houston Astros",
+      "opponent": "Los Angeles Dodgers",
+      "game": "Los Angeles Dodgers @ Houston Astros",
       "game_time": "TBD",
       "best_book": "CZS",
       "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "103",
+      "mgm_odds": "115",
+      "czs_odds": "109",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 83,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Recent 113.4 mph EV on 5/5 demonstrates power",
+        "Home field advantage at Minute Maid Park",
+        "Facing Glasnow who allows HRs"
+      ],
+      "reasoning": "Alvarez just recorded a 113.4 mph exit velo on 5/5 against tough Dodgers pitching. At home against Glasnow, his combo of hits and power makes over 1.5 TB highly probable, with CZS offering best +109 value."
+    },
+    {
+      "rank": 2,
+      "player_name": "Matt Chapman",
+      "team": "San Diego Padres",
+      "opponent": "San Francisco Giants",
+      "game": "San Diego Padres @ San Francisco Giants",
+      "game_time": "TBD",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": "138",
+      "czs_odds": "149",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Power-contact balance creates TB consistency",
+        "Oracle Park favorable for offensive production",
+        "Adrian Houser has elevated HR/9 rates"
+      ],
+      "reasoning": "Chapman's dual-threat profile (hits and power) makes him reliable for 1.5+ TB. At Oracle Park against Houser's elevated exit velo allowance, CZS +149 offers premium value over MGM +138."
+    },
+    {
+      "rank": 3,
+      "player_name": "Corey Seager",
+      "team": "Texas Rangers",
+      "opponent": "New York Yankees",
+      "game": "Texas Rangers @ New York Yankees",
+      "game_time": "TBD",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "130",
+      "czs_odds": "120",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
       "confidence_score": 74,
       "confidence_tier": "High",
       "key_factors": [
-        "Favorable -137 under (103 over)",
-        "Turner elite speed creates hits",
-        "Athletics weak pitching staff"
+        "Elite contact hitter with home-run power",
+        "Yankee Stadium park elevation boosts fly balls",
+        "Nathan Eovaldi pitches to contact"
       ],
-      "reasoning": "Turner's elite speed and contact profile combined with weak Athletics pitching creates edge for over 1.5 total bases. His 75%+ contact rate and 55% pull air rate favor hit production."
-    },
-    {
-      "rank": 3,
-      "player_name": "Kyle Schwarber",
-      "team": "Philadelphia Phillies",
-      "opponent": "Oakland Athletics",
-      "game": "OAK @ PHI",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": "107",
-      "mgm_odds": null,
-      "czs_odds": "107",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 71,
-      "confidence_tier": "Medium",
-      "key_factors": [
-        "Over 1.5 total bases -143 on FD",
-        "Schwarber power hitter vs weak staff",
-        "Left-handed vs potential RHP"
-      ],
-      "reasoning": "Schwarber's power profile and weak Athletics pitching support over 1.5 total bases. His 50%+ hard hit rate creates high probability of exceeding this modest line."
-    }
-  ],
-  "total_bases_picks": [
-    {
-      "rank": 1,
-      "player_name": "Manny Machado",
-      "team": "San Diego Padres",
-      "opponent": "San Francisco Giants",
-      "game": "SD @ SF",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "131",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 76,
-      "confidence_tier": "High",
-      "key_factors": [
-        "CZS 131 over is excellent value",
-        "Machado elite contact hitter",
-        "Giants weak pitching staff"
-      ],
-      "reasoning": "Machado's elite contact skills (88+ wOBA) and consistent production create strong over 1.5 total bases case. The 131 odds on Caesars provide value against a struggling Giants pitching rotation."
-    },
-    {
-      "rank": 2,
-      "player_name": "Gleyber Torres",
-      "team": "Boston Red Sox",
-      "opponent": "Detroit Tigers",
-      "game": "BOS @ DET",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "149",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 73,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Rare positive -200 under line indicates sharp action",
-        "Torres power bat in neutral park",
-        "Line shopping opportunity"
-      ],
-      "reasoning": "Torres' strong 149 over odds combined with his power metrics create value. His 45%+ hard hit rate against Tigers pitching supports total bases production exceeding 1.5."
-    },
-    {
-      "rank": 3,
-      "player_name": "Kyle Tucker",
-      "team": "Houston Astros",
-      "opponent": "Los Angeles Dodgers",
-      "game": "LAD @ HOU",
-      "game_time": "TBD",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "127",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 70,
-      "confidence_tier": "Medium",
-      "key_factors": [
-        "Warm 84\u00b0F Houston conditions",
-        "Tucker 475 HR odds suggest confidence",
-        "CZS 127 over value"
-      ],
-      "reasoning": "Tucker's elite power profile and warm Houston park conditions support over 1.5 total bases. His 52% hard hit rate and favorable Dodgers matchup create positive expected value."
+      "reasoning": "Seager's consistent power production and Yankee Stadium's favorable park conditions make over 1.5 TB probable. MGM's +130 offers slightly better value than CZS's +120 on this plus-equity play."
     }
   ],
   "strikeout_picks": [
@@ -260,23 +260,23 @@
       "pick_type": "pitcher",
       "team": "Los Angeles Dodgers",
       "opponent": "Houston Astros",
-      "game": "LAD @ HOU",
+      "game": "Los Angeles Dodgers @ Houston Astros",
       "game_time": "TBD",
-      "best_book": "FD",
-      "fd_odds": "114",
-      "mgm_odds": null,
+      "best_book": "MGM",
+      "fd_odds": "-114",
+      "mgm_odds": "-120",
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "7.5",
-      "over_under_pick": "over",
-      "confidence_score": 72,
+      "over_under_pick": "under",
+      "confidence_score": 79,
       "confidence_tier": "High",
       "key_factors": [
-        "Elite K/9 rate well above 7.5",
-        "Dodgers ace status",
-        "Astros team K% above league average"
+        "Glasnow historically struggles with durability",
+        "High exit velo environment in Houston",
+        "Astros lineup contacts quality pitching"
       ],
-      "reasoning": "Glasnow's elite strikeout profile (7.5+ K/9 track record) and FanDuel 114 over odds create value. The Astros' above-average strikeout rate supports his K output exceeding this line."
+      "reasoning": "The under on Glasnow's 7.5 K line at -120 reflects concerns about his stuff-to-contact ratio against Houston's disciplined approach. His playoff injury history suggests cautious innings management may limit strikeout volume."
     },
     {
       "rank": 2,
@@ -284,47 +284,47 @@
       "pick_type": "pitcher",
       "team": "Houston Astros",
       "opponent": "Los Angeles Dodgers",
-      "game": "LAD @ HOU",
+      "game": "Los Angeles Dodgers @ Houston Astros",
       "game_time": "TBD",
-      "best_book": "FD",
-      "fd_odds": "-172",
-      "mgm_odds": null,
+      "best_book": "MGM",
+      "fd_odds": "100",
+      "mgm_odds": "100",
       "czs_odds": null,
       "scr_odds": null,
-      "fd_line": "4.5",
-      "over_under_pick": "under",
-      "confidence_score": 68,
-      "confidence_tier": "Medium",
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
       "key_factors": [
-        "Strong -172 under odds indicate sharp consensus",
-        "McCullers solid but not elite K pitcher",
-        "Dodgers contact-oriented lineup"
+        "McCullers' slider generates high K rates",
+        "Dodgers have elevated strikeout vulnerability",
+        "Competitive matchup suggests full inning load"
       ],
-      "reasoning": "The -172 under odds suggest McCullers' 4.5 K line is inflated. His modest K/9 and Dodgers' contact-heavy approach support under 4.5 strikeouts as value pick."
+      "reasoning": "McCullers' elite slider and Dodgers' strikeout-prone lineup create over 5.5 value. At +100 on both FD and MGM, the odds represent fair compensation for a pitcher capable of 6+ strikeouts in this matchup."
     },
     {
       "rank": 3,
-      "player_name": "Cole Ragans",
-      "pick_type": "pitcher",
-      "team": "Kansas City Royals",
-      "opponent": "Cleveland Guardians",
-      "game": "CLE @ KC",
+      "player_name": "Andy Pages",
+      "pick_type": "batter",
+      "team": "Los Angeles Dodgers",
+      "opponent": "Houston Astros",
+      "game": "Los Angeles Dodgers @ Houston Astros",
       "game_time": "TBD",
-      "best_book": "FD",
-      "fd_odds": "114",
-      "mgm_odds": null,
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-235",
       "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "6.5",
+      "scr_ops": null,
+      "fd_line": "0.5",
       "over_under_pick": "over",
-      "confidence_score": 65,
-      "confidence_tier": "Medium",
+      "confidence_score": 71,
+      "confidence_tier": "High",
       "key_factors": [
-        "FD 114 over provides value",
-        "Ragans solid K pitcher",
-        "Guardians moderate strikeout rate"
+        "Pages shows elevated strikeout profile",
+        "McCullers' slider matches Pages' weak zone",
+        "Tight odds signal confidence"
       ],
-      "reasoning": "Ragans' 6+ K/9 profile and 114 over odds create modest value for over 6.5. The Guardians' lineup K propensity supports this strikeout total edge."
+      "reasoning": "Pages' aggressive approach creates strikeout vulnerability against McCullers' elite slider. MGM's -235 over reflects sharp consensus that this young hitter will likely strike out today."
     }
   ],
   "game_picks": [
@@ -334,98 +334,94 @@
       "game": "Los Angeles Dodgers @ Houston Astros",
       "game_time": "TBD",
       "pick": "Houston Astros",
-      "best_book": "CZS",
-      "fd_odds": "-205",
-      "mgm_odds": "-210",
+      "best_book": "MGM",
+      "fd_odds": "-220",
+      "mgm_odds": "-220",
       "czs_odds": "-220",
       "scr_odds": null,
       "fd_line": null,
-      "confidence_score": 75,
-      "confidence_tier": "High",
+      "confidence_score": 81,
+      "confidence_tier": "Elite",
       "key_factors": [
-        "Astros -220 at home on CZS",
-        "Dodgers 0-17 slump creates momentum edge",
-        "Warm 84\u00b0F park advantage Astros",
-        "Superior Astros pitching matchup"
+        "Strong home field advantage",
+        "Dodgers in offensive slump (Ohtani 0-17)",
+        "Houston's rotation advantage with McCullers"
       ],
-      "reasoning": "Houston at home with superior pitching (McCullers vs burned-out Dodgers) creates strong ML case. Dodgers' 0-17 slump and Astros' warm park advantage support home team value at -220."
+      "reasoning": "The Dodgers' offensive struggles and Ohtani's recent slump create vulnerability at Minute Maid Park. Houston's balanced roster and McCullers' elite stuff provide sustainable advantage at -220 across all books."
     },
     {
       "rank": 2,
       "prop_category": "OU",
-      "game": "Minnesota Twins @ Washington Nationals",
+      "game": "New York Mets @ Colorado Rockies",
       "game_time": "TBD",
       "pick": "Over",
-      "best_book": "CZS",
-      "fd_odds": "-105",
+      "best_book": "MGM",
+      "fd_odds": "-114",
       "mgm_odds": "100",
-      "czs_odds": "-105",
-      "scr_odds": null,
+      "czs_odds": "-110",
+      "scr_ops": null,
       "fd_line": "9.5",
-      "confidence_score": 71,
+      "confidence_score": 78,
       "confidence_tier": "High",
       "key_factors": [
-        "High total 9.5 suggests offensive inflection",
-        "Both teams above-average scoring",
-        "Warm 77\u00b0F conditions aid hitting",
-        "Weak pitching matchup indicators"
+        "Coors Field elevation inflates run totals",
+        "Mets offensive firepower with Soto, Vientos",
+        "Rockies pitching vulnerabilities"
       ],
-      "reasoning": "9.5 total in favorable warm conditions (77\u00b0F) with two average-to-above offenses creates over edge. The Twins' strong offense vs Nationals' below-average pitching supports run production above 9.5."
+      "reasoning": "The 9.5 total in Denver's high-altitude environment favors run scoring. Mets' offensive depth against weak Rockies rotation suggests over 9.5 hits high probability, with MGM's +100 best value."
     },
     {
       "rank": 3,
       "prop_category": "Spread",
-      "game": "New York Mets @ Colorado Rockies",
+      "game": "Minnesota Twins @ Washington Nationals",
       "game_time": "TBD",
-      "pick": "New York Mets -1.5",
-      "best_book": "CZS",
-      "fd_odds": "-110",
-      "mgm_odds": "-110",
-      "czs_odds": "-105",
-      "scr_odds": null,
+      "pick": "Minnesota Twins -1.5",
+      "best_book": "MGM",
+      "fd_odds": "125",
+      "mgm_odds": "125",
+      "czs_odds": "118",
+      "scr_ops": null,
       "fd_line": "-1.5",
-      "confidence_score": 68,
-      "confidence_tier": "Medium",
+      "confidence_score": 75,
+      "confidence_tier": "High",
       "key_factors": [
-        "Mets -165 ML favorite on CZS",
-        "Runline -105 offers better value than ML",
-        "Coors Field elevated total 9.5 suggests scoring",
-        "Mets superior pitching (Soroka advantage)"
+        "Twins' strong pitching with Ober",
+        "Nationals' injury concerns with Acu\u00f1a absent",
+        "Spread value at +125 across books"
       ],
-      "reasoning": "Mets -1.5 at -105 provides value vs -165 ML. Coors' high run environment with Mets' pitching advantage creates runway for cover despite altitude advantage."
+      "reasoning": "Minnesota's rotation depth and Washington's depleted roster create +125 spread value. The Twins' recent form and offensive consistency suggest ability to win by multiple runs on the road."
     },
     {
       "rank": 4,
-      "prop_category": "ML",
-      "game": "Pittsburgh Pirates @ Arizona Diamondbacks",
+      "prop_category": "OU",
+      "game": "Milwaukee Brewers @ St. Louis Cardinals",
       "game_time": "TBD",
-      "pick": "Pittsburgh Pirates",
-      "best_book": "CZS",
-      "fd_odds": "-158",
-      "mgm_odds": "-150",
-      "czs_odds": "-145",
-      "scr_odds": null,
-      "fd_line": null,
-      "confidence_score": 65,
-      "confidence_tier": "Medium",
+      "pick": "Under",
+      "best_book": "FD",
+      "fd_odds": "-120",
+      "mgm_odds": "-102",
+      "czs_odds": "-115",
+      "scr_ops": null,
+      "fd_line": "8.0",
+      "confidence_score": 72,
+      "confidence_tier": "High",
       "key_factors": [
-        "Pirates -145 to -158 strong odds across books",
-        "Skenes elite pitcher for Pittsburgh",
-        "Arizona pitching weak vs Pirates offense",
-        "Neutral 73\u00b0F conditions"
+        "Pallante's elevated control metrics",
+        "Brewers' contact-oriented approach",
+        "Low run environment suggests pitcher advantage"
       ],
-      "reasoning": "Pirates road ML at -145 on Caesars offers value with Skenes on mound. Arizona's below-average pitching creates edge for Pittsburgh's offense despite travel disadvantage."
+      "reasoning": "The 8.0 total at FD's -120 offers sharp value. Pallante's strong WHIP and Brewers' inability to generate explosive scoring suggests total stays under, with FD offering best odds."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Houston Astros ML -220 (LAD @ HOU)",
-      "Yordan Alvarez Over 0.5 HR +265 (LAD @ HOU)",
-      "Over 7.5 TOR @ TB"
+      "Houston Astros ML vs Dodgers (-220)",
+      "Sal Frelick Over 0.5 Hits vs Cardinals (-275)",
+      "Yordan Alvarez Over 1.5 TB vs Dodgers (+109)"
     ],
-    "reasoning": "Astros home plate advantage, Alvarez elite power metrics in warm conditions, and elevated total create correlated parlay. All three legs benefit from Houston's warm weather and Astros' pitching superiority.",
-    "estimated_odds": "+420"
+    "reasoning": "This parlay combines Houston's home advantage and pitching edge with two high-confidence hitter props. Frelick's elite -275 odds and Alvarez's recent 113+ EV showcase create synergistic probability overlap, maximizing parlay efficiency.",
+    "estimated_odds": "-145 to -130"
   },
-  "daily_summary": "Today's slate features strong value in the Dodgers-Astros matchup with Houston favored at home against a slumping LA offense. Warm weather parks (Houston 84\u00b0F, Miami 82\u00b0F) support elevated run totals and HR production, while elite strikeout pitchers like Glasnow and Ragans provide K props edge.",
-  "best_bet": "Houston Astros ML -220 vs Los Angeles Dodgers - superior pitching, home field, and weather advantage with Dodgers' 0-17 slump creating sharp value."
+  "daily_summary": "Today's slate features strong pitching advantages in key matchups, particularly Houston at home vs Los Angeles and Minnesota's depth against Washington. High-altitude scoring potential at Colorado mixed with elite individual performances from recent hot hitters like Seiya Suzuki creates diverse edge opportunities across game and prop markets.",
+  "best_bet": "Houston Astros ML vs Los Angeles Dodgers at -220 \u2014 strong home field advantage combined with Dodgers' offensive slump and Ohtani's recent struggles create sustainable edge in a marquee pitching matchup."
 }

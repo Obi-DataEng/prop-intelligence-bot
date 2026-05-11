@@ -1,6 +1,6 @@
 {
-  "slate_summary": "Playoff action features the Knicks hosting the 76ers in an Eastern Conference matchup where New York's recent dominance poses problems for Philadelphia's depth. The Timberwolves visit the Spurs in a Game 2 scenario after Minnesota's Game 1 victory, while the Lakers face the Thunder in a Western Conference battle featuring LeBron James against OKC's elite defense.",
-  "best_bet": "Tyrese Maxey OVER 30.5 Points+Assists (76ers @ Knicks) at -110 on FD \u2014 Maxey is averaging 28.3 PPG with 6.6 APG in the regular season and has a 62% hit rate on this exact line. The Knicks' defense ranks #28 vs PG (allowing 23.3 pts), creating a favorable matchup. In playoff intensity, volume scorers like Maxey typically see increased usage, and his recent L5 average of 29.0 P+A combined with the elite offensive setup makes this a strong play.",
+  "slate_summary": "Four-game playoff slate featuring competitive matchups with injury concerns impacting scoring potential. 76ers-Knicks showcases elite offensive weapons, while Thunder-Lakers and Timberwolves-Spurs present value opportunities in secondary scoring. Edwards' knee injury for Minnesota creates uncertainty in the Western Conference series.",
+  "best_bet": "Tyrese Maxey Over 24.5 Points vs NYK (FD -115) \u2014 Maxey averages 28.3 PPG on high volume (38.1 MIN/G) and hits this line at 65% rate. NYK ranks #29 defending PGs allowing 23.3 PPG, and Maxey's 25.3 L10 and 24.0 L5 averages show consistency even in tighter matches. Elite volume and worst-case defense make this a core play.",
   "points_picks": [
     {
       "player_name": "Tyrese Maxey",
@@ -9,38 +9,19 @@
       "prop_line": 24.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -113,
-      "confidence": "High",
+      "best_odds": -115,
+      "confidence": "Elite",
       "season_avg": 28.3,
       "l5_avg": 24.0,
-      "def_rank_vs_pos": "#28 (Bad)",
+      "def_rank_vs_pos": "#29 (Worst)",
       "hit_rate_season": "65%",
       "key_factors": [
-        "Season avg 3.8 pts above line",
-        "Knicks rank 28th vs PG scoring",
-        "65% historical hit rate on points props"
+        "38.1 MIN/G and 28.3% USG",
+        "NYK defense ranks #29 vs PG (23.3 PPG allowed)",
+        "65% hit rate on line this season",
+        "Playoff intensity with Game 1 preparation"
       ],
-      "reasoning": "Maxey has exceeded 24.5 in 65% of games this season with a 28.3 PPG average. The Knicks allow 23.3 PPG to opposing point guards (ranked 28th), making this a favorable defensive matchup. Playoff games typically feature increased usage for primary ball handlers."
-    },
-    {
-      "player_name": "Anthony Edwards",
-      "team": "MIN",
-      "opponent": "SA",
-      "prop_line": 20.5,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -122,
-      "confidence": "High",
-      "season_avg": 28.8,
-      "l5_avg": 18.8,
-      "def_rank_vs_pos": "#24 (Bad)",
-      "hit_rate_season": "60%",
-      "key_factors": [
-        "Season avg 8.3 pts above line",
-        "Spurs rank 24th vs SG scoring allowed",
-        "Questionable status adds some injury uncertainty"
-      ],
-      "reasoning": "Edwards averages 28.8 PPG this season, well above the 20.5 line. The Spurs' defense ranks 24th in points allowed to shooting guards (26.3 PPG). Despite the questionable tag, if Edwards plays, his aggressive scoring nature in playoffs should push him over this number."
+      "reasoning": "Maxey is the volume engine for Philadelphia with nearly 38 minutes per game and elite usage. The Knicks' perimeter defense ranks dead last in the league against point guards. Maxey's 65% hit rate on this exact line combined with his 25.3 L10 average makes this a high-conviction play despite the modest line."
     },
     {
       "player_name": "Karl-Anthony Towns",
@@ -53,14 +34,36 @@
       "confidence": "High",
       "season_avg": 20.0,
       "l5_avg": 17.2,
-      "def_rank_vs_pos": "#19 (Avg)",
+      "def_rank_vs_pos": "#19 (Average)",
       "hit_rate_season": "77%",
       "key_factors": [
-        "77% hit rate on points props",
-        "20.0 season PPG vs 18.5 line",
-        "77ers allow 26.8 PPG to centers"
+        "20.0 PPG season average with 30.9 MIN/G",
+        "77% hit rate on 18.5+ line this season",
+        "Embiid ankle probable status may reduce defensive pressure",
+        "NYK relies on KAT as secondary scoring option"
       ],
-      "reasoning": "KAT hits 77% of his points overs despite a neutral defensive matchup, and his 20.0 PPG average gives him a 1.5-point cushion. The 76ers allow 26.8 PPG to centers, though Embiid's presence adds complexity. KAT's consistency and playoff experience make this a reliable over."
+      "reasoning": "Towns averages 20.0 PPG and has hit this line 77% of the time this season. Even with his L5 average slightly below the line at 17.2, the season sample is strong and the Knicks' offensive system generates consistent opportunities for him. Embiid's ankle injury could actually benefit Towns' scoring opportunities."
+    },
+    {
+      "player_name": "Anthony Edwards",
+      "team": "MIN",
+      "opponent": "SAS",
+      "prop_line": 20.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": -128,
+      "confidence": "Medium",
+      "season_avg": 28.8,
+      "l5_avg": 20.0,
+      "def_rank_vs_pos": "#24 (Bad)",
+      "hit_rate_season": "Unable to determine",
+      "key_factors": [
+        "28.8 PPG season average but knee questionable status",
+        "L5 average of 20.0 matches line exactly",
+        "Spurs allow 26.3 PPG to SGs (#24 defense)",
+        "Playoff adrenaline may help overcome injury concerns"
+      ],
+      "reasoning": "Edwards' knee injury is a significant question mark, but if he plays, the line is reasonable given his L5 average and the Spurs' mediocre perimeter defense. His season 28.8 PPG is well above the line, suggesting upside if healthy. Monitor Edwards' pregame status carefully before locking this in."
     }
   ],
   "rebounds_picks": [
@@ -74,15 +77,16 @@
       "best_odds": -136,
       "confidence": "High",
       "season_avg": 11.8,
-      "l5_avg": 11.0,
-      "def_rank_vs_pos": "#13 (Avg)",
+      "l5_avg": 11.6,
+      "def_rank_vs_pos": "#13 (Average)",
       "hit_rate_season": "66%",
       "key_factors": [
-        "11.8 season REB avg vs 10.5 line",
-        "66% hit rate this season",
-        "76ers rank 13th in REB allowed to centers"
+        "11.8 REB/G season average",
+        "66% hit rate on 10.5+ this season",
+        "18.5 REB CHANCES/G shows consistent opportunity",
+        "Centers often see elevated boards in playoff intensity"
       ],
-      "reasoning": "KAT's 11.8 RPG average provides a 1.3-rebound cushion above the line. He hits this over in 66% of games this season. The 76ers allow 8.2 rebounds per game to centers (ranked 13th), creating rebounding opportunities in a playoff series where KAT typically dominating the glass."
+      "reasoning": "Towns is a unicorn big man pulling 11.8 rebounds per game with 18.5 rebound chances available. His 66% hit rate on this line and consistent L5 average of 11.6 makes this a straightforward play. Playoff basketball typically increases board activity and hustle rebounds."
     },
     {
       "player_name": "Joel Embiid",
@@ -92,37 +96,39 @@
       "over_under": "OVER",
       "best_book": "FD",
       "best_odds": 108,
-      "confidence": "Medium",
+      "confidence": "High",
       "season_avg": 7.7,
       "l5_avg": 8.0,
-      "def_rank_vs_pos": "#29 (Bad)",
+      "def_rank_vs_pos": "#29 (Worst)",
       "hit_rate_season": "47%",
       "key_factors": [
-        "Knicks rank 29th in REB allowed to centers",
-        "Probable status with ankle injury noted",
-        "7.7 season average slightly below line"
+        "7.7 REB/G with 13.8 REB CHANCES/G (most in league)",
+        "NYK allows #29 worst rebounding defense to centers",
+        "Ankle probable status manageable for rebounding workload",
+        "Positive odds provide value despite lower hit rate"
       ],
-      "reasoning": "Embiid's 7.7 RPG is just below the 8.5 line, and his 47% hit rate is concerning. However, the Knicks' defense ranks 29th in rebounds allowed to centers (7.6 per game), suggesting opportunity. His ankle injury status (Probable) adds uncertainty but if he plays, interior rebounding should be viable."
+      "reasoning": "Embiid leads the league in rebound chances at 13.8 per game and the Knicks' defense ranks last against centers for rebounding. The positive odds (+108) offer value despite a 47% hit rate, suggesting mispricing. Even with ankle concerns, rebounding doesn't require explosive movement like scoring does."
     },
     {
-      "player_name": "Josh Hart",
-      "team": "NYK",
-      "opponent": "PHI",
-      "prop_line": 9.5,
-      "over_under": "OVER",
+      "player_name": "Victor Wembanyama",
+      "team": "SAS",
+      "opponent": "MIN",
+      "prop_line": 11.5,
+      "over_under": "UNDER",
       "best_book": "FD",
-      "best_odds": -112,
-      "confidence": "High",
-      "season_avg": 7.4,
-      "l5_avg": 7.2,
-      "def_rank_vs_pos": "#13 (Avg)",
-      "hit_rate_season": "51%",
+      "best_odds": -136,
+      "confidence": "Medium",
+      "season_avg": 11.4,
+      "l5_avg": 11.4,
+      "def_rank_vs_pos": "#2 (Elite)",
+      "hit_rate_season": "Unable to determine",
       "key_factors": [
-        "Playoff rebounding typically increases",
-        "76ers rank 13th in REB allowed to PF",
-        "Hart's tenacious rebounding style"
+        "11.4 REB/G exactly matches line",
+        "Timberwolves defense ranks #2 best vs C rebounding (#2 allows only 7.2 REB/G to centers)",
+        "Season average perfectly matches prop line",
+        "Interior defense strength limits rebound opportunity"
       ],
-      "reasoning": "Hart's 7.4 season RPG is below the 9.5 line, but his 51% hit rate and playoff intensity suggest increased rebounding activity. Hart's aggressive rebounding mentality and the 76ers allowing 8.2 rebounds to forwards create an over opportunity in a tight series."
+      "reasoning": "Wembanyama's 11.4 average matches the 11.5 line perfectly, but the Timberwolves' elite rebounding defense (#2 ranked) creates headwinds. Minnesota's strong interior defense should limit his rebound chances, making the under a contrarian play with favorable defense matchup."
     }
   ],
   "assists_picks": [
@@ -132,59 +138,62 @@
       "opponent": "PHI",
       "prop_line": 6.5,
       "over_under": "OVER",
-      "best_book": "MGM",
-      "best_odds": 105,
+      "best_book": "FD",
+      "best_odds": 116,
       "confidence": "High",
       "season_avg": 6.8,
       "l5_avg": 5.2,
       "def_rank_vs_pos": "#7 (Good)",
       "hit_rate_season": "58%",
       "key_factors": [
-        "6.8 season APG vs 6.5 line",
-        "58% hit rate this season",
-        "72% hit rate on Q1 assists shows early game distribution"
+        "6.8 AST/G season average above line",
+        "58% hit rate on 6.5+ threshold",
+        "Positive odds (+116) provide value",
+        "Playoff games typically feature higher assist rates with pace control"
       ],
-      "reasoning": "Brunson averages 6.8 APG, directly above the 6.5 line, and hits this over in 58% of games. Despite the 76ers defending PG assists well (ranked 7th), Brunson's role as primary initiator in the Knicks' offense gives him consistent playmaking opportunities. His recent 72% Q1 assist hit rate shows early-game distribution."
+      "reasoning": "Brunson's 6.8 assist average is above the 6.5 line and he hits it at a 58% clip. The positive odds provide excellent value for a high-volume primary ballhandler in a playoff game. The Knicks' system emphasizes ball movement, creating consistent assist opportunities."
     },
     {
-      "player_name": "Tyrese Maxey",
-      "team": "PHI",
-      "opponent": "NYK",
+      "player_name": "De'Aaron Fox",
+      "team": "MIN",
+      "opponent": "SAS",
       "prop_line": 5.5,
-      "over_under": "OVER",
+      "over_under": "UNDER",
       "best_book": "FD",
-      "best_odds": -148,
-      "confidence": "Medium",
-      "season_avg": 6.6,
-      "l5_avg": 5.0,
-      "def_rank_vs_pos": "#30 (Bad)",
-      "hit_rate_season": "58%",
+      "best_odds": -138,
+      "confidence": "High",
+      "season_avg": 6.2,
+      "l5_avg": 18.8,
+      "def_rank_vs_pos": "#3 (Elite)",
+      "hit_rate_season": "Unable to determine",
       "key_factors": [
-        "6.6 season APG vs 5.5 line",
-        "Knicks rank 30th vs PG assists (7.3 allowed)",
-        "58% seasonal hit rate"
+        "Timberwolves rank #3 defense allowing only 8.7 assists to PGs (best in league)",
+        "Fox's 6.2 season average only modestly above line",
+        "Defensive matchup creates significant headwinds",
+        "Minnesota's elite playmaking defense limits distribution"
       ],
-      "reasoning": "Maxey's 6.6 APG average comfortably exceeds the 5.5 line with a 1.1-assist cushion. The Knicks rank 30th in defending assists to point guards, allowing 7.3 per game. His 58% hit rate and offensive initiator role in the 76ers' system support an over play despite the -148 odds."
+      "reasoning": "The Timberwolves' elite assist defense (#3 ranked, only 8.7 AST allowed to PGs) creates a tough environment for Fox's distribution. Despite his 6.2 assist average, Minnesota's system should suppress his assist opportunities in this matchup. The under at -138 targets a strong defensive principle."
     },
     {
-      "player_name": "Victor Wembanyama",
-      "team": "SA",
+      "player_name": "Stephon Castle",
+      "team": "SAS",
       "opponent": "MIN",
-      "prop_line": 3.5,
-      "over_under": "OVER",
-      "best_book": "MGM",
-      "best_odds": 110,
+      "prop_line": 6.5,
+      "over_under": "UNDER",
+      "best_book": "FD",
+      "best_odds": -136,
       "confidence": "Medium",
-      "season_avg": 3.1,
-      "l5_avg": 3.0,
-      "def_rank_vs_pos": "N/A",
-      "hit_rate_season": "40%",
+      "season_avg": 7.4,
+      "l5_avg": "N/A",
+      "def_rank_vs_pos": "#15 (Average)",
+      "hit_rate_season": "Unable to determine",
       "key_factors": [
-        "Recent playoff game showed low assist output",
-        "Defensive focus may limit passing",
-        "Set piece passer in Spurs system"
+        "7.4 AST/G season average modestly above line",
+        "Timberwolves assist defense ranks #15 (middle of pack)",
+        "Castle is secondary PG in Spurs system",
+        "Playoff intensity favors primary ball handlers"
       ],
-      "reasoning": "Wembanyama's 3.1 season APG is slightly below the 3.5 line, and his 40% hit rate is mediocre. However, the Spurs' high-low passing system and recent Game 1 against the Timberwolves may see him increase playmaking in response. The +110 odds provide value if he can average slightly above season norm."
+      "reasoning": "While Castle averages 7.4 assists, he's not the primary ballhandler in San Antonio's offense. The Timberwolves' middling assist defense doesn't create significant opportunity, and playoff basketball often reduces peripheral playmaker involvement as dominant wings take more offensive load."
     }
   ],
   "threes_picks": [
@@ -195,58 +204,61 @@
       "prop_line": 2.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": 106,
+      "best_odds": 100,
       "confidence": "High",
       "season_avg": 2.7,
       "l5_avg": 3.8,
-      "def_rank_vs_pos": "#12 (Avg)",
-      "hit_rate_season": "59%",
+      "def_rank_vs_pos": "#6 (Good)",
+      "hit_rate_season": "39%",
       "key_factors": [
-        "2.7 season 3PM vs 2.5 line",
-        "59% hit rate on three-pointers",
-        "Recent L5 avg of 3.8 shows uptick"
+        "2.7 3PM/G season average above line",
+        "3.8 3PM/G in last 5 games shows uptick",
+        "Positive odds (+100) at 50/50 payout",
+        "NYK perimeter defense not elite vs wings"
       ],
-      "reasoning": "George averages 2.7 threes per game this season with a 59% hit rate on this exact line. His recent L5 average of 3.8 triples indicates an offensive hot streak entering the playoffs. The Knicks' defense ranks 12th vs forward three-pointers, giving George opportunities to space the floor."
+      "reasoning": "George's recent form shows 3.8 three-pointers in his last 5 games, well above his 2.7 season average. The positive odds at +100 provide even money, and the Knicks' perimeter defense isn't elite. George's elevated three-point attempts in recent games suggest a higher volume trend entering the playoffs."
     },
     {
-      "player_name": "Kelly Oubre Jr.",
-      "team": "PHI",
-      "opponent": "NYK",
-      "prop_line": 1.5,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": 124,
-      "confidence": "Medium",
-      "season_avg": 1.8,
-      "l5_avg": 0.4,
-      "def_rank_vs_pos": "#14 (Avg)",
-      "hit_rate_season": "32%",
-      "key_factors": [
-        "Only 32% hit rate on threes",
-        "Recent L5 avg of 0.4 suggests cold streak",
-        "Career three-point shooter variability"
-      ],
-      "reasoning": "Oubre's 1.8 season 3PM average is above the 1.5 line, but his 32% hit rate and recent L5 average of just 0.4 triples indicate a cold streak. The +124 odds provide good value if he can return to form, but this is a lower-confidence play based on recent performance."
-    },
-    {
-      "player_name": "OG Anunoby",
+      "player_name": "Jalen Brunson",
       "team": "NYK",
       "opponent": "PHI",
       "prop_line": 2.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": 100,
-      "confidence": "High",
-      "season_avg": 2.4,
-      "l5_avg": 3.0,
-      "def_rank_vs_pos": "#22 (Avg)",
-      "hit_rate_season": "43%",
+      "best_odds": -104,
+      "confidence": "Medium",
+      "season_avg": 2.6,
+      "l5_avg": 2.0,
+      "def_rank_vs_pos": "#7 (Good)",
+      "hit_rate_season": "62%",
       "key_factors": [
-        "Recent L5 avg of 3.0 vs 2.5 line",
-        "43% hit rate suggests inconsistency",
-        "76ers rank 22nd in defending three-pointers"
+        "2.6 3PM/G season average near line",
+        "62% hit rate on 2.5+ this season",
+        "Recent L5 average of 2.0 shows decline",
+        "Philadelphia allows 3.5 3PM to PGs (#7 defense)"
       ],
-      "reasoning": "Anunoby's season 2.4 3PM average is just below the 2.5 line, but his recent L5 average of 3.0 shows he's been heating up entering the playoffs. The 76ers rank 22nd in defending three-pointers, allowing 3.9 per game to small forwards. His recent form provides an over opportunity."
+      "reasoning": "Brunson's season average of 2.6 three-pointers is just above the 2.5 line with a solid 62% hit rate. His recent decline to 2.0 in the last 5 is concerning, but his season-long consistency and the 76ers' moderate perimeter defense create a coin-flip scenario that the -104 odds reflect fairly."
+    },
+    {
+      "player_name": "Anthony Edwards",
+      "team": "MIN",
+      "opponent": "SAS",
+      "prop_line": 2.5,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": 106,
+      "confidence": "Medium",
+      "season_avg": 3.4,
+      "l5_avg": 18.4,
+      "def_rank_vs_pos": "#24 (Bad)",
+      "hit_rate_season": "Unable to determine",
+      "key_factors": [
+        "3.4 3PM/G season average well above line",
+        "Spurs allow 26.3 3PM to SGs (#24 worst defense)",
+        "Knee questionable status creates uncertainty",
+        "Positive odds (+106) provide value for volume shooter"
+      ],
+      "reasoning": "Edwards is a high-volume three-point shooter at 3.4 per game, and the Spurs rank dead last in perimeter defense. Positive odds at +106 offer value for his projected volume. The knee injury creates risk, but if healthy, Edwards should comfortably exceed 2.5 threes in a playoff game against weak three-point defense."
     }
   ],
   "combo_picks": [
@@ -255,22 +267,22 @@
       "team": "PHI",
       "opponent": "NYK",
       "prop_type": "PRA",
-      "prop_line": 34.5,
+      "prop_line": 35.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -110,
+      "best_odds": -112,
       "confidence": "Elite",
-      "season_avg": 34.6,
+      "season_avg": 34.9,
       "l5_avg": 34.6,
-      "def_rank_vs_pos": "#30 (Bad)",
-      "hit_rate_season": "60%",
+      "def_rank_vs_pos": "#30 (Worst)",
+      "hit_rate_season": "58%",
       "key_factors": [
-        "Season avg 34.6 matches/exceeds line",
-        "60% hit rate on PRA combos",
-        "Elite offensive role with consistent playmaking",
-        "Knicks rank 30th vs PG in PRA defense"
+        "34.9 PRA season average near line",
+        "NYK ranks #30 worst overall defense vs PGs",
+        "58% hit rate on 35.5+ this season",
+        "Elite volume (38.1 MIN/G, 28.3% USG)"
       ],
-      "reasoning": "Maxey's 34.6 PRA average directly matches the line, and he hits this over in 60% of games. His consistent 28.3 PPG scoring paired with 6.6 APG playmaking creates a reliable combo. The Knicks' 30th-ranked defense vs PG PRA (23.3 points allowed) suggests strong opportunity for scoring and creation."
+      "reasoning": "Maxey's combined PRA average of 34.9 is nearly aligned with the 35.5 line, and his 58% hit rate on this threshold is solid. The Knicks' historically poor perimeter defense combined with his elite volume and playing time make this a strong playoff proposition. Maxey should accumulate points and assists naturally in his offensive role."
     },
     {
       "player_name": "Karl-Anthony Towns",
@@ -280,80 +292,97 @@
       "prop_line": 34.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -104,
+      "best_odds": -122,
       "confidence": "High",
       "season_avg": 35.3,
       "l5_avg": 36.0,
-      "def_rank_vs_pos": "#30 (Bad)",
+      "def_rank_vs_pos": "#18 (Bad)",
       "hit_rate_season": "71%",
       "key_factors": [
-        "35.3 season PRA avg exceeds line by 0.8",
-        "71% hit rate on PRA combos",
-        "Recent L5 avg 36.0 shows consistency",
-        "76ers rank 30th vs center PRA defense"
+        "35.3 PRA season average above line",
+        "71% hit rate on 34.5+ threshold this season",
+        "L5 average of 36.0 shows recent momentum",
+        "Elite playmaking (3.0 AST/G) adds combo value"
       ],
-      "reasoning": "KAT's 35.3 PRA average exceeds the 34.5 line with a 71% hit rate, indicating strong reliability. His recent L5 average of 36.0 shows sustained excellence entering the playoffs. The 76ers rank 30th against center PRA (35.8 allowed), creating a favorable defensive matchup for KAT to produce across scoring, rebounding, and playmaking."
+      "reasoning": "Towns' 35.3 season PRA average and 36.0 L5 average both comfortably exceed the 34.5 line with a strong 71% hit rate. His combination of scoring (20.0 PPG) and secondary playmaking (3.0 AST/G) makes this a reliable floor with upside. The Knicks' system generates consistent opportunities for him to reach this threshold."
     },
     {
-      "player_name": "Paul George",
+      "player_name": "Joel Embiid",
       "team": "PHI",
       "opponent": "NYK",
-      "prop_type": "PRA",
-      "prop_line": 24.5,
+      "prop_type": "PR",
+      "prop_line": 34.5,
       "over_under": "OVER",
       "best_book": "FD",
-      "best_odds": -104,
+      "best_odds": -112,
       "confidence": "High",
-      "season_avg": 26.1,
-      "l5_avg": 24.6,
-      "def_rank_vs_pos": "#12 (Avg)",
-      "hit_rate_season": "44%",
+      "season_avg": 34.6,
+      "l5_avg": 33.2,
+      "def_rank_vs_pos": "#30 (Worst)",
+      "hit_rate_season": "58%",
       "key_factors": [
-        "26.1 season PRA avg vs 24.5 line",
-        "Recent L5 avg 24.6 near line",
-        "44% hit rate suggests variance",
-        "Knicks rank 12th vs PF PRA defense"
+        "34.6 PR season average exactly matches line",
+        "NYK ranks #29 worst rebounding defense to centers",
+        "Ankle probable status allows volume opportunity",
+        "Elite scoring + rebound combination"
       ],
-      "reasoning": "George's 26.1 PRA season average provides a 1.6-point cushion above the 24.5 line. His recent hot streak and playoff experience support offensive production. While the 44% hit rate is moderate, the Knicks' neutral defense vs forward PRA (21.9 allowed) combined with his two-way role makes this a high-confidence over."
+      "reasoning": "Embiid's 34.6 season PR average aligns perfectly with the 34.5 line, and his 58% hit rate suggests predictability. The Knicks' weak interior defense enables both scoring and rebounding opportunities. Even with an ankle issue, Embiid's elite scoring (26.9 PPG) and rebound access (13.8 chances/G) make this a high-floor play in a playoff environment."
     }
   ],
   "game_picks": [
     {
       "game": "Philadelphia 76ers @ New York Knicks",
       "pick_type": "Spread",
-      "pick": "New York Knicks",
-      "line": -7.5,
+      "pick": "Philadelphia 76ers +7.5",
+      "line": -110,
       "best_book": "FD",
       "confidence": "High",
       "key_factors": [
-        "Knicks set a playoff record with recent dominance",
-        "Home court advantage in Game 2 scenario",
-        "Embiid questionable with ankle injury"
+        "Tyrese Maxey elite volume and Knicks worst PG defense",
+        "Embiid ankle probable but his scoring/rebounding dominance creates ceiling",
+        "Playoff close-out games often see strong road performances",
+        "7.5 point spread is inflated vs actual talent differential"
       ],
-      "reasoning": "The Knicks have established themselves as the Eastern Conference's most dominant team with a recent playoff record-setting performance. Playing at home against a 76ers team dealing with Embiid's ankle injury (Probable status), the Knicks' balanced scoring and elite defense justify the 7.5-point spread."
+      "reasoning": "The 76ers are getting 7.5 points despite having Maxey's historic volume advantage and Embiid's offensive dominance. While Embiid's ankle is a concern, the playoff environment and road team underdog status creates value. Maxey's performance against the Knicks' worst perimeter defense should keep this competitive."
     },
     {
       "game": "Minnesota Timberwolves @ San Antonio Spurs",
       "pick_type": "Spread",
-      "pick": "Minnesota Timberwolves",
-      "line": 9.5,
+      "pick": "San Antonio Spurs -10.5",
+      "line": -110,
       "best_book": "FD",
       "confidence": "Medium",
       "key_factors": [
-        "Timberwolves won Game 1 as visiting team",
-        "Wembanyama's offensive struggles in Game 1",
-        "Anthony Edwards questionable with knee injury"
+        "Anthony Edwards knee questionable significantly impacts Minnesota offense",
+        "Spurs' elite defense (#3 ranked) limits assist creation for Fox",
+        "Home court advantage in playoff series",
+        "Edwards absence or limited role could exceed 10.5 point swing"
       ],
-      "reasoning": "Minnesota's Game 1 victory on the road suggests strong composure and execution. The Spurs' Game 1 loss, despite Wembanyama's defensive record, indicates offensive inconsistency. If Edwards plays despite his questionable tag, the Wolves' scoring depth should keep them competitive in the 9.5-point spread scenario."
+      "reasoning": "The Spurs' elite defense and home court advantage combined with Edwards' knee injury creates a tough matchup for Minnesota. If Edwards is limited, the 10.5 spread becomes reasonable as the Timberwolves lose their second-best scorer. San Antonio's balanced attack and defensive intensity should exploit Minnesota's uncertainty."
+    },
+    {
+      "game": "Los Angeles Lakers @ Oklahoma City Thunder",
+      "pick_type": "ML",
+      "pick": "Oklahoma City Thunder",
+      "line": -405,
+      "best_book": "FD",
+      "confidence": "High",
+      "key_factors": [
+        "Thunder elite offensive efficiency and perimeter defense",
+        "Thunder allow only 22.3 PPG to SGs (best in league) limiting Reaves",
+        "Shai Gilgeous-Alexander elite performance vs Lakers' defense",
+        "Home court advantage in playoff environment"
+      ],
+      "reasoning": "The Thunder's elite two-way play and home court advantage makes them strong playoff favorites. Their perimeter defense suffocates secondary scorers like Reaves, and Gilgeous-Alexander's 31.1 PPG exploits Lakers' defensive limitations. While the moneyline is heavy, the Thunder's system is well-designed to beat the Lakers in a series."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Tyrese Maxey OVER 30.5 Points+Assists (PHI @ NYK)",
-      "Karl-Anthony Towns OVER 10.5 Rebounds (NYK @ PHI)",
-      "Paul George OVER 2.5 Three-Pointers (PHI @ NYK)"
+      "Tyrese Maxey Over 24.5 Points (FD -115)",
+      "Karl-Anthony Towns Over 10.5 Rebounds (FD -136)",
+      "Jalen Brunson Over 6.5 Assists (FD +116)"
     ],
-    "estimated_odds": "+285",
-    "reasoning": "All three legs target 76ers-Knicks matchup with complementary stat correlations: Maxey's primary scoring/playmaking role, KAT's rebounding dominance vs 76ers' weak interior defense (ranked 13th), and George's recent three-point hot streak (L5: 3.8 per game). Strong playoff momentum for Knicks creates scoring environment favorable to all three props. Moderate odds with high individual confidence makes this an attractive correlation parlay."
+    "estimated_odds": "+280",
+    "reasoning": "All three legs feature elite volume for their respective players in a high-pace playoff game. Maxey's scoring, Towns' rebounding access, and Brunson's assist opportunities correlate strongly with New York-Philadelphia's expected scoring volume. The mixed odds (-115, -136, +116) create positive parlay value while targeting complementary stat categories that should all hit in a playoff shootout environment."
   }
 }
