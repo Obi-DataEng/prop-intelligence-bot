@@ -1,0 +1,499 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "115.9 mph on 5/8",
+      "avg_exit_velo": "94.8 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "58%",
+      "pitcher_hard_hit_allowed": "48%",
+      "park_factor_hr": 1.03,
+      "key_factors": [
+        "Elite exit velo recent",
+        "Bryan Woo soft-contact pitcher",
+        "Warm Houston conditions"
+      ],
+      "reasoning": "Alvarez just hit 115.9 mph homer 4 days ago and faces Bryan Woo who allows 46.8% hard-hit rate. His recent elite exit velo combined with this softer contact pitcher makes him a top laser candidate for 110+ mph today."
+    },
+    {
+      "rank": 2,
+      "player_name": "Jo Adell",
+      "team": "LAA",
+      "opponent": "CLE",
+      "game": "LAA @ CLE",
+      "game_time": "10:10 PM",
+      "confidence_tier": "High",
+      "recent_max_ev": "114.5 mph on 5/10",
+      "avg_exit_velo": "93.2 mph",
+      "barrel_rate": "19%",
+      "hard_hit_rate": "54%",
+      "pitcher_hard_hit_allowed": "37%",
+      "park_factor_hr": 0.99,
+      "key_factors": [
+        "Recent 114.5 mph HR",
+        "Slade Cecconi 37.2% hard-hit rate",
+        "Strong recent form"
+      ],
+      "reasoning": "Adell has a recent 114.5 mph homer just 2 days ago and faces Slade Cecconi who allows below-average hard contact. His recent elite metrics and this softer matchup support 110+ mph exit velo potential."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "205",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 88,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "115.9 mph recent HR",
+        "Soft-contact pitcher Bryan Woo",
+        "Elite power metrics"
+      ],
+      "reasoning": "Alvarez homered 4 days ago at 115.9 mph and faces Bryan Woo with 46.8% hard-hit rate allowed. His recent elite performance combined with favorable pitcher metrics makes this an elite HR selection."
+    },
+    {
+      "rank": 2,
+      "player_name": "Aaron Judge",
+      "team": "NYY",
+      "opponent": "BAL",
+      "game": "NYY @ BAL",
+      "game_time": "10:35 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "235",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite power hitter",
+        "Will Warren young pitcher",
+        "Yankee Stadium HR factor"
+      ],
+      "reasoning": "Judge faces Will Warren (24.9% K-rate, elevated hard contact) and plays at Yankee Stadium with 1.04 HR factor. His elite power profile against a younger pitcher makes this a high-confidence selection."
+    },
+    {
+      "rank": 3,
+      "player_name": "Shohei Ohtani",
+      "team": "LAD",
+      "opponent": "SF",
+      "game": "SF @ LAD",
+      "game_time": "2:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "180",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite power metrics",
+        "Adrian Houser home-run prone",
+        "Late-night game advantage"
+      ],
+      "reasoning": "Ohtani faces Adrian Houser (19.3% HR rate, 1.54 ERA with moderate hard contact). With Dodger Stadium park factor at 1.00 and Ohtani's elite power, this offers solid HR upside at plus odds."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Steven Kwan",
+      "team": "CLE",
+      "opponent": "LAA",
+      "game": "LAA @ CLE",
+      "game_time": "10:10 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 85,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Elite contact rate",
+        "Slade Cecconi 20.3% K rate",
+        "Career 30%+ hit consistency"
+      ],
+      "reasoning": "Kwan offers elite contact skills against Slade Cecconi who strikes out 20.3% of batters. With MGM -250 odds, this represents a sharp hits value play for one of baseball's most consistent contact hitters."
+    },
+    {
+      "rank": 2,
+      "player_name": "Mookie Betts",
+      "team": "LAD",
+      "opponent": "SF",
+      "game": "SF @ LAD",
+      "game_time": "2:10 AM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-250",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite contact hitter",
+        "Adrian Houser 19.3% K rate",
+        "Late game fatigue on pitcher"
+      ],
+      "reasoning": "Betts faces Adrian Houser (19.3% K rate, softer contact profile) in a late-night game. His elite contact skills and experience against similar pitchers make this a high-confidence hits selection at strong odds."
+    },
+    {
+      "rank": 3,
+      "player_name": "Elly De La Cruz",
+      "team": "CIN",
+      "opponent": "WSH",
+      "game": "WSH @ CIN",
+      "game_time": "10:40 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "180",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Young elite hitter",
+        "Brady Singer 15.7% K rate",
+        "Recent 116.3 mph exit velo"
+      ],
+      "reasoning": "De La Cruz recorded 116.3 mph exit velo 5 days ago and faces Brady Singer with moderate K rate (15.7%). At +180 for 1.5+ hits, this offers sharp value for an emerging elite contact threat."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "-129",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 84,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "115.9 mph recent HR",
+        "Elite power metrics",
+        "Bryan Woo soft contact allowed"
+      ],
+      "reasoning": "Alvarez recorded 115.9 mph homer 4 days ago and faces Bryan Woo with 46.8% hard-hit rate allowed. With his elite recent production, clearing 1.5 total bases is highly probable."
+    },
+    {
+      "rank": 2,
+      "player_name": "Aaron Judge",
+      "team": "NYY",
+      "opponent": "BAL",
+      "game": "NYY @ BAL",
+      "game_time": "10:35 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "-105",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite power hitter",
+        "Will Warren elevated hard contact",
+        "Yankee Stadium advantage"
+      ],
+      "reasoning": "Judge faces Will Warren with 45.0% hard-hit rate allowed and plays in Yankee Stadium. His elite power metrics support clearing 1.5 total bases regularly."
+    },
+    {
+      "rank": 3,
+      "player_name": "Juan Soto",
+      "team": "DET",
+      "opponent": "NYM",
+      "game": "DET @ NYM",
+      "game_time": "11:10 PM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "112",
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite hitter profile",
+        "Jack Flaherty elevated K rate",
+        "Favorable offensive matchup"
+      ],
+      "reasoning": "Soto faces Jack Flaherty (25.4% K rate, elevated hard contact allowed). With his elite hitting ability and favorable pitcher profile, 1.5+ total bases offers solid upside at +112."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "pick_type": "pitcher",
+      "player_name": "Bryan Woo",
+      "team": "SEA",
+      "opponent": "HOU",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-155",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "22.8% K rate",
+        "High ground ball rate",
+        "Late-game fatigue advantage"
+      ],
+      "reasoning": "Woo owns a 22.8% K rate and 46.8% ground-ball rate, striking out 20.3% of batters. His high strikeout profile combined with Astros' moderate K rate makes 5.5+ likely in a late-night contest."
+    },
+    {
+      "rank": 2,
+      "pick_type": "pitcher",
+      "player_name": "Jack Flaherty",
+      "team": "DET",
+      "opponent": "NYM",
+      "game": "DET @ NYM",
+      "game_time": "11:10 PM",
+      "best_book": "FD",
+      "fd_odds": "-125",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "25.4% K rate",
+        "High strikeout velocity",
+        "Elevated BB/K ratio"
+      ],
+      "reasoning": "Flaherty has 25.4% K rate and 43.8% ground-ball rate. Against the Mets' moderate strikeout profile, exceeding 5.5 strikeouts is likely with his elevated K-rate metrics."
+    },
+    {
+      "rank": 3,
+      "pick_type": "pitcher",
+      "player_name": "Zac Gallen",
+      "team": "ARI",
+      "opponent": "TEX",
+      "game": "ARI @ TEX",
+      "game_time": "12:05 AM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-135",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "4.5",
+      "over_under_pick": "over",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "19.0% K rate",
+        "Elite 4.17 ERA",
+        "Low walk rate"
+      ],
+      "reasoning": "Gallen owns a 19.0% K rate with exceptional 4.17 ERA and 8.7% BB rate. Against Rangers' moderate strikeout profile, clearing 4.5 strikeouts is likely given his elite control and K metrics."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "ML",
+      "game": "SEA @ HOU",
+      "game_time": "12:10 AM",
+      "pick": "Houston Astros",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-145",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": null,
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Astros home advantage",
+        "Bryan Woo elite K profile",
+        "Favorable Yordan Alvarez matchup"
+      ],
+      "reasoning": "Houston at home with Bryan Woo's elite strikeout profile (22.8% K rate, 46.8% ground-ball rate) provides strong value. Astros' power advantage with Yordan Alvarez gives them edge in late-night contest."
+    },
+    {
+      "rank": 2,
+      "prop_category": "ML",
+      "game": "LAD @ SF",
+      "game_time": "2:10 AM",
+      "pick": "Los Angeles Dodgers",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-300",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": null,
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite Dodgers roster",
+        "Adrian Houser home-run prone",
+        "Favorable park conditions"
+      ],
+      "reasoning": "Dodgers face Adrian Houser with 19.3% HR rate and softer contact profile. Los Angeles' elite lineup led by Shohei Ohtani and Mookie Betts provides strong late-night advantage."
+    },
+    {
+      "rank": 3,
+      "prop_category": "OU",
+      "game": "WSH @ CIN",
+      "game_time": "10:40 PM",
+      "pick": "Over 10.0",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "-110",
+      "scr_odds": null,
+      "fd_line": "10.0",
+      "over_under_pick": "over",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "High park total",
+        "Brady Singer 15.7% K rate",
+        "Miles Mikolas 17.9% K rate"
+      ],
+      "reasoning": "10.0 total is elevated for this matchup. Both Brady Singer (15.7% K rate) and Miles Mikolas (17.9% K rate) allow above-average contact, supporting over play on this high line."
+    },
+    {
+      "rank": 4,
+      "prop_category": "RL",
+      "game": "NYY @ BAL",
+      "game_time": "10:35 PM",
+      "pick": "Yankees -1.5",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "105",
+      "scr_odds": null,
+      "fd_line": "-1.5",
+      "over_under_pick": null,
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Will Warren young pitcher",
+        "Yankees elite lineup",
+        "Strong road team profile"
+      ],
+      "reasoning": "Yankees spread at +105 offers value against Will Warren's 3.29 ERA and elevated hard-contact profile. New York's elite power lineup provides multiple paths to victory margin coverage."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Yordan Alvarez HR (HOU vs SEA) at +205",
+      "Steven Kwan Hits Over 0.5 (LAA vs CLE) at -250",
+      "Houston Astros ML (SEA vs HOU) at -145"
+    ],
+    "reasoning": "These three legs create strong correlation through Yordan Alvarez's elite metrics and favorable Bryan Woo matchup, while Steven Kwan's elite contact provides insurance on different outcome. All three leverage different game elements with strong individual confidence.",
+    "estimated_odds": "+285"
+  },
+  "daily_summary": "Today features strong value plays led by Yordan Alvarez's elite exit velo and upcoming matchup against soft-contact Bryan Woo in Houston. Steven Kwan offers sharp hits value with -250 odds against Slade Cecconi's 20.3% K rate. Late-night games feature multiple strong opportunities with LA Dodgers and Houston Astros providing ML and spread value with elite power lineups facing vulnerable opposing pitchers.",
+  "best_bet": "Yordan Alvarez HR @ +205 (Caesars) - Recent 115.9 mph homer 4 days ago against soft-contact pitcher Bryan Woo.",
+  "nrfi_picks": [
+    {
+      "rank": 1,
+      "pick": "NRFI",
+      "game": "San Diego Padres @ Milwaukee Brewers",
+      "away_pitcher": "Matt Waldron",
+      "home_pitcher": "Brandon Sproat",
+      "nrfi_score": 69.4,
+      "confidence_tier": "High",
+      "away_team_nrfi_pct": "73%",
+      "home_team_nrfi_pct": "50%",
+      "away_pitcher_nrfi_pct": "67%",
+      "home_pitcher_nrfi_pct": "60%",
+      "away_pitcher_streak": "1 NRFI",
+      "home_pitcher_streak": "2 NRFI",
+      "key_factors": [
+        "Padres league-leading 73% NRFI team rate with 29-11 record",
+        "Padres batting 85% NRFI (34-6) on the road",
+        "Both pitchers with active NRFI streaks and strong recent performance",
+        "Padres 7-3 L10 trend supporting early-inning quiet patterns"
+      ],
+      "reasoning": "San Diego's elite NRFI profile (73% team, 85% batting) leads the league with strong road performance. Both pitchers show NRFI streaks, and the Padres' offensive discipline typically translates to scoreless first innings. Milwaukee's weaker 50% NRFI rate provides favorable matchup dynamics."
+    },
+    {
+      "rank": 2,
+      "pick": "NRFI",
+      "game": "Detroit Tigers @ New York Mets",
+      "away_pitcher": "Jack Flaherty",
+      "home_pitcher": "Freddy Peralta",
+      "nrfi_score": 69.7,
+      "confidence_tier": "High",
+      "away_team_nrfi_pct": "60%",
+      "home_team_nrfi_pct": "50%",
+      "away_pitcher_nrfi_pct": "71%",
+      "home_pitcher_nrfi_pct": "88%",
+      "away_pitcher_streak": "1 NRFI",
+      "home_pitcher_streak": "7 NRFI",
+      "key_factors": [
+        "Peralta elite 88% pitcher NRFI with 7-game NRFI streak",
+        "Tigers 60% team NRFI with 75% batting rate (30-10)",
+        "Both teams 6-4 in L10 with momentum favoring early scoreless patterns",
+        "Flaherty 71% NRFI rate with active streak support"
+      ],
+      "reasoning": "Freddy Peralta's exceptional 88% NRFI rate with 7-game streak creates elite pitcher matchup value. Detroit's 75% batting NRFI paired with their 60% team rate and strong L10 record provides dual-sided confidence. This represents one of the strongest pitcher-led NRFI setups available."
+    },
+    {
+      "rank": 3,
+      "pick": "NRFI",
+      "game": "Los Angeles Angels @ Cleveland Guardians",
+      "away_pitcher": "Walbert Urena",
+      "home_pitcher": "Slade Cecconi",
+      "nrfi_score": 66.9,
+      "confidence_tier": "Medium",
+      "away_team_nrfi_pct": "48%",
+      "home_team_nrfi_pct": "56%",
+      "away_pitcher_nrfi_pct": "100%",
+      "home_pitcher_nrfi_pct": "63%",
+      "away_pitcher_streak": "4 NRFI",
+      "home_pitcher_streak": "1 NRFI",
+      "key_factors": [
+        "Walbert Urena perfect 100% NRFI rate with 4-game streak",
+        "Angels 64% batting NRFI (27-15) with 5-game NRFI batting streak",
+        "Cleveland 70% batting NRFI (30-13) with 3-game NRFI streak",
+        "Urena's pristine first-inning profile (0.00 RA) anchors quiet start potential"
+      ],
+      "reasoning": "Walbert Urena's unblemished 100% NRFI record with active streak provides the strongest single pitcher floor on the slate. Angels' hot 5-game batting NRFI streak combined with Cleveland's elite 70% batting rate creates favorable early-inning silence dynamics despite moderate team NRFI percentages."
+    }
+  ]
+}
