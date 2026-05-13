@@ -1,0 +1,499 @@
+{
+  "laser_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "8:10 PM ET",
+      "confidence_tier": "Elite",
+      "recent_max_ev": "115.9 mph on 5/8",
+      "avg_exit_velo": "94.8 mph",
+      "barrel_rate": "22%",
+      "hard_hit_rate": "58%",
+      "pitcher_hard_hit_allowed": "44%",
+      "park_factor_hr": 1.08,
+      "key_factors": [
+        "Recent 115.9 mph barrel on HR vs Lodolo",
+        "Elite barrel rate and hard-hit consistency",
+        "Facing Lance McCullers with slightly elevated HR allowed"
+      ],
+      "reasoning": "Alvarez just launched a 407-foot homer at 115.9 mph exit velo on 5/8, showcasing elite bat speed and barrel control. With a 22% barrel rate and 58% hard-hit rate, he's among the league's most dangerous hitters in extended counts. The Astros' home park favors power, and McCullers allows solid hard contact."
+    },
+    {
+      "rank": 2,
+      "player_name": "Elly De La Cruz",
+      "team": "CIN",
+      "opponent": "WSH",
+      "game": "WSH @ CIN",
+      "game_time": "7:10 PM ET",
+      "confidence_tier": "High",
+      "recent_max_ev": "115.9 mph on 5/12",
+      "avg_exit_velo": "94.2 mph",
+      "barrel_rate": "20%",
+      "hard_hit_rate": "56%",
+      "pitcher_hard_hit_allowed": "46%",
+      "park_factor_hr": 1.06,
+      "key_factors": [
+        "115.9 mph exit velo recorded in last game",
+        "Great American Ball Park favorable for power",
+        "Elite plate discipline and strength metrics"
+      ],
+      "reasoning": "De La Cruz registered a 115.9 mph exit velo on 5/12, matching elite barrel standards. Playing in Great American Ball Park (neutral to slightly favorable for HRs) with consistent hard-contact metrics, he remains in excellent shape for extended power production against Washington's pitching."
+    }
+  ],
+  "hr_picks": [
+    {
+      "rank": 1,
+      "player_name": "Aaron Judge",
+      "team": "NYY",
+      "opponent": "BAL",
+      "game": "NYY @ BAL",
+      "game_time": "7:05 PM ET",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "+220",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 82,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Facing Kyle Bradish with elevated HR rate allowed",
+        "Oriole Park at Camden Yards favors right-handed power",
+        "Judge's elite barrel rate and consistent power production"
+      ],
+      "reasoning": "Judge faces Kyle Bradish, who allows elevated hard contact and has been vulnerable to power hitters. With Oriole Park's short RF fence and Judge's elite power metrics, this represents strong value even at -220. His consistency in barrel-producing at-bats makes this a high-confidence power play."
+    },
+    {
+      "rank": 2,
+      "player_name": "Jo Adell",
+      "team": "LAA",
+      "opponent": "CLE",
+      "game": "LAA @ CLE",
+      "game_time": "7:10 PM ET",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "+525",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 114.5 mph barrel home run vs Lauer",
+        "Facing Parker Messick with elevated HR susceptibility",
+        "Progressive power development in 2026 season"
+      ],
+      "reasoning": "Adell just launched a 449-foot HR with 114.5 mph exit velo on 5/10, showing his power potential is clearly active. Messick allows consistent hard contact, and Adell's recent breakout trajectory suggests he's ready to punish mediocre velocity."
+    },
+    {
+      "rank": 3,
+      "player_name": "Luke Raley",
+      "team": "SEA",
+      "opponent": "HOU",
+      "game": "SEA @ HOU",
+      "game_time": "8:10 PM ET",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "+425",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "113.4 mph barrel on HR vs Burke on 5/8",
+        "Consistent left-handed power profile",
+        "Minute Maid Park favorable to LHH power"
+      ],
+      "reasoning": "Raley recorded a 113.4 mph exit velo on his 372-foot homer on 5/8, demonstrating elite bat-to-ball contact. Facing McCullers in Minute Maid Park where left-handed power is consistently rewarded, Raley projects as solid value at +425."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Adley Rutschman",
+      "team": "BAL",
+      "opponent": "NYY",
+      "game": "NYY @ BAL",
+      "game_time": "7:05 PM ET",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-185",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 84,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Elite contact hitter with 0.5 hits line",
+        "Kyle Bradish allows consistent hard contact",
+        "Home games show improved hit rates vs quality opposition"
+      ],
+      "reasoning": "Rutschman is one of baseball's most consistent contact hitters, and at -185 over 0.5 hits, this projects as nearly automatic. Playing at home against Bradish, who doesn't generate high strikeout rates, Rutschman should accumulate base hits easily."
+    },
+    {
+      "rank": 2,
+      "player_name": "Jose Ramirez",
+      "team": "CLE",
+      "opponent": "LAA",
+      "game": "LAA @ CLE",
+      "game_time": "7:10 PM ET",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-235",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "League-leading contact rates and consistency",
+        "Reid Detmers generates moderate strikeout rates",
+        "Home park advantage with reliable at-bat opportunities"
+      ],
+      "reasoning": "Ramirez's elite contact discipline makes -235 over 0.5 hits an exceptional value proposition. Detmers allows consistent contact, and Ramirez's consistency in accumulating base hits at home positions this as a high-confidence play."
+    },
+    {
+      "rank": 3,
+      "player_name": "Elly De La Cruz",
+      "team": "CIN",
+      "opponent": "WSH",
+      "game": "WSH @ CIN",
+      "game_time": "7:10 PM ET",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-235",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite bat control and plate discipline",
+        "Nick Lodolo elite pitcher but De La Cruz matches well",
+        "Consistent hit accumulation vs quality pitching"
+      ],
+      "reasoning": "De La Cruz has demonstrated elite contact rates against premium pitching competition. Even facing Lodolo, his recent 115.9 mph exit velo suggests he's locked in at the plate, and -235 over 0.5 hits aligns with his season-long consistency."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Yordan Alvarez",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "8:10 PM ET",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-115",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 83,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Recent 407-foot HR demonstrates elite power",
+        "Minute Maid Park's configuration favors right-handed power",
+        "Elite exit velo and hard-hit metrics support multi-base projection"
+      ],
+      "reasoning": "Alvarez's 115.9 mph exit velo and 407-foot homer suggest he's capable of producing multiple extra-base hits. Over 1.5 total bases at -115 projects as highly probable given his recent power displays and favorable park factors."
+    },
+    {
+      "rank": 2,
+      "player_name": "Aaron Judge",
+      "team": "NYY",
+      "opponent": "BAL",
+      "game": "NYY @ BAL",
+      "game_time": "7:05 PM ET",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-105",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite power profile with consistent multi-base production",
+        "Oriole Park at Camden Yards RF fence advantage",
+        "Kyle Bradish allows above-average hard contact"
+      ],
+      "reasoning": "Judge's consistency in producing multiple extra-base hits per game, combined with Oriole Park's favorable RF dimensions, makes over 1.5 total bases a high-confidence play. Bradish's elevated HR rate to RHH supports this projection."
+    },
+    {
+      "rank": 3,
+      "player_name": "Kyle Schwarber",
+      "team": "PHI",
+      "opponent": "BOS",
+      "game": "PHI @ BOS",
+      "game_time": "7:05 PM ET",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "107",
+      "scr_ops": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 74,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Recent 113.2 mph exit velo vs quality pitching",
+        "Fenway Park's Green Monster provides XBH opportunities",
+        "Consistent power production against quality arms"
+      ],
+      "reasoning": "Schwarber's 113.2 mph exit velo on 5/12 demonstrates his power remains elite. Over 1.5 total bases at +107 offers value given Fenway's short fence and Schwarber's ability to drive the ball to all fields."
+    }
+  ],
+  "strikeout_picks": [
+    {
+      "rank": 1,
+      "player_name": "Lance McCullers Jr.",
+      "pick_type": "pitcher",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "8:10 PM ET",
+      "best_book": "FD",
+      "fd_odds": "122",
+      "mgm_odds": "105",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 81,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite strikeout pitcher with 5.5 line",
+        "Mariners generate above-average strikeout rates",
+        "Home game advantage in Minute Maid"
+      ],
+      "reasoning": "McCullers at 5.5 Ks over is solid value given his elite strikeout credentials and Seattle's vulnerability to quality secondary pitching. FD's +122 odds provide reasonable return for this high-probability play."
+    },
+    {
+      "rank": 2,
+      "player_name": "Nick Lodolo",
+      "pick_type": "pitcher",
+      "team": "CIN",
+      "opponent": "WSH",
+      "game": "WSH @ CIN",
+      "game_time": "7:10 PM ET",
+      "best_book": "FD",
+      "fd_odds": "110",
+      "mgm_odds": "-118",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 77,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite left-handed strikeout specialist",
+        "Nationals generate above-average strikeout rates",
+        "Great American Ball Park neutral strikeout environment"
+      ],
+      "reasoning": "Lodolo's elite velocity and strikeout rates make over 5.5 Ks a solid play against a Washington lineup that has shown vulnerability to premium pitching. FD's +110 odds offer good value for this projection."
+    },
+    {
+      "rank": 3,
+      "player_name": "Shota Imanaga",
+      "pick_type": "pitcher",
+      "team": "CHC",
+      "opponent": "ATL",
+      "game": "CHC @ ATL",
+      "game_time": "7:20 PM ET",
+      "best_book": "MGM",
+      "fd_odds": "-114",
+      "mgm_odds": "-110",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "5.5",
+      "over_under_pick": "over",
+      "confidence_score": 73,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Consistent strikeout performer in 2026",
+        "Braves show moderate strikeout vulnerability",
+        "Home game advantage for consistency"
+      ],
+      "reasoning": "Imanaga over 5.5 Ks at -110 projects as slightly better than even money given his recent strikeout consistency. The Braves' lineup, while powerful, still generates adequate strikeout opportunities against quality arms."
+    }
+  ],
+  "game_picks": [
+    {
+      "rank": 1,
+      "prop_category": "ML",
+      "game": "CHC @ ATL",
+      "game_time": "7:20 PM ET",
+      "pick": "Chicago Cubs",
+      "best_book": "CZS",
+      "fd_odds": "-144",
+      "mgm_odds": "-135",
+      "czs_odds": "-135",
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": null,
+      "confidence_score": 79,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Cubs off to hottest start since 2016",
+        "Shota Imanaga elite pitcher vs Braves",
+        "Momentum and form advantage for Chicago"
+      ],
+      "reasoning": "The Cubs' exceptional start (hottest since 2016) combined with Imanaga's elite pitching gives Chicago strong value at -135. The Braves remain formidable but the Cubs' momentum and pitching advantage supports this pick."
+    },
+    {
+      "rank": 2,
+      "prop_category": "ML",
+      "game": "SEA @ HOU",
+      "game_time": "8:10 PM ET",
+      "pick": "Houston Astros",
+      "best_book": "MGM",
+      "fd_odds": "-125",
+      "mgm_odds": "-125",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": null,
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Home field advantage in Minute Maid",
+        "Lance McCullers elite pitcher vs Mariners",
+        "Astros' strong home record in 2026"
+      ],
+      "reasoning": "The Astros at home with McCullers on the mound represents strong value at -125. Houston's home field advantage and pitching quality provide edge against a Mariners team that has struggled on the road."
+    },
+    {
+      "rank": 3,
+      "prop_category": "OU",
+      "game": "PHI @ BOS",
+      "game_time": "7:05 PM ET",
+      "pick": "Over 9.0",
+      "best_book": "FD",
+      "fd_odds": "-105",
+      "mgm_odds": "-102",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "9.0",
+      "over_under_pick": "over",
+      "confidence_score": 72,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Fenway Park's Green Monster creates offensive opportunities",
+        "Both teams feature premium offensive talent",
+        "Recent managerial changes may impact urgency"
+      ],
+      "reasoning": "Over 9.0 at -105 in Fenway Park represents solid value given the Red Sox and Phillies' combined offensive firepower. The Green Monster combined with recent managerial shuffle intensity suggests run production upside."
+    },
+    {
+      "rank": 4,
+      "prop_category": "RL",
+      "game": "NYY @ BAL",
+      "game_time": "7:05 PM ET",
+      "pick": "Yankees -1.5",
+      "best_book": "MGM",
+      "fd_odds": "-104",
+      "mgm_odds": "-120",
+      "czs_odds": "-105",
+      "scr_ops": null,
+      "fd_line": "-1.5",
+      "over_under_pick": null,
+      "confidence_score": 71,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Aaron Judge elite power profile",
+        "Yankees' superior pitching depth",
+        "Road team advantage myth vs Orioles' recent struggles"
+      ],
+      "reasoning": "Yankees -1.5 at -120 on MGM projects well given Judge's power and New York's overall roster quality. While Oriole Park is challenging, the Yankees' pitching advantage and offensive depth support a runline victory."
+    }
+  ],
+  "best_parlay": {
+    "legs": [
+      "Aaron Judge HR vs BAL",
+      "Over 5.5 Ks Lance McCullers vs SEA",
+      "Chicago Cubs ML vs ATL"
+    ],
+    "reasoning": "Judge's elite power metrics and recent barrel production combine with McCullers' strikeout prowess and the Cubs' exceptional form to create a well-balanced parlay with complementary confidence levels across different bet types.",
+    "estimated_odds": "+680"
+  },
+  "daily_summary": "Today's slate features elite power displays from Judge, Alvarez, and De La Cruz, all showing recent barrel metrics supporting HR plays. Pitching value emerges with McCullers and Lodolo poised for strong strikeout performances, while the Cubs' momentum against the Braves represents the day's strongest full-game pick at -135.",
+  "best_bet": "Aaron Judge HR vs BAL at CZS +220 \u2014 Judge's elite power profile facing Kyle Bradish's elevated HR rate in Oriole Park's power-friendly environment.",
+  "nrfi_picks": [
+    {
+      "rank": 1,
+      "pick": "NRFI",
+      "game": "Miami Marlins @ Minnesota Twins",
+      "away_pitcher": "Max Meyer",
+      "home_pitcher": "Simeon Woods Richardson",
+      "nrfi_score": 77.7,
+      "confidence_tier": "High",
+      "away_team_nrfi_pct": "50%",
+      "home_team_nrfi_pct": "57%",
+      "away_pitcher_nrfi_pct": "88%",
+      "home_pitcher_nrfi_pct": "100%",
+      "away_pitcher_streak": "7 NRFI",
+      "home_pitcher_streak": "8 NRFI",
+      "key_factors": [
+        "SWR perfect 8-0 with 8-game NRFI streak",
+        "Meyer 7-1 NRFI with 7-game streak",
+        "Both teams batting solid NRFI% (62% and 74%)",
+        "Twins 5-5 L10 with consistent team NRFI record"
+      ],
+      "reasoning": "Perfect pitcher pairing with Richardson's flawless 100% NRFI record and extended 8-game streak combined with Meyer's elite 88% mark and 7-game streak. Both teams show balanced offensive profiles with strong NRFI tendencies, making early-inning scoring unlikely despite Miami's slight offensive inconsistency."
+    },
+    {
+      "rank": 2,
+      "pick": "NRFI",
+      "game": "Los Angeles Angels @ Cleveland Guardians",
+      "away_pitcher": "Reid Detmers",
+      "home_pitcher": "Parker Messick",
+      "nrfi_score": 77.4,
+      "confidence_tier": "High",
+      "away_team_nrfi_pct": "49%",
+      "home_team_nrfi_pct": "57%",
+      "away_pitcher_nrfi_pct": "88%",
+      "home_pitcher_nrfi_pct": "100%",
+      "away_pitcher_streak": "5 NRFI",
+      "home_pitcher_streak": "8 NRFI",
+      "key_factors": [
+        "Messick unblemished 8-0 record with 8 consecutive NRFI games",
+        "Detmers strong 88% NRFI with active 5-game streak",
+        "Guardians solid 57% team NRFI with 6-4 L10",
+        "Angels batting 65% NRFI reinforces scoreless first inning potential"
+      ],
+      "reasoning": "Messick's perfect track record and extended NRFI streak provides elite reliability paired with Detmers' consistent 88% mark and 5-game streak. The Guardians' strong overall NRFI profile and Angels' solid offensive NRFI percentage create favorable conditions for a first-inning shutdown."
+    },
+    {
+      "rank": 3,
+      "pick": "NRFI",
+      "game": "San Diego Padres @ Milwaukee Brewers",
+      "away_pitcher": "Michael King",
+      "home_pitcher": "Jacob Misiorowski",
+      "nrfi_score": 77.4,
+      "confidence_tier": "High",
+      "away_team_nrfi_pct": "73%",
+      "home_team_nrfi_pct": "51%",
+      "away_pitcher_nrfi_pct": "100%",
+      "home_pitcher_nrfi_pct": "75%",
+      "away_pitcher_streak": "8 NRFI",
+      "home_pitcher_streak": "3 NRFI",
+      "key_factors": [
+        "King's perfect 100% NRFI with dominant 8-game streak",
+        "Padres league-leading 73% team NRFI with 7-3 L10",
+        "Misiorowski respectable 75% NRFI with active streak",
+        "Padres offensive discipline (85% batting NRFI) limits early runs"
+      ],
+      "reasoning": "King's flawless 8-0 record and extended streak anchors this matchup while the Padres' elite team NRFI percentage (73%) and exceptional batting discipline (85%) make early-inning scoring highly unlikely. Misiorowski's solid 75% mark provides adequate support despite Milwaukee's weaker overall NRFI profile."
+    }
+  ]
+}
