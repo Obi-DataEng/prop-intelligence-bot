@@ -261,7 +261,7 @@ def grade_game_pick(pick, game_results):
     pick_team = pick.get('pick', '')
     fd_line = pick.get('fd_line')
     ou_pick = (pick.get('over_under_pick') or '').lower()
-    
+
     for game in game_results:
         home = game['home_team']
         away = game['away_team']
@@ -518,14 +518,14 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
 
 def grade_nrfi_picks(nrfi_picks, pick_date, graded_date):
     if not nrfi_picks:
-        return {'wins': 0, 'losses': 0, 'pending': 0, 'profit': 0}
+        return {'wins': wins, 'losses': losses, 'pushes': 0, 'pending': pending, 'profit': 0}
 
     print(f"\n🎰 Grading NRFI picks for {pick_date}...")
 
     if already_graded_category(pick_date, 'MLB', 'NRFI'):
         print(f"   ⚠️ NRFI picks for {pick_date} already graded — skipping")
         summary = get_daily_summary_from_db(pick_date)
-        return summary.get('MLB - NRFI', {'wins': 0, 'losses': 0, 'pending': 0, 'profit': 0})
+        return summary.get('MLB - NRFI', {'wins': 0, 'losses': 0, 'pushes': 0, 'pending': 0, 'profit': 0})
 
     first_inning = get_first_inning_results(pick_date)
     wins = losses = pending = 0
