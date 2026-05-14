@@ -260,8 +260,8 @@ def grade_game_pick(pick, game_results):
     prop = pick.get('prop_category', '')
     pick_team = pick.get('pick', '')
     fd_line = pick.get('fd_line')
-    ou_pick = pick.get('over_under_pick', '').lower()
-
+    ou_pick = (pick.get('over_under_pick') or '').lower()
+    
     for game in game_results:
         home = game['home_team']
         away = game['away_team']
@@ -462,7 +462,7 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
             player_name = pick.get('player_name', '')
             pick_type = pick.get('pick_type', 'batter')
             line = pick.get('fd_line')
-            ou = pick.get(ou_field, 'over') if ou_field else 'over'
+            ou = (pick.get(ou_field) or 'over') if ou_field else 'over'
             odds = pick.get('fd_odds') or pick.get('czs_odds') or pick.get('mgm_odds')
             if cat == 'HR':
                 ou = 'over'; line = 0.5
