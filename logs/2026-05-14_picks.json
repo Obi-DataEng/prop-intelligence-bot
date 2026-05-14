@@ -12,14 +12,14 @@
       "avg_exit_velo": "95.2 mph",
       "barrel_rate": "22%",
       "hard_hit_rate": "58%",
-      "pitcher_hard_hit_allowed": "51%",
-      "park_factor_hr": 1.06,
+      "pitcher_hard_hit_allowed": "51.6%",
+      "park_factor_hr": 1.04,
       "key_factors": [
-        "Elite exit velo production",
-        "Warm weather 88\u00b0F favors fly balls",
-        "Luis Castillo allows 25.2% HH rate"
+        "Elite exit velo profile with 115.9 recent max",
+        "Hot weather (88\u00b0F) favors fly balls",
+        "Luis Castillo allows 22.6% HRs on fly balls"
       ],
-      "reasoning": "Alvarez consistently produces elite barrel rates and hard-hit contact. With warm Houston weather and Castillo's 25.2% hard-hit rate allowed, conditions are optimal for high-velocity contact. Recent 115.9 mph exit velo demonstrates peak form heading into this matchup."
+      "reasoning": "Alvarez has shown elite exit velo recently and maintains a 22% barrel rate. The warm Houston weather and Castillo's tendency to give up fly ball HRs make this an ideal matchup for hard contact."
     },
     {
       "rank": 2,
@@ -30,17 +30,17 @@
       "game_time": "10:45 PM",
       "confidence_tier": "High",
       "recent_max_ev": "113.2 mph on 5/12",
-      "avg_exit_velo": "93.8 mph",
+      "avg_exit_velo": "94.1 mph",
       "barrel_rate": "19%",
-      "hard_hit_rate": "51%",
-      "pitcher_hard_hit_allowed": "47%",
+      "hard_hit_rate": "52%",
+      "pitcher_hard_hit_allowed": "29.4%",
       "park_factor_hr": 0.92,
       "key_factors": [
-        "Recent 113.2 mph EV shows strong form",
-        "Jesus Luzardo allows 30% HH rate",
-        "50% pullAir rate targets RF short porch"
+        "Recent 113.2 mph exit velo shows power potential",
+        "Luzardo allows elite strikeout rate but weaker fly balls",
+        "Cool weather (55\u00b0F) slightly reduces HR benefit"
       ],
-      "reasoning": "Schwarber's recent 113.2 mph exit velo combined with high pull-air rate creates favorable conditions against Luzardo. Though Fenway's park factor is neutral, Luzardo's elevated hard-hit rate allowed and Schwarber's pull tendencies toward the Green Monster provide upside."
+      "reasoning": "Schwarber demonstrates consistent hard-hit ability with recent 113.2 mph exit velo. Though Fenway is slightly HR-suppressing and Luzardo is a strikeout pitcher, Schwarber's pull-tendency and left-handed advantage could yield hard contact."
     }
   ],
   "hr_picks": [
@@ -54,184 +54,21 @@
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "390",
+      "czs_odds": "+400",
       "scr_odds": null,
       "fd_line": "0.5",
       "confidence_score": 82,
-      "confidence_tier": "Elite",
+      "confidence_tier": "High",
       "key_factors": [
-        "6 HR in 74 PA (8.1% HR rate)",
-        "42.9% HR/FB rate vs right-handers",
-        "Chase Dollander allows 26.1% HH rate"
+        "6 HRs in 74 PAs (8.1% HR rate)",
+        "42.9% HR/FB ratio - elite power",
+        "Coors Field backdrop despite away game context"
       ],
-      "reasoning": "Lowe has elite power production with 6 HRs in just 74 plate appearances and a 42.9% HR/FB rate. Facing Dollander who allows 26.1% hard-hit contact and has given up 5 HRs this season, Lowe represents premium value at +390 odds with consistent power output."
+      "reasoning": "Lowe leads MLB with 42.9% HR/FB ratio and has 6 HRs in just 74 PAs. Chase Dollander allows 1.05 HR/9 and has weak strikeout command. Lowe's elite barrel rate makes him a prime target at +400."
     },
     {
       "rank": 2,
-      "player_name": "Yordan Alvarez",
-      "team": "HOU",
-      "opponent": "SEA",
-      "game": "SEA @ HOU",
-      "game_time": "6:10 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "225",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 79,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "Elite consistency and barrel rate",
-        "Warm 88\u00b0F weather boosts fly ball distance",
-        "CZS best odds available at 225"
-      ],
-      "reasoning": "Alvarez is the shortest-priced HR option at +225 reflecting his elite production profile. At home in warm weather against Castillo's 25.2% hard-hit rate allowed, he's the highest-probability HR bet despite lower odds. Strong recent exit velo data supports this pick."
-    },
-    {
-      "rank": 3,
-      "player_name": "Manny Machado",
-      "team": "SD",
-      "opponent": "MIL",
-      "game": "SD @ MIL",
-      "game_time": "5:40 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "400",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 74,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Consistent power hitter facing neutral park",
-        "Kyle Harrison allows 29.3% HH rate",
-        "Favorable matchup vs left-handed pitcher"
-      ],
-      "reasoning": "Machado offers solid value at +400 against Harrison who allows elevated hard-hit rates. Though park factor is neutral, Machado's consistency and positive home-field advantage make this a quality mid-tier HR play with reasonable odds."
-    }
-  ],
-  "hits_picks": [
-    {
-      "rank": 1,
-      "player_name": "Elly De La Cruz",
-      "team": "CIN",
-      "opponent": "WSH",
-      "game": "WSH @ CIN",
-      "game_time": "4:40 PM",
-      "best_book": "MGM",
-      "fd_odds": null,
-      "mgm_odds": "-200",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "over_under_pick": "over",
-      "confidence_score": 85,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "Elite contact rate and recent production",
-        "Recent 115.9 mph exit velo on 5/12",
-        "Foster Griffin allows 24.3% HH rate"
-      ],
-      "reasoning": "De La Cruz shows elite plate discipline with strong recent performance including a 115.9 mph exit velo. Against Griffin's 24.3% hard-hit rate allowed, his high contact skills give him excellent probability of reaching base. -200 odds reflect justified confidence in this elite hitter."
-    },
-    {
-      "rank": 2,
-      "player_name": "Nick Gonzales",
-      "team": "COL",
-      "opponent": "PIT",
-      "game": "COL @ PIT",
-      "game_time": "4:35 PM",
-      "best_book": "MGM",
-      "fd_odds": null,
-      "mgm_odds": "-220",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "over_under_pick": "over",
-      "confidence_score": 81,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "Elite 48.1% HH rate among qualified hitters",
-        "High contact rate minimizes strikeout risk",
-        "Favorable left-handed batter vs right-handed pitcher"
-      ],
-      "reasoning": "Gonzales demonstrates elite hard-hit rate at 48.1% with exceptional contact discipline. His 0% strikeout rate this season indicates premium bat control. At -220, he's priced appropriately for a high-probability hits play with strong recent form."
-    },
-    {
-      "rank": 3,
-      "player_name": "Juan Soto",
-      "team": "NYM",
-      "opponent": "DET",
-      "game": "DET @ NYM",
-      "game_time": "5:10 PM",
-      "best_book": "MGM",
-      "fd_odds": null,
-      "mgm_odds": "-210",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "over_under_pick": "over",
-      "confidence_score": 78,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Elite plate discipline and OBP",
-        "Strong recent performance metrics",
-        "Keider Montero allows moderate hard-hit rate"
-      ],
-      "reasoning": "Soto's elite plate discipline and OBP make him a high-probability base-hitter. Though -210 reflects his quality, his ability to work counts and avoid strikeouts provides consistent value. Strong recent performance supports this baseline pick."
-    }
-  ],
-  "total_bases_picks": [
-    {
-      "rank": 1,
-      "player_name": "Bryce Harper",
-      "team": "PHI",
-      "opponent": "BOS",
-      "game": "PHI @ BOS",
-      "game_time": "10:45 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "127",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 79,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "Elite power production capability",
-        "Luzardo allows 30% HH rate",
-        "Cold weather reduces distance slightly but good matchup"
-      ],
-      "reasoning": "Harper demonstrates consistent power upside against Luzardo's elevated hard-hit rate allowed. At +127 on the over 1.5 total bases, the risk-reward favors extra-base opportunity. His recent form and park conditions create path to 2+ total bases."
-    },
-    {
-      "rank": 2,
-      "player_name": "Kyle Tucker",
-      "team": "LAD",
-      "opponent": "SF",
-      "game": "SF @ LAD",
-      "game_time": "2:10 AM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "146",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 76,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Strong power profile and recent production",
-        "Favorable park factor at Dodger Stadium",
-        "Roupp allows moderate hard-hit rates"
-      ],
-      "reasoning": "Tucker's consistent power output and Dodger Stadium's favorable park factor create solid over 1.5 total bases opportunity. At +146, there's strong value given his ability to produce multiple-base hits. Recent form supports this mid-tier selection."
-    },
-    {
-      "rank": 3,
-      "player_name": "Oneil Cruz",
+      "player_name": "Ryan O'Hearn",
       "team": "PIT",
       "opponent": "COL",
       "game": "COL @ PIT",
@@ -239,23 +76,234 @@
       "best_book": "CZS",
       "fd_odds": null,
       "mgm_odds": null,
-      "czs_odds": "121",
+      "czs_odds": "+140",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "22.2% HR/FB ratio shows solid power",
+        "High contact rate (91.1% contact vs 88% league avg)",
+        "Dollander HR/9 1.05 above average"
+      ],
+      "reasoning": "O'Hearn has 4 HRs in 98 PAs with strong contact skills. His 22.2% HR/FB ratio combined with Dollander's elevated HR rate makes him a solid value play at +140 from Caesars."
+    },
+    {
+      "rank": 3,
+      "player_name": "Mookie Betts",
+      "team": "LAD",
+      "opponent": "SF",
+      "game": "SF @ LAD",
+      "game_time": "2:10 AM",
+      "best_book": "CZS",
+      "fd_odds": null,
+      "mgm_odds": null,
+      "czs_odds": "+525",
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "confidence_score": 70,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "Elite speed and contact skills drive consistency",
+        "Roupp is rookie pitcher with limited strikeout track record",
+        "Dodger Stadium favorable but Betts not heavy fly ball hitter"
+      ],
+      "reasoning": "Betts is a consistent performer with elite contact ability. While his HR rate isn't elite, Roupp's limited experience and the Dodger Stadium advantage make this a medium-confidence play at +525."
+    }
+  ],
+  "hits_picks": [
+    {
+      "rank": 1,
+      "player_name": "Freddie Freeman",
+      "team": "LAD",
+      "opponent": "SF",
+      "game": "SF @ LAD",
+      "game_time": "2:10 AM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-235",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 85,
+      "confidence_tier": "Elite",
+      "key_factors": [
+        "Career .290+ hitter faces rookie pitcher",
+        "Roupp limited track record with weak strikeout rate",
+        "Freeman elite contact rate 7.5% BB rate"
+      ],
+      "reasoning": "Freeman is an elite contact hitter (likely .290+ avg) facing Landen Roupp, a rookie pitcher with minimal strikeout command. At -235 on MGM, Freeman's hit odds are excellent value for a HOF-caliber hitter."
+    },
+    {
+      "rank": 2,
+      "player_name": "Jose Altuve",
+      "team": "HOU",
+      "opponent": "SEA",
+      "game": "SEA @ HOU",
+      "game_time": "6:10 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-210",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 80,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Career .290 hitter with consistent contact",
+        "Castillo allows 0.306 BAA - high contact allowed",
+        "Houston home field advantage with warm weather"
+      ],
+      "reasoning": "Altuve is a contact machine facing Castillo who allows elevated BAA. The Astros' home field and warm weather support aggressive hitting. At -210, this is solid value on a consistent performer."
+    },
+    {
+      "rank": 3,
+      "player_name": "Dansby Swanson",
+      "team": "ATL",
+      "opponent": "CHC",
+      "game": "CHC @ ATL",
+      "game_time": "11:15 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-130",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 73,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "Consistent performer vs Ben Brown (rookie pitcher)",
+        "Brown shows high whiff rate suggesting contact opportunity",
+        "Home game vs rookie starter"
+      ],
+      "reasoning": "Swanson is a reliable hitter at -130 facing Ben Brown, a rookie with excellent strikeout rate but limited major league experience. The home advantage and Brown's limited track record make this a reasonable play."
+    }
+  ],
+  "total_bases_picks": [
+    {
+      "rank": 1,
+      "player_name": "Julio Rodriguez",
+      "team": "SEA",
+      "opponent": "HOU",
+      "game": "SEA @ HOU",
+      "game_time": "6:10 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-105",
+      "czs_odds": null,
+      "scr_opts": null,
+      "fd_line": "1.5",
+      "over_under_pick": "over",
+      "confidence_score": 78,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Elite exit velo profile with 21.8 barrel rate",
+        "1.5 total bases implies single = 50% of hits needed",
+        "Castillo weak on fly balls (20.2% whiff rate)"
+      ],
+      "reasoning": "Rodriguez shows elite power with 21.8% barrel rate and high exit velo. Castillo's elevated BAA suggests contact opportunity. At -105, going over 1.5 total bases is reasonable for an elite power hitter in warm weather."
+    },
+    {
+      "rank": 2,
+      "player_name": "Manny Machado",
+      "team": "SD",
+      "opponent": "MIL",
+      "game": "SD @ MIL",
+      "game_time": "5:40 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "-175",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over",
+      "confidence_score": 76,
+      "confidence_tier": "High",
+      "key_factors": [
+        "Star hitter with consistent power/contact balance",
+        "Griffin Canning limited experience with 0.96 WHIP",
+        "Milwaukee moderate HR park (0.98 factor)"
+      ],
+      "reasoning": "Machado is an elite hitter facing Canning, a limited-experience pitcher with weak strikeout profile. At -175 over just 0.5 TB, Machado's power and contact combination should easily clear this threshold."
+    },
+    {
+      "rank": 3,
+      "player_name": "Ronald Acuna Jr.",
+      "team": "ATL",
+      "opponent": "CHC",
+      "game": "CHC @ ATL",
+      "game_time": "11:15 PM",
+      "best_book": "MGM",
+      "fd_odds": null,
+      "mgm_odds": "+135",
+      "czs_odds": "+135",
       "scr_odds": null,
       "fd_line": "1.5",
       "over_under_pick": "over",
-      "confidence_score": 72,
-      "confidence_tier": "High",
+      "confidence_score": 71,
+      "confidence_tier": "Medium",
       "key_factors": [
-        "Recent 112.5 mph exit velo on 5/12",
-        "Power hitter with home-field advantage",
-        "Favorable odds at +121 for over play"
+        "Elite speed/power combo maximizes total bases",
+        "Ben Brown weak control (3.5 K/BB ratio)",
+        "Braves home field advantage with warm weather approaching"
       ],
-      "reasoning": "Cruz's recent 112.5 mph exit velo and elite power tool give him strong over 1.5 total bases probability. At home with +121 odds, there's clear value. His strikeout tendency is priced in, but power potential drives this selection."
+      "reasoning": "Acuna combines elite speed and power for consistent total bases. Ben Brown's weak control and rookie status suggest offensive opportunity. At +135 over 1.5, this offers value for an elite all-around athlete."
     }
   ],
   "strikeout_picks": [
     {
       "rank": 1,
+      "player_name": "Jesus Luzardo",
+      "pick_type": "pitcher",
+      "team": "PHI",
+      "opponent": "BOS",
+      "game": "PHI @ BOS",
+      "game_time": "10:45 PM",
+      "best_book": "FD",
+      "fd_odds": "-140",
+      "mgm_odds": "-140",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 82,
+      "confidence_tier": "High",
+      "key_factors": [
+        "11.75 K/9 rate - elite strikeout pitcher",
+        "33.8% K rate shows consistent whiff generation",
+        "Cool Fenway conditions favor strikeout pitch"
+      ],
+      "reasoning": "Luzardo is an elite strikeout pitcher with 11.75 K/9 and 33.8% K rate. His pitch arsenal and 6.5 strikeout line are well-aligned. At -140, taking the over on Luzardo's K line is a high-confidence play."
+    },
+    {
+      "rank": 2,
+      "player_name": "Chase Burns",
+      "pick_type": "pitcher",
+      "team": "CIN",
+      "opponent": "WSH",
+      "game": "WSH @ CIN",
+      "game_time": "4:40 PM",
+      "best_book": "FD",
+      "fd_odds": "-128",
+      "mgm_odds": "-160",
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "6.5",
+      "over_under_pick": "over",
+      "confidence_score": 75,
+      "confidence_tier": "High",
+      "key_factors": [
+        "9.19 K/9 with solid 26.1% whiff rate",
+        "Nationals weak lineup facing right-handed pitcher",
+        "6.5 line reasonable for quality starter"
+      ],
+      "reasoning": "Burns shows solid strikeout metrics (9.19 K/9) facing a Washington lineup that struggles offensively. At -128 on FD, the over 6.5 is reasonable for a competent starter with decent whiff generation."
+    },
+    {
+      "rank": 3,
       "player_name": "Luis Castillo",
       "pick_type": "pitcher",
       "team": "SEA",
@@ -263,92 +311,44 @@
       "game": "SEA @ HOU",
       "game_time": "6:10 PM",
       "best_book": "MGM",
-      "fd_odds": "105",
-      "mgm_odds": null,
+      "fd_odds": "+105",
+      "mgm_odds": "+105",
       "czs_odds": null,
       "scr_odds": null,
       "fd_line": "4.5",
       "over_under_pick": "under",
-      "confidence_score": 76,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Lower K/9 rate at 8.45 indicates efficiency over volume",
-        "Houston lineup features patient hitters",
-        "Warm weather may reduce strikeout potential"
-      ],
-      "reasoning": "Castillo's K/9 of 8.45 is modest for a starter, and Houston's patient approach at plate limits strikeout opportunity. With warm weather conditions and +105 odds on the under, there's value betting for fewer strikeouts from the visiting pitcher."
-    },
-    {
-      "rank": 2,
-      "player_name": "Ranger Suarez",
-      "pick_type": "pitcher",
-      "team": "PHI",
-      "opponent": "BOS",
-      "game": "PHI @ BOS",
-      "game_time": "10:45 PM",
-      "best_book": "FD",
-      "fd_odds": "134",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "5.5",
-      "over_under_pick": "over",
-      "confidence_score": 73,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Solid 7.38 K/9 rate supports strikeout play",
-        "Red Sox lineup features several high-K hitters",
-        "Cold weather conditions favor strikeout pitchers"
-      ],
-      "reasoning": "Suarez's respectable 7.38 K/9 and Boston's vulnerability to strikeouts create over 5.5 opportunity. Cold 54\u00b0F weather conditions typically increase strikeout rates. At +134 odds, this represents solid value for a pitcher with consistent Ks."
-    },
-    {
-      "rank": 3,
-      "player_name": "Chase Burns",
-      "pick_type": "pitcher",
-      "team": "CIN",
-      "opponent": "WSH",
-      "game": "WSH @ CIN",
-      "game_time": "4:40 PM",
-      "best_book": "MGM",
-      "fd_odds": null,
-      "mgm_odds": "-160",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "6.5",
-      "over_under_pick": "over",
-      "confidence_score": 70,
+      "confidence_score": 68,
       "confidence_tier": "Medium",
       "key_factors": [
-        "Strong 9.19 K/9 rate at home",
-        "Washington's higher strikeout rate in lineup",
-        "Favorable ballpark and weather conditions"
+        "8.45 K/9 - solid but not elite strikeout rate",
+        "Astros contact-heavy lineup (high BABIP team)",
+        "Lower line (4.5) makes under more reasonable"
       ],
-      "reasoning": "Burns' 9.19 K/9 at home combined with Washington's strikeout-prone hitters supports the over 6.5 play. Despite -160 odds, his track record at home suggests solid probability. This is a traditional strikeout pitcher bet with reasonable juice."
+      "reasoning": "Castillo's 8.45 K/9 is solid but the Astros' strong contact rates and high-BABIP approach make strikeout generation difficult. At +105 for under 4.5, this represents decent value against this lineup."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
       "prop_category": "ML",
-      "game": "SEA @ HOU",
-      "game_time": "6:10 PM",
-      "pick": "Houston Astros",
-      "best_book": "MGM",
-      "fd_odds": "-130",
-      "mgm_odds": null,
-      "czs_odds": null,
+      "game": "PHI @ BOS",
+      "game_time": "10:45 PM",
+      "pick": "Philadelphia Phillies",
+      "best_book": "FD",
+      "fd_odds": "-112",
+      "mgm_odds": "-110",
+      "czs_odds": "-110",
       "scr_odds": null,
       "fd_line": null,
       "over_under_pick": null,
-      "confidence_score": 78,
-      "confidence_tier": "Elite",
+      "confidence_score": 76,
+      "confidence_tier": "High",
       "key_factors": [
-        "Home-field advantage in warm weather",
-        "Castillo's modest K/9 and hard-hit rate",
-        "Astros' strong recent performance"
+        "Phillies elite offense vs Red Sox weaker pitching",
+        "Luzardo elite strikeout pitcher controls game",
+        "Better team matchup in all metrics"
       ],
-      "reasoning": "Houston's home-field advantage combined with warm weather conditions favor the Astros. Castillo's moderate strikeout rate and 25.2% hard-hit rate allowed suggest vulnerability. Astros' powerful lineup should produce runs in favorable conditions."
+      "reasoning": "Philadelphia is the superior team with an elite offense and solid pitching in Luzardo. Boston's weak lineup cannot match Phillies' firepower. At -112, the Phillies ML represents good value in this matchup."
     },
     {
       "rank": 2,
@@ -358,76 +358,76 @@
       "pick": "Over 9.0",
       "best_book": "FD",
       "fd_odds": "-114",
-      "mgm_odds": null,
-      "czs_odds": null,
+      "mgm_odds": "-115",
+      "czs_odds": "-120",
       "scr_odds": null,
-      "fd_line": null,
+      "fd_line": "9.0",
       "over_under_pick": "over",
-      "confidence_score": 75,
+      "confidence_score": 73,
       "confidence_tier": "High",
       "key_factors": [
-        "Warm 88\u00b0F weather increases offensive output",
-        "Both lineups feature strong power",
-        "Modest pitcher K/9 rates limit strikeout suppression"
+        "Both offenses rank in top 10 for scoring",
+        "Warm Houston weather (88\u00b0F) favors run-scoring",
+        "Castillo elevated BAA (0.306) allows hits"
       ],
-      "reasoning": "Warm Houston weather and elevated hard-hit rates from both offenses push this total toward high-scoring game. Castillo's 25.2% HH rate allowed combined with Houston's powerful lineup suggests over 9 is achievable. Strong value at -114."
+      "reasoning": "Both teams feature strong offenses and the warm Houston weather supports offensive scoring. Castillo's 0.306 BAA and Burrows' 4.62 ERA suggest elevated run totals. Over 9.0 at -114 is reasonable."
     },
     {
       "rank": 3,
-      "prop_category": "ML",
-      "game": "PHI @ BOS",
-      "game_time": "10:45 PM",
-      "pick": "Philadelphia Phillies",
-      "best_book": "MGM",
-      "fd_odds": "-110",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": null,
-      "over_under_pick": null,
-      "confidence_score": 72,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Luzardo's elite 2.94 ERA and low WHIP",
-        "Phillies strong lineup depth",
-        "Road team historically struggles in Boston"
-      ],
-      "reasoning": "Luzardo's elite ERA (2.94) and control (1.40 WHIP) provide Boston's weaknesses against quality starting pitching. Though Phillies are on road, their lineup depth and Suarez's reliability give them edge. -110 offers fair value for quality matchup."
-    },
-    {
-      "rank": 4,
-      "prop_category": "Spread",
+      "prop_category": "RL",
       "game": "KC @ CWS",
       "game_time": "11:40 PM",
       "pick": "Kansas City Royals -1.5",
-      "best_book": "MGM",
-      "fd_odds": "-130",
-      "mgm_odds": null,
-      "czs_odds": null,
+      "best_book": "FD",
+      "fd_odds": "+126",
+      "mgm_odds": "+135",
+      "czs_odds": "+122",
       "scr_odds": null,
       "fd_line": "-1.5",
       "over_under_pick": null,
-      "confidence_score": 68,
+      "confidence_score": 70,
       "confidence_tier": "Medium",
       "key_factors": [
-        "Royals better pitching matchup with Bubic",
-        "White Sox's recent struggles documented",
-        "Kansas City's improved recent form"
+        "Kansas City favored ML suggests quality advantage",
+        "White Sox struggling team in rebuild mode",
+        "Run line value at +126 for favored team"
       ],
-      "reasoning": "Royals' solid pitching from Bubic (9.13 K/9) combined with White Sox's documented rotation issues makes -1.5 spread reasonable. Kansas City's recent upward trajectory provides edge despite needing run cover. -130 offers standard spread value."
+      "reasoning": "Kansas City is favored in this matchup and offers +126 on the run line against a weaker Sox team. The Royals' superior roster and White Sox struggles make the -1.5 line reasonable value."
+    },
+    {
+      "rank": 4,
+      "prop_category": "ML",
+      "game": "HOU @ SEA",
+      "game_time": "6:10 PM",
+      "pick": "Houston Astros",
+      "best_book": "MGM",
+      "fd_odds": "-130",
+      "mgm_odds": "-130",
+      "czs_odds": "-125",
+      "scr_odds": null,
+      "fd_line": null,
+      "over_under_pick": null,
+      "confidence_score": 65,
+      "confidence_tier": "Medium",
+      "key_factors": [
+        "Home field advantage in warm weather",
+        "Astros stronger contact lineup vs Castillo",
+        "Burrows solid but not elite pitcher"
+      ],
+      "reasoning": "Houston's home field advantage combined with a contact-heavy lineup gives them edge vs Castillo. While the team is struggling, this specific matchup favors the Astros at -130 in their home climate."
     }
   ],
   "best_parlay": {
     "legs": [
-      "Houston Astros ML (-130)",
-      "Bryce Harper Over 1.5 Total Bases (+127)",
-      "Elly De La Cruz Over 0.5 Hits (-200)"
+      "Philadelphia Phillies ML (-112)",
+      "Over 9.0 SEA @ HOU (-114)",
+      "Jesus Luzardo Over 6.5 K (-140)"
     ],
-    "reasoning": "This three-leg parlay combines a strong home favorite with elite batter matchups. Astros' home-field advantage pairs with two high-probability batter plays: Harper's power in excellent conditions and De La Cruz's elite contact rates. Combined probability creates +350 to +420 estimated return.",
-    "estimated_odds": "+385"
+    "reasoning": "This parlay combines elite pitcher (Luzardo) with strong team advantage (Phillies) and a high-scoring environment (Houston's warm weather + offensive teams). All three legs show strong individual merit and compound confidence through independent events.",
+    "estimated_odds": "+285"
   },
-  "daily_summary": "Today features strong offensive weather conditions (warm Houston at 88\u00b0F) creating favorable total bases and hits opportunities. Houston's home advantage against modest strikeout pitcher Castillo, combined with elite batter production from Alvarez and Harper, suggests multiple scoring plays. Elite pitcher performances (Luzardo, Suarez) in cooler markets offer contrasting value for disciplined offensive picks.",
-  "best_bet": "Houston Astros ML (-130) - Home field advantage with warm weather conditions against visiting pitcher with modest strikeout rate and elevated hard-hit rate allowed.",
+  "daily_summary": "Today features excellent strikeout opportunities with Luzardo and Burns controlling games, while warm Houston weather (88\u00b0F) suggests elevated run totals. The Phillies' offensive advantage over Boston combined with elite pitching gives a clean parlay structure, and multiple elite exit velo opportunities exist (Alvarez, Schwarber) in favorable conditions.",
+  "best_bet": "Jesus Luzardo Over 6.5 Strikeouts at -140 on FD vs Boston's weak contact-dependent lineup.",
   "nrfi_picks": [
     {
       "rank": 1,
@@ -444,13 +444,11 @@
       "away_pitcher_streak": "2 NRFI",
       "home_pitcher_streak": "1 YRFI",
       "key_factors": [
-        "Padres elite 74% team NRFI rate (2nd best)",
-        "Padres batting 86% NRFI (best in baseball)",
-        "Canning perfect 100% NRFI with 2-game streak",
-        "Padres 7-3 last 10 games",
-        "Padres 15-4 NRFI away from home"
+        "San Diego Padres elite 74% team NRFI with 86% batting NRFI",
+        "Griffin Canning perfect 100% NRFI with 2-game streak",
+        "Brewers batting 75% NRFI with 5-game hot streak"
       ],
-      "reasoning": "San Diego's dominant 74% team NRFI rate combined with baseball's best batting NRFI at 86% creates a strong scoreless first inning environment. Griffin Canning's perfect 100% NRFI rate provides elite pitching support, and the Padres' 7-3 recent form indicates strong momentum heading into this matchup."
+      "reasoning": "San Diego's dominant 74% team NRFI paired with exceptional 86% batting NRFI creates a strong foundation. Griffin Canning's perfect 100% NRFI record combined with Milwaukee's 75% batting NRFI (5 NRFI streak) suggests first-inning runs will be difficult to score, especially against an undefeated Canning."
     },
     {
       "rank": 2,
@@ -458,7 +456,7 @@
       "game": "San Francisco Giants @ Los Angeles Dodgers",
       "away_pitcher": "Landen Roupp",
       "home_pitcher": "Emmet Sheehan",
-      "nrfi_score": 68.8,
+      "nrfi_score": 66.1,
       "confidence_tier": "High",
       "away_team_nrfi_pct": "60%",
       "home_team_nrfi_pct": "56%",
@@ -467,36 +465,32 @@
       "away_pitcher_streak": "8 NRFI",
       "home_pitcher_streak": "1 NRFI",
       "key_factors": [
-        "Roupp perfect 100% NRFI with 8-game active streak",
-        "Giants batting 81% NRFI (5th best in MLB)",
-        "Giants 5-5 last 10 with strong 7-game NRFI streak",
-        "Giants 12-9 NRFI on the road",
-        "Elite pitcher streak momentum"
+        "Landen Roupp perfect 100% NRFI with 8-game active streak",
+        "San Francisco Giants 81% batting NRFI with 7-game hot streak",
+        "Dodgers lineup 72% batting NRFI"
       ],
-      "reasoning": "Landen Roupp's perfect 8-game NRFI streak represents the strongest individual pitcher performance available today. The Giants' 81% batting NRFI rate and 60% team NRFI create a favorable environment, with both teams showing recent scoreless first inning trends."
+      "reasoning": "Landen Roupp's perfect 8-game NRFI streak is elite, and the Giants' 81% batting NRFI (7-game streak) creates a dominant offensive narrative. Despite Sheehan's weaker 43% NRFI record, Roupp's consistency and both lineups' strong batting profiles suggest a quiet first inning."
     },
     {
       "rank": 3,
       "pick": "NRFI",
-      "game": "Kansas City Royals @ Chicago White Sox",
-      "away_pitcher": "Kris Bubic",
-      "home_pitcher": "Anthony Kay",
-      "nrfi_score": 67.9,
-      "confidence_tier": "High",
-      "away_team_nrfi_pct": "63%",
-      "home_team_nrfi_pct": "50%",
-      "away_pitcher_nrfi_pct": "88%",
-      "home_pitcher_nrfi_pct": "67%",
-      "away_pitcher_streak": "6 NRFI",
-      "home_pitcher_streak": "2 NRFI",
+      "game": "Chicago Cubs @ Atlanta Braves",
+      "away_pitcher": "Ben Brown",
+      "home_pitcher": "Chris Sale",
+      "nrfi_score": 68.8,
+      "confidence_tier": "Medium",
+      "away_team_nrfi_pct": "67%",
+      "home_team_nrfi_pct": "44%",
+      "away_pitcher_nrfi_pct": "100%",
+      "home_pitcher_nrfi_pct": "88%",
+      "away_pitcher_streak": "1 NRFI",
+      "home_pitcher_streak": "5 NRFI",
       "key_factors": [
-        "Royals elite 63% team NRFI rate (3rd best)",
-        "Royals batting 81% NRFI (5th best)",
-        "Bubic 88% NRFI with active 6-game streak",
-        "Royals 6-4 last 10 games with strong recent form",
-        "Kay provides solid 67% NRFI support"
+        "Chicago Cubs elite 84% batting NRFI with 4-game hot streak",
+        "Chris Sale dominant 88% NRFI with 5-game active streak",
+        "Ben Brown undefeated 100% NRFI record"
       ],
-      "reasoning": "Kansas City's elite 63% team NRFI coupled with 81% batting NRFI creates optimal scoreless first inning conditions. Kris Bubic's exceptional 88% NRFI rate with an active 6-game winning streak provides reliable pitching depth, while the Royals' consistent recent performance suggests continued dominance."
+      "reasoning": "Chris Sale's 88% NRFI and 5-game hot streak combined with the Cubs' 84% batting NRFI creates strong NRFI conditions. Ben Brown's perfect record and both pitchers' excellent metrics suggest tight first-inning defense, though Braves' weaker 44% team NRFI introduces slight volatility."
     }
   ]
 }

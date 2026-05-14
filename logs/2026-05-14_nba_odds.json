@@ -10,9 +10,9 @@
           "home_ml": -174,
           "away_ml": 146,
           "home_spread": -3.5,
-          "home_spread_odds": -115,
+          "home_spread_odds": -114,
           "away_spread": 3.5,
-          "away_spread_odds": -105,
+          "away_spread_odds": -106,
           "total": 209.5,
           "over_odds": -106,
           "under_odds": -114
@@ -29,15 +29,15 @@
           "under_odds": -110
         },
         "MGM": {
-          "home_ml": -185,
-          "away_ml": 150,
+          "home_ml": -175,
+          "away_ml": 145,
           "home_spread": -3.5,
           "home_spread_odds": -115,
           "away_spread": 3.5,
           "away_spread_odds": -105,
           "total": 209.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "over_odds": -110,
+          "under_odds": -110
         }
       }
     },
@@ -89,8 +89,8 @@
         "Daniss Jenkins": {
           "line": 2.5,
           "FD": {
-            "over": -154,
-            "under": 116
+            "over": -158,
+            "under": 118
           }
         },
         "Tobias Harris": {
@@ -129,12 +129,12 @@
         "Jalen Duren": {
           "line": 1.5,
           "FD": {
-            "over": -146,
-            "under": 110
+            "over": -130,
+            "under": -102
           },
           "MGM": {
-            "over": -120,
-            "under": -110
+            "over": -125,
+            "under": -105
           }
         },
         "Evan Mobley": {
@@ -174,8 +174,8 @@
             "under": -112
           },
           "MGM": {
-            "over": -105,
-            "under": -125
+            "over": -111,
+            "under": -118
           }
         },
         "Duncan Robinson": {
@@ -323,8 +323,8 @@
         "Daniss Jenkins": {
           "line": 9.5,
           "FD": {
-            "over": 102,
-            "under": -136
+            "over": 100,
+            "under": -132
           },
           "CZS": {
             "over": -107,
@@ -334,8 +334,8 @@
         "Jalen Duren": {
           "line": 10.5,
           "FD": {
-            "over": -120,
-            "under": -110
+            "over": -114,
+            "under": -114
           },
           "CZS": {
             "over": -121,
@@ -353,8 +353,8 @@
             "under": -130
           },
           "CZS": {
-            "over": -114,
-            "under": -117
+            "over": -109,
+            "under": -122
           },
           "MGM": {
             "over": -130,
@@ -379,8 +379,8 @@
         "Evan Mobley": {
           "line": 14.5,
           "FD": {
-            "over": -112,
-            "under": -118
+            "over": -114,
+            "under": -114
           },
           "CZS": {
             "over": -117,
@@ -398,8 +398,8 @@
             "under": -114
           },
           "CZS": {
-            "over": -124,
-            "under": -108
+            "over": -118,
+            "under": -113
           },
           "MGM": {
             "over": -120,
@@ -469,8 +469,8 @@
             "under": 100
           },
           "MGM": {
-            "over": -110,
-            "under": -120
+            "over": 100,
+            "under": -135
           }
         },
         "Dennis Schroder": {
@@ -498,14 +498,21 @@
             "over": -111,
             "under": -120
           }
+        },
+        "Dean Wade": {
+          "line": 2.5,
+          "CZS": {
+            "over": -125,
+            "under": -108
+          }
         }
       },
       "player_points_assists": {
         "Daniss Jenkins": {
           "line": 12.5,
           "FD": {
-            "over": -106,
-            "under": -125
+            "over": -104,
+            "under": -128
           }
         },
         "Jarrett Allen": {
@@ -522,6 +529,17 @@
         "Donovan Mitchell": {
           "line": 30.5,
           "FD": {
+            "over": -122,
+            "under": -108
+          },
+          "MGM": {
+            "over": -130,
+            "under": -105
+          }
+        },
+        "Evan Mobley": {
+          "line": 18.5,
+          "FD": {
             "over": -118,
             "under": -112
           },
@@ -530,26 +548,15 @@
             "under": -105
           }
         },
-        "Evan Mobley": {
-          "line": 18.5,
-          "FD": {
-            "over": -112,
-            "under": -118
-          },
-          "MGM": {
-            "over": -130,
-            "under": -105
-          }
-        },
         "James Harden": {
-          "line": 25.5,
+          "line": 26.5,
           "FD": {
-            "over": -102,
-            "under": -130
+            "over": -106,
+            "under": -125
           },
           "MGM": {
-            "over": -130,
-            "under": -105
+            "over": -105,
+            "under": -130
           }
         },
         "Ausar Thompson": {
@@ -577,8 +584,8 @@
         "Dennis Schroder": {
           "line": 9.5,
           "FD": {
-            "over": -104,
-            "under": -128
+            "over": -106,
+            "under": -125
           }
         },
         "Dean Wade": {
@@ -591,8 +598,8 @@
         "Duncan Robinson": {
           "line": 12.5,
           "MGM": {
-            "over": -118,
-            "under": -110
+            "over": -115,
+            "under": -115
           }
         },
         "Tobias Harris": {
@@ -614,8 +621,8 @@
         "Dean Wade": {
           "line": 7.5,
           "FD": {
-            "over": -104,
-            "under": -128
+            "over": -106,
+            "under": -125
           },
           "MGM": {
             "over": 105,
@@ -636,8 +643,8 @@
         "Jarrett Allen": {
           "line": 19.5,
           "FD": {
-            "over": -114,
-            "under": -114
+            "over": -110,
+            "under": -120
           },
           "MGM": {
             "over": -110,
@@ -647,19 +654,19 @@
         "Jalen Duren": {
           "line": 19.5,
           "FD": {
-            "over": -128,
-            "under": -104
+            "over": -120,
+            "under": -110
           },
           "MGM": {
-            "over": -120,
+            "over": -125,
             "under": -110
           }
         },
         "Donovan Mitchell": {
           "line": 32.5,
           "FD": {
-            "over": -125,
-            "under": -106
+            "over": -104,
+            "under": -128
           },
           "MGM": {
             "over": -110,
@@ -669,8 +676,8 @@
         "Cade Cunningham": {
           "line": 32.5,
           "FD": {
-            "over": -128,
-            "under": -104
+            "over": -102,
+            "under": -130
           },
           "MGM": {
             "over": -105,
@@ -680,37 +687,37 @@
         "Evan Mobley": {
           "line": 23.5,
           "FD": {
-            "over": -122,
-            "under": -108
+            "over": -120,
+            "under": -110
           },
           "MGM": {
             "over": -115,
-            "under": -115
+            "under": -118
           }
         },
         "James Harden": {
           "line": 24.5,
           "FD": {
-            "over": -104,
-            "under": -128
+            "over": -106,
+            "under": -125
           },
           "MGM": {
-            "over": -105,
-            "under": -125
+            "over": -110,
+            "under": -120
           }
         },
         "Max Strus": {
           "line": 13.5,
           "FD": {
-            "over": -112,
-            "under": -118
+            "over": -110,
+            "under": -120
           }
         },
         "Duncan Robinson": {
           "line": 13.5,
           "FD": {
-            "over": -122,
-            "under": -108
+            "over": -120,
+            "under": -110
           },
           "MGM": {
             "over": -105,
@@ -720,8 +727,8 @@
         "Ausar Thompson": {
           "line": 15.5,
           "FD": {
-            "over": -125,
-            "under": -106
+            "over": -130,
+            "under": -102
           },
           "MGM": {
             "over": -115,
@@ -733,8 +740,8 @@
         "Daniss Jenkins": {
           "line": 15.5,
           "FD": {
-            "over": -122,
-            "under": -108
+            "over": -120,
+            "under": -110
           },
           "MGM": {
             "over": -110,
@@ -755,8 +762,8 @@
         "Jarrett Allen": {
           "line": 20.5,
           "FD": {
-            "over": -128,
-            "under": -104
+            "over": -122,
+            "under": -108
           },
           "MGM": {
             "over": -118,
@@ -766,8 +773,8 @@
         "Jalen Duren": {
           "line": 21.5,
           "FD": {
-            "over": -122,
-            "under": -108
+            "over": -118,
+            "under": -112
           },
           "MGM": {
             "over": -110,
@@ -777,12 +784,12 @@
         "Donovan Mitchell": {
           "line": 35.5,
           "FD": {
-            "over": -114,
-            "under": -114
+            "over": -118,
+            "under": -112
           },
           "MGM": {
-            "over": -120,
-            "under": -110
+            "over": -105,
+            "under": -130
           }
         },
         "Evan Mobley": {
@@ -793,18 +800,18 @@
           },
           "MGM": {
             "over": -115,
-            "under": -118
+            "under": -115
           }
         },
         "James Harden": {
           "line": 30.5,
           "FD": {
-            "over": -125,
-            "under": -106
+            "over": -104,
+            "under": -128
           },
           "MGM": {
-            "over": -120,
-            "under": -110
+            "over": -125,
+            "under": -105
           }
         },
         "Cade Cunningham": {
@@ -821,12 +828,12 @@
         "Max Strus": {
           "line": 15.5,
           "FD": {
-            "over": -114,
-            "under": -114
+            "over": -110,
+            "under": -120
           },
           "MGM": {
-            "over": -115,
-            "under": -115
+            "over": -110,
+            "under": -118
           }
         },
         "Duncan Robinson": {
@@ -836,15 +843,15 @@
             "under": -102
           },
           "MGM": {
-            "over": -110,
-            "under": -120
+            "over": -105,
+            "under": -125
           }
         },
         "Ausar Thompson": {
           "line": 18.5,
           "FD": {
-            "over": -102,
-            "under": -130
+            "over": -104,
+            "under": -128
           },
           "MGM": {
             "over": -110,
@@ -854,8 +861,8 @@
         "Caris LeVert": {
           "line": 11.5,
           "FD": {
-            "over": -112,
-            "under": -118
+            "over": -114,
+            "under": -114
           }
         },
         "Sam Merrill": {
@@ -868,15 +875,15 @@
         "Dean Wade": {
           "line": 7.5,
           "MGM": {
-            "over": -135,
+            "over": -130,
             "under": 100
           }
         },
         "Dennis Schroder": {
           "line": 10.5,
           "MGM": {
-            "over": -120,
-            "under": -110
+            "over": -125,
+            "under": -105
           }
         }
       },
@@ -895,8 +902,8 @@
         "Daniss Jenkins": {
           "line": 2.5,
           "FD": {
-            "over": 108,
-            "under": -144
+            "over": 110,
+            "under": -146
           }
         },
         "Jarrett Allen": {
@@ -947,12 +954,12 @@
         "Jalen Duren": {
           "line": 9.5,
           "FD": {
-            "over": -136,
-            "under": 104
+            "over": -132,
+            "under": 100
           },
           "CZS": {
-            "over": 101,
-            "under": -134
+            "over": 105,
+            "under": -139
           },
           "MGM": {
             "over": 110,
@@ -1007,7 +1014,7 @@
         "Max Strus": {
           "line": 4.5,
           "FD": {
-            "over": 116,
+            "over": 118,
             "under": -158
           },
           "CZS": {
@@ -1096,6 +1103,10 @@
           "FD": {
             "over": 136,
             "under": -182
+          },
+          "CZS": {
+            "over": 136,
+            "under": -182
           }
         },
         "Donovan Mitchell": {
@@ -1131,8 +1142,8 @@
         "Evan Mobley": {
           "line": 1.5,
           "FD": {
-            "over": 178,
-            "under": -245
+            "over": 174,
+            "under": -240
           },
           "CZS": {
             "over": 171,
@@ -1168,8 +1179,8 @@
         "Caris LeVert": {
           "line": 1.5,
           "FD": {
-            "over": 194,
-            "under": -270
+            "over": 188,
+            "under": -260
           }
         },
         "James Harden": {
@@ -1179,8 +1190,8 @@
             "under": -128
           },
           "CZS": {
-            "over": 105,
-            "under": -139
+            "over": 102,
+            "under": -136
           },
           "MGM": {
             "over": 100,
