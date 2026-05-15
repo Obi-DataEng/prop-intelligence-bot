@@ -1,496 +1,83 @@
 {
-  "laser_picks": [
+  "top_picks": [
     {
       "rank": 1,
-      "player_name": "Elly De La Cruz",
-      "team": "CIN",
-      "opponent": "CLE",
-      "game": "CIN @ CLE",
-      "game_time": "11:10 PM",
-      "confidence_tier": "Elite",
-      "recent_max_ev": "115.9 mph on 5/12",
-      "avg_exit_velo": "94.8 mph",
-      "barrel_rate": "14.8%",
-      "hard_hit_rate": "64.8%",
-      "pitcher_hard_hit_allowed": "39.5%",
-      "park_factor_hr": 1.03,
-      "key_factors": [
-        "Recent 115.9 mph exit velo",
-        "High hard-hit rate vs RHP Tanner Bibee",
-        "Elite barrel potential in warm 86\u00b0F conditions"
-      ],
-      "reasoning": "De La Cruz just recorded 115.9 mph exit velo on 5/12 and maintains elite hard-hit rates. Facing Bibee who allows 39.5% hard contact, and 86\u00b0F conditions at Great American Ball Park favor fly balls."
-    },
-    {
-      "rank": 2,
-      "player_name": "Kyle Schwarber",
-      "team": "PHI",
-      "opponent": "PIT",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
-      "confidence_tier": "High",
-      "recent_max_ev": "113.2 mph on 5/12",
-      "avg_exit_velo": "89.3 mph",
-      "barrel_rate": "22.2%",
-      "hard_hit_rate": "37.8%",
-      "pitcher_hard_hit_allowed": "39.5%",
-      "park_factor_hr": 1.03,
-      "key_factors": [
-        "Recent 113.2 mph barrel",
-        "22.2% barrel rate vs RHP Braxton Ashcraft",
-        "Elevated park conditions favor power"
-      ],
-      "reasoning": "Schwarber recorded 113.2 mph exit velo recently and owns 22.2% barrel rate. Ashcraft allows 39.5% hard contact and 72\u00b0F conditions suit left-handed pull hitters."
-    }
-  ],
-  "hr_picks": [
-    {
-      "rank": 1,
-      "player_name": "Kyle Schwarber",
-      "team": "PHI",
-      "opponent": "PIT",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "290",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 82,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "Recent 113.2 mph exit velo",
-        "22.2% barrel rate",
-        "Elite pull-air rate vs RHP"
-      ],
-      "reasoning": "Schwarber shows elite power metrics with recent 113.2 mph ev and 22.2% barrel rate. Ashcraft gives up 23.1% HR/FB rate and Schwarber's 21.8% pull-air rate creates optimal conditions."
-    },
-    {
-      "rank": 2,
-      "player_name": "Brandon Lowe",
-      "team": "PIT",
-      "opponent": "PHI",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "390",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 76,
-      "confidence_tier": "High",
-      "key_factors": [
-        "6 HR in 66 PA",
-        "42.9% HR/FB rate",
-        "Elite ISO at 0.386"
-      ],
-      "reasoning": "Lowe has 6 HRs in just 66 PA with elite 42.9% HR/FB and 0.386 ISO. Against Nola's 23.1% HR/FB rate, Lowe's pull rate (37.8%) and barrel rate (22.2%) give him plus-plus upside."
-    },
-    {
-      "rank": 3,
-      "player_name": "Corbin Carroll",
-      "team": "ARI",
-      "opponent": "COL",
-      "game": "ARI @ COL",
-      "game_time": "12:40 AM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "330",
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "confidence_score": 71,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Hot hitter at season start",
-        "Coors Field HR factor 1.39",
-        "91\u00b0F game-time temperature"
-      ],
-      "reasoning": "Carroll faces RHP Kyle Freeland at Coors Field with 1.39 HR factor in 91\u00b0F heat. Carroll's speed/athleticism creates barrel opportunities, and Freeland allows 24.8% BB rate."
-    }
-  ],
-  "hits_picks": [
-    {
-      "rank": 1,
-      "player_name": "Brandon Marsh",
-      "team": "PHI",
-      "opponent": "PIT",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
+      "category": "Game ML",
+      "player_name": "Los Angeles Dodgers",
+      "pick_type": "team",
+      "game": "Los Angeles Dodgers @ Los Angeles Angels",
+      "game_time": "9:38 PM",
       "best_book": "MGM",
-      "fd_odds": null,
+      "best_odds": "-220",
+      "fd_odds": "-230",
       "mgm_odds": "-220",
-      "czs_odds": null,
+      "czs_odds": "-220",
       "scr_odds": null,
-      "fd_line": "0.5",
-      "over_under_pick": "over",
-      "confidence_score": 79,
+      "fd_line": null,
+      "over_under_pick": null,
+      "confidence_score": 85,
       "confidence_tier": "High",
       "key_factors": [
-        "Elite contact rate (94.5%)",
-        "vs RHP with 65.2% strikes",
-        "Ballpark neutral"
+        "Dodgers massive talent advantage vs struggling Angels",
+        "Dodgers favored -220 to -230 across all books showing consensus",
+        "Angels in disastrous 2026 season with organizational dysfunction",
+        "Dodgers elite pitching staff vs weak Angels lineup",
+        "Best odds at MGM (-220) within acceptable juice range"
       ],
-      "reasoning": "Marsh shows 94.5% contact rate and faces Ashcraft who generates just 65.2% strikes. Marsh's consistency in contact and 4.6 PA/G rate vs RHP make over extremely playable."
+      "reasoning": "The Dodgers are elite contenders facing a completely overmatched Angels team in freefall. While the -220 odds carry juice, this represents one of the most lopsided matchups on the slate with multiple converging edges: talent disparity, recent form, and organizational momentum. MGM's -220 offers the best available line.",
+      "line_shop_note": "FD at -230 is steeper; MGM at -220 is best value"
     },
     {
       "rank": 2,
-      "player_name": "Gunnar Henderson",
-      "team": "BAL",
-      "opponent": "WSH",
-      "game": "BAL @ WSH",
-      "game_time": "10:45 PM",
-      "best_book": "MGM",
-      "fd_odds": null,
-      "mgm_odds": "165",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 74,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Elite batting average",
-        "High PA volume",
-        "Zack Littell 8.25 ERA"
-      ],
-      "reasoning": "Henderson's recent form and high PA volume make 1.5+ hits likely. Littell's 8.25 ERA and 92 walks in 168 IP create favorable offensive environment."
-    },
-    {
-      "rank": 3,
-      "player_name": "Jose Altuve",
-      "team": "HOU",
-      "opponent": "TEX",
-      "game": "TEX @ HOU",
-      "game_time": "12:10 AM",
-      "best_book": "MGM",
-      "fd_odds": null,
-      "mgm_odds": "-210",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "0.5",
-      "over_under_pick": "over",
-      "confidence_score": 70,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Career hitter vs RHP",
-        "Jack Leiter 4.34 ERA",
-        "Home field advantage"
-      ],
-      "reasoning": "Altuve faces Leiter's 4.34 ERA at home where he maintains elite contact. Leiter allows 42.4% FB rate and 30.5% pull rate creates opportunities for Altuve's spray hitting."
-    }
-  ],
-  "total_bases_picks": [
-    {
-      "rank": 1,
-      "player_name": "Elly De La Cruz",
-      "team": "CIN",
-      "opponent": "CLE",
-      "game": "CIN @ CLE",
-      "game_time": "11:10 PM",
-      "best_book": "MGM",
-      "fd_odds": null,
-      "mgm_odds": "115",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 81,
-      "confidence_tier": "Elite",
-      "key_factors": [
-        "Recent 113.4 mph double",
-        "27.8% recent WHIFF rate allowed",
-        "Elite hard-hit potential"
-      ],
-      "reasoning": "De La Cruz's 113.4 mph exit velo on 5/14 double shows power potential for 1.5+ TB. Against Bibee's 29.3% WHIFF rate, De La Cruz's elite barrel control creates consistent extra-base opportunities."
-    },
-    {
-      "rank": 2,
-      "player_name": "Brandon Lowe",
-      "team": "PIT",
-      "opponent": "PHI",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "126",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 77,
-      "confidence_tier": "High",
-      "key_factors": [
-        "0.684 SLG",
-        "42.9% HR/FB",
-        "0.386 ISO elite"
-      ],
-      "reasoning": "Lowe's 0.684 SLG and 0.386 ISO vs Nola's 0.473 SLG allowed creates significant TB upside. His 42.9% HR/FB rate means extra-base hits come frequently."
-    },
-    {
-      "rank": 3,
-      "player_name": "Kyle Tucker",
-      "team": "HOU",
-      "opponent": "TEX",
-      "game": "TEX @ HOU",
-      "game_time": "12:10 AM",
-      "best_book": "CZS",
-      "fd_odds": null,
-      "mgm_odds": null,
-      "czs_odds": "123",
-      "scr_odds": null,
-      "fd_line": "1.5",
-      "over_under_pick": "over",
-      "confidence_score": 73,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Elite power hitter",
-        "Leiter FB allowance 42.4%",
-        "Warm 87\u00b0F conditions"
-      ],
-      "reasoning": "Tucker faces Leiter's elevated FB rate at home in 87\u00b0F heat. Tucker's consistent power makes 1.5+ TB a high-probability play."
-    }
-  ],
-  "strikeout_picks": [
-    {
-      "rank": 1,
-      "pick_type": "pitcher",
-      "player_name": "Aaron Nola",
-      "team": "PHI",
-      "opponent": "PIT",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
-      "best_book": "FD",
-      "fd_odds": "100",
-      "mgm_odds": "-105",
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "5.5",
-      "over_under_pick": "over",
-      "confidence_score": 78,
-      "confidence_tier": "High",
-      "key_factors": [
-        "9.43 K/9 career",
-        "24% K rate overall",
-        "Pirates 24.1% K rate vs RHP"
-      ],
-      "reasoning": "Nola's 9.43 K/9 and 24% K rate face Pirates' defense-heavy lineup with 24.1% K rate. Over 5.5 Ks is highly achievable in neutral park."
-    },
-    {
-      "rank": 2,
-      "pick_type": "pitcher",
-      "player_name": "Tanner Bibee",
-      "team": "CLE",
-      "opponent": "CIN",
-      "game": "CIN @ CLE",
-      "game_time": "11:10 PM",
-      "best_book": "FD",
-      "fd_odds": "-152",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": "6.5",
-      "over_under_pick": "over",
-      "confidence_score": 76,
-      "confidence_tier": "High",
-      "key_factors": [
-        "8.93 K/9",
-        "29.3% WHIFF rate",
-        "Reds 33.3% K rate vs RHP"
-      ],
-      "reasoning": "Bibee's 8.93 K/9 and 29.3% WHIFF rate face Reds' strike-happy 33.3% K rate. Over 6.5 Ks highly likely in neutral conditions."
-    },
-    {
-      "rank": 3,
+      "category": "Hits",
+      "player_name": "Julio Rodriguez",
       "pick_type": "batter",
-      "player_name": "Kyle Schwarber",
-      "team": "PHI",
-      "opponent": "PIT",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
+      "game": "San Diego Padres @ Seattle Mariners",
+      "game_time": "10:10 PM",
       "best_book": "MGM",
+      "best_odds": "-235",
       "fd_odds": null,
-      "mgm_odds": "105",
+      "mgm_odds": "-235",
       "czs_odds": null,
       "scr_odds": null,
-      "fd_line": "1.5",
+      "fd_line": "0.5",
       "over_under_pick": "over",
-      "confidence_score": 71,
+      "confidence_score": 82,
       "confidence_tier": "High",
       "key_factors": [
-        "Ashcraft 26.3% WHIFF rate",
-        "1.5+ K's likely",
-        "Schwarber aggressive hitter"
+        "Rodriguez is elite contact hitter with .300+ career avg trajectory",
+        "Faces vulnerable Padres pitcher Randy Vasquez (4.5 K line weak)",
+        "Mariners home field advantage at T-Mobile Park",
+        "Recent exit velo data shows Rodriguez in elite barrel zone",
+        "MGM -235 reflects sharp money confidence despite heavy juice"
       ],
-      "reasoning": "Schwarber faces Ashcraft's 26.3% WHIFF rate and will likely strike out 1.5+ times given swing aggression and whiff susceptibility."
+      "reasoning": "Julio Rodriguez Over 0.5 Hits vs weak Padres pitcher is a high-conviction play. Rodriguez is an elite hitter with exceptional contact rates, facing a vulnerable starter. The -235 odds at MGM indicate professional consensus on this outcome, and while the juice is significant, the edge justifies the risk given Rodriguez's consistent production and favorable matchup.",
+      "line_shop_note": "MGM only book offering this prop at -235; heavy juice but professional consensus"
     }
   ],
-  "game_picks": [
-    {
-      "rank": 1,
-      "prop_category": "ML",
-      "game": "PHI @ PIT",
-      "game_time": "10:40 PM",
-      "pick": "Philadelphia Phillies",
-      "best_book": "MGM",
-      "fd_odds": "110",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": null,
-      "over_under_pick": null,
-      "confidence_score": 75,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Aaron Nola 9.43 K/9",
-        "Braxton Ashcraft 4.27 ERA",
-        "Phillies offense elite"
-      ],
-      "reasoning": "Nola's elite K rate and Ashcraft's 4.27 ERA favor Phillies' better lineup. Philadelphia's power hitters (Schwarber, Harper) should generate runs vs Pirates rotation."
-    },
-    {
-      "rank": 2,
-      "prop_category": "OU",
-      "game": "ARI @ COL",
-      "game_time": "12:40 AM",
-      "pick": "Over 11.5",
-      "best_book": "CZS",
-      "fd_odds": "-115",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": null,
-      "over_under_pick": null,
-      "confidence_score": 78,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Coors Field 1.39 HR factor",
-        "91\u00b0F temperature",
-        "Freeland 5.47 ERA"
-      ],
-      "reasoning": "Coors Field elevates run scoring with 1.39 HR factor in 91\u00b0F heat. Freeland's 5.47 ERA combined with Rockies' home-field advantage creates offensive environment favoring O11.5."
-    },
-    {
-      "rank": 3,
-      "prop_category": "Spread",
-      "game": "BAL @ WSH",
-      "game_time": "10:45 PM",
-      "pick": "Baltimore Orioles -1.5",
-      "best_book": "MGM",
-      "fd_odds": "115",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": null,
-      "over_under_pick": null,
-      "confidence_score": 72,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Zack Littell 8.25 ERA",
-        "Orioles elite rotation",
-        "Nationals weak offense"
-      ],
-      "reasoning": "Littell's 8.25 ERA vs Orioles' strong pitching rotation creates favorable spread. Baltimore's -145 ML underlies clean -1.5 spread value in competitive matchup."
-    },
-    {
-      "rank": 4,
-      "prop_category": "ML",
-      "game": "TEX @ HOU",
-      "game_time": "12:10 AM",
-      "pick": "Houston Astros",
-      "best_book": "MGM",
-      "fd_odds": "-115",
-      "mgm_odds": null,
-      "czs_odds": null,
-      "scr_odds": null,
-      "fd_line": null,
-      "over_under_pick": null,
-      "confidence_score": 70,
-      "confidence_tier": "High",
-      "key_factors": [
-        "Yordan Alvarez elite",
-        "Home field advantage",
-        "Jack Leiter 4.34 ERA"
-      ],
-      "reasoning": "Astros' elite bats (Alvarez, Altuve) face Leiter's 4.34 ERA at home in 87\u00b0F conditions. Houston's consistent offensive production favors moneyline in neutral/slight edge spot."
-    }
-  ],
-  "best_parlay": {
-    "legs": [
-      "Kyle Schwarber HR (PHI @ PIT) +290",
-      "Over 11.5 Runs (ARI @ COL) -115",
-      "Aaron Nola Over 5.5 K (PHI @ PIT) +100"
-    ],
-    "reasoning": "Schwarber's recent 113.2 mph EV and barrel rate pair with Coors' elevation/heat for scoring over, while Nola's elite strikeout rate provides stability. All three legs feature elite pitcher/hitter splits.",
-    "estimated_odds": "+625"
-  },
-  "daily_summary": "May 15 features elite power matchups at Coors Field (91\u00b0F, 1.39 HR factor) and strong starter vs. weak offense contrasts (Littell 8.25 ERA, Ashcraft vs. Phillies). De La Cruz shows recent 115.9 mph exit velo against favorable Cleveland matchup, while Schwarber's 113.2 mph barrel and 22.2% BR rate create elite HR probability.",
-  "best_bet": "Kyle Schwarber HR (+290 CZS) - Recent 113.2 mph EV, 22.2% barrel rate vs. Ashcraft's 23.1% HR/FB allowed.",
+  "daily_summary": "Today's slate features mostly balanced games with limited elite edges. The two highest-conviction plays are the Dodgers' dominant matchup against the Angels and Julio Rodriguez's elite contact ability vs a weak Padres pitcher\u2014both represent clear talent/matchup advantages with sharp money backing them.",
+  "best_bet": "Los Angeles Dodgers ML at -220 (MGM) vs Angels represents the clearest path to profit with elite team talent facing organizational chaos.",
   "nrfi_picks": [
     {
       "rank": 1,
       "pick": "NRFI",
-      "game": "Chicago White Sox @ Chicago Cubs",
-      "away_pitcher": "Sean Burke",
-      "home_pitcher": "Edward Cabrera",
-      "nrfi_score": 78.4,
-      "confidence_tier": "Elite",
-      "away_team_nrfi_pct": "49%",
-      "home_team_nrfi_pct": "68%",
-      "away_pitcher_nrfi_pct": "83%",
-      "home_pitcher_nrfi_pct": "100%",
-      "away_pitcher_streak": "5 NRFI",
-      "home_pitcher_streak": "8 NRFI",
-      "key_factors": [
-        "Cabrera perfect 8-0 with 8-game NRFI streak",
-        "Cubs batting 84% NRFI with 5-game streak",
-        "Burke 83% NRFI with active 5-game streak"
-      ],
-      "reasoning": "Edward Cabrera is a perfect 8-0 with an 8-game NRFI streak, anchoring an elite Cubs team batting 84% NRFI with 5 consecutive no-run first innings. Sean Burke's 83% NRFI rate and 5-game streak support continued scoreless first-inning action from both sides."
-    },
-    {
-      "rank": 2,
-      "pick": "NRFI",
-      "game": "San Diego Padres @ Seattle Mariners",
-      "away_pitcher": "Randy Vasquez",
-      "home_pitcher": "Emerson Hancock",
+      "game": "Chicago Cubs @ Chicago White Sox",
+      "away_pitcher": "Edward Cabrera",
+      "home_pitcher": "Sean Burke",
       "nrfi_score": 71.2,
       "confidence_tier": "High",
-      "away_team_nrfi_pct": "72%",
-      "home_team_nrfi_pct": "40%",
-      "away_pitcher_nrfi_pct": "88%",
-      "home_pitcher_nrfi_pct": "75%",
-      "away_pitcher_streak": "1 NRFI",
-      "home_pitcher_streak": "1 YRFI",
+      "away_team_nrfi_pct": "68%",
+      "home_team_nrfi_pct": "49%",
+      "away_pitcher_nrfi_pct": "100%",
+      "home_pitcher_nrfi_pct": "83%",
+      "away_pitcher_streak": "8 NRFI",
+      "home_pitcher_streak": "5 NRFI",
       "key_factors": [
-        "Padres elite 72% NRFI, 86% batting NRFI",
-        "Vasquez 88% NRFI with strong recent form",
-        "Hancock 75% NRFI with solid ground control"
+        "Edward Cabrera perfect 8-0 (100%) NRFI record with 8-game active NRFI streak",
+        "Cubs batting 84% NRFI with 5-game streak; both pitchers have pristine first-inning track records",
+        "Sean Burke strong 83% NRFI%, Cubs L-10 record 7-3 indicates consistent early-game discipline"
       ],
-      "reasoning": "San Diego's league-leading 72% NRFI record and 86% batting NRFI percentage dominate this matchup. Randy Vasquez's 88% NRFI rate and 7-1 record combine with Hancock's 75% efficiency to create a favorable environment for a scoreless first inning."
-    },
-    {
-      "rank": 3,
-      "pick": "NRFI",
-      "game": "Kansas City Royals @ St. Louis Cardinals",
-      "away_pitcher": "Michael Wacha",
-      "home_pitcher": "Dustin May",
-      "nrfi_score": 63.5,
-      "confidence_tier": "High",
-      "away_team_nrfi_pct": "61%",
-      "home_team_nrfi_pct": "55%",
-      "away_pitcher_nrfi_pct": "88%",
-      "home_pitcher_nrfi_pct": "57%",
-      "away_pitcher_streak": "3 NRFI",
-      "home_pitcher_streak": "2 NRFI",
-      "key_factors": [
-        "Wacha 88% NRFI with 3-game active streak",
-        "Royals 80% batting NRFI, Cardinals 71%",
-        "Both teams top-10 NRFI records with recent momentum"
-      ],
-      "reasoning": "Michael Wacha's elite 88% NRFI rate with a 3-game active streak anchors Kansas City's 61% team NRFI and league-leading 80% batting NRFI. St. Louis's 55% NRFI and 71% batting NRFI with Dustin May's 2-game NRFI streak create compatible conditions for a scoreless opening frame."
+      "reasoning": "Edward Cabrera's perfect 8-0 NRFI record with an active 8-game NRFI streak is elite. The Cubs' 84% batting NRFI (37-7) combined with Sean Burke's 83% mark creates a strong matchup overlay. Both teams show consistent early-game patterns that favor scoreless first innings."
     }
   ]
 }
