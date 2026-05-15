@@ -517,8 +517,9 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
 # ─────────────────────────────────────────────
 
 def grade_nrfi_picks(nrfi_picks, pick_date, graded_date):
+    # FIX 1: guard against empty picks — all keys defined, no undefined vars
     if not nrfi_picks:
-        return {'wins': wins, 'losses': losses, 'pushes': 0, 'pending': pending, 'profit': 0}
+        return {'wins': 0, 'losses': 0, 'pushes': 0, 'pending': 0, 'profit': 0}
 
     print(f"\n🎰 Grading NRFI picks for {pick_date}...")
 
@@ -562,7 +563,8 @@ def grade_nrfi_picks(nrfi_picks, pick_date, graded_date):
         print(f"   {result.upper():7} — {bet} {game} {runs_str}")
 
     print(f"   📊 NRFI: {wins}W - {losses}L - {pending} pending")
-    return {'wins': wins, 'losses': losses, 'pending': pending, 'profit': 0}
+    # FIX 2: include 'pushes' key in return dict
+    return {'wins': wins, 'losses': losses, 'pushes': 0, 'pending': pending, 'profit': 0}
 
 # ─────────────────────────────────────────────
 # NBA GRADER
@@ -714,7 +716,9 @@ def run_grader():
     print(f"\n📊 RESULTS FOR {yesterday}")
     print(f"{'='*50}")
     for cat, stats in graded_summary.items():
-        w, l, p = stats['wins'], stats['losses'], stats['pushes']
+        w = stats.get('wins', 0)
+        l = stats.get('losses', 0)
+        p = stats.get('pushes', 0)
         pend = stats.get('pending', 0)
         total = w + l + p
         rate = f"{w/total*100:.0f}%" if total > 0 else "—"
