@@ -93,7 +93,8 @@ async def run_all():
             output_file = f"logs/{scrape_date}_picks.json"
             with open(output_file, 'w') as f:
                 json.dump(picks, f, indent=2)
-            print(f"✅ Step 3 complete — picks saved\n")
+            pick_count = len(picks.get('top_picks', []))
+            print(f"✅ Step 3 complete — {pick_count} picks saved\n")
         else:
             print(f"❌ No picks generated\n")
 
@@ -123,7 +124,7 @@ async def run_all():
                 with open(output_file, 'w') as f:
                     json.dump(picks, f, indent=2)
 
-            print(f"✅ Step 3.2 complete — {len(nrfi_picks) if nrfi_picks else 0} NRFI picks\n")
+            print(f"✅ Step 3.2 complete — {len(nrfi_picks) if nrfi_picks else 0} NRFI pick(s)\n")
         else:
             print(f"⚠️ No NRFI data available, skipping\n")
 
@@ -206,7 +207,8 @@ async def run_all():
     try:
         from nba_analyzer import run_nba_analyzer
         nba_picks = run_nba_analyzer(scrape_date, nba_odds)
-        print(f"✅ Step 3.8 complete\n")
+        nba_count = len(nba_picks.get('top_picks', [])) if nba_picks else 0
+        print(f"✅ Step 3.8 complete — {nba_count} NBA pick(s)\n")
     except Exception as e:
         print(f"⚠️ NBA analyzer failed (skipping): {e}\n")
 

@@ -11,21 +11,27 @@ load_dotenv()
 TIER_COLORS = {'Elite': '#00ff88', 'High': '#ffaa00', 'Medium': '#aaaaaa'}
 
 # ─────────────────────────────────────────────
-# MLB PICK ROW
+# MLB TOP PICKS SECTION
 # ─────────────────────────────────────────────
 
-def format_pick_row(pick, show_pick_type=False):
-    player = pick.get('player_name') or pick.get('pick', 'Game Pick')
+def format_top_pick_row(pick):
+    player = pick.get('player_name', 'N/A')
     rank = pick.get('rank', '')
     tier = pick.get('confidence_tier', 'Medium')
     color = TIER_COLORS.get(tier, '#aaaaaa')
+    cat = pick.get('category', '')
     best_book = pick.get('best_book', '')
-    fd_odds = pick.get('fd_odds'); mgm_odds = pick.get('mgm_odds')
-    czs_odds = pick.get('czs_odds'); scr_odds = pick.get('scr_odds')
-    line = pick.get('fd_line'); over_under = pick.get('over_under_pick', '')
-    shop = pick.get('line_shop_note'); game = pick.get('game', '')
-    game_time = pick.get('game_time', ''); pick_type = pick.get('pick_type', '')
-    prop_cat = pick.get('prop_category', ''); reasoning = pick.get('reasoning', '')
+    best_odds = pick.get('best_odds', '')
+    fd_odds = pick.get('fd_odds')
+    mgm_odds = pick.get('mgm_odds')
+    czs_odds = pick.get('czs_odds')
+    scr_odds = pick.get('scr_odds')
+    line = pick.get('fd_line')
+    over_under = pick.get('over_under_pick', '')
+    shop = pick.get('line_shop_note')
+    game = pick.get('game', '')
+    game_time = pick.get('game_time', '')
+    reasoning = pick.get('reasoning', '')
     factors = pick.get('key_factors', [])
 
     book_odds = []
@@ -35,58 +41,48 @@ def format_pick_row(pick, show_pick_type=False):
     if scr_odds and str(scr_odds) != 'None': book_odds.append(f"<span style='color:#ce93d8'>SCR:{scr_odds}</span>")
     odds_str = ' &nbsp;|&nbsp; '.join(book_odds) if book_odds else 'No odds'
 
-    if line and over_under: line_display = f"{over_under.upper()} {line}"
-    elif line: line_display = f"Line: {line}"
-    elif over_under: line_display = over_under.upper()
-    else: line_display = "To Hit"
+    if line and over_under:
+        line_display = f"{over_under.upper()} {line}"
+    elif line:
+        line_display = f"Line: {line}"
+    elif over_under:
+        line_display = over_under.upper()
+    else:
+        line_display = "To Hit"
 
-    type_label = f" <span style='color:#888;font-size:11px'>[{pick_type}]</span>" if show_pick_type and pick_type else ""
-    prop_label = f"{prop_cat} " if prop_cat else ""
     factors_html = ' &bull; '.join(factors[:3]) if factors else ''
     shop_html = f"<div style='background:#1a2a1a;border-left:3px solid #ffaa00;padding:6px 10px;margin:6px 0;font-size:12px;color:#ffaa00;'>💡 {shop}</div>" if shop else ""
 
-    return f"""<div style='background:#1a1a2e;border-left:4px solid {color};padding:14px;margin:8px 0;border-radius:6px;'>
-        <div style='display:flex;justify-content:space-between;align-items:center;'>
-            <div><span style='color:{color};font-weight:bold;font-size:15px;'>#{rank} {player}{type_label}</span>
-            <span style='color:#888;font-size:13px;margin-left:8px;'>— {prop_label}{line_display}</span></div>
-            <span style='background:{color};color:#000;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:bold;'>{tier}</span>
+    return f"""<div style='background:#1a1a2e;border-left:4px solid {color};padding:16px;margin:10px 0;border-radius:8px;'>
+        <div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;'>
+            <div>
+                <span style='color:{color};font-weight:bold;font-size:17px;'>#{rank} {player}</span>
+                <span style='color:#888;font-size:13px;margin-left:10px;'>— {cat} | {line_display}</span>
+            </div>
+            <span style='background:{color};color:#000;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:bold;'>{tier}</span>
         </div>
         <div style='color:#888;font-size:12px;margin:4px 0;'>📅 {game} &nbsp;|&nbsp; {game_time}</div>
-        <div style='font-size:12px;margin:6px 0;'>📖 <strong style='color:{color}'>Best: {best_book}</strong> &nbsp;&nbsp;{odds_str}</div>
+        <div style='font-size:13px;margin:6px 0;'>📖 <strong style='color:{color}'>Best: {best_book} {best_odds}</strong> &nbsp;&nbsp;{odds_str}</div>
         {shop_html}
-        <div style='color:#ccc;font-size:13px;margin:8px 0;line-height:1.5;'>{reasoning}</div>
+        <div style='color:#ccc;font-size:13px;margin:10px 0;line-height:1.6;'>{reasoning}</div>
         <div style='color:#666;font-size:11px;margin-top:6px;'>🔑 {factors_html}</div>
     </div>"""
 
-def format_section(title, emoji, picks, show_pick_type=False):
+def format_top_picks_section(picks):
     if not picks:
-        return f"<div style='margin:20px 0;'><h2 style='color:#fff;border-bottom:2px solid #333;padding-bottom:8px;margin-bottom:12px;'>{emoji} {title}</h2><p style='color:#555;font-style:italic;'>No picks available today</p></div>"
-    picks_html = ''.join([format_pick_row(p, show_pick_type) for p in picks])
-    return f"<div style='margin:20px 0;'><h2 style='color:#fff;border-bottom:2px solid #333;padding-bottom:8px;margin-bottom:12px;'>{emoji} {title} <span style='color:#555;font-size:14px;font-weight:normal;'>({len(picks)} picks)</span></h2>{picks_html}</div>"
+        return "<div style='margin:20px 0;'><p style='color:#555;font-style:italic;'>No top picks available today</p></div>"
+    picks_html = ''.join([format_top_pick_row(p) for p in picks])
+    return f"""<div style='margin:20px 0;'>
+        <h2 style='color:#00ff88;border-bottom:2px solid #00ff88;padding-bottom:8px;margin-bottom:12px;'>
+            ⭐ TODAY'S TOP MLB PICKS
+            <span style='color:#555;font-size:14px;font-weight:normal;'> ({len(picks)} picks — odds -130 to +125 only)</span>
+        </h2>
+        {picks_html}
+    </div>"""
 
-def format_laser_section(picks):
-    if not picks: return ""
-    picks_html = ""
-    for pick in picks:
-        tier = pick.get('confidence_tier', 'Medium')
-        color = TIER_COLORS.get(tier, '#aaaaaa')
-        picks_html += f"""<div style='background:#1a1a2e;border-left:4px solid {color};padding:14px;margin:8px 0;border-radius:6px;'>
-            <div style='display:flex;justify-content:space-between;align-items:center;'>
-                <div><span style='color:{color};font-weight:bold;font-size:15px;'>#{pick.get('rank')} {pick.get('player_name')}</span>
-                <span style='color:#888;font-size:12px;margin-left:8px;'>{pick.get('team')} vs {pick.get('opponent')}</span></div>
-                <span style='background:{color};color:#000;padding:2px 8px;border-radius:12px;font-size:11px;font-weight:bold;'>{tier}</span>
-            </div>
-            <div style='color:#888;font-size:12px;margin:6px 0;'>📅 {pick.get('game')} | {pick.get('game_time')}</div>
-            <div style='display:flex;gap:16px;margin:8px 0;flex-wrap:wrap;'>
-                <span style='color:#4fc3f7;font-size:12px;'>🔥 Max EV: {pick.get('recent_max_ev')}</span>
-                <span style='color:#ce93d8;font-size:12px;'>📊 Avg: {pick.get('avg_exit_velo')}</span>
-                <span style='color:#ffaa00;font-size:12px;'>💥 Barrel%: {pick.get('barrel_rate')}</span>
-                <span style='color:#00ff88;font-size:12px;'>🎯 HardHit%: {pick.get('hard_hit_rate')}</span>
-            </div>
-            <div style='color:#ccc;font-size:13px;margin:8px 0;line-height:1.5;'>{pick.get('reasoning','')}</div>
-            <div style='color:#666;font-size:11px;margin-top:6px;'>🔑 {' • '.join(pick.get('key_factors',[])[:3])}</div>
-        </div>"""
-    return f"<div style='margin:20px 0;'><h2 style='color:#fff;border-bottom:2px solid #333;padding-bottom:8px;margin-bottom:12px;'>⚡ LASER CANDIDATES (110+ MPH) <span style='color:#555;font-size:13px;font-weight:normal;'>— Check FanDuel for odds</span></h2>{picks_html}</div>"
+# ─────────────────────────────────────────────
+# NRFI SECTION
+# ─────────────────────────────────────────────
 
 def format_nrfi_section(nrfi_picks):
     if not nrfi_picks: return ""
@@ -117,17 +113,81 @@ def format_nrfi_section(nrfi_picks):
             <div style='color:#555;font-size:11px;margin-top:4px;'>🔑 {' • '.join(pick.get('key_factors',[])[:3])}</div>
             <div style='color:#444;font-size:11px;margin-top:6px;font-style:italic;'>ℹ️ Check FanDuel / DraftKings for NRFI/YRFI lines</div>
         </div>"""
-    return f"<div style='margin:20px 0;'><h2 style='color:#fff;border-bottom:2px solid #9c27b0;padding-bottom:8px;margin-bottom:12px;'>🎰 NRFI / YRFI PICKS <span style='color:#555;font-size:13px;font-weight:normal;'>({len(nrfi_picks)} picks — check your book for lines)</span></h2>{picks_html}</div>"
+    return f"<div style='margin:20px 0;'><h2 style='color:#fff;border-bottom:2px solid #9c27b0;padding-bottom:8px;margin-bottom:12px;'>🎰 NRFI / YRFI PICK <span style='color:#555;font-size:13px;font-weight:normal;'>({len(nrfi_picks)} pick — check your book for lines)</span></h2>{picks_html}</div>"
 
-def format_parlay_section(parlay):
-    if not parlay or not parlay.get('legs'): return ""
-    legs_html = ''.join([f"<li style='margin:4px 0;color:#ccc;'>{leg}</li>" for leg in parlay.get('legs', [])])
-    return f"""<div style='background:#1a1a2e;border:2px solid #ffaa00;padding:16px;margin:20px 0;border-radius:8px;'>
-        <h2 style='color:#ffaa00;margin:0 0 12px 0;'>🎰 BEST PARLAY</h2>
-        <ul style='margin:0;padding-left:20px;'>{legs_html}</ul>
-        <div style='margin-top:10px;'><span style='color:#ffaa00;font-weight:bold;'>Est. Odds: {parlay.get('estimated_odds','N/A')}</span></div>
-        <div style='color:#aaa;font-size:13px;margin-top:8px;'>{parlay.get('reasoning','')}</div>
-    </div>"""
+# ─────────────────────────────────────────────
+# NBA SECTION
+# ─────────────────────────────────────────────
+
+def format_nba_section(nba_picks):
+    if not nba_picks: return ""
+
+    top_picks = nba_picks.get('top_picks', [])
+    slate_summary = nba_picks.get('slate_summary', '')
+    best_bet = nba_picks.get('best_bet', '')
+
+    html = f"""<div style='margin:20px 0;border-top:3px solid #ff6b35;padding-top:20px;'>
+        <h1 style='color:#ff6b35;margin:0 0 8px;font-size:24px;letter-spacing:2px;'>🏀 NBA PICKS</h1>
+        <p style='color:#888;font-size:13px;margin:0 0 16px;line-height:1.6;'>{slate_summary}</p>
+        <div style='background:#1a1a2e;padding:14px;border-radius:8px;border-left:4px solid #ff6b35;margin-bottom:20px;'>
+            <p style='color:#ff6b35;font-weight:bold;margin:0 0 6px;font-size:13px;'>⭐ NBA BEST BET OF THE DAY</p>
+            <p style='color:#fff;margin:0;font-size:14px;line-height:1.5;'>{best_bet}</p>
+        </div>
+        <h2 style='color:#ff6b35;border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:12px;font-size:16px;'>
+            ⭐ TODAY'S TOP NBA PICKS
+            <span style='color:#555;font-size:13px;font-weight:normal;'> ({len(top_picks)} picks — odds -130 to +125 only)</span>
+        </h2>"""
+
+    for pick in top_picks:
+        tier = pick.get('confidence_tier', 'Medium')
+        conf_color = TIER_COLORS.get(tier, '#aaaaaa')
+        player = pick.get('player_name', 'N/A')
+        cat = pick.get('category', '')
+        ou = pick.get('over_under', '')
+        line = pick.get('prop_line', '')
+        book = pick.get('best_book', '')
+        odds = pick.get('best_odds', '')
+        fd_odds = pick.get('fd_odds')
+        mgm_odds = pick.get('mgm_odds')
+        czs_odds = pick.get('czs_odds')
+        game = pick.get('game', '')
+        team = pick.get('team', '')
+        opp = pick.get('opponent', '')
+        season_avg = pick.get('season_avg', '')
+        l5_avg = pick.get('l5_avg', '')
+        hit_rate = pick.get('hit_rate_season', '')
+        def_rank = pick.get('def_rank_vs_pos', '')
+        reasoning = pick.get('reasoning', '')
+        factors = pick.get('key_factors', [])
+        shop = pick.get('line_shop_note')
+
+        book_odds = []
+        if fd_odds and str(fd_odds) != 'None': book_odds.append(f"<span style='color:#00ff88'>FD:{fd_odds}</span>")
+        if mgm_odds and str(mgm_odds) != 'None': book_odds.append(f"<span style='color:#ffaa00'>MGM:{mgm_odds}</span>")
+        if czs_odds and str(czs_odds) != 'None': book_odds.append(f"<span style='color:#4fc3f7'>CZS:{czs_odds}</span>")
+        odds_str = ' &nbsp;|&nbsp; '.join(book_odds) if book_odds else ''
+        shop_html = f"<div style='color:#ffaa00;font-size:11px;margin:4px 0;'>💡 {shop}</div>" if shop else ""
+        factors_html = ' &bull; '.join(factors[:3]) if factors else ''
+
+        html += f"""<div style='background:#1a1a2e;border-left:4px solid {conf_color};padding:14px;margin:8px 0;border-radius:6px;'>
+            <div style='display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;'>
+                <div>
+                    <span style='color:{conf_color};font-size:11px;font-weight:bold;'>[{tier}]</span>
+                    <span style='color:#fff;font-weight:bold;font-size:15px;'>&nbsp;{player}</span>
+                    <span style='color:#4fc3f7;font-size:13px;'>&nbsp;— {cat} | {ou} {line}</span>
+                </div>
+                <span style='color:{conf_color};font-size:14px;font-weight:bold;'>{book} {odds}</span>
+            </div>
+            <div style='color:#888;font-size:12px;margin:4px 0;'>📅 {game} &nbsp;|&nbsp; {team} vs {opp}</div>
+            <div style='color:#aaa;font-size:11px;margin:4px 0;'>Avg: {season_avg} &nbsp;|&nbsp; L5: {l5_avg} &nbsp;|&nbsp; Hit%: {hit_rate} &nbsp;|&nbsp; Def: {def_rank}</div>
+            <div style='font-size:12px;margin:4px 0;'>{odds_str}</div>
+            {shop_html}
+            <div style='color:#ccc;font-size:13px;margin:8px 0;line-height:1.5;'>{reasoning}</div>
+            <div style='color:#555;font-size:11px;'>🔑 {factors_html}</div>
+        </div>"""
+
+    html += "</div>"
+    return html
 
 # ─────────────────────────────────────────────
 # BREAKDOWN TABLE
@@ -165,10 +225,10 @@ def format_results_section(graded_summary, cumulative):
     total_profit = 0
     for cat, stats in graded_summary.items():
         emoji = next((v for k, v in category_emojis.items() if k in cat), '📌')
-        w, l, p = stats['wins'], stats['losses'], stats['pushes']
+        w = stats.get('wins', 0); l = stats.get('losses', 0); p = stats.get('pushes', 0)
         pend = stats.get('pending', 0); total = w + l + p
         rate = f"{w/total*100:.0f}%" if total > 0 else "—"
-        profit = stats['profit']; total_profit += profit
+        profit = stats.get('profit', 0); total_profit += profit
         color = '#00ff88' if profit >= 0 else '#ff4444'
         pending_str = f" ({pend} pending)" if pend > 0 else ""
         pl_cell = "<td style='padding:8px;text-align:right;color:#666;'>W/L only</td>" if 'NRFI' in cat else f"<td style='padding:8px;text-align:right;color:{color};font-weight:bold;'>${profit:+.2f}</td>"
@@ -178,47 +238,18 @@ def format_results_section(graded_summary, cumulative):
     daily_table = f"<table style='width:100%;border-collapse:collapse;'><thead><tr style='border-bottom:1px solid #333;'><th style='padding:8px;color:#888;text-align:left;font-size:12px;'>Category</th><th style='padding:8px;color:#888;text-align:center;font-size:12px;'>Record</th><th style='padding:8px;color:#888;text-align:center;font-size:12px;'>Win%</th><th style='padding:8px;color:#888;text-align:right;font-size:12px;'>P&L ($5 flat)</th></tr></thead><tbody>{rows_html}</tbody><tfoot><tr style='border-top:1px solid #333;'><td colspan='3' style='padding:8px;color:#fff;font-weight:bold;'>Daily Total</td><td style='padding:8px;text-align:right;color:{day_profit_color};font-weight:bold;font-size:16px;'>${total_profit:+.2f}</td></tr></tfoot></table>"
 
     cumul_html = ""
-    if cumulative.get('OVERALL'):
+    if cumulative and cumulative.get('OVERALL'):
         o = cumulative['OVERALL']
         roi_color = '#00ff88' if o['roi'] >= 0 else '#ff4444'
         pl_color = '#00ff88' if o['total_profit'] >= 0 else '#ff4444'
         cumul_html = f"<div style='background:#1a1a2e;padding:16px;border-radius:8px;border:1px solid #333;margin-top:16px;'><h3 style='color:#fff;margin:0 0 12px;font-size:14px;'>📈 OVERALL CUMULATIVE RECORD (All Time)</h3><div style='display:flex;gap:12px;flex-wrap:wrap;'><div style='text-align:center;flex:1;min-width:80px;'><div style='color:#4fc3f7;font-size:20px;font-weight:bold;'>{o['wins']}W-{o['losses']}L-{o['pushes']}P</div><div style='color:#666;font-size:11px;'>Record</div></div><div style='text-align:center;flex:1;min-width:80px;'><div style='color:#ffaa00;font-size:20px;font-weight:bold;'>{o['win_rate']}%</div><div style='color:#666;font-size:11px;'>Win Rate</div></div><div style='text-align:center;flex:1;min-width:80px;'><div style='color:{pl_color};font-size:20px;font-weight:bold;'>${o['total_profit']:+.2f}</div><div style='color:#666;font-size:11px;'>Total P&L</div></div><div style='text-align:center;flex:1;min-width:80px;'><div style='color:{roi_color};font-size:20px;font-weight:bold;'>{o['roi']:+.1f}%</div><div style='color:#666;font-size:11px;'>ROI</div></div></div></div>"
 
-    mlb_breakdown = format_category_breakdown_table(cumulative, 'MLB', '#00ff88')
+    mlb_breakdown = format_category_breakdown_table(cumulative or {}, 'MLB', '#00ff88')
     mlb_section = f"<div style='background:#111;padding:14px;border-radius:8px;border:1px solid #1e3a1e;margin-top:12px;'><h3 style='color:#00ff88;margin:0 0 8px;font-size:13px;'>⚾ MLB Breakdown (All Time)</h3>{mlb_breakdown}</div>" if mlb_breakdown else ""
-    nba_breakdown = format_category_breakdown_table(cumulative, 'NBA', '#ff6b35')
+    nba_breakdown = format_category_breakdown_table(cumulative or {}, 'NBA', '#ff6b35')
     nba_section = f"<div style='background:#111;padding:14px;border-radius:8px;border:1px solid #3a1e0e;margin-top:12px;'><h3 style='color:#ff6b35;margin:0 0 8px;font-size:13px;'>🏀 NBA Breakdown (All Time)</h3>{nba_breakdown}</div>" if nba_breakdown else ""
 
     return f"<div style='margin:20px 0;'><h2 style='color:#fff;border-bottom:2px solid #333;padding-bottom:8px;margin-bottom:12px;'>📊 YESTERDAY'S RESULTS</h2>{daily_table}{cumul_html}{mlb_section}{nba_section}</div>"
-
-# ─────────────────────────────────────────────
-# NBA SECTION
-# ─────────────────────────────────────────────
-
-def format_nba_section(nba_picks):
-    if not nba_picks: return ""
-    categories = [('points_picks','🏀 Points Props'),('rebounds_picks','💪 Rebounds Props'),('assists_picks','🎯 Assists Props'),('threes_picks','3️⃣ Threes Props'),('combo_picks','📊 Combo Props'),('game_picks','💰 Game Picks')]
-    html = f"<div style='margin:20px 0;border-top:3px solid #ff6b35;padding-top:20px;'><h1 style='color:#ff6b35;margin:0 0 8px;font-size:24px;letter-spacing:2px;'>🏀 NBA PICKS</h1><p style='color:#888;font-size:13px;margin:0 0 16px;line-height:1.6;'>{nba_picks.get('slate_summary','')}</p><div style='background:#1a1a2e;padding:14px;border-radius:8px;border-left:4px solid #ff6b35;margin-bottom:20px;'><p style='color:#ff6b35;font-weight:bold;margin:0 0 6px;font-size:13px;'>⭐ BEST BET OF THE DAY</p><p style='color:#fff;margin:0;font-size:14px;line-height:1.5;'>{nba_picks.get('best_bet','')}</p></div>"
-    for key, label in categories:
-        picks = nba_picks.get(key, [])
-        if not picks: continue
-        html += f"<div style='margin:16px 0;'><h2 style='color:#ff6b35;border-bottom:1px solid #333;padding-bottom:6px;margin-bottom:10px;font-size:16px;'>{label} <span style='color:#555;font-size:13px;font-weight:normal;'>({len(picks)} picks)</span></h2>"
-        for pick in picks:
-            confidence = pick.get('confidence', 'Medium')
-            conf_color = {'Elite':'#00ff88','High':'#ffaa00','Medium':'#aaaaaa'}.get(confidence, '#aaaaaa')
-            if key == 'game_picks':
-                html += f"<div style='background:#1a1a2e;border-left:4px solid {conf_color};padding:12px;margin:6px 0;border-radius:6px;'><div style='display:flex;justify-content:space-between;'><div><span style='color:{conf_color};font-size:11px;font-weight:bold;'>[{confidence}]</span><span style='color:#fff;font-weight:bold;font-size:14px;'>&nbsp;{pick.get('pick')} — {pick.get('pick_type')}</span></div><span style='color:#4fc3f7;font-size:13px;'>{pick.get('best_book')} {pick.get('line')}</span></div><div style='color:#888;font-size:12px;margin:4px 0;'>📅 {pick.get('game')}</div><div style='color:#ccc;font-size:12px;margin-top:6px;line-height:1.5;'>{pick.get('reasoning','')[:150]}</div></div>"
-            else:
-                ou = pick.get('over_under', 'OVER'); line = pick.get('prop_line', '')
-                prop_type = pick.get('prop_type', ''); label_extra = f" {prop_type}" if prop_type else ""
-                html += f"<div style='background:#1a1a2e;border-left:4px solid {conf_color};padding:12px;margin:6px 0;border-radius:6px;'><div style='display:flex;justify-content:space-between;align-items:center;'><div><span style='color:{conf_color};font-size:11px;font-weight:bold;'>[{confidence}]</span><span style='color:#fff;font-weight:bold;font-size:14px;'>&nbsp;{pick.get('player_name')}</span><span style='color:#4fc3f7;font-size:13px;'>&nbsp;{ou} {line}{label_extra}</span></div><span style='color:#4fc3f7;font-size:13px;'>{pick.get('best_book')} {pick.get('best_odds')}</span></div><div style='color:#888;font-size:12px;margin:4px 0;'>📅 {pick.get('team')} vs {pick.get('opponent')} &nbsp;|&nbsp; Avg: {pick.get('season_avg')} &nbsp;|&nbsp; L5: {pick.get('l5_avg')} &nbsp;|&nbsp; Hit%: {pick.get('hit_rate_season')} &nbsp;|&nbsp; Def: {pick.get('def_rank_vs_pos')}</div><div style='color:#ccc;font-size:12px;margin-top:6px;line-height:1.5;'>{pick.get('reasoning','')[:150]}</div></div>"
-        html += "</div>"
-    parlay = nba_picks.get('best_parlay', {})
-    if parlay:
-        legs_html = "".join([f"<li style='color:#ccc;margin:4px 0;'>{leg}</li>" for leg in parlay.get('legs', [])])
-        html += f"<div style='background:#1a1a2e;border:2px solid #ff6b35;padding:16px;margin:16px 0;border-radius:8px;'><h3 style='color:#ff6b35;margin:0 0 10px;'>🎰 NBA BEST PARLAY — Est. {parlay.get('estimated_odds')}</h3><ul style='margin:0;padding-left:20px;'>{legs_html}</ul><p style='color:#888;font-size:12px;margin:10px 0 0;'>{parlay.get('reasoning','')[:200]}</p></div>"
-    html += "</div>"
-    return html
 
 # ─────────────────────────────────────────────
 # ASSEMBLE EMAIL
@@ -228,40 +259,29 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None, cumulative=
     results_section = format_results_section(graded_summary, cumulative) if graded_summary else ""
     nba_section = format_nba_section(nba_picks) if nba_picks else ""
 
-    hr_picks = picks_data.get('hr_picks', [])
-    hits_picks = picks_data.get('hits_picks', [])
-    tb_picks = picks_data.get('total_bases_picks', [])
-    k_picks = picks_data.get('strikeout_picks', [])
-    game_picks = picks_data.get('game_picks', [])
-    laser_picks = picks_data.get('laser_picks', [])
+    top_picks = picks_data.get('top_picks', [])
     nrfi_picks = picks_data.get('nrfi_picks', [])
-    parlay = picks_data.get('best_parlay', {})
     summary = picks_data.get('daily_summary', '')
     best_bet = picks_data.get('best_bet', '')
 
-    mlb_total = len(hr_picks) + len(hits_picks) + len(tb_picks) + len(k_picks) + len(game_picks)
-    laser_count = len(laser_picks)
+    mlb_count = len(top_picks)
     nrfi_count = len(nrfi_picks)
-    nba_total = sum(len(nba_picks.get(k, [])) for k in ['points_picks','rebounds_picks','assists_picks','threes_picks','combo_picks','game_picks']) if nba_picks else 0
+    nba_count = len(nba_picks.get('top_picks', [])) if nba_picks else 0
 
     def tile(count, color, label):
         return f"<div style='background:#1a1a2e;padding:10px 16px;border-radius:6px;border-top:3px solid {color};text-align:center;'><div style='color:{color};font-size:20px;font-weight:bold;'>{count}</div><div style='color:#888;font-size:11px;'>{label}</div></div>"
 
     stats_html = f"""<div style='display:flex;gap:10px;margin:16px 0;flex-wrap:wrap;'>
-        {tile(len(hr_picks),'#00ff88','💣 HR')}
-        {tile(len(hits_picks),'#4fc3f7','🎯 Hits')}
-        {tile(len(tb_picks),'#ce93d8','📊 TB')}
-        {tile(len(k_picks),'#ff7043','🔥 K')}
-        {tile(len(game_picks),'#ffaa00','💰 Game')}
-        {tile(laser_count,'#4fc3f7','⚡ Lasers') if laser_count > 0 else ''}
+        {tile(mlb_count,'#00ff88','⚾ MLB Picks')}
         {tile(nrfi_count,'#9c27b0','🎰 NRFI') if nrfi_count > 0 else ''}
-        {tile(nba_total,'#ff6b35','🏀 NBA') if nba_total > 0 else ''}
+        {tile(nba_count,'#ff6b35','🏀 NBA Picks') if nba_count > 0 else ''}
     </div>"""
 
     return f"""<html><body style='background:#0d0d1a;color:#fff;font-family:Arial,sans-serif;padding:20px;max-width:680px;margin:0 auto;'>
         <div style='text-align:center;padding:24px 0 16px;border-bottom:2px solid #222;'>
             <h1 style='color:#00ff88;margin:0;font-size:28px;letter-spacing:2px;'>⚾🏀 MLB + NBA PICKS BOT</h1>
             <p style='color:#555;margin:6px 0 0;font-size:13px;'>{scrape_date} &nbsp;|&nbsp; FanDuel &bull; BetMGM &bull; Caesars &bull; theScore</p>
+            <p style='color:#888;margin:4px 0 0;font-size:12px;'>Quality over quantity — 2 best picks per sport, odds -130 to +125</p>
         </div>
         {stats_html}
         <div style='background:#1a2a1a;border:1px solid #00ff88;padding:16px;margin:16px 0;border-radius:8px;'>
@@ -271,20 +291,14 @@ def format_picks_email(picks_data, scrape_date, graded_summary=None, cumulative=
         <p style='color:#aaa;font-size:13px;line-height:1.6;margin:0 0 20px;'>{summary}</p>
         {results_section}
         <div style='border-top:3px solid #00ff88;padding-top:20px;margin-top:20px;'>
-            <h1 style='color:#00ff88;margin:0 0 16px;font-size:24px;letter-spacing:2px;'>⚾ MLB PICKS</h1>
+            <h1 style='color:#00ff88;margin:0 0 4px;font-size:24px;letter-spacing:2px;'>⚾ MLB PICKS</h1>
         </div>
-        {format_section("HOME RUN PICKS","💣",hr_picks)}
-        {format_section("HITS PICKS","🎯",hits_picks)}
-        {format_section("TOTAL BASES PICKS","📊",tb_picks)}
-        {format_section("STRIKEOUT PICKS","🔥",k_picks,show_pick_type=True)}
-        {format_section("GAME PICKS","💰",game_picks)}
-        {format_laser_section(laser_picks)}
+        {format_top_picks_section(top_picks)}
         {format_nrfi_section(nrfi_picks)}
-        {format_parlay_section(parlay)}
         {nba_section}
         <div style='text-align:center;padding:20px 0;border-top:1px solid #222;margin-top:24px;'>
             <p style='color:#333;font-size:11px;margin:0;'>MLB + NBA Picks Bot &bull; Powered by PropFinder + Claude AI + The Odds API<br>
-            MLB: {mlb_total} picks &nbsp;|&nbsp; NRFI: {nrfi_count} picks &nbsp;|&nbsp; NBA: {nba_total} picks<br><br>
+            MLB: {mlb_count} picks &nbsp;|&nbsp; NRFI: {nrfi_count} picks &nbsp;|&nbsp; NBA: {nba_count} picks<br><br>
             Always bet responsibly. For entertainment purposes only.</p>
         </div>
     </body></html>"""
@@ -300,27 +314,20 @@ def send_picks_email(picks_data, scrape_date, graded_summary=None, cumulative=No
     recipient2 = os.getenv("GMAIL_RECIPIENT_2")
     recipient3 = os.getenv("GMAIL_RECIPIENT_3")
     recipients = [r for r in [recipient, recipient2, recipient3] if r]
-    #recipients = [recipient]
 
     if not all([sender, password, recipient]):
         print("❌ Missing email credentials in .env file")
         return False
 
-    hr_count = len(picks_data.get('hr_picks', []))
-    hits_count = len(picks_data.get('hits_picks', []))
-    tb_count = len(picks_data.get('total_bases_picks', []))
-    k_count = len(picks_data.get('strikeout_picks', []))
-    game_count = len(picks_data.get('game_picks', []))
-    laser_count = len(picks_data.get('laser_picks', []))
+    mlb_count = len(picks_data.get('top_picks', []))
     nrfi_count = len(picks_data.get('nrfi_picks', []))
-    mlb_total = hr_count + hits_count + tb_count + k_count + game_count
-    nba_total = sum(len(nba_picks.get(k, [])) for k in ['points_picks','rebounds_picks','assists_picks','threes_picks','combo_picks','game_picks']) if nba_picks else 0
+    nba_count = len(nba_picks.get('top_picks', [])) if nba_picks else 0
 
     print(f"\n📧 Sending picks email to {len(recipients)} recipients...")
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = f"⚾🏀 Picks {scrape_date} | MLB:{mlb_total} NBA:{nba_total} ⚡{laser_count} 🎰{nrfi_count} | 💣{hr_count} 🎯{hits_count} 📊{tb_count} 🔥{k_count} 💰{game_count}"
+    msg['Subject'] = f"⚾🏀 Picks {scrape_date} | MLB:{mlb_count} 🎰{nrfi_count} NBA:{nba_count} | Top plays -130 to +125"
     msg['From'] = sender
-    msg['To'] = recipient
+    msg['To'] = ', '.join(recipients)
     msg.attach(MIMEText(format_picks_email(picks_data, scrape_date, graded_summary, cumulative, nba_picks), 'html'))
 
     try:

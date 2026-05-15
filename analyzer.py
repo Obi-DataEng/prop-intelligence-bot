@@ -58,9 +58,10 @@ def build_prompt(parsed_data, odds_data, scrape_date):
     news_data = load_news(scrape_date, sport="mlb")
     news_text = format_news_for_prompt(news_data)
 
-    return f"""You are an elite MLB sports betting analyst. Today is {scrape_date}.
+    return f"""You are an elite MLB sports betting analyst focused on HIGH-CONVICTION, HIGH-VALUE plays only. Today is {scrape_date}.
 
-Analyze the following data and generate the BEST picks for today organized by category.
+Analyze ALL the data below across every game and every prop category (HR, Hits, Total Bases, Strikeouts, Game ML/Spread/OU).
+Your job is to find the 2 single best bets of the entire slate — NOT one per category, just the 2 best overall.
 
 {odds_text}
 
@@ -85,43 +86,51 @@ Analyze the following data and generate the BEST picks for today organized by ca
 === RECENT NEWS & INJURY CONTEXT ===
 {news_text}
 
-SELECTION RULES:
-- Generate picks in EXACTLY these quantities:
-  * hr_picks: EXACTLY 3 picks
-  * hits_picks: EXACTLY 3 picks
-  * total_bases_picks: EXACTLY 3 picks
-  * strikeout_picks: EXACTLY 3 picks
-  * game_picks: EXACTLY 4 picks (mix of ML, OU, Spread — at least one of each)
-  * laser_picks: EXACTLY 2 picks
-- ONLY include picks where you have actual odds data
-- For each pick choose the BEST book (highest payout for same line)
-- Rank picks within each category by confidence — best pick first
+SELECTION RULES — READ CAREFULLY:
+1. Evaluate ALL prop categories and game bets across the entire slate
+2. Select EXACTLY 2 picks total — the 2 best plays you can find anywhere on the slate
+3. ODDS FILTER (HARD RULE): Only picks where the best available odds are between -130 and +125 (inclusive)
+   - ALLOWED examples: -130, -120, -110, -105, +100, +110, +120, +125
+   - REJECTED examples: -140, -150, -200, +130, +150, +200, +300
+   - If no pick meets the filter, return the 1-2 picks closest to this range and note it
+4. Each pick must have MULTIPLE converging edges — pitcher matchup + recent form + park/weather + favorable odds
+5. Do NOT force picks into categories — find the 2 best plays wherever they are
+6. Rank by overall confidence — best pick is rank 1
 
-LASER PICKS: 2 players most likely to hit 110+ mph exit velo today. Prioritize elite barrel/hard-hit rates, favorable pitcher matchup, HR-friendly park or warm weather. NOT tied to odds.
+WHAT MAKES A GREAT PICK:
+- Clear statistical edge (hard-hit rate, K%, barrel rate, WHIFF%, exit velo, etc.)
+- Odds in the sweet spot (-130 to +125) — value without heavy juice
+- Multiple converging factors, not just one isolated reason
+- No significant injury or lineup concerns in the news
+- Pitcher you are betting against has a clear exploitable weakness
 
 REQUIRED OUTPUT FORMAT (JSON only, no markdown, no extra text):
 {{
-  "laser_picks": [
-    {{"rank":1,"player_name":"name","team":"team","opponent":"opp","game":"AWAY @ HOME","game_time":"time","confidence_tier":"Elite | High | Medium","recent_max_ev":"115.3 mph on 4/21","avg_exit_velo":"94.5 mph","barrel_rate":"18%","hard_hit_rate":"55%","pitcher_hard_hit_allowed":"42%","park_factor_hr":1.15,"key_factors":["f1","f2","f3"],"reasoning":"2-3 sentences"}}
+  "top_picks": [
+    {{
+      "rank": 1,
+      "category": "HR | Hits | Total Bases | Strikeouts | Game ML | Game Spread | Game OU",
+      "player_name": "name (or team name for game picks)",
+      "pick_type": "batter | pitcher | team",
+      "game": "AWAY @ HOME",
+      "game_time": "time",
+      "best_book": "FD | MGM | CZS | SCR",
+      "best_odds": "+110",
+      "fd_odds": "+110",
+      "mgm_odds": null,
+      "czs_odds": null,
+      "scr_odds": null,
+      "fd_line": "0.5",
+      "over_under_pick": "over | under | null",
+      "confidence_score": 88,
+      "confidence_tier": "Elite | High | Medium",
+      "key_factors": ["factor1", "factor2", "factor3"],
+      "reasoning": "2-3 sentences explaining why this is one of the 2 best plays on the slate today",
+      "line_shop_note": "note if meaningful odds difference exists across books, or null"
+    }}
   ],
-  "hr_picks": [
-    {{"rank":1,"player_name":"name","team":"team","opponent":"opp","game":"AWAY @ HOME","game_time":"time","best_book":"FD","fd_odds":"+350","mgm_odds":null,"czs_odds":null,"scr_odds":null,"fd_line":"0.5","confidence_score":85,"confidence_tier":"Elite | High | Medium","key_factors":["f1","f2","f3"],"reasoning":"2-3 sentences","line_shop_note":null}}
-  ],
-  "hits_picks": [
-    {{"rank":1,"player_name":"name","team":"team","opponent":"opp","game":"AWAY @ HOME","game_time":"time","best_book":"FD","fd_odds":"-120","mgm_odds":null,"czs_odds":null,"scr_odds":null,"fd_line":"0.5","over_under_pick":"over","confidence_score":80,"confidence_tier":"Elite | High | Medium","key_factors":["f1","f2","f3"],"reasoning":"2-3 sentences","line_shop_note":null}}
-  ],
-  "total_bases_picks": [
-    {{"rank":1,"player_name":"name","team":"team","opponent":"opp","game":"AWAY @ HOME","game_time":"time","best_book":"FD","fd_odds":"-115","mgm_odds":null,"czs_odds":null,"scr_odds":null,"fd_line":"1.5","over_under_pick":"over","confidence_score":78,"confidence_tier":"Elite | High | Medium","key_factors":["f1","f2","f3"],"reasoning":"2-3 sentences","line_shop_note":null}}
-  ],
-  "strikeout_picks": [
-    {{"rank":1,"player_name":"name","pick_type":"pitcher","team":"team","opponent":"opp","game":"AWAY @ HOME","game_time":"time","best_book":"FD","fd_odds":"-130","mgm_odds":null,"czs_odds":null,"scr_odds":null,"fd_line":"6.5","over_under_pick":"over","confidence_score":75,"confidence_tier":"Elite | High | Medium","key_factors":["f1","f2","f3"],"reasoning":"2-3 sentences","line_shop_note":null}}
-  ],
-  "game_picks": [
-    {{"rank":1,"prop_category":"ML","game":"AWAY @ HOME","game_time":"time","pick":"team name","best_book":"FD","fd_odds":"-140","mgm_odds":null,"czs_odds":null,"scr_odds":null,"fd_line":null,"over_under_pick":null,"confidence_score":72,"confidence_tier":"Elite | High | Medium","key_factors":["f1","f2","f3"],"reasoning":"2-3 sentences","line_shop_note":null}}
-  ],
-  "best_parlay": {{"legs":["leg1","leg2","leg3"],"reasoning":"why these combine well","estimated_odds":"+450"}},
-  "daily_summary": "2-3 sentence overview",
-  "best_bet": "single best pick in one sentence"
+  "daily_summary": "1-2 sentence overview of today's slate and why these 2 picks stand out above the rest",
+  "best_bet": "The single best pick in one sentence"
 }}
 
 Return ONLY valid JSON. No markdown fences, no explanation outside JSON."""
@@ -148,7 +157,8 @@ def build_nrfi_prompt(nrfi_data, scrape_date):
 
     return f"""You are an elite MLB NRFI/YRFI betting analyst. Today is {scrape_date}.
 
-Analyze the NRFI/YRFI research data below and pick the 3 best plays for today.
+Analyze the NRFI/YRFI research data below and pick the 1 best play for today (NRFI or YRFI).
+Only pick a play you have very high conviction in. Quality over quantity.
 
 == TODAY'S MATCHUPS ==
 Each card shows Team NRFI%, L-10, Pitcher NRFI%+Streak, Batting NRFI%+Streak, and NRFI Score.
@@ -168,11 +178,10 @@ Higher NRFI Score = stronger NRFI lean. Lower score = YRFI lean.
 {pitcher_records}
 
 SELECTION RULES:
-- Pick EXACTLY 3 plays total (NRFI or YRFI)
+- Pick EXACTLY 1 play (NRFI or YRFI) — your single highest-conviction play
 - NRFI plays: NRFI Score 78+, both pitchers strong NRFI% with active streaks, both teams batting NRFI% above 55%
 - YRFI plays: NRFI Score below 50, pitchers with high 1st inning RA, hot-hitting lineups, active YRFI streaks
-- Rank by confidence — best play first
-- No odds needed — purely data-driven
+- If nothing is truly elite, return your single best available play anyway
 
 REQUIRED OUTPUT FORMAT (JSON only, no markdown):
 {{
@@ -189,7 +198,7 @@ def generate_nrfi_picks(nrfi_data, scrape_date, api_client=None):
         print("   ⚠️ No NRFI matchup data available")
         return []
 
-    print("\n🎰 Generating NRFI picks with Claude...")
+    print("\n🎰 Generating NRFI pick with Claude...")
     prompt = build_nrfi_prompt(nrfi_data, scrape_date)
     _client = api_client or client
 
@@ -207,7 +216,7 @@ def generate_nrfi_picks(nrfi_data, scrape_date, api_client=None):
         raw = raw.strip()
         data = json.loads(raw)
         picks = data.get('nrfi_picks', [])
-        print(f"   ✅ {len(picks)} NRFI picks generated")
+        print(f"   ✅ {len(picks)} NRFI pick(s) generated")
         for pick in picks:
             print(f"   [{pick.get('confidence_tier','')}] {pick.get('pick','')} — {pick.get('game','')} (Score: {pick.get('nrfi_score','')})")
         return picks
@@ -222,18 +231,22 @@ def generate_nrfi_picks(nrfi_data, scrape_date, api_client=None):
 # PRINT HELPERS
 # ─────────────────────────────────────────────
 
-def print_picks_section(title, emoji, picks, show_pick_type=False):
+def print_top_picks(picks):
     print(f"\n{'='*50}")
-    print(f"{emoji} {title} ({len(picks)} picks)")
+    print(f"⭐ TODAY'S TOP PICKS ({len(picks)} picks)")
     print(f"{'='*50}")
     if not picks:
-        print("  No picks available for this category")
+        print("  No picks available today")
         return
     for pick in picks:
-        player = pick.get('player_name') or pick.get('pick', 'Game Pick')
         rank = pick.get('rank', '')
         tier = pick.get('confidence_tier', '')
+        player = pick.get('player_name', 'N/A')
+        cat = pick.get('category', '')
+        game = pick.get('game', '')
+        game_time = pick.get('game_time', '')
         best_book = pick.get('best_book', '')
+        best_odds = pick.get('best_odds', '')
         fd_odds = pick.get('fd_odds')
         mgm_odds = pick.get('mgm_odds')
         czs_odds = pick.get('czs_odds')
@@ -241,15 +254,13 @@ def print_picks_section(title, emoji, picks, show_pick_type=False):
         line = pick.get('fd_line')
         over_under = pick.get('over_under_pick', '')
         shop = pick.get('line_shop_note')
-        game = pick.get('game', '')
-        game_time = pick.get('game_time', '')
-        pick_type = pick.get('pick_type', '')
-        prop_cat = pick.get('prop_category', '')
+
         book_odds = []
         if fd_odds and str(fd_odds) != 'None': book_odds.append(f"FD:{fd_odds}")
         if mgm_odds and str(mgm_odds) != 'None': book_odds.append(f"MGM:{mgm_odds}")
         if czs_odds and str(czs_odds) != 'None': book_odds.append(f"CZS:{czs_odds}")
         if scr_odds and str(scr_odds) != 'None': book_odds.append(f"SCR:{scr_odds}")
+
         if line and over_under:
             line_display = f"{over_under.upper()} {line}"
         elif line:
@@ -258,13 +269,12 @@ def print_picks_section(title, emoji, picks, show_pick_type=False):
             line_display = over_under.upper()
         else:
             line_display = "To Hit"
-        label = f"{prop_cat} " if prop_cat else ""
-        type_label = f" [{pick_type}]" if show_pick_type and pick_type else ""
-        print(f"\n  #{rank} [{tier}] {player}{type_label} — {label}{line_display}")
+
+        print(f"\n  #{rank} [{tier}] {player} — {cat} | {line_display}")
         print(f"     📅 {game} | {game_time}")
-        print(f"     📖 Best: {best_book} | {' | '.join(book_odds) if book_odds else 'No odds found'}")
+        print(f"     📖 Best: {best_book} {best_odds} | {' | '.join(book_odds) if book_odds else 'No odds found'}")
         if shop: print(f"     💡 {shop}")
-        print(f"     📝 {pick.get('reasoning','')[:130]}...")
+        print(f"     📝 {pick.get('reasoning','')[:150]}...")
         factors = pick.get('key_factors', [])
         if factors: print(f"     🔑 {' • '.join(factors[:3])}")
 
@@ -277,7 +287,7 @@ def analyze_and_generate_picks(parsed_data, odds_data, scrape_date):
     try:
         message = client.messages.create(
             model="claude-haiku-4-5",
-            max_tokens=8000,
+            max_tokens=4000,
             messages=[{"role": "user", "content": prompt}]
         )
         raw_response = message.content[0].text
@@ -294,20 +304,7 @@ def analyze_and_generate_picks(parsed_data, odds_data, scrape_date):
         print(f"✅ JSON parsed successfully")
         print(f"\n🎯 BEST BET: {picks_data.get('best_bet','N/A')}")
         print(f"📋 {picks_data.get('daily_summary','N/A')}")
-        print_picks_section("HOME RUN PICKS", "💣", picks_data.get('hr_picks', []))
-        print_picks_section("HITS PICKS", "🎯", picks_data.get('hits_picks', []))
-        print_picks_section("TOTAL BASES PICKS", "📊", picks_data.get('total_bases_picks', []))
-        print_picks_section("STRIKEOUT PICKS", "🔥", picks_data.get('strikeout_picks', []), show_pick_type=True)
-        print_picks_section("GAME PICKS", "💰", picks_data.get('game_picks', []))
-        parlay = picks_data.get('best_parlay', {})
-        if parlay:
-            print(f"\n{'='*50}")
-            print(f"🎰 BEST PARLAY")
-            print(f"{'='*50}")
-            for leg in parlay.get('legs', []):
-                print(f"  + {leg}")
-            print(f"  Est. Odds: {parlay.get('estimated_odds','N/A')}")
-            print(f"  📝 {parlay.get('reasoning','')}")
+        print_top_picks(picks_data.get('top_picks', []))
         return picks_data
     except json.JSONDecodeError as e:
         print(f"⚠️  JSON parse error: {e}")

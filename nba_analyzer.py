@@ -120,7 +120,10 @@ def build_nba_prompt(data, odds_text, scrape_date, odds_data=None):
     games_today_str = '\n'.join(f"  - {g}" for g in games_today) \
                       if games_today else "  No games found"
 
-    prompt = f"""You are an expert NBA sports betting analyst. Analyze today's NBA slate and generate picks.
+    prompt = f"""You are an expert NBA sports betting analyst focused on HIGH-CONVICTION, HIGH-VALUE plays only. Today is {scrape_date}.
+
+Analyze ALL the data below across every game and every prop category (Points, Rebounds, Assists, Threes, PRA/PR/PA combos, Game ML/Spread/OU).
+Your job is to find the 2 single best bets of the entire NBA slate — NOT one per category, just the 2 best overall.
 
 DATE: {scrape_date}
 
@@ -157,158 +160,66 @@ COLUMNS: PF_Rating | Team | Pos | Player | Prop | L10_Avg | L5_Avg | Odds | Stre
 === RECENT NEWS & INJURY CONTEXT ===
 {news_text}
 
-INSTRUCTIONS:
-Generate picks in EXACTLY these quantities per category:
-- points_picks: EXACTLY 3 picks
-- rebounds_picks: EXACTLY 3 picks
-- assists_picks: EXACTLY 3 picks
-- threes_picks: EXACTLY 3 picks
-- combo_picks: EXACTLY 3 picks (mix of PRA, PR, PA)
-- game_picks: UP TO 4 picks — only generate picks for games where you have strong conviction. Do NOT force picks if confidence is low. If multiple bet types (ML, Spread, OU) exist for a game, pick the single best one per game only. Include a mix of types where available but do not require all three.
+SELECTION RULES — READ CAREFULLY:
+1. Evaluate ALL prop categories and game bets across the entire NBA slate
+2. Select EXACTLY 2 picks total — the 2 best plays you can find anywhere
+3. ODDS FILTER (HARD RULE): Only picks where the best available odds are between -130 and +125 (inclusive)
+   - ALLOWED examples: -130, -120, -110, -105, +100, +110, +120, +125
+   - REJECTED examples: -140, -150, -200, +130, +150, +200
+   - If no pick meets the filter, return the 1-2 picks closest to this range and note it
+4. Each pick must have MULTIPLE converging edges — defensive matchup + recent form + hit rate + favorable odds
+5. Do NOT force picks into categories — find the 2 best plays wherever they are
+6. Rank by overall confidence — best pick is rank 1
+7. It is playoffs — factor in series context, matchup history, and streak data heavily
 
-CRITICAL RULE: Only generate picks for games being played on {scrape_date} specifically.
-Do NOT generate picks for any other date.
-Only include players and games that appear in the TODAY'S ODDS section above.
-If a game does not appear in the odds data, it is NOT being played today — ignore it completely.
-The odds data is the single source of truth for which games are happening today.
+WHAT MAKES A GREAT NBA PICK:
+- Clear statistical edge vs the line (season avg well above/below, strong L5 trend)
+- Bad defensive matchup at the relevant position
+- High historical hit rate (65%+) on this prop line
+- Odds in the sweet spot (-130 to +125)
+- No injury risk (starter confirmed, no load management news)
+- Playoff intensity and usage trending up
 
-Key factors to analyze:
-- Player season averages vs the ACTUAL prop line from the odds data above
-- Defensive matchup rank vs the player's position (bad defense = over opportunity)
-- Hit rate history — how often has this player hit this line this season
-- Injury report — is the opposing star player out (creates scoring opportunities)?
-- Confirmed starting lineup — is the player starting?
-- Pace of play and team offensive tendencies from team stats
-- Line shopping — identify the best book for each pick
-- Remember it is playoffs so make sure to look at streaks happening as teams are playing the same team for 7 game series
+CRITICAL RULES:
+- Only generate picks for games being played on {scrape_date}
+- Only include players and games from the TODAY'S ODDS section
+- Ignore players who are Out on the injury report
+- Always reference the actual prop line from the odds data
 
-Only pick games being played TODAY based on the odds data.
-Ignore players who are Out on the injury report.
-Always reference the actual prop line from the odds data.
-Return ONLY valid JSON. No markdown fences, no explanation outside JSON.
-
-Generate picks in this EXACT JSON format with no markdown, no backticks, just pure JSON:
-
+REQUIRED OUTPUT FORMAT (JSON only, no markdown, no extra text):
 {{
-  "slate_summary": "2-3 sentence overview of today's NBA slate and key themes",
-  "best_bet": "Single best bet of the day with reasoning",
-  "points_picks": [
+  "top_picks": [
     {{
-      "player_name": "Player Name",
+      "rank": 1,
+      "category": "Points | Rebounds | Assists | Threes | PRA | PR | PA | Game ML | Game Spread | Game OU",
+      "player_name": "name (or team name for game picks)",
+      "pick_type": "player | team",
       "team": "TEAM",
       "opponent": "OPP",
+      "game": "AWAY @ HOME",
       "prop_line": 25.5,
       "over_under": "OVER",
       "best_book": "FD",
       "best_odds": -115,
-      "confidence": "Elite/High/Medium",
+      "fd_odds": -115,
+      "mgm_odds": null,
+      "czs_odds": null,
+      "confidence_tier": "Elite | High | Medium",
+      "confidence_score": 88,
       "season_avg": 27.2,
       "l5_avg": 28.1,
       "def_rank_vs_pos": "#24 (Bad)",
       "hit_rate_season": "68%",
-      "key_factors": ["factor 1", "factor 2", "factor 3"],
-      "reasoning": "2-3 sentence reasoning"
+      "key_factors": ["factor1", "factor2", "factor3"],
+      "reasoning": "2-3 sentences explaining why this is one of the 2 best plays on the NBA slate today",
+      "line_shop_note": "note if meaningful odds difference exists, or null"
     }}
   ],
-  "rebounds_picks": [
-    {{
-      "player_name": "Player Name",
-      "team": "TEAM",
-      "opponent": "OPP",
-      "prop_line": 8.5,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -115,
-      "confidence": "High",
-      "season_avg": 9.2,
-      "l5_avg": 9.8,
-      "def_rank_vs_pos": "#18 (Bad)",
-      "hit_rate_season": "61%",
-      "key_factors": ["factor 1", "factor 2"],
-      "reasoning": "2-3 sentence reasoning"
-    }}
-  ],
-  "assists_picks": [
-    {{
-      "player_name": "Player Name",
-      "team": "TEAM",
-      "opponent": "OPP",
-      "prop_line": 6.5,
-      "over_under": "OVER",
-      "best_book": "MGM",
-      "best_odds": -110,
-      "confidence": "High",
-      "season_avg": 7.1,
-      "l5_avg": 7.4,
-      "def_rank_vs_pos": "#22 (Bad)",
-      "hit_rate_season": "66%",
-      "key_factors": ["factor 1", "factor 2"],
-      "reasoning": "2-3 sentence reasoning"
-    }}
-  ],
-  "threes_picks": [
-    {{
-      "player_name": "Player Name",
-      "team": "TEAM",
-      "opponent": "OPP",
-      "prop_line": 2.5,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -110,
-      "confidence": "Medium",
-      "season_avg": 2.9,
-      "l5_avg": 3.1,
-      "def_rank_vs_pos": "#25 (Bad)",
-      "hit_rate_season": "58%",
-      "key_factors": ["factor 1", "factor 2"],
-      "reasoning": "2-3 sentence reasoning"
-    }}
-  ],
-  "combo_picks": [
-    {{
-      "player_name": "Player Name",
-      "team": "TEAM",
-      "opponent": "OPP",
-      "prop_type": "PRA/PR/PA",
-      "prop_line": 40.5,
-      "over_under": "OVER",
-      "best_book": "FD",
-      "best_odds": -115,
-      "confidence": "Elite",
-      "season_avg": 42.1,
-      "l5_avg": 43.2,
-      "def_rank_vs_pos": "#28 (Bad)",
-      "hit_rate_season": "71%",
-      "key_factors": ["factor 1", "factor 2"],
-      "reasoning": "2-3 sentence reasoning"
-    }}
-  ],
-  "game_picks": [
-    {{
-      "game": "Team A @ Team B",
-      "pick_type": "ML/Spread/OU",
-      "pick": "Team Name or Over/Under",
-      "line": -110,
-      "best_book": "MGM",
-      "confidence": "High",
-      "key_factors": ["factor 1", "factor 2"],
-      "reasoning": "2-3 sentence reasoning"
-    }}
-  ],
-  "best_parlay": {{
-    "legs": ["leg 1 description", "leg 2 description", "leg 3 description"],
-    "estimated_odds": "+400",
-    "reasoning": "Why these legs correlate"
-  }}
+  "slate_summary": "1-2 sentence overview of today's NBA slate and why these 2 picks stand out",
+  "best_bet": "The single best NBA pick in one sentence"
 }}
 
-SELECTION RULES:
-- Generate EXACTLY the pick counts specified above per category — no more, no less
-- ONLY include picks where you have actual odds data from the odds section above
-- If no odds exist for a prop skip it entirely
-- For each pick choose the BEST book (highest payout for same line)
-- game_picks must have UP TO 4 picks — only include picks with strong conviction, do not force picks to hit the limit
-- Rank picks within each category by confidence — best pick first"""
+Return ONLY valid JSON. No markdown fences, no explanation outside JSON."""
 
     return prompt
 
@@ -335,7 +246,7 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
 
     message = client.messages.create(
         model="claude-haiku-4-5",
-        max_tokens=8000,
+        max_tokens=4000,
         messages=[{"role": "user", "content": prompt}]
     )
 
@@ -361,56 +272,24 @@ def run_nba_analyzer(scrape_date=None, odds_data=None):
     print(f"\n🎯 BEST BET: {picks_data.get('best_bet', 'N/A')}")
     print(f"📋 {picks_data.get('slate_summary', '')}")
 
-    categories = [
-        ('points_picks',   '🏀 POINTS'),
-        ('rebounds_picks', '💪 REBOUNDS'),
-        ('assists_picks',  '🎯 ASSISTS'),
-        ('threes_picks',   '3️⃣  THREES'),
-        ('combo_picks',    '📊 COMBO'),
-        ('game_picks',     '💰 GAME PICKS'),
-    ]
+    top_picks = picks_data.get('top_picks', [])
+    print(f"\n{'='*50}")
+    print(f"⭐ TODAY'S TOP NBA PICKS ({len(top_picks)} picks)")
+    print(f"{'='*50}")
+    for pick in top_picks:
+        tier = pick.get('confidence_tier', 'Medium')
+        player = pick.get('player_name', 'N/A')
+        cat = pick.get('category', '')
+        ou = pick.get('over_under', '')
+        line = pick.get('prop_line', '')
+        book = pick.get('best_book', '')
+        odds = pick.get('best_odds', '')
+        print(f"\n  #{pick.get('rank')} [{tier}] {player} — {cat} | {ou} {line}")
+        print(f"     📅 {pick.get('game')} &nbsp;|&nbsp; {pick.get('team')} vs {pick.get('opponent')}")
+        print(f"     📖 {book} {odds} &nbsp;|&nbsp; Avg: {pick.get('season_avg')} | L5: {pick.get('l5_avg')} | Hit%: {pick.get('hit_rate_season')} | Def: {pick.get('def_rank_vs_pos')}")
+        print(f"     📝 {pick.get('reasoning','')[:150]}...")
 
-    total_picks = 0
-    for key, label in categories:
-        picks = picks_data.get(key, [])
-        total_picks += len(picks)
-        if picks:
-            print(f"\n{'='*50}")
-            print(f"{label} ({len(picks)} picks)")
-            print(f"{'='*50}")
-            for i, pick in enumerate(picks, 1):
-                if key == 'game_picks':
-                    print(f"\n  #{i} [{pick.get('confidence')}] "
-                          f"{pick.get('pick')} — {pick.get('pick_type')}")
-                    print(f"     📅 {pick.get('game')}")
-                    print(f"     📖 {pick.get('best_book')} | {pick.get('line')}")
-                    print(f"     📝 {pick.get('reasoning', '')[:120]}...")
-                else:
-                    ou = pick.get('over_under', 'OVER')
-                    line = pick.get('prop_line', '')
-                    prop_type = pick.get('prop_type', '')
-                    label_extra = f" {prop_type}" if prop_type else ""
-                    print(f"\n  #{i} [{pick.get('confidence')}] "
-                          f"{pick.get('player_name')} — {ou} {line}{label_extra}")
-                    print(f"     📅 {pick.get('team')} vs {pick.get('opponent')}")
-                    print(f"     📖 {pick.get('best_book')} | {pick.get('best_odds')}")
-                    print(f"     📊 Avg: {pick.get('season_avg')} | "
-                          f"L5: {pick.get('l5_avg')} | "
-                          f"Hit%: {pick.get('hit_rate_season')} | "
-                          f"Def: {pick.get('def_rank_vs_pos')}")
-                    print(f"     📝 {pick.get('reasoning', '')[:120]}...")
-
-    parlay = picks_data.get('best_parlay', {})
-    if parlay:
-        print(f"\n{'='*50}")
-        print(f"🎰 BEST PARLAY")
-        print(f"{'='*50}")
-        for leg in parlay.get('legs', []):
-            print(f"  + {leg}")
-        print(f"  Est. Odds: {parlay.get('estimated_odds')}")
-        print(f"  📝 {parlay.get('reasoning', '')[:150]}")
-
-    print(f"\n📊 Total NBA picks: {total_picks}")
+    print(f"\n📊 Total NBA picks: {len(top_picks)}")
 
     output_file = f"logs/{scrape_date}_nba_picks.json"
     with open(output_file, 'w') as f:
