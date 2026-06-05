@@ -1,0 +1,2150 @@
+{
+  "date": "2026-06-05",
+  "books": [
+    "FD",
+    "MGM",
+    "CZS",
+    "SCR"
+  ],
+  "games": [
+    {
+      "id": "66ea890e18af0833c92b1b73b4f70b31",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "Chicago White Sox",
+      "commence_time": "2026-06-05T22:41:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -245,
+          "ml_away": 186,
+          "spread_home": -1.5,
+          "spread_home_odds": -112,
+          "spread_away": 1.5,
+          "spread_away_odds": -118,
+          "total_line": 7.5,
+          "over_odds": -132,
+          "under_odds": 100
+        },
+        "CZS": {
+          "ml_home": -210,
+          "ml_away": 165,
+          "spread_home": -1.5,
+          "spread_home_odds": 105,
+          "spread_away": 1.5,
+          "spread_away_odds": -135,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -120
+        },
+        "MGM": {
+          "ml_home": -235,
+          "ml_away": 185,
+          "spread_home": -1.5,
+          "spread_home_odds": -110,
+          "spread_away": 1.5,
+          "spread_away_odds": -115,
+          "total_line": 8.5,
+          "over_odds": 105,
+          "under_odds": -135
+        }
+      }
+    },
+    {
+      "id": "61be630678b155cf69cedc7df6691776",
+      "home_team": "Detroit Tigers",
+      "away_team": "Seattle Mariners",
+      "commence_time": "2026-06-05T22:41:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 150,
+          "ml_away": -194,
+          "spread_home": 1.5,
+          "spread_home_odds": -118,
+          "spread_away": -1.5,
+          "spread_away_odds": -112,
+          "total_line": 8.5,
+          "over_odds": -130,
+          "under_odds": -102
+        },
+        "CZS": {
+          "ml_home": 125,
+          "ml_away": -160,
+          "spread_home": 1.5,
+          "spread_home_odds": -135,
+          "spread_away": -1.5,
+          "spread_away_odds": 105,
+          "total_line": 7.5,
+          "over_odds": -130,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": 140,
+          "ml_away": -180,
+          "spread_home": 1.5,
+          "spread_home_odds": -120,
+          "spread_away": -1.5,
+          "spread_away_odds": -105,
+          "total_line": 8.5,
+          "over_odds": -130,
+          "under_odds": 100
+        }
+      }
+    },
+    {
+      "id": "ff5101661dae20bbc5596f819b19aa91",
+      "home_team": "New York Yankees",
+      "away_team": "Boston Red Sox",
+      "commence_time": "2026-06-05T23:06:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -144,
+          "ml_away": 122,
+          "spread_home": -1.5,
+          "spread_home_odds": 138,
+          "spread_away": 1.5,
+          "spread_away_odds": -166,
+          "total_line": 8.0,
+          "over_odds": -114,
+          "under_odds": -106
+        },
+        "CZS": {
+          "ml_home": -140,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 143,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "ml_home": -145,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 145,
+          "spread_away": 1.5,
+          "spread_away_odds": -175,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "13b67b1c59ce70e7e4910ab5e9bd5368",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Baltimore Orioles",
+      "commence_time": "2026-06-05T23:08:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -148,
+          "ml_away": 126,
+          "spread_home": -1.5,
+          "spread_home_odds": 140,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "ml_home": -140,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 143,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 8.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "ml_home": -145,
+          "ml_away": 120,
+          "spread_home": -1.5,
+          "spread_home_odds": 140,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 8.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "3017532baf3b1684dbd61a6fe522963f",
+      "home_team": "Miami Marlins",
+      "away_team": "Tampa Bay Rays",
+      "commence_time": "2026-06-05T23:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 114,
+          "ml_away": -134,
+          "spread_home": 1.5,
+          "spread_home_odds": -156,
+          "spread_away": -1.5,
+          "spread_away_odds": 130,
+          "total_line": 7.5,
+          "over_odds": -120,
+          "under_odds": -102
+        },
+        "CZS": {
+          "ml_home": 110,
+          "ml_away": -130,
+          "spread_home": 1.5,
+          "spread_home_odds": -155,
+          "spread_away": -1.5,
+          "spread_away_odds": 130,
+          "total_line": 7.5,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": 105,
+          "ml_away": -130,
+          "spread_home": 1.5,
+          "spread_home_odds": -155,
+          "spread_away": -1.5,
+          "spread_away_odds": 125,
+          "total_line": 7.5,
+          "over_odds": -120,
+          "under_odds": 100
+        }
+      }
+    },
+    {
+      "id": "0337473e55cde0d4fc1639b00f3693bb",
+      "home_team": "Atlanta Braves",
+      "away_team": "Pittsburgh Pirates",
+      "commence_time": "2026-06-05T23:16:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -146,
+          "ml_away": 124,
+          "spread_home": -1.5,
+          "spread_home_odds": 138,
+          "spread_away": 1.5,
+          "spread_away_odds": -166,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "CZS": {
+          "ml_home": -160,
+          "ml_away": 135,
+          "spread_home": -1.5,
+          "spread_home_odds": 135,
+          "spread_away": 1.5,
+          "spread_away_odds": -160,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "MGM": {
+          "ml_home": -150,
+          "ml_away": 125,
+          "spread_home": -1.5,
+          "spread_home_odds": 135,
+          "spread_away": 1.5,
+          "spread_away_odds": -165,
+          "total_line": 8.5,
+          "over_odds": -102,
+          "under_odds": -118
+        }
+      }
+    },
+    {
+      "id": "1d8a9b26dd1f22bf40d5e49211afaad6",
+      "home_team": "Houston Astros",
+      "away_team": "Athletics",
+      "commence_time": "2026-06-06T00:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -108,
+          "ml_away": -108,
+          "spread_home": 1.5,
+          "spread_home_odds": -178,
+          "spread_away": -1.5,
+          "spread_away_odds": 146,
+          "total_line": 9.0,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "CZS": {
+          "ml_home": -110,
+          "ml_away": -110,
+          "spread_home": 1.5,
+          "spread_home_odds": -178,
+          "spread_away": -1.5,
+          "spread_away_odds": 150,
+          "total_line": 9.0,
+          "over_odds": 100,
+          "under_odds": -120
+        },
+        "MGM": {
+          "ml_home": -110,
+          "ml_away": -110,
+          "spread_home": 1.5,
+          "spread_home_odds": -190,
+          "spread_away": -1.5,
+          "spread_away_odds": 154,
+          "total_line": 9.0,
+          "over_odds": -102,
+          "under_odds": -118
+        }
+      }
+    },
+    {
+      "id": "1d544da1be60c459ec6d6c8163cc9ff8",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Cincinnati Reds",
+      "commence_time": "2026-06-06T00:16:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -142,
+          "ml_away": 120,
+          "spread_home": -1.5,
+          "spread_home_odds": 142,
+          "spread_away": 1.5,
+          "spread_away_odds": -176,
+          "total_line": 9.5,
+          "over_odds": 102,
+          "under_odds": -124
+        },
+        "CZS": {
+          "ml_home": -140,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 143,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 9.0,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": -145,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 140,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 9.0,
+          "over_odds": -120,
+          "under_odds": 100
+        }
+      }
+    },
+    {
+      "id": "a7d8743870a8d7fb01aed50a9fc46f88",
+      "home_team": "Texas Rangers",
+      "away_team": "Cleveland Guardians",
+      "commence_time": "2026-06-06T00:16:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 108,
+          "ml_away": -126,
+          "spread_home": 1.5,
+          "spread_home_odds": -166,
+          "spread_away": -1.5,
+          "spread_away_odds": 138,
+          "total_line": 7.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "ml_home": 105,
+          "ml_away": -125,
+          "spread_home": 1.5,
+          "spread_home_odds": -155,
+          "spread_away": -1.5,
+          "spread_away_odds": 130,
+          "total_line": 7.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": 105,
+          "ml_away": -130,
+          "spread_home": 1.5,
+          "spread_home_odds": -155,
+          "spread_away": -1.5,
+          "spread_away_odds": 125,
+          "total_line": 7.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "be13ae41e6022b172e8564f73444cce6",
+      "home_team": "Minnesota Twins",
+      "away_team": "Kansas City Royals",
+      "commence_time": "2026-06-06T00:16:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -118,
+          "ml_away": 100,
+          "spread_home": 1.5,
+          "spread_home_odds": -205,
+          "spread_away": -1.5,
+          "spread_away_odds": 168,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "ml_home": -115,
+          "ml_away": -105,
+          "spread_home": -1.5,
+          "spread_home_odds": 175,
+          "spread_away": 1.5,
+          "spread_away_odds": -210,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": -115,
+          "ml_away": -105,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "eb17640885894253c1069e2e9233ea65",
+      "home_team": "Colorado Rockies",
+      "away_team": "Milwaukee Brewers",
+      "commence_time": "2026-06-06T00:41:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 132,
+          "ml_away": -156,
+          "spread_home": 1.5,
+          "spread_home_odds": -120,
+          "spread_away": -1.5,
+          "spread_away_odds": 100,
+          "total_line": 12.0,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "ml_home": 135,
+          "ml_away": -160,
+          "spread_home": 1.5,
+          "spread_home_odds": -115,
+          "spread_away": -1.5,
+          "spread_away_odds": -105,
+          "total_line": 12.0,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": 135,
+          "ml_away": -160,
+          "spread_home": 1.5,
+          "spread_home_odds": -115,
+          "spread_away": -1.5,
+          "spread_away_odds": -105,
+          "total_line": 12.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "3154fee42c445f5f90ad1da53cfefedb",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Washington Nationals",
+      "commence_time": "2026-06-06T01:41:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -134,
+          "ml_away": 116,
+          "spread_home": -1.5,
+          "spread_home_odds": 158,
+          "spread_away": 1.5,
+          "spread_away_odds": -192,
+          "total_line": 9.0,
+          "over_odds": -104,
+          "under_odds": -118
+        },
+        "CZS": {
+          "ml_home": -135,
+          "ml_away": 115,
+          "spread_home": -1.5,
+          "spread_home_odds": 150,
+          "spread_away": 1.5,
+          "spread_away_odds": -178,
+          "total_line": 9.0,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "MGM": {
+          "ml_home": -140,
+          "ml_away": 115,
+          "spread_home": -1.5,
+          "spread_home_odds": 145,
+          "spread_away": 1.5,
+          "spread_away_odds": -175,
+          "total_line": 9.0,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "id": "b84d12d6466a2f541ef74605bc5f53c6",
+      "home_team": "San Diego Padres",
+      "away_team": "New York Mets",
+      "commence_time": "2026-06-06T01:41:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -126,
+          "ml_away": 108,
+          "spread_home": -1.5,
+          "spread_home_odds": 172,
+          "spread_away": 1.5,
+          "spread_away_odds": -210,
+          "total_line": 7.5,
+          "over_odds": 104,
+          "under_odds": -128
+        },
+        "CZS": {
+          "ml_home": -130,
+          "ml_away": 110,
+          "spread_home": -1.5,
+          "spread_home_odds": 175,
+          "spread_away": 1.5,
+          "spread_away_odds": -210,
+          "total_line": 7.0,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": -125,
+          "ml_away": 105,
+          "spread_home": -1.5,
+          "spread_home_odds": 170,
+          "spread_away": 1.5,
+          "spread_away_odds": -210,
+          "total_line": 7.0,
+          "over_odds": -118,
+          "under_odds": -102
+        }
+      }
+    },
+    {
+      "id": "ae2f29fce3de0447b7b9642b09c76d58",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Los Angeles Angels",
+      "commence_time": "2026-06-06T02:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -196,
+          "ml_away": 164,
+          "spread_home": -1.5,
+          "spread_home_odds": 108,
+          "spread_away": 1.5,
+          "spread_away_odds": -130,
+          "total_line": 8.5,
+          "over_odds": 102,
+          "under_odds": -124
+        },
+        "CZS": {
+          "ml_home": -195,
+          "ml_away": 162,
+          "spread_home": -1.5,
+          "spread_home_odds": 100,
+          "spread_away": 1.5,
+          "spread_away_odds": -120,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "ml_home": -200,
+          "ml_away": 165,
+          "spread_home": -1.5,
+          "spread_home_odds": 110,
+          "spread_away": 1.5,
+          "spread_away_odds": -135,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "5d56d7bc8e07f9dd9a440c554bcaba58",
+      "home_team": "Detroit Tigers",
+      "away_team": "Seattle Mariners",
+      "commence_time": "2026-06-06T17:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 116,
+          "ml_away": -136,
+          "spread_home": 1.5,
+          "spread_home_odds": -150,
+          "spread_away": -1.5,
+          "spread_away_odds": 125,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "ml_home": 115,
+          "ml_away": -135,
+          "spread_home": 1.5,
+          "spread_home_odds": -145,
+          "spread_away": -1.5,
+          "spread_away_odds": 122,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": 110,
+          "ml_away": -135,
+          "spread_home": 1.5,
+          "spread_home_odds": -150,
+          "spread_away": -1.5,
+          "spread_away_odds": 125,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "ed237b95b2bcbe6bc050a75bcf54cf3b",
+      "home_team": "Minnesota Twins",
+      "away_team": "Kansas City Royals",
+      "commence_time": "2026-06-06T18:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -146,
+          "ml_away": 124,
+          "spread_home": -1.5,
+          "spread_home_odds": 152,
+          "spread_away": 1.5,
+          "spread_away_odds": -184,
+          "total_line": 8.5,
+          "over_odds": -104,
+          "under_odds": -118
+        },
+        "CZS": {
+          "ml_home": -155,
+          "ml_away": 130,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 8.5,
+          "over_odds": 100,
+          "under_odds": -120
+        },
+        "MGM": {
+          "ml_home": -155,
+          "ml_away": 125,
+          "spread_home": -1.5,
+          "spread_home_odds": 145,
+          "spread_away": 1.5,
+          "spread_away_odds": -175,
+          "total_line": 8.5,
+          "over_odds": 100,
+          "under_odds": -120
+        }
+      }
+    },
+    {
+      "id": "c516931bbaf1d49406d58e749625e96a",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Cincinnati Reds",
+      "commence_time": "2026-06-06T18:16:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -122,
+          "ml_away": 104,
+          "spread_home": -1.5,
+          "spread_home_odds": 158,
+          "spread_away": 1.5,
+          "spread_away_odds": -192,
+          "total_line": 9.5,
+          "over_odds": -108,
+          "under_odds": -112
+        },
+        "CZS": {
+          "ml_home": -130,
+          "ml_away": 110,
+          "spread_home": -1.5,
+          "spread_home_odds": 162,
+          "spread_away": 1.5,
+          "spread_away_odds": -195,
+          "total_line": 9.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": -135,
+          "ml_away": 110,
+          "spread_home": -1.5,
+          "spread_home_odds": 155,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 9.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "bad30008f1838625ea9ec0604b8cf654",
+      "home_team": "Chicago Cubs",
+      "away_team": "San Francisco Giants",
+      "commence_time": "2026-06-06T18:21:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -138,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 150,
+          "spread_away": 1.5,
+          "spread_away_odds": -184,
+          "total_line": 8.5,
+          "over_odds": 100,
+          "under_odds": -122
+        },
+        "CZS": {
+          "ml_home": -140,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 150,
+          "spread_away": 1.5,
+          "spread_away_odds": -178,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "MGM": {
+          "ml_home": -145,
+          "ml_away": 120,
+          "spread_home": -1.5,
+          "spread_home_odds": 145,
+          "spread_away": 1.5,
+          "spread_away_odds": -180,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "id": "04cfcf1a98897aadad3afc57427fa4e6",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Baltimore Orioles",
+      "commence_time": "2026-06-06T19:08:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -108,
+          "ml_away": -108,
+          "spread_home": 1.5,
+          "spread_home_odds": -188,
+          "spread_away": -1.5,
+          "spread_away_odds": 155,
+          "total_line": 8.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "3cc24e5cbd47294ce618f37fb85b6a6b",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "Chicago White Sox",
+      "commence_time": "2026-06-06T20:06:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -132,
+          "ml_away": 112,
+          "spread_home": -1.5,
+          "spread_home_odds": 146,
+          "spread_away": 1.5,
+          "spread_away_odds": -178,
+          "total_line": 9.5,
+          "over_odds": -120,
+          "under_odds": -102
+        },
+        "CZS": {
+          "ml_home": -135,
+          "ml_away": 115,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 9.5,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": -135,
+          "ml_away": 110,
+          "spread_home": -1.5,
+          "spread_home_odds": 155,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 10.0,
+          "over_odds": -102,
+          "under_odds": -118
+        }
+      }
+    },
+    {
+      "id": "12e9673a50b71007f4d04bea97e64990",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Washington Nationals",
+      "commence_time": "2026-06-06T20:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -162,
+          "ml_away": 136,
+          "spread_home": -1.5,
+          "spread_home_odds": 130,
+          "spread_away": 1.5,
+          "spread_away_odds": -156,
+          "total_line": 9.0,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "CZS": {
+          "ml_home": -160,
+          "ml_away": 135,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 9.0,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": -160,
+          "ml_away": 135,
+          "spread_home": -1.5,
+          "spread_home_odds": 135,
+          "spread_away": 1.5,
+          "spread_away_odds": -160,
+          "total_line": 9.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "783be51e9db5eba2f77fc312ba878c7e",
+      "home_team": "Houston Astros",
+      "away_team": "Athletics",
+      "commence_time": "2026-06-06T20:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -108,
+          "ml_away": -108,
+          "spread_home": 1.5,
+          "spread_home_odds": -176,
+          "spread_away": -1.5,
+          "spread_away_odds": 146,
+          "total_line": 9.0,
+          "over_odds": -122,
+          "under_odds": 100
+        },
+        "CZS": {
+          "ml_home": -110,
+          "ml_away": -110,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 9.0,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": -110,
+          "ml_away": -110,
+          "spread_home": 1.5,
+          "spread_home_odds": -185,
+          "spread_away": -1.5,
+          "spread_away_odds": 150,
+          "total_line": 9.0,
+          "over_odds": -120,
+          "under_odds": 100
+        }
+      }
+    },
+    {
+      "id": "aaa4e34cd89fc75466e96cf44f14850e",
+      "home_team": "Atlanta Braves",
+      "away_team": "Pittsburgh Pirates",
+      "commence_time": "2026-06-06T20:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -116,
+          "ml_away": -102,
+          "spread_home": 1.5,
+          "spread_home_odds": -194,
+          "spread_away": -1.5,
+          "spread_away_odds": 160,
+          "total_line": 8.5,
+          "over_odds": -106,
+          "under_odds": -114
+        },
+        "CZS": {
+          "ml_home": -115,
+          "ml_away": -105,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": -115,
+          "ml_away": -105,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 8.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "5b241f4b94bf0db775608f15ddea4fc2",
+      "home_team": "New York Yankees",
+      "away_team": "Boston Red Sox",
+      "commence_time": "2026-06-06T23:36:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -136,
+          "ml_away": 116,
+          "spread_home": -1.5,
+          "spread_home_odds": 152,
+          "spread_away": 1.5,
+          "spread_away_odds": -184,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "ml_home": -135,
+          "ml_away": 115,
+          "spread_home": -1.5,
+          "spread_home_odds": 158,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "ml_home": -140,
+          "ml_away": 115,
+          "spread_home": -1.5,
+          "spread_home_odds": 155,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "b03fe28a0f54a552251de92e1e1c3443",
+      "home_team": "Texas Rangers",
+      "away_team": "Cleveland Guardians",
+      "commence_time": "2026-06-06T23:36:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -112,
+          "ml_away": -104,
+          "spread_home": 1.5,
+          "spread_home_odds": -205,
+          "spread_away": -1.5,
+          "spread_away_odds": 168,
+          "total_line": 8.0,
+          "over_odds": -114,
+          "under_odds": -106
+        },
+        "CZS": {
+          "ml_home": -110,
+          "ml_away": -110,
+          "spread_home": 1.5,
+          "spread_home_odds": -190,
+          "spread_away": -1.5,
+          "spread_away_odds": 158,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "ml_home": -110,
+          "ml_away": -110,
+          "spread_home": 1.5,
+          "spread_home_odds": -190,
+          "spread_away": -1.5,
+          "spread_away_odds": 155,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "86ccb607d9a44f660c9cf85eada0f55e",
+      "home_team": "Colorado Rockies",
+      "away_team": "Milwaukee Brewers",
+      "commence_time": "2026-06-07T01:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 200,
+          "ml_away": -245,
+          "spread_home": 1.5,
+          "spread_home_odds": 125,
+          "spread_away": -1.5,
+          "spread_away_odds": -150,
+          "total_line": 10.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "ml_home": 205,
+          "ml_away": -250,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 10.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": 200,
+          "ml_away": -250,
+          "spread_home": 2.5,
+          "spread_home_odds": -105,
+          "spread_away": -2.5,
+          "spread_away_odds": -115,
+          "total_line": 10.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "f931ee769aeeeeb55e2565cdf1fc908b",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Los Angeles Angels",
+      "commence_time": "2026-06-07T02:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -335,
+          "ml_away": 270,
+          "spread_home": -1.5,
+          "spread_home_odds": -150,
+          "spread_away": 1.5,
+          "spread_away_odds": 125,
+          "total_line": 8.5,
+          "over_odds": -122,
+          "under_odds": 100
+        }
+      }
+    },
+    {
+      "id": "7603b440617339875384ac0c19a99a15",
+      "home_team": "San Diego Padres",
+      "away_team": "New York Mets",
+      "commence_time": "2026-06-07T02:11:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 108,
+          "ml_away": -126,
+          "spread_home": 1.5,
+          "spread_home_odds": -162,
+          "spread_away": -1.5,
+          "spread_away_odds": 134,
+          "total_line": 7.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "CZS": {
+          "ml_home": 100,
+          "ml_away": -120,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 7.5,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": 100,
+          "ml_away": -120,
+          "spread_home": 1.5,
+          "spread_home_odds": -175,
+          "spread_away": -1.5,
+          "spread_away_odds": 145,
+          "total_line": 8.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    }
+  ],
+  "player_props": {
+    "Chicago White Sox@Philadelphia Phillies": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Seattle Mariners@Detroit Tigers": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Boston Red Sox@New York Yankees": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Baltimore Orioles@Toronto Blue Jays": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Tampa Bay Rays@Miami Marlins": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Kyle Stowers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Otto Lopez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Owen Caissie",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Liam Hicks",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Joe Mack",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Ryan Vilade",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Richie Palacios",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Jakob Marsee",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Nick Fortes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Esteury Ruiz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Xavier Edwards",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Taylor Walls",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Javier Sanoja",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1500,
+          "pick": "Chandler Simpson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Kyle Stowers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Kyle Stowers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3300,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        }
+      ],
+      "hits": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -120,
+          "pick": "Owen Caissie",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -110,
+          "pick": "Owen Caissie",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -105,
+          "pick": "Joe Mack",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -125,
+          "pick": "Joe Mack",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -165,
+          "pick": "Richie Palacios",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 125,
+          "pick": "Richie Palacios",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -115,
+          "pick": "Taylor Walls",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -115,
+          "pick": "Taylor Walls",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -175,
+          "pick": "Javier Sanoja",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 130,
+          "pick": "Javier Sanoja",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 155,
+          "pick": "Chandler Simpson",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -210,
+          "pick": "Chandler Simpson",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -125,
+          "pick": "Jakob Marsee",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -105,
+          "pick": "Jakob Marsee",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -235,
+          "pick": "Otto Lopez",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 175,
+          "pick": "Otto Lopez",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -235,
+          "pick": "Jonathan Aranda",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 175,
+          "pick": "Jonathan Aranda",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -155,
+          "pick": "Cedric Mullins",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 115,
+          "pick": "Cedric Mullins",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -165,
+          "pick": "Kyle Stowers",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 125,
+          "pick": "Kyle Stowers",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -185,
+          "pick": "Liam Hicks",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 135,
+          "pick": "Liam Hicks",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -225,
+          "pick": "Xavier Edwards",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 165,
+          "pick": "Xavier Edwards",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -250,
+          "pick": "Junior Caminero",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 185,
+          "pick": "Junior Caminero",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -250,
+          "pick": "Yandy Diaz",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 185,
+          "pick": "Yandy Diaz",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -110,
+          "pick": "Esteury Ruiz",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -120,
+          "pick": "Esteury Ruiz",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -155,
+          "pick": "Ryan Vilade",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 115,
+          "pick": "Ryan Vilade",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -150,
+          "pick": "Nick Fortes",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 110,
+          "pick": "Nick Fortes",
+          "book": "MGM"
+        }
+      ],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 118,
+          "pick": "Otto Lopez",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -157,
+          "pick": "Otto Lopez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -117,
+          "pick": "Esteury Ruiz",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -114,
+          "pick": "Esteury Ruiz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 103,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -136,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 118,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -157,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -176,
+          "pick": "Kyle Stowers",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 131,
+          "pick": "Kyle Stowers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -157,
+          "pick": "Nick Fortes",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 117,
+          "pick": "Nick Fortes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -162,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 121,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -113,
+          "pick": "Owen Caissie",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -118,
+          "pick": "Owen Caissie",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 149,
+          "pick": "Liam Hicks",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -200,
+          "pick": "Liam Hicks",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -137,
+          "pick": "Jakob Marsee",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 104,
+          "pick": "Jakob Marsee",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -121,
+          "pick": "Taylor Walls",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -110,
+          "pick": "Taylor Walls",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 119,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -159,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 112,
+          "pick": "Chandler Simpson",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -150,
+          "pick": "Chandler Simpson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 140,
+          "pick": "Xavier Edwards",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -190,
+          "pick": "Xavier Edwards",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -170,
+          "pick": "Ryan Vilade",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 125,
+          "pick": "Ryan Vilade",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -185,
+          "pick": "Liam Hicks",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 135,
+          "pick": "Liam Hicks",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -165,
+          "pick": "Richie Palacios",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 125,
+          "pick": "Richie Palacios",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -115,
+          "pick": "Taylor Walls",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -115,
+          "pick": "Taylor Walls",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -105,
+          "pick": "Joe Mack",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -125,
+          "pick": "Joe Mack",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -175,
+          "pick": "Javier Sanoja",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 130,
+          "pick": "Javier Sanoja",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -165,
+          "pick": "Kyle Stowers",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 125,
+          "pick": "Kyle Stowers",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 130,
+          "pick": "Yandy Diaz",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -175,
+          "pick": "Yandy Diaz",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 140,
+          "pick": "Otto Lopez",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -190,
+          "pick": "Otto Lopez",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -155,
+          "pick": "Cedric Mullins",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 115,
+          "pick": "Cedric Mullins",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -120,
+          "pick": "Owen Caissie",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -110,
+          "pick": "Owen Caissie",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 110,
+          "pick": "Junior Caminero",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -150,
+          "pick": "Junior Caminero",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 125,
+          "pick": "Jonathan Aranda",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -165,
+          "pick": "Jonathan Aranda",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -125,
+          "pick": "Jakob Marsee",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -105,
+          "pick": "Jakob Marsee",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 115,
+          "pick": "Chandler Simpson",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -155,
+          "pick": "Chandler Simpson",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 160,
+          "pick": "Xavier Edwards",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -220,
+          "pick": "Xavier Edwards",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -110,
+          "pick": "Esteury Ruiz",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": -120,
+          "pick": "Esteury Ruiz",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -155,
+          "pick": "Ryan Vilade",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 115,
+          "pick": "Ryan Vilade",
+          "book": "MGM"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": -150,
+          "pick": "Nick Fortes",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 0.5,
+          "odds": 110,
+          "pick": "Nick Fortes",
+          "book": "MGM"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 4.5,
+          "odds": -128,
+          "pick": "Drew Rasmussen",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 4.5,
+          "odds": -104,
+          "pick": "Drew Rasmussen",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 4.5,
+          "odds": -115,
+          "pick": "Drew Rasmussen",
+          "book": "MGM"
+        },
+        {
+          "player": "Under",
+          "line": 4.5,
+          "odds": -115,
+          "pick": "Drew Rasmussen",
+          "book": "MGM"
+        }
+      ],
+      "batter_k": []
+    },
+    "Pittsburgh Pirates@Atlanta Braves": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Athletics@Houston Astros": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Cincinnati Reds@St. Louis Cardinals": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Cleveland Guardians@Texas Rangers": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Kansas City Royals@Minnesota Twins": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Milwaukee Brewers@Colorado Rockies": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Washington Nationals@Arizona Diamondbacks": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "New York Mets@San Diego Padres": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Los Angeles Angels@Los Angeles Dodgers": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "San Francisco Giants@Chicago Cubs": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    }
+  }
+}
