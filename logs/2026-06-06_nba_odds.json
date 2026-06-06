@@ -1,0 +1,1419 @@
+{
+  "games": [
+    {
+      "game_id": "0707c5b20ff523e730c85090c7faffdf",
+      "home_team": "New York Knicks",
+      "away_team": "San Antonio Spurs",
+      "commence_time": "2026-06-09T00:40:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -132,
+          "away_ml": 112,
+          "home_spread": -2.5,
+          "home_spread_odds": -105,
+          "away_spread": 2.5,
+          "away_spread_odds": -115,
+          "total": 216.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "MGM": {
+          "home_ml": -135,
+          "away_ml": 110,
+          "home_spread": -2.5,
+          "home_spread_odds": -105,
+          "away_spread": 2.5,
+          "away_spread_odds": -115,
+          "total": 215.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -135,
+          "away_ml": 115,
+          "home_spread": -2.5,
+          "home_spread_odds": -115,
+          "away_spread": 2.5,
+          "away_spread_odds": -105,
+          "total": 215.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    }
+  ],
+  "player_props": {
+    "San Antonio Spurs@New York Knicks": {
+      "player_assists": {
+        "OG Anunoby": {
+          "line": 1.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "MGM": {
+            "over": -150,
+            "under": 110
+          }
+        },
+        "Julian Champagnie": {
+          "line": 1.5,
+          "FD": {
+            "over": 116,
+            "under": -154
+          },
+          "MGM": {
+            "over": 120,
+            "under": -160
+          }
+        },
+        "Dylan Harper": {
+          "line": 3.5,
+          "FD": {
+            "over": 128,
+            "under": -172
+          },
+          "MGM": {
+            "over": 105,
+            "under": -145
+          },
+          "CZS": {
+            "over": 121,
+            "under": -162
+          }
+        },
+        "Miles McBride": {
+          "line": 1.5,
+          "FD": {
+            "over": 130,
+            "under": -174
+          },
+          "MGM": {
+            "over": 105,
+            "under": -140
+          }
+        },
+        "Devin Vassell": {
+          "line": 2.5,
+          "FD": {
+            "over": 116,
+            "under": -154
+          },
+          "MGM": {
+            "over": 105,
+            "under": -140
+          }
+        },
+        "Jose Alvarado": {
+          "line": 1.5,
+          "FD": {
+            "over": 152,
+            "under": -205
+          }
+        },
+        "Jalen Brunson": {
+          "line": 5.5,
+          "FD": {
+            "over": -132,
+            "under": 100
+          },
+          "MGM": {
+            "over": 125,
+            "under": -165
+          },
+          "CZS": {
+            "over": -148,
+            "under": 110
+          }
+        },
+        "Stephon Castle": {
+          "line": 6.5,
+          "FD": {
+            "over": -110,
+            "under": -120
+          },
+          "MGM": {
+            "over": -115,
+            "under": -115
+          },
+          "CZS": {
+            "over": -112,
+            "under": -120
+          }
+        },
+        "Josh Hart": {
+          "line": 4.5,
+          "FD": {
+            "over": 104,
+            "under": -138
+          },
+          "MGM": {
+            "over": -105,
+            "under": -125
+          },
+          "CZS": {
+            "over": -103,
+            "under": -130
+          }
+        },
+        "Mikal Bridges": {
+          "line": 3.5,
+          "FD": {
+            "over": -180,
+            "under": 134
+          },
+          "MGM": {
+            "over": 135,
+            "under": -185
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 3.5,
+          "FD": {
+            "over": -160,
+            "under": 120
+          },
+          "MGM": {
+            "over": -165,
+            "under": 125
+          },
+          "CZS": {
+            "over": -170,
+            "under": 127
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 3.5,
+          "FD": {
+            "over": 138,
+            "under": -186
+          },
+          "MGM": {
+            "over": 120,
+            "under": -160
+          },
+          "CZS": {
+            "over": 129,
+            "under": -173
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 5.5,
+          "FD": {
+            "over": -108,
+            "under": -122
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          },
+          "CZS": {
+            "over": -114,
+            "under": -117
+          }
+        }
+      },
+      "player_blocks": {
+        "Victor Wembanyama": {
+          "line": 3.5,
+          "FD": {
+            "over": 100,
+            "under": -132
+          },
+          "MGM": {
+            "over": 105,
+            "under": -145
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 0.5,
+          "FD": {
+            "over": -160,
+            "under": 120
+          },
+          "MGM": {
+            "over": -220,
+            "under": 155
+          }
+        },
+        "OG Anunoby": {
+          "line": 0.5,
+          "MGM": {
+            "over": -155,
+            "under": 115
+          }
+        },
+        "Mikal Bridges": {
+          "line": 0.5,
+          "MGM": {
+            "over": 135,
+            "under": -190
+          }
+        },
+        "Stephon Castle": {
+          "line": 0.5,
+          "MGM": {
+            "over": 250,
+            "under": -375
+          }
+        },
+        "Julian Champagnie": {
+          "line": 0.5,
+          "MGM": {
+            "over": 125,
+            "under": -175
+          }
+        },
+        "Jalen Brunson": {
+          "line": 0.5,
+          "MGM": {
+            "over": 475,
+            "under": -1000
+          }
+        },
+        "Josh Hart": {
+          "line": 0.5,
+          "MGM": {
+            "over": 275,
+            "under": -450
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 0.5,
+          "MGM": {
+            "over": 270,
+            "under": -450
+          }
+        },
+        "Devin Vassell": {
+          "line": 0.5,
+          "MGM": {
+            "over": 145,
+            "under": -200
+          }
+        }
+      },
+      "player_points": {
+        "OG Anunoby": {
+          "line": 15.5,
+          "FD": {
+            "over": -136,
+            "under": 102
+          },
+          "MGM": {
+            "over": -110,
+            "under": -120
+          },
+          "CZS": {
+            "over": -109,
+            "under": -122
+          }
+        },
+        "Dylan Harper": {
+          "line": 12.5,
+          "FD": {
+            "over": -132,
+            "under": 100
+          },
+          "MGM": {
+            "over": -111,
+            "under": -120
+          },
+          "CZS": {
+            "over": -138,
+            "under": 102
+          }
+        },
+        "Miles McBride": {
+          "line": 5.5,
+          "FD": {
+            "over": -110,
+            "under": -120
+          },
+          "MGM": {
+            "over": -135,
+            "under": 100
+          },
+          "CZS": {
+            "over": -121,
+            "under": -109
+          }
+        },
+        "Devin Vassell": {
+          "line": 13.5,
+          "FD": {
+            "over": -136,
+            "under": 102
+          },
+          "MGM": {
+            "over": -115,
+            "under": -115
+          },
+          "CZS": {
+            "over": -105,
+            "under": -127
+          }
+        },
+        "Mitchell Robinson": {
+          "line": 3.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "CZS": {
+            "over": -129,
+            "under": -104
+          }
+        },
+        "Jose Alvarado": {
+          "line": 2.5,
+          "FD": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Julian Champagnie": {
+          "line": 10.5,
+          "FD": {
+            "over": -106,
+            "under": -125
+          },
+          "MGM": {
+            "over": -110,
+            "under": -120
+          },
+          "CZS": {
+            "over": -110,
+            "under": -121
+          }
+        },
+        "Keldon Johnson": {
+          "line": 5.5,
+          "FD": {
+            "over": -138,
+            "under": 104
+          },
+          "CZS": {
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Landry Shamet": {
+          "line": 7.5,
+          "FD": {
+            "over": -102,
+            "under": -130
+          },
+          "MGM": {
+            "over": -125,
+            "under": -105
+          },
+          "CZS": {
+            "over": -137,
+            "under": 103
+          }
+        },
+        "Josh Hart": {
+          "line": 9.5,
+          "FD": {
+            "over": -136,
+            "under": 102
+          },
+          "MGM": {
+            "over": -115,
+            "under": -115
+          },
+          "CZS": {
+            "over": -110,
+            "under": -121
+          }
+        },
+        "Mikal Bridges": {
+          "line": 12.5,
+          "FD": {
+            "over": -136,
+            "under": 102
+          },
+          "MGM": {
+            "over": -130,
+            "under": -105
+          },
+          "CZS": {
+            "over": -134,
+            "under": 100
+          }
+        },
+        "Stephon Castle": {
+          "line": 15.5,
+          "FD": {
+            "over": -125,
+            "under": -106
+          },
+          "MGM": {
+            "over": -125,
+            "under": -105
+          },
+          "CZS": {
+            "over": -129,
+            "under": -104
+          }
+        },
+        "Jalen Brunson": {
+          "line": 26.5,
+          "FD": {
+            "over": -122,
+            "under": -108
+          },
+          "MGM": {
+            "over": -105,
+            "under": -125
+          },
+          "CZS": {
+            "over": -110,
+            "under": -121
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 14.5,
+          "FD": {
+            "over": -104,
+            "under": -128
+          },
+          "MGM": {
+            "over": -115,
+            "under": -115
+          },
+          "CZS": {
+            "over": -125,
+            "under": -107
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 18.5,
+          "FD": {
+            "over": -132,
+            "under": 100
+          },
+          "MGM": {
+            "over": -125,
+            "under": -105
+          },
+          "CZS": {
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Luke Kornet": {
+          "line": 1.5,
+          "FD": {
+            "over": -136,
+            "under": 102
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 26.5,
+          "FD": {
+            "over": -122,
+            "under": -108
+          },
+          "MGM": {
+            "over": -115,
+            "under": -115
+          },
+          "CZS": {
+            "over": -121,
+            "under": -110
+          }
+        }
+      },
+      "player_points_assists": {
+        "OG Anunoby": {
+          "line": 17.5,
+          "FD": {
+            "over": -125,
+            "under": -106
+          },
+          "MGM": {
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Dylan Harper": {
+          "line": 16.5,
+          "FD": {
+            "over": -110,
+            "under": -120
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 20.5,
+          "FD": {
+            "over": -125,
+            "under": -106
+          },
+          "MGM": {
+            "over": 100,
+            "under": -130
+          }
+        },
+        "Devin Vassell": {
+          "line": 14.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Julian Champagnie": {
+          "line": 11.5,
+          "FD": {
+            "over": -122,
+            "under": -108
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Jalen Brunson": {
+          "line": 32.5,
+          "FD": {
+            "over": -122,
+            "under": -108
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Mikal Bridges": {
+          "line": 16.5,
+          "FD": {
+            "over": -102,
+            "under": -130
+          },
+          "MGM": {
+            "over": -105,
+            "under": -130
+          }
+        },
+        "Josh Hart": {
+          "line": 14.5,
+          "FD": {
+            "over": -118,
+            "under": -114
+          },
+          "MGM": {
+            "over": 100,
+            "under": -135
+          }
+        },
+        "Stephon Castle": {
+          "line": 22.5,
+          "FD": {
+            "over": -118,
+            "under": -112
+          },
+          "MGM": {
+            "over": -118,
+            "under": -110
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 22.5,
+          "FD": {
+            "over": -102,
+            "under": -130
+          },
+          "MGM": {
+            "over": -105,
+            "under": -125
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 30.5,
+          "FD": {
+            "over": -104,
+            "under": -128
+          },
+          "MGM": {
+            "over": -110,
+            "under": -120
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "OG Anunoby": {
+          "line": 20.5,
+          "FD": {
+            "over": -110,
+            "under": -120
+          },
+          "MGM": {
+            "over": -125,
+            "under": -105
+          }
+        },
+        "Mitchell Robinson": {
+          "line": 8.5,
+          "FD": {
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Julian Champagnie": {
+          "line": 16.5,
+          "FD": {
+            "over": -122,
+            "under": -108
+          },
+          "MGM": {
+            "over": -105,
+            "under": -125
+          }
+        },
+        "Dylan Harper": {
+          "line": 18.5,
+          "FD": {
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Devin Vassell": {
+          "line": 17.5,
+          "FD": {
+            "over": -102,
+            "under": -130
+          },
+          "MGM": {
+            "over": -110,
+            "under": -118
+          }
+        },
+        "Landry Shamet": {
+          "line": 9.5,
+          "FD": {
+            "over": -132,
+            "under": 100
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 38.5,
+          "FD": {
+            "over": -110,
+            "under": -120
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Stephon Castle": {
+          "line": 21.5,
+          "FD": {
+            "over": -102,
+            "under": -130
+          },
+          "MGM": {
+            "over": -105,
+            "under": -125
+          }
+        },
+        "Mikal Bridges": {
+          "line": 16.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Jalen Brunson": {
+          "line": 29.5,
+          "FD": {
+            "over": -130,
+            "under": -102
+          },
+          "MGM": {
+            "over": -118,
+            "under": -110
+          }
+        },
+        "Josh Hart": {
+          "line": 17.5,
+          "FD": {
+            "over": -110,
+            "under": -118
+          },
+          "MGM": {
+            "over": -118,
+            "under": -115
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 18.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "MGM": {
+            "over": -110,
+            "under": -125
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 29.5,
+          "FD": {
+            "over": -118,
+            "under": -112
+          },
+          "MGM": {
+            "over": -118,
+            "under": -110
+          }
+        },
+        "Keldon Johnson": {
+          "line": 7.5,
+          "FD": {
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Luke Kornet": {
+          "line": 4.5,
+          "FD": {
+            "over": 100,
+            "under": -132
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "OG Anunoby": {
+          "line": 22.5,
+          "FD": {
+            "over": -132,
+            "under": 100
+          },
+          "MGM": {
+            "over": -125,
+            "under": -105
+          }
+        },
+        "Devin Vassell": {
+          "line": 19.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Miles McBride": {
+          "line": 8.5,
+          "FD": {
+            "over": -106,
+            "under": -125
+          },
+          "MGM": {
+            "over": -110,
+            "under": -118
+          }
+        },
+        "Dylan Harper": {
+          "line": 21.5,
+          "FD": {
+            "over": -128,
+            "under": -104
+          },
+          "MGM": {
+            "over": -105,
+            "under": -130
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 42.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "MGM": {
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Julian Champagnie": {
+          "line": 17.5,
+          "FD": {
+            "over": -106,
+            "under": -125
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Jose Alvarado": {
+          "line": 5.5,
+          "FD": {
+            "over": 102,
+            "under": -136
+          },
+          "MGM": {
+            "over": 100,
+            "under": -130
+          }
+        },
+        "Stephon Castle": {
+          "line": 27.5,
+          "FD": {
+            "over": -122,
+            "under": -108
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Jalen Brunson": {
+          "line": 36.5,
+          "FD": {
+            "over": -104,
+            "under": -128
+          },
+          "MGM": {
+            "over": -105,
+            "under": -125
+          }
+        },
+        "Mikal Bridges": {
+          "line": 19.5,
+          "FD": {
+            "over": -120,
+            "under": -110
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Josh Hart": {
+          "line": 22.5,
+          "FD": {
+            "over": -128,
+            "under": -104
+          },
+          "MGM": {
+            "over": -105,
+            "under": -125
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 23.5,
+          "FD": {
+            "over": -106,
+            "under": -125
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 33.5,
+          "FD": {
+            "over": -118,
+            "under": -112
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Landry Shamet": {
+          "line": 11.5,
+          "MGM": {
+            "over": -105,
+            "under": -130
+          }
+        },
+        "Luke Kornet": {
+          "line": 4.5,
+          "MGM": {
+            "over": -130,
+            "under": 100
+          }
+        },
+        "Keldon Johnson": {
+          "line": 9.5,
+          "MGM": {
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Mitchell Robinson": {
+          "line": 10.5,
+          "MGM": {
+            "over": -110,
+            "under": -120
+          }
+        }
+      },
+      "player_rebounds": {
+        "Julian Champagnie": {
+          "line": 5.5,
+          "FD": {
+            "over": 102,
+            "under": -136
+          },
+          "MGM": {
+            "over": -120,
+            "under": -111
+          },
+          "CZS": {
+            "over": -102,
+            "under": -132
+          }
+        },
+        "Dylan Harper": {
+          "line": 5.5,
+          "FD": {
+            "over": 104,
+            "under": -138
+          },
+          "MGM": {
+            "over": 100,
+            "under": -135
+          },
+          "CZS": {
+            "over": 105,
+            "under": -139
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 3.5,
+          "FD": {
+            "over": 116,
+            "under": -154
+          },
+          "MGM": {
+            "over": -110,
+            "under": -120
+          },
+          "CZS": {
+            "over": 106,
+            "under": -141
+          }
+        },
+        "Miles McBride": {
+          "line": 1.5,
+          "FD": {
+            "over": 116,
+            "under": -158
+          },
+          "MGM": {
+            "over": 120,
+            "under": -160
+          }
+        },
+        "OG Anunoby": {
+          "line": 5.5,
+          "FD": {
+            "over": 122,
+            "under": -162
+          },
+          "MGM": {
+            "over": 105,
+            "under": -140
+          },
+          "CZS": {
+            "over": 116,
+            "under": -154
+          }
+        },
+        "Devin Vassell": {
+          "line": 4.5,
+          "FD": {
+            "over": -138,
+            "under": 104
+          },
+          "MGM": {
+            "over": -150,
+            "under": 110
+          },
+          "CZS": {
+            "over": -140,
+            "under": 107
+          }
+        },
+        "Jose Alvarado": {
+          "line": 1.5,
+          "FD": {
+            "over": 164,
+            "under": -225
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 11.5,
+          "FD": {
+            "over": -108,
+            "under": -122
+          },
+          "MGM": {
+            "over": -125,
+            "under": -105
+          },
+          "CZS": {
+            "over": -109,
+            "under": -122
+          }
+        },
+        "Jalen Brunson": {
+          "line": 3.5,
+          "FD": {
+            "over": 128,
+            "under": -172
+          },
+          "MGM": {
+            "over": 120,
+            "under": -160
+          },
+          "CZS": {
+            "over": 126,
+            "under": -170
+          }
+        },
+        "Landry Shamet": {
+          "line": 1.5,
+          "FD": {
+            "over": -114,
+            "under": -114
+          },
+          "MGM": {
+            "over": -135,
+            "under": 100
+          }
+        },
+        "Stephon Castle": {
+          "line": 4.5,
+          "FD": {
+            "over": -162,
+            "under": 122
+          },
+          "MGM": {
+            "over": 115,
+            "under": -155
+          },
+          "CZS": {
+            "over": -152,
+            "under": 115
+          }
+        },
+        "Josh Hart": {
+          "line": 7.5,
+          "FD": {
+            "over": 116,
+            "under": -154
+          },
+          "MGM": {
+            "over": 105,
+            "under": -140
+          },
+          "CZS": {
+            "over": -139,
+            "under": 104
+          }
+        },
+        "Mikal Bridges": {
+          "line": 3.5,
+          "FD": {
+            "over": 104,
+            "under": -138
+          },
+          "MGM": {
+            "over": 100,
+            "under": -135
+          },
+          "CZS": {
+            "over": 124,
+            "under": -164
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 11.5,
+          "FD": {
+            "over": -108,
+            "under": -122
+          },
+          "MGM": {
+            "over": -120,
+            "under": -110
+          },
+          "CZS": {
+            "over": -103,
+            "under": -130
+          }
+        },
+        "Luke Kornet": {
+          "line": 2.5,
+          "FD": {
+            "over": -114,
+            "under": -118
+          }
+        },
+        "Mitchell Robinson": {
+          "line": 5.5,
+          "CZS": {
+            "over": 104,
+            "under": -139
+          }
+        }
+      },
+      "player_steals": {
+        "Devin Vassell": {
+          "line": 0.5,
+          "FD": {
+            "over": -210,
+            "under": 154
+          }
+        },
+        "OG Anunoby": {
+          "line": 1.5,
+          "FD": {
+            "over": 164,
+            "under": -225
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 0.5,
+          "FD": {
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Stephon Castle": {
+          "line": 0.5,
+          "FD": {
+            "over": -225,
+            "under": 164
+          }
+        },
+        "Mikal Bridges": {
+          "line": 1.5,
+          "FD": {
+            "over": 148,
+            "under": -200
+          }
+        },
+        "De'Aaron Fox": {
+          "line": 0.5,
+          "FD": {
+            "over": -245,
+            "under": 178
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 1.5,
+          "FD": {
+            "over": 178,
+            "under": -245
+          }
+        },
+        "Jalen Brunson": {
+          "line": 0.5,
+          "FD": {
+            "over": -192,
+            "under": 142
+          }
+        }
+      },
+      "player_threes": {
+        "De'Aaron Fox": {
+          "line": 1.5,
+          "FD": {
+            "over": 120,
+            "under": -160
+          },
+          "MGM": {
+            "over": 110,
+            "under": -150
+          },
+          "CZS": {
+            "over": 119,
+            "under": -159
+          }
+        },
+        "Devin Vassell": {
+          "line": 2.5,
+          "FD": {
+            "over": 104,
+            "under": -138
+          },
+          "MGM": {
+            "over": 105,
+            "under": -140
+          },
+          "CZS": {
+            "over": 108,
+            "under": -145
+          }
+        },
+        "OG Anunoby": {
+          "line": 1.5,
+          "FD": {
+            "over": 154,
+            "under": -210
+          },
+          "MGM": {
+            "over": 140,
+            "under": -190
+          },
+          "CZS": {
+            "over": -182,
+            "under": 136
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 1.5,
+          "FD": {
+            "over": -186,
+            "under": 138
+          },
+          "MGM": {
+            "over": -185,
+            "under": 135
+          },
+          "CZS": {
+            "over": -182,
+            "under": 136
+          }
+        },
+        "Julian Champagnie": {
+          "line": 2.5,
+          "FD": {
+            "over": 108,
+            "under": -144
+          },
+          "MGM": {
+            "over": 100,
+            "under": -135
+          },
+          "CZS": {
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Jalen Brunson": {
+          "line": 2.5,
+          "FD": {
+            "over": 136,
+            "under": -182
+          },
+          "MGM": {
+            "over": 115,
+            "under": -155
+          },
+          "CZS": {
+            "over": 135,
+            "under": -182
+          }
+        },
+        "Stephon Castle": {
+          "line": 1.5,
+          "FD": {
+            "over": 114,
+            "under": -152
+          },
+          "MGM": {
+            "over": 135,
+            "under": -185
+          },
+          "CZS": {
+            "over": 113,
+            "under": -150
+          }
+        },
+        "Josh Hart": {
+          "line": 1.5,
+          "FD": {
+            "over": 136,
+            "under": -182
+          },
+          "MGM": {
+            "over": 110,
+            "under": -150
+          },
+          "CZS": {
+            "over": 126,
+            "under": -170
+          }
+        },
+        "Mikal Bridges": {
+          "line": 1.5,
+          "FD": {
+            "over": 124,
+            "under": -166
+          },
+          "MGM": {
+            "over": 135,
+            "under": -185
+          },
+          "CZS": {
+            "over": 125,
+            "under": -170
+          }
+        },
+        "Karl-Anthony Towns": {
+          "line": 1.5,
+          "FD": {
+            "over": 116,
+            "under": -154
+          },
+          "MGM": {
+            "over": 120,
+            "under": -160
+          },
+          "CZS": {
+            "over": 118,
+            "under": -157
+          }
+        },
+        "Dylan Harper": {
+          "line": 0.5,
+          "MGM": {
+            "over": -165,
+            "under": 125
+          }
+        },
+        "Landry Shamet": {
+          "line": 1.5,
+          "MGM": {
+            "over": -125,
+            "under": -105
+          },
+          "CZS": {
+            "over": -130,
+            "under": -103
+          }
+        },
+        "Miles McBride": {
+          "line": 1.5,
+          "MGM": {
+            "over": 125,
+            "under": -165
+          },
+          "CZS": {
+            "over": 146,
+            "under": -197
+          }
+        }
+      }
+    }
+  }
+}
