@@ -14,7 +14,9 @@ A daily automated sports prop betting intelligence pipeline covering MLB and NBA
 
 ## 📬 Sample Output
 
-*(Email digest screenshot coming soon)*
+![Prop Intelligence Bot Email Digest](assets/email_digest.png)
+
+*Daily email digest — top 2 MLB + NBA props with AI rationale, confidence tiers, and key factors*
 
 ---
 
