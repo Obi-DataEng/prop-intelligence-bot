@@ -633,7 +633,6 @@ def analyze_with_claude(
     response = client.messages.create(
         model=CFB_MODEL,
         max_tokens=5000,
-        temperature=0.2,
         messages=[
             {
                 "role": "user",
