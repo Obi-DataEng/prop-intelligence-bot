@@ -678,52 +678,51 @@ async def run_all():
 
     if wnba_game_count > 0:
 
-        # ----------------------------------------------------
+         # ----------------------------------------------------
         # STEP 4.1 — WNBA PROPFINDER
         # ----------------------------------------------------
 
         print(
-    "\n🏀 STEP 4.1 — Scraping WNBA PropFinder data...",
-    flush=True,
-)
+            "\n🏀 STEP 4.1 — Scraping WNBA PropFinder data...",
+            flush=True,
+        )
 
-WNBA_SCRAPER_TIMEOUT = 360  # 6 minutes maximum
+        try:
+            from scraper import run_wnba_scraper
 
-try:
+            WNBA_SCRAPER_TIMEOUT = 360  # 6 minutes maximum
 
-    await asyncio.wait_for(
-        run_wnba_scraper(),
-        timeout=WNBA_SCRAPER_TIMEOUT,
-    )
+            await asyncio.wait_for(
+                run_wnba_scraper(),
+                timeout=WNBA_SCRAPER_TIMEOUT,
+            )
 
-    print(
-        "✅ Step 4.1 complete",
-        flush=True,
-    )
+            print(
+                "✅ Step 4.1 complete",
+                flush=True,
+            )
 
-except asyncio.TimeoutError:
+        except asyncio.TimeoutError:
+            print(
+                "\n⏰ WNBA PropFinder exceeded 6 minutes.",
+                flush=True,
+            )
 
-    print(
-        "\n⏰ WNBA PropFinder exceeded 6 minutes.",
-        flush=True,
-    )
+            print(
+                "⚠️ Stopping WNBA scrape and continuing bot.",
+                flush=True,
+            )
 
-    print(
-        "⚠️ Stopping WNBA scrape and continuing bot.",
-        flush=True,
-    )
+        except Exception as e:
+            print(
+                f"\n⚠️ WNBA PropFinder failed: {e}",
+                flush=True,
+            )
 
-except Exception as e:
-
-    print(
-        f"\n⚠️ WNBA PropFinder failed: {e}",
-        flush=True,
-    )
-
-    print(
-        "➡️ Continuing with remaining pipelines.",
-        flush=True,
-    )
+            print(
+                "➡️ Continuing with remaining pipelines.",
+                flush=True,
+            )
 
         # ----------------------------------------------------
         # STEP 4.2 — WNBA NEWS
