@@ -1,4 +1,5 @@
 import asyncio
+import time
 import json
 import os
 from datetime import datetime
@@ -1241,7 +1242,7 @@ async def run_nba_scraper():
 
 async def run_wnba_scraper():
     """
-    Production WNBA V1.
+    Production WNBA scraper with timeout protection.
 
     Included:
       - Research
@@ -1253,184 +1254,376 @@ async def run_wnba_scraper():
       - Injury Splits
       - Odds Discrepancies
 
-    Defensive Matchups and Lineups are intentionally excluded from V1
-    because PropFinder's WNBA feeds were not reliably returning data.
+    Every source has its own timeout so one bad PropFinder page
+    cannot freeze the entire picks bot.
     """
+
     scrape_date = scrape_date_string()
 
-    print(f"\n{'=' * 50}")
-    print(f"🏀 WNBA Picks Bot — Scraping {scrape_date}")
-    print(f"{'=' * 50}\n")
+    print(f"\n{'=' * 50}", flush=True)
+    print(f"🏀 WNBA Picks Bot — Scraping {scrape_date}", flush=True)
+    print(f"{'=' * 50}\n", flush=True)
 
     os.makedirs("logs", exist_ok=True)
     results = {}
 
-    async with async_playwright() as p:
-        headless_mode = (
-            os.getenv("HEADLESS", "false").lower() == "true"
-        )
+    # Individual source limits
+    LOGIN_TIMEOUT = 60
 
-        browser = await p.chromium.launch(
-            headless=headless_mode
-        )
+    SOURCE_TIMEOUTS = {
+        "wnba_research": 90,
+        "wnba_player_stats": 60,
+        "wnba_team_stats": 60,
+        "wnba_hit_rate": 60,
+        "wnba_injury_reports": 60,
 
-        context = await browser.new_context(
-            viewport={"width": 1600, "height": 1000}
-        )
+        # This page performs four window selections,
+        # so give it a little more room.
+        "wnba_volume_trends": 120,
 
-        page = await context.new_page()
+        "wnba_injury_splits": 60,
+        "wnba_odds_discrepancies": 60,
+    }
+
+    async def timed_scrape(name, coro):
+        """
+        Run one scraper with a hard timeout.
+
+        Returns {} when the source times out or fails,
+        allowing the rest of the WNBA pipeline to continue.
+        """
+
+        timeout_seconds = SOURCE_TIMEOUTS.get(name, 60)
+        started = time.monotonic()
+
+        print(
+            f"\n⏱️ Starting {name} "
+            f"(timeout: {timeout_seconds}s)...",
+            flush=True,
+        )
 
         try:
-            # One login for the entire WNBA run.
-            await login(page)
-
-            # 1. Research
-            try:
-                results["wnba_research"] = (
-                    await scrape_wnba_research(
-                        page,
-                        scrape_date,
-                    )
-                )
-            except Exception as e:
-                print(
-                    f"   ❌ Error scraping wnba_research: {e}"
-                )
-                results["wnba_research"] = {}
-
-            # 2. Player Stats
-            # 3. Team Stats
-            # 4. Hit Rate Matrix
-            # 5. Injury Reports
-            # 6. Volume Trends
-            # 7. Injury Splits
-            # 8. Odds Discrepancies
-            wnba_scrapers = {
-                "wnba_player_stats": scrape_wnba_player_stats,
-                "wnba_team_stats": scrape_wnba_team_stats,
-                "wnba_hit_rate": scrape_wnba_hit_rate,
-                "wnba_injury_reports": scrape_wnba_injury_reports,
-                "wnba_volume_trends": scrape_wnba_volume_trends,
-                "wnba_injury_splits": scrape_wnba_injury_splits,
-                "wnba_odds_discrepancies": scrape_wnba_odds_discrepancies,
-            }
-
-            for name, scraper_fn in wnba_scrapers.items():
-                try:
-                    results[name] = await scraper_fn(
-                        page,
-                        WNBA_URLS[name],
-                    )
-
-                    save_json(
-                        scrape_date,
-                        name,
-                        results[name],
-                    )
-
-                except Exception as e:
-                    print(
-                        f"   ❌ Error scraping {name}: {e}"
-                    )
-                    results[name] = {}
-
-                    try:
-                        await page.screenshot(
-                            path=f"logs/{name}_error.png",
-                            full_page=True,
-                        )
-                    except Exception:
-                        pass
-
-            summary = {
-                "date": scrape_date,
-                "league": "WNBA",
-                "sources": {},
-            }
-
-            for name, data in results.items():
-                if not isinstance(data, dict):
-                    summary["sources"][name] = {
-                        "status": "unknown"
-                    }
-                    continue
-
-                if name == "wnba_research":
-                    summary["sources"][name] = {
-                        "rows": data.get("total", 0)
-                    }
-                    continue
-
-                if name == "wnba_volume_trends":
-                    summary["sources"][name] = {
-                        "primary_recent_window": "L10",
-                        "windows": {
-                            window: {
-                                "html_rows": len(
-                                    window_data.get(
-                                        "html_rows",
-                                        [],
-                                    )
-                                ),
-                                "grid_rows": len(
-                                    window_data.get(
-                                        "grid_rows",
-                                        [],
-                                    )
-                                ),
-                                "selected": window_data.get(
-                                    "selected",
-                                    False,
-                                ),
-                            }
-                            for window, window_data
-                            in data.get(
-                                "windows",
-                                {},
-                            ).items()
-                        },
-                    }
-                    continue
-
-                summary["sources"][name] = {
-                    "html_rows": len(
-                        data.get("html_rows", [])
-                    ),
-                    "grid_rows": len(
-                        data.get("grid_rows", [])
-                    ),
-                }
-
-            save_json(
-                scrape_date,
-                "wnba_summary",
-                summary,
+            result = await asyncio.wait_for(
+                coro,
+                timeout=timeout_seconds,
             )
 
-            print(f"\n{'=' * 50}")
-            print("✅ WNBA Scraping complete!")
-            print("⭐ Volume Trends primary window: L10")
+            elapsed = time.monotonic() - started
+
             print(
-                "ℹ️ WNBA Defensive Matchups + Lineups "
-                "remain disabled for V1"
+                f"✅ {name} finished in {elapsed:.1f}s",
+                flush=True,
             )
-            print(f"{'=' * 50}\n")
+
+            return result
+
+        except asyncio.TimeoutError:
+            elapsed = time.monotonic() - started
+
+            print(
+                f"⏰ {name} TIMED OUT after "
+                f"{elapsed:.1f}s — skipping source.",
+                flush=True,
+            )
+
+            return {}
 
         except Exception as e:
-            print(f"\n❌ WNBA fatal error: {e}")
+            elapsed = time.monotonic() - started
+
+            print(
+                f"❌ {name} failed after "
+                f"{elapsed:.1f}s: {e}",
+                flush=True,
+            )
+
+            return {}
+
+    try:
+        async with async_playwright() as p:
+
+            headless_mode = (
+                os.getenv("HEADLESS", "false").lower() == "true"
+            )
+
+            print(
+                f"🌐 Launching Chromium "
+                f"(headless={headless_mode})...",
+                flush=True,
+            )
+
+            # Protect browser startup too.
+            try:
+                browser = await asyncio.wait_for(
+                    p.chromium.launch(
+                        headless=headless_mode,
+                    ),
+                    timeout=45,
+                )
+
+            except asyncio.TimeoutError:
+                print(
+                    "⏰ Chromium launch timed out after 45s. "
+                    "Skipping WNBA PropFinder scrape.",
+                    flush=True,
+                )
+                return results
+
+            context = await browser.new_context(
+                viewport={
+                    "width": 1600,
+                    "height": 1000,
+                }
+            )
+
+            page = await context.new_page()
+
+            # Playwright-level safety limits.
+            page.set_default_timeout(30_000)
+            page.set_default_navigation_timeout(45_000)
 
             try:
-                await page.screenshot(
-                    path="logs/wnba_fatal_error.png",
-                    full_page=True,
+
+                # ──────────────────────────────────────
+                # LOGIN
+                # ──────────────────────────────────────
+
+                print(
+                    f"\n🔐 Logging into PropFinder "
+                    f"(timeout: {LOGIN_TIMEOUT}s)...",
+                    flush=True,
                 )
-            except Exception:
-                pass
 
-            raise
+                login_started = time.monotonic()
 
-        finally:
-            await browser.close()
+                try:
+                    await asyncio.wait_for(
+                        login(page),
+                        timeout=LOGIN_TIMEOUT,
+                    )
+
+                    print(
+                        f"✅ PropFinder login completed in "
+                        f"{time.monotonic() - login_started:.1f}s",
+                        flush=True,
+                    )
+
+                except asyncio.TimeoutError:
+
+                    print(
+                        f"⏰ PropFinder login timed out after "
+                        f"{LOGIN_TIMEOUT}s. "
+                        f"Skipping WNBA PropFinder.",
+                        flush=True,
+                    )
+
+                    return results
+
+                except Exception as e:
+
+                    print(
+                        f"❌ PropFinder login failed: {e}",
+                        flush=True,
+                    )
+
+                    return results
+
+                # ──────────────────────────────────────
+                # 1. RESEARCH
+                # ──────────────────────────────────────
+
+                results["wnba_research"] = await timed_scrape(
+                    "wnba_research",
+                    scrape_wnba_research(
+                        page,
+                        scrape_date,
+                    ),
+                )
+
+                if results["wnba_research"]:
+                    save_json(
+                        scrape_date,
+                        "wnba_research",
+                        results["wnba_research"],
+                    )
+
+                # ──────────────────────────────────────
+                # REMAINING SOURCES
+                # ──────────────────────────────────────
+
+                wnba_scrapers = {
+                    "wnba_player_stats":
+                        scrape_wnba_player_stats,
+
+                    "wnba_team_stats":
+                        scrape_wnba_team_stats,
+
+                    "wnba_hit_rate":
+                        scrape_wnba_hit_rate,
+
+                    "wnba_injury_reports":
+                        scrape_wnba_injury_reports,
+
+                    "wnba_volume_trends":
+                        scrape_wnba_volume_trends,
+
+                    "wnba_injury_splits":
+                        scrape_wnba_injury_splits,
+
+                    "wnba_odds_discrepancies":
+                        scrape_wnba_odds_discrepancies,
+                }
+
+                for name, scraper_fn in wnba_scrapers.items():
+
+                    results[name] = await timed_scrape(
+                        name,
+                        scraper_fn(
+                            page,
+                            WNBA_URLS[name],
+                        ),
+                    )
+
+                    if results[name]:
+                        try:
+                            save_json(
+                                scrape_date,
+                                name,
+                                results[name],
+                            )
+                        except Exception as e:
+                            print(
+                                f"⚠️ Could not save {name}: {e}",
+                                flush=True,
+                            )
+
+                # ──────────────────────────────────────
+                # SUMMARY
+                # ──────────────────────────────────────
+
+                summary = {
+                    "date": scrape_date,
+                    "league": "WNBA",
+                    "sources": {},
+                }
+
+                for name, data in results.items():
+
+                    if not isinstance(data, dict):
+                        summary["sources"][name] = {
+                            "status": "unknown",
+                        }
+                        continue
+
+                    if not data:
+                        summary["sources"][name] = {
+                            "status": "failed_or_timed_out",
+                        }
+                        continue
+
+                    if name == "wnba_volume_trends":
+
+                        summary["sources"][name] = {
+                            "status": "success",
+                            "primary_recent_window": "L10",
+                            "windows": {
+                                window: {
+                                    "html_rows": len(
+                                        window_data.get(
+                                            "html_rows",
+                                            [],
+                                        )
+                                    ),
+                                    "grid_rows": len(
+                                        window_data.get(
+                                            "grid_rows",
+                                            [],
+                                        )
+                                    ),
+                                    "selected":
+                                        window_data.get(
+                                            "selected",
+                                            False,
+                                        ),
+                                }
+                                for window, window_data
+                                in data.get(
+                                    "windows",
+                                    {},
+                                ).items()
+                            },
+                        }
+
+                        continue
+
+                    summary["sources"][name] = {
+                        "status": "success",
+                        "html_rows": len(
+                            data.get(
+                                "html_rows",
+                                [],
+                            )
+                        ),
+                        "grid_rows": len(
+                            data.get(
+                                "grid_rows",
+                                [],
+                            )
+                        ),
+                    }
+
+                save_json(
+                    scrape_date,
+                    "wnba_summary",
+                    summary,
+                )
+
+                print(
+                    f"\n{'=' * 50}",
+                    flush=True,
+                )
+                print(
+                    "✅ WNBA scraping phase complete!",
+                    flush=True,
+                )
+                print(
+                    "⭐ Volume Trends primary window: L10",
+                    flush=True,
+                )
+                print(
+                    "ℹ️ Failed/timed-out sources were skipped.",
+                    flush=True,
+                )
+                print(
+                    f"{'=' * 50}\n",
+                    flush=True,
+                )
+
+            finally:
+
+                print(
+                    "🧹 Closing WNBA browser...",
+                    flush=True,
+                )
+
+                try:
+                    await asyncio.wait_for(
+                        browser.close(),
+                        timeout=15,
+                    )
+                except Exception:
+                    pass
+
+    except Exception as e:
+
+        print(
+            f"\n⚠️ WNBA PropFinder scraper stopped: {e}",
+            flush=True,
+        )
+
+        # IMPORTANT:
+        # Do not raise here. Returning whatever was successfully
+        # scraped allows CFB/NBA/email to continue.
 
     return results
 

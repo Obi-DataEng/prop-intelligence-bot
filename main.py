@@ -683,30 +683,47 @@ async def run_all():
         # ----------------------------------------------------
 
         print(
-            "🏀 STEP 4.1 — Scraping WNBA PropFinder data..."
-        )
+    "\n🏀 STEP 4.1 — Scraping WNBA PropFinder data...",
+    flush=True,
+)
 
-        try:
-            from scraper import run_wnba_scraper
+WNBA_SCRAPER_TIMEOUT = 360  # 6 minutes maximum
 
-            try:
-                await run_wnba_scraper(
-                    scrape_date
-                )
-            except TypeError:
-                # Compatibility if runner currently
-                # does not accept a date parameter.
-                await run_wnba_scraper()
+try:
 
-            print(
-                "✅ Step 4.1 complete\n"
-            )
+    await asyncio.wait_for(
+        run_wnba_scraper(),
+        timeout=WNBA_SCRAPER_TIMEOUT,
+    )
 
-        except Exception as e:
-            print(
-                f"⚠️ WNBA scraper failed "
-                f"(continuing): {e}\n"
-            )
+    print(
+        "✅ Step 4.1 complete",
+        flush=True,
+    )
+
+except asyncio.TimeoutError:
+
+    print(
+        "\n⏰ WNBA PropFinder exceeded 6 minutes.",
+        flush=True,
+    )
+
+    print(
+        "⚠️ Stopping WNBA scrape and continuing bot.",
+        flush=True,
+    )
+
+except Exception as e:
+
+    print(
+        f"\n⚠️ WNBA PropFinder failed: {e}",
+        flush=True,
+    )
+
+    print(
+        "➡️ Continuing with remaining pipelines.",
+        flush=True,
+    )
 
         # ----------------------------------------------------
         # STEP 4.2 — WNBA NEWS
