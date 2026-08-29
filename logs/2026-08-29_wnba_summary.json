@@ -16,9 +16,7 @@
       "grid_rows": 0
     },
     "wnba_hit_rate": {
-      "status": "success",
-      "html_rows": 0,
-      "grid_rows": 34
+      "status": "failed_or_timed_out"
     },
     "wnba_injury_reports": {
       "status": "success",
@@ -30,22 +28,22 @@
       "primary_recent_window": "L10",
       "windows": {
         "L3": {
-          "html_rows": 38,
+          "html_rows": 44,
           "grid_rows": 0,
           "selected": true
         },
         "L5": {
-          "html_rows": 38,
+          "html_rows": 44,
           "grid_rows": 0,
           "selected": true
         },
         "L10": {
-          "html_rows": 38,
+          "html_rows": 44,
           "grid_rows": 0,
           "selected": true
         },
         "L15": {
-          "html_rows": 38,
+          "html_rows": 44,
           "grid_rows": 0,
           "selected": true
         }

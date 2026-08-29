@@ -63,8 +63,8 @@
       "commence_time": "2026-08-30T02:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -420,
-          "away_ml": 310,
+          "home_ml": -430,
+          "away_ml": 320,
           "home_spread": -9.5,
           "home_spread_odds": -104,
           "away_spread": 9.5,
@@ -80,9 +80,9 @@
           "home_spread_odds": -110,
           "away_spread": 8.5,
           "away_spread_odds": -110,
-          "total": 178.5,
-          "over_odds": -115,
-          "under_odds": -105
+          "total": 177.5,
+          "over_odds": -110,
+          "under_odds": -110
         },
         "MGM": {
           "home_ml": -425,
@@ -672,7 +672,216 @@
         }
       }
     },
-    "Toronto Tempo@Phoenix Mercury": {},
+    "Toronto Tempo@Phoenix Mercury": {
+      "player_assists": {
+        "Alyssa Thomas": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Kiki Rice": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": -154,
+            "under": 116
+          }
+        }
+      },
+      "player_points": {
+        "Alyssa Thomas": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -118,
+            "under": -110
+          }
+        },
+        "Natasha Mack": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Kiki Rice": {
+          "line": 15.5,
+          "FD": {
+            "line": 15.5,
+            "over": -128,
+            "under": -102
+          }
+        },
+        "Kahleah Copper": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -106,
+            "under": -122
+          }
+        }
+      },
+      "player_points_assists": {
+        "Kahleah Copper": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Alyssa Thomas": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Kiki Rice": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -106,
+            "under": -125
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Kahleah Copper": {
+          "line": 24.5,
+          "FD": {
+            "line": 24.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Alyssa Thomas": {
+          "line": 22.5,
+          "FD": {
+            "line": 22.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Kiki Rice": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Natasha Mack": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -122,
+            "under": -108
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Alyssa Thomas": {
+          "line": 31.5,
+          "FD": {
+            "line": 31.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Kahleah Copper": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -102,
+            "under": -130
+          }
+        },
+        "Kiki Rice": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -118,
+            "under": -112
+          }
+        }
+      },
+      "player_rebounds": {
+        "Alyssa Thomas": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": -144,
+            "under": 108
+          }
+        },
+        "Kahleah Copper": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -102,
+            "under": -128
+          }
+        },
+        "Kiki Rice": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Natasha Mack": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": -144,
+            "under": 108
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Alyssa Thomas": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Kahleah Copper": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Kiki Rice": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -102,
+            "under": -128
+          }
+        }
+      },
+      "player_threes": {
+        "Kahleah Copper": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -200,
+            "under": 148
+          }
+        }
+      }
+    },
     "Minnesota Lynx@Atlanta Dream": {}
   }
 }
