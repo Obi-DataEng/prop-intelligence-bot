@@ -359,21 +359,33 @@ spreads, and game totals.
 
 Rank all eligible markets together.
 
-Return AT MOST {MAX_PICKS} picks.
+Return the {MAX_PICKS} strongest betting candidates from the supplied slate,
+ranked from strongest to weakest.
 
-You may return fewer than {MAX_PICKS}.
+Evaluate moneylines, spreads, and game totals across all games.
 
-If only 1 or 2 bets genuinely qualify, return only those.
+Assign each candidate an honest confidence score from 0-100.
 
-If nothing meets the evidence standard, return zero picks.
+Do NOT artificially increase confidence.
 
-NEVER manufacture picks just to reach {MAX_PICKS}.
+Python will independently determine which candidates officially
+qualify as bets.
+
+Whenever at least {MAX_PICKS} eligible markets exist in the supplied slate,
+return {MAX_PICKS} candidates even if some have confidence below the official
+betting threshold.
+
+If fewer than {MAX_PICKS} eligible markets exist, return all eligible candidates.
 
 ============================================================
 CONFIDENCE
 ============================================================
 
-Only return bets with confidence >= {MIN_CONFIDENCE}.
+The official betting threshold is {MIN_CONFIDENCE}.
+
+However, return your strongest candidates even when their confidence
+is below {MIN_CONFIDENCE}. Python will reject candidates that fail
+the official threshold.
 
 Confidence scale:
 
@@ -655,6 +667,10 @@ def analyze_with_claude(
     raw_text = "".join(
         text_parts
     ).strip()
+
+    print("\n📝 RAW CLAUDE CFB RESPONSE:")
+    print(raw_text)
+    print()
 
     if not raw_text:
         raise RuntimeError(
