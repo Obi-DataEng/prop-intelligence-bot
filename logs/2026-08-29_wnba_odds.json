@@ -1,0 +1,678 @@
+{
+  "date": "2026-08-29",
+  "league": "WNBA",
+  "sport_key": "basketball_wnba",
+  "books": [
+    "FD",
+    "MGM",
+    "CZS",
+    "ESPN"
+  ],
+  "game_markets": [
+    "moneyline",
+    "spread",
+    "total"
+  ],
+  "player_prop_markets": [
+    "player_points",
+    "player_rebounds",
+    "player_assists",
+    "player_threes",
+    "player_points_rebounds_assists",
+    "player_points_rebounds",
+    "player_points_assists",
+    "player_rebounds_assists",
+    "player_steals",
+    "player_blocks"
+  ],
+  "games": [
+    {
+      "game_id": "0de4387925b67939993839b06126ed1f",
+      "home_team": "New York Liberty",
+      "away_team": "Chicago Sky",
+      "commence_time": "2026-08-29T17:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -420,
+          "away_ml": 310,
+          "home_spread": -8.5,
+          "home_spread_odds": -118,
+          "away_spread": 8.5,
+          "away_spread_odds": -104,
+          "total": 179.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "home_ml": -425,
+          "away_ml": 320,
+          "home_spread": -8.5,
+          "home_spread_odds": -118,
+          "away_spread": 8.5,
+          "away_spread_odds": -102,
+          "total": 180.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "5835f2334381d020c40d42ab5ddf572b",
+      "home_team": "Phoenix Mercury",
+      "away_team": "Toronto Tempo",
+      "commence_time": "2026-08-30T02:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -420,
+          "away_ml": 310,
+          "home_spread": -9.5,
+          "home_spread_odds": -104,
+          "away_spread": 9.5,
+          "away_spread_odds": -118,
+          "total": 177.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -420,
+          "away_ml": 320,
+          "home_spread": -8.5,
+          "home_spread_odds": -110,
+          "away_spread": 8.5,
+          "away_spread_odds": -110,
+          "total": 178.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "home_ml": -425,
+          "away_ml": 320,
+          "home_spread": -8.5,
+          "home_spread_odds": -118,
+          "away_spread": 8.5,
+          "away_spread_odds": -102,
+          "total": 177.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "game_id": "ac8625c332b318a2e588554bd8c3198c",
+      "home_team": "Atlanta Dream",
+      "away_team": "Minnesota Lynx",
+      "commence_time": "2026-08-30T19:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 118,
+          "away_ml": -144,
+          "home_spread": 2.5,
+          "home_spread_odds": -108,
+          "away_spread": -2.5,
+          "away_spread_odds": -112,
+          "total": 178.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    }
+  ],
+  "player_props": {
+    "Chicago Sky@New York Liberty": {
+      "player_assists": {
+        "Breanna Stewart": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Natasha Cloud": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": -148,
+            "under": 112
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 138,
+            "under": -186
+          }
+        },
+        "Jonquel Jones": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -140,
+            "under": 106
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -132,
+            "under": 100
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": -146,
+            "under": 110
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Pauline Astier": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 126,
+            "under": -168
+          }
+        }
+      },
+      "player_points": {
+        "Pauline Astier": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": -130,
+            "under": 100
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -110,
+            "under": -118
+          }
+        },
+        "Natasha Cloud": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -130,
+            "under": 100
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -122,
+            "under": -106
+          }
+        },
+        "Breanna Stewart": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -130,
+            "under": 100
+          }
+        },
+        "Jonquel Jones": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -120,
+            "under": -108
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -106,
+            "under": -122
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": 100,
+            "under": -130
+          }
+        },
+        "Marine Johannes": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Sydney Taylor": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -113,
+            "under": -115
+          }
+        },
+        "Azura Stevens": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -128,
+            "under": -102
+          }
+        }
+      },
+      "player_points_assists": {
+        "Natasha Cloud": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Jonquel Jones": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Breanna Stewart": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Pauline Astier": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -102,
+            "under": -130
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Pauline Astier": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Natasha Cloud": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 13.5,
+          "FD": {
+            "line": 13.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Breanna Stewart": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Jonquel Jones": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -110,
+            "under": -120
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Pauline Astier": {
+          "line": 13.5,
+          "FD": {
+            "line": 13.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Natasha Cloud": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Breanna Stewart": {
+          "line": 31.5,
+          "FD": {
+            "line": 31.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 15.5,
+          "FD": {
+            "line": 15.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -110,
+            "under": -118
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Jonquel Jones": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -128,
+            "under": -104
+          }
+        }
+      },
+      "player_rebounds": {
+        "Pauline Astier": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 110,
+            "under": -146
+          }
+        },
+        "Natasha Cloud": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -172,
+            "under": 128
+          }
+        },
+        "Breanna Stewart": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": 134,
+            "under": -180
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 122,
+            "under": -162
+          }
+        },
+        "Azura Stevens": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": 114,
+            "under": -152
+          }
+        },
+        "Jonquel Jones": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": 100,
+            "under": -132
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Pauline Astier": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Natasha Cloud": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -152,
+            "under": 114
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": 110,
+            "under": -146
+          }
+        },
+        "Breanna Stewart": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -136,
+            "under": 102
+          }
+        },
+        "Jonquel Jones": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -144,
+            "under": 108
+          }
+        }
+      },
+      "player_threes": {
+        "Leonie Fiebich": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Breanna Stewart": {
+          "line": 0.5,
+          "FD": {
+            "line": 0.5,
+            "over": -138,
+            "under": 104
+          }
+        },
+        "Sydney Taylor": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 124,
+            "under": -166
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -200,
+            "under": 148
+          }
+        },
+        "Marine Johannes": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Courtney Vandersloot": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 164,
+            "under": -225
+          }
+        },
+        "Jonquel Jones": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -166,
+            "under": 124
+          }
+        }
+      }
+    },
+    "Toronto Tempo@Phoenix Mercury": {},
+    "Minnesota Lynx@Atlanta Dream": {}
+  }
+}
