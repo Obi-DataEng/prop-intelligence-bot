@@ -877,14 +877,6 @@
   "player_props": {
     "Boston Celtics@Detroit Pistons": {
       "player_assists": {
-        "Jayson Tatum": {
-          "line": 5.5,
-          "FD": {
-            "line": 5.5,
-            "over": -130,
-            "under": -102
-          }
-        },
         "Cade Cunningham": {
           "line": 9.5,
           "FD": {
@@ -892,23 +884,31 @@
             "over": -108,
             "under": -122
           }
+        },
+        "Jayson Tatum": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -130,
+            "under": -102
+          }
         }
       },
       "player_points": {
-        "Jayson Tatum": {
-          "line": 26.5,
-          "FD": {
-            "line": 26.5,
-            "over": -122,
-            "under": -110
-          }
-        },
         "Cade Cunningham": {
           "line": 24.5,
           "FD": {
             "line": 24.5,
             "over": -122,
             "under": -106
+          }
+        },
+        "Jayson Tatum": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -122,
+            "under": -110
           }
         }
       },
