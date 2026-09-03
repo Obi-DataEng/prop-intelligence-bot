@@ -118,17 +118,6 @@
           "total": 175.5,
           "over_odds": -118,
           "under_odds": -104
-        },
-        "CZS": {
-          "home_ml": 100,
-          "away_ml": -120,
-          "home_spread": 1.5,
-          "home_spread_odds": -110,
-          "away_spread": -1.5,
-          "away_spread_odds": -110,
-          "total": 176.5,
-          "over_odds": -110,
-          "under_odds": -110
         }
       }
     },
@@ -193,12 +182,12 @@
   "player_props": {
     "Connecticut Sun@Atlanta Dream": {
       "player_assists": {
-        "Angel Reese": {
-          "line": 2.5,
+        "Jordin Canada": {
+          "line": 6.5,
           "FD": {
-            "line": 2.5,
-            "over": -114,
-            "under": -114
+            "line": 6.5,
+            "over": -136,
+            "under": 102
           }
         },
         "Allisha Gray": {
@@ -209,20 +198,20 @@
             "under": -138
           }
         },
-        "Jordin Canada": {
-          "line": 6.5,
-          "FD": {
-            "line": 6.5,
-            "over": -136,
-            "under": 102
-          }
-        },
         "Rhyne Howard": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
             "over": 102,
             "under": -136
+          }
+        },
+        "Angel Reese": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -114,
+            "under": -114
           }
         }
       },
@@ -1594,22 +1583,6 @@
         }
       },
       "player_threes": {
-        "Sabrina Ionescu": {
-          "line": 1.5,
-          "FD": {
-            "line": 1.5,
-            "over": -200,
-            "under": 148
-          }
-        },
-        "Napheesa Collier": {
-          "line": 1.5,
-          "FD": {
-            "line": 1.5,
-            "over": 102,
-            "under": -136
-          }
-        },
         "Olivia Miles": {
           "line": 1.5,
           "FD": {
@@ -1625,25 +1598,41 @@
             "over": -130,
             "under": -102
           }
+        },
+        "Sabrina Ionescu": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -200,
+            "under": 148
+          }
+        },
+        "Napheesa Collier": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 102,
+            "under": -136
+          }
         }
       }
     },
     "Portland Fire@Golden State Valkyries": {
       "player_assists": {
-        "Veronica Burton": {
-          "line": 6.5,
-          "FD": {
-            "line": 6.5,
-            "over": -118,
-            "under": -112
-          }
-        },
         "Gabby Williams": {
           "line": 2.5,
           "FD": {
             "line": 2.5,
             "over": 104,
             "under": -138
+          }
+        },
+        "Veronica Burton": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -118,
+            "under": -112
           }
         }
       },
@@ -1702,14 +1691,6 @@
         }
       },
       "player_points_rebounds_assists": {
-        "Veronica Burton": {
-          "line": 24.5,
-          "FD": {
-            "line": 24.5,
-            "over": -114,
-            "under": -114
-          }
-        },
         "Gabby Williams": {
           "line": 19.5,
           "FD": {
@@ -1717,23 +1698,31 @@
             "over": -128,
             "under": -104
           }
+        },
+        "Veronica Burton": {
+          "line": 24.5,
+          "FD": {
+            "line": 24.5,
+            "over": -114,
+            "under": -114
+          }
         }
       },
       "player_rebounds": {
-        "Veronica Burton": {
-          "line": 3.5,
-          "FD": {
-            "line": 3.5,
-            "over": -136,
-            "under": 102
-          }
-        },
         "Gabby Williams": {
           "line": 2.5,
           "FD": {
             "line": 2.5,
             "over": -182,
             "under": 136
+          }
+        },
+        "Veronica Burton": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -136,
+            "under": 102
           }
         }
       },
