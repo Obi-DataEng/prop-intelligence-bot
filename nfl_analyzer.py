@@ -23,8 +23,8 @@ load_dotenv()
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
-CFB_MODEL = os.getenv(
-    "CFB_MODEL",
+NFL_MODEL = os.getenv(
+    "NFL_MODEL",
     "claude-sonnet-4-5",
 )
 
@@ -36,6 +36,25 @@ MAX_PICKS = 5
 VALID_BOOKS = {
     "FD": "FanDuel",
     "CZS": "Caesars",
+}
+
+NFL_TEAM_ABBREVIATIONS = {
+    "Arizona Cardinals": "ARI", "Atlanta Falcons": "ATL",
+    "Baltimore Ravens": "BAL", "Buffalo Bills": "BUF",
+    "Carolina Panthers": "CAR", "Chicago Bears": "CHI",
+    "Cincinnati Bengals": "CIN", "Cleveland Browns": "CLE",
+    "Dallas Cowboys": "DAL", "Denver Broncos": "DEN",
+    "Detroit Lions": "DET", "Green Bay Packers": "GB",
+    "Houston Texans": "HOU", "Indianapolis Colts": "IND",
+    "Jacksonville Jaguars": "JAX", "Kansas City Chiefs": "KC",
+    "Las Vegas Raiders": "LV", "Los Angeles Chargers": "LAC",
+    "Los Angeles Rams": "LA", "Miami Dolphins": "MIA",
+    "Minnesota Vikings": "MIN", "New England Patriots": "NE",
+    "New Orleans Saints": "NO", "New York Giants": "NYG",
+    "New York Jets": "NYJ", "Philadelphia Eagles": "PHI",
+    "Pittsburgh Steelers": "PIT", "San Francisco 49ers": "SF",
+    "Seattle Seahawks": "SEA", "Tampa Bay Buccaneers": "TB",
+    "Tennessee Titans": "TEN", "Washington Commanders": "WAS",
 }
 
 
@@ -143,15 +162,15 @@ def best_american_price(prices):
 # LOAD ODDS
 # ============================================================
 
-def load_cfb_odds(scrape_date):
-    filepath = resolve_log_snapshot(scrape_date, "cfb_odds")
+def load_nfl_odds(scrape_date):
+    filepath = resolve_log_snapshot(scrape_date, "nfl_odds")
 
     if filepath is None:
         raise FileNotFoundError(
-            f"CFB odds file not found for or before {scrape_date}"
+            f"NFL odds file not found for or before {scrape_date}"
         )
 
-    if not filepath.endswith(f"{scrape_date}_cfb_odds.json"):
+    if not filepath.endswith(f"{scrape_date}_nfl_odds.json"):
         print(f"ℹ️ Using latest odds snapshot: {filepath}")
 
     with open(
@@ -191,19 +210,43 @@ def load_snapshot_if_exists(target_date, suffix, default):
         return json.load(handle)
 
 
-def load_cfb_intelligence(scrape_date):
-    """Load the three PropFinder CFB sources produced by scraper.py cfb."""
+def load_nfl_intelligence(scrape_date):
+    """Load every PropFinder NFL source produced by scraper.py nfl."""
     return {
         "props": load_snapshot_if_exists(
-            scrape_date, "cfb_props", {"views": {}}
+            scrape_date, "nfl_props", {"views": {}}
         ),
         "games": load_snapshot_if_exists(
-            scrape_date, "cfb_games", {"cards": []}
+            scrape_date, "nfl_games", {"cards": []}
         ),
-        "ratings": load_snapshot_if_exists(
-            scrape_date, "cfb_power_ratings", {"rows": []}
+        "weather": load_snapshot_if_exists(
+            scrape_date, "nfl_weather", {"blocks": []}
+        ),
+        "home_field": load_snapshot_if_exists(
+            scrape_date, "nfl_home_field_advantage", {"blocks": []}
+        ),
+        "discrepancies": load_snapshot_if_exists(
+            scrape_date, "nfl_odds_discrepancies", {"html_rows": []}
         ),
     }
+
+
+def nfl_week_from_intelligence(intelligence):
+    """Read the displayed week, defaulting conservatively to Week 1."""
+    for source in ("games", "weather"):
+        text = intelligence.get(source, {}).get("fullText", "")
+        match = re.search(r"\bWeek\s+(\d{1,2})\b", text, re.IGNORECASE)
+        if match:
+            return int(match.group(1))
+    return 1
+
+
+def season_weights(week):
+    if week <= 2:
+        return 0.70, 0.30
+    if week <= 4:
+        return 0.40, 0.60
+    return 0.15, 0.85
 
 
 def teams_on_prop_finder_slate(game_cards, target_date):
@@ -228,6 +271,80 @@ def teams_on_prop_finder_slate(game_cards, target_date):
                 teams.add(token)
 
     return teams
+
+
+def teams_in_odds_slate(games):
+    """Return PropFinder abbreviations for the exact filtered Odds API slate."""
+    teams = set()
+    for game in games:
+        for key in ("home_team", "away_team"):
+            abbreviation = NFL_TEAM_ABBREVIATIONS.get(game.get(key, ""))
+            if abbreviation:
+                teams.add(abbreviation)
+    return teams
+
+
+def build_prop_finder_model_index(game_cards):
+    """Normalize projected scores and win probabilities by NFL team pair."""
+    index = {}
+    for card in game_cards:
+        if not isinstance(card, list) or len(card) < 9:
+            continue
+        away_abbr = str(card[1]).strip()
+        home_abbr = str(card[3]).strip()
+        try:
+            away_score = float(card[2])
+            home_score = float(card[4])
+        except (TypeError, ValueError):
+            continue
+
+        win_probabilities = {}
+        model_spreads = {}
+        precise_total = None
+        for value in card[6:12]:
+            match = re.search(r"\b([A-Z]{2,3})\s+(\d+(?:\.\d+)?)%", str(value))
+            if match:
+                win_probabilities[match.group(1)] = float(match.group(2)) / 100
+
+        for value in card:
+            text = str(value).replace("−", "-")
+            spread_match = re.search(
+                r"\bModel\s+([A-Z]{2,3})\s+([+-]\d+(?:\.\d+)?)", text
+            )
+            if spread_match:
+                model_spreads[spread_match.group(1)] = float(spread_match.group(2))
+            total_match = re.search(r"\bModel\s+(\d+(?:\.\d+)?)\s*[·+-]", text)
+            if total_match:
+                precise_total = float(total_match.group(1))
+
+        if away_abbr in model_spreads and home_abbr not in model_spreads:
+            model_spreads[home_abbr] = -model_spreads[away_abbr]
+        if home_abbr in model_spreads and away_abbr not in model_spreads:
+            model_spreads[away_abbr] = -model_spreads[home_abbr]
+
+        index[frozenset((away_abbr, home_abbr))] = {
+            "away_abbr": away_abbr,
+            "home_abbr": home_abbr,
+            "away_score": away_score,
+            "home_score": home_score,
+            "projected_total": precise_total or (away_score + home_score),
+            "win_probabilities": win_probabilities,
+            "model_spreads": model_spreads,
+        }
+    return index
+
+
+def model_for_odds_game(game, model_index):
+    away = NFL_TEAM_ABBREVIATIONS.get(game.get("away_team", ""))
+    home = NFL_TEAM_ABBREVIATIONS.get(game.get("home_team", ""))
+    if not away or not home:
+        return None
+    return model_index.get(frozenset((away, home)))
+
+
+def american_implied_probability(odds):
+    odds = float(odds)
+    return (-odds / (-odds + 100)) if odds < 0 else (100 / (odds + 100))
 
 
 def parse_hit_rate(value):
@@ -260,7 +377,7 @@ def safe_float(value, default=0.0):
         return default
 
 
-def build_prop_candidates(props_data, eligible_teams=None, limit=25):
+def build_prop_candidates(props_data, eligible_teams=None, limit=25, week=1):
     """Deterministically rank complete PropFinder export rows."""
     candidates = []
     seen = set()
@@ -293,12 +410,41 @@ def build_prop_candidates(props_data, eligible_teams=None, limit=25):
             if pf_rating < MIN_CONFIDENCE:
                 continue
 
+            season_columns = [
+                key for key in row
+                if len(re.findall(r"\d{2}", str(key))) == 2
+                and "-" in str(key)
+            ]
+            season_columns.sort()
+            prior_value = row.get(season_columns[-2]) if len(season_columns) >= 2 else None
+            current_value = row.get(season_columns[-1]) if season_columns else None
+            _, prior_n, prior_rate = parse_hit_rate(prior_value)
+            _, current_n, current_rate = parse_hit_rate(current_value)
+            prior_weight, current_weight = season_weights(week)
+
+            weighted_parts = []
+            if prior_n:
+                weighted_parts.append((prior_rate, prior_weight))
+            if current_n:
+                weighted_parts.append((current_rate, current_weight))
+            season_rate = (
+                sum(rate * weight for rate, weight in weighted_parts) /
+                sum(weight for _, weight in weighted_parts)
+                if weighted_parts else l20_rate
+            )
+
+            price_score = min(100.0, max(0.0, 100 - max(0, -odds - 100) * 0.35))
             confidence = int(round(min(
-                94,
-                (pf_rating * 0.70) +
-                (l10_rate * 100 * 0.20) +
-                (l20_rate * 100 * 0.10),
+                92,
+                (pf_rating * 0.45) +
+                (season_rate * 100 * 0.30) +
+                (l10_rate * 100 * 0.15) +
+                (price_score * 0.10),
             )))
+            # With no current-season sample, do not call historical evidence
+            # an elite current-season edge.
+            if current_n == 0:
+                confidence = min(confidence, 87)
 
             key = (
                 normalize_text(player), normalize_text(team),
@@ -331,9 +477,19 @@ def build_prop_candidates(props_data, eligible_teams=None, limit=25):
                 "l10_hit_rate": row.get("L10"),
                 "l20_hit_rate": row.get("L20"),
                 "season_matchup_rank": row.get("SZN Matchup"),
+                "nfl_week": week,
+                "prior_season_hit_rate": prior_value,
+                "current_season_hit_rate": current_value,
+                "prior_season_weight": prior_weight,
+                "current_season_weight": current_weight,
+                "current_season_sample": current_n,
+                "historical_only": current_n == 0,
                 "reasoning": (
                     f"PropFinder rating {pf_rating:.1f}; "
                     f"L10 {row.get('L10')} and L20 {row.get('L20')}; "
+                    f"prior/current season {prior_value or 'N/A'} / "
+                    f"{current_value or 'N/A'} with Week {week} weighting "
+                    f"{prior_weight:.0%}/{current_weight:.0%}; "
                     f"L10 average {row.get('L10 Avg')} at odds {odds:+d}."
                 ),
             })
@@ -348,26 +504,81 @@ def build_prop_candidates(props_data, eligible_teams=None, limit=25):
     return candidates[:limit]
 
 
-def format_prop_finder_context(intelligence):
-    """Compact projections and ratings for Claude's team-market analysis."""
-    cards = intelligence.get("games", {}).get("cards", [])
-    ratings = intelligence.get("ratings", {}).get("rows", [])
+def format_prop_finder_context(intelligence, slate_games):
+    """Return context restricted to teams in the exact Odds API slate."""
+    eligible_pairs = set()
+    home_names = []
+    slate_matchups = []
+    for game in slate_games:
+        away = NFL_TEAM_ABBREVIATIONS.get(game.get("away_team", ""))
+        home = NFL_TEAM_ABBREVIATIONS.get(game.get("home_team", ""))
+        if away and home:
+            eligible_pairs.add(frozenset((away, home)))
+        home_names.append(normalize_text(game.get("home_team", "")))
+        slate_matchups.append((
+            normalize_text(game.get("away_team", "")),
+            normalize_text(game.get("home_team", "")),
+        ))
 
-    game_lines = [" | ".join(map(str, card)) for card in cards]
-    rating_lines = [" | ".join(map(str, row)) for row in ratings]
+    cards = intelligence.get("games", {}).get("cards", [])
+    selected_cards = [
+        card for card in cards
+        if isinstance(card, list) and len(card) >= 4
+        and frozenset((str(card[1]).strip(), str(card[3]).strip())) in eligible_pairs
+    ]
+    game_lines = [" | ".join(map(str, card)) for card in selected_cards]
+
+    home_blocks = intelligence.get("home_field", {}).get("blocks", [])
+    selected_home_blocks = []
+    selected_stadiums = set()
+    for block in home_blocks:
+        if not isinstance(block, list) or not block or not str(block[0]).startswith("#"):
+            continue
+        if "former venue" in normalize_text(" ".join(map(str, block))):
+            continue
+        block_text = normalize_text(" ".join(map(str, block)))
+        if any(
+            home and (
+                home in block_text
+                or home.split()[-1] in normalize_text(str(block[1] if len(block) > 1 else ""))
+            )
+            for home in home_names
+        ):
+            selected_home_blocks.append(block)
+            if len(block) > 3:
+                selected_stadiums.add(normalize_text(block[3]))
+
+    weather_blocks = intelligence.get("weather", {}).get("blocks", [])
+    weather_lines = [
+        " | ".join(map(str, block)) for block in weather_blocks
+        if isinstance(block, list)
+        and any(stadium and stadium in normalize_text(" ".join(map(str, block)))
+                for stadium in selected_stadiums)
+        and any(
+            away in normalize_text(" ".join(map(str, block)))
+            and home in normalize_text(" ".join(map(str, block)))
+            for away, home in slate_matchups
+        )
+    ]
+
+    home_lines = [
+        " | ".join(map(str, block)) for block in selected_home_blocks
+    ]
 
     return (
-        "PROPFINDER GAMES & PROJECTIONS:\n" +
-        "\n".join(game_lines) +
-        "\n\nPROPFINDER POWER RATINGS "
-        "(rank, team, conf, record, rating, SPR, WoW, YTD, trend, "
-        "offense, offense rank, defense, defense rank):\n" +
-        "\n".join(rating_lines)
+        "EXACT-SLATE PROPFINDER GAMES & PROJECTIONS:\n" +
+        ("\n".join(game_lines) or "No matching projection card.") +
+        "\n\nEXACT-SLATE WEATHER:\n" +
+        ("\n".join(weather_lines) or "No material or joinable weather record.") +
+        "\n\nEXACT-SLATE HOME-FIELD HISTORY "
+        "(rank, team, venue type/stadium, games, record, win%, "
+        "average margin, average vs spread):\n" +
+        ("\n".join(home_lines) or "No matching home-field record.")
     )
 
 
 # ============================================================
-# FILTER CURRENT CFB SLATE
+# FILTER CURRENT NFL SLATE
 # ============================================================
 
 def parse_commence_time(value):
@@ -389,15 +600,15 @@ def parse_commence_time(value):
         return None
 
 
-def filter_cfb_slate(
+def filter_nfl_slate(
     games,
     scrape_date,
 ):
     """
-    Keep ONLY CFB games occurring on scrape_date
+    Keep ONLY NFL games occurring on scrape_date
     in Eastern Time.
 
-    This keeps CFB aligned with the MLB/NBA/WNBA
+    This keeps NFL aligned with the MLB/NBA/WNBA
     daily betting slate.
     """
     eastern = ZoneInfo(
@@ -442,13 +653,13 @@ def filter_cfb_slate(
 # FORMAT ODDS FOR CLAUDE
 # ============================================================
 
-def format_cfb_odds_for_prompt(games):
+def format_nfl_odds_for_prompt(games):
     """
-    Convert CFB sportsbook data into compact,
+    Convert NFL sportsbook data into compact,
     readable prompt text.
     """
     if not games:
-        return "No CFB games available."
+        return "No NFL games available."
 
     sections = []
 
@@ -515,23 +726,23 @@ def format_cfb_odds_for_prompt(games):
 # CLAUDE PROMPT
 # ============================================================
 
-def build_cfb_prompt(
+def build_nfl_prompt(
     games,
     news_data,
     scrape_date,
     propfinder_context="",
 ):
-    odds_text = format_cfb_odds_for_prompt(
+    odds_text = format_nfl_odds_for_prompt(
         games
     )
 
     news_text = format_news_for_prompt(
         news_data,
-        "CFB",
+        "NFL",
     )
 
     return f"""
-You are a disciplined college football betting analyst.
+You are a disciplined NFL betting analyst.
 
 DATE:
 {scrape_date}
@@ -540,10 +751,11 @@ DATE:
 STRICT SCOPE
 ============================================================
 
-COLLEGE PLAYER PROPS ARE OUT OF SCOPE.
+PLAYER PROPS ARE SCORED SEPARATELY BY PYTHON.
 
-Do not analyze, recommend, rank, mention, or create
-college player props.
+Do not analyze, recommend, rank, mention, or create player props
+in this response. Select game bets only; Python builds a separate
+Top 5 player-prop list from the complete PropFinder export.
 
 The ONLY eligible betting markets are:
 
@@ -560,7 +772,7 @@ Do not recommend parlays.
 OBJECTIVE
 ============================================================
 
-Evaluate the entire supplied CFB slate and identify the
+Evaluate the entire supplied NFL slate and identify the
 strongest betting opportunities across moneylines,
 spreads, and game totals.
 
@@ -583,6 +795,13 @@ return {MAX_PICKS} candidates even if some have confidence below the official
 betting threshold.
 
 If fewer than {MAX_PICKS} eligible markets exist, return all eligible candidates.
+
+Never force five picks from a small slate. There are at most three independent
+game markets per matchup: one moneyline, one spread side, and one total side.
+Never return both teams against the same spread, and never return both Over and
+Under on the same total. Do not select a side when the supplied model projection
+opposes it. A moneyline must have model win probability at least two percentage
+points above the price's implied probability.
 
 ============================================================
 CONFIDENCE
@@ -621,14 +840,14 @@ Prioritize relevant evidence such as:
 - offensive efficiency
 - defensive efficiency
 - pace/style
-- returning production
+- returning production and offseason personnel changes
 - coaching/system changes
 - recent team-specific reporting
 - home/road context
 - neutral-site context
 - meaningful market disagreement between books
 
-News articles may contain generic college football content.
+News articles may contain generic NFL content.
 
 Down-weight or ignore articles that are not directly
 relevant to the teams, matchup, personnel, injuries,
@@ -648,6 +867,10 @@ FD = FanDuel
 CZS = Caesars
 
 Use ONLY lines supplied below.
+
+The matchups listed in NFL ODDS are the complete and exclusive slate.
+Never select a game that is absent from NFL ODDS, even if it appears in news
+or supporting context.
 
 Never invent:
 
@@ -696,7 +919,7 @@ GAME TOTAL:
 - over_under must be exactly "Over" or "Under"
 
 ============================================================
-CFB ODDS
+NFL ODDS
 ============================================================
 
 {odds_text}
@@ -706,7 +929,7 @@ PROPFINDER TEAM MODEL CONTEXT
 ============================================================
 
 Use this only as supporting evidence for moneyline, spread, and game-total
-decisions. Sportsbook validation still uses the CFB ODDS section above.
+decisions. Sportsbook validation still uses the NFL ODDS section above.
 
 {propfinder_context}
 
@@ -730,7 +953,7 @@ Use this exact structure:
 
 {{
   "analysis_date": "{scrape_date}",
-  "league": "CFB",
+  "league": "NFL",
   "picks": [
     {{
       "rank": 1,
@@ -844,7 +1067,7 @@ def analyze_with_claude(
         api_key=ANTHROPIC_API_KEY
     )
 
-    prompt = build_cfb_prompt(
+    prompt = build_nfl_prompt(
         games,
         news_data,
         scrape_date,
@@ -852,7 +1075,7 @@ def analyze_with_claude(
     )
 
     print(
-        "\n🧠 Sending CFB slate to Claude..."
+        "\n🧠 Sending NFL slate to Claude..."
     )
 
     print(
@@ -861,7 +1084,7 @@ def analyze_with_claude(
     )
 
     response = client.messages.create(
-        model=CFB_MODEL,
+        model=NFL_MODEL,
         max_tokens=5000,
         messages=[
             {
@@ -886,7 +1109,7 @@ def analyze_with_claude(
         text_parts
     ).strip()
 
-    print("\n📝 RAW CLAUDE CFB RESPONSE:")
+    print("\n📝 RAW CLAUDE NFL RESPONSE:")
     print(raw_text)
     print()
 
@@ -1320,16 +1543,71 @@ def validate_game_total(
     return validated, None
 
 
+def validate_model_edge(checked, game, model_index):
+    """Require the PropFinder projection to support the selected side."""
+    model = model_for_odds_game(game, model_index or {})
+    if model is None:
+        return None, "no matching PropFinder projection for edge validation"
+
+    pick_type = checked.get("pick_type")
+    if pick_type == "moneyline":
+        team = checked.get("team")
+        abbreviation = NFL_TEAM_ABBREVIATIONS.get(team)
+        model_probability = model["win_probabilities"].get(abbreviation)
+        if model_probability is None:
+            return None, "PropFinder win probability unavailable"
+        implied = american_implied_probability(checked["best_odds"])
+        edge = model_probability - implied
+        if edge < 0.02:
+            return None, (
+                f"moneyline has no qualifying value: model {model_probability:.1%} "
+                f"vs implied {implied:.1%} ({edge:+.1%} edge)"
+            )
+        checked["model_probability"] = round(model_probability, 4)
+        checked["implied_probability"] = round(implied, 4)
+        checked["model_edge"] = round(edge, 4)
+
+    elif pick_type == "spread":
+        selected = NFL_TEAM_ABBREVIATIONS.get(checked.get("team"))
+        if selected in model.get("model_spreads", {}):
+            projected_margin = -model["model_spreads"][selected]
+        elif selected == model["away_abbr"]:
+            projected_margin = model["away_score"] - model["home_score"]
+        elif selected == model["home_abbr"]:
+            projected_margin = model["home_score"] - model["away_score"]
+        else:
+            return None, "selected team missing from PropFinder projection"
+        edge = projected_margin + float(checked["line"])
+        if edge < 0.5:
+            return None, f"spread is not supported by projection ({edge:+.1f} point edge)"
+        checked["projected_margin"] = round(projected_margin, 2)
+        checked["model_edge"] = round(edge, 2)
+
+    elif pick_type == "game_total":
+        line = float(checked["line"])
+        projected = model["projected_total"]
+        edge = projected - line
+        if checked.get("over_under") == "Under":
+            edge = -edge
+        if edge < 0.5:
+            return None, f"total side is not supported by projection ({edge:+.1f} point edge)"
+        checked["projected_total"] = round(projected, 2)
+        checked["model_edge"] = round(edge, 2)
+
+    return checked, None
+
+
 # ============================================================
 # VALIDATE ALL CLAUDE PICKS
 # ============================================================
 
-def validate_cfb_picks(
+def validate_nfl_picks(
     claude_data,
     games,
+    model_index=None,
 ):
     print(
-        "\n🔎 Validating Claude CFB picks "
+        "\n🔎 Validating Claude NFL picks "
         "against FD/Caesars..."
     )
 
@@ -1346,6 +1624,7 @@ def validate_cfb_picks(
 
     validated = []
     rejected = []
+    used_markets = set()
 
     for index, pick in enumerate(
         raw_picks,
@@ -1473,6 +1752,25 @@ def validate_cfb_picks(
             )
             continue
 
+        checked, error = validate_model_edge(
+            checked, game, model_index or {}
+        )
+        if checked is None:
+            rejected.append({"pick": pick, "reason": error})
+            continue
+
+        game_key = normalize_text(
+            f"{game['away_team']} @ {game['home_team']}"
+        )
+        market_key = (game_key, checked.get("pick_type"))
+        if market_key in used_markets:
+            rejected.append({
+                "pick": pick,
+                "reason": "duplicate or opposing side already selected for this game/market",
+            })
+            continue
+        used_markets.add(market_key)
+
         checked[
             "prediction_confidence"
         ] = confidence
@@ -1540,7 +1838,7 @@ def validate_cfb_picks(
 # SAVE RESULTS
 # ============================================================
 
-def save_cfb_picks(
+def save_nfl_picks(
     scrape_date,
     games,
     validated,
@@ -1558,7 +1856,7 @@ def save_cfb_picks(
 
     output = {
         "date": scrape_date,
-        "league": "CFB",
+        "league": "NFL",
         "markets": [
             "moneyline",
             "spread",
@@ -1586,7 +1884,7 @@ def save_cfb_picks(
 
     filepath = (
         f"logs/{scrape_date}_"
-        f"cfb_picks.json"
+        f"nfl_picks.json"
     )
 
     with open(
@@ -1602,7 +1900,7 @@ def save_cfb_picks(
         )
 
     print(
-        f"\n💾 CFB picks saved to "
+        f"\n💾 NFL picks saved to "
         f"{filepath}"
     )
 
@@ -1613,7 +1911,7 @@ def save_cfb_picks(
 # DISPLAY
 # ============================================================
 
-def print_cfb_results(
+def print_nfl_results(
     picks,
 ):
     print(
@@ -1621,7 +1919,7 @@ def print_cfb_results(
         + "=" * 65
     )
 
-    print("🏈 CFB VALIDATED PICKS — TWO SEPARATE TOP 5 LISTS")
+    print("🏈 NFL VALIDATED PICKS — TWO SEPARATE TOP 5 LISTS")
 
     print(
         "=" * 65
@@ -1629,7 +1927,7 @@ def print_cfb_results(
 
     if not picks:
         print(
-            "\nNo CFB bets cleared "
+            "\nNo NFL bets cleared "
             "the validation threshold."
         )
 
@@ -1700,7 +1998,7 @@ def print_cfb_results(
 # MAIN ANALYZER
 # ============================================================
 
-def analyze_cfb(
+def analyze_nfl(
     scrape_date=None,
 ):
     if scrape_date is None:
@@ -1714,7 +2012,7 @@ def analyze_cfb(
     )
 
     print(
-        f"🏈 CFB ANALYZER — "
+        f"🏈 NFL ANALYZER — "
         f"{scrape_date}"
     )
 
@@ -1727,7 +2025,7 @@ def analyze_cfb(
         "Books: FanDuel | Caesars | PropFinder prop-price source"
     )
 
-    print("College player props: ENABLED via PropFinder export")
+    print("NFL player props: ENABLED via PropFinder export")
 
     print(
         f"{'=' * 65}"
@@ -1737,25 +2035,24 @@ def analyze_cfb(
     # Load odds
     # --------------------------------------------------------
 
-    odds_data = load_cfb_odds(
+    odds_data = load_nfl_odds(
         scrape_date
     )
 
-    intelligence = load_cfb_intelligence(scrape_date)
-    eligible_prop_teams = teams_on_prop_finder_slate(
-        intelligence["games"].get("cards", []), scrape_date
+    intelligence = load_nfl_intelligence(scrape_date)
+    nfl_week = nfl_week_from_intelligence(intelligence)
+    prop_candidates = []
+    model_index = build_prop_finder_model_index(
+        intelligence["games"].get("cards", [])
     )
-    prop_candidates = build_prop_candidates(
-        intelligence["props"], eligible_teams=eligible_prop_teams
-    )
-    model_context = format_prop_finder_context(intelligence)
 
     print(
         f"📊 PropFinder: "
         f"{len(intelligence['games'].get('cards', []))} projections | "
-        f"{len(intelligence['ratings'].get('rows', []))} ratings | "
+        f"{len(intelligence['weather'].get('blocks', []))} weather blocks | "
+        f"{len(intelligence['home_field'].get('blocks', []))} HFA blocks | "
         f"{sum(len(v.get('rows', [])) for v in intelligence['props'].get('views', {}).values())} props | "
-        f"{len(eligible_prop_teams)} slate teams"
+        f"Week {nfl_week}"
     )
 
     all_games = odds_data.get(
@@ -1765,7 +2062,7 @@ def analyze_cfb(
 
     print(
         f"\n📥 Loaded "
-        f"{len(all_games)} CFB games "
+        f"{len(all_games)} NFL games "
         f"from odds file"
     )
 
@@ -1773,20 +2070,32 @@ def analyze_cfb(
     # Limit to current slate
     # --------------------------------------------------------
 
-    games = filter_cfb_slate(
+    games = filter_nfl_slate(
         all_games,
         scrape_date,
     )
 
+    eligible_prop_teams = teams_in_odds_slate(games)
+    model_context = format_prop_finder_context(intelligence, games)
+    prop_candidates = build_prop_candidates(
+        intelligence["props"],
+        eligible_teams=eligible_prop_teams,
+        week=nfl_week,
+    )
+
     print(
-        f"📅 CFB games on "
+        f"📅 NFL games on "
         f"{scrape_date}: "
         f"{len(games)} games"
+    )
+    print(
+        f"🎯 Eligible NFL props: {len(prop_candidates)} "
+        f"across {len(eligible_prop_teams)} slate teams"
     )
 
     if not games:
         print(
-            f"\n⚠️ No CFB games scheduled for "
+            f"\n⚠️ No NFL games scheduled for "
             f"{scrape_date}."
         )
 
@@ -1794,7 +2103,7 @@ def analyze_cfb(
         for rank, pick in enumerate(fallback_props, start=1):
             pick["rank"] = rank
 
-        return save_cfb_picks(
+        return save_nfl_picks(
             scrape_date,
             games,
             fallback_props,
@@ -1808,7 +2117,7 @@ def analyze_cfb(
 
     news_data = load_news(
         scrape_date,
-        "cfb",
+        "nfl",
     )
 
     print(
@@ -1843,9 +2152,10 @@ def analyze_cfb(
     # --------------------------------------------------------
 
     validated, rejected = (
-        validate_cfb_picks(
+        validate_nfl_picks(
             claude_data,
             games,
+            model_index,
         )
     )
 
@@ -1870,7 +2180,7 @@ def analyze_cfb(
     # Save
     # --------------------------------------------------------
 
-    output = save_cfb_picks(
+    output = save_nfl_picks(
         scrape_date,
         games,
         validated,
@@ -1882,7 +2192,7 @@ def analyze_cfb(
     # Print
     # --------------------------------------------------------
 
-    print_cfb_results(
+    print_nfl_results(
         validated
     )
 
@@ -1901,6 +2211,6 @@ if __name__ == "__main__":
     else:
         requested_date = None
 
-    analyze_cfb(
+    analyze_nfl(
         requested_date
     )

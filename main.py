@@ -839,6 +839,30 @@ async def run_all():
     cfb_games = []
 
     # --------------------------------------------------------
+    # STEP 4.9 — CFB PROPFINDER INTELLIGENCE
+    # --------------------------------------------------------
+
+    print(
+        "🏈 STEP 4.9 — Scraping CFB props, projections, "
+        "and power ratings..."
+    )
+
+    try:
+        from scraper import run_cfb_scraper
+
+        await run_cfb_scraper()
+
+        print(
+            "✅ Step 4.9 complete — CFB PropFinder data ready\n"
+        )
+
+    except Exception as e:
+        print(
+            f"⚠️ CFB PropFinder scrape failed "
+            f"(continuing with available snapshots): {e}\n"
+        )
+
+    # --------------------------------------------------------
     # STEP 5 — CFB ODDS
     # --------------------------------------------------------
 
@@ -960,23 +984,33 @@ async def run_all():
         )
 
         if cfb_picks:
-
-            cfb_count = len(
-                cfb_picks.get(
-                    "top_picks",
-                    cfb_picks.get(
-                        "picks",
-                        [],
-                    ),
-                )
+            cfb_prop_count = len(
+                cfb_picks.get("player_prop_picks", [])
+            )
+            cfb_game_count = len(
+                cfb_picks.get("game_picks", [])
             )
 
+            if cfb_prop_count or cfb_game_count:
+                cfb_count = cfb_prop_count + cfb_game_count
+            else:
+                cfb_count = len(
+                    cfb_picks.get(
+                        "top_picks",
+                        cfb_picks.get("picks", []),
+                    )
+                )
+
         else:
+            cfb_prop_count = 0
+            cfb_game_count = 0
             cfb_count = 0
 
         print(
             f"✅ Step 5.2 complete — "
-            f"{cfb_count} CFB pick(s)\n"
+            f"{cfb_prop_count} CFB prop(s) + "
+            f"{cfb_game_count} CFB game pick(s) "
+            f"({cfb_count} total)\n"
         )
 
     except Exception as e:
@@ -987,6 +1021,126 @@ async def run_all():
 
         import traceback
         traceback.print_exc()
+
+    # ========================================================
+    # NFL
+    # ========================================================
+
+    print("\n" + "=" * 65)
+    print("🏈 NFL PIPELINE")
+    print("=" * 65 + "\n")
+
+    nfl_odds = {}
+    nfl_picks = None
+    nfl_games = []
+
+    # Fetch odds first so expensive work runs only on NFL game days.
+    print("🏈 STEP 5.5 — Fetching NFL odds...")
+    try:
+        from odds_fetcher import fetch_nfl_odds
+
+        raw_nfl_odds = fetch_nfl_odds()
+        if not raw_nfl_odds:
+            raw_nfl_odds = load_json_file(
+                f"logs/{scrape_date}_nfl_odds.json", {}
+            )
+
+        nfl_odds = raw_nfl_odds
+        nfl_games = [
+            game for game in nfl_odds.get("games", [])
+            if game_is_on_date(game, scrape_date)
+        ]
+
+        print(
+            f"   📥 NFL games from API: "
+            f"{len(nfl_odds.get('games', []))}"
+        )
+        print(
+            f"   📅 NFL games on {scrape_date}: "
+            f"{len(nfl_games)}"
+        )
+        print("✅ Step 5.5 complete\n")
+
+    except Exception as e:
+        print(f"⚠️ NFL odds failed (skipping): {e}\n")
+        nfl_games = []
+
+    if nfl_games:
+        print(
+            "🏈 STEP 5.6 — Scraping NFL props, projections, "
+            "weather, home field, and discrepancies..."
+        )
+        try:
+            from scraper import run_nfl_scraper
+
+            NFL_SCRAPER_TIMEOUT = 420
+            await asyncio.wait_for(
+                run_nfl_scraper(),
+                timeout=NFL_SCRAPER_TIMEOUT,
+            )
+            print("✅ Step 5.6 complete — NFL data ready\n")
+        except asyncio.TimeoutError:
+            print(
+                "⏰ NFL PropFinder exceeded 7 minutes. "
+                "Continuing with available snapshots.\n"
+            )
+        except Exception as e:
+            print(
+                f"⚠️ NFL PropFinder scrape failed "
+                f"(continuing with available snapshots): {e}\n"
+            )
+
+        print("📰 STEP 5.7 — Fetching NFL news...")
+        try:
+            import news_fetcher
+
+            fetch_nfl_news = getattr(
+                news_fetcher, "fetch_nfl_news", None
+            )
+            if fetch_nfl_news:
+                fetch_nfl_news(nfl_games, scrape_date)
+                print("✅ Step 5.7 complete\n")
+            else:
+                print(
+                    "ℹ️ fetch_nfl_news() is not available; "
+                    "continuing without fresh NFL news.\n"
+                )
+        except Exception as e:
+            print(f"⚠️ NFL news failed (continuing): {e}\n")
+
+        print("🧠 STEP 5.8 — Running NFL analyzer...")
+        try:
+            from nfl_analyzer import analyze_nfl
+
+            nfl_picks = analyze_nfl(scrape_date)
+            nfl_prop_count = len(
+                (nfl_picks or {}).get("player_prop_picks", [])
+            )
+            nfl_game_count = len(
+                (nfl_picks or {}).get("game_picks", [])
+            )
+            print(
+                f"✅ Step 5.8 complete — {nfl_prop_count} NFL prop(s) + "
+                f"{nfl_game_count} NFL game pick(s) "
+                f"({nfl_prop_count + nfl_game_count} total)\n"
+            )
+        except Exception as e:
+            print(f"⚠️ NFL analyzer failed (skipping): {e}\n")
+            import traceback
+            traceback.print_exc()
+    else:
+        print(
+            f"ℹ️ No NFL games scheduled for {scrape_date}.\n"
+            "   Skipping NFL PropFinder, news, and Claude analysis.\n"
+        )
+        nfl_picks = {
+            "league": "NFL",
+            "games_analyzed": 0,
+            "player_prop_picks": [],
+            "game_picks": [],
+            "picks": [],
+            "slate_summary": "No NFL games scheduled today.",
+        }
 
     # ========================================================
     # NBA
@@ -1252,6 +1406,7 @@ async def run_all():
             # nba_picks
             # wnba_picks
             # cfb_picks
+            # nfl_picks
             #
             # This lets main.py work before and after
             # emailer.py is replaced.
@@ -1269,6 +1424,9 @@ async def run_all():
                 and
                 "cfb_picks"
                 in email_parameters
+                and
+                "nfl_picks"
+                in email_parameters
             ):
 
                 send_picks_email(
@@ -1279,13 +1437,14 @@ async def run_all():
                     nba_picks=nba_picks,
                     wnba_picks=wnba_picks,
                     cfb_picks=cfb_picks,
+                    nfl_picks=nfl_picks,
                 )
 
             else:
 
                 print(
                     "⚠️ Current emailer.py does not "
-                    "yet support WNBA + CFB."
+                    "yet support WNBA + CFB + NFL."
                 )
 
                 print(
@@ -1383,6 +1542,12 @@ async def run_all():
         else 0
     )
 
+    nfl_count = (
+        len(nfl_picks.get("picks", []))
+        if nfl_picks
+        else 0
+    )
+
     nba_count = (
         len(
             nba_picks.get(
@@ -1414,6 +1579,9 @@ async def run_all():
     )
     print(
         f"   🏈 CFB:  {cfb_count}"
+    )
+    print(
+        f"   🏈 NFL:  {nfl_count}"
     )
     print(
         f"   ⚾ MLB:  {mlb_count}"

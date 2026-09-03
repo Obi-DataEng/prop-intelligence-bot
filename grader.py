@@ -2,6 +2,7 @@ import requests
 import json
 import os
 import sqlite3
+import sys
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from difflib import SequenceMatcher
@@ -10,7 +11,6 @@ import unicodedata
 load_dotenv()
 
 MLB_STATS_URL = "https://statsapi.mlb.com/api/v1"
-FLAT_BET = 5.00
 DB_PATH = "data/mlb_picks.db"
 
 # ─────────────────────────────────────────────
@@ -42,26 +42,10 @@ def fuzzy_match_player(pick_name, api_players, threshold=0.85):
     return None, 0
 
 # ─────────────────────────────────────────────
-# PAYOUT CALCULATION
+# RECORD-ONLY RESULT CALCULATION
 # ─────────────────────────────────────────────
 
-def calc_payout(odds, bet=FLAT_BET):
-    if not odds:
-        return 0
-    try:
-        odds = int(str(odds).replace('+', ''))
-        if odds > 0:
-            return round(bet * odds / 100, 2)
-        else:
-            return round(bet * 100 / abs(odds), 2)
-    except:
-        return 0
-
-# ─────────────────────────────────────────────
-# GRADING CORE
-# ─────────────────────────────────────────────
-
-def grade_result(actual, line, over_under, did_play, odds, bet=FLAT_BET):
+def grade_result(actual, line, over_under, did_play, odds=None, bet=None):
     if not did_play:
         return 'push', 0
     try:
@@ -73,9 +57,9 @@ def grade_result(actual, line, over_under, did_play, odds, bet=FLAT_BET):
         return 'push', 0
     ou = over_under.lower() if over_under else 'over'
     if ou == 'over':
-        return ('win', calc_payout(odds, bet)) if actual > line else ('loss', -bet)
+        return ('win', 0) if actual > line else ('loss', 0)
     else:
-        return ('win', calc_payout(odds, bet)) if actual < line else ('loss', -bet)
+        return ('win', 0) if actual < line else ('loss', 0)
 
 # ─────────────────────────────────────────────
 # MLB STATS API
@@ -272,7 +256,7 @@ def grade_game_pick(pick, game_results):
         total = game['total']
         if prop == 'ML':
             winner = home if home_score > away_score else away
-            return ('win' if pick_team in winner else 'loss', calc_payout(pick.get('fd_odds')) if pick_team in winner else -FLAT_BET)
+            return ('win' if pick_team in winner else 'loss', 0)
         elif prop == 'OU':
             try:
                 line = float(fd_line)
@@ -281,7 +265,7 @@ def grade_game_pick(pick, game_results):
             if total == line:
                 return 'push', 0
             result = 'win' if (ou_pick == 'over' and total > line) or (ou_pick != 'over' and total < line) else 'loss'
-            return (result, calc_payout(pick.get('fd_odds')) if result == 'win' else -FLAT_BET)
+            return result, 0
         elif prop == 'Spread':
             try:
                 line = float(fd_line)
@@ -291,7 +275,7 @@ def grade_game_pick(pick, game_results):
             if margin + line == 0:
                 return 'push', 0
             result = 'win' if margin + line > 0 else 'loss'
-            return (result, calc_payout(pick.get('fd_odds')) if result == 'win' else -FLAT_BET)
+            return result, 0
     return 'pending', 0
 
 # ─────────────────────────────────────────────
@@ -306,12 +290,11 @@ def init_db():
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         pick_date TEXT, graded_date TEXT, sport TEXT, category TEXT,
         player_name TEXT, game TEXT, over_under TEXT, line REAL,
-        odds TEXT, best_book TEXT, result TEXT, actual_value REAL,
-        bet_amount REAL, profit_loss REAL)''')
+        odds TEXT, best_book TEXT, result TEXT, actual_value REAL)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS parlay_results (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         pick_date TEXT, graded_date TEXT, sport TEXT, legs TEXT,
-        estimated_odds TEXT, result TEXT, bet_amount REAL, profit_loss REAL)''')
+        estimated_odds TEXT, result TEXT)''')
     conn.commit()
     conn.close()
 
@@ -341,18 +324,18 @@ def save_pick_result(pick_date, graded_date, sport, category, player_name, game,
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute('''INSERT INTO pick_results
-        (pick_date, graded_date, sport, category, player_name, game, over_under, line, odds, best_book, result, actual_value, bet_amount, profit_loss)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
-        (pick_date, graded_date, sport, category, player_name, game, over_under, line, odds, best_book, result, actual_value, FLAT_BET, profit_loss))
+        (pick_date, graded_date, sport, category, player_name, game, over_under, line, odds, best_book, result, actual_value)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
+        (pick_date, graded_date, sport, category, player_name, game, over_under, line, odds, best_book, result, actual_value))
     conn.commit()
     conn.close()
 
 def save_parlay_result(pick_date, graded_date, sport, legs, estimated_odds, result, profit_loss):
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
-    cursor.execute('''INSERT INTO parlay_results (pick_date, graded_date, sport, legs, estimated_odds, result, bet_amount, profit_loss)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)''',
-        (pick_date, graded_date, sport, json.dumps(legs), estimated_odds, result, FLAT_BET, profit_loss))
+    cursor.execute('''INSERT INTO parlay_results (pick_date, graded_date, sport, legs, estimated_odds, result)
+        VALUES (?, ?, ?, ?, ?, ?)''',
+        (pick_date, graded_date, sport, json.dumps(legs), estimated_odds, result))
     conn.commit()
     conn.close()
 
@@ -362,55 +345,47 @@ def get_cumulative_stats():
     stats = {}
     try:
         cursor.execute('''SELECT sport, category,
-            COUNT(*),
             SUM(CASE WHEN result='win' THEN 1 ELSE 0 END),
             SUM(CASE WHEN result='loss' THEN 1 ELSE 0 END),
-            SUM(CASE WHEN result='push' THEN 1 ELSE 0 END),
-            SUM(profit_loss), SUM(bet_amount)
+            SUM(CASE WHEN result='push' THEN 1 ELSE 0 END)
             FROM pick_results WHERE result IN ('win','loss','push')
             GROUP BY sport, category ORDER BY sport, category''')
         for row in cursor.fetchall():
-            sport, cat, total, wins, losses, pushes, profit, wagered = row
+            sport, cat, wins, losses, pushes = row
             win_rate = (wins / (wins + losses) * 100) if (wins + losses) > 0 else 0
-            roi = (profit / wagered * 100) if wagered and wagered > 0 else 0
             stats[f"{sport} - {cat}"] = {
                 'sport': sport, 'category': cat,
                 'wins': wins or 0, 'losses': losses or 0, 'pushes': pushes or 0,
-                'win_rate': round(win_rate, 1), 'total_profit': round(profit or 0, 2), 'roi': round(roi, 1)
+                'win_rate': round(win_rate, 1)
             }
         cursor.execute('''SELECT sport,
-            COUNT(*),
             SUM(CASE WHEN result='win' THEN 1 ELSE 0 END),
-            SUM(CASE WHEN result='loss' THEN 1 ELSE 0 END),
-            SUM(profit_loss), SUM(bet_amount)
+            SUM(CASE WHEN result='loss' THEN 1 ELSE 0 END)
             FROM parlay_results WHERE result IN ('win','loss') GROUP BY sport''')
         for row in cursor.fetchall():
-            sport, total, wins, losses, profit, wagered = row
+            sport, wins, losses = row
             win_rate = (wins / (wins + losses) * 100) if (wins + losses) > 0 else 0
-            roi = (profit / wagered * 100) if wagered and wagered > 0 else 0
             stats[f"{sport} - Parlay"] = {
                 'sport': sport, 'category': 'Parlay',
                 'wins': wins or 0, 'losses': losses or 0, 'pushes': 0,
-                'win_rate': round(win_rate, 1), 'total_profit': round(profit or 0, 2), 'roi': round(roi, 1)
+                'win_rate': round(win_rate, 1)
             }
         cursor.execute('''SELECT
             SUM(CASE WHEN result='win' THEN 1 ELSE 0 END),
             SUM(CASE WHEN result='loss' THEN 1 ELSE 0 END),
-            SUM(CASE WHEN result='push' THEN 1 ELSE 0 END),
-            SUM(profit_loss), SUM(bet_amount)
+            SUM(CASE WHEN result='push' THEN 1 ELSE 0 END)
             FROM (
-                SELECT result, profit_loss, bet_amount FROM pick_results WHERE result IN ('win','loss','push')
+                SELECT result FROM pick_results WHERE result IN ('win','loss','push')
                 UNION ALL
-                SELECT result, profit_loss, bet_amount FROM parlay_results WHERE result IN ('win','loss')
+                SELECT result FROM parlay_results WHERE result IN ('win','loss')
             )''')
         row = cursor.fetchone()
         if row:
-            wins, losses, pushes, profit, wagered = row
+            wins, losses, pushes = row
             win_rate = (wins / (wins + losses) * 100) if (wins + losses) > 0 else 0
-            roi = (profit / wagered * 100) if wagered and wagered > 0 else 0
             stats['OVERALL'] = {
                 'wins': wins or 0, 'losses': losses or 0, 'pushes': pushes or 0,
-                'win_rate': round(win_rate, 1), 'total_profit': round(profit or 0, 2), 'roi': round(roi, 1)
+                'win_rate': round(win_rate, 1)
             }
     except Exception as e:
         print(f"   ❌ Stats error: {e}")
@@ -427,14 +402,13 @@ def get_daily_summary_from_db(pick_date):
             SUM(CASE WHEN result='win' THEN 1 ELSE 0 END),
             SUM(CASE WHEN result='loss' THEN 1 ELSE 0 END),
             SUM(CASE WHEN result='push' THEN 1 ELSE 0 END),
-            SUM(CASE WHEN result='pending' THEN 1 ELSE 0 END),
-            SUM(profit_loss)
+            SUM(CASE WHEN result='pending' THEN 1 ELSE 0 END)
             FROM pick_results WHERE pick_date = ? GROUP BY sport, category''', (pick_date,))
         for row in cursor.fetchall():
-            sport, cat, wins, losses, pushes, pending, profit = row
+            sport, cat, wins, losses, pushes, pending = row
             summary[f"{sport} - {cat}"] = {
                 'wins': wins or 0, 'losses': losses or 0, 'pushes': pushes or 0,
-                'pending': pending or 0, 'profit': round(profit or 0, 2)
+                'pending': pending or 0
             }
     except Exception as e:
         print(f"   ❌ Daily summary error: {e}")
@@ -555,9 +529,9 @@ def grade_nrfi_picks(nrfi_picks, pick_date, graded_date):
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
         cursor.execute('''INSERT INTO pick_results
-            (pick_date, graded_date, sport, category, player_name, game, over_under, line, odds, best_book, result, actual_value, bet_amount, profit_loss)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
-            (pick_date, graded_date, 'MLB', 'NRFI', pitchers, game, bet, None, None, 'N/A', result, None, 0, 0))
+            (pick_date, graded_date, sport, category, player_name, game, over_under, line, odds, best_book, result, actual_value)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
+            (pick_date, graded_date, 'MLB', 'NRFI', pitchers, game, bet, None, None, 'N/A', result, None))
         conn.commit()
         conn.close()
         print(f"   {result.upper():7} — {bet} {game} {runs_str}")
@@ -722,21 +696,40 @@ def run_grader():
         pend = stats.get('pending', 0)
         total = w + l + p
         rate = f"{w/total*100:.0f}%" if total > 0 else "—"
-        profit_str = f" | ${stats['profit']:+.2f}" if stats.get('profit') != 0 else " | W/L only"
-        print(f"  {cat:25} {w}W - {l}L - {p}P{f' ({pend} pending)' if pend else ''} | {rate}{profit_str}")
+        print(f"  {cat:25} {w}W - {l}L - {p}P{f' ({pend} pending)' if pend else ''} | {rate}")
 
     print(f"\n📈 CUMULATIVE RECORD (All Time)")
     print(f"{'='*50}")
     for cat, stats in cumulative.items():
         if cat == 'OVERALL':
             continue
-        print(f"  {cat:25} {stats['wins']}W - {stats['losses']}L - {stats['pushes']}P | {stats['win_rate']}% | ${stats['total_profit']:+.2f} | ROI: {stats['roi']:+.1f}%")
+        print(f"  {cat:25} {stats['wins']}W - {stats['losses']}L - {stats['pushes']}P | {stats['win_rate']}%")
     if cumulative.get('OVERALL'):
         o = cumulative['OVERALL']
-        print(f"\n  {'OVERALL':25} {o['wins']}W - {o['losses']}L - {o['pushes']}P | {o['win_rate']}% | ${o['total_profit']:+.2f} | ROI: {o['roi']:+.1f}%")
+        print(f"\n  {'OVERALL':25} {o['wins']}W - {o['losses']}L - {o['pushes']}P | {o['win_rate']}%")
 
     return graded_summary, cumulative
 
 
+def reset_grader_records():
+    """Clear grading history only; preserve every non-grader database table."""
+    init_db()
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("DELETE FROM pick_results")
+    cursor.execute("DELETE FROM parlay_results")
+    cursor.execute(
+        "DELETE FROM sqlite_sequence WHERE name IN ('pick_results', 'parlay_results')"
+    )
+    conn.commit()
+    conn.close()
+    print("✅ Grader history reset")
+    print("   Tracking will restart with the next saved picks.")
+    print("   Games, pitchers, batters, and other data were preserved.")
+
+
 if __name__ == "__main__":
-    run_grader()
+    if len(sys.argv) > 1 and sys.argv[1].lower() == "--reset":
+        reset_grader_records()
+    else:
+        run_grader()

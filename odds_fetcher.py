@@ -810,6 +810,78 @@ def fetch_cfb_odds():
 
     return output
 
+
+# ============================================================
+# NFL — GAME MARKETS ONLY
+# ============================================================
+
+NFL_BOOKMAKERS = "fanduel,williamhill_us"
+
+
+def fetch_nfl_odds():
+    """
+    Fetch NFL game odds from FanDuel and Caesars.
+
+    Player props are supplied by the PropFinder NFL export, so this
+    request intentionally fetches only moneyline, spread, and total.
+    """
+    ensure_api_key()
+
+    scrape_date = datetime.now().strftime("%Y-%m-%d")
+
+    print(f"\n{'=' * 55}")
+    print(f"🏈 Fetching NFL Odds — {scrape_date}")
+    print("📚 Books: FanDuel | Caesars")
+    print("🎲 Markets: Moneyline | Spread | Game Total")
+    print("🎯 Player props: supplied by PropFinder export")
+    print(f"{'=' * 55}\n")
+
+    url = f"{BASE_URL}/sports/americanfootball_nfl/odds"
+    params = {
+        "apiKey": API_KEY,
+        "regions": "us,us2",
+        "markets": GAME_MARKETS,
+        "bookmakers": NFL_BOOKMAKERS,
+        "oddsFormat": "american",
+    }
+
+    data = request_json(url, params, "NFL game odds")
+
+    if data is None:
+        data = []
+
+    # NFL and CFB use the same normalized football game schema.
+    games = [parse_cfb_game(game) for game in data]
+
+    print(f"✅ {len(games)} NFL games found")
+
+    for game in games:
+        print_cfb_game(game)
+
+    output = {
+        "date": scrape_date,
+        "league": "NFL",
+        "sport_key": "americanfootball_nfl",
+        "books": ["FD", "CZS"],
+        "game_markets": [
+            "moneyline",
+            "spread",
+            "total",
+        ],
+        "player_props_enabled": False,
+        "player_props_source": "PropFinder",
+        "games": games,
+    }
+
+    os.makedirs("logs", exist_ok=True)
+    output_file = f"logs/{scrape_date}_nfl_odds.json"
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+
+    print(f"\n💾 NFL odds saved to {output_file}")
+    return output
+
 # ============================================================
 # CLI
 # ============================================================
@@ -829,8 +901,11 @@ if __name__ == "__main__":
     elif mode in ("cfb", "ncaaf"):
         fetch_cfb_odds()
 
+    elif mode == "nfl":
+        fetch_nfl_odds()
+
     else:
         print(
             "Usage: python3 odds_fetcher.py "
-            "[mlb|nba|wnba|cfb]"
+            "[mlb|nba|wnba|cfb|nfl]"
         )

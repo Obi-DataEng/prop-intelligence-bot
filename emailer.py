@@ -23,6 +23,7 @@ TIER_COLORS = {
 
 WNBA_COLOR = "#7C3AED"
 CFB_COLOR = "#38BDF8"
+NFL_COLOR = "#A78BFA"
 MLB_COLOR = "#16A36A"
 NRFI_COLOR = "#8B5CF6"
 NBA_COLOR = "#F97316"
@@ -662,17 +663,29 @@ def format_cfb_section(
     if not cfb_picks:
         return ""
 
-    top_picks = get_top_picks(
-        cfb_picks
-    )
+    combined = get_top_picks(cfb_picks)
+
+    player_props = cfb_picks.get("player_prop_picks")
+    game_picks = cfb_picks.get("game_picks")
+
+    # Backward compatibility for older analyzer output.
+    if player_props is None:
+        player_props = [
+            pick for pick in combined
+            if pick.get("pick_type") == "player_prop"
+        ]
+    if game_picks is None:
+        game_picks = [
+            pick for pick in combined
+            if pick.get("pick_type") != "player_prop"
+        ]
+
+    player_props = (player_props or [])[:5]
+    game_picks = (game_picks or [])[:5]
+    top_picks = player_props + game_picks
 
     summary = cfb_picks.get(
         "slate_summary",
-        "",
-    )
-
-    best_bet = cfb_picks.get(
-        "best_bet",
         "",
     )
 
@@ -689,7 +702,6 @@ def format_cfb_section(
         else:
             message = (
                 summary
-                or best_bet
                 or
                 "No qualifying CFB bets today."
             )
@@ -722,9 +734,31 @@ def format_cfb_section(
         </div>
         """
 
-    picks_html = "".join(
+    props_html = "".join(
         format_cfb_pick(pick)
-        for pick in top_picks
+        for pick in player_props
+    ) or """
+        <div style='color:#64748B;font-size:13px;padding:10px 0;'>
+            No qualifying CFB player props.
+        </div>
+    """
+
+    games_html = "".join(
+        format_cfb_pick(pick)
+        for pick in game_picks
+    ) or """
+        <div style='color:#64748B;font-size:13px;padding:10px 0;'>
+            No qualifying CFB moneyline, spread, or total picks.
+        </div>
+    """
+
+    best_prop = (
+        player_props[0].get("selection", "")
+        if player_props else "No qualifying player prop"
+    )
+    best_game = (
+        game_picks[0].get("selection", "")
+        if game_picks else "No qualifying game bet"
     )
 
     return f"""
@@ -765,14 +799,27 @@ def format_cfb_section(
                 font-weight:bold;
                 margin-bottom:5px;
             '>
-                ⭐ CFB BEST BET
+                ⭐ CFB BEST PLAYER PROP
             </div>
 
             <div style='
                 color:#fff;
                 font-size:14px;
             '>
-                {best_bet}
+                {best_prop}
+            </div>
+
+            <div style='
+                color:{CFB_COLOR};
+                font-size:12px;
+                font-weight:bold;
+                margin:12px 0 5px;
+            '>
+                ⭐ CFB BEST GAME BET
+            </div>
+
+            <div style='color:#fff;font-size:14px;'>
+                {best_game}
             </div>
 
         </div>
@@ -783,20 +830,61 @@ def format_cfb_section(
             padding-bottom:7px;
             font-size:16px;
         '>
-            TODAY'S TOP CFB PLAYS
+            TOP 5 CFB PLAYER PROPS
             <span style='
                 color:#64748B;
                 font-size:12px;
                 font-weight:normal;
             '>
-                ({len(top_picks)})
+                ({len(player_props)})
             </span>
         </h2>
 
-        {picks_html}
+        {props_html}
+
+        <div style='
+            color:#94A3B8;
+            font-size:11px;
+            line-height:1.5;
+            margin:8px 0 20px;
+        '>
+            Player-prop prices come from PropFinder. Availability may vary
+            by sportsbook and jurisdiction.
+        </div>
+
+        <h2 style='
+            color:{CFB_COLOR};
+            border-bottom:1px solid #334155;
+            padding-bottom:7px;
+            font-size:16px;
+        '>
+            TOP 5 CFB GAME PICKS — ML / SPREAD / O-U
+            <span style='
+                color:#64748B;
+                font-size:12px;
+                font-weight:normal;
+            '>
+                ({len(game_picks)})
+            </span>
+        </h2>
+
+        {games_html}
 
     </div>
     """
+
+
+def format_nfl_section(nfl_picks):
+    """Render NFL's separate Top 5 props and Top 5 game bets."""
+    if not nfl_picks:
+        return ""
+
+    # NFL and CFB intentionally share the same two-list result schema.
+    return (
+        format_cfb_section(nfl_picks)
+        .replace(CFB_COLOR, NFL_COLOR)
+        .replace("CFB", "NFL")
+    )
 
 
 # ============================================================
@@ -2226,6 +2314,11 @@ def format_all_time_performance(
             "🏈 CFB",
         ),
         (
+            "NFL",
+            NFL_COLOR,
+            "🏈 NFL",
+        ),
+        (
             "MLB",
             MLB_COLOR,
             "⚾ MLB",
@@ -2311,19 +2404,25 @@ def format_picks_email(
     nba_picks=None,
     wnba_picks=None,
     cfb_picks=None,
+    nfl_picks=None,
 ):
     mlb_picks = picks_data.get("top_picks", [])
     nrfi_picks = picks_data.get("nrfi_picks", [])
     wnba_top = get_top_picks(wnba_picks)
     cfb_top = get_top_picks(cfb_picks)
+    nfl_top = get_top_picks(nfl_picks)
     nba_top = get_top_picks(nba_picks)
 
     mlb_count = len(mlb_picks)
     nrfi_count = len(nrfi_picks)
     wnba_count = len(wnba_top)
     cfb_count = len(cfb_top)
+    nfl_count = len(nfl_top)
     nba_count = len(nba_top)
-    total_count = mlb_count + nrfi_count + wnba_count + cfb_count + nba_count
+    total_count = (
+        mlb_count + nrfi_count + wnba_count +
+        cfb_count + nfl_count + nba_count
+    )
 
     try:
         display_date = datetime.strptime(scrape_date, "%Y-%m-%d").strftime("%A · %B %d, %Y").upper()
@@ -2335,6 +2434,7 @@ def format_picks_email(
         <tr>
             {sport_tile(wnba_count, WNBA_COLOR, "WNBA")}
             {sport_tile(cfb_count, CFB_COLOR, "CFB")}
+            {sport_tile(nfl_count, NFL_COLOR, "NFL")}
             {sport_tile(mlb_count, MLB_COLOR, "MLB")}
             {sport_tile(nrfi_count, NRFI_COLOR, "NRFI")}
             {sport_tile(nba_count, NBA_COLOR, "NBA")}
@@ -2344,6 +2444,7 @@ def format_picks_email(
 
     wnba_section = format_wnba_section(wnba_picks)
     cfb_section = format_cfb_section(cfb_picks)
+    nfl_section = format_nfl_section(nfl_picks)
     results_section = format_daily_results(graded_summary)
     mlb_section = format_mlb_section(picks_data)
     nrfi_section = format_nrfi_section(nrfi_picks)
@@ -2388,6 +2489,7 @@ def format_picks_email(
 
     {wnba_section}
     {cfb_section}
+    {nfl_section}
     {results_section}
     {mlb_section}
     {nrfi_section}
@@ -2400,7 +2502,7 @@ def format_picks_email(
 <td align="center" style="padding:24px 22px;background:#070E18;border-top:1px solid #1E293B;">
     <div style="font-size:11px;line-height:14px;color:#38BDF8;font-weight:800;letter-spacing:1.8px;">PROP INTELLIGENCE</div>
     <div style="font-size:11px;line-height:18px;color:#64748B;margin-top:8px;">
-        WNBA {wnba_count} &nbsp;·&nbsp; CFB {cfb_count} &nbsp;·&nbsp; MLB {mlb_count} &nbsp;·&nbsp; NRFI {nrfi_count} &nbsp;·&nbsp; NBA {nba_count}
+        WNBA {wnba_count} &nbsp;·&nbsp; CFB {cfb_count} &nbsp;·&nbsp; NFL {nfl_count} &nbsp;·&nbsp; MLB {mlb_count} &nbsp;·&nbsp; NRFI {nrfi_count} &nbsp;·&nbsp; NBA {nba_count}
     </div>
     <div style="font-size:10px;line-height:17px;color:#475569;margin-top:12px;">
         Powered by PropFinder, Claude AI and The Odds API.<br>
@@ -2429,6 +2531,7 @@ def send_picks_email(
     nba_picks=None,
     wnba_picks=None,
     cfb_picks=None,
+    nfl_picks=None,
 ):
 
     sender = os.getenv(
@@ -2500,6 +2603,12 @@ def send_picks_email(
         )
     )
 
+    nfl_count = len(
+        get_top_picks(
+            nfl_picks
+        )
+    )
+
     nba_count = len(
         get_top_picks(
             nba_picks
@@ -2519,6 +2628,7 @@ def send_picks_email(
         f"🏆 Picks {scrape_date} | "
         f"WNBA:{wnba_count} "
         f"CFB:{cfb_count} "
+        f"NFL:{nfl_count} "
         f"MLB:{mlb_count} "
         f"NRFI:{nrfi_count} "
         f"NBA:{nba_count}"
@@ -2538,6 +2648,7 @@ def send_picks_email(
         nba_picks=nba_picks,
         wnba_picks=wnba_picks,
         cfb_picks=cfb_picks,
+        nfl_picks=nfl_picks,
     )
 
     msg.attach(
@@ -2600,11 +2711,13 @@ if __name__ == "__main__":
     nba_picks = None
     wnba_picks = None
     cfb_picks = None
+    nfl_picks = None
 
     picks_file = f"logs/{scrape_date}_picks.json"
     nba_file = f"logs/{scrape_date}_nba_picks.json"
     wnba_file = f"logs/{scrape_date}_wnba_picks.json"
     cfb_file = f"logs/{scrape_date}_cfb_picks.json"
+    nfl_file = f"logs/{scrape_date}_nfl_picks.json"
 
     # ========================================================
     # MLB / NRFI
@@ -2681,6 +2794,17 @@ if __name__ == "__main__":
         )
 
     # ========================================================
+    # NFL
+    # ========================================================
+
+    if os.path.exists(nfl_file):
+        with open(nfl_file, "r", encoding="utf-8") as f:
+            nfl_picks = json.load(f)
+        print(f"✅ Loaded NFL picks: {nfl_file}")
+    else:
+        print(f"⚠️ No NFL picks file found at {nfl_file}")
+
+    # ========================================================
     # NBA
     # ========================================================
 
@@ -2739,4 +2863,5 @@ if __name__ == "__main__":
         nba_picks=nba_picks,
         wnba_picks=wnba_picks,
         cfb_picks=cfb_picks,
+        nfl_picks=nfl_picks,
     )

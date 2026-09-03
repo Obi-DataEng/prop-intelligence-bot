@@ -11,8 +11,10 @@ NEWS_API_URL = "https://newsapi.org/v2/everything"
 
 NEWS_DOMAINS = (
     "espn.com,bleacherreport.com,cbssports.com,"
-    "nbcsports.com,theathletic.com,mlb.com,nba.com,"
-    "wnba.com,sportingnews.com,rotowire.com,rotoworld.com"
+    "nbcsports.com,profootballtalk.nbcsports.com,"
+    "theathletic.com,si.com,foxsports.com,"
+    "nfl.com,mlb.com,nba.com,wnba.com,"
+    "sportingnews.com,rotowire.com,rotoworld.com"
 )
 
 
@@ -154,16 +156,18 @@ def fetch_sport_news(
                     "stopping news fetch"
                 )
                 break
-
+            
             # ====================================================
-            # CFB
+            # CFB / NFL — full team name first
             # ====================================================
-            if sport.lower() == "cfb":
-
-                # First try full team name.
-                query = (
-                    f'"{team}" college football'
+            if sport.lower() in ("cfb", "nfl"):
+                league_phrase = (
+                    "college football"
+                    if sport.lower() == "cfb"
+                    else "NFL"
                 )
+
+                query = f'"{team}" {league_phrase}'
 
                 articles = fetch_articles_for_query(
                     query,
@@ -172,18 +176,15 @@ def fetch_sport_news(
 
                 request_count += 1
 
-                # If no results, try mascot/short name.
                 if (
                     not articles
                     and request_count < max_requests
                 ):
-                    short_name = short_team_name(
-                        team
-                    )
+                    short_name = short_team_name(team)
 
                     fallback_query = (
                         f'"{short_name}" '
-                        f'college football'
+                        f'{league_phrase}'
                     )
 
                     articles = fetch_articles_for_query(
@@ -197,9 +198,7 @@ def fetch_sport_news(
             # MLB / NBA / WNBA
             # ====================================================
             else:
-                short_name = short_team_name(
-                    team
-                )
+                short_name = short_team_name(team)
 
                 query = (
                     f'"{short_name}" '
@@ -331,6 +330,18 @@ def fetch_cfb_news(
         sport="cfb",
         max_requests=30,
     )
+
+def fetch_nfl_news(
+    games,
+    scrape_date,
+):
+    """Fetch recent NFL news for today's games."""
+    return fetch_sport_news(
+        games,
+        scrape_date,
+        sport="nfl",
+        max_requests=40,
+    )    
 
 
 def format_news_for_prompt(
