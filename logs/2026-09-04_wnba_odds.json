@@ -182,12 +182,12 @@
   "player_props": {
     "Connecticut Sun@Atlanta Dream": {
       "player_assists": {
-        "Jordin Canada": {
-          "line": 6.5,
+        "Angel Reese": {
+          "line": 2.5,
           "FD": {
-            "line": 6.5,
-            "over": -136,
-            "under": 102
+            "line": 2.5,
+            "over": -114,
+            "under": -114
           }
         },
         "Allisha Gray": {
@@ -198,20 +198,20 @@
             "under": -138
           }
         },
+        "Jordin Canada": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -136,
+            "under": 102
+          }
+        },
         "Rhyne Howard": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
             "over": 102,
             "under": -136
-          }
-        },
-        "Angel Reese": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": -114,
-            "under": -114
           }
         }
       },
@@ -266,20 +266,20 @@
             "under": 100
           }
         },
-        "Jordin Canada": {
-          "line": 17.5,
-          "FD": {
-            "line": 17.5,
-            "over": -114,
-            "under": -114
-          }
-        },
         "Allisha Gray": {
           "line": 20.5,
           "FD": {
             "line": 20.5,
             "over": -125,
             "under": -106
+          }
+        },
+        "Jordin Canada": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -114,
+            "under": -114
           }
         },
         "Rhyne Howard": {
@@ -292,6 +292,14 @@
         }
       },
       "player_points_rebounds": {
+        "Angel Reese": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -104,
+            "under": -128
+          }
+        },
         "Jordin Canada": {
           "line": 13.5,
           "FD": {
@@ -323,23 +331,15 @@
             "over": -118,
             "under": -112
           }
-        },
-        "Angel Reese": {
-          "line": 28.5,
-          "FD": {
-            "line": 28.5,
-            "over": -104,
-            "under": -128
-          }
         }
       },
       "player_points_rebounds_assists": {
-        "Jordin Canada": {
-          "line": 20.5,
+        "Angel Reese": {
+          "line": 30.5,
           "FD": {
-            "line": 20.5,
-            "over": -130,
-            "under": -102
+            "line": 30.5,
+            "over": -128,
+            "under": -104
           }
         },
         "Allisha Gray": {
@@ -358,38 +358,22 @@
             "under": -128
           }
         },
-        "Angel Reese": {
-          "line": 30.5,
+        "Jordin Canada": {
+          "line": 20.5,
           "FD": {
-            "line": 30.5,
-            "over": -128,
-            "under": -104
+            "line": 20.5,
+            "over": -130,
+            "under": -102
           }
         }
       },
       "player_rebounds": {
-        "Allisha Gray": {
-          "line": 3.5,
-          "FD": {
-            "line": 3.5,
-            "over": 130,
-            "under": -174
-          }
-        },
         "Jordin Canada": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
             "over": 108,
             "under": -144
-          }
-        },
-        "Rhyne Howard": {
-          "line": 3.5,
-          "FD": {
-            "line": 3.5,
-            "over": -110,
-            "under": -120
           }
         },
         "Angel Reese": {
@@ -400,6 +384,14 @@
             "under": 100
           }
         },
+        "Rhyne Howard": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -110,
+            "under": -120
+          }
+        },
         "Naz Hillmon": {
           "line": 4.5,
           "FD": {
@@ -407,17 +399,17 @@
             "over": 112,
             "under": -148
           }
+        },
+        "Allisha Gray": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 130,
+            "under": -174
+          }
         }
       },
       "player_rebounds_assists": {
-        "Jordin Canada": {
-          "line": 10.5,
-          "FD": {
-            "line": 10.5,
-            "over": -102,
-            "under": -130
-          }
-        },
         "Angel Reese": {
           "line": 15.5,
           "FD": {
@@ -426,12 +418,12 @@
             "under": -118
           }
         },
-        "Allisha Gray": {
-          "line": 5.5,
+        "Jordin Canada": {
+          "line": 10.5,
           "FD": {
-            "line": 5.5,
-            "over": -122,
-            "under": -106
+            "line": 10.5,
+            "over": -102,
+            "under": -130
           }
         },
         "Rhyne Howard": {
@@ -441,23 +433,31 @@
             "over": -158,
             "under": 118
           }
+        },
+        "Allisha Gray": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -122,
+            "under": -106
+          }
         }
       },
       "player_threes": {
-        "Rhyne Howard": {
-          "line": 3.5,
-          "FD": {
-            "line": 3.5,
-            "over": 140,
-            "under": -188
-          }
-        },
         "Allisha Gray": {
           "line": 1.5,
           "FD": {
             "line": 1.5,
             "over": -178,
             "under": 132
+          }
+        },
+        "Rhyne Howard": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 140,
+            "under": -188
           }
         }
       }
@@ -990,14 +990,6 @@
             "under": -102
           }
         },
-        "Dominique Malonga": {
-          "line": 17.5,
-          "FD": {
-            "line": 17.5,
-            "over": -128,
-            "under": -102
-          }
-        },
         "Chelsea Gray": {
           "line": 11.5,
           "FD": {
@@ -1013,6 +1005,14 @@
             "over": -120,
             "under": -108
           }
+        },
+        "Dominique Malonga": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -128,
+            "under": -102
+          }
         }
       },
       "player_points_assists": {
@@ -1024,14 +1024,6 @@
             "under": -114
           }
         },
-        "A'ja Wilson": {
-          "line": 29.5,
-          "FD": {
-            "line": 29.5,
-            "over": -112,
-            "under": -118
-          }
-        },
         "Chelsea Gray": {
           "line": 18.5,
           "FD": {
@@ -1039,25 +1031,17 @@
             "over": -108,
             "under": -122
           }
+        },
+        "A'ja Wilson": {
+          "line": 29.5,
+          "FD": {
+            "line": 29.5,
+            "over": -112,
+            "under": -118
+          }
         }
       },
       "player_points_rebounds": {
-        "A'ja Wilson": {
-          "line": 35.5,
-          "FD": {
-            "line": 35.5,
-            "over": -118,
-            "under": -112
-          }
-        },
-        "Dominique Malonga": {
-          "line": 27.5,
-          "FD": {
-            "line": 27.5,
-            "over": -106,
-            "under": -125
-          }
-        },
         "Chelsea Gray": {
           "line": 14.5,
           "FD": {
@@ -1073,17 +1057,25 @@
             "over": -122,
             "under": -108
           }
+        },
+        "A'ja Wilson": {
+          "line": 35.5,
+          "FD": {
+            "line": 35.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Dominique Malonga": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -106,
+            "under": -125
+          }
         }
       },
       "player_points_rebounds_assists": {
-        "Dominique Malonga": {
-          "line": 28.5,
-          "FD": {
-            "line": 28.5,
-            "over": -122,
-            "under": -108
-          }
-        },
         "Jackie Young": {
           "line": 32.5,
           "FD": {
@@ -1107,6 +1099,14 @@
             "over": -106,
             "under": -125
           }
+        },
+        "Dominique Malonga": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -122,
+            "under": -108
+          }
         }
       },
       "player_rebounds": {
@@ -1116,14 +1116,6 @@
             "line": 9.5,
             "over": -114,
             "under": -114
-          }
-        },
-        "Dominique Malonga": {
-          "line": 8.5,
-          "FD": {
-            "line": 8.5,
-            "over": -138,
-            "under": 104
           }
         },
         "Chelsea Gray": {
@@ -1141,17 +1133,17 @@
             "over": -140,
             "under": 106
           }
+        },
+        "Dominique Malonga": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -138,
+            "under": 104
+          }
         }
       },
       "player_rebounds_assists": {
-        "A'ja Wilson": {
-          "line": 12.5,
-          "FD": {
-            "line": 12.5,
-            "over": -130,
-            "under": -102
-          }
-        },
         "Jackie Young": {
           "line": 11.5,
           "FD": {
@@ -1167,6 +1159,14 @@
             "over": -118,
             "under": -112
           }
+        },
+        "A'ja Wilson": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -130,
+            "under": -102
+          }
         }
       },
       "player_threes": {
@@ -1178,14 +1178,6 @@
             "under": -106
           }
         },
-        "Chelsea Gray": {
-          "line": 1.5,
-          "FD": {
-            "line": 1.5,
-            "over": 100,
-            "under": -132
-          }
-        },
         "A'ja Wilson": {
           "line": 0.5,
           "FD": {
@@ -1193,26 +1185,34 @@
             "over": -245,
             "under": 178
           }
+        },
+        "Chelsea Gray": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 100,
+            "under": -132
+          }
         }
       }
     },
     "Phoenix Mercury@Portland Fire": {},
     "Indiana Fever@Toronto Tempo": {
       "player_assists": {
-        "Kelsey Mitchell": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": -112,
-            "under": -118
-          }
-        },
         "Aliyah Boston": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
             "over": 142,
             "under": -192
+          }
+        },
+        "Kelsey Mitchell": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -112,
+            "under": -118
           }
         },
         "Caitlin Clark": {
@@ -1233,6 +1233,14 @@
             "under": -104
           }
         },
+        "Aliyah Boston": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -115,
+            "under": -113
+          }
+        },
         "Kelsey Mitchell": {
           "line": 25.5,
           "FD": {
@@ -1247,14 +1255,6 @@
             "line": 23.5,
             "over": -104,
             "under": -125
-          }
-        },
-        "Aliyah Boston": {
-          "line": 16.5,
-          "FD": {
-            "line": 16.5,
-            "over": -115,
-            "under": -113
           }
         }
       },
@@ -1345,20 +1345,20 @@
         }
       },
       "player_rebounds": {
-        "Makayla Timpson": {
-          "line": 7.5,
-          "FD": {
-            "line": 7.5,
-            "over": 100,
-            "under": -132
-          }
-        },
         "Kelsey Mitchell": {
           "line": 2.5,
           "FD": {
             "line": 2.5,
             "over": 144,
             "under": -194
+          }
+        },
+        "Makayla Timpson": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": 100,
+            "under": -132
           }
         },
         "Aliyah Boston": {
@@ -1867,20 +1867,20 @@
     },
     "Portland Fire@Golden State Valkyries": {
       "player_assists": {
-        "Gabby Williams": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": 104,
-            "under": -138
-          }
-        },
         "Veronica Burton": {
           "line": 6.5,
           "FD": {
             "line": 6.5,
             "over": -118,
             "under": -112
+          }
+        },
+        "Gabby Williams": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 104,
+            "under": -138
           }
         }
       },
@@ -1939,14 +1939,6 @@
         }
       },
       "player_points_rebounds_assists": {
-        "Gabby Williams": {
-          "line": 19.5,
-          "FD": {
-            "line": 19.5,
-            "over": -125,
-            "under": -106
-          }
-        },
         "Veronica Burton": {
           "line": 24.5,
           "FD": {
@@ -1954,23 +1946,31 @@
             "over": -112,
             "under": -118
           }
+        },
+        "Gabby Williams": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -125,
+            "under": -106
+          }
         }
       },
       "player_rebounds": {
-        "Gabby Williams": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": -180,
-            "under": 134
-          }
-        },
         "Veronica Burton": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
             "over": -136,
             "under": 102
+          }
+        },
+        "Gabby Williams": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -180,
+            "under": 134
           }
         }
       },

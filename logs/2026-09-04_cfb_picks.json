@@ -41,6 +41,20 @@
   "game_picks": [
     {
       "rank": 1,
+      "pick_type": "spread",
+      "game": "Toledo Rockets @ Michigan State Spartans",
+      "team": "Toledo Rockets",
+      "selection": "Toledo Rockets +10.5",
+      "line": 10.5,
+      "over_under": null,
+      "best_book": "FD",
+      "best_odds": -115,
+      "prediction_confidence": 80,
+      "confidence_tier": "High",
+      "reasoning": "Model projects Toledo +5.9 with 59% cover probability, creating significant value at +10.5. Toledo ranked #93 vs MSU #77 represents a competitive MAC/Big Ten matchup. Model shows 4.1-point edge on the spread, and the 52-point total projection suggests a relatively low-scoring game where the margin matters. MSU's offensive rating (+0.8, #74) and defensive rating (+0.6, #63) show modest efficiency, while Toledo's defense rates strongly at +2.6 (#21), suggesting they can keep this within the number."
+    },
+    {
+      "rank": 2,
       "pick_type": "game_total",
       "game": "Toledo Rockets @ Michigan State Spartans",
       "team": null,
@@ -49,26 +63,40 @@
       "over_under": "Over",
       "best_book": "CZS",
       "best_odds": -113,
-      "prediction_confidence": 81,
-      "confidence_tier": "High",
-      "reasoning": "PropFinder model projects 51.9 total with +5.4 edge over market 46.5, covering 59%. Toledo ranks #93 with solid offensive capability, while MSU #77 has struggled defensively (ranked #96 nationally). Model shows strong conviction with significant scoring differential from market total."
-    },
-    {
-      "rank": 2,
-      "pick_type": "spread",
-      "game": "San Jose State Spartans @ Eastern Michigan Eagles",
-      "team": "Eastern Michigan Eagles",
-      "selection": "Eastern Michigan Eagles -3",
-      "line": -3.0,
-      "over_under": null,
-      "best_book": "CZS",
-      "best_odds": -107,
-      "prediction_confidence": 79,
+      "prediction_confidence": 78,
       "confidence_tier": "Medium",
-      "reasoning": "PropFinder model projects EMU to win 66% with projected spread of -6.8, providing +3.8 edge over CZS line of -3.0 (59% cover probability). EMU already 1-0, ranked #106 vs SJSU #122 who lost their opener. Home advantage and model projection alignment support the shorter spread."
+      "reasoning": "Model projects 51.9 total points, creating a 5.4-point edge over the 46.5 line with the best price at FanDuel. This represents significant value on a market that appears underpriced. Both teams have shown capability to score, and the model's confidence in exceeding this total is strong. The 46.5 number is notably low for a Power 4 vs MAC matchup, suggesting the market may be undervaluing offensive potential."
     },
     {
       "rank": 3,
+      "pick_type": "spread",
+      "game": "San Jose State Spartans @ Eastern Michigan Eagles",
+      "team": "Eastern Michigan Eagles",
+      "selection": "Eastern Michigan Eagles -2.5",
+      "line": -2.5,
+      "over_under": null,
+      "best_book": "FD",
+      "best_odds": -120,
+      "prediction_confidence": 77,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects EMU -6.8 with 59% cover probability at -3.0, giving value even at the FD -2.5 line. EMU won Week 0 and moved up 32.2 points in power ratings to #106, while SJSU lost and dropped 2.8 points to #122. Model shows EMU with 66% win probability and projects a 32-25 final favoring the home team. The 3.8-point edge on the spread at CZS -3.0 translates to solid value at FD -2.5, despite the slightly worse price."
+    },
+    {
+      "rank": 4,
+      "pick_type": "spread",
+      "game": "Miami Hurricanes @ Stanford Cardinal",
+      "team": "Stanford Cardinal",
+      "selection": "Stanford Cardinal +23.5",
+      "line": 23.5,
+      "over_under": null,
+      "best_book": "CZS",
+      "best_odds": -106,
+      "prediction_confidence": 76,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects Stanford +15.5 with 68% cover probability, creating an 8-point edge on the 23.5 spread. Stanford won Week 0 and jumped 37.8 points in power ratings to #79, showing significant momentum. Miami ranks #6 but model only gives them 82% win probability in a projected 34-19 game. Stanford's Week 0 performance against Hawaii suggests they're better than their preseason expectations, and getting over three touchdowns provides substantial cushion against a Miami team traveling cross-country."
+    },
+    {
+      "rank": 5,
       "pick_type": "game_total",
       "game": "Miami Hurricanes @ Stanford Cardinal",
       "team": null,
@@ -77,37 +105,9 @@
       "over_under": "Over",
       "best_book": "CZS",
       "best_odds": -112,
-      "prediction_confidence": 78,
+      "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects 52.8 total with +4.8 edge over 47.5 market line (68% cover). Miami ranked #6 nationally with elite +6.9 offense (#1) travels to Stanford who won Week 0 but ranks #90. Despite Stanford's defensive struggles (-2.3 ranked #119), Miami's elite offense should push total over in road spot."
-    },
-    {
-      "rank": 4,
-      "pick_type": "spread",
-      "game": "Indiana State Sycamores @ Purdue Boilermakers",
-      "team": "Indiana State Sycamores",
-      "selection": "Indiana State Sycamores +35.5",
-      "line": 35.5,
-      "over_under": null,
-      "best_book": "CZS",
-      "best_odds": -110,
-      "prediction_confidence": 77,
-      "confidence_tier": "Medium",
-      "reasoning": "PropFinder model projects Indiana State +29.0 with +6.5 edge over CZS 35.5 line (65% cover probability). Purdue ranked #82 has significant defensive issues (-1.6 ranked #109) while model suggests FCS Indiana State can keep this closer than market expects. Large spread provides cover cushion."
-    },
-    {
-      "rank": 5,
-      "pick_type": "game_total",
-      "game": "Fresno State Bulldogs @ USC Trojans",
-      "team": null,
-      "selection": "Over 51.5",
-      "line": 51.5,
-      "over_under": "Over",
-      "best_book": "FD",
-      "best_odds": -110,
-      "prediction_confidence": 76,
-      "confidence_tier": "Medium",
-      "reasoning": "Model projects 55.2 total with +3.7 edge over 51.5 market (60% cover). USC #11 coming off Week 0 win with strong offense (+3.8 ranked #7), while Fresno State #71 can score despite defensive struggles. USC building momentum at Coliseum should produce points in both directions."
+      "reasoning": "Model projects 52.8 total points, creating a 4.8-point edge over the 47.5 line. Miami's offensive rating (+3.8, #6) suggests strong scoring capability, while the model's 34-19 projection indicates both teams will contribute to the total. Stanford's recent form in Week 0 showed offensive competence, and Miami should score consistently. The total appears underpriced given Miami's offensive firepower and the model's confidence in a 53-point game."
     }
   ],
   "picks": [
@@ -134,6 +134,20 @@
     },
     {
       "rank": 1,
+      "pick_type": "spread",
+      "game": "Toledo Rockets @ Michigan State Spartans",
+      "team": "Toledo Rockets",
+      "selection": "Toledo Rockets +10.5",
+      "line": 10.5,
+      "over_under": null,
+      "best_book": "FD",
+      "best_odds": -115,
+      "prediction_confidence": 80,
+      "confidence_tier": "High",
+      "reasoning": "Model projects Toledo +5.9 with 59% cover probability, creating significant value at +10.5. Toledo ranked #93 vs MSU #77 represents a competitive MAC/Big Ten matchup. Model shows 4.1-point edge on the spread, and the 52-point total projection suggests a relatively low-scoring game where the margin matters. MSU's offensive rating (+0.8, #74) and defensive rating (+0.6, #63) show modest efficiency, while Toledo's defense rates strongly at +2.6 (#21), suggesting they can keep this within the number."
+    },
+    {
+      "rank": 2,
       "pick_type": "game_total",
       "game": "Toledo Rockets @ Michigan State Spartans",
       "team": null,
@@ -142,26 +156,40 @@
       "over_under": "Over",
       "best_book": "CZS",
       "best_odds": -113,
-      "prediction_confidence": 81,
-      "confidence_tier": "High",
-      "reasoning": "PropFinder model projects 51.9 total with +5.4 edge over market 46.5, covering 59%. Toledo ranks #93 with solid offensive capability, while MSU #77 has struggled defensively (ranked #96 nationally). Model shows strong conviction with significant scoring differential from market total."
-    },
-    {
-      "rank": 2,
-      "pick_type": "spread",
-      "game": "San Jose State Spartans @ Eastern Michigan Eagles",
-      "team": "Eastern Michigan Eagles",
-      "selection": "Eastern Michigan Eagles -3",
-      "line": -3.0,
-      "over_under": null,
-      "best_book": "CZS",
-      "best_odds": -107,
-      "prediction_confidence": 79,
+      "prediction_confidence": 78,
       "confidence_tier": "Medium",
-      "reasoning": "PropFinder model projects EMU to win 66% with projected spread of -6.8, providing +3.8 edge over CZS line of -3.0 (59% cover probability). EMU already 1-0, ranked #106 vs SJSU #122 who lost their opener. Home advantage and model projection alignment support the shorter spread."
+      "reasoning": "Model projects 51.9 total points, creating a 5.4-point edge over the 46.5 line with the best price at FanDuel. This represents significant value on a market that appears underpriced. Both teams have shown capability to score, and the model's confidence in exceeding this total is strong. The 46.5 number is notably low for a Power 4 vs MAC matchup, suggesting the market may be undervaluing offensive potential."
     },
     {
       "rank": 3,
+      "pick_type": "spread",
+      "game": "San Jose State Spartans @ Eastern Michigan Eagles",
+      "team": "Eastern Michigan Eagles",
+      "selection": "Eastern Michigan Eagles -2.5",
+      "line": -2.5,
+      "over_under": null,
+      "best_book": "FD",
+      "best_odds": -120,
+      "prediction_confidence": 77,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects EMU -6.8 with 59% cover probability at -3.0, giving value even at the FD -2.5 line. EMU won Week 0 and moved up 32.2 points in power ratings to #106, while SJSU lost and dropped 2.8 points to #122. Model shows EMU with 66% win probability and projects a 32-25 final favoring the home team. The 3.8-point edge on the spread at CZS -3.0 translates to solid value at FD -2.5, despite the slightly worse price."
+    },
+    {
+      "rank": 4,
+      "pick_type": "spread",
+      "game": "Miami Hurricanes @ Stanford Cardinal",
+      "team": "Stanford Cardinal",
+      "selection": "Stanford Cardinal +23.5",
+      "line": 23.5,
+      "over_under": null,
+      "best_book": "CZS",
+      "best_odds": -106,
+      "prediction_confidence": 76,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects Stanford +15.5 with 68% cover probability, creating an 8-point edge on the 23.5 spread. Stanford won Week 0 and jumped 37.8 points in power ratings to #79, showing significant momentum. Miami ranks #6 but model only gives them 82% win probability in a projected 34-19 game. Stanford's Week 0 performance against Hawaii suggests they're better than their preseason expectations, and getting over three touchdowns provides substantial cushion against a Miami team traveling cross-country."
+    },
+    {
+      "rank": 5,
       "pick_type": "game_total",
       "game": "Miami Hurricanes @ Stanford Cardinal",
       "team": null,
@@ -170,37 +198,9 @@
       "over_under": "Over",
       "best_book": "CZS",
       "best_odds": -112,
-      "prediction_confidence": 78,
+      "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects 52.8 total with +4.8 edge over 47.5 market line (68% cover). Miami ranked #6 nationally with elite +6.9 offense (#1) travels to Stanford who won Week 0 but ranks #90. Despite Stanford's defensive struggles (-2.3 ranked #119), Miami's elite offense should push total over in road spot."
-    },
-    {
-      "rank": 4,
-      "pick_type": "spread",
-      "game": "Indiana State Sycamores @ Purdue Boilermakers",
-      "team": "Indiana State Sycamores",
-      "selection": "Indiana State Sycamores +35.5",
-      "line": 35.5,
-      "over_under": null,
-      "best_book": "CZS",
-      "best_odds": -110,
-      "prediction_confidence": 77,
-      "confidence_tier": "Medium",
-      "reasoning": "PropFinder model projects Indiana State +29.0 with +6.5 edge over CZS 35.5 line (65% cover probability). Purdue ranked #82 has significant defensive issues (-1.6 ranked #109) while model suggests FCS Indiana State can keep this closer than market expects. Large spread provides cover cushion."
-    },
-    {
-      "rank": 5,
-      "pick_type": "game_total",
-      "game": "Fresno State Bulldogs @ USC Trojans",
-      "team": null,
-      "selection": "Over 51.5",
-      "line": 51.5,
-      "over_under": "Over",
-      "best_book": "FD",
-      "best_odds": -110,
-      "prediction_confidence": 76,
-      "confidence_tier": "Medium",
-      "reasoning": "Model projects 55.2 total with +3.7 edge over 51.5 market (60% cover). USC #11 coming off Week 0 win with strong offense (+3.8 ranked #7), while Fresno State #71 can score despite defensive struggles. USC building momentum at Coliseum should produce points in both directions."
+      "reasoning": "Model projects 52.8 total points, creating a 4.8-point edge over the 47.5 line. Miami's offensive rating (+3.8, #6) suggests strong scoring capability, while the model's 34-19 projection indicates both teams will contribute to the total. Stanford's recent form in Week 0 showed offensive competence, and Miami should score consistently. The total appears underpriced given Miami's offensive firepower and the model's confidence in a 53-point game."
     }
   ],
   "rejected_picks": []
