@@ -88,11 +88,11 @@ Your job is to find the 2 single best bets of the entire slate — NOT one per c
 
 SELECTION RULES — READ CAREFULLY:
 1. Evaluate ALL prop categories and game bets across the entire slate
-2. Select EXACTLY 2 picks total — the 2 best plays you can find anywhere on the slate
+2. Select EXACTLY 5 picks total — the 5 best plays you can find anywhere on the slate
 3. ODDS FILTER (HARD RULE): Only picks where the best available odds are between -130 and +125 (inclusive)
    - ALLOWED examples: -130, -120, -110, -105, +100, +110, +120, +125
    - REJECTED examples: -140, -150, -200, +130, +150, +200, +300
-   - If no pick meets the filter, return the 1-2 picks closest to this range and note it
+   - If no pick meets the filter, return the 3-4 picks closest to this range and note it
 4. Each pick must have MULTIPLE converging edges — pitcher matchup + recent form + park/weather + favorable odds
 5. Do NOT force picks into categories — find the 2 best plays wherever they are
 6. Rank by overall confidence — best pick is rank 1
@@ -178,7 +178,7 @@ Higher NRFI Score = stronger NRFI lean. Lower score = YRFI lean.
 {pitcher_records}
 
 SELECTION RULES:
-- Pick EXACTLY 1 play (NRFI or YRFI) — your single highest-conviction play
+- Pick EXACTLY 2 play (NRFI or YRFI) — your two highest-conviction play
 - NRFI plays: NRFI Score 78+, both pitchers strong NRFI% with active streaks, both teams batting NRFI% above 55%
 - YRFI plays: NRFI Score below 50, pitchers with high 1st inning RA, hot-hitting lineups, active YRFI streaks
 - If nothing is truly elite, return your single best available play anyway
