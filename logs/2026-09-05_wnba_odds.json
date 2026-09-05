@@ -1867,20 +1867,20 @@
     },
     "Portland Fire@Golden State Valkyries": {
       "player_assists": {
-        "Gabby Williams": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": 104,
-            "under": -138
-          }
-        },
         "Veronica Burton": {
           "line": 6.5,
           "FD": {
             "line": 6.5,
             "over": -118,
             "under": -112
+          }
+        },
+        "Gabby Williams": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 104,
+            "under": -138
           }
         }
       },
@@ -1939,14 +1939,6 @@
         }
       },
       "player_points_rebounds_assists": {
-        "Gabby Williams": {
-          "line": 19.5,
-          "FD": {
-            "line": 19.5,
-            "over": -125,
-            "under": -106
-          }
-        },
         "Veronica Burton": {
           "line": 24.5,
           "FD": {
@@ -1954,23 +1946,31 @@
             "over": -112,
             "under": -118
           }
+        },
+        "Gabby Williams": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -125,
+            "under": -106
+          }
         }
       },
       "player_rebounds": {
-        "Gabby Williams": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": -180,
-            "under": 134
-          }
-        },
         "Veronica Burton": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
             "over": -136,
             "under": 102
+          }
+        },
+        "Gabby Williams": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -180,
+            "under": 134
           }
         }
       },
