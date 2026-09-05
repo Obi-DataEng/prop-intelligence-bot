@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import re
 import sqlite3
 import sys
 from datetime import datetime, timedelta
@@ -605,6 +606,423 @@ def grade_nba_picks(nba_picks_data, nba_player_stats, pick_date, graded_date):
     return summary
 
 # ─────────────────────────────────────────────
+# ESPN MULTI-SPORT RESULTS (CFB / NFL / WNBA)
+# ─────────────────────────────────────────────
+
+ESPN_SPORT_PATHS = {
+    'CFB': 'football/college-football',
+    'NFL': 'football/nfl',
+    'WNBA': 'basketball/wnba',
+}
+
+
+def normalize_team(name):
+    """Normalize team names/abbreviations for conservative game matching."""
+    value = normalize_name(str(name or ''))
+    value = re.sub(r'[^a-z0-9 ]+', ' ', value)
+    return re.sub(r'\s+', ' ', value).strip()
+
+
+def safe_stat_number(value):
+    """Convert ESPN values such as 17, 17.5, 3-5 or 3/5 to a numeric value."""
+    if value in (None, '', '--'):
+        return 0.0
+    text = str(value).strip()
+    if re.fullmatch(r'-?\d+(?:\.\d+)?', text):
+        return float(text)
+    # Made-attempt values: the first number is the made count.
+    match = re.match(r'^(-?\d+(?:\.\d+)?)\s*[-/]\s*\d+', text)
+    if match:
+        return float(match.group(1))
+    match = re.search(r'-?\d+(?:\.\d+)?', text)
+    return float(match.group()) if match else 0.0
+
+
+def stat_key(value):
+    value = normalize_name(str(value or ''))
+    return re.sub(r'[^a-z0-9]+', '_', value).strip('_')
+
+
+def get_espn_results(sport, date_str):
+    """Return completed ESPN game results and per-player box-score stats."""
+    sport = sport.upper()
+    path = ESPN_SPORT_PATHS[sport]
+    date_compact = date_str.replace('-', '')
+    scoreboard_url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/scoreboard"
+    summary_url = f"https://site.api.espn.com/apis/site/v2/sports/{path}/summary"
+    print(f"\n   🔍 Fetching {sport} results for {date_str}...")
+
+    try:
+        response = requests.get(
+            scoreboard_url,
+            params={'dates': date_compact, 'limit': 1000},
+            timeout=30,
+        )
+        response.raise_for_status()
+    except requests.RequestException as error:
+        print(f"   ❌ {sport} scoreboard error: {error}")
+        return {}, []
+
+    players = {}
+    games = []
+    completed_events = [
+        event for event in response.json().get('events', [])
+        if event.get('status', {}).get('type', {}).get('completed', False)
+    ]
+
+    for event in completed_events:
+        competition = (event.get('competitions') or [{}])[0]
+        competitors = competition.get('competitors', [])
+        home_entry = next((team for team in competitors if team.get('homeAway') == 'home'), {})
+        away_entry = next((team for team in competitors if team.get('homeAway') == 'away'), {})
+
+        def team_identity(entry):
+            team = entry.get('team', {})
+            return {
+                'name': team.get('displayName') or team.get('shortDisplayName') or '',
+                'short_name': team.get('shortDisplayName') or '',
+                'abbreviation': team.get('abbreviation') or '',
+            }
+
+        home_identity = team_identity(home_entry)
+        away_identity = team_identity(away_entry)
+        try:
+            home_score = float(home_entry.get('score', 0) or 0)
+            away_score = float(away_entry.get('score', 0) or 0)
+        except (TypeError, ValueError):
+            continue
+
+        games.append({
+            'event_id': event.get('id'),
+            'home_team': home_identity['name'],
+            'home_short_name': home_identity['short_name'],
+            'home_abbreviation': home_identity['abbreviation'],
+            'away_team': away_identity['name'],
+            'away_short_name': away_identity['short_name'],
+            'away_abbreviation': away_identity['abbreviation'],
+            'home_score': home_score,
+            'away_score': away_score,
+            'total': home_score + away_score,
+        })
+
+        event_id = event.get('id')
+        if not event_id:
+            continue
+        try:
+            box_response = requests.get(summary_url, params={'event': event_id}, timeout=30)
+            box_response.raise_for_status()
+            boxscore = box_response.json().get('boxscore', {})
+        except requests.RequestException as error:
+            print(f"   ⚠️ Could not fetch {sport} box score {event_id}: {error}")
+            continue
+
+        for team_block in boxscore.get('players', []):
+            team_info = team_block.get('team', {})
+            team_name = team_info.get('displayName') or team_info.get('shortDisplayName') or ''
+            team_abbr = team_info.get('abbreviation') or ''
+            for stat_group in team_block.get('statistics', []):
+                group_name = stat_key(
+                    stat_group.get('name')
+                    or stat_group.get('displayName')
+                    or stat_group.get('type')
+                    or 'general'
+                )
+                labels = stat_group.get('labels') or stat_group.get('names') or []
+                for athlete_row in stat_group.get('athletes', []):
+                    athlete = athlete_row.get('athlete', {})
+                    player_name = athlete.get('displayName') or athlete.get('fullName') or ''
+                    if not player_name:
+                        continue
+                    player_key = normalize_name(player_name)
+                    record = players.setdefault(player_key, {
+                        'name': player_name,
+                        'team': team_name,
+                        'team_abbreviation': team_abbr,
+                        'did_play': False,
+                        'stats': {},
+                    })
+                    raw_stats = athlete_row.get('stats', [])
+                    if raw_stats:
+                        record['did_play'] = True
+                    for label, value in zip(labels, raw_stats):
+                        label_key = stat_key(label)
+                        number = safe_stat_number(value)
+                        record['stats'][f'{group_name}_{label_key}'] = number
+                        # Keep unprefixed basketball labels where they are unambiguous.
+                        if sport == 'WNBA':
+                            record['stats'][label_key] = number
+
+    print(f"   ✅ {len(games)} completed {sport} games | {len(players)} players")
+    return players, games
+
+
+def team_aliases(game, side):
+    return {
+        normalize_team(game.get(f'{side}_team')),
+        normalize_team(game.get(f'{side}_short_name')),
+        normalize_team(game.get(f'{side}_abbreviation')),
+    } - {''}
+
+
+def find_espn_game(pick, game_results):
+    """Match a saved pick to exactly one completed ESPN event."""
+    game_text = normalize_team(pick.get('game') or '')
+    pick_team = normalize_team(pick.get('team') or pick.get('pick') or '')
+    matches = []
+    for game in game_results:
+        home_aliases = team_aliases(game, 'home')
+        away_aliases = team_aliases(game, 'away')
+        all_aliases = home_aliases | away_aliases
+        game_hits = sum(1 for alias in all_aliases if len(alias) >= 2 and re.search(rf'\b{re.escape(alias)}\b', game_text))
+        team_hit = any(
+            alias == pick_team or (len(alias) >= 4 and alias in pick_team)
+            for alias in all_aliases
+        )
+        if game_hits >= 2 or (game_hits >= 1 and team_hit):
+            matches.append(game)
+    return matches[0] if len(matches) == 1 else None
+
+
+def selected_side(pick, game):
+    value = normalize_team(pick.get('team') or pick.get('pick') or pick.get('selection') or '')
+    home_match = any(alias == value or (len(alias) >= 4 and alias in value) for alias in team_aliases(game, 'home'))
+    away_match = any(alias == value or (len(alias) >= 4 and alias in value) for alias in team_aliases(game, 'away'))
+    if home_match and not away_match:
+        return 'home'
+    if away_match and not home_match:
+        return 'away'
+    return None
+
+
+def canonical_pick_type(pick):
+    value = stat_key(pick.get('pick_type') or pick.get('prop_category') or '')
+    if value in {'ml', 'money_line', 'moneyline'}:
+        return 'moneyline'
+    if value in {'ou', 'o_u', 'total', 'game_total', 'game_ou'}:
+        return 'game_total'
+    if value == 'spread':
+        return 'spread'
+    if value in {'player_prop', 'prop'}:
+        return 'player_prop'
+    selection = normalize_team(pick.get('selection') or pick.get('pick') or '')
+    if 'moneyline' in selection:
+        return 'moneyline'
+    if selection.startswith('over ') or selection.startswith('under '):
+        return 'game_total'
+    return value
+
+
+def grade_espn_game_pick(pick, game_results):
+    game = find_espn_game(pick, game_results)
+    if not game:
+        return 'pending', None
+
+    pick_type = canonical_pick_type(pick)
+    home_score = game['home_score']
+    away_score = game['away_score']
+
+    if pick_type == 'moneyline':
+        side = selected_side(pick, game)
+        if not side or home_score == away_score:
+            return 'pending', None
+        winner = 'home' if home_score > away_score else 'away'
+        return ('win' if side == winner else 'loss'), home_score - away_score
+
+    if pick_type == 'spread':
+        side = selected_side(pick, game)
+        try:
+            line = float(pick.get('line') if pick.get('line') is not None else pick.get('fd_line'))
+        except (TypeError, ValueError):
+            return 'pending', None
+        if not side:
+            return 'pending', None
+        margin = home_score - away_score if side == 'home' else away_score - home_score
+        adjusted = margin + line
+        if adjusted == 0:
+            return 'push', margin
+        return ('win' if adjusted > 0 else 'loss'), margin
+
+    if pick_type == 'game_total':
+        try:
+            line = float(pick.get('line') if pick.get('line') is not None else pick.get('fd_line'))
+        except (TypeError, ValueError):
+            return 'pending', None
+        direction = str(pick.get('over_under') or pick.get('over_under_pick') or '').lower()
+        if not direction:
+            selection = str(pick.get('selection') or pick.get('pick') or '').lower()
+            direction = 'over' if selection.startswith('over') else 'under' if selection.startswith('under') else ''
+        if direction not in {'over', 'under'}:
+            return 'pending', game['total']
+        result, _ = grade_result(game['total'], line, direction, True)
+        return result, game['total']
+
+    return 'pending', None
+
+
+def first_existing_stat(stats, candidates):
+    for candidate in candidates:
+        if candidate in stats:
+            return stats[candidate]
+    return None
+
+
+def prop_actual_value(sport, market, stats):
+    """Map analyzer/PropFinder market labels to ESPN box-score fields."""
+    market_key = stat_key(market)
+    if sport == 'WNBA':
+        mapping = {
+            'points': ['pts', 'points_pts'],
+            'pts': ['pts'],
+            'rebounds': ['reb', 'rebounds_reb'],
+            'reb': ['reb'],
+            'assists': ['ast', 'assists_ast'],
+            'ast': ['ast'],
+            'three_pointers_made': ['3pt', '3pm', 'fg3m'],
+            'threes': ['3pt', '3pm', 'fg3m'],
+            'steals': ['stl'],
+            'blocks': ['blk'],
+            'turnovers': ['to'],
+        }
+        if market_key in {'pra', 'points_rebounds_assists'}:
+            values = [first_existing_stat(stats, mapping[key]) for key in ('points', 'rebounds', 'assists')]
+            return sum(values) if all(value is not None for value in values) else None
+        if market_key in {'pr', 'points_rebounds'}:
+            values = [first_existing_stat(stats, mapping[key]) for key in ('points', 'rebounds')]
+            return sum(values) if all(value is not None for value in values) else None
+        if market_key in {'pa', 'points_assists'}:
+            values = [first_existing_stat(stats, mapping[key]) for key in ('points', 'assists')]
+            return sum(values) if all(value is not None for value in values) else None
+        return first_existing_stat(stats, mapping.get(market_key, []))
+
+    mapping = {
+        'passing_yds': ['passing_yds', 'passing_yards'],
+        'passing_yards': ['passing_yds', 'passing_yards'],
+        'passing_tds': ['passing_td', 'passing_tds'],
+        'passing_touchdowns': ['passing_td', 'passing_tds'],
+        'interceptions': ['passing_int', 'passing_interceptions'],
+        'rushing_yds': ['rushing_yds', 'rushing_yards'],
+        'rushing_yards': ['rushing_yds', 'rushing_yards'],
+        'rush_att': ['rushing_car', 'rushing_att'],
+        'rushing_attempts': ['rushing_car', 'rushing_att'],
+        'receiving_yds': ['receiving_yds', 'receiving_yards'],
+        'receiving_yards': ['receiving_yds', 'receiving_yards'],
+        'receptions': ['receiving_rec', 'receiving_receptions'],
+        'longest_reception': ['receiving_long', 'receiving_lng'],
+        'tackles': ['defensive_tot', 'defensive_total', 'defensive_tackles'],
+        'sacks': ['defensive_sacks', 'defensive_sack'],
+        'field_goals_made': ['kicking_fg', 'kicking_fgm'],
+        'extra_points_made': ['kicking_xp', 'kicking_xpm'],
+    }
+    if market_key in {'anytime_td', 'anytime_touchdown'}:
+        rushing = first_existing_stat(stats, ['rushing_td', 'rushing_tds']) or 0
+        receiving = first_existing_stat(stats, ['receiving_td', 'receiving_tds']) or 0
+        returns = first_existing_stat(stats, ['kick_returns_td', 'punt_returns_td']) or 0
+        return rushing + receiving + returns
+    return first_existing_stat(stats, mapping.get(market_key, []))
+
+
+def extract_player_and_market(pick):
+    player = pick.get('player') or pick.get('player_name') or ''
+    source_market = {
+        'points_picks': 'Points',
+        'rebounds_picks': 'Rebounds',
+        'assists_picks': 'Assists',
+        'threes_picks': 'Three Pointers Made',
+        'steals_picks': 'Steals',
+        'blocks_picks': 'Blocks',
+        'combo_picks': pick.get('prop_type') or 'PRA',
+    }.get(pick.get('_source_key'), '')
+    market = (
+        pick.get('market') or pick.get('prop_category')
+        or pick.get('prop_type') or source_market
+    )
+    return str(player), str(market)
+
+
+def collect_player_props(picks_data):
+    if isinstance(picks_data.get('player_prop_picks'), list):
+        return picks_data['player_prop_picks']
+    combined = picks_data.get('picks', [])
+    if isinstance(combined, list):
+        props = [pick for pick in combined if canonical_pick_type(pick) == 'player_prop']
+        if props:
+            return props
+    collected = []
+    ignored = {'game_picks', 'nrfi_picks'}
+    for key, value in picks_data.items():
+        if key.endswith('_picks') and key not in ignored and isinstance(value, list):
+            for pick in value:
+                if isinstance(pick, dict):
+                    copied = dict(pick)
+                    copied['_source_key'] = key
+                    collected.append(copied)
+    return collected
+
+
+def collect_game_picks(picks_data):
+    if isinstance(picks_data.get('game_picks'), list):
+        return picks_data['game_picks']
+    combined = picks_data.get('picks', [])
+    return [pick for pick in combined if canonical_pick_type(pick) in {'moneyline', 'spread', 'game_total'}] if isinstance(combined, list) else []
+
+
+def grade_espn_sport_picks(sport, picks_data, player_stats, game_results, pick_date, graded_date):
+    """Grade CFB/NFL/WNBA analyzer output and save record-only results."""
+    summary = {}
+    player_props = collect_player_props(picks_data)
+    game_picks = collect_game_picks(picks_data)
+    api_player_names = [record['name'] for record in player_stats.values()]
+
+    for pick in player_props:
+        player_name, market = extract_player_and_market(pick)
+        matched_name, _ = fuzzy_match_player(player_name, api_player_names, threshold=0.82)
+        record = player_stats.get(normalize_name(matched_name)) if matched_name else None
+        try:
+            line = float(pick.get('line') if pick.get('line') is not None else pick.get('prop_line'))
+        except (TypeError, ValueError):
+            line = None
+        direction = str(pick.get('over_under') or pick.get('over_under_pick') or '').lower()
+        if not direction:
+            selection = str(pick.get('selection') or '').lower()
+            direction = 'over' if ' over ' in f' {selection} ' else 'under' if ' under ' in f' {selection} ' else ''
+
+        actual = prop_actual_value(sport, market, record['stats']) if record else None
+        if record and actual is not None and line is not None and direction in {'over', 'under'}:
+            result, _ = grade_result(actual, line, direction, record['did_play'])
+        else:
+            result = 'pending'
+
+        category = f"Player {market or 'Prop'}"
+        bucket = summary.setdefault(category, {'wins': 0, 'losses': 0, 'pushes': 0, 'pending': 0, 'profit': 0})
+        counter_key = {'win': 'wins', 'loss': 'losses', 'push': 'pushes'}.get(result, 'pending')
+        bucket[counter_key] += 1
+        save_pick_result(
+            pick_date, graded_date, sport, category, player_name,
+            pick.get('game', ''), direction, line,
+            pick.get('best_odds'), pick.get('best_book', ''), result, actual, 0,
+        )
+
+    for pick in game_picks:
+        result, actual = grade_espn_game_pick(pick, game_results)
+        pick_type = canonical_pick_type(pick)
+        category_names = {'moneyline': 'Game ML', 'spread': 'Game Spread', 'game_total': 'Game OU'}
+        category = category_names.get(pick_type, 'Game')
+        bucket = summary.setdefault(category, {'wins': 0, 'losses': 0, 'pushes': 0, 'pending': 0, 'profit': 0})
+        counter_key = {'win': 'wins', 'loss': 'losses', 'push': 'pushes'}.get(result, 'pending')
+        bucket[counter_key] += 1
+        line = pick.get('line') if pick.get('line') is not None else pick.get('fd_line')
+        save_pick_result(
+            pick_date, graded_date, sport, category,
+            pick.get('team') or pick.get('selection') or pick.get('pick', ''),
+            pick.get('game', ''), pick.get('over_under') or pick.get('over_under_pick', ''),
+            line, pick.get('best_odds') or pick.get('fd_odds'), pick.get('best_book', ''),
+            result, actual, 0,
+        )
+
+    print(f"   📊 {sport}: {len(player_props)} player props and {len(game_picks)} game picks processed")
+    return summary
+
+# ─────────────────────────────────────────────
 # PARLAY GRADER
 # ─────────────────────────────────────────────
 
@@ -629,6 +1047,9 @@ def run_grader():
 
     mlb_picks = None
     nba_picks = None
+    cfb_picks = None
+    nfl_picks = None
+    wnba_picks = None
 
     if os.path.exists(f"logs/{yesterday}_picks.json"):
         with open(f"logs/{yesterday}_picks.json", 'r') as f:
@@ -644,7 +1065,28 @@ def run_grader():
     else:
         print(f"   ⚠️ No NBA picks file for {yesterday}")
 
-    if not mlb_picks and not nba_picks:
+    for sport, filename in (
+        ('CFB', f"logs/{yesterday}_cfb_picks.json"),
+        ('NFL', f"logs/{yesterday}_nfl_picks.json"),
+        ('WNBA', f"logs/{yesterday}_wnba_picks.json"),
+    ):
+        if os.path.exists(filename):
+            try:
+                with open(filename, 'r', encoding='utf-8') as file:
+                    loaded = json.load(file)
+                if sport == 'CFB':
+                    cfb_picks = loaded
+                elif sport == 'NFL':
+                    nfl_picks = loaded
+                else:
+                    wnba_picks = loaded
+                print(f"   📂 Loaded {sport} picks for {yesterday}")
+            except (OSError, json.JSONDecodeError) as error:
+                print(f"   ❌ Could not load {sport} picks: {error}")
+        else:
+            print(f"   ⚠️ No {sport} picks file for {yesterday}")
+
+    if not any((mlb_picks, nba_picks, cfb_picks, nfl_picks, wnba_picks)):
         return None, get_cumulative_stats()
 
     mlb_player_stats, game_results = get_mlb_boxscores(yesterday) if mlb_picks else ({}, [])
@@ -684,6 +1126,33 @@ def run_grader():
             nba_summary = grade_nba_picks(nba_picks, nba_player_stats, yesterday, graded_date)
             grade_parlay(nba_picks.get('best_parlay'), yesterday, graded_date, 'NBA')
         graded_summary.update({f"NBA - {k}": v for k, v in nba_summary.items()})
+
+    # CFB / NFL / WNBA
+    for sport, sport_picks in (
+        ('CFB', cfb_picks),
+        ('NFL', nfl_picks),
+        ('WNBA', wnba_picks),
+    ):
+        if not sport_picks:
+            continue
+        if already_graded(yesterday, sport):
+            print(f"   ⚠️ {sport} picks for {yesterday} already graded — skipping")
+            existing = get_daily_summary_from_db(yesterday)
+            sport_summary = {
+                key.replace(f'{sport} - ', ''): value
+                for key, value in existing.items()
+                if key.startswith(f'{sport} - ')
+            }
+        else:
+            player_stats, sport_games = get_espn_results(sport, yesterday)
+            if not sport_games:
+                print(f"   ⏳ No completed {sport} games found; leaving picks ungraded")
+                continue
+            print(f"\n🏟️ Grading {sport} picks...")
+            sport_summary = grade_espn_sport_picks(
+                sport, sport_picks, player_stats, sport_games, yesterday, graded_date
+            )
+        graded_summary.update({f"{sport} - {key}": value for key, value in sport_summary.items()})
 
     cumulative = get_cumulative_stats()
 
