@@ -420,9 +420,102 @@ def get_daily_summary_from_db(pick_date):
 # MLB GRADER
 # ─────────────────────────────────────────────
 
+def normalize_mlb_picks_schema(picks_data):
+    """Adapt the analyzer's ``top_picks`` output to the legacy MLB grader keys."""
+    if not isinstance(picks_data, dict):
+        return {}
+
+    normalized = dict(picks_data)
+    buckets = {
+        'hr_picks': list(picks_data.get('hr_picks', []) or []),
+        'hits_picks': list(picks_data.get('hits_picks', []) or []),
+        'total_bases_picks': list(picks_data.get('total_bases_picks', []) or []),
+        'strikeout_picks': list(picks_data.get('strikeout_picks', []) or []),
+        'game_picks': list(picks_data.get('game_picks', []) or []),
+    }
+
+    for original in picks_data.get('top_picks', []) or []:
+        if not isinstance(original, dict):
+            continue
+        pick = dict(original)
+        category = re.sub(
+            r'[^a-z0-9]+', ' ', str(pick.get('category') or '').lower()
+        ).strip()
+
+        # The current analyzer uses player_name for both players and team picks.
+        pick.setdefault('pick', pick.get('player_name', ''))
+        pick.setdefault('best_book', pick.get('best_book', ''))
+        if not pick.get('fd_odds'):
+            pick['fd_odds'] = pick.get('best_odds')
+
+        if category in {'game ml', 'game moneyline', 'moneyline'}:
+            pick['prop_category'] = 'ML'
+            buckets['game_picks'].append(pick)
+        elif category in {'game spread', 'spread'}:
+            pick['prop_category'] = 'Spread'
+            buckets['game_picks'].append(pick)
+        elif category in {'game ou', 'game total', 'total', 'over under'}:
+            pick['prop_category'] = 'OU'
+            if not pick.get('over_under_pick'):
+                selection = str(
+                    pick.get('selection') or pick.get('player_name') or ''
+                ).lower()
+                if 'over' in selection:
+                    pick['over_under_pick'] = 'over'
+                elif 'under' in selection:
+                    pick['over_under_pick'] = 'under'
+            buckets['game_picks'].append(pick)
+        elif 'strikeout' in category:
+            # grade_mlb_picks selects pitcher or batter Ks from pick_type.
+            buckets['strikeout_picks'].append(pick)
+        elif category in {'hr', 'home run', 'home runs', 'batter home run'}:
+            buckets['hr_picks'].append(pick)
+        elif 'total base' in category or category == 'tb':
+            buckets['total_bases_picks'].append(pick)
+        elif category in {'hit', 'hits', 'batter hit', 'batter hits'}:
+            buckets['hits_picks'].append(pick)
+        else:
+            print(
+                f"   ⚠️ Unsupported MLB top_picks category left ungraded: "
+                f"{pick.get('category', 'Unknown')}"
+            )
+
+    normalized.update(buckets)
+    print(
+        "   🧩 MLB pick mapping: "
+        f"{len(buckets['hr_picks'])} HR | "
+        f"{len(buckets['hits_picks'])} Hits | "
+        f"{len(buckets['total_bases_picks'])} TB | "
+        f"{len(buckets['strikeout_picks'])} K | "
+        f"{len(buckets['game_picks'])} Game"
+    )
+    return normalized
+
+
+def existing_pick_categories(pick_date, sport):
+    """Return categories already stored, without treating one as the whole sport."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute(
+        'SELECT DISTINCT category FROM pick_results WHERE pick_date = ? AND sport = ?',
+        (pick_date, sport),
+    )
+    categories = {row[0] for row in cursor.fetchall()}
+    conn.close()
+    return categories
+
+
+def stored_category_summary(pick_date, sport, category):
+    summary = get_daily_summary_from_db(pick_date)
+    return summary.get(
+        f'{sport} - {category}',
+        {'wins': 0, 'losses': 0, 'pushes': 0, 'pending': 0, 'profit': 0},
+    )
+
 def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_date):
     summary = {}
     api_players = list(player_stats.keys())
+    existing_categories = existing_pick_categories(pick_date, 'MLB')
     mlb_categories = {
         'hr_picks':          ('HR',   'home_runs',  None),
         'hits_picks':        ('Hits', 'hits',        'over_under_pick'),
@@ -430,6 +523,10 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
         'strikeout_picks':   ('K',    None,          'over_under_pick'),
     }
     for key, (cat, stat_field, ou_field) in mlb_categories.items():
+        if cat in existing_categories:
+            print(f"   ⚠️ MLB {cat} already graded — skipping that category")
+            summary[cat] = stored_category_summary(pick_date, 'MLB', cat)
+            continue
         picks = picks_data.get(key, [])
         wins = losses = pushes = pending = 0
         profit = 0
@@ -467,6 +564,9 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
     ml_profit = spread_profit = ou_profit = 0
     for pick in game_picks:
         prop = pick.get('prop_category', 'ML')
+        stored_category = f"Game {prop}"
+        if stored_category in existing_categories:
+            continue
         result, pl = grade_game_pick(pick, game_results)
         save_pick_result(pick_date, graded_date, 'MLB', f"Game {prop}", pick.get('pick',''), pick.get('game',''), pick.get('over_under_pick',''), pick.get('fd_line'), pick.get('fd_odds'), pick.get('best_book',''), result, None, pl)
         if prop == 'ML':
@@ -482,9 +582,21 @@ def grade_mlb_picks(picks_data, player_stats, game_results, pick_date, graded_da
             elif result == 'loss': ou_losses += 1; ou_profit += pl
             elif result == 'push': ou_pushes += 1
 
-    summary['Game ML']     = {'wins': ml_wins,     'losses': ml_losses,     'pushes': ml_pushes,     'pending': 0, 'profit': round(ml_profit, 2)}
-    summary['Game Spread'] = {'wins': spread_wins, 'losses': spread_losses, 'pushes': spread_pushes, 'pending': 0, 'profit': round(spread_profit, 2)}
-    summary['Game OU']     = {'wins': ou_wins,     'losses': ou_losses,     'pushes': ou_pushes,     'pending': 0, 'profit': round(ou_profit, 2)}
+    summary['Game ML'] = (
+        stored_category_summary(pick_date, 'MLB', 'Game ML')
+        if 'Game ML' in existing_categories else
+        {'wins': ml_wins, 'losses': ml_losses, 'pushes': ml_pushes, 'pending': 0, 'profit': round(ml_profit, 2)}
+    )
+    summary['Game Spread'] = (
+        stored_category_summary(pick_date, 'MLB', 'Game Spread')
+        if 'Game Spread' in existing_categories else
+        {'wins': spread_wins, 'losses': spread_losses, 'pushes': spread_pushes, 'pending': 0, 'profit': round(spread_profit, 2)}
+    )
+    summary['Game OU'] = (
+        stored_category_summary(pick_date, 'MLB', 'Game OU')
+        if 'Game OU' in existing_categories else
+        {'wins': ou_wins, 'losses': ou_losses, 'pushes': ou_pushes, 'pending': 0, 'profit': round(ou_profit, 2)}
+    )
     return summary
 
 # ─────────────────────────────────────────────
@@ -1053,7 +1165,7 @@ def run_grader():
 
     if os.path.exists(f"logs/{yesterday}_picks.json"):
         with open(f"logs/{yesterday}_picks.json", 'r') as f:
-            mlb_picks = json.load(f)
+            mlb_picks = normalize_mlb_picks_schema(json.load(f))
         print(f"   📂 Loaded MLB picks for {yesterday}")
     else:
         print(f"   ⚠️ No MLB picks file for {yesterday}")
@@ -1094,16 +1206,16 @@ def run_grader():
     graded_summary = {}
 
     # MLB
-    if mlb_picks and mlb_player_stats:
-        if already_graded(yesterday, 'MLB'):
-            print(f"   ⚠️ MLB picks for {yesterday} already graded — skipping")
-            mlb_summary = get_daily_summary_from_db(yesterday)
-            mlb_summary = {k.replace('MLB - ', ''): v for k, v in mlb_summary.items() if k.startswith('MLB')}
-        else:
-            print(f"\n⚾ Grading MLB picks...")
-            mlb_summary = grade_mlb_picks(mlb_picks, mlb_player_stats, game_results, yesterday, graded_date)
+    if mlb_picks and (mlb_player_stats or game_results):
+        print(f"\n⚾ Grading MLB picks...")
+        mlb_summary = grade_mlb_picks(
+            mlb_picks, mlb_player_stats, game_results, yesterday, graded_date
+        )
+        if not already_graded_category(yesterday, 'MLB', 'Parlay'):
             grade_parlay(mlb_picks.get('best_parlay'), yesterday, graded_date, 'MLB')
         graded_summary.update({f"MLB - {k}": v for k, v in mlb_summary.items()})
+    elif mlb_picks:
+        print("   ⏳ No completed MLB box scores available; regular MLB picks not graded yet")
 
     # NRFI
     if mlb_picks:
