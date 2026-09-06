@@ -1,0 +1,968 @@
+{
+  "date": "2026-09-06",
+  "league": "CFB",
+  "sport_key": "americanfootball_ncaaf",
+  "books": [
+    "FD",
+    "CZS"
+  ],
+  "game_markets": [
+    "moneyline",
+    "spread",
+    "total"
+  ],
+  "player_props_enabled": false,
+  "games": [
+    {
+      "game_id": "36c2a063d7a55e85488fbe0e89015686",
+      "home_team": "Washington Huskies",
+      "away_team": "Washington State Cougars",
+      "commence_time": "2026-09-06T20:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -3000,
+          "away_ml": 1200,
+          "home_spread": -23.5,
+          "home_spread_odds": -115,
+          "away_spread": 23.5,
+          "away_spread_odds": -105,
+          "total": 51.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "CZS": {
+          "home_ml": -2500,
+          "away_ml": 1200,
+          "home_spread": -24.0,
+          "home_spread_odds": -113,
+          "away_spread": 24.0,
+          "away_spread_odds": -107,
+          "total": 51.5,
+          "over_odds": -112,
+          "under_odds": -108
+        }
+      }
+    },
+    {
+      "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
+      "home_team": "Ole Miss Rebels",
+      "away_team": "Louisville Cardinals",
+      "commence_time": "2026-09-06T23:30:00Z",
+      "bookmakers": {
+        "CZS": {
+          "home_ml": -265,
+          "away_ml": 210,
+          "home_spread": -6.5,
+          "home_spread_odds": -114,
+          "away_spread": 6.5,
+          "away_spread_odds": -106,
+          "total": 54.5,
+          "over_odds": -118,
+          "under_odds": -103
+        },
+        "FD": {
+          "home_ml": -250,
+          "away_ml": 205,
+          "home_spread": -6.5,
+          "home_spread_odds": -118,
+          "away_spread": 6.5,
+          "away_spread_odds": -104,
+          "total": 54.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "game_id": "b460f3aa4235ec2485f25182755304d6",
+      "home_team": "Notre Dame Fighting Irish",
+      "away_team": "Wisconsin Badgers",
+      "commence_time": "2026-09-06T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -2000,
+          "away_ml": 1040,
+          "home_spread": -20.5,
+          "home_spread_odds": -115,
+          "away_spread": 20.5,
+          "away_spread_odds": -105,
+          "total": 46.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -2000,
+          "away_ml": 1000,
+          "home_spread": -20.5,
+          "home_spread_odds": -112,
+          "away_spread": 20.5,
+          "away_spread_odds": -108,
+          "total": 46.5,
+          "over_odds": -107,
+          "under_odds": -113
+        }
+      }
+    },
+    {
+      "game_id": "a570687d47661da4982cfd885cdb4a44",
+      "home_team": "Florida State Seminoles",
+      "away_team": "SMU Mustangs",
+      "commence_time": "2026-09-07T23:30:00Z",
+      "bookmakers": {
+        "CZS": {
+          "home_ml": 127,
+          "away_ml": -150,
+          "home_spread": 3.0,
+          "home_spread_odds": -114,
+          "away_spread": -3.0,
+          "away_spread_odds": -106,
+          "total": 53.5,
+          "over_odds": -106,
+          "under_odds": -114
+        },
+        "FD": {
+          "home_ml": 125,
+          "away_ml": -150,
+          "home_spread": 2.5,
+          "home_spread_odds": 100,
+          "away_spread": -2.5,
+          "away_spread_odds": -122,
+          "total": 53.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "game_id": "18dec56516beb8daed598bc5c7a6872d",
+      "home_team": "Miami Hurricanes",
+      "away_team": "Florida A&M Rattlers",
+      "commence_time": "2026-09-11T00:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -53.5,
+          "home_spread_odds": -110,
+          "away_spread": 53.5,
+          "away_spread_odds": -110,
+          "total": 60.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "340ecb016288a69dfc2227500f14bc46",
+      "home_team": "Louisville Cardinals",
+      "away_team": "Villanova Wildcats",
+      "commence_time": "2026-09-11T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -10000,
+          "away_ml": 2400,
+          "home_spread": -35.5,
+          "home_spread_odds": -110,
+          "away_spread": 35.5,
+          "away_spread_odds": -110,
+          "total": 55.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "b008dac7f2b726219adf07d9857e2c66",
+      "home_team": "NC State Wolfpack",
+      "away_team": "Richmond Spiders",
+      "commence_time": "2026-09-11T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -10000,
+          "away_ml": 3000,
+          "home_spread": -30.5,
+          "home_spread_odds": -110,
+          "away_spread": 30.5,
+          "away_spread_odds": -110,
+          "total": 49.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "d70ad98172b9cd2090eb75ff32866e04",
+      "home_team": "Virginia Cavaliers",
+      "away_team": "Norfolk State Spartans",
+      "commence_time": "2026-09-11T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -43.5,
+          "home_spread_odds": -110,
+          "away_spread": 43.5,
+          "away_spread_odds": -110,
+          "total": 54.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "db698f29983406d35dea606edfdc5922",
+      "home_team": "Boston College Eagles",
+      "away_team": "Rutgers Scarlet Knights",
+      "commence_time": "2026-09-11T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -184,
+          "away_ml": 152,
+          "home_spread": -4.5,
+          "home_spread_odds": -106,
+          "away_spread": 4.5,
+          "away_spread_odds": -114,
+          "total": 53.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "8b553ed3cc951140812595c0ac1d14b2",
+      "home_team": "San Jose State Spartans",
+      "away_team": "Cal Poly Mustangs",
+      "commence_time": "2026-09-12T00:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -2300,
+          "away_ml": 1060,
+          "home_spread": -20.5,
+          "home_spread_odds": -120,
+          "away_spread": 20.5,
+          "away_spread_odds": -102,
+          "total": 57.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
+      "home_team": "Kansas Jayhawks",
+      "away_team": "Missouri Tigers",
+      "commence_time": "2026-09-12T00:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 205,
+          "away_ml": -260,
+          "home_spread": 6.5,
+          "home_spread_odds": -105,
+          "away_spread": -6.5,
+          "away_spread_odds": -115,
+          "total": 50.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "6dbd3546b178b91878131862fd719e1e",
+      "home_team": "East Carolina Pirates",
+      "away_team": "Appalachian State Mountaineers",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -330,
+          "away_ml": 260,
+          "home_spread": -8.5,
+          "home_spread_odds": -110,
+          "away_spread": 8.5,
+          "away_spread_odds": -110,
+          "total": 54.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "cad3845e3f9f9e746c4bbf45487eed02",
+      "home_team": "Texas A&M Aggies",
+      "away_team": "Arizona State Sun Devils",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -820,
+          "away_ml": 550,
+          "home_spread": -15.5,
+          "home_spread_odds": -110,
+          "away_spread": 15.5,
+          "away_spread_odds": -110,
+          "total": 54.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "c12cd73c4077a0265acec205a572c2ec",
+      "home_team": "Utah Utes",
+      "away_team": "Arkansas Razorbacks",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -385,
+          "away_ml": 300,
+          "home_spread": -10.5,
+          "home_spread_odds": -105,
+          "away_spread": 10.5,
+          "away_spread_odds": -115,
+          "total": 56.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "a7c7e0143d5131ee3e2d78f356f0089d",
+      "home_team": "Army Black Knights",
+      "away_team": "South Florida Bulls",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -192,
+          "away_ml": 158,
+          "home_spread": -4.5,
+          "home_spread_odds": -110,
+          "away_spread": 4.5,
+          "away_spread_odds": -110,
+          "total": 50.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "game_id": "287a959c0717526161988214cb4e01ce",
+      "home_team": "North Carolina Tar Heels",
+      "away_team": "East Tennessee State Buccaneers",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -30000,
+          "away_ml": 4000,
+          "home_spread": -35.5,
+          "home_spread_odds": -110,
+          "away_spread": 35.5,
+          "away_spread_odds": -110,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "3b3054849b678fcfa0b6a5a9994557bf",
+      "home_team": "Kansas State Wildcats",
+      "away_team": "Washington State Cougars",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -1400,
+          "away_ml": 800,
+          "home_spread": -18.5,
+          "home_spread_odds": -110,
+          "away_spread": 18.5,
+          "away_spread_odds": -110,
+          "total": 52.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "b38f4f63351c15767e64a76a73589574",
+      "home_team": "Michigan Wolverines",
+      "away_team": "Oklahoma Sooners",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 176,
+          "away_ml": -210,
+          "home_spread": 5.5,
+          "home_spread_odds": -110,
+          "away_spread": -5.5,
+          "away_spread_odds": -110,
+          "total": 43.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "game_id": "d652c7bc0594f13ef0a2a04e31ef5666",
+      "home_team": "Oklahoma State Cowboys",
+      "away_team": "Oregon Ducks",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 1060,
+          "away_ml": -2100,
+          "home_spread": 21.5,
+          "home_spread_odds": -110,
+          "away_spread": -21.5,
+          "away_spread_odds": -110,
+          "total": 57.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "cdbde17fe5ba072172683681026c6312",
+      "home_team": "Virginia Tech Hokies",
+      "away_team": "Old Dominion Monarchs",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -1050,
+          "away_ml": 660,
+          "home_spread": -17.5,
+          "home_spread_odds": -115,
+          "away_spread": 17.5,
+          "away_spread_odds": -105,
+          "total": 52.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "eee54863c6c50d585de1919f1fca51e5",
+      "home_team": "Temple Owls",
+      "away_team": "Penn State Nittany Lions",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 1280,
+          "away_ml": -3500,
+          "home_spread": 23.5,
+          "home_spread_odds": -105,
+          "away_spread": -23.5,
+          "away_spread_odds": -115,
+          "total": 49.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "5a8d98c3147d18b683d90a536e76eb64",
+      "home_team": "Purdue Boilermakers",
+      "away_team": "Wake Forest Demon Deacons",
+      "commence_time": "2026-09-12T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 152,
+          "away_ml": -184,
+          "home_spread": 4.5,
+          "home_spread_odds": -114,
+          "away_spread": -4.5,
+          "away_spread_odds": -106,
+          "total": 50.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "50ca382289647d24354223aa3512c02f",
+      "home_team": "Ball State Cardinals",
+      "away_team": "Stony Brook Seawolves",
+      "commence_time": "2026-09-12T18:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -880,
+          "away_ml": 580,
+          "home_spread": -15.5,
+          "home_spread_odds": -110,
+          "away_spread": 15.5,
+          "away_spread_odds": -110,
+          "total": 56.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "2cb6f8436ba0f1fbcdcd7871a03466d5",
+      "home_team": "Kentucky Wildcats",
+      "away_team": "Alabama Crimson Tide",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 330,
+          "away_ml": -430,
+          "home_spread": 10.5,
+          "home_spread_odds": -114,
+          "away_spread": -10.5,
+          "away_spread_odds": -106,
+          "total": 48.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "6e781bfdb712f185fb1be983bc10af15",
+      "home_team": "BYU Cougars",
+      "away_team": "Arizona Wildcats",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -280,
+          "away_ml": 225,
+          "home_spread": -7.5,
+          "home_spread_odds": -110,
+          "away_spread": 7.5,
+          "away_spread_odds": -110,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "1427645d6020f742eece986c58bdb29d",
+      "home_team": "Syracuse Orange",
+      "away_team": "California Golden Bears",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -106,
+          "away_ml": -113,
+          "home_spread": 0.5,
+          "home_spread_odds": -106,
+          "away_spread": -0.5,
+          "away_spread_odds": -114,
+          "total": 54.5,
+          "over_odds": -114,
+          "under_odds": -106
+        }
+      }
+    },
+    {
+      "game_id": "52e9b0f6515766724ee70457912bdc18",
+      "home_team": "Illinois Fighting Illini",
+      "away_team": "Duke Blue Devils",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -245,
+          "away_ml": 198,
+          "home_spread": -6.5,
+          "home_spread_odds": -115,
+          "away_spread": 6.5,
+          "away_spread_odds": -105,
+          "total": 53.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "game_id": "db05b8a09b0efd8546a13a2cb5e457fc",
+      "home_team": "Michigan State Spartans",
+      "away_team": "Eastern Michigan Eagles",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -1000,
+          "away_ml": 640,
+          "home_spread": -17.5,
+          "home_spread_odds": -105,
+          "away_spread": 17.5,
+          "away_spread_odds": -115,
+          "total": 50.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "70a4d83a64789d57f114b077a570ea27",
+      "home_team": "UConn Huskies",
+      "away_team": "Maryland Terrapins",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 440,
+          "away_ml": -610,
+          "home_spread": 13.5,
+          "home_spread_odds": -105,
+          "away_spread": -13.5,
+          "away_spread_odds": -115,
+          "total": 53.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "25c198f097870d531920ba524262737d",
+      "home_team": "Minnesota Golden Gophers",
+      "away_team": "Mississippi State Bulldogs",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -106,
+          "away_ml": -113,
+          "home_spread": 1.5,
+          "home_spread_odds": -114,
+          "away_spread": -1.5,
+          "away_spread_odds": -106,
+          "total": 55.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "dd880570288831c4fc55cb68f19f9667",
+      "home_team": "Pittsburgh Panthers",
+      "away_team": "UCF Knights",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -300,
+          "away_ml": 240,
+          "home_spread": -7.5,
+          "home_spread_odds": -110,
+          "away_spread": 7.5,
+          "away_spread_odds": -110,
+          "total": 57.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "08c5bac0240cbc3ba996fb55a75504f2",
+      "home_team": "Texas State Bobcats",
+      "away_team": "UTSA Roadrunners",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -110,
+          "away_ml": -110,
+          "home_spread": 1.5,
+          "home_spread_odds": -118,
+          "away_spread": -1.5,
+          "away_spread_odds": -104,
+          "total": 64.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "61700ad2942d0c633b9c6cd402964356",
+      "home_team": "UAB Blazers",
+      "away_team": "UL Monroe Warhawks",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -365,
+          "away_ml": 285,
+          "home_spread": -9.5,
+          "home_spread_odds": -110,
+          "away_spread": 9.5,
+          "away_spread_odds": -110,
+          "total": 55.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "2186fba5726dbd7fee2ce72477bdaa2b",
+      "home_team": "Washington Huskies",
+      "away_team": "Utah State Aggies",
+      "commence_time": "2026-09-12T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -4500,
+          "away_ml": 1600,
+          "home_spread": -26.5,
+          "home_spread_odds": -110,
+          "away_spread": 26.5,
+          "away_spread_odds": -110,
+          "total": 56.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "50b6e6aec0bd3f2fcb9dc18c113ddd12",
+      "home_team": "North Texas Mean Green",
+      "away_team": "UNLV Rebels",
+      "commence_time": "2026-09-12T19:45:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 180,
+          "away_ml": -220,
+          "home_spread": 6.5,
+          "home_spread_odds": -110,
+          "away_spread": -6.5,
+          "away_spread_odds": -110,
+          "total": 57.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "04d0c72553f17ebc22509fb1b5926600",
+      "home_team": "Vanderbilt Commodores",
+      "away_team": "Delaware Blue Hens",
+      "commence_time": "2026-09-12T20:15:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -1700,
+          "away_ml": 890,
+          "home_spread": -20.5,
+          "home_spread_odds": -115,
+          "away_spread": 20.5,
+          "away_spread_odds": -105,
+          "total": 53.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "c46b118e570bf1fa1b2724f1fd7e4b24",
+      "home_team": "Boise State Broncos",
+      "away_team": "Memphis Tigers",
+      "commence_time": "2026-09-12T22:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -385,
+          "away_ml": 300,
+          "home_spread": -8.5,
+          "home_spread_odds": -115,
+          "away_spread": 8.5,
+          "away_spread_odds": -105,
+          "total": 56.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "a2b7711390532d0014249f295a6d02b8",
+      "home_team": "Florida International Panthers",
+      "away_team": "Buffalo Bulls",
+      "commence_time": "2026-09-12T22:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -430,
+          "away_ml": 330,
+          "home_spread": -10.5,
+          "home_spread_odds": -110,
+          "away_spread": 10.5,
+          "away_spread_odds": -110,
+          "total": 52.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "3cff947fac86cab5c41d4f7c0e9393ce",
+      "home_team": "Ohio Bobcats",
+      "away_team": "Jacksonville State Gamecocks",
+      "commence_time": "2026-09-12T22:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -125,
+          "away_ml": 104,
+          "home_spread": -1.5,
+          "home_spread_odds": -114,
+          "away_spread": 1.5,
+          "away_spread_odds": -106,
+          "total": 52.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "5cc49501cef64287d2f6b5afe9526a16",
+      "home_team": "Nebraska Cornhuskers",
+      "away_team": "Bowling Green Falcons",
+      "commence_time": "2026-09-12T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -10000,
+          "away_ml": 2400,
+          "home_spread": -28.5,
+          "home_spread_odds": -110,
+          "away_spread": 28.5,
+          "away_spread_odds": -110,
+          "total": 52.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "2fef91bee444782036d23f91abe0a5da",
+      "home_team": "Georgia Tech Yellow Jackets",
+      "away_team": "Tennessee Volunteers",
+      "commence_time": "2026-09-12T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 400,
+          "away_ml": -550,
+          "home_spread": 13.5,
+          "home_spread_odds": -110,
+          "away_spread": -13.5,
+          "away_spread_odds": -110,
+          "total": 54.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "game_id": "a7402ec89d227ff9b9bf936a8679d313",
+      "home_team": "Sam Houston State Bearkats",
+      "away_team": "Tulsa Golden Hurricane",
+      "commence_time": "2026-09-12T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 520,
+          "away_ml": -750,
+          "home_spread": 15.5,
+          "home_spread_odds": -114,
+          "away_spread": -15.5,
+          "away_spread_odds": -106,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "18c682b142ecfadb8d6d801f5fb9aac7",
+      "home_team": "Tulane Green Wave",
+      "away_team": "South Alabama Jaguars",
+      "commence_time": "2026-09-12T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -465,
+          "away_ml": 350,
+          "home_spread": -11.5,
+          "home_spread_odds": -110,
+          "away_spread": 11.5,
+          "away_spread_odds": -110,
+          "total": 52.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "14620ae05bec8eaa19ca94156c71dff2",
+      "home_team": "UCLA Bruins",
+      "away_team": "San Diego State Aztecs",
+      "commence_time": "2026-09-12T23:15:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -420,
+          "away_ml": 320,
+          "home_spread": -10.5,
+          "home_spread_odds": -110,
+          "away_spread": 10.5,
+          "away_spread_odds": -110,
+          "total": 51.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "game_id": "0633819fa9e60ac71609cd40e1596b1b",
+      "home_team": "Iowa Hawkeyes",
+      "away_team": "Iowa State Cyclones",
+      "commence_time": "2026-09-12T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -820,
+          "away_ml": 550,
+          "home_spread": -14.5,
+          "home_spread_odds": -112,
+          "away_spread": 14.5,
+          "away_spread_odds": -108,
+          "total": 42.5,
+          "over_odds": -106,
+          "under_odds": -114
+        }
+      }
+    },
+    {
+      "game_id": "08c34029ecc85b4a6d519f90f9082e56",
+      "home_team": "Texas Longhorns",
+      "away_team": "Ohio State Buckeyes",
+      "commence_time": "2026-09-12T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -115,
+          "away_ml": -104,
+          "home_spread": -1.5,
+          "home_spread_odds": -106,
+          "away_spread": 1.5,
+          "away_spread_odds": -114,
+          "total": 47.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "game_id": "f0d4ea035d6edfabda0c2b298c7d42d2",
+      "home_team": "Oregon State Beavers",
+      "away_team": "Texas Tech Red Raiders",
+      "commence_time": "2026-09-12T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 1600,
+          "away_ml": -4500,
+          "home_spread": 27.5,
+          "home_spread_odds": -114,
+          "away_spread": -27.5,
+          "away_spread_odds": -106,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "dbcfc3184e20d1ea45e910b89585071f",
+      "home_team": "Louisville Cardinals",
+      "away_team": "SMU Mustangs",
+      "commence_time": "2026-09-19T19:30:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "fa98066b4b400fb6af0672e170cc584a",
+      "home_team": "Notre Dame Fighting Irish",
+      "away_team": "SMU Mustangs",
+      "commence_time": "2026-11-22T00:30:00Z",
+      "bookmakers": {}
+    }
+  ]
+}

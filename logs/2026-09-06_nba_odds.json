@@ -1,0 +1,1312 @@
+{
+  "date": "2026-09-06",
+  "league": "NBA",
+  "sport_key": "basketball_nba",
+  "books": [
+    "FD",
+    "MGM",
+    "CZS",
+    "ESPN"
+  ],
+  "game_markets": [
+    "moneyline",
+    "spread",
+    "total"
+  ],
+  "player_prop_markets": [
+    "player_points",
+    "player_rebounds",
+    "player_assists",
+    "player_threes",
+    "player_points_rebounds_assists",
+    "player_points_rebounds",
+    "player_points_assists",
+    "player_rebounds_assists",
+    "player_steals",
+    "player_blocks"
+  ],
+  "games": [
+    {
+      "game_id": "26b036ff107f3c658258eaf4a6f26228",
+      "home_team": "Detroit Pistons",
+      "away_team": "Boston Celtics",
+      "commence_time": "2026-10-20T19:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -120,
+          "away_ml": 102,
+          "home_spread": -1.5,
+          "home_spread_odds": -110,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 221.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "home_ml": -125,
+          "away_ml": 105,
+          "home_spread": -1.5,
+          "home_spread_odds": -110,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 222.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -125,
+          "away_ml": 105,
+          "home_spread": -1.5,
+          "home_spread_odds": -115,
+          "away_spread": 1.5,
+          "away_spread_odds": -105,
+          "total": 221.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+      "home_team": "New York Knicks",
+      "away_team": "Philadelphia 76ers",
+      "commence_time": "2026-10-20T23:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -210,
+          "away_ml": 176,
+          "home_spread": -5.5,
+          "home_spread_odds": -115,
+          "away_spread": 5.5,
+          "away_spread_odds": -105,
+          "total": 233.5,
+          "over_odds": -108,
+          "under_odds": -112
+        },
+        "MGM": {
+          "home_ml": -185,
+          "away_ml": 150,
+          "home_spread": -5.5,
+          "home_spread_odds": -110,
+          "away_spread": 5.5,
+          "away_spread_odds": -110,
+          "total": 231.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -195,
+          "away_ml": 162,
+          "home_spread": -5.0,
+          "home_spread_odds": -115,
+          "away_spread": 5.0,
+          "away_spread_odds": -105,
+          "total": 231.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "game_id": "bccd283de56915e29af1788beb0abfc9",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Oklahoma City Thunder",
+      "commence_time": "2026-10-21T01:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -126,
+          "away_ml": 108,
+          "home_spread": -1.5,
+          "home_spread_odds": -115,
+          "away_spread": 1.5,
+          "away_spread_odds": -105,
+          "total": 231.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": -125,
+          "away_ml": 105,
+          "home_spread": -2.5,
+          "home_spread_odds": -105,
+          "away_spread": 2.5,
+          "away_spread_odds": -115,
+          "total": 230.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -130,
+          "away_ml": 110,
+          "home_spread": -1.5,
+          "home_spread_odds": -115,
+          "away_spread": 1.5,
+          "away_spread_odds": -105,
+          "total": 230.0,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "game_id": "85e6e4e2404ef7268659739997758da1",
+      "home_team": "Orlando Magic",
+      "away_team": "Atlanta Hawks",
+      "commence_time": "2026-10-21T23:10:00Z",
+      "bookmakers": {
+        "MGM": {
+          "home_ml": -135,
+          "away_ml": 115,
+          "home_spread": -2.5,
+          "home_spread_odds": -110,
+          "away_spread": 2.5,
+          "away_spread_odds": -110,
+          "total": 233.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -135,
+          "away_ml": 115,
+          "home_spread": -2.5,
+          "home_spread_odds": -110,
+          "away_spread": 2.5,
+          "away_spread_odds": -110,
+          "total": 233.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "164cc0396837d5ff433215ffd3279283",
+      "home_team": "Washington Wizards",
+      "away_team": "Milwaukee Bucks",
+      "commence_time": "2026-10-21T23:10:00Z",
+      "bookmakers": {
+        "MGM": {
+          "home_ml": -220,
+          "away_ml": 180,
+          "home_spread": -6.5,
+          "home_spread_odds": -110,
+          "away_spread": 6.5,
+          "away_spread_odds": -110,
+          "total": 238.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -260,
+          "away_ml": 210,
+          "home_spread": -6.5,
+          "home_spread_odds": -110,
+          "away_spread": 6.5,
+          "away_spread_odds": -110,
+          "total": 238.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "47cc511bb5ce50f715e3625ce5ef77ee",
+      "home_team": "Brooklyn Nets",
+      "away_team": "Charlotte Hornets",
+      "commence_time": "2026-10-21T23:40:00Z",
+      "bookmakers": {
+        "MGM": {
+          "home_ml": 140,
+          "away_ml": -165,
+          "home_spread": 4.5,
+          "home_spread_odds": -110,
+          "away_spread": -4.5,
+          "away_spread_odds": -110,
+          "total": 226.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 152,
+          "away_ml": -180,
+          "home_spread": 4.5,
+          "home_spread_odds": -110,
+          "away_spread": -4.5,
+          "away_spread_odds": -110,
+          "total": 225.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "93cdd8e4ade5697cfccf42ee42c4d207",
+      "home_team": "Miami Heat",
+      "away_team": "Minnesota Timberwolves",
+      "commence_time": "2026-10-21T23:40:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -108,
+          "away_ml": -108,
+          "home_spread": -1.5,
+          "home_spread_odds": -102,
+          "away_spread": 1.5,
+          "away_spread_odds": -120,
+          "total": 243.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -120,
+          "away_ml": 100,
+          "home_spread": -1.5,
+          "home_spread_odds": -110,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 242.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": -120,
+          "away_ml": 105,
+          "home_spread": -1.5,
+          "home_spread_odds": -110,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 243.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "fd33c09c84ab4c2fe6955d59f8dc5dd2",
+      "home_team": "New Orleans Pelicans",
+      "away_team": "Indiana Pacers",
+      "commence_time": "2026-10-22T00:10:00Z",
+      "bookmakers": {
+        "MGM": {
+          "home_ml": 140,
+          "away_ml": -165,
+          "home_spread": 4.5,
+          "home_spread_odds": -110,
+          "away_spread": -4.5,
+          "away_spread_odds": -110,
+          "total": 243.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 143,
+          "away_ml": -170,
+          "home_spread": 3.5,
+          "home_spread_odds": -105,
+          "away_spread": -3.5,
+          "away_spread_odds": -115,
+          "total": 242.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "e6769c813dd625b622df94c14a562ce2",
+      "home_team": "Memphis Grizzlies",
+      "away_team": "Utah Jazz",
+      "commence_time": "2026-10-22T00:10:00Z",
+      "bookmakers": {
+        "MGM": {
+          "home_ml": 120,
+          "away_ml": -145,
+          "home_spread": 2.5,
+          "home_spread_odds": -110,
+          "away_spread": -2.5,
+          "away_spread_odds": -110,
+          "total": 241.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 122,
+          "away_ml": -145,
+          "home_spread": 2.5,
+          "home_spread_odds": -105,
+          "away_spread": -2.5,
+          "away_spread_odds": -115,
+          "total": 241.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "af2f084075391e55ba2a596e7846bb40",
+      "home_team": "Houston Rockets",
+      "away_team": "Dallas Mavericks",
+      "commence_time": "2026-10-22T00:40:00Z",
+      "bookmakers": {
+        "MGM": {
+          "home_ml": -300,
+          "away_ml": 240,
+          "home_spread": -8.5,
+          "home_spread_odds": -105,
+          "away_spread": 8.5,
+          "away_spread_odds": -115,
+          "total": 227.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -345,
+          "away_ml": 270,
+          "home_spread": -8.5,
+          "home_spread_odds": -105,
+          "away_spread": 8.5,
+          "away_spread_odds": -115,
+          "total": 227.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "6fff70f4bf196dba25060a5775a03b54",
+      "home_team": "Los Angeles Lakers",
+      "away_team": "Golden State Warriors",
+      "commence_time": "2026-10-22T02:10:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -168,
+          "away_ml": 142,
+          "home_spread": -3.5,
+          "home_spread_odds": -120,
+          "away_spread": 3.5,
+          "away_spread_odds": -102,
+          "total": 236.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -190,
+          "away_ml": 158,
+          "home_spread": -4.5,
+          "home_spread_odds": -115,
+          "away_spread": 4.5,
+          "away_spread_odds": -105,
+          "total": 235.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "home_ml": -190,
+          "away_ml": 155,
+          "home_spread": -5.5,
+          "home_spread_odds": -110,
+          "away_spread": 5.5,
+          "away_spread_odds": -110,
+          "total": 235.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "71e24359951927c356bd8c852fb867dd",
+      "home_team": "Portland Trail Blazers",
+      "away_team": "Phoenix Suns",
+      "commence_time": "2026-10-22T02:10:00Z",
+      "bookmakers": {
+        "MGM": {
+          "home_ml": -175,
+          "away_ml": 145,
+          "home_spread": -4.5,
+          "home_spread_odds": -110,
+          "away_spread": 4.5,
+          "away_spread_odds": -110,
+          "total": 235.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -178,
+          "away_ml": 150,
+          "home_spread": -4.5,
+          "home_spread_odds": -115,
+          "away_spread": 4.5,
+          "away_spread_odds": -105,
+          "total": 235.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "110e33c79c5ec8c0377702aff685f83b",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "Cleveland Cavaliers",
+      "commence_time": "2026-10-22T23:10:00Z",
+      "bookmakers": {
+        "CZS": {
+          "home_ml": -170,
+          "away_ml": 143,
+          "home_spread": -4.5,
+          "home_spread_odds": -105,
+          "away_spread": 4.5,
+          "away_spread_odds": -115,
+          "total": 233.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": -175,
+          "away_ml": 145,
+          "home_spread": -4.5,
+          "home_spread_odds": -110,
+          "away_spread": 4.5,
+          "away_spread_odds": -110,
+          "total": 233.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "223b2883b9b05a67329ef246384b85f1",
+      "home_team": "Oklahoma City Thunder",
+      "away_team": "Denver Nuggets",
+      "commence_time": "2026-10-23T01:40:00Z",
+      "bookmakers": {
+        "CZS": {
+          "home_ml": -285,
+          "away_ml": 228,
+          "home_spread": -7.5,
+          "home_spread_odds": -105,
+          "away_spread": 7.5,
+          "away_spread_odds": -115,
+          "total": 231.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "home_ml": -275,
+          "away_ml": 220,
+          "home_spread": -7.5,
+          "home_spread_odds": -110,
+          "away_spread": 7.5,
+          "away_spread_odds": -110,
+          "total": 232.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "0d34c898f6cbb990077ae9f0a2773513",
+      "home_team": "Boston Celtics",
+      "away_team": "New York Knicks",
+      "commence_time": "2026-10-23T23:10:00Z",
+      "bookmakers": {
+        "CZS": {
+          "home_ml": -125,
+          "away_ml": 105,
+          "home_spread": -1.5,
+          "home_spread_odds": -115,
+          "away_spread": 1.5,
+          "away_spread_odds": -105,
+          "total": 224.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "49fc89a9696a9a20b658732b34ce61c4",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Houston Rockets",
+      "commence_time": "2026-10-24T01:40:00Z",
+      "bookmakers": {
+        "CZS": {
+          "home_ml": -225,
+          "away_ml": 185,
+          "home_spread": -6.5,
+          "home_spread_odds": -110,
+          "away_spread": 6.5,
+          "away_spread_odds": -110,
+          "total": 226.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "45ebc54751ef3e435192eaeb0470acfb",
+      "home_team": "Washington Wizards",
+      "away_team": "Charlotte Hornets",
+      "commence_time": "2026-10-30T23:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "036a93ca33d6261c21d4bfa6e0d02568",
+      "home_team": "Boston Celtics",
+      "away_team": "Chicago Bulls",
+      "commence_time": "2026-10-30T23:40:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "64df299b882ea19ad5f8cb0ed5516a6f",
+      "home_team": "Brooklyn Nets",
+      "away_team": "Detroit Pistons",
+      "commence_time": "2026-10-30T23:40:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "96a166bbd49782dbd9a61c2fb9069787",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "New York Knicks",
+      "commence_time": "2026-10-30T23:40:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "b9778d0e3a26167eb49901dcae7eeb98",
+      "home_team": "Dallas Mavericks",
+      "away_team": "Houston Rockets",
+      "commence_time": "2026-10-31T00:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "c3a424e24d426af94a693e06a33e3037",
+      "home_team": "Miami Heat",
+      "away_team": "Indiana Pacers",
+      "commence_time": "2026-10-31T00:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "9ae108f7a23e86e8102237053dd9e58d",
+      "home_team": "Phoenix Suns",
+      "away_team": "Denver Nuggets",
+      "commence_time": "2026-10-31T02:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "761c15cdefb5a94e34f234e11d6e57ad",
+      "home_team": "Golden State Warriors",
+      "away_team": "Los Angeles Lakers",
+      "commence_time": "2026-10-31T02:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "85869b2fdc16ef10d3e2582bf05ead95",
+      "home_team": "Cleveland Cavaliers",
+      "away_team": "Philadelphia 76ers",
+      "commence_time": "2026-11-07T00:40:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "83d77fe350d56a036fd7a3404e78249a",
+      "home_team": "Los Angeles Lakers",
+      "away_team": "Portland Trail Blazers",
+      "commence_time": "2026-11-07T03:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "6669b911691463c669a5c10574742e8e",
+      "home_team": "Indiana Pacers",
+      "away_team": "New York Knicks",
+      "commence_time": "2026-11-14T00:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "1fae7f34ec6035dffa74feb148ee26c7",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Golden State Warriors",
+      "commence_time": "2026-11-14T02:40:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "086d2fe80483ffcc280994fe2e12d4f4",
+      "home_team": "Denver Nuggets",
+      "away_team": "Houston Rockets",
+      "commence_time": "2026-11-21T03:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "3167a4072c65c9314c71d0fe49be8e28",
+      "home_team": "Washington Wizards",
+      "away_team": "Boston Celtics",
+      "commence_time": "2026-11-25T01:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "6bfadbd22ed8a054cf82ec1b12b78243",
+      "home_team": "Denver Nuggets",
+      "away_team": "Dallas Mavericks",
+      "commence_time": "2026-11-25T03:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "4f6d199bb67cf3a517a3880fd2f00b26",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "Miami Heat",
+      "commence_time": "2026-11-25T22:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "07421d1675d6bc51bb5fa91f84a09eb3",
+      "home_team": "Oklahoma City Thunder",
+      "away_team": "Minnesota Timberwolves",
+      "commence_time": "2026-11-26T00:40:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "9aa9f220709533d70d11f85fae886771",
+      "home_team": "Portland Trail Blazers",
+      "away_team": "San Antonio Spurs",
+      "commence_time": "2026-11-26T03:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "3c522e32c3035d7dc3e1734903b84654",
+      "home_team": "New York Knicks",
+      "away_team": "Miami Heat",
+      "commence_time": "2026-11-28T00:10:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "13d9ca3bcb664829c603755d31401002",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Los Angeles Lakers",
+      "commence_time": "2026-11-28T02:40:00Z",
+      "bookmakers": {}
+    },
+    {
+      "game_id": "a6555e8b7252dfb32f1817fc8c59ad83",
+      "home_team": "New York Knicks",
+      "away_team": "San Antonio Spurs",
+      "commence_time": "2026-12-25T17:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -104,
+          "away_ml": -112,
+          "home_spread": 1.5,
+          "home_spread_odds": -114,
+          "away_spread": -1.5,
+          "away_spread_odds": -106,
+          "total": 227.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": -115,
+          "away_ml": -105,
+          "home_spread": -1.5,
+          "home_spread_odds": -110,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 227.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -115,
+          "away_ml": -105,
+          "home_spread": -1.5,
+          "home_spread_odds": -105,
+          "away_spread": 1.5,
+          "away_spread_odds": -115,
+          "total": 228.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "d60e7fc0690e4dff121a086395e24de4",
+      "home_team": "Boston Celtics",
+      "away_team": "Miami Heat",
+      "commence_time": "2026-12-25T19:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -194,
+          "away_ml": 162,
+          "home_spread": -6.5,
+          "home_spread_odds": -105,
+          "away_spread": 6.5,
+          "away_spread_odds": -115,
+          "total": 231.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": -175,
+          "away_ml": 145,
+          "home_spread": -5.5,
+          "home_spread_odds": -105,
+          "away_spread": 5.5,
+          "away_spread_odds": -115,
+          "total": 231.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -195,
+          "away_ml": 162,
+          "home_spread": -5.5,
+          "home_spread_odds": -105,
+          "away_spread": 5.5,
+          "away_spread_odds": -115,
+          "total": 230.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "dfd908bad3a3bfcae9e08bf128273b18",
+      "home_team": "Los Angeles Lakers",
+      "away_team": "Philadelphia 76ers",
+      "commence_time": "2026-12-25T22:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -108,
+          "away_ml": -108,
+          "home_spread": -1.5,
+          "home_spread_odds": -102,
+          "away_spread": 1.5,
+          "away_spread_odds": -120,
+          "total": 237.5,
+          "over_odds": -106,
+          "under_odds": -114
+        },
+        "MGM": {
+          "home_ml": -115,
+          "away_ml": -105,
+          "home_spread": -1.5,
+          "home_spread_odds": -110,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 235.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -110,
+          "away_ml": -110,
+          "home_spread": -1.5,
+          "home_spread_odds": -105,
+          "away_spread": 1.5,
+          "away_spread_odds": -115,
+          "total": 235.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "2b7218aa25cf98318a40e6f2469a5c5d",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "Oklahoma City Thunder",
+      "commence_time": "2026-12-26T01:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 136,
+          "away_ml": -162,
+          "home_spread": 4.5,
+          "home_spread_odds": -115,
+          "away_spread": -4.5,
+          "away_spread_odds": -105,
+          "total": 233.5,
+          "over_odds": -112,
+          "under_odds": -108
+        },
+        "MGM": {
+          "home_ml": 135,
+          "away_ml": -160,
+          "home_spread": 4.5,
+          "home_spread_odds": -110,
+          "away_spread": -4.5,
+          "away_spread_odds": -110,
+          "total": 232.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 143,
+          "away_ml": -170,
+          "home_spread": 3.5,
+          "home_spread_odds": -105,
+          "away_spread": -3.5,
+          "away_spread_odds": -115,
+          "total": 232.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "85a2379bc49135f2759709e55af0c4c6",
+      "home_team": "Golden State Warriors",
+      "away_team": "Denver Nuggets",
+      "commence_time": "2026-12-26T03:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 112,
+          "away_ml": -132,
+          "home_spread": 2.5,
+          "home_spread_odds": -110,
+          "away_spread": -2.5,
+          "away_spread_odds": -110,
+          "total": 239.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": 110,
+          "away_ml": -130,
+          "home_spread": 2.5,
+          "home_spread_odds": -110,
+          "away_spread": -2.5,
+          "away_spread_odds": -110,
+          "total": 238.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 115,
+          "away_ml": -135,
+          "home_spread": 2.5,
+          "home_spread_odds": -110,
+          "away_spread": -2.5,
+          "away_spread_odds": -110,
+          "total": 237.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    }
+  ],
+  "player_props": {
+    "Boston Celtics@Detroit Pistons": {
+      "player_assists": {
+        "Jayson Tatum": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Cade Cunningham": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -108,
+            "under": -122
+          }
+        }
+      },
+      "player_points": {
+        "Jayson Tatum": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -122,
+            "under": -110
+          }
+        },
+        "Cade Cunningham": {
+          "line": 24.5,
+          "FD": {
+            "line": 24.5,
+            "over": -122,
+            "under": -106
+          }
+        }
+      },
+      "player_points_assists": {
+        "Cade Cunningham": {
+          "line": 34.5,
+          "FD": {
+            "line": 34.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Jayson Tatum": {
+          "line": 32.5,
+          "FD": {
+            "line": 32.5,
+            "over": -120,
+            "under": -110
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Cade Cunningham": {
+          "line": 30.5,
+          "FD": {
+            "line": 30.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Jayson Tatum": {
+          "line": 36.5,
+          "FD": {
+            "line": 36.5,
+            "over": -106,
+            "under": -125
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Cade Cunningham": {
+          "line": 40.5,
+          "FD": {
+            "line": 40.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Jayson Tatum": {
+          "line": 42.5,
+          "FD": {
+            "line": 42.5,
+            "over": -108,
+            "under": -122
+          }
+        }
+      },
+      "player_rebounds": {
+        "Jayson Tatum": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -146,
+            "under": 110
+          }
+        },
+        "Cade Cunningham": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": 104,
+            "under": -138
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Jayson Tatum": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -138,
+            "under": 104
+          }
+        },
+        "Cade Cunningham": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -125,
+            "under": -106
+          }
+        }
+      },
+      "player_threes": {
+        "Jayson Tatum": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Cade Cunningham": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 148,
+            "under": -200
+          }
+        }
+      }
+    },
+    "Philadelphia 76ers@New York Knicks": {
+      "player_assists": {
+        "Jalen Brunson": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -114,
+            "under": -114
+          }
+        }
+      },
+      "player_points": {
+        "Jalen Brunson": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -122,
+            "under": -108
+          }
+        }
+      },
+      "player_points_assists": {
+        "Jalen Brunson": {
+          "line": 32.5,
+          "FD": {
+            "line": 32.5,
+            "over": -122,
+            "under": -108
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Jalen Brunson": {
+          "line": 29.5,
+          "FD": {
+            "line": 29.5,
+            "over": -104,
+            "under": -128
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Jalen Brunson": {
+          "line": 35.5,
+          "FD": {
+            "line": 35.5,
+            "over": -128,
+            "under": -104
+          }
+        }
+      },
+      "player_rebounds": {
+        "Jalen Brunson": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -174,
+            "under": 128
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Jalen Brunson": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -120,
+            "under": -110
+          }
+        }
+      },
+      "player_threes": {
+        "Jalen Brunson": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 116,
+            "under": -154
+          }
+        }
+      }
+    },
+    "Oklahoma City Thunder@San Antonio Spurs": {
+      "player_assists": {
+        "Victor Wembanyama": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -182,
+            "under": 136
+          }
+        },
+        "Shai Gilgeous-Alexander": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -138,
+            "under": 104
+          }
+        }
+      },
+      "player_blocks": {
+        "Victor Wembanyama": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -182,
+            "under": 134
+          }
+        }
+      },
+      "player_points": {
+        "Shai Gilgeous-Alexander": {
+          "line": 29.5,
+          "FD": {
+            "line": 29.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": 100,
+            "under": -132
+          }
+        }
+      },
+      "player_points_assists": {
+        "Shai Gilgeous-Alexander": {
+          "line": 36.5,
+          "FD": {
+            "line": 36.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -125,
+            "under": -106
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Victor Wembanyama": {
+          "line": 37.5,
+          "FD": {
+            "line": 37.5,
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Shai Gilgeous-Alexander": {
+          "line": 34.5,
+          "FD": {
+            "line": 34.5,
+            "over": -108,
+            "under": -122
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Shai Gilgeous-Alexander": {
+          "line": 40.5,
+          "FD": {
+            "line": 40.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 40.5,
+          "FD": {
+            "line": 40.5,
+            "over": -112,
+            "under": -118
+          }
+        }
+      },
+      "player_rebounds": {
+        "Victor Wembanyama": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Shai Gilgeous-Alexander": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": 134,
+            "under": -180
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Shai Gilgeous-Alexander": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -146,
+            "under": 110
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -106,
+            "under": -125
+          }
+        }
+      },
+      "player_threes": {
+        "Shai Gilgeous-Alexander": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Victor Wembanyama": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -188,
+            "under": 140
+          }
+        }
+      }
+    },
+    "Atlanta Hawks@Orlando Magic": {},
+    "Milwaukee Bucks@Washington Wizards": {},
+    "Charlotte Hornets@Brooklyn Nets": {},
+    "Minnesota Timberwolves@Miami Heat": {},
+    "Indiana Pacers@New Orleans Pelicans": {},
+    "Utah Jazz@Memphis Grizzlies": {},
+    "Dallas Mavericks@Houston Rockets": {},
+    "Golden State Warriors@Los Angeles Lakers": {},
+    "Phoenix Suns@Portland Trail Blazers": {},
+    "Cleveland Cavaliers@Philadelphia 76ers": {},
+    "Denver Nuggets@Oklahoma City Thunder": {},
+    "New York Knicks@Boston Celtics": {},
+    "Houston Rockets@San Antonio Spurs": {},
+    "Charlotte Hornets@Washington Wizards": {},
+    "Chicago Bulls@Boston Celtics": {},
+    "Detroit Pistons@Brooklyn Nets": {},
+    "New York Knicks@Philadelphia 76ers": {},
+    "Houston Rockets@Dallas Mavericks": {},
+    "Indiana Pacers@Miami Heat": {},
+    "Denver Nuggets@Phoenix Suns": {},
+    "Los Angeles Lakers@Golden State Warriors": {},
+    "Philadelphia 76ers@Cleveland Cavaliers": {},
+    "Portland Trail Blazers@Los Angeles Lakers": {},
+    "New York Knicks@Indiana Pacers": {},
+    "Golden State Warriors@San Antonio Spurs": {},
+    "Houston Rockets@Denver Nuggets": {},
+    "Boston Celtics@Washington Wizards": {},
+    "Dallas Mavericks@Denver Nuggets": {},
+    "Miami Heat@Philadelphia 76ers": {},
+    "Minnesota Timberwolves@Oklahoma City Thunder": {},
+    "San Antonio Spurs@Portland Trail Blazers": {},
+    "Miami Heat@New York Knicks": {},
+    "Los Angeles Lakers@San Antonio Spurs": {},
+    "San Antonio Spurs@New York Knicks": {},
+    "Miami Heat@Boston Celtics": {},
+    "Philadelphia 76ers@Los Angeles Lakers": {},
+    "Oklahoma City Thunder@Minnesota Timberwolves": {},
+    "Denver Nuggets@Golden State Warriors": {}
+  }
+}
