@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-09",
+  "league": "NFL",
+  "early_season_policy": "Weeks 1-2: 70% prior/30% current; Weeks 3-4: 40% prior/60% current; Week 5+: 15% prior/85% current.",
+  "sources": {
+    "nfl_props": true,
+    "nfl_games": true,
+    "nfl_weather": true,
+    "nfl_home_field_advantage": true,
+    "nfl_odds_discrepancies": true
+  }
+}
