@@ -22,24 +22,24 @@
         "FD": {
           "home_ml": null,
           "away_ml": null,
-          "home_spread": -56.5,
+          "home_spread": -57.5,
           "home_spread_odds": -110,
-          "away_spread": 56.5,
+          "away_spread": 57.5,
           "away_spread_odds": -110,
           "total": 62.5,
-          "over_odds": -118,
-          "under_odds": -104
+          "over_odds": -114,
+          "under_odds": -106
         },
         "CZS": {
           "home_ml": null,
           "away_ml": null,
           "home_spread": -56.5,
-          "home_spread_odds": -117,
+          "home_spread_odds": -110,
           "away_spread": 56.5,
-          "away_spread_odds": -104,
+          "away_spread_odds": -109,
           "total": 62.5,
-          "over_odds": -110,
-          "under_odds": -109
+          "over_odds": -115,
+          "under_odds": -105
         }
       }
     },
@@ -64,9 +64,9 @@
           "home_ml": null,
           "away_ml": null,
           "home_spread": -36.5,
-          "home_spread_odds": -114,
+          "home_spread_odds": -109,
           "away_spread": 36.5,
-          "away_spread_odds": -108,
+          "away_spread_odds": -113,
           "total": 56.5,
           "over_odds": -108,
           "under_odds": -114
@@ -81,18 +81,18 @@
       "bookmakers": {
         "FD": {
           "home_ml": -10000,
-          "away_ml": 2500,
-          "home_spread": -29.5,
+          "away_ml": 3000,
+          "home_spread": -30.5,
           "home_spread_odds": -110,
-          "away_spread": 29.5,
+          "away_spread": 30.5,
           "away_spread_odds": -110,
           "total": 48.5,
           "over_odds": -114,
           "under_odds": -106
         },
         "CZS": {
-          "home_ml": null,
-          "away_ml": null,
+          "home_ml": -10000,
+          "away_ml": 1600,
           "home_spread": -30.5,
           "home_spread_odds": -108,
           "away_spread": 30.5,
@@ -112,10 +112,10 @@
         "FD": {
           "home_ml": null,
           "away_ml": null,
-          "home_spread": -44.5,
-          "home_spread_odds": -114,
-          "away_spread": 44.5,
-          "away_spread_odds": -106,
+          "home_spread": -45.5,
+          "home_spread_odds": -105,
+          "away_spread": 45.5,
+          "away_spread_odds": -115,
           "total": 54.5,
           "over_odds": -114,
           "under_odds": -106
@@ -124,9 +124,9 @@
           "home_ml": null,
           "away_ml": null,
           "home_spread": -44.5,
-          "home_spread_odds": -112,
+          "home_spread_odds": -117,
           "away_spread": 44.5,
-          "away_spread_odds": -110,
+          "away_spread_odds": -106,
           "total": 54.5,
           "over_odds": -114,
           "under_odds": -108
@@ -177,8 +177,8 @@
           "away_spread": -5.5,
           "away_spread_odds": -110,
           "total": 50.5,
-          "over_odds": -112,
-          "under_odds": -108
+          "over_odds": -110,
+          "under_odds": -110
         },
         "CZS": {
           "home_ml": 177,
@@ -200,12 +200,12 @@
       "commence_time": "2026-09-12T16:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -260,
-          "away_ml": 210,
+          "home_ml": -265,
+          "away_ml": 215,
           "home_spread": -6.5,
-          "home_spread_odds": -122,
+          "home_spread_odds": -124,
           "away_spread": 6.5,
-          "away_spread_odds": 100,
+          "away_spread_odds": 102,
           "total": 56.5,
           "over_odds": -106,
           "under_odds": -114
@@ -237,8 +237,8 @@
           "away_spread": 14.5,
           "away_spread_odds": -114,
           "total": 50.5,
-          "over_odds": -112,
-          "under_odds": -108
+          "over_odds": -110,
+          "under_odds": -110
         },
         "CZS": {
           "home_ml": -675,
@@ -260,12 +260,12 @@
       "commence_time": "2026-09-12T16:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -192,
-          "away_ml": 158,
+          "home_ml": -176,
+          "away_ml": 146,
           "home_spread": -3.5,
-          "home_spread_odds": -115,
+          "home_spread_odds": -110,
           "away_spread": 3.5,
-          "away_spread_odds": -105,
+          "away_spread_odds": -110,
           "total": 46.5,
           "over_odds": -114,
           "under_odds": -106
@@ -299,6 +299,17 @@
           "total": 53.5,
           "over_odds": -108,
           "under_odds": -112
+        },
+        "CZS": {
+          "home_ml": -10000,
+          "away_ml": 1800,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 53.5,
+          "over_odds": -117,
+          "under_odds": -105
         }
       }
     },
@@ -339,15 +350,15 @@
       "commence_time": "2026-09-12T16:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -1400,
-          "away_ml": 800,
+          "home_ml": -1300,
+          "away_ml": 760,
           "home_spread": -19.5,
           "home_spread_odds": -110,
           "away_spread": 19.5,
           "away_spread_odds": -110,
-          "total": 49.5,
-          "over_odds": -106,
-          "under_odds": -114
+          "total": 48.5,
+          "over_odds": -114,
+          "under_odds": -106
         },
         "CZS": {
           "home_ml": -1000,
@@ -378,6 +389,17 @@
           "total": 46.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -560,
+          "away_ml": 400,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 47.5,
+          "over_odds": -106,
+          "under_odds": -115
         }
       }
     },
@@ -389,11 +411,11 @@
       "bookmakers": {
         "FD": {
           "home_ml": 176,
-          "away_ml": -215,
+          "away_ml": -210,
           "home_spread": 5.5,
-          "home_spread_odds": -108,
+          "home_spread_odds": -110,
           "away_spread": -5.5,
-          "away_spread_odds": -112,
+          "away_spread_odds": -110,
           "total": 43.5,
           "over_odds": -110,
           "under_odds": -110
@@ -420,10 +442,10 @@
         "FD": {
           "home_ml": 1160,
           "away_ml": -2800,
-          "home_spread": 23.5,
-          "home_spread_odds": -110,
-          "away_spread": -23.5,
-          "away_spread_odds": -110,
+          "home_spread": 22.5,
+          "home_spread_odds": -105,
+          "away_spread": -22.5,
+          "away_spread_odds": -115,
           "total": 57.5,
           "over_odds": -110,
           "under_odds": -110
@@ -432,9 +454,9 @@
           "home_ml": 1000,
           "away_ml": -2000,
           "home_spread": 22.5,
-          "home_spread_odds": -106,
+          "home_spread_odds": -108,
           "away_spread": -22.5,
-          "away_spread_odds": -114,
+          "away_spread_odds": -112,
           "total": 57.5,
           "over_odds": -110,
           "under_odds": -109
@@ -481,12 +503,12 @@
           "home_ml": 1400,
           "away_ml": -4000,
           "home_spread": 23.5,
-          "home_spread_odds": 100,
+          "home_spread_odds": -102,
           "away_spread": -23.5,
-          "away_spread_odds": -122,
+          "away_spread_odds": -120,
           "total": 49.5,
-          "over_odds": -106,
-          "under_odds": -114
+          "over_odds": -110,
+          "under_odds": -110
         },
         "CZS": {
           "home_ml": null,
@@ -514,9 +536,9 @@
           "home_spread_odds": -102,
           "away_spread": -2.5,
           "away_spread_odds": -120,
-          "total": 50.5,
-          "over_odds": -108,
-          "under_odds": -112
+          "total": 49.5,
+          "over_odds": -115,
+          "under_odds": -105
         },
         "CZS": {
           "home_ml": 130,
@@ -540,10 +562,10 @@
         "CZS": {
           "home_ml": null,
           "away_ml": null,
-          "home_spread": -40.5,
-          "home_spread_odds": -112,
-          "away_spread": 40.5,
-          "away_spread_odds": -108,
+          "home_spread": -41.0,
+          "home_spread_odds": -109,
+          "away_spread": 41.0,
+          "away_spread_odds": -112,
           "total": 55.5,
           "over_odds": -110,
           "under_odds": -109
@@ -554,7 +576,7 @@
           "home_spread": -40.5,
           "home_spread_odds": -114,
           "away_spread": 40.5,
-          "away_spread_odds": -105,
+          "away_spread_odds": -106,
           "total": 55.5,
           "over_odds": -110,
           "under_odds": -110
@@ -577,6 +599,17 @@
           "total": 49.5,
           "over_odds": -114,
           "under_odds": -106
+        },
+        "CZS": {
+          "home_ml": -3500,
+          "away_ml": 1100,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 49.5,
+          "over_odds": -114,
+          "under_odds": -108
         }
       }
     },
@@ -596,6 +629,17 @@
           "total": 50.5,
           "over_odds": -108,
           "under_odds": -112
+        },
+        "CZS": {
+          "home_ml": -10000,
+          "away_ml": 1500,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 50.5,
+          "over_odds": -107,
+          "under_odds": -114
         }
       }
     },
@@ -606,15 +650,26 @@
       "commence_time": "2026-09-12T17:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -39.5,
-          "home_spread_odds": -110,
-          "away_spread": 39.5,
-          "away_spread_odds": -110,
+          "home_ml": -30000,
+          "away_ml": 4000,
+          "home_spread": -40.5,
+          "home_spread_odds": -108,
+          "away_spread": 40.5,
+          "away_spread_odds": -112,
           "total": 56.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -40.5,
+          "home_spread_odds": -108,
+          "away_spread": 40.5,
+          "away_spread_odds": -114,
+          "total": 55.5,
+          "over_odds": -118,
+          "under_odds": -105
         }
       }
     },
@@ -634,6 +689,17 @@
           "total": 56.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -950,
+          "away_ml": 550,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 57.5,
+          "over_odds": -107,
+          "under_odds": -115
         }
       }
     },
@@ -653,6 +719,17 @@
           "total": 42.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -27.5,
+          "home_spread_odds": -114,
+          "away_spread": 27.5,
+          "away_spread_odds": -108,
+          "total": 42.5,
+          "over_odds": -110,
+          "under_odds": -112
         }
       }
     },
@@ -693,12 +770,12 @@
       "commence_time": "2026-09-12T19:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -295,
-          "away_ml": 235,
+          "home_ml": -310,
+          "away_ml": 245,
           "home_spread": -7.5,
-          "home_spread_odds": -114,
+          "home_spread_odds": -110,
           "away_spread": 7.5,
-          "away_spread_odds": -106,
+          "away_spread_odds": -110,
           "total": 47.5,
           "over_odds": -114,
           "under_odds": -106
@@ -723,15 +800,15 @@
       "commence_time": "2026-09-12T19:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -166,
-          "away_ml": 138,
+          "home_ml": -154,
+          "away_ml": 128,
           "home_spread": -3.5,
-          "home_spread_odds": 100,
+          "home_spread_odds": -102,
           "away_spread": 3.5,
-          "away_spread_odds": -122,
+          "away_spread_odds": -120,
           "total": 56.5,
-          "over_odds": -106,
-          "under_odds": -114
+          "over_odds": -114,
+          "under_odds": -106
         },
         "CZS": {
           "home_ml": -170,
@@ -741,8 +818,8 @@
           "away_spread": 3.5,
           "away_spread_odds": -117,
           "total": 56.5,
-          "over_odds": -113,
-          "under_odds": -107
+          "over_odds": -117,
+          "under_odds": -104
         }
       }
     },
@@ -753,8 +830,8 @@
       "commence_time": "2026-09-12T19:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": null,
-          "away_ml": null,
+          "home_ml": -10000,
+          "away_ml": 3000,
           "home_spread": -34.5,
           "home_spread_odds": -112,
           "away_spread": 34.5,
@@ -762,6 +839,17 @@
           "total": 56.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -10000,
+          "away_ml": 1600,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 55.5,
+          "over_odds": -118,
+          "under_odds": -105
         }
       }
     },
@@ -781,6 +869,17 @@
           "total": 54.5,
           "over_odds": -112,
           "under_odds": -108
+        },
+        "CZS": {
+          "home_ml": -10000,
+          "away_ml": 1600,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 53.5,
+          "over_odds": -117,
+          "under_odds": -106
         }
       }
     },
@@ -858,7 +957,18 @@
           "away_spread": 45.5,
           "away_spread_odds": -110,
           "total": 55.5,
-          "over_odds": -105,
+          "over_odds": -106,
+          "under_odds": -114
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -45.5,
+          "home_spread_odds": -110,
+          "away_spread": 45.5,
+          "away_spread_odds": -112,
+          "total": 55.5,
+          "over_odds": -107,
           "under_odds": -115
         }
       }
@@ -888,8 +998,8 @@
           "away_spread": -13.5,
           "away_spread_odds": -102,
           "total": 52.5,
-          "over_odds": -108,
-          "under_odds": -112
+          "over_odds": -107,
+          "under_odds": -113
         }
       }
     },
@@ -902,17 +1012,17 @@
         "FD": {
           "home_ml": -110,
           "away_ml": -110,
-          "home_spread": -0.5,
-          "home_spread_odds": -110,
-          "away_spread": 0.5,
-          "away_spread_odds": -110,
+          "home_spread": 1.5,
+          "home_spread_odds": -122,
+          "away_spread": -1.5,
+          "away_spread_odds": 100,
           "total": 55.5,
           "over_odds": -102,
           "under_odds": -120
         },
         "CZS": {
-          "home_ml": -103,
-          "away_ml": -115,
+          "home_ml": -106,
+          "away_ml": -112,
           "home_spread": 1.0,
           "home_spread_odds": -113,
           "away_spread": -1.0,
@@ -943,13 +1053,13 @@
         "FD": {
           "home_ml": null,
           "away_ml": null,
-          "home_spread": -43.5,
+          "home_spread": -44.5,
           "home_spread_odds": -110,
-          "away_spread": 43.5,
+          "away_spread": 44.5,
           "away_spread_odds": -110,
           "total": 55.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "over_odds": -102,
+          "under_odds": -120
         }
       }
     },
@@ -977,9 +1087,9 @@
           "home_spread_odds": -112,
           "away_spread": 7.0,
           "away_spread_odds": -108,
-          "total": 56.5,
-          "over_odds": -115,
-          "under_odds": -105
+          "total": 57.5,
+          "over_odds": -104,
+          "under_odds": -117
         }
       }
     },
@@ -999,6 +1109,17 @@
           "total": 53.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -3500,
+          "away_ml": 1100,
+          "home_spread": -23.5,
+          "home_spread_odds": -113,
+          "away_spread": 23.5,
+          "away_spread_odds": -109,
+          "total": 53.5,
+          "over_odds": -113,
+          "under_odds": -109
         }
       }
     },
@@ -1009,15 +1130,15 @@
       "commence_time": "2026-09-12T19:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -118,
-          "away_ml": -102,
+          "home_ml": -114,
+          "away_ml": -105,
           "home_spread": -1.5,
           "home_spread_odds": -110,
           "away_spread": 1.5,
           "away_spread_odds": -110,
-          "total": 65.5,
-          "over_odds": -115,
-          "under_odds": -105
+          "total": 66.5,
+          "over_odds": -105,
+          "under_odds": -115
         },
         "CZS": {
           "home_ml": -118,
@@ -1039,23 +1160,23 @@
       "commence_time": "2026-09-12T19:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -345,
-          "away_ml": 270,
-          "home_spread": -9.5,
-          "home_spread_odds": -110,
-          "away_spread": 9.5,
-          "away_spread_odds": -110,
+          "home_ml": -385,
+          "away_ml": 300,
+          "home_spread": -10.5,
+          "home_spread_odds": -105,
+          "away_spread": 10.5,
+          "away_spread_odds": -115,
           "total": 55.5,
           "over_odds": -110,
           "under_odds": -110
         },
         "CZS": {
           "home_ml": -390,
-          "away_ml": 300,
+          "away_ml": 305,
           "home_spread": -10.0,
-          "home_spread_odds": -108,
+          "home_spread_odds": -112,
           "away_spread": 10.0,
-          "away_spread_odds": -112,
+          "away_spread_odds": -108,
           "total": 55.5,
           "over_odds": -109,
           "under_odds": -110
@@ -1071,10 +1192,10 @@
         "FD": {
           "home_ml": -4500,
           "away_ml": 1600,
-          "home_spread": -27.5,
-          "home_spread_odds": -108,
-          "away_spread": 27.5,
-          "away_spread_odds": -112,
+          "home_spread": -26.5,
+          "home_spread_odds": -110,
+          "away_spread": 26.5,
+          "away_spread_odds": -110,
           "total": 55.5,
           "over_odds": -110,
           "under_odds": -110
@@ -1100,12 +1221,12 @@
       "bookmakers": {
         "FD": {
           "home_ml": 146,
-          "away_ml": -176,
+          "away_ml": -178,
           "home_spread": 3.5,
-          "home_spread_odds": -114,
+          "home_spread_odds": -110,
           "away_spread": -3.5,
-          "away_spread_odds": -108,
-          "total": 57.5,
+          "away_spread_odds": -110,
+          "total": 56.5,
           "over_odds": -110,
           "under_odds": -110
         },
@@ -1116,9 +1237,9 @@
           "home_spread_odds": -112,
           "away_spread": -3.5,
           "away_spread_odds": -108,
-          "total": 57.5,
-          "over_odds": -106,
-          "under_odds": -114
+          "total": 56.5,
+          "over_odds": -117,
+          "under_odds": -104
         }
       }
     },
@@ -1129,15 +1250,26 @@
       "commence_time": "2026-09-12T20:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -1800,
-          "away_ml": 920,
-          "home_spread": -22.5,
+          "home_ml": -2000,
+          "away_ml": 980,
+          "home_spread": -23.5,
           "home_spread_odds": -110,
-          "away_spread": 22.5,
+          "away_spread": 23.5,
           "away_spread_odds": -110,
           "total": 52.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -2000,
+          "away_ml": 900,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 52.5,
+          "over_odds": -106,
+          "under_odds": -117
         }
       }
     },
@@ -1176,6 +1308,17 @@
           "total": 48.5,
           "over_odds": -114,
           "under_odds": -106
+        },
+        "CZS": {
+          "home_ml": -5000,
+          "away_ml": 1200,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 48.5,
+          "over_odds": -112,
+          "under_odds": -110
         }
       }
     },
@@ -1232,6 +1375,17 @@
           "total": 67.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -49.5,
+          "home_spread_odds": -114,
+          "away_spread": 49.5,
+          "away_spread_odds": -108,
+          "total": 66.5,
+          "over_odds": -113,
+          "under_odds": -109
         }
       }
     },
@@ -1242,15 +1396,15 @@
       "commence_time": "2026-09-12T22:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -335,
-          "away_ml": 265,
+          "home_ml": -330,
+          "away_ml": 260,
           "home_spread": -8.5,
           "home_spread_odds": -110,
           "away_spread": 8.5,
           "away_spread_odds": -110,
-          "total": 55.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "total": 54.5,
+          "over_odds": -115,
+          "under_odds": -105
         },
         "CZS": {
           "home_ml": -345,
@@ -1272,18 +1426,18 @@
       "commence_time": "2026-09-12T22:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -450,
-          "away_ml": 340,
+          "home_ml": -420,
+          "away_ml": 320,
           "home_spread": -10.5,
-          "home_spread_odds": -110,
+          "home_spread_odds": -108,
           "away_spread": 10.5,
-          "away_spread_odds": -110,
+          "away_spread_odds": -112,
           "total": 47.5,
           "over_odds": -115,
           "under_odds": -105
         },
         "CZS": {
-          "home_ml": -440,
+          "home_ml": -420,
           "away_ml": 330,
           "home_spread": -10.5,
           "home_spread_odds": -106,
@@ -1311,6 +1465,17 @@
           "total": 54.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -5000,
+          "away_ml": 1200,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 54.5,
+          "over_odds": -113,
+          "under_odds": -109
         }
       }
     },
@@ -1334,10 +1499,10 @@
         "CZS": {
           "home_ml": -139,
           "away_ml": 119,
-          "home_spread": -3.0,
-          "home_spread_odds": -105,
-          "away_spread": 3.0,
-          "away_spread_odds": -115,
+          "home_spread": -2.5,
+          "home_spread_odds": -118,
+          "away_spread": 2.5,
+          "away_spread_odds": -103,
           "total": 50.5,
           "over_odds": -114,
           "under_odds": -106
@@ -1360,6 +1525,17 @@
           "total": 53.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -5000,
+          "away_ml": 1200,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 52.5,
+          "over_odds": -118,
+          "under_odds": -104
         }
       }
     },
@@ -1370,12 +1546,12 @@
       "commence_time": "2026-09-12T23:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -10000,
-          "away_ml": 2500,
-          "home_spread": -28.5,
-          "home_spread_odds": -115,
-          "away_spread": 28.5,
-          "away_spread_odds": -105,
+          "home_ml": -20000,
+          "away_ml": 3500,
+          "home_spread": -29.5,
+          "home_spread_odds": -120,
+          "away_spread": 29.5,
+          "away_spread_odds": -102,
           "total": 51.5,
           "over_odds": -110,
           "under_odds": -110
@@ -1400,8 +1576,8 @@
       "commence_time": "2026-09-12T23:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": null,
-          "away_ml": null,
+          "home_ml": -10000,
+          "away_ml": 2400,
           "home_spread": -36.5,
           "home_spread_odds": -110,
           "away_spread": 36.5,
@@ -1439,6 +1615,17 @@
           "total": 57.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -2000,
+          "away_ml": 900,
+          "home_spread": -20.5,
+          "home_spread_odds": -110,
+          "away_spread": 20.5,
+          "away_spread_odds": -112,
+          "total": 57.5,
+          "over_odds": -109,
+          "under_odds": -113
         }
       }
     },
@@ -1456,12 +1643,12 @@
           "away_spread": 9.5,
           "away_spread_odds": -109,
           "total": 54.5,
-          "over_odds": -109,
-          "under_odds": -112
+          "over_odds": -112,
+          "under_odds": -108
         },
         "FD": {
-          "home_ml": -360,
-          "away_ml": 280,
+          "home_ml": -350,
+          "away_ml": 275,
           "home_spread": -8.5,
           "home_spread_odds": -115,
           "away_spread": 8.5,
@@ -1515,9 +1702,9 @@
           "home_spread_odds": -106,
           "away_spread": 50.5,
           "away_spread_odds": -114,
-          "total": 60.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "total": 61.5,
+          "over_odds": -105,
+          "under_odds": -115
         },
         "CZS": {
           "home_ml": null,
@@ -1548,6 +1735,17 @@
           "total": 47.5,
           "over_odds": -115,
           "under_odds": -105
+        },
+        "CZS": {
+          "home_ml": 141,
+          "away_ml": -176,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 47.5,
+          "over_odds": -115,
+          "under_odds": -107
         }
       }
     },
@@ -1558,8 +1756,8 @@
       "commence_time": "2026-09-12T23:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -1800,
-          "away_ml": 920,
+          "home_ml": -2000,
+          "away_ml": 980,
           "home_spread": -20.5,
           "home_spread_odds": -115,
           "away_spread": 20.5,
@@ -1567,6 +1765,17 @@
           "total": 53.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -1700,
+          "away_ml": 850,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 53.5,
+          "over_odds": -109,
+          "under_odds": -113
         }
       }
     },
@@ -1648,12 +1857,12 @@
           "under_odds": -114
         },
         "CZS": {
-          "home_ml": -380,
-          "away_ml": 290,
+          "home_ml": -360,
+          "away_ml": 285,
           "home_spread": -9.5,
-          "home_spread_odds": -113,
+          "home_spread_odds": -110,
           "away_spread": 9.5,
-          "away_spread_odds": -107,
+          "away_spread_odds": -110,
           "total": 49.5,
           "over_odds": -112,
           "under_odds": -109
@@ -1676,6 +1885,17 @@
           "total": 55.5,
           "over_odds": -102,
           "under_odds": -120
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -43.5,
+          "home_spread_odds": -109,
+          "away_spread": 43.5,
+          "away_spread_odds": -113,
+          "total": 55.5,
+          "over_odds": -104,
+          "under_odds": -118
         }
       }
     },
@@ -1686,23 +1906,23 @@
       "commence_time": "2026-09-12T23:15:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -520,
-          "away_ml": 385,
+          "home_ml": -530,
+          "away_ml": 390,
           "home_spread": -12.5,
           "home_spread_odds": -110,
           "away_spread": 12.5,
           "away_spread_odds": -110,
           "total": 55.5,
-          "over_odds": -106,
-          "under_odds": -114
+          "over_odds": -110,
+          "under_odds": -110
         },
         "CZS": {
           "home_ml": -460,
           "away_ml": 350,
-          "home_spread": -11.5,
-          "home_spread_odds": -113,
-          "away_spread": 11.5,
-          "away_spread_odds": -107,
+          "home_spread": -12.0,
+          "home_spread_odds": -117,
+          "away_spread": 12.0,
+          "away_spread_odds": -104,
           "total": 55.5,
           "over_odds": -105,
           "under_odds": -115
@@ -1716,8 +1936,8 @@
       "commence_time": "2026-09-12T23:15:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": null,
-          "away_ml": null,
+          "home_ml": -20000,
+          "away_ml": 3500,
           "home_spread": -37.5,
           "home_spread_odds": -120,
           "away_spread": 37.5,
@@ -1725,6 +1945,17 @@
           "total": 49.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 49.5,
+          "over_odds": -107,
+          "under_odds": -115
         }
       }
     },
@@ -1774,6 +2005,17 @@
           "total": 53.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -10000,
+          "away_ml": 1500,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 53.5,
+          "over_odds": -107,
+          "under_odds": -115
         }
       }
     },
@@ -1791,12 +2033,12 @@
           "away_spread": -4.5,
           "away_spread_odds": -112,
           "total": 58.5,
-          "over_odds": -112,
-          "under_odds": -108
+          "over_odds": -109,
+          "under_odds": -112
         },
         "FD": {
-          "home_ml": 160,
-          "away_ml": -194,
+          "home_ml": 158,
+          "away_ml": -192,
           "home_spread": 4.5,
           "home_spread_odds": -110,
           "away_spread": -4.5,
@@ -1814,12 +2056,12 @@
       "commence_time": "2026-09-12T23:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -710,
-          "away_ml": 490,
-          "home_spread": -14.5,
-          "home_spread_odds": -104,
-          "away_spread": 14.5,
-          "away_spread_odds": -118,
+          "home_ml": -690,
+          "away_ml": 480,
+          "home_spread": -13.5,
+          "home_spread_odds": -122,
+          "away_spread": 13.5,
+          "away_spread_odds": 100,
           "total": 40.5,
           "over_odds": -112,
           "under_odds": -108
@@ -1861,9 +2103,9 @@
           "home_spread_odds": -110,
           "away_spread": 35.5,
           "away_spread_odds": -110,
-          "total": 56.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "total": 55.5,
+          "over_odds": -114,
+          "under_odds": -106
         }
       }
     },
@@ -1874,15 +2116,15 @@
       "commence_time": "2026-09-12T23:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -122,
-          "away_ml": 102,
+          "home_ml": -120,
+          "away_ml": 100,
           "home_spread": -1.5,
           "home_spread_odds": -110,
           "away_spread": 1.5,
           "away_spread_odds": -110,
           "total": 49.5,
-          "over_odds": -106,
-          "under_odds": -114
+          "over_odds": -110,
+          "under_odds": -110
         },
         "CZS": {
           "home_ml": -121,
@@ -1891,9 +2133,9 @@
           "home_spread_odds": -110,
           "away_spread": 1.5,
           "away_spread_odds": -110,
-          "total": 49.5,
-          "over_odds": -106,
-          "under_odds": -115
+          "total": 49.0,
+          "over_odds": -112,
+          "under_odds": -108
         }
       }
     },
@@ -1937,9 +2179,9 @@
           "home_ml": null,
           "away_ml": null,
           "home_spread": -33.5,
-          "home_spread_odds": -110,
+          "home_spread_odds": -107,
           "away_spread": 33.5,
-          "away_spread_odds": -109,
+          "away_spread_odds": -113,
           "total": 56.5,
           "over_odds": -114,
           "under_odds": -106
@@ -1948,9 +2190,9 @@
           "home_ml": -10000,
           "away_ml": 2400,
           "home_spread": -32.5,
-          "home_spread_odds": -106,
+          "home_spread_odds": -110,
           "away_spread": 32.5,
-          "away_spread_odds": -114,
+          "away_spread_odds": -110,
           "total": 56.5,
           "over_odds": -112,
           "under_odds": -108
@@ -1967,20 +2209,20 @@
           "home_ml": null,
           "away_ml": null,
           "home_spread": -47.5,
-          "home_spread_odds": -112,
+          "home_spread_odds": -108,
           "away_spread": 47.5,
-          "away_spread_odds": -108,
-          "total": 61.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "away_spread_odds": -112,
+          "total": 60.5,
+          "over_odds": -114,
+          "under_odds": -106
         },
         "FD": {
           "home_ml": null,
           "away_ml": null,
           "home_spread": -47.5,
-          "home_spread_odds": -110,
+          "home_spread_odds": -106,
           "away_spread": 47.5,
-          "away_spread_odds": -110,
+          "away_spread_odds": -114,
           "total": 60.5,
           "over_odds": -110,
           "under_odds": -110
@@ -1994,8 +2236,8 @@
       "commence_time": "2026-09-13T00:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -50000,
-          "away_ml": 5500,
+          "home_ml": -20000,
+          "away_ml": 4000,
           "home_spread": -37.5,
           "home_spread_odds": -110,
           "away_spread": 37.5,
@@ -2003,6 +2245,17 @@
           "total": 55.5,
           "over_odds": -106,
           "under_odds": -114
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -37.5,
+          "home_spread_odds": -110,
+          "away_spread": 37.5,
+          "away_spread_odds": -112,
+          "total": 55.5,
+          "over_odds": -115,
+          "under_odds": -107
         }
       }
     },
@@ -2022,6 +2275,17 @@
           "total": 54.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -43.5,
+          "home_spread_odds": -113,
+          "away_spread": 43.5,
+          "away_spread_odds": -109,
+          "total": 54.5,
+          "over_odds": -108,
+          "under_odds": -114
         }
       }
     },
@@ -2054,12 +2318,23 @@
           "home_ml": -7000,
           "away_ml": 2000,
           "home_spread": -26.5,
-          "home_spread_odds": -112,
+          "home_spread_odds": -110,
           "away_spread": 26.5,
-          "away_spread_odds": -108,
+          "away_spread_odds": -110,
           "total": 53.5,
           "over_odds": -110,
           "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -10000,
+          "away_ml": 1500,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 53.0,
+          "over_odds": -114,
+          "under_odds": -108
         }
       }
     },
@@ -2100,26 +2375,26 @@
       "commence_time": "2026-09-13T02:15:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -520,
-          "away_ml": 385,
+          "home_ml": -500,
+          "away_ml": 375,
           "home_spread": -12.5,
-          "home_spread_odds": -105,
+          "home_spread_odds": -110,
           "away_spread": 12.5,
-          "away_spread_odds": -115,
+          "away_spread_odds": -110,
           "total": 55.5,
           "over_odds": -104,
           "under_odds": -118
         },
         "CZS": {
           "home_ml": -500,
-          "away_ml": 375,
-          "home_spread": -12.0,
+          "away_ml": 380,
+          "home_spread": -12.5,
           "home_spread_odds": -110,
-          "away_spread": 12.0,
+          "away_spread": 12.5,
           "away_spread_odds": -109,
           "total": 54.5,
-          "over_odds": -118,
-          "under_odds": -103
+          "over_odds": -115,
+          "under_odds": -105
         }
       }
     },
@@ -2136,9 +2411,9 @@
           "home_spread_odds": -109,
           "away_spread": 18.0,
           "away_spread_odds": -112,
-          "total": 45.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "total": 45.0,
+          "over_odds": -112,
+          "under_odds": -108
         },
         "FD": {
           "home_ml": -1100,
@@ -2160,26 +2435,15 @@
       "commence_time": "2026-09-13T02:30:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": 155,
-          "away_ml": -188,
-          "home_spread": 3.5,
-          "home_spread_odds": -102,
-          "away_spread": -3.5,
-          "away_spread_odds": -120,
+          "home_ml": 126,
+          "away_ml": -152,
+          "home_spread": 2.5,
+          "home_spread_odds": 100,
+          "away_spread": -2.5,
+          "away_spread_odds": -122,
           "total": 50.5,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "CZS": {
-          "home_ml": 157,
-          "away_ml": -197,
-          "home_spread": null,
-          "home_spread_odds": null,
-          "away_spread": null,
-          "away_spread_odds": null,
-          "total": 49.5,
-          "over_odds": -120,
-          "under_odds": -104
         }
       }
     },
@@ -2196,9 +2460,9 @@
           "home_spread_odds": -114,
           "away_spread": 30.5,
           "away_spread_odds": -106,
-          "total": 59.5,
-          "over_odds": -117,
-          "under_odds": -104
+          "total": 60.0,
+          "over_odds": -108,
+          "under_odds": -112
         },
         "FD": {
           "home_ml": -10000,
@@ -2220,26 +2484,26 @@
       "commence_time": "2026-09-13T04:00:00Z",
       "bookmakers": {
         "CZS": {
-          "home_ml": -290,
-          "away_ml": 230,
-          "home_spread": -7.0,
-          "home_spread_odds": -113,
-          "away_spread": 7.0,
-          "away_spread_odds": -107,
+          "home_ml": -295,
+          "away_ml": 235,
+          "home_spread": -7.5,
+          "home_spread_odds": -104,
+          "away_spread": 7.5,
+          "away_spread_odds": -117,
           "total": 49.5,
           "over_odds": -114,
           "under_odds": -106
         },
         "FD": {
-          "home_ml": -280,
-          "away_ml": 225,
+          "home_ml": -275,
+          "away_ml": 220,
           "home_spread": -7.5,
           "home_spread_odds": -102,
           "away_spread": 7.5,
           "away_spread_odds": -120,
-          "total": null,
-          "over_odds": null,
-          "under_odds": null
+          "total": 49.5,
+          "over_odds": -110,
+          "under_odds": -110
         }
       }
     }
