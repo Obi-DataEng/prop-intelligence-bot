@@ -1,7 +1,8 @@
 import smtplib
 import os
 
-from datetime import datetime
+from datetime import datetime, timedelta
+from html import escape
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -1654,7 +1655,22 @@ def format_daily_results(
         return ""
 
     rows_html = ""
-    total_profit = 0
+    daily_wins = 0
+    daily_losses = 0
+    daily_pushes = 0
+
+    # The grader keeps the normalized individual pick rows in SQLite. Loading
+    # them here avoids changing the established run_grader() return signature.
+    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+    try:
+        from grader import get_daily_pick_details, format_saved_pick
+        daily_details = get_daily_pick_details(yesterday)
+    except Exception as error:
+        print(f"⚠️ Individual graded results unavailable: {error}")
+        daily_details = {}
+
+        def format_saved_pick(detail):
+            return detail.get("player_name") or "Unknown pick"
 
     category_emojis = {
         "HR": "💣",
@@ -1711,23 +1727,14 @@ def format_daily_results(
             + pushes
         )
 
+        daily_wins += wins
+        daily_losses += losses
+        daily_pushes += pushes
+
         rate = (
             f"{wins / total * 100:.0f}%"
             if total > 0
             else "—"
-        )
-
-        profit = stats.get(
-            "profit",
-            0,
-        )
-
-        total_profit += profit
-
-        profit_color = (
-            "#16A36A"
-            if profit >= 0
-            else "#DC2626"
         )
 
         pending_text = (
@@ -1736,29 +1743,58 @@ def format_daily_results(
             else ""
         )
 
-        if "NRFI" in category:
+        category_details_html = ""
+        for detail in daily_details.get(category, []):
+            selection = escape(format_saved_pick(detail))
+            result = str(detail.get("result") or "pending").lower()
+            result_label = result.upper()
+            result_color = {
+                "win": "#22C55E",
+                "loss": "#EF4444",
+                "push": "#F59E0B",
+                "pending": "#94A3B8",
+            }.get(result, "#94A3B8")
+            actual = detail.get("actual_value")
+            actual_html = ""
+            if actual is not None and not str(detail.get("category", "")).startswith("Game"):
+                try:
+                    actual_display = f"{float(actual):g}"
+                except (TypeError, ValueError):
+                    actual_display = str(actual)
+                actual_html = (
+                    f"<span style='color:#94A3B8;'> · Actual: "
+                    f"{escape(actual_display)}</span>"
+                )
 
-            profit_cell = """
-            <td style='
-                padding:8px;
-                text-align:right;
-                color:#64748B;
+            category_details_html += f"""
+            <div style='
+                margin:7px 0;
+                padding:10px 12px;
+                background:#0F172A;
+                border-left:3px solid {result_color};
+                border-radius:6px;
+                color:#CBD5E1;
+                line-height:1.45;
             '>
-                W/L only
-            </td>
+                <div>
+                    <span style='color:#94A3B8;'>Yesterday Pick:</span>
+                    <strong style='color:#F8FAFC;'>{selection}</strong>
+                </div>
+                <div>
+                    <span style='color:#94A3B8;'>Result:</span>
+                    <strong style='color:{result_color};'>
+                        {selection} ({result_label})
+                    </strong>
+                    {actual_html}
+                </div>
+            </div>
             """
 
-        else:
-
-            profit_cell = f"""
-            <td style='
-                padding:8px;
-                text-align:right;
-                color:{profit_color};
-                font-weight:bold;
-            '>
-                ${profit:+.2f}
-            </td>
+        if not category_details_html:
+            category_details_html = """
+            <div style='color:#64748B;font-size:12px;padding:5px 0;'>
+                No individual saved results found for this category.
+            </div>
             """
 
         rows_html += f"""
@@ -1791,16 +1827,21 @@ def format_daily_results(
                 {rate}
             </td>
 
-            {profit_cell}
+            <td style='
+                padding:8px;
+                text-align:right;
+                color:#64748B;
+            '>
+                Record only
+            </td>
 
         </tr>
+        <tr style='border-bottom:1px solid #1E293B;'>
+            <td colspan='4' style='padding:2px 8px 12px 28px;'>
+                {category_details_html}
+            </td>
+        </tr>
         """
-
-    total_color = (
-        "#16A36A"
-        if total_profit >= 0
-        else "#DC2626"
-    )
 
     return f"""
     <div style='
@@ -1859,7 +1900,7 @@ def format_daily_results(
                         text-align:right;
                         font-size:12px;
                     '>
-                        P&L
+                        Tracking
                     </th>
 
                 </tr>
@@ -1888,11 +1929,11 @@ def format_daily_results(
                     <td style='
                         padding:10px 8px;
                         text-align:right;
-                        color:{total_color};
+                        color:#F8FAFC;
                         font-weight:bold;
                         font-size:16px;
                     '>
-                        ${total_profit:+.2f}
+                        {daily_wins}W-{daily_losses}L-{daily_pushes}P
                     </td>
 
                 </tr>
