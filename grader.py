@@ -416,6 +416,94 @@ def get_daily_summary_from_db(pick_date):
     conn.close()
     return summary
 
+
+def get_daily_pick_details(pick_date):
+    """Return every saved pick for a date, grouped by sport and category."""
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    details = {}
+    try:
+        cursor.execute('''SELECT sport, category, player_name, game,
+            over_under, line, odds, best_book, result, actual_value
+            FROM pick_results
+            WHERE pick_date = ?
+            ORDER BY sport, category, id''', (pick_date,))
+        for row in cursor.fetchall():
+            sport, category, player_name, game, over_under, line, odds, best_book, result, actual_value = row
+            details.setdefault(f"{sport} - {category}", []).append({
+                'sport': sport,
+                'category': category,
+                'player_name': player_name or '',
+                'game': game or '',
+                'over_under': over_under or '',
+                'line': line,
+                'odds': odds,
+                'best_book': best_book or '',
+                'result': result or 'pending',
+                'actual_value': actual_value,
+            })
+    except Exception as error:
+        print(f"   ❌ Pick detail error: {error}")
+    conn.close()
+    return details
+
+
+def format_number(value, signed=False):
+    if value is None or value == '':
+        return ''
+    try:
+        number = float(value)
+        rendered = f"{number:g}"
+        if signed and number > 0:
+            rendered = f"+{rendered}"
+        return rendered
+    except (TypeError, ValueError):
+        return str(value)
+
+
+def format_saved_pick(detail):
+    """Build a readable selection from the normalized database fields."""
+    category = detail.get('category', '')
+    player = detail.get('player_name', '') or 'Unknown selection'
+    direction = str(detail.get('over_under') or '').strip()
+    line = detail.get('line')
+
+    if category == 'Game ML':
+        return f"{player} ML"
+    if category == 'Game Spread':
+        return f"{player} {format_number(line, signed=True)}".strip()
+    if category == 'Game OU':
+        side = direction.title() if direction else 'Total'
+        return f"{side} {format_number(line)}".strip()
+    if category == 'NRFI':
+        return direction.upper() or 'NRFI'
+
+    market = category.replace('Player ', '').strip()
+    side = direction.title() if direction else ''
+    selection = ' '.join(
+        part for part in (player, side, format_number(line), market) if part
+    )
+    return selection.strip()
+
+
+def format_category_label(category_key):
+    """Display 'NFL - Game ML' as the more compact 'NFL ML'."""
+    return category_key.replace(' - Game ', ' ').replace(' - Player ', ' ')
+
+
+def print_daily_pick_details(category_key, details):
+    for detail in details:
+        selection = format_saved_pick(detail)
+        result = str(detail.get('result') or 'pending').title()
+        actual = detail.get('actual_value')
+        actual_text = ''
+        if actual is not None and not str(detail.get('category', '')).startswith('Game'):
+            actual_text = f"; actual {format_number(actual)}"
+        print(
+            f"      ↳ Yesterday Pick — {selection} | "
+            f"Result — {selection} ({result}{actual_text})"
+        )
+
 # ─────────────────────────────────────────────
 # MLB GRADER
 # ─────────────────────────────────────────────
@@ -1267,6 +1355,7 @@ def run_grader():
         graded_summary.update({f"{sport} - {key}": value for key, value in sport_summary.items()})
 
     cumulative = get_cumulative_stats()
+    daily_pick_details = get_daily_pick_details(yesterday)
 
     print(f"\n📊 RESULTS FOR {yesterday}")
     print(f"{'='*50}")
@@ -1277,7 +1366,9 @@ def run_grader():
         pend = stats.get('pending', 0)
         total = w + l + p
         rate = f"{w/total*100:.0f}%" if total > 0 else "—"
-        print(f"  {cat:25} {w}W - {l}L - {p}P{f' ({pend} pending)' if pend else ''} | {rate}")
+        display_cat = format_category_label(cat)
+        print(f"  {display_cat:25} {w}W - {l}L - {p}P{f' ({pend} pending)' if pend else ''} | {rate}")
+        print_daily_pick_details(cat, daily_pick_details.get(cat, []))
 
     print(f"\n📈 CUMULATIVE RECORD (All Time)")
     print(f"{'='*50}")
