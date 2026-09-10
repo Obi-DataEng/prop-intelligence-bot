@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-10",
+  "league": "CFB",
+  "markets": [
+    "moneyline",
+    "spread",
+    "game_total",
+    "player_prop"
+  ],
+  "player_props_enabled": true,
+  "books": [
+    "FD",
+    "CZS",
+    "PropFinder (player-prop price source; book name unavailable in CSV)"
+  ],
+  "games_analyzed": 1,
+  "props_analyzed": 0,
+  "player_prop_picks": [],
+  "game_picks": [],
+  "picks": [],
+  "rejected_picks": [
+    {
+      "pick": {
+        "rank": 1,
+        "pick_type": "spread",
+        "game": "Florida A&M Rattlers @ Miami Hurricanes",
+        "team": "Florida A&M Rattlers",
+        "selection": "Florida A&M Rattlers +57.5",
+        "line": 57.5,
+        "over_under": null,
+        "best_book": "CZS",
+        "best_odds": -109,
+        "prediction_confidence": 66,
+        "confidence_tier": "Below 72",
+        "reasoning": "Model projects FAMU to cover at 66% with a +7.1 edge, estimating the spread at +50.4 versus the market's 57.5. Miami is elite (#6 in power ratings) but this massive number creates value. FCS opponents can stay within 50+ point spreads against motivated favorites looking ahead. The 7-point cushion provides significant margin even in a blowout scenario."
+      },
+      "reason": "confidence 66 is below 72"
+    },
+    {
+      "pick": {
+        "rank": 2,
+        "pick_type": "game_total",
+        "game": "Florida A&M Rattlers @ Miami Hurricanes",
+        "team": null,
+        "selection": "Under 62.5",
+        "line": 62.5,
+        "over_under": "Under",
+        "best_book": "FD",
+        "best_odds": -106,
+        "prediction_confidence": 65,
+        "confidence_tier": "Below 72",
+        "reasoning": "Model projects 56.0 total, 6.5 points below the market's 62.5. Miami likely pulls starters early in this massive mismatch, limiting second-half scoring. FAMU is severely overmatched offensively against Miami's #2 ranked defense (allowing just 7.8 PPG equivalent). Expect conservative playcalling once the outcome is decided, keeping the total manageable."
+      },
+      "reason": "confidence 65 is below 72"
+    },
+    {
+      "pick": {
+        "rank": 3,
+        "pick_type": "spread",
+        "game": "Old Dominion Monarchs @ Virginia Tech Hokies",
+        "team": "Old Dominion Monarchs",
+        "selection": "Old Dominion Monarchs +18.5",
+        "line": 18.5,
+        "over_under": null,
+        "best_book": "FD",
+        "best_odds": -106,
+        "prediction_confidence": 71,
+        "confidence_tier": "Below 72",
+        "reasoning": "Model projects massive +9.7 edge with ODU covering at 71%, estimating spread at +9.3. Virginia Tech is ranked #40 but ODU (#76) has shown improvement, moving up in power ratings. The 9-point model disagreement suggests the market is overvaluing VT's home advantage. ODU's defense ranks #57 nationally and should keep this within two touchdowns."
+      },
+      "reason": "confidence 71 is below 72"
+    },
+    {
+      "pick": {
+        "rank": 4,
+        "pick_type": "game_total",
+        "game": "Old Dominion Monarchs @ Virginia Tech Hokies",
+        "team": null,
+        "selection": "Over 49.5",
+        "line": 49.5,
+        "over_under": "Over",
+        "best_book": "FD",
+        "best_odds": -112,
+        "prediction_confidence": 63,
+        "confidence_tier": "Below 72",
+        "reasoning": "Model projects 53.3 total with +3.8 edge versus the 49.5 line. Both offenses should find success - VT's offense ranks #52 but plays at home, while ODU's attack has been competent. The 53-54 point projection suggests a 31-22 type game that clears this modest total comfortably."
+      },
+      "reason": "confidence 63 is below 72"
+    },
+    {
+      "pick": {
+        "rank": 5,
+        "pick_type": "spread",
+        "game": "Connecticut Huskies @ Maryland Terrapins",
+        "team": "Connecticut Huskies",
+        "selection": "Connecticut Huskies +12.5",
+        "line": 12.5,
+        "over_under": null,
+        "best_book": "FD",
+        "best_odds": -110,
+        "prediction_confidence": 72,
+        "confidence_tier": "Medium",
+        "reasoning": "Model projects massive +10.1 edge with UConn covering at 72%, estimating spread at just +2.4. This represents a 10-point market inefficiency. Maryland (#67) is marginally better than UConn (#110) but both teams sit in similar tiers. UConn just won their opener and Maryland's defensive metrics (#52) don't justify laying nearly two touchdowns. The model sees this as essentially a pick'em being priced as a blowout."
+      },
+      "reason": "could not match game to odds feed"
+    }
+  ]
+}
