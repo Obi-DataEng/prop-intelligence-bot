@@ -607,20 +607,20 @@
     },
     "Washington Mystics@Chicago Sky": {
       "player_assists": {
-        "Sonia Citron": {
-          "line": 5.5,
-          "FD": {
-            "line": 5.5,
-            "over": 130,
-            "under": -174
-          }
-        },
         "Georgia Amoore": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
             "over": -158,
             "under": 118
+          }
+        },
+        "Sonia Citron": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": 130,
+            "under": -174
           }
         }
       },
@@ -631,6 +631,14 @@
             "line": 16.5,
             "over": -118,
             "under": -110
+          }
+        },
+        "Shakira Austin": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -128,
+            "under": -102
           }
         },
         "Kamilla Cardoso": {
@@ -656,14 +664,6 @@
             "over": -130,
             "under": 100
           }
-        },
-        "Shakira Austin": {
-          "line": 16.5,
-          "FD": {
-            "line": 16.5,
-            "over": -128,
-            "under": -102
-          }
         }
       },
       "player_points_assists": {
@@ -685,22 +685,6 @@
         }
       },
       "player_points_rebounds": {
-        "Sonia Citron": {
-          "line": 20.5,
-          "FD": {
-            "line": 20.5,
-            "over": -114,
-            "under": -114
-          }
-        },
-        "Kiki Iriafen": {
-          "line": 26.5,
-          "FD": {
-            "line": 26.5,
-            "over": -102,
-            "under": -130
-          }
-        },
         "Shakira Austin": {
           "line": 26.5,
           "FD": {
@@ -717,6 +701,22 @@
             "under": -130
           }
         },
+        "Sonia Citron": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Kiki Iriafen": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -102,
+            "under": -130
+          }
+        },
         "Georgia Amoore": {
           "line": 9.5,
           "FD": {
@@ -727,26 +727,18 @@
         }
       },
       "player_points_rebounds_assists": {
-        "Kiki Iriafen": {
-          "line": 27.5,
-          "FD": {
-            "line": 27.5,
-            "over": -122,
-            "under": -110
-          }
-        },
-        "Kamilla Cardoso": {
-          "line": 25.5,
-          "FD": {
-            "line": 25.5,
-            "over": -125,
-            "under": -106
-          }
-        },
         "Shakira Austin": {
           "line": 28.5,
           "FD": {
             "line": 28.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Sonia Citron": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
             "over": -125,
             "under": -106
           }
@@ -759,24 +751,24 @@
             "under": -108
           }
         },
-        "Sonia Citron": {
+        "Kamilla Cardoso": {
           "line": 25.5,
           "FD": {
             "line": 25.5,
             "over": -125,
             "under": -106
           }
+        },
+        "Kiki Iriafen": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -122,
+            "under": -110
+          }
         }
       },
       "player_rebounds": {
-        "Kamilla Cardoso": {
-          "line": 8.5,
-          "FD": {
-            "line": 8.5,
-            "over": -106,
-            "under": -125
-          }
-        },
         "Sonia Citron": {
           "line": 3.5,
           "FD": {
@@ -785,12 +777,12 @@
             "under": 108
           }
         },
-        "Kiki Iriafen": {
-          "line": 9.5,
+        "Kamilla Cardoso": {
+          "line": 8.5,
           "FD": {
-            "line": 9.5,
-            "over": -140,
-            "under": 106
+            "line": 8.5,
+            "over": -106,
+            "under": -125
           }
         },
         "Shakira Austin": {
@@ -799,6 +791,14 @@
             "line": 9.5,
             "over": -112,
             "under": -118
+          }
+        },
+        "Kiki Iriafen": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -140,
+            "under": 106
           }
         }
       },

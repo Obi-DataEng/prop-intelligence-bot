@@ -32,7 +32,7 @@
         "best_odds": -109,
         "prediction_confidence": 66,
         "confidence_tier": "Below 72",
-        "reasoning": "Model projects FAMU to cover at 66% with a +7.1 edge, estimating the spread at +50.4 versus the market's 57.5. Miami is elite (#6 in power ratings) but this massive number creates value. FCS opponents can stay within 50+ point spreads against motivated favorites looking ahead. The 7-point cushion provides significant margin even in a blowout scenario."
+        "reasoning": "Model projects FAMU +50.4 with 66% cover probability, providing +7.1 edge against the 57.5 spread. Miami is #6 nationally but this is an enormous spread even for an FCS opponent. Historical tendencies show extreme spreads often result in backdoor covers as favorites empty benches in second half."
       },
       "reason": "confidence 66 is below 72"
     },
@@ -49,7 +49,7 @@
         "best_odds": -106,
         "prediction_confidence": 65,
         "confidence_tier": "Below 72",
-        "reasoning": "Model projects 56.0 total, 6.5 points below the market's 62.5. Miami likely pulls starters early in this massive mismatch, limiting second-half scoring. FAMU is severely overmatched offensively against Miami's #2 ranked defense (allowing just 7.8 PPG equivalent). Expect conservative playcalling once the outcome is decided, keeping the total manageable."
+        "reasoning": "Model projects total of 56.0, creating -6.5 edge on the under. Miami ranks #2 defensively (allowing +7.8) and will likely control tempo and clock with large lead. Backup quarterback play in second half typically slows scoring pace significantly in mismatches of this magnitude."
       },
       "reason": "confidence 65 is below 72"
     },
@@ -57,52 +57,52 @@
       "pick": {
         "rank": 3,
         "pick_type": "spread",
-        "game": "Old Dominion Monarchs @ Virginia Tech Hokies",
-        "team": "Old Dominion Monarchs",
-        "selection": "Old Dominion Monarchs +18.5",
-        "line": 18.5,
+        "game": "Florida A&M Rattlers @ Miami Hurricanes",
+        "team": "Miami Hurricanes",
+        "selection": "Miami Hurricanes -57.5",
+        "line": -57.5,
         "over_under": null,
-        "best_book": "FD",
-        "best_odds": -106,
-        "prediction_confidence": 71,
+        "best_book": "CZS",
+        "best_odds": -110,
+        "prediction_confidence": 34,
         "confidence_tier": "Below 72",
-        "reasoning": "Model projects massive +9.7 edge with ODU covering at 71%, estimating spread at +9.3. Virginia Tech is ranked #40 but ODU (#76) has shown improvement, moving up in power ratings. The 9-point model disagreement suggests the market is overvaluing VT's home advantage. ODU's defense ranks #57 nationally and should keep this within two touchdowns."
+        "reasoning": "Model projects Miami to win by 50.4 points with 100% win probability. Miami ranks #6 overall with elite offense (#8) and defense (#2). However, the massive 57.5 spread creates significant risk of backdoor cover as starters exit early. Model gives only 34% cover probability for Miami."
       },
-      "reason": "confidence 71 is below 72"
+      "reason": "confidence 34 is below 72"
     },
     {
       "pick": {
         "rank": 4,
-        "pick_type": "game_total",
-        "game": "Old Dominion Monarchs @ Virginia Tech Hokies",
-        "team": null,
-        "selection": "Over 49.5",
-        "line": 49.5,
-        "over_under": "Over",
-        "best_book": "FD",
-        "best_odds": -112,
-        "prediction_confidence": 63,
+        "pick_type": "moneyline",
+        "game": "Florida A&M Rattlers @ Miami Hurricanes",
+        "team": "Miami Hurricanes",
+        "selection": "Miami Hurricanes moneyline",
+        "line": null,
+        "over_under": null,
+        "best_book": "N/A",
+        "best_odds": null,
+        "prediction_confidence": 0,
         "confidence_tier": "Below 72",
-        "reasoning": "Model projects 53.3 total with +3.8 edge versus the 49.5 line. Both offenses should find success - VT's offense ranks #52 but plays at home, while ODU's attack has been competent. The 53-54 point projection suggests a 31-22 type game that clears this modest total comfortably."
+        "reasoning": "No moneyline available for this game at either sportsbook. Miami has 100% win probability per model but without pricing there is no actionable bet."
       },
-      "reason": "confidence 63 is below 72"
+      "reason": "confidence 0 is below 72"
     },
     {
       "pick": {
         "rank": 5,
-        "pick_type": "spread",
-        "game": "Connecticut Huskies @ Maryland Terrapins",
-        "team": "Connecticut Huskies",
-        "selection": "Connecticut Huskies +12.5",
-        "line": 12.5,
+        "pick_type": "moneyline",
+        "game": "Florida A&M Rattlers @ Miami Hurricanes",
+        "team": "Florida A&M Rattlers",
+        "selection": "Florida A&M Rattlers moneyline",
+        "line": null,
         "over_under": null,
-        "best_book": "FD",
-        "best_odds": -110,
-        "prediction_confidence": 72,
-        "confidence_tier": "Medium",
-        "reasoning": "Model projects massive +10.1 edge with UConn covering at 72%, estimating spread at just +2.4. This represents a 10-point market inefficiency. Maryland (#67) is marginally better than UConn (#110) but both teams sit in similar tiers. UConn just won their opener and Maryland's defensive metrics (#52) don't justify laying nearly two touchdowns. The model sees this as essentially a pick'em being priced as a blowout."
+        "best_book": "N/A",
+        "best_odds": null,
+        "prediction_confidence": 0,
+        "confidence_tier": "Below 72",
+        "reasoning": "No moneyline available for this game at either sportsbook. FAMU has 0% win probability per model making this unviable regardless."
       },
-      "reason": "could not match game to odds feed"
+      "reason": "confidence 0 is below 72"
     }
   ]
 }
