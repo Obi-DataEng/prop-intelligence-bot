@@ -23,33 +23,33 @@
       "pick": {
         "rank": 1,
         "pick_type": "spread",
-        "game": "Florida A&M Rattlers @ Miami Hurricanes",
-        "team": "Florida A&M Rattlers",
-        "selection": "Florida A&M Rattlers +57.5",
+        "game": "FAMU @ Miami",
+        "team": "FAMU",
+        "selection": "FAMU +57.5",
         "line": 57.5,
         "over_under": null,
         "best_book": "CZS",
         "best_odds": -109,
-        "prediction_confidence": 66,
+        "prediction_confidence": 64,
         "confidence_tier": "Below 72",
-        "reasoning": "Model projects FAMU +50.4 with 66% cover probability, providing +7.1 edge against the 57.5 spread. Miami is #6 nationally but this is an enormous spread even for an FCS opponent. Historical tendencies show extreme spreads often result in backdoor covers as favorites empty benches in second half."
+        "reasoning": "Model projects FAMU +51.2 vs market line of +57.5, giving 6.3 points of edge. Model shows 64% cover probability. Miami is #7 nationally but 57.5 points is an enormous spread to cover even against an FCS opponent. Historical data shows elite teams struggle to exceed 50+ point spreads with any consistency."
       },
-      "reason": "confidence 66 is below 72"
+      "reason": "confidence 64 is below 72"
     },
     {
       "pick": {
         "rank": 2,
-        "pick_type": "game_total",
-        "game": "Florida A&M Rattlers @ Miami Hurricanes",
-        "team": null,
-        "selection": "Under 62.5",
-        "line": 62.5,
-        "over_under": "Under",
+        "pick_type": "spread",
+        "game": "Norfolk State @ Virginia",
+        "team": "Norfolk State",
+        "selection": "Norfolk State +44.5",
+        "line": 44.5,
+        "over_under": null,
         "best_book": "FD",
-        "best_odds": -106,
+        "best_odds": -105,
         "prediction_confidence": 65,
         "confidence_tier": "Below 72",
-        "reasoning": "Model projects total of 56.0, creating -6.5 edge on the under. Miami ranks #2 defensively (allowing +7.8) and will likely control tempo and clock with large lead. Backup quarterback play in second half typically slows scoring pace significantly in mismatches of this magnitude."
+        "reasoning": "Model projects Norfolk State +39.1 vs market line of +44.5, providing 6.4 points of edge with 65% cover probability. Virginia is #23 but showed only moderate offensive efficiency (rank #35). Large FCS spreads in the 40+ range historically see more backdoor covers than warranted."
       },
       "reason": "confidence 65 is below 72"
     },
@@ -57,52 +57,52 @@
       "pick": {
         "rank": 3,
         "pick_type": "spread",
-        "game": "Florida A&M Rattlers @ Miami Hurricanes",
-        "team": "Miami Hurricanes",
-        "selection": "Miami Hurricanes -57.5",
-        "line": -57.5,
+        "game": "Oklahoma State @ Oregon",
+        "team": "Oklahoma State",
+        "selection": "Oklahoma State +22.5",
+        "line": 22.5,
         "over_under": null,
-        "best_book": "CZS",
-        "best_odds": -110,
-        "prediction_confidence": 34,
+        "best_book": "FD",
+        "best_odds": -105,
+        "prediction_confidence": 62,
         "confidence_tier": "Below 72",
-        "reasoning": "Model projects Miami to win by 50.4 points with 100% win probability. Miami ranks #6 overall with elite offense (#8) and defense (#2). However, the massive 57.5 spread creates significant risk of backdoor cover as starters exit early. Model gives only 34% cover probability for Miami."
+        "reasoning": "Model projects Oklahoma State +18.0 vs market +22.5, giving 5.0 points of edge with 62% cover probability. Oregon is #3 nationally but Oklahoma State has experienced staff despite ranking #81. The Cowboys dropped significantly after Week 1 (down 52.9 rating points) which may have overreacted to one poor performance."
       },
-      "reason": "confidence 34 is below 72"
+      "reason": "confidence 62 is below 72"
     },
     {
       "pick": {
         "rank": 4,
-        "pick_type": "moneyline",
-        "game": "Florida A&M Rattlers @ Miami Hurricanes",
-        "team": "Miami Hurricanes",
-        "selection": "Miami Hurricanes moneyline",
-        "line": null,
+        "pick_type": "spread",
+        "game": "Maryland @ UConn",
+        "team": "UConn",
+        "selection": "UConn +12.5",
+        "line": 12.5,
         "over_under": null,
-        "best_book": "N/A",
-        "best_odds": null,
-        "prediction_confidence": 0,
-        "confidence_tier": "Below 72",
-        "reasoning": "No moneyline available for this game at either sportsbook. Miami has 100% win probability per model but without pricing there is no actionable bet."
+        "best_book": "FD",
+        "best_odds": -110,
+        "prediction_confidence": 73,
+        "confidence_tier": "Medium",
+        "reasoning": "Model projects UConn +2.1 vs market line of +12.5, providing massive 10.4 points of edge with 73% cover probability. This is the highest edge in the slate. Maryland is only #66 nationally with poor offensive efficiency (rank #59). UConn won Week 1 and gained 10 rating points. Double-digit spread seems excessive for relatively evenly-matched teams."
       },
-      "reason": "confidence 0 is below 72"
+      "reason": "could not match game to odds feed"
     },
     {
       "pick": {
         "rank": 5,
-        "pick_type": "moneyline",
-        "game": "Florida A&M Rattlers @ Miami Hurricanes",
-        "team": "Florida A&M Rattlers",
-        "selection": "Florida A&M Rattlers moneyline",
-        "line": null,
+        "pick_type": "spread",
+        "game": "Kansas @ Missouri",
+        "team": "Kansas",
+        "selection": "Kansas +5.5",
+        "line": 5.5,
         "over_under": null,
-        "best_book": "N/A",
-        "best_odds": null,
-        "prediction_confidence": 0,
+        "best_book": "FD",
+        "best_odds": -105,
+        "prediction_confidence": 58,
         "confidence_tier": "Below 72",
-        "reasoning": "No moneyline available for this game at either sportsbook. FAMU has 0% win probability per model making this unviable regardless."
+        "reasoning": "Model projects Kansas +2.1 vs market +5.5, giving 3.4 points of edge with 58% cover probability. Missouri is #27 vs Kansas #62, but model sees this as nearly a pick'em. Both teams won Week 1. Missouri has home advantage but the 5.5 spread appears inflated for what should be a competitive Big 12 matchup between teams separated by only 15 rating points."
       },
-      "reason": "confidence 0 is below 72"
+      "reason": "confidence 58 is below 72"
     }
   ]
 }
