@@ -242,10 +242,10 @@ def nfl_week_from_intelligence(intelligence):
 
 
 def season_weights(week):
-    if week <= 2:
-        return 0.70, 0.30
-    if week <= 4:
-        return 0.40, 0.60
+    # if week <= 1:
+    #     return 0.70, 0.30
+    # if week <= 4:
+    #     return 0.40, 0.60
     return 0.15, 0.85
 
 
@@ -762,9 +762,9 @@ The ONLY eligible betting markets are:
 1. Moneyline
 2. Spread
 3. Game total
+4. First-Half totals
+5. Team Totals
 
-Do not recommend first-half markets.
-Do not recommend team totals.
 Do not recommend futures.
 Do not recommend parlays.
 
