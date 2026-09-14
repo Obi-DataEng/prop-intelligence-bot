@@ -38,11 +38,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(13/14)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 93.9; L10 (10/10) and L20 (14/15); prior/current season (13/14) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -161."
+      "reasoning": "PropFinder rating 93.9; L10 (10/10) and L20 (14/15); prior/current season (13/14) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -161."
     },
     {
       "rank": 2,
@@ -66,11 +66,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(11/14)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 91.8; L10 (10/10) and L20 (12/15); prior/current season (11/14) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -167."
+      "reasoning": "PropFinder rating 91.8; L10 (10/10) and L20 (12/15); prior/current season (11/14) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -167."
     },
     {
       "rank": 3,
@@ -94,11 +94,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(15/18)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (16/20); prior/current season (15/18) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -156."
+      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (16/20); prior/current season (15/18) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -156."
     },
     {
       "rank": 4,
@@ -122,11 +122,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(10/10)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (11/11); prior/current season (10/10) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -161."
+      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (11/11); prior/current season (10/10) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -161."
     },
     {
       "rank": 5,
@@ -150,11 +150,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(17/20)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 89.4; L10 (9/10) and L20 (17/20); prior/current season (17/20) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.7 at odds +105."
+      "reasoning": "PropFinder rating 89.4; L10 (9/10) and L20 (17/20); prior/current season (17/20) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.7 at odds +105."
     }
   ],
   "game_picks": [
@@ -168,9 +168,9 @@
       "over_under": null,
       "best_book": "CZS",
       "best_odds": 113,
-      "prediction_confidence": 74,
+      "prediction_confidence": 76,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects Denver to win 53% of the time, providing meaningful edge over the +113 implied probability of 47%. The model's 23-22 Denver win projection shows competitive game script. Kansas City's home field is strong historically (+1.1 ATS), but the 6-point model edge (53% vs 47% implied) creates value at this underdog price.",
+      "reasoning": "Model projects Denver 53% win probability versus 47% implied probability at +113 odds, a 6-point edge. Model has Denver winning 23-22, covering the small spread. Chiefs at home historically strong (63.4% win rate, +1.1 ATS), but model indicates value on the underdog in what projects as a tight contest.",
       "model_probability": 0.53,
       "implied_probability": 0.4695,
       "model_edge": 0.0605
@@ -185,9 +185,9 @@
       "over_under": null,
       "best_book": "CZS",
       "best_odds": -109,
-      "prediction_confidence": 73,
+      "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects Denver -0.9 spread advantage versus the market's KC -2.5, creating a 3.4-point edge. The model gives Denver 50% cover probability even at +2, and this +2.5 line provides additional cushion. Denver projected to score 23 in a close 23-22 game aligns well with covering this small spread.",
+      "reasoning": "Model projects Denver -0.9, a 3.4-point difference from the +2.5 spread. With 53% win probability and 50% cover probability, this represents value on the road underdog. Kansas City's home advantage (+1.1 ATS historically) is priced in, but model sees a one-point Denver victory making the hook valuable.",
       "projected_margin": 0.9,
       "model_edge": 3.4
     },
@@ -201,9 +201,9 @@
       "over_under": "Over",
       "best_book": "CZS",
       "best_odds": -112,
-      "prediction_confidence": 72,
+      "prediction_confidence": 73,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects total of 45.3 points versus market's 43.5, providing 1.8-point edge to the Over. The 23-22 projected score gives 45 combined points, exactly in line with model expectation. This represents the smallest but still meaningful edge among the three available markets for this single-game slate.",
+      "reasoning": "Model projects total of 45.3 points, 1.8 points above the 43.5 line. Projected score of 23-22 lands directly on the Over. Both teams expected to score in low-20s range suggests a competitive game that reaches the mid-40s rather than staying in the low-40s.",
       "projected_total": 45.3,
       "model_edge": 1.8
     }
@@ -231,11 +231,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(13/14)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 93.9; L10 (10/10) and L20 (14/15); prior/current season (13/14) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -161."
+      "reasoning": "PropFinder rating 93.9; L10 (10/10) and L20 (14/15); prior/current season (13/14) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -161."
     },
     {
       "rank": 2,
@@ -259,11 +259,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(11/14)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 91.8; L10 (10/10) and L20 (12/15); prior/current season (11/14) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -167."
+      "reasoning": "PropFinder rating 91.8; L10 (10/10) and L20 (12/15); prior/current season (11/14) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -167."
     },
     {
       "rank": 3,
@@ -287,11 +287,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(15/18)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (16/20); prior/current season (15/18) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -156."
+      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (16/20); prior/current season (15/18) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -156."
     },
     {
       "rank": 4,
@@ -315,11 +315,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(10/10)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (11/11); prior/current season (10/10) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.0 at odds -161."
+      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (11/11); prior/current season (10/10) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.0 at odds -161."
     },
     {
       "rank": 5,
@@ -343,11 +343,11 @@
       "nfl_week": 1,
       "prior_season_hit_rate": "(17/20)",
       "current_season_hit_rate": "(0/0)",
-      "prior_season_weight": 0.7,
-      "current_season_weight": 0.3,
+      "prior_season_weight": 0.15,
+      "current_season_weight": 0.85,
       "current_season_sample": 0,
       "historical_only": true,
-      "reasoning": "PropFinder rating 89.4; L10 (9/10) and L20 (17/20); prior/current season (17/20) / (0/0) with Week 1 weighting 70%/30%; L10 average 0.7 at odds +105."
+      "reasoning": "PropFinder rating 89.4; L10 (9/10) and L20 (17/20); prior/current season (17/20) / (0/0) with Week 1 weighting 15%/85%; L10 average 0.7 at odds +105."
     },
     {
       "rank": 1,
@@ -359,9 +359,9 @@
       "over_under": null,
       "best_book": "CZS",
       "best_odds": 113,
-      "prediction_confidence": 74,
+      "prediction_confidence": 76,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects Denver to win 53% of the time, providing meaningful edge over the +113 implied probability of 47%. The model's 23-22 Denver win projection shows competitive game script. Kansas City's home field is strong historically (+1.1 ATS), but the 6-point model edge (53% vs 47% implied) creates value at this underdog price.",
+      "reasoning": "Model projects Denver 53% win probability versus 47% implied probability at +113 odds, a 6-point edge. Model has Denver winning 23-22, covering the small spread. Chiefs at home historically strong (63.4% win rate, +1.1 ATS), but model indicates value on the underdog in what projects as a tight contest.",
       "model_probability": 0.53,
       "implied_probability": 0.4695,
       "model_edge": 0.0605
@@ -376,9 +376,9 @@
       "over_under": null,
       "best_book": "CZS",
       "best_odds": -109,
-      "prediction_confidence": 73,
+      "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects Denver -0.9 spread advantage versus the market's KC -2.5, creating a 3.4-point edge. The model gives Denver 50% cover probability even at +2, and this +2.5 line provides additional cushion. Denver projected to score 23 in a close 23-22 game aligns well with covering this small spread.",
+      "reasoning": "Model projects Denver -0.9, a 3.4-point difference from the +2.5 spread. With 53% win probability and 50% cover probability, this represents value on the road underdog. Kansas City's home advantage (+1.1 ATS historically) is priced in, but model sees a one-point Denver victory making the hook valuable.",
       "projected_margin": 0.9,
       "model_edge": 3.4
     },
@@ -392,9 +392,9 @@
       "over_under": "Over",
       "best_book": "CZS",
       "best_odds": -112,
-      "prediction_confidence": 72,
+      "prediction_confidence": 73,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects total of 45.3 points versus market's 43.5, providing 1.8-point edge to the Over. The 23-22 projected score gives 45 combined points, exactly in line with model expectation. This represents the smallest but still meaningful edge among the three available markets for this single-game slate.",
+      "reasoning": "Model projects total of 45.3 points, 1.8 points above the 43.5 line. Projected score of 23-22 lands directly on the Over. Both teams expected to score in low-20s range suggests a competitive game that reaches the mid-40s rather than staying in the low-40s.",
       "projected_total": 45.3,
       "model_edge": 1.8
     }
