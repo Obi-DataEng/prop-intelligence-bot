@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-14",
+  "league": "CFB",
+  "url": "https://propfinder.app/cfb",
+  "alternate_lines": false,
+  "views": {
+    "over": {
+      "selected": true,
+      "source": "dom_fallback",
+      "export_path": null,
+      "export_error": "TimeoutError: TimeoutError('Timeout 30000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')",
+      "headers": [
+        "PF RATING",
+        "TEAM",
+        "POS",
+        "PLAYER",
+        "PROP",
+        "L5 AVG",
+        "L10 AVG",
+        "ODDS",
+        "STREAK",
+        "SZN MATCHUP",
+        "2025",
+        "2026",
+        "H2H",
+        "L5",
+        "L10",
+        "L20"
+      ],
+      "rows": [],
+      "scraped_rows": 0,
+      "site_loaded": null,
+      "site_total": null,
+      "complete": false
+    },
+    "under": {
+      "selected": true,
+      "source": "dom_fallback",
+      "export_path": null,
+      "export_error": "TimeoutError: TimeoutError('Timeout 30000ms exceeded while waiting for event \"download\"\\n=========================== logs ===========================\\nwaiting for event \"download\"\\n============================================================')",
+      "headers": [
+        "PF RATING",
+        "TEAM",
+        "POS",
+        "PLAYER",
+        "PROP",
+        "L5 AVG",
+        "L10 AVG",
+        "ODDS",
+        "STREAK",
+        "SZN MATCHUP",
+        "2025",
+        "2026",
+        "H2H",
+        "L5",
+        "L10",
+        "L20"
+      ],
+      "rows": [],
+      "scraped_rows": 0,
+      "site_loaded": null,
+      "site_total": null,
+      "complete": false
+    }
+  }
+}
