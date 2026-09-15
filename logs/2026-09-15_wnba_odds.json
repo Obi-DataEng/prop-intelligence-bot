@@ -1,0 +1,2718 @@
+{
+  "date": "2026-09-15",
+  "league": "WNBA",
+  "sport_key": "basketball_wnba",
+  "books": [
+    "FD",
+    "MGM",
+    "CZS",
+    "ESPN"
+  ],
+  "game_markets": [
+    "moneyline",
+    "spread",
+    "total"
+  ],
+  "player_prop_markets": [
+    "player_points",
+    "player_rebounds",
+    "player_assists",
+    "player_threes",
+    "player_points_rebounds_assists",
+    "player_points_rebounds",
+    "player_points_assists",
+    "player_rebounds_assists",
+    "player_steals",
+    "player_blocks"
+  ],
+  "games": [
+    {
+      "game_id": "0fd1d4ee6d6e720e030e8cefb6a5a591",
+      "home_team": "Atlanta Dream",
+      "away_team": "Connecticut Sun",
+      "commence_time": "2026-09-17T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -1600,
+          "away_ml": 820,
+          "home_spread": -14.5,
+          "home_spread_odds": -115,
+          "away_spread": 14.5,
+          "away_spread_odds": -105,
+          "total": 169.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": -1200,
+          "away_ml": 750,
+          "home_spread": -14.5,
+          "home_spread_odds": -110,
+          "away_spread": 14.5,
+          "away_spread_odds": -110,
+          "total": 169.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -1250,
+          "away_ml": 750,
+          "home_spread": -14.5,
+          "home_spread_odds": -110,
+          "away_spread": 14.5,
+          "away_spread_odds": -109,
+          "total": 169.5,
+          "over_odds": -110,
+          "under_odds": -109
+        }
+      }
+    },
+    {
+      "game_id": "e1345bc3242e9236f8524205bb759ad3",
+      "home_team": "Chicago Sky",
+      "away_team": "Washington Mystics",
+      "commence_time": "2026-09-18T00:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 128,
+          "away_ml": -158,
+          "home_spread": 3.5,
+          "home_spread_odds": -112,
+          "away_spread": -3.5,
+          "away_spread_odds": -108,
+          "total": 167.5,
+          "over_odds": -108,
+          "under_odds": -112
+        },
+        "MGM": {
+          "home_ml": 130,
+          "away_ml": -155,
+          "home_spread": 3.5,
+          "home_spread_odds": -110,
+          "away_spread": -3.5,
+          "away_spread_odds": -110,
+          "total": 167.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 134,
+          "away_ml": -159,
+          "home_spread": 3.5,
+          "home_spread_odds": -109,
+          "away_spread": -3.5,
+          "away_spread_odds": -110,
+          "total": 167.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "61b156ccbfae6cde6e02dfc0684905de",
+      "home_team": "Dallas Wings",
+      "away_team": "Los Angeles Sparks",
+      "commence_time": "2026-09-18T00:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -340,
+          "away_ml": 260,
+          "home_spread": -7.5,
+          "home_spread_odds": -114,
+          "away_spread": 7.5,
+          "away_spread_odds": -106,
+          "total": 176.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": -325,
+          "away_ml": 250,
+          "home_spread": -7.5,
+          "home_spread_odds": -115,
+          "away_spread": 7.5,
+          "away_spread_odds": -105,
+          "total": 176.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -325,
+          "away_ml": 255,
+          "home_spread": -7.5,
+          "home_spread_odds": -112,
+          "away_spread": 7.5,
+          "away_spread_odds": -108,
+          "total": 176.5,
+          "over_odds": -107,
+          "under_odds": -114
+        }
+      }
+    },
+    {
+      "game_id": "b9b0b24665156d1d63dfbe7e8d13682b",
+      "home_team": "Seattle Storm",
+      "away_team": "Las Vegas Aces",
+      "commence_time": "2026-09-18T02:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 320,
+          "away_ml": -430,
+          "home_spread": 9.5,
+          "home_spread_odds": -115,
+          "away_spread": -9.5,
+          "away_spread_odds": -105,
+          "total": 173.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": 280,
+          "away_ml": -375,
+          "home_spread": 9.5,
+          "home_spread_odds": -110,
+          "away_spread": -9.5,
+          "away_spread_odds": -110,
+          "total": 173.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 340,
+          "away_ml": -440,
+          "home_spread": 9.5,
+          "home_spread_odds": -110,
+          "away_spread": -9.5,
+          "away_spread_odds": -110,
+          "total": 173.5,
+          "over_odds": -112,
+          "under_odds": -107
+        }
+      }
+    },
+    {
+      "game_id": "58a4c915db23d78435f89d1505f13d99",
+      "home_team": "Portland Fire",
+      "away_team": "Phoenix Mercury",
+      "commence_time": "2026-09-18T02:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -104,
+          "away_ml": -118,
+          "home_spread": 1.5,
+          "home_spread_odds": -114,
+          "away_spread": -1.5,
+          "away_spread_odds": -106,
+          "total": 175.5,
+          "over_odds": -118,
+          "under_odds": -104
+        },
+        "CZS": {
+          "home_ml": -102,
+          "away_ml": -118,
+          "home_spread": 1.5,
+          "home_spread_odds": -110,
+          "away_spread": -1.5,
+          "away_spread_odds": -109,
+          "total": 176.5,
+          "over_odds": -108,
+          "under_odds": -113
+        },
+        "MGM": {
+          "home_ml": 100,
+          "away_ml": -120,
+          "home_spread": 1.5,
+          "home_spread_odds": -110,
+          "away_spread": -1.5,
+          "away_spread_odds": -110,
+          "total": 176.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "51b44290d72300d77ead7df090c22d65",
+      "home_team": "Toronto Tempo",
+      "away_team": "Indiana Fever",
+      "commence_time": "2026-09-18T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 570,
+          "away_ml": -900,
+          "home_spread": 12.5,
+          "home_spread_odds": -110,
+          "away_spread": -12.5,
+          "away_spread_odds": -110,
+          "total": 189.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 475,
+          "away_ml": -750,
+          "home_spread": 11.5,
+          "home_spread_odds": -105,
+          "away_spread": -11.5,
+          "away_spread_odds": -115,
+          "total": 189.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": 475,
+          "away_ml": -700,
+          "home_spread": 11.5,
+          "home_spread_odds": -110,
+          "away_spread": -11.5,
+          "away_spread_odds": -110,
+          "total": 189.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "59427f7421ecc3b391be7eff1de65f33",
+      "home_team": "Minnesota Lynx",
+      "away_team": "New York Liberty",
+      "commence_time": "2026-09-18T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -265,
+          "away_ml": 210,
+          "home_spread": -7.5,
+          "home_spread_odds": -105,
+          "away_spread": 7.5,
+          "away_spread_odds": -115,
+          "total": 177.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": -265,
+          "away_ml": 210,
+          "home_spread": -6.5,
+          "home_spread_odds": -115,
+          "away_spread": 6.5,
+          "away_spread_odds": -105,
+          "total": 176.5,
+          "over_odds": -117,
+          "under_odds": -104
+        },
+        "MGM": {
+          "home_ml": -250,
+          "away_ml": 200,
+          "home_spread": -6.5,
+          "home_spread_odds": -115,
+          "away_spread": 6.5,
+          "away_spread_odds": -105,
+          "total": 176.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "210b4fbc56666cf336d052bf027af277",
+      "home_team": "Golden State Valkyries",
+      "away_team": "Portland Fire",
+      "commence_time": "2026-09-19T02:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -1050,
+          "away_ml": 630,
+          "home_spread": -12.5,
+          "home_spread_odds": -114,
+          "away_spread": 12.5,
+          "away_spread_odds": -106,
+          "total": 160.5,
+          "over_odds": -112,
+          "under_odds": -108
+        },
+        "CZS": {
+          "home_ml": -950,
+          "away_ml": 600,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -108,
+          "total": 161.5,
+          "over_odds": -108,
+          "under_odds": -112
+        },
+        "MGM": {
+          "home_ml": -800,
+          "away_ml": 550,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -110,
+          "total": 161.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    }
+  ],
+  "player_props": {
+    "Connecticut Sun@Atlanta Dream": {
+      "player_assists": {
+        "Angel Reese": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Allisha Gray": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Jordin Canada": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -136,
+            "under": 102
+          },
+          "CZS": {
+            "line": 6.5,
+            "over": -141,
+            "under": 107
+          }
+        },
+        "Rhyne Howard": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 104,
+            "under": -138
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 102,
+            "under": -136
+          }
+        }
+      },
+      "player_points": {
+        "Jordin Canada": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -110,
+            "under": -118
+          },
+          "CZS": {
+            "line": 10.5,
+            "over": -124,
+            "under": -107
+          }
+        },
+        "Allisha Gray": {
+          "line": 18.5,
+          "FD": {
+            "line": 18.5,
+            "over": -106,
+            "under": -122
+          },
+          "CZS": {
+            "line": 18.5,
+            "over": -109,
+            "under": -122
+          }
+        },
+        "Rhyne Howard": {
+          "line": 18.5,
+          "FD": {
+            "line": 18.5,
+            "over": 100,
+            "under": -130
+          },
+          "CZS": {
+            "line": 18.5,
+            "over": -105,
+            "under": -127
+          }
+        },
+        "Naz Hillmon": {
+          "line": 7.5,
+          "FD": {
+            "line": 8.5,
+            "over": 100,
+            "under": -130
+          },
+          "CZS": {
+            "line": 7.5,
+            "over": -136,
+            "under": 102
+          }
+        },
+        "Angel Reese": {
+          "line": 15.5,
+          "FD": {
+            "line": 15.5,
+            "over": -108,
+            "under": -120
+          },
+          "CZS": {
+            "line": 15.5,
+            "over": -114,
+            "under": -117
+          }
+        }
+      },
+      "player_points_assists": {
+        "Angel Reese": {
+          "line": 18.5,
+          "FD": {
+            "line": 18.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Allisha Gray": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Jordin Canada": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Rhyne Howard": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -114,
+            "under": -114
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Angel Reese": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Jordin Canada": {
+          "line": 13.5,
+          "FD": {
+            "line": 13.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Allisha Gray": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Rhyne Howard": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Naz Hillmon": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -114,
+            "under": -114
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Angel Reese": {
+          "line": 30.5,
+          "FD": {
+            "line": 30.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Allisha Gray": {
+          "line": 24.5,
+          "FD": {
+            "line": 24.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Rhyne Howard": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Jordin Canada": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -132,
+            "under": 100
+          }
+        }
+      },
+      "player_rebounds": {
+        "Jordin Canada": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 104,
+            "under": -138
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -106,
+            "under": -127
+          }
+        },
+        "Angel Reese": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -132,
+            "under": 100
+          },
+          "CZS": {
+            "line": 12.5,
+            "over": -127,
+            "under": -105
+          }
+        },
+        "Rhyne Howard": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -108,
+            "under": -122
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -115,
+            "under": -115
+          }
+        },
+        "Naz Hillmon": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": 114,
+            "under": -152
+          },
+          "CZS": {
+            "line": 4.5,
+            "over": 111,
+            "under": -148
+          }
+        },
+        "Allisha Gray": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 130,
+            "under": -174
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 115,
+            "under": -152
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Angel Reese": {
+          "line": 15.5,
+          "FD": {
+            "line": 15.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Jordin Canada": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Rhyne Howard": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -152,
+            "under": 114
+          }
+        },
+        "Allisha Gray": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -130,
+            "under": -102
+          }
+        }
+      },
+      "player_threes": {
+        "Allisha Gray": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -174,
+            "under": 130
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -157,
+            "under": 117
+          }
+        },
+        "Rhyne Howard": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 136,
+            "under": -182
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 134,
+            "under": -179
+          }
+        }
+      }
+    },
+    "Washington Mystics@Chicago Sky": {
+      "player_assists": {
+        "Sonia Citron": {
+          "line": 4.5,
+          "FD": {
+            "line": 5.5,
+            "over": 126,
+            "under": -168
+          },
+          "CZS": {
+            "line": 4.5,
+            "over": -152,
+            "under": 115
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Shakira Austin": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 104,
+            "under": -138
+          }
+        },
+        "Georgia Amoore": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -158,
+            "under": 118
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -157,
+            "under": 118
+          }
+        }
+      },
+      "player_points": {
+        "Sonia Citron": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -118,
+            "under": -110
+          },
+          "CZS": {
+            "line": 16.5,
+            "over": -115,
+            "under": -115
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -114,
+            "under": -114
+          },
+          "CZS": {
+            "line": 14.5,
+            "over": -115,
+            "under": -117
+          }
+        },
+        "Kiki Iriafen": {
+          "line": 15.5,
+          "FD": {
+            "line": 15.5,
+            "over": -128,
+            "under": -102
+          },
+          "CZS": {
+            "line": 15.5,
+            "over": -121,
+            "under": -110
+          }
+        },
+        "Georgia Amoore": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": -130,
+            "under": 100
+          },
+          "CZS": {
+            "line": 7.5,
+            "over": -127,
+            "under": -106
+          }
+        },
+        "Shakira Austin": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -128,
+            "under": -102
+          },
+          "CZS": {
+            "line": 16.5,
+            "over": -122,
+            "under": -109
+          }
+        }
+      },
+      "player_points_assists": {
+        "Sonia Citron": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Georgia Amoore": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -132,
+            "under": 100
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Sonia Citron": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Kiki Iriafen": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Shakira Austin": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Georgia Amoore": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -114,
+            "under": -114
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Kiki Iriafen": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Kamilla Cardoso": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Shakira Austin": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Georgia Amoore": {
+          "line": 13.5,
+          "FD": {
+            "line": 13.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Sonia Citron": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -128,
+            "under": -104
+          }
+        }
+      },
+      "player_rebounds": {
+        "Kamilla Cardoso": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -104,
+            "under": -125
+          },
+          "CZS": {
+            "line": 8.5,
+            "over": -104,
+            "under": -129
+          }
+        },
+        "Sonia Citron": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -144,
+            "under": 108
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -132,
+            "under": -102
+          }
+        },
+        "Kiki Iriafen": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -138,
+            "under": 104
+          },
+          "CZS": {
+            "line": 9.5,
+            "over": -129,
+            "under": -104
+          }
+        },
+        "Shakira Austin": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -110,
+            "under": -120
+          },
+          "CZS": {
+            "line": 9.5,
+            "over": -110,
+            "under": -121
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Sonia Citron": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -144,
+            "under": 108
+          }
+        },
+        "Georgia Amoore": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -125,
+            "under": -106
+          }
+        }
+      },
+      "player_threes": {
+        "Sonia Citron": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -106,
+            "under": -125
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -102,
+            "under": -132
+          }
+        },
+        "Georgia Amoore": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -122,
+            "under": -108
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -121,
+            "under": -110
+          }
+        }
+      }
+    },
+    "Los Angeles Sparks@Dallas Wings": {
+      "player_assists": {
+        "Paige Bueckers": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": 112,
+            "under": -148
+          },
+          "CZS": {
+            "line": 6.5,
+            "over": 110,
+            "under": -148
+          }
+        },
+        "Arike Ogunbowale": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 102,
+            "under": -136
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 111,
+            "under": -148
+          }
+        },
+        "Jessica Shepard": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Nneka Ogwumike": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -158,
+            "under": 118
+          }
+        }
+      },
+      "player_points": {
+        "Arike Ogunbowale": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -104,
+            "under": -125
+          },
+          "CZS": {
+            "line": 17.5,
+            "over": -112,
+            "under": -120
+          }
+        },
+        "Paige Bueckers": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -108,
+            "under": -120
+          },
+          "CZS": {
+            "line": 21.5,
+            "over": -114,
+            "under": -117
+          }
+        },
+        "Awak Kuier": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -102,
+            "under": -128
+          },
+          "CZS": {
+            "line": 9.5,
+            "over": -106,
+            "under": -127
+          }
+        },
+        "Nneka Ogwumike": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -110,
+            "under": -118
+          },
+          "CZS": {
+            "line": 16.5,
+            "over": -114,
+            "under": -117
+          }
+        },
+        "Jessica Shepard": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -132,
+            "under": 102
+          },
+          "CZS": {
+            "line": 14.5,
+            "over": -129,
+            "under": -104
+          }
+        }
+      },
+      "player_points_assists": {
+        "Arike Ogunbowale": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Paige Bueckers": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Jessica Shepard": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Nneka Ogwumike": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -110,
+            "under": -118
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Arike Ogunbowale": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Paige Bueckers": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Awak Kuier": {
+          "line": 15.5,
+          "FD": {
+            "line": 15.5,
+            "over": -132,
+            "under": 100
+          }
+        },
+        "Jessica Shepard": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -104,
+            "under": -128
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Arike Ogunbowale": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Paige Bueckers": {
+          "line": 31.5,
+          "FD": {
+            "line": 31.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Nneka Ogwumike": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Jessica Shepard": {
+          "line": 31.5,
+          "FD": {
+            "line": 31.5,
+            "over": -118,
+            "under": -112
+          }
+        }
+      },
+      "player_rebounds": {
+        "Arike Ogunbowale": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Awak Kuier": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -114,
+            "under": -114
+          },
+          "CZS": {
+            "line": 6.5,
+            "over": -121,
+            "under": -110
+          }
+        },
+        "Paige Bueckers": {
+          "line": 3.5,
+          "FD": {
+            "line": 4.5,
+            "over": 138,
+            "under": -186
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -152,
+            "under": 114
+          }
+        },
+        "Jessica Shepard": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -140,
+            "under": 106
+          },
+          "CZS": {
+            "line": 10.5,
+            "over": -137,
+            "under": 104
+          }
+        },
+        "Nneka Ogwumike": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -108,
+            "under": -122
+          },
+          "CZS": {
+            "line": 8.5,
+            "over": -110,
+            "under": -121
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Arike Ogunbowale": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": 116,
+            "under": -154
+          }
+        },
+        "Paige Bueckers": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Jessica Shepard": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Nneka Ogwumike": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -114,
+            "under": -114
+          }
+        }
+      },
+      "player_threes": {
+        "Arike Ogunbowale": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -158,
+            "under": 118
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -170,
+            "under": 126
+          }
+        },
+        "Paige Bueckers": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -140,
+            "under": 106
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -145,
+            "under": 110
+          }
+        },
+        "Awak Kuier": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 140,
+            "under": -188
+          }
+        },
+        "Nneka Ogwumike": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 148,
+            "under": -200
+          }
+        }
+      }
+    },
+    "Las Vegas Aces@Seattle Storm": {
+      "player_assists": {
+        "Dominique Malonga": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "A'ja Wilson": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 114,
+            "under": -152
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 121,
+            "under": -162
+          }
+        },
+        "Jackie Young": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -106,
+            "under": -125
+          },
+          "CZS": {
+            "line": 6.5,
+            "over": -107,
+            "under": -125
+          }
+        },
+        "Chelsea Gray": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -114,
+            "under": -114
+          },
+          "CZS": {
+            "line": 6.5,
+            "over": -114,
+            "under": -117
+          }
+        }
+      },
+      "player_points": {
+        "A'ja Wilson": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -120,
+            "under": -106
+          },
+          "CZS": {
+            "line": 25.5,
+            "over": -122,
+            "under": -109
+          }
+        },
+        "Dominique Malonga": {
+          "line": 18.5,
+          "FD": {
+            "line": 18.5,
+            "over": -115,
+            "under": -114
+          },
+          "CZS": {
+            "line": 18.5,
+            "over": -118,
+            "under": -113
+          }
+        },
+        "Chelsea Gray": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -110,
+            "under": -118
+          },
+          "CZS": {
+            "line": 11.5,
+            "over": -109,
+            "under": -122
+          }
+        },
+        "Jackie Young": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -122,
+            "under": -106
+          },
+          "CZS": {
+            "line": 20.5,
+            "over": -124,
+            "under": -108
+          }
+        }
+      },
+      "player_points_assists": {
+        "Jackie Young": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "A'ja Wilson": {
+          "line": 29.5,
+          "FD": {
+            "line": 29.5,
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Dominique Malonga": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Chelsea Gray": {
+          "line": 18.5,
+          "FD": {
+            "line": 18.5,
+            "over": -106,
+            "under": -125
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "A'ja Wilson": {
+          "line": 35.5,
+          "FD": {
+            "line": 35.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Dominique Malonga": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Chelsea Gray": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Jackie Young": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -122,
+            "under": -108
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Dominique Malonga": {
+          "line": 29.5,
+          "FD": {
+            "line": 29.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Jackie Young": {
+          "line": 32.5,
+          "FD": {
+            "line": 32.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Chelsea Gray": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "A'ja Wilson": {
+          "line": 38.5,
+          "FD": {
+            "line": 38.5,
+            "over": -122,
+            "under": -108
+          }
+        }
+      },
+      "player_rebounds": {
+        "A'ja Wilson": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -114,
+            "under": -114
+          },
+          "CZS": {
+            "line": 9.5,
+            "over": -114,
+            "under": -117
+          }
+        },
+        "Dominique Malonga": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -110,
+            "under": -120
+          },
+          "CZS": {
+            "line": 9.5,
+            "over": -105,
+            "under": -127
+          }
+        },
+        "Chelsea Gray": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 134,
+            "under": -180
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 113,
+            "under": -150
+          }
+        },
+        "Jackie Young": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": -140,
+            "under": 106
+          },
+          "CZS": {
+            "line": 4.5,
+            "over": -129,
+            "under": -104
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Dominique Malonga": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": 104,
+            "under": -138
+          }
+        },
+        "A'ja Wilson": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Jackie Young": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Chelsea Gray": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -128,
+            "under": -104
+          }
+        }
+      },
+      "player_threes": {
+        "Dominique Malonga": {
+          "line": 0.5,
+          "FD": {
+            "line": 0.5,
+            "over": -188,
+            "under": 140
+          }
+        },
+        "Jackie Young": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -125,
+            "under": -106
+          },
+          "CZS": {
+            "line": 2.5,
+            "over": -132,
+            "under": -102
+          }
+        },
+        "Chelsea Gray": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 100,
+            "under": -132
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": 103,
+            "under": -137
+          }
+        },
+        "A'ja Wilson": {
+          "line": 0.5,
+          "FD": {
+            "line": 0.5,
+            "over": -250,
+            "under": 182
+          }
+        }
+      }
+    },
+    "Phoenix Mercury@Portland Fire": {},
+    "Indiana Fever@Toronto Tempo": {
+      "player_assists": {
+        "Kelsey Mitchell": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -158,
+            "under": 118
+          }
+        },
+        "Aliyah Boston": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 146,
+            "under": -198
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 132,
+            "under": -179
+          }
+        },
+        "Caitlin Clark": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": 116,
+            "under": -154
+          },
+          "CZS": {
+            "line": 9.5,
+            "over": 109,
+            "under": -145
+          }
+        }
+      },
+      "player_points": {
+        "Makayla Timpson": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -110,
+            "under": -118
+          },
+          "CZS": {
+            "line": 8.5,
+            "over": -112,
+            "under": -120
+          }
+        },
+        "Kelsey Mitchell": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -118,
+            "under": -110
+          },
+          "CZS": {
+            "line": 25.5,
+            "over": -115,
+            "under": -115
+          }
+        },
+        "Caitlin Clark": {
+          "line": 22.5,
+          "FD": {
+            "line": 23.5,
+            "over": 100,
+            "under": -130
+          },
+          "CZS": {
+            "line": 22.5,
+            "over": -124,
+            "under": -108
+          }
+        },
+        "Aliyah Boston": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -118,
+            "under": -110
+          },
+          "CZS": {
+            "line": 16.5,
+            "over": -117,
+            "under": -114
+          }
+        }
+      },
+      "player_points_assists": {
+        "Kelsey Mitchell": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Aliyah Boston": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Caitlin Clark": {
+          "line": 32.5,
+          "FD": {
+            "line": 32.5,
+            "over": -104,
+            "under": -128
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Makayla Timpson": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -110,
+            "under": -122
+          }
+        },
+        "Aliyah Boston": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Kelsey Mitchell": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Caitlin Clark": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -130,
+            "under": -102
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Caitlin Clark": {
+          "line": 36.5,
+          "FD": {
+            "line": 36.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Kelsey Mitchell": {
+          "line": 30.5,
+          "FD": {
+            "line": 30.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Aliyah Boston": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -130,
+            "under": -102
+          }
+        }
+      },
+      "player_rebounds": {
+        "Makayla Timpson": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": -118,
+            "under": -112
+          },
+          "CZS": {
+            "line": 7.5,
+            "over": -130,
+            "under": -104
+          }
+        },
+        "Kelsey Mitchell": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -188,
+            "under": 140
+          }
+        },
+        "Aliyah Boston": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": -128,
+            "under": -104
+          },
+          "CZS": {
+            "line": 8.5,
+            "over": -132,
+            "under": -102
+          }
+        },
+        "Caitlin Clark": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -154,
+            "under": 116
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -152,
+            "under": 115
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Kelsey Mitchell": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": -154,
+            "under": 116
+          }
+        },
+        "Caitlin Clark": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": -138,
+            "under": 104
+          }
+        },
+        "Aliyah Boston": {
+          "line": 12.5,
+          "FD": {
+            "line": 12.5,
+            "over": 106,
+            "under": -140
+          }
+        }
+      },
+      "player_threes": {
+        "Kelsey Mitchell": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 138,
+            "under": -186
+          }
+        },
+        "Caitlin Clark": {
+          "line": 3.5,
+          "FD": {
+            "line": 2.5,
+            "over": -188,
+            "under": 140
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 131,
+            "under": -176
+          }
+        }
+      }
+    },
+    "New York Liberty@Minnesota Lynx": {
+      "player_assists": {
+        "Jonquel Jones": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 120,
+            "under": -160
+          }
+        },
+        "Breanna Stewart": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 118,
+            "under": -158
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 116,
+            "under": -157
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 5.5,
+          "FD": {
+            "line": 4.5,
+            "over": -154,
+            "under": 116
+          },
+          "CZS": {
+            "line": 5.5,
+            "over": 122,
+            "under": -164
+          }
+        },
+        "Courtney Williams": {
+          "line": 3.5,
+          "FD": {
+            "line": 4.5,
+            "over": 138,
+            "under": -186
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -164,
+            "under": 122
+          }
+        },
+        "Napheesa Collier": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 118,
+            "under": -158
+          }
+        },
+        "Olivia Miles": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -108,
+            "under": -122
+          },
+          "CZS": {
+            "line": 6.5,
+            "over": -105,
+            "under": -127
+          }
+        }
+      },
+      "player_points": {
+        "Courtney Williams": {
+          "line": 11.5,
+          "FD": {
+            "line": 12.5,
+            "over": -104,
+            "under": -125
+          },
+          "CZS": {
+            "line": 11.5,
+            "over": -136,
+            "under": 102
+          }
+        },
+        "Jonquel Jones": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -104,
+            "under": -125
+          },
+          "CZS": {
+            "line": 14.5,
+            "over": -108,
+            "under": -124
+          }
+        },
+        "Breanna Stewart": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -110,
+            "under": -118
+          },
+          "CZS": {
+            "line": 19.5,
+            "over": -118,
+            "under": -113
+          }
+        },
+        "Kayla McBride": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": 104,
+            "under": -135
+          },
+          "CZS": {
+            "line": 17.5,
+            "over": -102,
+            "under": -132
+          }
+        },
+        "Olivia Miles": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -113,
+            "under": -118
+          },
+          "CZS": {
+            "line": 19.5,
+            "over": -109,
+            "under": -122
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 15.5,
+          "FD": {
+            "line": 15.5,
+            "over": -110,
+            "under": -118
+          },
+          "CZS": {
+            "line": 15.5,
+            "over": -109,
+            "under": -122
+          }
+        },
+        "Napheesa Collier": {
+          "line": 17.5,
+          "FD": {
+            "line": 18.5,
+            "over": -106,
+            "under": -120
+          },
+          "CZS": {
+            "line": 17.5,
+            "over": -129,
+            "under": -105
+          }
+        }
+      },
+      "player_points_assists": {
+        "Breanna Stewart": {
+          "line": 22.5,
+          "FD": {
+            "line": 22.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Jonquel Jones": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Kayla McBride": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -102,
+            "under": -130
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Napheesa Collier": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Courtney Williams": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Olivia Miles": {
+          "line": 26.5,
+          "FD": {
+            "line": 26.5,
+            "over": -102,
+            "under": -130
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Breanna Stewart": {
+          "line": 27.5,
+          "FD": {
+            "line": 27.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Jonquel Jones": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Olivia Miles": {
+          "line": 23.5,
+          "FD": {
+            "line": 23.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Courtney Williams": {
+          "line": 16.5,
+          "FD": {
+            "line": 16.5,
+            "over": -110,
+            "under": -120
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 19.5,
+          "FD": {
+            "line": 19.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Napheesa Collier": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -122,
+            "under": -108
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Breanna Stewart": {
+          "line": 30.5,
+          "FD": {
+            "line": 30.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Jonquel Jones": {
+          "line": 25.5,
+          "FD": {
+            "line": 25.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Kayla McBride": {
+          "line": 21.5,
+          "FD": {
+            "line": 21.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Olivia Miles": {
+          "line": 30.5,
+          "FD": {
+            "line": 30.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Napheesa Collier": {
+          "line": 28.5,
+          "FD": {
+            "line": 28.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 24.5,
+          "FD": {
+            "line": 24.5,
+            "over": -120,
+            "under": -110
+          }
+        },
+        "Courtney Williams": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -114,
+            "under": -114
+          }
+        }
+      },
+      "player_rebounds": {
+        "Breanna Stewart": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": -136,
+            "under": 102
+          },
+          "CZS": {
+            "line": 7.5,
+            "over": -145,
+            "under": 109
+          }
+        },
+        "Jonquel Jones": {
+          "line": 9.5,
+          "FD": {
+            "line": 8.5,
+            "over": -144,
+            "under": 108
+          },
+          "CZS": {
+            "line": 9.5,
+            "over": 106,
+            "under": -141
+          }
+        },
+        "Kayla McBride": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Napheesa Collier": {
+          "line": 7.5,
+          "FD": {
+            "line": 7.5,
+            "over": 108,
+            "under": -144
+          },
+          "CZS": {
+            "line": 7.5,
+            "over": 103,
+            "under": -137
+          }
+        },
+        "Olivia Miles": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": 116,
+            "under": -154
+          },
+          "CZS": {
+            "line": 4.5,
+            "over": 108,
+            "under": -145
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 3.5,
+          "FD": {
+            "line": 4.5,
+            "over": 130,
+            "under": -174
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -170,
+            "under": 125
+          }
+        },
+        "Courtney Williams": {
+          "line": 4.5,
+          "FD": {
+            "line": 3.5,
+            "over": -172,
+            "under": 128
+          },
+          "CZS": {
+            "line": 4.5,
+            "over": 123,
+            "under": -164
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Breanna Stewart": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Jonquel Jones": {
+          "line": 11.5,
+          "FD": {
+            "line": 11.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Kayla McBride": {
+          "line": 4.5,
+          "FD": {
+            "line": 4.5,
+            "over": -136,
+            "under": 102
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": 108,
+            "under": -144
+          }
+        },
+        "Napheesa Collier": {
+          "line": 9.5,
+          "FD": {
+            "line": 9.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Courtney Williams": {
+          "line": 8.5,
+          "FD": {
+            "line": 8.5,
+            "over": 108,
+            "under": -144
+          }
+        },
+        "Olivia Miles": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -136,
+            "under": 102
+          }
+        }
+      },
+      "player_threes": {
+        "Kayla McBride": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": -130,
+            "under": -102
+          },
+          "CZS": {
+            "line": 2.5,
+            "over": -148,
+            "under": 110
+          }
+        },
+        "Jonquel Jones": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -132,
+            "under": 100
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -145,
+            "under": 109
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -200,
+            "under": 146
+          }
+        },
+        "Napheesa Collier": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": 102,
+            "under": -136
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -105,
+            "under": -129
+          }
+        },
+        "Olivia Miles": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -136,
+            "under": 102
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -137,
+            "under": 103
+          }
+        }
+      }
+    },
+    "Portland Fire@Golden State Valkyries": {
+      "player_assists": {
+        "Gabby Williams": {
+          "line": 2.5,
+          "FD": {
+            "line": 2.5,
+            "over": 102,
+            "under": -136
+          }
+        },
+        "Veronica Burton": {
+          "line": 6.5,
+          "FD": {
+            "line": 6.5,
+            "over": -122,
+            "under": -108
+          },
+          "CZS": {
+            "line": 6.5,
+            "over": -115,
+            "under": -115
+          }
+        }
+      },
+      "player_points": {
+        "Veronica Burton": {
+          "line": 13.5,
+          "FD": {
+            "line": 13.5,
+            "over": -120,
+            "under": -106
+          },
+          "CZS": {
+            "line": 13.5,
+            "over": -118,
+            "under": -113
+          }
+        },
+        "Gabby Williams": {
+          "line": 14.5,
+          "FD": {
+            "line": 14.5,
+            "over": -114,
+            "under": -114
+          },
+          "CZS": {
+            "line": 14.5,
+            "over": -118,
+            "under": -113
+          }
+        }
+      },
+      "player_points_assists": {
+        "Gabby Williams": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Veronica Burton": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -118,
+            "under": -110
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Gabby Williams": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Veronica Burton": {
+          "line": 17.5,
+          "FD": {
+            "line": 17.5,
+            "over": -114,
+            "under": -114
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Gabby Williams": {
+          "line": 20.5,
+          "FD": {
+            "line": 20.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Veronica Burton": {
+          "line": 24.5,
+          "FD": {
+            "line": 24.5,
+            "over": -118,
+            "under": -112
+          }
+        }
+      },
+      "player_rebounds": {
+        "Gabby Williams": {
+          "line": 3.5,
+          "FD": {
+            "line": 2.5,
+            "over": -180,
+            "under": 134
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 142,
+            "under": -193
+          }
+        },
+        "Veronica Burton": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -138,
+            "under": 104
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -129,
+            "under": -104
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Veronica Burton": {
+          "line": 10.5,
+          "FD": {
+            "line": 10.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Gabby Williams": {
+          "line": 5.5,
+          "FD": {
+            "line": 5.5,
+            "over": -108,
+            "under": -122
+          }
+        }
+      },
+      "player_threes": {
+        "Gabby Williams": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -108,
+            "under": -122
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": -102,
+            "under": -132
+          }
+        },
+        "Veronica Burton": {
+          "line": 1.5,
+          "FD": {
+            "line": 1.5,
+            "over": -106,
+            "under": -125
+          },
+          "CZS": {
+            "line": 1.5,
+            "over": 103,
+            "under": -137
+          }
+        }
+      }
+    }
+  }
+}

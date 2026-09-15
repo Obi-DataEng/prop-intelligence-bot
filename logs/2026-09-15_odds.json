@@ -1,0 +1,3675 @@
+{
+  "date": "2026-09-15",
+  "books": [
+    "FD",
+    "MGM",
+    "CZS",
+    "ESPN"
+  ],
+  "games": [
+    {
+      "id": "9c0b5b3f819915fa2cd982a14186b77d",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Seattle Mariners",
+      "commence_time": "2026-09-15T01:39:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -1600,
+          "ml_away": 750,
+          "spread_home": -1.5,
+          "spread_home_odds": -340,
+          "spread_away": 1.5,
+          "spread_away_odds": 235,
+          "total_line": 10.5,
+          "over_odds": 225,
+          "under_odds": -320
+        },
+        "MGM": {
+          "ml_home": -3000,
+          "ml_away": 1150,
+          "spread_home": -1.5,
+          "spread_home_odds": -800,
+          "spread_away": 1.5,
+          "spread_away_odds": 500,
+          "total_line": 10.5,
+          "over_odds": 475,
+          "under_odds": -750
+        }
+      }
+    },
+    {
+      "id": "d468d51c641b469172b3c59500fa2d49",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Miami Marlins",
+      "commence_time": "2026-09-15T01:41:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 350,
+          "ml_away": -520,
+          "spread_home": 1.5,
+          "spread_home_odds": -440,
+          "spread_away": -1.5,
+          "spread_away_odds": 290,
+          "total_line": 13.5,
+          "over_odds": 104,
+          "under_odds": -138
+        },
+        "CZS": {
+          "ml_home": 320,
+          "ml_away": -450,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": null,
+          "over_odds": null,
+          "under_odds": null
+        },
+        "MGM": {
+          "ml_home": 250,
+          "ml_away": -325,
+          "spread_home": 1.5,
+          "spread_home_odds": -400,
+          "spread_away": -1.5,
+          "spread_away_odds": 280,
+          "total_line": 13.5,
+          "over_odds": -130,
+          "under_odds": 100
+        }
+      }
+    },
+    {
+      "id": "4ee5706290157d66372729e7e70830e8",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Athletics",
+      "commence_time": "2026-09-15T22:40:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": -230,
+          "ml_away": 188,
+          "spread_home": -1.5,
+          "spread_home_odds": 100,
+          "spread_away": 1.5,
+          "spread_away_odds": -118,
+          "total_line": 7.5,
+          "over_odds": -127,
+          "under_odds": 107
+        },
+        "FD": {
+          "ml_home": -225,
+          "ml_away": 188,
+          "spread_home": -1.5,
+          "spread_home_odds": -102,
+          "spread_away": 1.5,
+          "spread_away_odds": -118,
+          "total_line": 7.5,
+          "over_odds": -124,
+          "under_odds": 102
+        },
+        "MGM": {
+          "ml_home": -225,
+          "ml_away": 185,
+          "spread_home": -1.5,
+          "spread_home_odds": 100,
+          "spread_away": 1.5,
+          "spread_away_odds": -120,
+          "total_line": 8.0,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "id": "2f2faff81101f84158c3cfbd630bcb30",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Chicago White Sox",
+      "commence_time": "2026-09-15T22:40:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": -130,
+          "ml_away": 110,
+          "spread_home": -1.5,
+          "spread_home_odds": 158,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "FD": {
+          "ml_home": -126,
+          "ml_away": 108,
+          "spread_home": -1.5,
+          "spread_home_odds": 168,
+          "spread_away": 1.5,
+          "spread_away_odds": -205,
+          "total_line": 8.5,
+          "over_odds": -102,
+          "under_odds": -120
+        },
+        "MGM": {
+          "ml_home": -125,
+          "ml_away": 105,
+          "spread_home": -1.5,
+          "spread_home_odds": 155,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "id": "baa7f738229bf9855e24037a2a30a2cb",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Los Angeles Dodgers",
+      "commence_time": "2026-09-15T22:40:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": 196,
+          "ml_away": -240,
+          "spread_home": 1.5,
+          "spread_home_odds": 115,
+          "spread_away": -1.5,
+          "spread_away_odds": -135,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "FD": {
+          "ml_home": 184,
+          "ml_away": -220,
+          "spread_home": 1.5,
+          "spread_home_odds": 114,
+          "spread_away": -1.5,
+          "spread_away_odds": -137,
+          "total_line": 8.5,
+          "over_odds": -122,
+          "under_odds": 100
+        },
+        "MGM": {
+          "ml_home": 190,
+          "ml_away": -235,
+          "spread_home": 2.5,
+          "spread_home_odds": -140,
+          "spread_away": -2.5,
+          "spread_away_odds": 115,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "e5ea1bb04bd365a0c15838cfb75266f9",
+      "home_team": "Pittsburgh Pirates",
+      "away_team": "Milwaukee Brewers",
+      "commence_time": "2026-09-15T22:41:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": 205,
+          "ml_away": -250,
+          "spread_home": 1.5,
+          "spread_home_odds": 115,
+          "spread_away": -1.5,
+          "spread_away_odds": -138,
+          "total_line": 7.5,
+          "over_odds": -114,
+          "under_odds": -106
+        },
+        "CZS": {
+          "ml_home": 205,
+          "ml_away": -250,
+          "spread_home": 1.5,
+          "spread_home_odds": 115,
+          "spread_away": -1.5,
+          "spread_away_odds": -135,
+          "total_line": 7.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "MGM": {
+          "ml_home": 200,
+          "ml_away": -250,
+          "spread_home": 2.5,
+          "spread_home_odds": -145,
+          "spread_away": -2.5,
+          "spread_away_odds": 118,
+          "total_line": 7.5,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "015394004322ca670004015ae5bd94a3",
+      "home_team": "Washington Nationals",
+      "away_team": "Philadelphia Phillies",
+      "commence_time": "2026-09-15T22:45:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": 175,
+          "ml_away": -210,
+          "spread_home": 1.5,
+          "spread_home_odds": 100,
+          "spread_away": -1.5,
+          "spread_away_odds": -120,
+          "total_line": 8.0,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "FD": {
+          "ml_home": 180,
+          "ml_away": -215,
+          "spread_home": 1.5,
+          "spread_home_odds": 100,
+          "spread_away": -1.5,
+          "spread_away_odds": -120,
+          "total_line": 8.5,
+          "over_odds": 108,
+          "under_odds": -132
+        },
+        "MGM": {
+          "ml_home": 180,
+          "ml_away": -220,
+          "spread_home": 1.5,
+          "spread_home_odds": 100,
+          "spread_away": -1.5,
+          "spread_away_odds": -120,
+          "total_line": 8.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "1ddb6d18eafe93f1947471922f1938ea",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Detroit Tigers",
+      "commence_time": "2026-09-15T23:08:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -134,
+          "ml_away": 114,
+          "spread_home": -1.5,
+          "spread_home_odds": 158,
+          "spread_away": 1.5,
+          "spread_away_odds": -192,
+          "total_line": 8.0,
+          "over_odds": -118,
+          "under_odds": -104
+        },
+        "CZS": {
+          "ml_home": -140,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 158,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "MGM": {
+          "ml_home": -140,
+          "ml_away": 115,
+          "spread_home": -1.5,
+          "spread_home_odds": 155,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 8.5,
+          "over_odds": -102,
+          "under_odds": -118
+        }
+      }
+    },
+    {
+      "id": "a1a608b633419833caf64ad8739781f3",
+      "home_team": "New York Mets",
+      "away_team": "Baltimore Orioles",
+      "commence_time": "2026-09-15T23:10:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": -129,
+          "ml_away": 109,
+          "spread_home": -1.5,
+          "spread_home_odds": 163,
+          "spread_away": 1.5,
+          "spread_away_odds": -197,
+          "total_line": 7.5,
+          "over_odds": -127,
+          "under_odds": 107
+        },
+        "FD": {
+          "ml_home": -130,
+          "ml_away": 110,
+          "spread_home": -1.5,
+          "spread_home_odds": 168,
+          "spread_away": 1.5,
+          "spread_away_odds": -205,
+          "total_line": 8.5,
+          "over_odds": 110,
+          "under_odds": -134
+        },
+        "MGM": {
+          "ml_home": -135,
+          "ml_away": 110,
+          "spread_home": -1.5,
+          "spread_home_odds": 155,
+          "spread_away": 1.5,
+          "spread_away_odds": -190,
+          "total_line": 8.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "256d7de8ceb3804256d260a74263d82c",
+      "home_team": "Chicago Cubs",
+      "away_team": "Atlanta Braves",
+      "commence_time": "2026-09-15T23:40:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": -140,
+          "ml_away": 118,
+          "spread_home": -1.5,
+          "spread_home_odds": 143,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "FD": {
+          "ml_home": -136,
+          "ml_away": 116,
+          "spread_home": -1.5,
+          "spread_home_odds": 158,
+          "spread_away": 1.5,
+          "spread_away_odds": -192,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "ml_home": -145,
+          "ml_away": 118,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "f367b112dcb4fea1a4ff67e49ee1f0cd",
+      "home_team": "Minnesota Twins",
+      "away_team": "New York Yankees",
+      "commence_time": "2026-09-15T23:40:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": 150,
+          "ml_away": -178,
+          "spread_home": 1.5,
+          "spread_home_odds": -115,
+          "spread_away": -1.5,
+          "spread_away_odds": -105,
+          "total_line": 7.5,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "FD": {
+          "ml_home": 140,
+          "ml_away": -166,
+          "spread_home": 1.5,
+          "spread_home_odds": -118,
+          "spread_away": -1.5,
+          "spread_away_odds": -102,
+          "total_line": 7.5,
+          "over_odds": -118,
+          "under_odds": -104
+        },
+        "MGM": {
+          "ml_home": 145,
+          "ml_away": -175,
+          "spread_home": null,
+          "spread_home_odds": null,
+          "spread_away": null,
+          "spread_away_odds": null,
+          "total_line": 7.5,
+          "over_odds": -120,
+          "under_odds": 100
+        }
+      }
+    },
+    {
+      "id": "15c9ca42142414287f11247c92905d9f",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "San Francisco Giants",
+      "commence_time": "2026-09-15T23:45:00Z",
+      "odds_by_book": {
+        "FD": {
+          "ml_home": -162,
+          "ml_away": 136,
+          "spread_home": -1.5,
+          "spread_home_odds": 134,
+          "spread_away": 1.5,
+          "spread_away_odds": -162,
+          "total_line": 8.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "CZS": {
+          "ml_home": -165,
+          "ml_away": 140,
+          "spread_home": -1.5,
+          "spread_home_odds": 130,
+          "spread_away": 1.5,
+          "spread_away_odds": -155,
+          "total_line": 8.5,
+          "over_odds": 100,
+          "under_odds": -120
+        },
+        "MGM": {
+          "ml_home": -165,
+          "ml_away": 140,
+          "spread_home": -1.5,
+          "spread_home_odds": 135,
+          "spread_away": 1.5,
+          "spread_away_odds": -160,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "8cac5435079f2d8d51adb91e7950bb26",
+      "home_team": "Houston Astros",
+      "away_team": "Kansas City Royals",
+      "commence_time": "2026-09-16T00:10:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": -162,
+          "ml_away": 136,
+          "spread_home": -1.5,
+          "spread_home_odds": 134,
+          "spread_away": 1.5,
+          "spread_away_odds": -159,
+          "total_line": 7.5,
+          "over_odds": -130,
+          "under_odds": 111
+        },
+        "FD": {
+          "ml_home": -162,
+          "ml_away": 136,
+          "spread_home": -1.5,
+          "spread_home_odds": 138,
+          "spread_away": 1.5,
+          "spread_away_odds": -166,
+          "total_line": 7.5,
+          "over_odds": -134,
+          "under_odds": 110
+        },
+        "MGM": {
+          "ml_home": -170,
+          "ml_away": 140,
+          "spread_home": -1.5,
+          "spread_home_odds": 125,
+          "spread_away": 1.5,
+          "spread_away_odds": -155,
+          "total_line": 8.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "id": "54f473e11bd354c898e74efd34f3f78d",
+      "home_team": "Colorado Rockies",
+      "away_team": "San Diego Padres",
+      "commence_time": "2026-09-16T00:40:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": 170,
+          "ml_away": -205,
+          "spread_home": 1.5,
+          "spread_home_odds": 100,
+          "spread_away": -1.5,
+          "spread_away_odds": -120,
+          "total_line": 11.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "MGM": {
+          "ml_home": 165,
+          "ml_away": -200,
+          "spread_home": 1.5,
+          "spread_home_odds": 105,
+          "spread_away": -1.5,
+          "spread_away_odds": -125,
+          "total_line": 11.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "FD": {
+          "ml_home": 158,
+          "ml_away": -188,
+          "spread_home": 1.5,
+          "spread_home_odds": 112,
+          "spread_away": -1.5,
+          "spread_away_odds": -134,
+          "total_line": 11.5,
+          "over_odds": -105,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "id": "cce625b7dac12280fdb88a6f44058c93",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Seattle Mariners",
+      "commence_time": "2026-09-16T01:38:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": 143,
+          "ml_away": -170,
+          "spread_home": 1.5,
+          "spread_home_odds": -120,
+          "spread_away": -1.5,
+          "spread_away_odds": 100,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "FD": {
+          "ml_home": 140,
+          "ml_away": -166,
+          "spread_home": 1.5,
+          "spread_home_odds": -120,
+          "spread_away": -1.5,
+          "spread_away_odds": 100,
+          "total_line": 8.5,
+          "over_odds": -104,
+          "under_odds": -118
+        },
+        "MGM": {
+          "ml_home": 140,
+          "ml_away": -170,
+          "spread_home": 1.5,
+          "spread_home_odds": -118,
+          "spread_away": -1.5,
+          "spread_away_odds": -102,
+          "total_line": 8.0,
+          "over_odds": -115,
+          "under_odds": -105
+        }
+      }
+    },
+    {
+      "id": "e9344aee4810e4127e69c73c13c781d7",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Miami Marlins",
+      "commence_time": "2026-09-16T01:40:00Z",
+      "odds_by_book": {
+        "CZS": {
+          "ml_home": -155,
+          "ml_away": 130,
+          "spread_home": -1.5,
+          "spread_home_odds": 140,
+          "spread_away": 1.5,
+          "spread_away_odds": -165,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "FD": {
+          "ml_home": -146,
+          "ml_away": 124,
+          "spread_home": -1.5,
+          "spread_home_odds": 146,
+          "spread_away": 1.5,
+          "spread_away_odds": -178,
+          "total_line": 8.5,
+          "over_odds": -118,
+          "under_odds": -104
+        },
+        "MGM": {
+          "ml_home": -150,
+          "ml_away": 125,
+          "spread_home": -1.5,
+          "spread_home_odds": 140,
+          "spread_away": 1.5,
+          "spread_away_odds": -170,
+          "total_line": 8.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    }
+  ],
+  "player_props": {
+    "Seattle Mariners@Los Angeles Angels": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 280,
+          "pick": "Cal Raleigh",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Mike Trout",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Randy Arozarena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Zach Neto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Dominic Canzone",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Julio Rodriguez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Jose Siri",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Lazaro Montes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Josh Lowe",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Cole Young",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Brock Rodden",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Christian Moore",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Moises Ballesteros",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Denzer Guzman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Vaughn Grissom",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "J.P. Crawford",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Josh Naylor",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Wade Meckler",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Jose Siri",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Jose Siri",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Dominic Canzone",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Dominic Canzone",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Mike Trout",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Mike Trout",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Lazaro Montes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Lazaro Montes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Julio Rodriguez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Julio Rodriguez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Randy Arozarena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Randy Arozarena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Josh Lowe",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Josh Lowe",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 2000,
+          "pick": "Cal Raleigh",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 280,
+          "pick": "Cal Raleigh",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Zach Neto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Zach Neto",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 137,
+          "pick": "Cole Young",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -190,
+          "pick": "Cole Young",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 139,
+          "pick": "J.P. Crawford",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -190,
+          "pick": "J.P. Crawford",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 118,
+          "pick": "Cal Raleigh",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -157,
+          "pick": "Cal Raleigh",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 136,
+          "pick": "Josh Naylor",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -182,
+          "pick": "Josh Naylor",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 117,
+          "pick": "Randy Arozarena",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -157,
+          "pick": "Randy Arozarena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 119,
+          "pick": "Dominic Canzone",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -159,
+          "pick": "Dominic Canzone",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 121,
+          "pick": "Julio Rodriguez",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -162,
+          "pick": "Julio Rodriguez",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 4.5,
+          "odds": 118,
+          "pick": "Ryan Johnson",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 4.5,
+          "odds": -150,
+          "pick": "Ryan Johnson",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 6.5,
+          "odds": -113,
+          "pick": "Logan Gilbert",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 6.5,
+          "odds": -113,
+          "pick": "Logan Gilbert",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "Miami Marlins@Arizona Diamondbacks": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 2.5,
+          "odds": -111,
+          "pick": "Janson Junk",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 2.5,
+          "odds": -115,
+          "pick": "Janson Junk",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 4.5,
+          "odds": 112,
+          "pick": "Michael Soroka",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 4.5,
+          "odds": -142,
+          "pick": "Michael Soroka",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "Athletics@Tampa Bay Rays": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 280,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Victor Mesa Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 475,
+          "pick": "Shea Langeliers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 475,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Zack Gelof",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Lawrence Butler",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Jorge Mateo",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Liam Hicks",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Jeff McNeil",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Richie Palacios",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Carlos Cortes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Jonah Heim",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Chandler Simpson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 5500,
+          "pick": "Shea Langeliers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 475,
+          "pick": "Shea Langeliers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Victor Mesa Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Victor Mesa Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 475,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 5500,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 280,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 2200,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Cedric Mullins",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 121,
+          "pick": "Victor Mesa Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -162,
+          "pick": "Victor Mesa Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 122,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -164,
+          "pick": "Jonathan Aranda",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 142,
+          "pick": "Chandler Simpson",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -193,
+          "pick": "Chandler Simpson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 101,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -134,
+          "pick": "Junior Caminero",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 101,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -134,
+          "pick": "Yandy Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 131,
+          "pick": "Jeff McNeil",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -176,
+          "pick": "Jeff McNeil",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Chicago White Sox@Cleveland Guardians": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Los Angeles Dodgers@Cincinnati Reds": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 330,
+          "pick": "Will Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 330,
+          "pick": "Max Muncy",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Teoscar Hernandez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Mookie Betts",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Kyle Tucker",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Elly De La Cruz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Eugenio Suarez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Sal Stewart",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Tommy Edman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "JJ Bleday",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Josue De Paula",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Alex Freeland",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Matt McLain",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Hector Rodriguez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Ke'Bryan Hayes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Carlos Jorge",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Elly De La Cruz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Elly De La Cruz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Mookie Betts",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Mookie Betts",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3000,
+          "pick": "Max Muncy",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 330,
+          "pick": "Max Muncy",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Sal Stewart",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Sal Stewart",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Tommy Edman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Tommy Edman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Kyle Tucker",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Kyle Tucker",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3000,
+          "pick": "Will Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 330,
+          "pick": "Will Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "JJ Bleday",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 5500,
+          "pick": "JJ Bleday",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Teoscar Hernandez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Teoscar Hernandez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Eugenio Suarez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Eugenio Suarez",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": -108,
+          "pick": "Mookie Betts",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -124,
+          "pick": "Mookie Betts",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 112,
+          "pick": "Max Muncy",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -150,
+          "pick": "Max Muncy",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 131,
+          "pick": "Sal Stewart",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -176,
+          "pick": "Sal Stewart",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 116,
+          "pick": "Kyle Tucker",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -154,
+          "pick": "Kyle Tucker",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 105,
+          "pick": "Tommy Edman",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -139,
+          "pick": "Tommy Edman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 102,
+          "pick": "Will Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -136,
+          "pick": "Will Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 110,
+          "pick": "Teoscar Hernandez",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -148,
+          "pick": "Teoscar Hernandez",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 6.5,
+          "odds": -166,
+          "pick": "Yoshinobu Yamamoto",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 6.5,
+          "odds": 130,
+          "pick": "Yoshinobu Yamamoto",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 3.5,
+          "odds": -120,
+          "pick": "Rhett Lowder",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 3.5,
+          "odds": -106,
+          "pick": "Rhett Lowder",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "Milwaukee Brewers@Pittsburgh Pirates": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Jake Bauers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Jackson Chourio",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Brice Turang",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Christian Yelich",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Oneil Cruz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Brandon Lowe",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Garrett Mitchell",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Ryan O'Hearn",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "William Contreras",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Cooper Pratt",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Bryan Reynolds",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Rafael Flores",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Spencer Horwitz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Sal Frelick",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1500,
+          "pick": "Nick Gonzales",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Jake Bauers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Jake Bauers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Jackson Chourio",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Jackson Chourio",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 127,
+          "pick": "William Contreras",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -170,
+          "pick": "William Contreras",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 101,
+          "pick": "Jackson Chourio",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -134,
+          "pick": "Jackson Chourio",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 117,
+          "pick": "Brice Turang",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -157,
+          "pick": "Brice Turang",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 131,
+          "pick": "Christian Yelich",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -176,
+          "pick": "Christian Yelich",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 7.5,
+          "odds": -132,
+          "pick": "Jacob Misiorowski",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 7.5,
+          "odds": 104,
+          "pick": "Jacob Misiorowski",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "Philadelphia Phillies@Washington Nationals": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 330,
+          "pick": "Kyle Schwarber",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Bryce Harper",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "James Wood",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Trea Turner",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Alec Bohm",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Andrés Chaparro",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Edmundo Sosa",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Dylan Crews",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "J.T. Realmuto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Derek Hill",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "CJ Abrams",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Brady House",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Yohandy Morales",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Harry Ford",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Bryson Stott",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Luis Arraez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1500,
+          "pick": "Jacob Young",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 2000,
+          "pick": "Jorbit Vivas",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 330,
+          "pick": "Kyle Schwarber",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3000,
+          "pick": "Kyle Schwarber",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Bryce Harper",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Bryce Harper",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "James Wood",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "James Wood",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 126,
+          "pick": "Bryce Harper",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -170,
+          "pick": "Bryce Harper",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 123,
+          "pick": "Kyle Schwarber",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -164,
+          "pick": "Kyle Schwarber",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 119,
+          "pick": "Luis Arraez",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -159,
+          "pick": "Luis Arraez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 105,
+          "pick": "Trea Turner",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -139,
+          "pick": "Trea Turner",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 136,
+          "pick": "Dylan Crews",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -182,
+          "pick": "Dylan Crews",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 116,
+          "pick": "Alec Bohm",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -154,
+          "pick": "Alec Bohm",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 6.5,
+          "odds": 100,
+          "pick": "Cristopher Sanchez",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 6.5,
+          "odds": -128,
+          "pick": "Cristopher Sanchez",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 3.5,
+          "odds": -132,
+          "pick": "Jackson Kent",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 3.5,
+          "odds": 104,
+          "pick": "Jackson Kent",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "Detroit Tigers@Toronto Blue Jays": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Kazuma Okamoto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "George Springer",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Alejandro Kirk",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Vladimir Guerrero Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Brett Bateman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Josh Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Ernie Clement",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Nathan Lukes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Andres Gimenez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Kazuma Okamoto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 5500,
+          "pick": "Kazuma Okamoto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "George Springer",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "George Springer",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 135,
+          "pick": "Vladimir Guerrero Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -182,
+          "pick": "Vladimir Guerrero Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 123,
+          "pick": "Brett Bateman",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -164,
+          "pick": "Brett Bateman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 124,
+          "pick": "George Springer",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -170,
+          "pick": "George Springer",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 131,
+          "pick": "Alejandro Kirk",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -176,
+          "pick": "Alejandro Kirk",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 138,
+          "pick": "Nathan Lukes",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -190,
+          "pick": "Nathan Lukes",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Baltimore Orioles@New York Mets": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 305,
+          "pick": "Pete Alonso",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Juan Soto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Coby Mayo",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Gunnar Henderson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Christian Encarnacion-Strand",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Francisco Lindor",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Jared Young",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Leody Taveras",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Jackson Holliday",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Brett Baty",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Carson Benge",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 750,
+          "pick": "Carlos Narvaez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Bo Bichette",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Marcus Semien",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Francisco Lindor",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Francisco Lindor",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Juan Soto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3300,
+          "pick": "Juan Soto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Gunnar Henderson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Gunnar Henderson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Coby Mayo",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Coby Mayo",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 2500,
+          "pick": "Pete Alonso",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 305,
+          "pick": "Pete Alonso",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Jared Young",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Jared Young",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Christian Encarnacion-Strand",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Christian Encarnacion-Strand",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 133,
+          "pick": "Francisco Lindor",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -179,
+          "pick": "Francisco Lindor",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 138,
+          "pick": "Carson Benge",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -190,
+          "pick": "Carson Benge",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 113,
+          "pick": "Pete Alonso",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -150,
+          "pick": "Pete Alonso",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 122,
+          "pick": "Juan Soto",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -164,
+          "pick": "Juan Soto",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 131,
+          "pick": "Bo Bichette",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -176,
+          "pick": "Bo Bichette",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Atlanta Braves@Chicago Cubs": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Pete Crow-Armstrong",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Matt Olson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Ronald Acuna Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Seiya Suzuki",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Drake Baldwin",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Austin Riley",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Michael Harris II",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Michael Busch",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Alex Bregman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Sean Murphy",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Carson Kelly",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Ozzie Albies",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Mike Yastrzemski",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Mauricio Dubon",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Nico Hoerner",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 5500,
+          "pick": "Michael Busch",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Michael Busch",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Carson Kelly",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Carson Kelly",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Matt Olson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3300,
+          "pick": "Matt Olson",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Pete Crow-Armstrong",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3300,
+          "pick": "Pete Crow-Armstrong",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Alex Bregman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Alex Bregman",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 400,
+          "pick": "Seiya Suzuki",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Seiya Suzuki",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Austin Riley",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Austin Riley",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Drake Baldwin",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 5500,
+          "pick": "Drake Baldwin",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Michael Harris II",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Michael Harris II",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 390,
+          "pick": "Ronald Acuna Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4000,
+          "pick": "Ronald Acuna Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Sean Murphy",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Sean Murphy",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 142,
+          "pick": "Ozzie Albies",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -193,
+          "pick": "Ozzie Albies",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 144,
+          "pick": "Mauricio Dubon",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -197,
+          "pick": "Mauricio Dubon",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 119,
+          "pick": "Ronald Acuna Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -159,
+          "pick": "Ronald Acuna Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 110,
+          "pick": "Michael Harris II",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -148,
+          "pick": "Michael Harris II",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 123,
+          "pick": "Drake Baldwin",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -164,
+          "pick": "Drake Baldwin",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 117,
+          "pick": "Matt Olson",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -157,
+          "pick": "Matt Olson",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 5.5,
+          "odds": -108,
+          "pick": "Kevin Gausman",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 5.5,
+          "odds": -118,
+          "pick": "Kevin Gausman",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 3.5,
+          "odds": -102,
+          "pick": "Martin Perez",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 3.5,
+          "odds": -125,
+          "pick": "Martin Perez",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "New York Yankees@Minnesota Twins": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 305,
+          "pick": "Ben Rice",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Spencer Jones",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Royce Lewis",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Ryan McMahon",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Ryan Jeffers",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Josh Bell",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "George Lombard Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Brooks Lee",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Luke Keaschall",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Kaelen Culpepper",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1300,
+          "pick": "Austin Martin",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 3300,
+          "pick": "Spencer Jones",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 350,
+          "pick": "Spencer Jones",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Royce Lewis",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Royce Lewis",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Ryan McMahon",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Ryan McMahon",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 305,
+          "pick": "Ben Rice",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 2500,
+          "pick": "Ben Rice",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 107,
+          "pick": "Cody Bellinger",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -143,
+          "pick": "Cody Bellinger",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": -110,
+          "pick": "Ben Rice",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -121,
+          "pick": "Ben Rice",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 4.5,
+          "odds": -150,
+          "pick": "Max Fried",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 4.5,
+          "odds": 118,
+          "pick": "Max Fried",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 4.5,
+          "odds": 130,
+          "pick": "Bailey Ober",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 4.5,
+          "odds": -166,
+          "pick": "Bailey Ober",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "San Francisco Giants@St. Louis Cardinals": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    },
+    "Kansas City Royals@Houston Astros": {
+      "hr": [
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 265,
+          "pick": "Yordan Alvarez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Christian Walker",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Carter Jensen",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Isaac Paredes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Bobby Witt Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Jac Caglianone",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Jeremy Pena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Taylor Trammell",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Vinnie Pasquantino",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Salvador Perez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Yainer Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Cam Smith",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 625,
+          "pick": "Jose Altuve",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 700,
+          "pick": "Daulton Varsho",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 850,
+          "pick": "Michael Massey",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Nick Loftin",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 950,
+          "pick": "Isaac Collins",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 1100,
+          "pick": "Kyle Isbel",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Jac Caglianone",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Jac Caglianone",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Taylor Trammell",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Taylor Trammell",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Christian Walker",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Christian Walker",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 425,
+          "pick": "Carter Jensen",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 4500,
+          "pick": "Carter Jensen",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 525,
+          "pick": "Jeremy Pena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 7000,
+          "pick": "Jeremy Pena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Salvador Perez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Salvador Perez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 2000,
+          "pick": "Yordan Alvarez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 265,
+          "pick": "Yordan Alvarez",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 8000,
+          "pick": "Vinnie Pasquantino",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 575,
+          "pick": "Vinnie Pasquantino",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 5500,
+          "pick": "Isaac Paredes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Isaac Paredes",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 0.5,
+          "odds": 500,
+          "pick": "Bobby Witt Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 6000,
+          "pick": "Bobby Witt Jr.",
+          "book": "CZS"
+        }
+      ],
+      "hits": [],
+      "total_bases": [
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 120,
+          "pick": "Jeremy Pena",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -162,
+          "pick": "Jeremy Pena",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 138,
+          "pick": "Jose Altuve",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -190,
+          "pick": "Jose Altuve",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 125,
+          "pick": "Yainer Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -170,
+          "pick": "Yainer Diaz",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": 131,
+          "pick": "Bobby Witt Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -176,
+          "pick": "Bobby Witt Jr.",
+          "book": "CZS"
+        },
+        {
+          "player": "Over",
+          "line": 1.5,
+          "odds": -104,
+          "pick": "Yordan Alvarez",
+          "book": "CZS"
+        },
+        {
+          "player": "Under",
+          "line": 1.5,
+          "odds": -130,
+          "pick": "Yordan Alvarez",
+          "book": "CZS"
+        }
+      ],
+      "pitcher_k": [
+        {
+          "player": "Over",
+          "line": 4.5,
+          "odds": -122,
+          "pick": "Michael Wacha",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 4.5,
+          "odds": -104,
+          "pick": "Michael Wacha",
+          "book": "FD"
+        },
+        {
+          "player": "Over",
+          "line": 5.5,
+          "odds": -130,
+          "pick": "Hunter Brown",
+          "book": "FD"
+        },
+        {
+          "player": "Under",
+          "line": 5.5,
+          "odds": 102,
+          "pick": "Hunter Brown",
+          "book": "FD"
+        }
+      ],
+      "batter_k": []
+    },
+    "San Diego Padres@Colorado Rockies": {
+      "hr": [],
+      "hits": [],
+      "total_bases": [],
+      "pitcher_k": [],
+      "batter_k": []
+    }
+  }
+}
