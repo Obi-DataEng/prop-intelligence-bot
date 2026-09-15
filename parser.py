@@ -106,6 +106,70 @@ def parse_ou(value: Optional[str]) -> tuple[Optional[str], Optional[float]]:
     return side, first_number(value)
 
 
+CONSENSUS_CARD_RE = re.compile(
+    r"(?ms)^([A-Z]{2,4})\s+\(([^)]*)\)\s*\n\s*"
+    r"\((\d+-\d+)\).*?^vs\s*$\s*\n\s*"
+    r"([A-Z]{2,4})\s+\(([^)]*)\)\s*\n\s*"
+    r"\((\d+-\d+)\).*?^Winner:\s*([A-Z]{2,4})"
+    r"(?:\s+([+-]?\d+))?\s*$"
+)
+
+
+def parse_winner_projection_cards(raw_text: str, source: str = "consensus") -> list[dict[str, Any]]:
+    """Parse PropFinder's current MLB Model/Consensus winner-card layout."""
+    games: list[dict[str, Any]] = []
+    matches = list(CONSENSUS_CARD_RE.finditer(raw_text or ""))
+    for index, match in enumerate(matches):
+        block_end = matches[index + 1].start() if index + 1 < len(matches) else len(raw_text)
+        block = clean_lines(raw_text[match.start():block_end])
+        time_value = next((TIME_RE.search(line).group(1).upper() for line in block if TIME_RE.search(line)), None)
+        home_team, home_price, home_record, away_team, away_price, away_record, winner, winner_price = match.groups()
+        games.append({
+            "home_team": home_team,
+            "away_team": away_team,
+            "home_record": home_record,
+            "away_record": away_record,
+            "home_model_price": first_number(home_price),
+            "away_model_price": first_number(away_price),
+            "model_winner": winner,
+            "model_winner_price": first_number(winner_price or ""),
+            "projection_source": source,
+            "game_time": time_value,
+            "home_proj_runs": None,
+            "away_proj_runs": None,
+            "display_order": "home_vs_away",
+            "raw_block": block,
+        })
+    return games
+
+
+def parse_projection_views(section: dict[str, Any]) -> list[dict[str, Any]]:
+    """Merge Model 1, Model 2, and Consensus winner selections by matchup."""
+    views = section.get("views", {}) if isinstance(section, dict) else {}
+    if not views:
+        return parse_projections(full_text_from(section))
+
+    merged: dict[frozenset[str], dict[str, Any]] = {}
+    for source in ("model_1", "model_2", "consensus"):
+        view = views.get(source, {})
+        for game in parse_winner_projection_cards(str(view.get("fullText", "")), source):
+            key = frozenset((game["home_team"], game["away_team"]))
+            record = merged.setdefault(key, dict(game))
+            record[f"{source}_winner"] = game["model_winner"]
+            record[f"{source}_winner_price"] = game["model_winner_price"]
+            if source == "consensus":
+                record.update(game)
+
+    for game in merged.values():
+        winners = [game.get("model_1_winner"), game.get("model_2_winner")]
+        game["model_winner"] = (
+            game.get("consensus_winner")
+            or (winners[0] if winners[0] and winners[0] == winners[1] else None)
+        )
+        game["models_agree"] = bool(winners[0] and winners[0] == winners[1])
+    return list(merged.values())
+
+
 def parse_projections(raw_text: str) -> list[dict[str, Any]]:
     """Parse projection cards from page fullText.
 
@@ -113,6 +177,10 @@ def parse_projections(raw_text: str) -> list[dict[str, Any]]:
     field names are retained for compatibility. Each result also includes
     ``display_order`` so this assumption remains visible downstream.
     """
+    current_cards = parse_winner_projection_cards(raw_text)
+    if current_cards:
+        return current_cards
+
     lines = clean_lines(raw_text)
     games: list[dict[str, Any]] = []
     seen: set[tuple[str, str, str, str]] = set()
@@ -306,13 +374,13 @@ def run_parser(raw_data: dict[str, Any], scrape_date: str) -> dict[str, Any]:
     parsed: dict[str, Any] = {"scrape_date": scrape_date}
 
     if raw_data.get("projections"):
-        parsed["games"] = parse_projections(full_text_from(raw_data["projections"]))
+        parsed["games"] = parse_projection_views(raw_data["projections"])
         print(f"✅ Games parsed: {len(parsed['games'])}")
         for game in parsed["games"][:3]:
             print(
                 f"   {game['home_team']} vs {game['away_team']} | "
                 f"Proj: {game['home_proj_runs']} - {game['away_proj_runs']} | "
-                f"O/U: {game['ou_line']}"
+                f"O/U: {game.get('ou_line', 'market consensus')}"
             )
     else:
         parsed["games"] = []

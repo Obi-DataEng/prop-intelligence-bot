@@ -1230,27 +1230,49 @@ async def scrape_exit_velo(page, url):
 async def scrape_projections(page, url):
     print("\n📄 Scraping projections...")
     await navigate(page, url, 3000)
+    views = {}
 
-    try:
-        await page.get_by_text("CONSENSUS").click()
-        await page.wait_for_timeout(2000)
-        print("   ✅ Switched to CONSENSUS tab")
-    except Exception as e:
-        print(f"   ⚠️ Could not click CONSENSUS: {e}")
+    for label, key in (("Model 1", "model_1"), ("Model 2", "model_2"), ("Consensus", "consensus")):
+        try:
+            tabs = page.get_by_text(label, exact=True)
+            clicked = False
+            for index in range(await tabs.count()):
+                candidate = tabs.nth(index)
+                if await candidate.is_visible():
+                    await candidate.click()
+                    clicked = True
+                    break
+            if not clicked:
+                raise RuntimeError(f"visible {label} tab not found")
+            await page.wait_for_timeout(1800)
+            text = await page.locator("body").inner_text()
+            views[key] = {
+                "label": label,
+                "fullText": text,
+                "game_count": len(re.findall(r"(?m)^Winner:\s*[A-Z]{2,4}", text)),
+            }
+            await page.screenshot(path=f"logs/projections_{key}.png", full_page=True)
+            print(f"   ✅ {label}: {views[key]['game_count']} games found")
+        except Exception as error:
+            print(f"   ⚠️ Could not capture {label}: {type(error).__name__}: {error}")
 
-    await page.screenshot(path="logs/projections.png")
-
-    content = await page.evaluate(
-        """() => ({
-            rows: [],
-            cells: [],
-            fullText: document.body.innerText
-        })"""
-    )
-
-    game_count = content["fullText"].count("Proj Runs") // 2
-    print(f"   ✅ projections: {game_count} games found")
-
+    preferred = views.get("consensus") or views.get("model_1") or views.get("model_2") or {}
+    content = {
+        "rows": [],
+        "cells": [],
+        "views": views,
+        "fullText": preferred.get("fullText", await page.locator("body").inner_text()),
+        "game_count": len({
+            matchup
+            for view in views.values()
+            for matchup in re.findall(
+                r"(?ms)^([A-Z]{2,4})\s+\([^)]*\).*?^vs\s*$.*?^([A-Z]{2,4})\s+\([^)]*\).*?^Winner:",
+                view.get("fullText", ""),
+            )
+        }),
+    }
+    await page.screenshot(path="logs/projections.png", full_page=True)
+    print(f"   ✅ projections: {content['game_count']} unique games found")
     return content
 
 

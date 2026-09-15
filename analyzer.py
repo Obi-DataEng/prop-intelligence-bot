@@ -98,10 +98,13 @@ def build_mlb_lotto_boards(parsed_data, odds_data):
         home = str(game.get("home_team", "")).upper().strip()
         away_runs = _number(game.get("away_proj_runs"))
         home_runs = _number(game.get("home_proj_runs"))
-        if away and home and away_runs is not None and home_runs is not None:
+        if away and home:
             projection_index[frozenset((away, home))] = {
                 "away": away, "home": home,
                 "away_runs": away_runs, "home_runs": home_runs,
+                "model_winner": game.get("model_winner"),
+                "models_agree": game.get("models_agree"),
+                "projection_source": game.get("projection_source"),
             }
 
     spread_board, total_board = [], []
@@ -120,30 +123,36 @@ def build_mlb_lotto_boards(parsed_data, odds_data):
             away_runs = projection["away_runs"] if projection["away"] == away_abbr else projection["home_runs"]
             home_runs = projection["home_runs"] if projection["home"] == home_abbr else projection["away_runs"]
 
-            for team_name, margin, line_key, odds_key in (
-                (away_name, away_runs - home_runs, "spread_away", "spread_away_odds"),
-                (home_name, home_runs - away_runs, "spread_home", "spread_home_odds"),
+            for team_name, team_abbr, line_key, odds_key in (
+                (away_name, away_abbr, "spread_away", "spread_away_odds"),
+                (home_name, home_abbr, "spread_home", "spread_home_odds"),
             ):
+                if projection.get("model_winner") and team_abbr != projection["model_winner"]:
+                    continue
                 line = _number(market.get(line_key))
                 if line is None:
                     continue
-                edge = margin + line
-                spread_options.append((edge, _price(market.get(odds_key)), {
+                margin = None
+                if away_runs is not None and home_runs is not None:
+                    margin = (away_runs - home_runs) if team_abbr == away_abbr else (home_runs - away_runs)
+                edge = (margin + line) if margin is not None else 0.0
+                spread_options.append((line, _price(market.get(odds_key)), {
                     "game": matchup,
                     "selection": f"{team_name} {line:+g}",
                     "team": team_name,
                     "line": line,
                     "best_book": book,
                     "best_odds": market.get(odds_key),
-                    "projected_margin": round(margin, 2),
-                    "model_edge": round(edge, 2),
-                    "confidence": _lotto_grade(edge),
+                    "projected_margin": round(margin, 2) if margin is not None else None,
+                    "model_edge": round(edge, 2) if margin is not None else None,
+                    "model_winner": projection.get("model_winner"),
+                    "confidence": _lotto_grade(edge) if margin is not None else "PropFinder winner lean",
                     "official_pick": False,
                     "track_result": False,
                 }))
 
             total = _number(market.get("total_line"))
-            if total is not None:
+            if total is not None and away_runs is not None and home_runs is not None:
                 projected_total = away_runs + home_runs
                 direction = "Over" if projected_total >= total else "Under"
                 edge = abs(projected_total - total)
@@ -170,6 +179,44 @@ def build_mlb_lotto_boards(parsed_data, odds_data):
             "track_result": False,
         }
         spread_board.append(max(spread_options, key=lambda item: (item[0], item[1]))[2] if spread_options else dict(unavailable))
+
+        # The current PropFinder winner cards no longer publish projected runs.
+        # When that happens, use the no-vig sportsbook consensus for an
+        # entertainment-only O/U lean and label it honestly as market-based.
+        if not total_options:
+            consensus = []
+            for book, market in game.get("odds_by_book", {}).items():
+                total = _number(market.get("total_line")) if isinstance(market, dict) else None
+                over_odds = _number(market.get("over_odds")) if isinstance(market, dict) else None
+                under_odds = _number(market.get("under_odds")) if isinstance(market, dict) else None
+                if total is None or over_odds is None or under_odds is None:
+                    continue
+                over_p, under_p = _american_implied(over_odds), _american_implied(under_odds)
+                denominator = over_p + under_p
+                if denominator:
+                    consensus.append((book, total, over_odds, under_odds, over_p / denominator))
+            if consensus:
+                average_over = sum(item[4] for item in consensus) / len(consensus)
+                direction = "Over" if average_over >= 0.5 else "Under"
+                choices = []
+                for book, total, over_odds, under_odds, _ in consensus:
+                    odds = over_odds if direction == "Over" else under_odds
+                    line_value = -total if direction == "Over" else total
+                    choices.append((line_value, _price(odds), book, total, odds))
+                _, _, book, total, odds = max(choices, key=lambda item: (item[0], item[1]))
+                total_options.append((abs(average_over - 0.5), _price(odds), {
+                    "game": matchup,
+                    "selection": f"{direction} {total:g}",
+                    "over_under": direction,
+                    "line": total,
+                    "best_book": book,
+                    "best_odds": int(odds) if float(odds).is_integer() else odds,
+                    "market_consensus_probability": round((average_over if direction == "Over" else 1 - average_over) * 100, 1),
+                    "model_edge": None,
+                    "confidence": "Consensus market lean",
+                    "official_pick": False,
+                    "track_result": False,
+                }))
         total_board.append(max(total_options, key=lambda item: (item[0], item[1]))[2] if total_options else dict(unavailable))
 
     return spread_board, total_board
@@ -210,14 +257,22 @@ def build_mlb_hr_board(odds_data):
                 player, direction = raw_player, raw_pick
             if not player or direction.lower() in {"under", "no"}:
                 continue
+            line = _number(prop.get("line"))
+            # A standard anytime-HR selection is Over 0.5. Exclude 2+ HR
+            # alternate lines (for example Over 1.5 at +2000).
+            if line is not None and abs(line - 0.5) > 0.001:
+                continue
             odds = _number(prop.get("odds"))
             if odds is None:
                 continue
-            players.setdefault(player, []).append({
+            offer = {
                 "book": prop.get("book"),
                 "odds": int(odds) if odds.is_integer() else odds,
                 "implied": _american_implied(odds),
-            })
+            }
+            existing = players.setdefault(player, [])
+            if not any(item["book"] == offer["book"] and item["odds"] == offer["odds"] for item in existing):
+                existing.append(offer)
 
         if not players:
             board.append({
