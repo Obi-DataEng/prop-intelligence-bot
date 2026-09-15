@@ -9,6 +9,25 @@ load_dotenv()
 
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
+MLB_TEAM_ABBREVIATIONS = {
+    "Arizona Diamondbacks": "ARI", "Atlanta Braves": "ATL",
+    "Baltimore Orioles": "BAL", "Boston Red Sox": "BOS",
+    "Chicago Cubs": "CHC", "Chicago White Sox": "CWS",
+    "Cincinnati Reds": "CIN", "Cleveland Guardians": "CLE",
+    "Colorado Rockies": "COL", "Detroit Tigers": "DET",
+    "Houston Astros": "HOU", "Kansas City Royals": "KC",
+    "Los Angeles Angels": "LAA", "Los Angeles Dodgers": "LAD",
+    "Miami Marlins": "MIA", "Milwaukee Brewers": "MIL",
+    "Minnesota Twins": "MIN", "New York Mets": "NYM",
+    "New York Yankees": "NYY", "Oakland Athletics": "ATH",
+    "Athletics": "ATH", "Sacramento Athletics": "ATH",
+    "Philadelphia Phillies": "PHI", "Pittsburgh Pirates": "PIT",
+    "San Diego Padres": "SD", "San Francisco Giants": "SF",
+    "Seattle Mariners": "SEA", "St. Louis Cardinals": "STL",
+    "Tampa Bay Rays": "TB", "Texas Rangers": "TEX",
+    "Toronto Blue Jays": "TOR", "Washington Nationals": "WSH",
+}
+
 def load_odds(scrape_date):
     filepath = f"logs/{scrape_date}_odds.json"
     if os.path.exists(filepath):
@@ -46,6 +65,189 @@ def format_odds_for_prompt(odds_data):
                         book_odds = [f"{p['book']}:{p['odds']}" for p in props[prop_key] if p['player'] == prop['player'] and p['pick'] == prop['pick']]
                         lines.append(f"    {prop['player']} {prop['pick']} (line:{prop['line']}) | {' | '.join(book_odds)}")
     return '\n'.join(lines)
+
+
+def _number(value):
+    try:
+        return float(str(value).replace("−", "-").replace("+", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def _price(value):
+    number = _number(value)
+    return number if number is not None else -10000
+
+
+def _lotto_grade(edge):
+    edge = abs(float(edge or 0))
+    if edge >= 1.5:
+        return "Strong"
+    if edge >= 0.75:
+        return "Moderate"
+    if edge >= 0.25:
+        return "Lean"
+    return "Forced side"
+
+
+def build_mlb_lotto_boards(parsed_data, odds_data):
+    """Create one model-backed run line and total for every MLB game."""
+    projection_index = {}
+    for game in parsed_data.get("games", []):
+        away = str(game.get("away_team", "")).upper().strip()
+        home = str(game.get("home_team", "")).upper().strip()
+        away_runs = _number(game.get("away_proj_runs"))
+        home_runs = _number(game.get("home_proj_runs"))
+        if away and home and away_runs is not None and home_runs is not None:
+            projection_index[frozenset((away, home))] = {
+                "away": away, "home": home,
+                "away_runs": away_runs, "home_runs": home_runs,
+            }
+
+    spread_board, total_board = [], []
+    for game in (odds_data or {}).get("games", []):
+        away_name = game.get("away_team", "")
+        home_name = game.get("home_team", "")
+        matchup = f"{away_name} @ {home_name}"
+        away_abbr = MLB_TEAM_ABBREVIATIONS.get(away_name)
+        home_abbr = MLB_TEAM_ABBREVIATIONS.get(home_name)
+        projection = projection_index.get(frozenset((away_abbr, home_abbr)))
+        spread_options, total_options = [], []
+
+        for book, market in game.get("odds_by_book", {}).items():
+            if not isinstance(market, dict) or not projection:
+                continue
+            away_runs = projection["away_runs"] if projection["away"] == away_abbr else projection["home_runs"]
+            home_runs = projection["home_runs"] if projection["home"] == home_abbr else projection["away_runs"]
+
+            for team_name, margin, line_key, odds_key in (
+                (away_name, away_runs - home_runs, "spread_away", "spread_away_odds"),
+                (home_name, home_runs - away_runs, "spread_home", "spread_home_odds"),
+            ):
+                line = _number(market.get(line_key))
+                if line is None:
+                    continue
+                edge = margin + line
+                spread_options.append((edge, _price(market.get(odds_key)), {
+                    "game": matchup,
+                    "selection": f"{team_name} {line:+g}",
+                    "team": team_name,
+                    "line": line,
+                    "best_book": book,
+                    "best_odds": market.get(odds_key),
+                    "projected_margin": round(margin, 2),
+                    "model_edge": round(edge, 2),
+                    "confidence": _lotto_grade(edge),
+                    "official_pick": False,
+                    "track_result": False,
+                }))
+
+            total = _number(market.get("total_line"))
+            if total is not None:
+                projected_total = away_runs + home_runs
+                direction = "Over" if projected_total >= total else "Under"
+                edge = abs(projected_total - total)
+                odds_key = "over_odds" if direction == "Over" else "under_odds"
+                total_options.append((edge, _price(market.get(odds_key)), {
+                    "game": matchup,
+                    "selection": f"{direction} {total:g}",
+                    "over_under": direction,
+                    "line": total,
+                    "best_book": book,
+                    "best_odds": market.get(odds_key),
+                    "projected_total": round(projected_total, 2),
+                    "model_edge": round(edge, 2),
+                    "confidence": _lotto_grade(edge),
+                    "official_pick": False,
+                    "track_result": False,
+                }))
+
+        unavailable = {
+            "game": matchup,
+            "selection": "No verified model/line",
+            "available": False,
+            "official_pick": False,
+            "track_result": False,
+        }
+        spread_board.append(max(spread_options, key=lambda item: (item[0], item[1]))[2] if spread_options else dict(unavailable))
+        total_board.append(max(total_options, key=lambda item: (item[0], item[1]))[2] if total_options else dict(unavailable))
+
+    return spread_board, total_board
+
+
+def _american_implied(odds):
+    odds = _number(odds)
+    if odds is None or odds == 0:
+        return 0.0
+    return (-odds / (-odds + 100)) if odds < 0 else (100 / (odds + 100))
+
+
+def build_mlb_hr_board(odds_data):
+    """Choose one sportsbook-listed home-run hitter from every MLB game."""
+    props_by_game = (odds_data or {}).get("player_props", {})
+    board = []
+    for game in (odds_data or {}).get("games", []):
+        away = game.get("away_team", "")
+        home = game.get("home_team", "")
+        matchup = f"{away} @ {home}"
+        compact_matchup = f"{away}@{home}".replace(" ", "").lower()
+        game_props = {}
+        for key, value in props_by_game.items():
+            if str(key).replace(" ", "").lower() == compact_matchup:
+                game_props = value or {}
+                break
+
+        players = {}
+        for prop in game_props.get("hr", []):
+            if not isinstance(prop, dict):
+                continue
+            raw_player = str(prop.get("player", "")).strip()
+            raw_pick = str(prop.get("pick", "")).strip()
+            direction_words = {"over", "under", "yes", "no"}
+            if raw_player.lower() in direction_words and raw_pick.lower() not in direction_words:
+                player, direction = raw_pick, raw_player
+            else:
+                player, direction = raw_player, raw_pick
+            if not player or direction.lower() in {"under", "no"}:
+                continue
+            odds = _number(prop.get("odds"))
+            if odds is None:
+                continue
+            players.setdefault(player, []).append({
+                "book": prop.get("book"),
+                "odds": int(odds) if odds.is_integer() else odds,
+                "implied": _american_implied(odds),
+            })
+
+        if not players:
+            board.append({
+                "game": matchup,
+                "selection": "No verified home-run market available",
+                "available": False,
+                "official_pick": False,
+                "track_result": False,
+            })
+            continue
+
+        ranked = []
+        for player, offers in players.items():
+            consensus = sum(o["implied"] for o in offers) / len(offers)
+            best = max(offers, key=lambda o: _price(o["odds"]))
+            ranked.append((consensus, _price(best["odds"]), player, best, len(offers)))
+        consensus, _, player, best, book_count = max(ranked, key=lambda item: (item[0], item[1]))
+        board.append({
+            "game": matchup,
+            "selection": f"{player} to hit a home run",
+            "player": player,
+            "best_book": best["book"],
+            "best_odds": best["odds"],
+            "market_implied_probability": round(consensus * 100, 1),
+            "books_compared": book_count,
+            "confidence": "Market favorite",
+            "official_pick": False,
+            "track_result": False,
+        })
+    return board
 
 def build_prompt(parsed_data, odds_data, scrape_date):
     games_text = json.dumps(parsed_data.get('games', []), indent=2)
@@ -301,6 +503,16 @@ def analyze_and_generate_picks(parsed_data, odds_data, scrape_date):
                 clean = clean[4:]
         clean = clean.strip()
         picks_data = json.loads(clean)
+        spread_board, total_board = build_mlb_lotto_boards(
+            parsed_data, odds_data
+        )
+        picks_data["lotto_spread_board"] = spread_board
+        picks_data["lotto_total_board"] = total_board
+        picks_data["lotto_hr_board"] = build_mlb_hr_board(odds_data)
+        picks_data["lotto_notice"] = (
+            "Entertainment-only side boards; excluded from grading "
+            "and official records."
+        )
         print(f"✅ JSON parsed successfully")
         print(f"\n🎯 BEST BET: {picks_data.get('best_bet','N/A')}")
         print(f"📋 {picks_data.get('daily_summary','N/A')}")

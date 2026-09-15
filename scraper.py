@@ -62,6 +62,9 @@ NFL_URLS = {
     "nfl_odds_discrepancies": (
         f"{BASE_URL}/nfl/cheatsheets/odds-discrepancies"
     ),
+    "nfl_redzone_matchups": (
+        f"{BASE_URL}/nfl/cheatsheets/redzone-matchups"
+    ),
 }
 
 NRFI_URL = f"{BASE_URL}/nrfi"
@@ -1083,6 +1086,7 @@ async def run_nfl_scraper():
                 "nfl_weather",
                 "nfl_home_field_advantage",
                 "nfl_odds_discrepancies",
+                "nfl_redzone_matchups",
             ]:
                 try:
                     results[name] = await asyncio.wait_for(

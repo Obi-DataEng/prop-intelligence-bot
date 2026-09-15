@@ -366,6 +366,93 @@ def format_prop_finder_context(intelligence):
     )
 
 
+def _cfb_lotto_grade(edge):
+    edge = abs(float(edge or 0))
+    if edge >= 3:
+        return "Strong"
+    if edge >= 1.5:
+        return "Moderate"
+    if edge >= 0.5:
+        return "Lean"
+    return "Forced side"
+
+
+def _card_price(card, start):
+    for value in card[start:start + 6]:
+        text = str(value).replace("−", "-").strip()
+        if re.fullmatch(r"[+-]?\d{3,5}", text):
+            return int(text)
+    return None
+
+
+def build_cfb_lotto_boards(game_cards, target_date):
+    """Use PropFinder's displayed model selection for every game that day."""
+    target = datetime.strptime(target_date, "%Y-%m-%d")
+    target_label = target.strftime("%b %d").replace(" 0", " ").lower()
+    spread_board, total_board = [], []
+
+    for card in game_cards:
+        if not isinstance(card, list):
+            continue
+        kickoff = next((str(v) for v in card if target_label in str(v).lower().replace(",", "")), None)
+        if not kickoff:
+            continue
+
+        before = card[:card.index(kickoff)]
+        pairs = []
+        for index, value in enumerate(before[:-1]):
+            token = str(value).strip()
+            if re.fullmatch(r"[A-Z][A-Z0-9-]{1,6}", token) and token != "PROJECTED":
+                try:
+                    pairs.append((token, float(before[index + 1])))
+                except (TypeError, ValueError):
+                    pass
+        matchup = (
+            f"{pairs[0][0]} @ {pairs[1][0]}"
+            if len(pairs) >= 2 else " | ".join(map(str, before))
+        )
+
+        for index, value in enumerate(card):
+            label = str(value).strip().upper()
+            if label == "SPREAD" and index + 1 < len(card):
+                selection = str(card[index + 1]).strip()
+                edge_match = re.search(r"EDGE\s*([+-]?\d+(?:\.\d+)?)", " | ".join(map(str, card[index + 1:index + 5])), re.I)
+                model_match = re.search(r"Model\s+([A-Z0-9-]+)\s+([+-]\d+(?:\.\d+)?)", " | ".join(map(str, card[index + 1:index + 6])), re.I)
+                edge = float(edge_match.group(1)) if edge_match else 0.0
+                spread_board.append({
+                    "game": matchup,
+                    "kickoff": kickoff,
+                    "selection": selection,
+                    "best_book": "PropFinder best price",
+                    "best_odds": _card_price(card, index + 2),
+                    "model_projection": model_match.group(0) if model_match else None,
+                    "model_edge": round(edge, 1),
+                    "confidence": _cfb_lotto_grade(edge),
+                    "official_pick": False,
+                    "track_result": False,
+                })
+            elif label == "TOTAL" and index + 1 < len(card):
+                selection = str(card[index + 1]).strip()
+                context = " | ".join(map(str, card[index + 1:index + 6]))
+                edge_match = re.search(r"EDGE\s*([+-]?\d+(?:\.\d+)?)", context, re.I)
+                model_match = re.search(r"Model\s+(\d+(?:\.\d+)?)", context, re.I)
+                edge = float(edge_match.group(1)) if edge_match else 0.0
+                total_board.append({
+                    "game": matchup,
+                    "kickoff": kickoff,
+                    "selection": selection,
+                    "best_book": "PropFinder best price",
+                    "best_odds": _card_price(card, index + 2),
+                    "projected_total": float(model_match.group(1)) if model_match else None,
+                    "model_edge": round(edge, 1),
+                    "confidence": _cfb_lotto_grade(edge),
+                    "official_pick": False,
+                    "track_result": False,
+                })
+
+    return spread_board, total_board
+
+
 # ============================================================
 # FILTER CURRENT CFB SLATE
 # ============================================================
@@ -1546,6 +1633,8 @@ def save_cfb_picks(
     validated,
     rejected,
     props_analyzed=0,
+    lotto_spread_board=None,
+    lotto_total_board=None,
 ):
     player_prop_picks = [
         pick for pick in validated
@@ -1577,6 +1666,9 @@ def save_cfb_picks(
         "game_picks": game_picks,
         "picks": validated,
         "rejected_picks": rejected,
+        "lotto_spread_board": lotto_spread_board or [],
+        "lotto_total_board": lotto_total_board or [],
+        "lotto_notice": "Entertainment-only side boards; excluded from grading and official records.",
     }
 
     os.makedirs(
@@ -1777,6 +1869,9 @@ def analyze_cfb(
         all_games,
         scrape_date,
     )
+    lotto_spread_board, lotto_total_board = build_cfb_lotto_boards(
+        intelligence["games"].get("cards", []), scrape_date
+    )
 
     print(
         f"📅 CFB games on "
@@ -1800,6 +1895,8 @@ def analyze_cfb(
             fallback_props,
             [],
             len(prop_candidates),
+            lotto_spread_board,
+            lotto_total_board,
         )
 
     # --------------------------------------------------------
@@ -1876,6 +1973,8 @@ def analyze_cfb(
         validated,
         rejected,
         len(prop_candidates),
+        lotto_spread_board,
+        lotto_total_board,
     )
 
     # --------------------------------------------------------

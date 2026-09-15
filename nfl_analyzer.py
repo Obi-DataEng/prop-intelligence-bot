@@ -228,6 +228,9 @@ def load_nfl_intelligence(scrape_date):
         "discrepancies": load_snapshot_if_exists(
             scrape_date, "nfl_odds_discrepancies", {"html_rows": []}
         ),
+        "redzone": load_snapshot_if_exists(
+            scrape_date, "nfl_redzone_matchups", {"html_rows": [], "blocks": []}
+        ),
     }
 
 
@@ -340,6 +343,146 @@ def model_for_odds_game(game, model_index):
     if not away or not home:
         return None
     return model_index.get(frozenset((away, home)))
+
+
+def _lotto_grade(edge):
+    edge = abs(float(edge or 0))
+    if edge >= 3:
+        return "Strong"
+    if edge >= 1.5:
+        return "Moderate"
+    if edge >= 0.5:
+        return "Lean"
+    return "Forced side"
+
+
+def _odds_value(value):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return -10000.0
+
+
+def build_nfl_lotto_boards(games, model_index):
+    """Pick one model-backed spread side and total for every NFL game."""
+    spread_board, total_board = [], []
+    for game in games:
+        matchup = f"{game.get('away_team')} @ {game.get('home_team')}"
+        model = model_for_odds_game(game, model_index)
+        books = game.get("bookmakers", {})
+
+        spread_candidates = []
+        total_candidates = []
+        for book in ("FD", "CZS"):
+            market = books.get(book) or {}
+            for side, team_key, line_key, price_key in (
+                ("away", "away_team", "away_spread", "away_spread_odds"),
+                ("home", "home_team", "home_spread", "home_spread_odds"),
+            ):
+                line = market.get(line_key)
+                if line is None or not model:
+                    continue
+                abbr = model[f"{side}_abbr"]
+                margin = (
+                    -model["model_spreads"][abbr]
+                    if abbr in model.get("model_spreads", {})
+                    else model[f"{side}_score"] - model[f"{'home' if side == 'away' else 'away'}_score"]
+                )
+                edge = margin + float(line)
+                spread_candidates.append((edge, _odds_value(market.get(price_key)), {
+                    "game": matchup,
+                    "selection": f"{game.get(team_key)} {float(line):+g}",
+                    "team": game.get(team_key),
+                    "line": float(line),
+                    "best_book": book,
+                    "best_odds": market.get(price_key),
+                    "projected_margin": round(margin, 1),
+                    "model_edge": round(edge, 1),
+                    "confidence": _lotto_grade(edge),
+                    "official_pick": False,
+                    "track_result": False,
+                }))
+
+            total = market.get("total")
+            if total is not None and model:
+                projected = float(model["projected_total"])
+                direction = "Over" if projected >= float(total) else "Under"
+                edge = abs(projected - float(total))
+                price = market.get("over_odds" if direction == "Over" else "under_odds")
+                total_candidates.append((edge, _odds_value(price), {
+                    "game": matchup,
+                    "selection": f"{direction} {float(total):g}",
+                    "over_under": direction,
+                    "line": float(total),
+                    "best_book": book,
+                    "best_odds": price,
+                    "projected_total": round(projected, 1),
+                    "model_edge": round(edge, 1),
+                    "confidence": _lotto_grade(edge),
+                    "official_pick": False,
+                    "track_result": False,
+                }))
+
+        if spread_candidates:
+            spread_board.append(max(spread_candidates, key=lambda x: (x[0], x[1]))[2])
+        else:
+            spread_board.append({"game": matchup, "selection": "No verified model/line", "available": False, "official_pick": False, "track_result": False})
+        if total_candidates:
+            total_board.append(max(total_candidates, key=lambda x: (x[0], x[1]))[2])
+        else:
+            total_board.append({"game": matchup, "selection": "No verified model/line", "available": False, "official_pick": False, "track_result": False})
+    return spread_board, total_board
+
+
+def _flatten_text(value):
+    if isinstance(value, dict):
+        return " | ".join(_flatten_text(v) for v in value.values())
+    if isinstance(value, list):
+        return " | ".join(_flatten_text(v) for v in value)
+    return str(value or "")
+
+
+def build_nfl_td_board(games, prop_candidates, redzone_data):
+    """Choose one verified anytime-TD market per game; never grade this board."""
+    redzone_text = _flatten_text(redzone_data)
+    board = []
+    for game in games:
+        matchup = f"{game.get('away_team')} @ {game.get('home_team')}"
+        teams = {
+            NFL_TEAM_ABBREVIATIONS.get(game.get("away_team", "")),
+            NFL_TEAM_ABBREVIATIONS.get(game.get("home_team", "")),
+        }
+        choices = []
+        for prop in prop_candidates:
+            market = normalize_text(prop.get("market", ""))
+            if prop.get("team") not in teams or "anytime td" not in market:
+                continue
+            rz_chance = None
+            player = str(prop.get("player", ""))
+            match = re.search(re.escape(player) + r".{0,180}?(\d{1,2})%", redzone_text, re.I | re.S)
+            if match:
+                rz_chance = int(match.group(1))
+            score = float(prop.get("prediction_confidence", 0)) + (min(12, rz_chance * 0.25) if rz_chance is not None else 0)
+            choices.append((score, _odds_value(prop.get("best_odds")), prop, rz_chance))
+
+        if not choices:
+            board.append({"game": matchup, "selection": "No verified Anytime TD market available", "available": False, "official_pick": False, "track_result": False})
+            continue
+        _, _, prop, rz_chance = max(choices, key=lambda x: (x[0], x[1]))
+        board.append({
+            "game": matchup,
+            "selection": f"{prop.get('player')} Anytime TD",
+            "player": prop.get("player"),
+            "team": prop.get("team"),
+            "best_book": prop.get("best_book"),
+            "best_odds": prop.get("best_odds"),
+            "propfinder_rating": prop.get("pf_rating"),
+            "redzone_td_chance": rz_chance,
+            "confidence": "Red-zone supported" if rz_chance is not None else "Prop-history lean",
+            "official_pick": False,
+            "track_result": False,
+        })
+    return board
 
 
 def american_implied_probability(odds):
@@ -1844,6 +1987,9 @@ def save_nfl_picks(
     validated,
     rejected,
     props_analyzed=0,
+    lotto_spread_board=None,
+    lotto_total_board=None,
+    lotto_td_board=None,
 ):
     player_prop_picks = [
         pick for pick in validated
@@ -1875,6 +2021,10 @@ def save_nfl_picks(
         "game_picks": game_picks,
         "picks": validated,
         "rejected_picks": rejected,
+        "lotto_spread_board": lotto_spread_board or [],
+        "lotto_total_board": lotto_total_board or [],
+        "lotto_td_board": lotto_td_board or [],
+        "lotto_notice": "Entertainment-only side boards; excluded from grading and official records.",
     }
 
     os.makedirs(
@@ -2080,7 +2230,14 @@ def analyze_nfl(
     prop_candidates = build_prop_candidates(
         intelligence["props"],
         eligible_teams=eligible_prop_teams,
+        limit=1000,
         week=nfl_week,
+    )
+    lotto_spread_board, lotto_total_board = build_nfl_lotto_boards(
+        games, model_index
+    )
+    lotto_td_board = build_nfl_td_board(
+        games, prop_candidates, intelligence.get("redzone", {})
     )
 
     print(
@@ -2109,6 +2266,9 @@ def analyze_nfl(
             fallback_props,
             [],
             len(prop_candidates),
+            lotto_spread_board,
+            lotto_total_board,
+            lotto_td_board,
         )
 
     # --------------------------------------------------------
@@ -2186,6 +2346,9 @@ def analyze_nfl(
         validated,
         rejected,
         len(prop_candidates),
+        lotto_spread_board,
+        lotto_total_board,
+        lotto_td_board,
     )
 
     # --------------------------------------------------------

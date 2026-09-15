@@ -657,6 +657,64 @@ def format_cfb_pick(pick):
     """
 
 
+def format_lotto_boards(picks):
+    """Render analyzer side boards that are explicitly excluded from grading."""
+    boards = [
+        ("FULL-SLATE SPREAD CARD", picks.get("lotto_spread_board", [])),
+        ("FULL-SLATE O/U CARD", picks.get("lotto_total_board", [])),
+    ]
+    if "lotto_td_board" in picks:
+        boards.append(("ONE TD SCORER PER GAME", picks.get("lotto_td_board", [])))
+    if "lotto_hr_board" in picks:
+        boards.append(("ONE HOME-RUN HITTER PER GAME", picks.get("lotto_hr_board", [])))
+
+    sections = []
+    for title, rows in boards:
+        if not rows:
+            continue
+        row_html = "".join(
+            f"""
+            <tr>
+                <td style='padding:8px;border-bottom:1px solid #263447;color:#CBD5E1;'>
+                    {row.get('game', '')}
+                </td>
+                <td style='padding:8px;border-bottom:1px solid #263447;color:#FFFFFF;font-weight:bold;'>
+                    {row.get('selection', 'Unavailable')}
+                </td>
+                <td style='padding:8px;border-bottom:1px solid #263447;color:#94A3B8;white-space:nowrap;'>
+                    {row.get('confidence', '')}
+                    {(' · edge ' + str(row.get('model_edge'))) if row.get('model_edge') is not None else ''}
+                    {(' · RZ ' + str(row.get('redzone_td_chance')) + '%') if row.get('redzone_td_chance') is not None else ''}
+                    {(' · implied ' + str(row.get('market_implied_probability')) + '%') if row.get('market_implied_probability') is not None else ''}
+                    {(' · ' + str(row.get('best_book')) + ' ' + ('+' if isinstance(row.get('best_odds'), (int, float)) and row.get('best_odds') > 0 else '') + str(row.get('best_odds'))) if row.get('best_book') and row.get('best_odds') is not None else ''}
+                </td>
+            </tr>
+            """
+            for row in rows
+        )
+        sections.append(f"""
+            <h3 style='color:#F59E0B;font-size:14px;margin:18px 0 7px;'>{title}</h3>
+            <table style='width:100%;border-collapse:collapse;background:#101827;border-radius:8px;font-size:12px;'>
+                <tr>
+                    <th style='padding:8px;text-align:left;color:#64748B;'>GAME</th>
+                    <th style='padding:8px;text-align:left;color:#64748B;'>SELECTION</th>
+                    <th style='padding:8px;text-align:left;color:#64748B;'>MODEL NOTE</th>
+                </tr>
+                {row_html}
+            </table>
+        """)
+
+    if not sections:
+        return ""
+    return f"""
+        <div style='margin-top:24px;border:1px solid #92400E;background:#1C1917;padding:14px;border-radius:9px;'>
+            <div style='color:#F59E0B;font-weight:bold;font-size:16px;'>🎟️ LOTTO SIDE BOARDS — NOT OFFICIAL PICKS</div>
+            <div style='color:#FBBF24;font-size:11px;margin-top:5px;'>Entertainment only. These selections are not graded and never affect the tracked record.</div>
+            {''.join(sections)}
+        </div>
+    """
+
+
 def format_cfb_section(
     cfb_picks,
 ):
@@ -689,6 +747,7 @@ def format_cfb_section(
         "slate_summary",
         "",
     )
+    lotto_html = format_lotto_boards(cfb_picks)
 
     games_analyzed = cfb_picks.get(
         "games_analyzed"
@@ -732,6 +791,7 @@ def format_cfb_section(
                 {message}
             </div>
 
+            {lotto_html}
         </div>
         """
 
@@ -870,6 +930,8 @@ def format_cfb_section(
         </h2>
 
         {games_html}
+
+        {lotto_html}
 
     </div>
     """
@@ -1172,6 +1234,7 @@ def format_mlb_section(
         "best_bet",
         "",
     )
+    lotto_html = format_lotto_boards(picks_data)
 
     picks_html = "".join(
         format_mlb_pick_row(pick)
@@ -1243,6 +1306,8 @@ def format_mlb_section(
         }
 
         {picks_html}
+
+        {lotto_html}
 
     </div>
     """
