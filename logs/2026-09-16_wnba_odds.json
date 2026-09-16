@@ -92,8 +92,8 @@
           "away_spread": -3.5,
           "away_spread_odds": -110,
           "total": 167.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "over_odds": -105,
+          "under_odds": -115
         },
         "CZS": {
           "home_ml": 134,
@@ -115,12 +115,12 @@
       "commence_time": "2026-09-18T00:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -340,
-          "away_ml": 260,
+          "home_ml": -290,
+          "away_ml": 225,
           "home_spread": -7.5,
-          "home_spread_odds": -114,
+          "home_spread_odds": -106,
           "away_spread": 7.5,
-          "away_spread_odds": -106,
+          "away_spread_odds": -114,
           "total": 176.5,
           "over_odds": -110,
           "under_odds": -110
@@ -132,7 +132,7 @@
           "home_spread_odds": -115,
           "away_spread": 7.5,
           "away_spread_odds": -105,
-          "total": 176.5,
+          "total": 175.5,
           "over_odds": -110,
           "under_odds": -110
         },
@@ -143,9 +143,9 @@
           "home_spread_odds": -112,
           "away_spread": 7.5,
           "away_spread_odds": -108,
-          "total": 176.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "total": 175.5,
+          "over_odds": -115,
+          "under_odds": -105
         }
       }
     },
@@ -156,34 +156,34 @@
       "commence_time": "2026-09-18T02:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": 320,
-          "away_ml": -430,
+          "home_ml": 340,
+          "away_ml": -470,
           "home_spread": 9.5,
-          "home_spread_odds": -115,
+          "home_spread_odds": -106,
           "away_spread": -9.5,
-          "away_spread_odds": -105,
+          "away_spread_odds": -114,
           "total": 173.5,
           "over_odds": -110,
           "under_odds": -110
         },
         "MGM": {
-          "home_ml": 280,
-          "away_ml": -375,
-          "home_spread": 9.5,
+          "home_ml": 350,
+          "away_ml": -450,
+          "home_spread": 10.5,
           "home_spread_odds": -110,
-          "away_spread": -9.5,
+          "away_spread": -10.5,
           "away_spread_odds": -110,
           "total": 173.5,
           "over_odds": -110,
           "under_odds": -110
         },
         "CZS": {
-          "home_ml": 330,
-          "away_ml": -420,
-          "home_spread": 9.5,
-          "home_spread_odds": -113,
-          "away_spread": -9.5,
-          "away_spread_odds": -107,
+          "home_ml": 380,
+          "away_ml": -500,
+          "home_spread": 10.5,
+          "home_spread_odds": -114,
+          "away_spread": -10.5,
+          "away_spread_odds": -106,
           "total": 173.5,
           "over_odds": -112,
           "under_odds": -107
@@ -197,12 +197,12 @@
       "commence_time": "2026-09-18T02:00:00Z",
       "bookmakers": {
         "FD": {
-          "home_ml": -104,
-          "away_ml": -118,
-          "home_spread": 1.5,
-          "home_spread_odds": -114,
-          "away_spread": -1.5,
-          "away_spread_odds": -106,
+          "home_ml": -115,
+          "away_ml": -105,
+          "home_spread": -1.5,
+          "home_spread_odds": -105,
+          "away_spread": 1.5,
+          "away_spread_odds": -115,
           "total": 175.5,
           "over_odds": -118,
           "under_odds": -104
@@ -241,12 +241,12 @@
           "home_ml": 570,
           "away_ml": -900,
           "home_spread": 12.5,
-          "home_spread_odds": -110,
+          "home_spread_odds": -106,
           "away_spread": -12.5,
-          "away_spread_odds": -110,
+          "away_spread_odds": -114,
           "total": 189.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "over_odds": -104,
+          "under_odds": -118
         },
         "CZS": {
           "home_ml": 525,
@@ -327,8 +327,8 @@
           "away_spread": 12.5,
           "away_spread_odds": -106,
           "total": 161.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "over_odds": -106,
+          "under_odds": -114
         },
         "CZS": {
           "home_ml": -900,
@@ -579,19 +579,6 @@
         }
       },
       "player_rebounds": {
-        "Allisha Gray": {
-          "line": 3.5,
-          "FD": {
-            "line": 3.5,
-            "over": 128,
-            "under": -172
-          },
-          "CZS": {
-            "line": 3.5,
-            "over": 116,
-            "under": -154
-          }
-        },
         "Jordin Canada": {
           "line": 3.5,
           "FD": {
@@ -603,19 +590,6 @@
             "line": 3.5,
             "over": -106,
             "under": -127
-          }
-        },
-        "Rhyne Howard": {
-          "line": 3.5,
-          "FD": {
-            "line": 3.5,
-            "over": -110,
-            "under": -120
-          },
-          "CZS": {
-            "line": 3.5,
-            "over": -115,
-            "under": -115
           }
         },
         "Angel Reese": {
@@ -631,6 +605,19 @@
             "under": -105
           }
         },
+        "Rhyne Howard": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": -110,
+            "under": -120
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": -115,
+            "under": -115
+          }
+        },
         "Naz Hillmon": {
           "line": 4.5,
           "FD": {
@@ -642,6 +629,19 @@
             "line": 4.5,
             "over": 111,
             "under": -148
+          }
+        },
+        "Allisha Gray": {
+          "line": 3.5,
+          "FD": {
+            "line": 3.5,
+            "over": 128,
+            "under": -172
+          },
+          "CZS": {
+            "line": 3.5,
+            "over": 116,
+            "under": -154
           }
         }
       },
@@ -1029,8 +1029,8 @@
           "line": 6.5,
           "FD": {
             "line": 6.5,
-            "over": 112,
-            "under": -148
+            "over": 114,
+            "under": -152
           },
           "CZS": {
             "line": 6.5,
@@ -1055,8 +1055,8 @@
           "line": 5.5,
           "FD": {
             "line": 5.5,
-            "over": 102,
-            "under": -136
+            "over": 100,
+            "under": -132
           },
           "CZS": {
             "line": 5.5,
@@ -1068,8 +1068,8 @@
           "line": 2.5,
           "FD": {
             "line": 2.5,
-            "over": -158,
-            "under": 118
+            "over": -152,
+            "under": 114
           }
         }
       },
@@ -1078,8 +1078,8 @@
           "line": 17.5,
           "FD": {
             "line": 17.5,
-            "over": -104,
-            "under": -125
+            "over": -102,
+            "under": -128
           },
           "CZS": {
             "line": 17.5,
@@ -1091,8 +1091,8 @@
           "line": 21.5,
           "FD": {
             "line": 21.5,
-            "over": -108,
-            "under": -120
+            "over": -113,
+            "under": -115
           },
           "CZS": {
             "line": 21.5,
@@ -1104,8 +1104,8 @@
           "line": 9.5,
           "FD": {
             "line": 9.5,
-            "over": -102,
-            "under": -128
+            "over": 100,
+            "under": -130
           },
           "CZS": {
             "line": 9.5,
@@ -1130,13 +1130,13 @@
           "line": 14.5,
           "FD": {
             "line": 14.5,
-            "over": -132,
-            "under": 102
+            "over": -135,
+            "under": 104
           },
           "CZS": {
             "line": 14.5,
-            "over": -129,
-            "under": -104
+            "over": -136,
+            "under": 102
           }
         }
       },
@@ -1145,24 +1145,24 @@
           "line": 20.5,
           "FD": {
             "line": 20.5,
-            "over": -125,
-            "under": -106
+            "over": -120,
+            "under": -110
           }
         },
         "Paige Bueckers": {
           "line": 27.5,
           "FD": {
             "line": 27.5,
-            "over": -118,
-            "under": -112
+            "over": -125,
+            "under": -106
           }
         },
         "Jessica Shepard": {
           "line": 20.5,
           "FD": {
             "line": 20.5,
-            "over": -118,
-            "under": -112
+            "over": -122,
+            "under": -108
           }
         },
         "Nneka Ogwumike": {
@@ -1179,32 +1179,32 @@
           "line": 19.5,
           "FD": {
             "line": 19.5,
-            "over": -130,
-            "under": -102
+            "over": -132,
+            "under": 100
           }
         },
         "Paige Bueckers": {
           "line": 25.5,
           "FD": {
             "line": 25.5,
-            "over": -114,
-            "under": -114
+            "over": -118,
+            "under": -112
           }
         },
         "Awak Kuier": {
           "line": 15.5,
           "FD": {
             "line": 15.5,
-            "over": -132,
-            "under": 100
+            "over": -130,
+            "under": -102
           }
         },
         "Jessica Shepard": {
           "line": 26.5,
           "FD": {
             "line": 26.5,
-            "over": -104,
-            "under": -128
+            "over": -106,
+            "under": -125
           }
         }
       },
@@ -1218,11 +1218,11 @@
           }
         },
         "Paige Bueckers": {
-          "line": 31.5,
+          "line": 32.5,
           "FD": {
-            "line": 31.5,
-            "over": -125,
-            "under": -106
+            "line": 32.5,
+            "over": -104,
+            "under": -128
           }
         },
         "Nneka Ogwumike": {
@@ -1237,8 +1237,8 @@
           "line": 31.5,
           "FD": {
             "line": 31.5,
-            "over": -118,
-            "under": -112
+            "over": -122,
+            "under": -108
           }
         }
       },
@@ -1247,16 +1247,16 @@
           "line": 2.5,
           "FD": {
             "line": 2.5,
-            "over": -125,
-            "under": -106
+            "over": -130,
+            "under": -102
           }
         },
         "Awak Kuier": {
           "line": 6.5,
           "FD": {
             "line": 6.5,
-            "over": -114,
-            "under": -114
+            "over": -112,
+            "under": -118
           },
           "CZS": {
             "line": 6.5,
@@ -1268,8 +1268,8 @@
           "line": 3.5,
           "FD": {
             "line": 4.5,
-            "over": 138,
-            "under": -186
+            "over": 132,
+            "under": -178
           },
           "CZS": {
             "line": 3.5,
@@ -1281,8 +1281,8 @@
           "line": 10.5,
           "FD": {
             "line": 10.5,
-            "over": -140,
-            "under": 106
+            "over": -138,
+            "under": 104
           },
           "CZS": {
             "line": 10.5,
@@ -1309,32 +1309,32 @@
           "line": 6.5,
           "FD": {
             "line": 6.5,
-            "over": 116,
-            "under": -154
+            "over": 114,
+            "under": -152
           }
         },
         "Paige Bueckers": {
           "line": 10.5,
           "FD": {
             "line": 10.5,
-            "over": 100,
-            "under": -132
+            "over": -104,
+            "under": -128
           }
         },
         "Jessica Shepard": {
           "line": 16.5,
           "FD": {
             "line": 16.5,
-            "over": -106,
-            "under": -125
+            "over": -108,
+            "under": -122
           }
         },
         "Nneka Ogwumike": {
           "line": 11.5,
           "FD": {
             "line": 11.5,
-            "over": -114,
-            "under": -114
+            "over": -112,
+            "under": -118
           }
         }
       },
@@ -1356,8 +1356,8 @@
           "line": 1.5,
           "FD": {
             "line": 1.5,
-            "over": -140,
-            "under": 106
+            "over": -136,
+            "under": 102
           },
           "CZS": {
             "line": 1.5,
@@ -1369,8 +1369,8 @@
           "line": 1.5,
           "FD": {
             "line": 1.5,
-            "over": 140,
-            "under": -188
+            "over": 138,
+            "under": -186
           },
           "CZS": {
             "line": 1.5,
@@ -1382,8 +1382,8 @@
           "line": 1.5,
           "FD": {
             "line": 1.5,
-            "over": 148,
-            "under": -200
+            "over": 152,
+            "under": -205
           },
           "CZS": {
             "line": 1.5,
@@ -1399,8 +1399,8 @@
           "line": 1.5,
           "FD": {
             "line": 1.5,
-            "over": -128,
-            "under": -104
+            "over": -130,
+            "under": -102
           }
         },
         "A'ja Wilson": {
@@ -1412,16 +1412,16 @@
           },
           "CZS": {
             "line": 3.5,
-            "over": 113,
-            "under": -150
+            "over": 108,
+            "under": -143
           }
         },
         "Jackie Young": {
           "line": 6.5,
           "FD": {
             "line": 6.5,
-            "over": -106,
-            "under": -125
+            "over": -104,
+            "under": -128
           },
           "CZS": {
             "line": 6.5,
@@ -1433,8 +1433,8 @@
           "line": 6.5,
           "FD": {
             "line": 6.5,
-            "over": -114,
-            "under": -114
+            "over": -118,
+            "under": -112
           },
           "CZS": {
             "line": 6.5,
@@ -1448,7 +1448,7 @@
           "line": 25.5,
           "FD": {
             "line": 25.5,
-            "over": -120,
+            "over": -122,
             "under": -106
           },
           "CZS": {
@@ -1461,8 +1461,8 @@
           "line": 18.5,
           "FD": {
             "line": 18.5,
-            "over": -115,
-            "under": -114
+            "over": -118,
+            "under": -110
           },
           "CZS": {
             "line": 18.5,
@@ -1510,16 +1510,16 @@
           "line": 29.5,
           "FD": {
             "line": 29.5,
-            "over": -108,
-            "under": -122
+            "over": -110,
+            "under": -120
           }
         },
         "Dominique Malonga": {
           "line": 20.5,
           "FD": {
             "line": 20.5,
-            "over": -112,
-            "under": -118
+            "over": -114,
+            "under": -114
           }
         },
         "Chelsea Gray": {
@@ -1527,7 +1527,7 @@
           "FD": {
             "line": 18.5,
             "over": -106,
-            "under": -125
+            "under": -122
           }
         }
       },
@@ -1536,16 +1536,16 @@
           "line": 35.5,
           "FD": {
             "line": 35.5,
-            "over": -112,
-            "under": -118
+            "over": -114,
+            "under": -114
           }
         },
         "Dominique Malonga": {
           "line": 28.5,
           "FD": {
             "line": 28.5,
-            "over": -106,
-            "under": -125
+            "over": -110,
+            "under": -120
           }
         },
         "Chelsea Gray": {
@@ -1560,18 +1560,18 @@
           "line": 25.5,
           "FD": {
             "line": 25.5,
-            "over": -122,
-            "under": -108
+            "over": -128,
+            "under": -104
           }
         }
       },
       "player_points_rebounds_assists": {
         "Dominique Malonga": {
-          "line": 29.5,
+          "line": 30.5,
           "FD": {
-            "line": 29.5,
-            "over": -122,
-            "under": -108
+            "line": 30.5,
+            "over": -104,
+            "under": -128
           }
         },
         "Jackie Young": {
@@ -1586,16 +1586,16 @@
           "line": 21.5,
           "FD": {
             "line": 21.5,
-            "over": -112,
-            "under": -118
+            "over": -114,
+            "under": -114
           }
         },
         "A'ja Wilson": {
           "line": 38.5,
           "FD": {
             "line": 38.5,
-            "over": -122,
-            "under": -108
+            "over": -125,
+            "under": -106
           }
         }
       },
@@ -1617,8 +1617,8 @@
           "line": 9.5,
           "FD": {
             "line": 9.5,
-            "over": -110,
-            "under": -120
+            "over": -112,
+            "under": -118
           },
           "CZS": {
             "line": 9.5,
@@ -1658,32 +1658,32 @@
           "line": 11.5,
           "FD": {
             "line": 11.5,
-            "over": 104,
-            "under": -138
+            "over": 100,
+            "under": -132
           }
         },
         "A'ja Wilson": {
           "line": 12.5,
           "FD": {
             "line": 12.5,
-            "over": -130,
-            "under": -102
+            "over": -132,
+            "under": 100
           }
         },
         "Jackie Young": {
           "line": 11.5,
           "FD": {
             "line": 11.5,
-            "over": -104,
-            "under": -128
+            "over": -106,
+            "under": -125
           }
         },
         "Chelsea Gray": {
           "line": 9.5,
           "FD": {
             "line": 9.5,
-            "over": -128,
-            "under": -104
+            "over": -138,
+            "under": 104
           }
         }
       },
@@ -1692,16 +1692,16 @@
           "line": 0.5,
           "FD": {
             "line": 0.5,
-            "over": -188,
-            "under": 140
+            "over": -186,
+            "under": 138
           }
         },
         "Jackie Young": {
           "line": 2.5,
           "FD": {
             "line": 2.5,
-            "over": -125,
-            "under": -106
+            "over": -128,
+            "under": -104
           },
           "CZS": {
             "line": 2.5,
@@ -1713,8 +1713,8 @@
           "line": 1.5,
           "FD": {
             "line": 1.5,
-            "over": 100,
-            "under": -132
+            "over": 102,
+            "under": -136
           },
           "CZS": {
             "line": 1.5,
@@ -1726,8 +1726,8 @@
           "line": 0.5,
           "FD": {
             "line": 0.5,
-            "over": -250,
-            "under": 182
+            "over": -245,
+            "under": 178
           }
         }
       }
@@ -1739,16 +1739,16 @@
           "line": 2.5,
           "FD": {
             "line": 2.5,
-            "over": -158,
-            "under": 118
+            "over": -152,
+            "under": 114
           }
         },
         "Aliyah Boston": {
           "line": 3.5,
           "FD": {
             "line": 3.5,
-            "over": 146,
-            "under": -198
+            "over": 144,
+            "under": -194
           },
           "CZS": {
             "line": 3.5,
@@ -1760,8 +1760,8 @@
           "line": 9.5,
           "FD": {
             "line": 9.5,
-            "over": 116,
-            "under": -154
+            "over": 120,
+            "under": -160
           },
           "CZS": {
             "line": 9.5,
@@ -1775,8 +1775,8 @@
           "line": 8.5,
           "FD": {
             "line": 8.5,
-            "over": -110,
-            "under": -118
+            "over": -114,
+            "under": -114
           },
           "CZS": {
             "line": 8.5,
@@ -1788,8 +1788,8 @@
           "line": 25.5,
           "FD": {
             "line": 25.5,
-            "over": -118,
-            "under": -110
+            "over": -122,
+            "under": -106
           },
           "CZS": {
             "line": 25.5,
@@ -1801,8 +1801,8 @@
           "line": 22.5,
           "FD": {
             "line": 23.5,
-            "over": 100,
-            "under": -130
+            "over": -102,
+            "under": -128
           },
           "CZS": {
             "line": 22.5,
@@ -1829,8 +1829,8 @@
           "line": 28.5,
           "FD": {
             "line": 28.5,
-            "over": -120,
-            "under": -110
+            "over": -125,
+            "under": -106
           }
         },
         "Aliyah Boston": {
@@ -1845,8 +1845,8 @@
           "line": 32.5,
           "FD": {
             "line": 32.5,
-            "over": -104,
-            "under": -128
+            "over": -106,
+            "under": -125
           }
         }
       },
@@ -1855,7 +1855,7 @@
           "line": 16.5,
           "FD": {
             "line": 16.5,
-            "over": -110,
+            "over": -108,
             "under": -122
           }
         },
@@ -1863,24 +1863,24 @@
           "line": 25.5,
           "FD": {
             "line": 25.5,
-            "over": -122,
-            "under": -108
+            "over": -120,
+            "under": -110
           }
         },
         "Kelsey Mitchell": {
           "line": 27.5,
           "FD": {
             "line": 27.5,
-            "over": -122,
-            "under": -108
+            "over": -128,
+            "under": -104
           }
         },
         "Caitlin Clark": {
-          "line": 26.5,
+          "line": 27.5,
           "FD": {
-            "line": 26.5,
-            "over": -130,
-            "under": -102
+            "line": 27.5,
+            "over": -102,
+            "under": -130
           }
         }
       },
@@ -1889,24 +1889,24 @@
           "line": 36.5,
           "FD": {
             "line": 36.5,
-            "over": -106,
-            "under": -125
+            "over": -108,
+            "under": -122
           }
         },
         "Kelsey Mitchell": {
           "line": 30.5,
           "FD": {
             "line": 30.5,
-            "over": -122,
-            "under": -108
+            "over": -130,
+            "under": -102
           }
         },
         "Aliyah Boston": {
           "line": 28.5,
           "FD": {
             "line": 28.5,
-            "over": -130,
-            "under": -102
+            "over": -125,
+            "under": -104
           }
         }
       },
@@ -1915,8 +1915,8 @@
           "line": 7.5,
           "FD": {
             "line": 7.5,
-            "over": -118,
-            "under": -112
+            "over": -112,
+            "under": -118
           },
           "CZS": {
             "line": 7.5,
@@ -1936,8 +1936,8 @@
           "line": 8.5,
           "FD": {
             "line": 8.5,
-            "over": -128,
-            "under": -104
+            "over": -130,
+            "under": -102
           },
           "CZS": {
             "line": 8.5,
@@ -1949,8 +1949,8 @@
           "line": 3.5,
           "FD": {
             "line": 3.5,
-            "over": -154,
-            "under": 116
+            "over": -146,
+            "under": 110
           },
           "CZS": {
             "line": 3.5,
@@ -1964,16 +1964,16 @@
           "line": 4.5,
           "FD": {
             "line": 4.5,
-            "over": -154,
-            "under": 116
+            "over": -146,
+            "under": 110
           }
         },
         "Caitlin Clark": {
           "line": 12.5,
           "FD": {
             "line": 12.5,
-            "over": -138,
-            "under": 104
+            "over": -132,
+            "under": 100
           }
         },
         "Aliyah Boston": {
@@ -1990,8 +1990,8 @@
           "line": 3.5,
           "FD": {
             "line": 3.5,
-            "over": 138,
-            "under": -186
+            "over": 134,
+            "under": -180
           },
           "CZS": {
             "line": 3.5,
@@ -2016,14 +2016,6 @@
     },
     "New York Liberty@Minnesota Lynx": {
       "player_assists": {
-        "Jonquel Jones": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": 120,
-            "under": -160
-          }
-        },
         "Breanna Stewart": {
           "line": 3.5,
           "FD": {
@@ -2046,29 +2038,21 @@
           },
           "CZS": {
             "line": 5.5,
-            "over": 122,
-            "under": -164
+            "over": 124,
+            "under": -170
           }
         },
         "Courtney Williams": {
-          "line": 4.5,
+          "line": 3.5,
           "FD": {
             "line": 4.5,
             "over": 138,
             "under": -186
           },
           "CZS": {
-            "line": 4.5,
-            "over": 126,
-            "under": -170
-          }
-        },
-        "Napheesa Collier": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": 118,
-            "under": -158
+            "line": 3.5,
+            "over": -170,
+            "under": 126
           }
         },
         "Olivia Miles": {
@@ -2346,16 +2330,16 @@
       },
       "player_rebounds": {
         "Breanna Stewart": {
-          "line": 8.5,
+          "line": 7.5,
           "FD": {
             "line": 7.5,
             "over": -136,
             "under": 102
           },
           "CZS": {
-            "line": 8.5,
-            "over": 108,
-            "under": -145
+            "line": 7.5,
+            "over": -138,
+            "under": 107
           }
         },
         "Jonquel Jones": {
@@ -2369,14 +2353,6 @@
             "line": 9.5,
             "over": 106,
             "under": -141
-          }
-        },
-        "Kayla McBride": {
-          "line": 2.5,
-          "FD": {
-            "line": 2.5,
-            "over": -118,
-            "under": -112
           }
         },
         "Napheesa Collier": {
@@ -2406,16 +2382,16 @@
           }
         },
         "Sabrina Ionescu": {
-          "line": 4.5,
+          "line": 3.5,
           "FD": {
             "line": 4.5,
             "over": 130,
             "under": -174
           },
           "CZS": {
-            "line": 4.5,
-            "over": 121,
-            "under": -162
+            "line": 3.5,
+            "over": -164,
+            "under": 122
           }
         },
         "Courtney Williams": {
@@ -2427,8 +2403,8 @@
           },
           "CZS": {
             "line": 4.5,
-            "over": 123,
-            "under": -164
+            "over": 119,
+            "under": -159
           }
         }
       },
@@ -2559,16 +2535,16 @@
           "line": 2.5,
           "FD": {
             "line": 2.5,
-            "over": 102,
-            "under": -136
+            "over": 104,
+            "under": -138
           }
         },
         "Veronica Burton": {
           "line": 6.5,
           "FD": {
             "line": 6.5,
-            "over": -120,
-            "under": -110
+            "over": -118,
+            "under": -112
           },
           "CZS": {
             "line": 6.5,
@@ -2618,8 +2594,8 @@
           "line": 20.5,
           "FD": {
             "line": 20.5,
-            "over": -120,
-            "under": -110
+            "over": -118,
+            "under": -112
           }
         }
       },
@@ -2636,8 +2612,8 @@
           "line": 17.5,
           "FD": {
             "line": 17.5,
-            "over": -118,
-            "under": -112
+            "over": -120,
+            "under": -110
           }
         }
       },
@@ -2646,8 +2622,8 @@
           "line": 20.5,
           "FD": {
             "line": 20.5,
-            "over": -108,
-            "under": -122
+            "over": -106,
+            "under": -125
           }
         },
         "Veronica Burton": {
@@ -2664,8 +2640,8 @@
           "line": 2.5,
           "FD": {
             "line": 2.5,
-            "over": -182,
-            "under": 136
+            "over": -180,
+            "under": 134
           }
         },
         "Veronica Burton": {
@@ -2687,8 +2663,8 @@
           "line": 10.5,
           "FD": {
             "line": 10.5,
-            "over": -112,
-            "under": -118
+            "over": -108,
+            "under": -122
           }
         },
         "Gabby Williams": {
@@ -2718,8 +2694,8 @@
           "line": 1.5,
           "FD": {
             "line": 1.5,
-            "over": -106,
-            "under": -125
+            "over": -108,
+            "under": -122
           },
           "CZS": {
             "line": 1.5,
