@@ -1,11 +1,16 @@
-name: MLB Daily Picks Bot
+name: Daily Sports Picks Bot
 
 on:
   workflow_dispatch:
 
-jobs:
+permissions:
+  contents: write
 
-  # ── JOB 1: Full picks run ──────────────────────────
+concurrency:
+  group: daily-sports-picks-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
   run-picks-bot:
     runs-on: ubuntu-latest
     timeout-minutes: 30
@@ -17,27 +22,41 @@ jobs:
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install Python dependencies
         run: |
-          pip install playwright anthropic python-dotenv \
-                      schedule requests
+          python -m pip install --upgrade pip
+          python -m pip install playwright anthropic python-dotenv schedule requests
+
+      - name: Get Playwright version
+        id: playwright-version
+        shell: bash
+        run: |
+          PW_VERSION=$(python -c "from importlib.metadata import version; print(version('playwright'))")
+          echo "version=$PW_VERSION" >> "$GITHUB_OUTPUT"
 
       - name: Cache Playwright browsers
         uses: actions/cache@v4
-        id: playwright-cache
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-chromium-${{ runner.os }}-1217
+          key: playwright-chromium-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
 
-      - name: Install Playwright Chromium
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
-        run: python -m playwright install chromium --with-deps
+      # Always run this command. On a valid cache hit it only verifies the
+      # browser, while a missing or stale browser build is downloaded.
+      - name: Install and verify Playwright Chromium
+        run: python -m playwright install --with-deps chromium
 
-      - name: Install Playwright deps only (cached)
-        if: steps.playwright-cache.outputs.cache-hit == 'true'
-        run: python -m playwright install-deps chromium
+      - name: Verify Playwright browser launch
+        run: |
+          python - <<'PY'
+          from playwright.sync_api import sync_playwright
+
+          with sync_playwright() as playwright:
+              browser = playwright.chromium.launch(headless=True)
+              print("Playwright Chromium launch verified")
+              browser.close()
+          PY
 
       - name: Create directories
         run: |
@@ -57,7 +76,7 @@ jobs:
           echo "HEADLESS=true" >> .env
           echo "BALLDONTLIE_API_KEY=${{ secrets.BALLDONTLIE_API_KEY }}" >> .env
 
-      - name: Run MLB Picks Bot
+      - name: Run Daily Sports Picks Bot
         run: python main.py
         env:
           PROPFINDER_EMAIL: ${{ secrets.PROPFINDER_EMAIL }}
@@ -70,23 +89,15 @@ jobs:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           BALLDONTLIE_API_KEY: ${{ secrets.BALLDONTLIE_API_KEY }}
 
-      - name: Commit logs to repo
+      - name: Commit logs to repository
+        if: always()
         run: |
-          git config --global user.email "bot@github.com"
-          git config --global user.name "Picks Bot"
+          git config user.email "bot@github.com"
+          git config user.name "Picks Bot"
           git add -f logs/*.json
-          git commit -m "Add picks logs for $(date +%Y-%m-%d)" || echo "No log changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Commit DB to repo
-        run: |
-          git config --global user.email "bot@github.com"
-          git config --global user.name "Picks Bot"
-          git add -f data/mlb_picks.db
-          git commit -m "Update picks DB for $(date +%Y-%m-%d)" || echo "No DB changes to commit"
-          git push
+          git diff --cached --quiet || git commit -m "Add picks logs for $(date +%Y-%m-%d)"
+          git pull --rebase origin main
+          git push origin HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -97,3 +108,4 @@ jobs:
           name: picks-logs-${{ github.run_id }}
           path: logs/
           retention-days: 7
+          if-no-files-found: warn
