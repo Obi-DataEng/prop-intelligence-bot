@@ -12,37 +12,38 @@
       "prop_line": 18.5,
       "game_line": null,
       "over_under": "OVER",
-      "best_book": "HRB",
-      "best_odds": -105,
+      "best_book": "DK",
+      "best_odds": -110,
       "prediction_confidence": 84,
       "confidence_tier": "High",
-      "market_value_score": 72,
-      "market_value_tier": "Neutral",
+      "market_value_score": 76,
+      "market_value_tier": "Positive",
       "season_avg": 19.3,
       "l3_avg": null,
       "l5_avg": null,
       "l10_avg": null,
       "l15_avg": null,
-      "hit_rate_season": "50% (2/4 hitting 20+ in last 5 matchups vs G rank 3)",
-      "hit_rate_l10": "Strong season baseline with 19.3 PPG",
+      "hit_rate_season": "60% (3/5 at 18.5+)",
+      "hit_rate_l10": "60%",
       "injury_split_games": 0,
       "injury_split_note": null,
       "opportunity_signals": [
-        "19.3 PPG season average with 33.0 MIN/G usage",
-        "5/5 hitting 10+ PPG in recent tracking",
-        "Ranked 3rd among guards for scoring matchups"
+        "Season usage 22% with 33 MIN/G for a perimeter scorer",
+        "Rank 7 matchup vs SG favors production",
+        "Consistent 19.3 PPG baseline"
       ],
       "key_factors": [
-        "Reliable 33 MPG defensive workload at home vs Connecticut",
-        "High consistency in season baseline near line",
-        "Hit rate matrix shows 5/5 at 10+ threshold"
+        "Hit 20+ points in 2/5 recent games (40%)",
+        "Atlanta home game context",
+        "3.4 REB/G provides balanced scoring role"
       ],
       "risk_factors": [
-        "Only moderate efficiency cushion above 18.5 line",
-        "Season-long data without L10 acceleration signal"
+        "Line sits at season average; no strong L10 spike evident",
+        "Connecticut defense solid this season",
+        "Only 60% hit rate at this threshold"
       ],
-      "reasoning": "Allisha Gray has established 19.3 PPG on 33 MIN/G throughout the season. At home against Connecticut with a 15.5-16 point spread favoring Atlanta, Gray's defensive role and high opportunity provide solid floor. The 18.5 line sits just below season average with neutral pricing; her consistent 33 MPG usage and 3-point volume (1.9/G) support hitting this threshold.",
-      "line_shop_note": "HRB -105 is the best available price found for the exact OVER 18.5 line.",
+      "reasoning": "Allisha Gray's 19.3 PPG baseline sits just below this line with 60% historical hit rate at 18.5+. She maintains high usage (22%) and minutes (33/game) in a favorable Rank 7 SG matchup at home. The -110 pricing offers neutral-to-positive value for a high-volume perimeter scorer.",
+      "line_shop_note": "DK -110 is the best available price found for the exact OVER 18.5 line.",
       "confidence_score": 84,
       "validated_game_key": "Connecticut Sun@Atlanta Dream",
       "odds_validated": true
@@ -50,52 +51,103 @@
     {
       "rank": 2,
       "pick_type": "player_prop",
-      "category": "Assists",
-      "selection": "Jordin Canada OVER 6.5 Assists",
-      "player_name": "Jordin Canada",
-      "team": "ATL",
-      "opponent": "CONN",
-      "game": "Connecticut Sun @ Atlanta Dream",
-      "prop_line": 6.5,
+      "category": "PRA",
+      "selection": "Shakira Austin OVER 30.5 Points + Rebounds + Assists",
+      "player_name": "Shakira Austin",
+      "team": "WSH",
+      "opponent": "CHI",
+      "game": "Washington Mystics @ Chicago Sky",
+      "prop_line": 30.5,
       "game_line": null,
       "over_under": "OVER",
-      "best_book": "HRB",
-      "best_odds": -130,
+      "best_book": "BetOnline.ag",
+      "best_odds": -115,
       "prediction_confidence": 82,
       "confidence_tier": "High",
-      "market_value_score": 70,
+      "market_value_score": 72,
       "market_value_tier": "Positive",
-      "season_avg": 7.4,
+      "season_avg": 16.8,
       "l3_avg": null,
       "l5_avg": null,
       "l10_avg": null,
       "l15_avg": null,
-      "hit_rate_season": "Hit rate shows strong 10+ AST threshold at 3/5 recent games",
-      "hit_rate_l10": "Season 7.4 AST/G on 31.5 MIN/G",
+      "hit_rate_season": "40% (4/10 games 30.5+)",
+      "hit_rate_l10": "40%",
       "injury_split_games": 0,
       "injury_split_note": null,
       "opportunity_signals": [
-        "7.4 AST/G season average significantly above 6.5 line",
-        "31.5 MIN/G with high-volume passing role",
-        "Hit rate matrix: 3/5 touching 10+ assists in recent samples"
+        "26.1% usage rate (above average)",
+        "29.6 MIN/G provides ample volume",
+        "9.4 REB/G + 2.5 AST/G = strong rebound/assist floor",
+        "2.0 BLK/G adds utility"
       ],
       "key_factors": [
-        "0.8 assist cushion above line relative to season average",
-        "Consistent 31.5 minute allocation in backcourt",
-        "Home game at Atlanta provides normal role continuity"
+        "Season 16.8 PPG + 9.4 REB/G + 2.5 AST/G = 28.7 baseline PRA",
+        "Hit 30.5+ in 4 of last 10 games at Rank 4 C position (best matchup)",
+        "Chicago's Rank 14 center defense vulnerable to high-volume bigs"
       ],
       "risk_factors": [
-        "Slight uptick in pricing (-140) reflects consensus strength",
-        "No L10 acceleration data available in raw tracking"
+        "40% hit rate is moderate, not elite",
+        "WSH @ CHI is road game; slight competitive uncertainty",
+        "Kahleah Copper GTD (groin) creates some lineup flux"
       ],
-      "reasoning": "Jordin Canada's 7.4 AST/G season average sits comfortably 0.8 above the 6.5 line. At 31.5 MPG in a starting backcourt role, her passing volume supports the over. Hit rate matrix confirms recent games touching double-digit assists, and -140 represents fair pricing for a player significantly above the threshold.",
-      "line_shop_note": "HRB -130 is the best available price found for the exact OVER 6.5 line.",
+      "reasoning": "Shakira Austin's season PRA baseline (28.7) sits just below this line, supported by 40% hit rate at 30.5+ threshold. Her elite rebound rate (9.4/game) and high minutes (29.6) create consistent volume. Facing Rank 14 Chicago centers should elevate her ceiling play.",
+      "line_shop_note": "BetOnline.ag -115 is the best available price found for the exact OVER 30.5 line.",
       "confidence_score": 82,
-      "validated_game_key": "Connecticut Sun@Atlanta Dream",
+      "validated_game_key": "Washington Mystics@Chicago Sky",
       "odds_validated": true
     },
     {
       "rank": 3,
+      "pick_type": "player_prop",
+      "category": "Points",
+      "selection": "Nneka Ogwumike OVER 16.5 Points",
+      "player_name": "Nneka Ogwumike",
+      "team": "LA",
+      "opponent": "DAL",
+      "game": "Los Angeles Sparks @ Dallas Wings",
+      "prop_line": 16.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "BetOnline.ag",
+      "best_odds": -102,
+      "prediction_confidence": 80,
+      "confidence_tier": "High",
+      "market_value_score": 70,
+      "market_value_tier": "Positive",
+      "season_avg": 17.2,
+      "l3_avg": null,
+      "l5_avg": null,
+      "l10_avg": null,
+      "l15_avg": null,
+      "hit_rate_season": "77% (3/4 at 16.5+)",
+      "hit_rate_l10": "75%",
+      "injury_split_games": 0,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "Season 17.2 PPG sits just above line",
+        "22.7% usage with 31.0 MIN/G (elite volume)",
+        "8.9 REB/G provides balanced production",
+        "39 games played (durable, consistent)"
+      ],
+      "key_factors": [
+        "Hit 16.5+ in 3 of last 4 games (75%)",
+        "Rank 12 PF matchup vs Dallas (moderate advantage)",
+        "LA home game context favorable"
+      ],
+      "risk_factors": [
+        "Sample size limited for recent L3/L4",
+        "Dallas ranked Rank 5 for PF defense (better than average)",
+        "Line sits at season baseline, not elevated"
+      ],
+      "reasoning": "Nneka Ogwumike's 17.2 PPG season average sits directly above this 16.5 line with strong 75% recent hit rate. Elite usage (22.7%) and minutes (31/game) ensure consistent opportunity. CZS pricing at -120 is fair value for a high-probability play.",
+      "line_shop_note": "BetOnline.ag -102 is the best available price found for the exact OVER 16.5 line.",
+      "confidence_score": 80,
+      "validated_game_key": "Los Angeles Sparks@Dallas Wings",
+      "odds_validated": true
+    },
+    {
+      "rank": 4,
       "pick_type": "player_prop",
       "category": "Rebounds",
       "selection": "Angel Reese OVER 12.5 Rebounds",
@@ -108,132 +160,156 @@
       "over_under": "OVER",
       "best_book": "FD",
       "best_odds": -130,
-      "prediction_confidence": 80,
-      "confidence_tier": "High",
+      "prediction_confidence": 79,
+      "confidence_tier": "Medium",
       "market_value_score": 68,
-      "market_value_tier": "Positive",
+      "market_value_tier": "Neutral",
       "season_avg": 12.4,
       "l3_avg": null,
       "l5_avg": null,
       "l10_avg": null,
       "l15_avg": null,
-      "hit_rate_season": "5/5 at 10+ REB threshold; 4/5 at 15+ threshold confirms consistency",
-      "hit_rate_l10": "Consistent rebounder: 12.4 REB/G season baseline",
+      "hit_rate_season": "54% (4/7+ hits)",
+      "hit_rate_l10": "50%",
       "injury_split_games": 0,
       "injury_split_note": null,
       "opportunity_signals": [
-        "12.4 REB/G season average essentially at line threshold",
-        "31.6 MIN/G with forward position providing rebound opportunity",
-        "5/5 hitting 10+ rebounds in recent sample confirms consistency"
+        "Season 12.4 REB/G sits at line",
+        "24.4% usage with 31.6 MIN/G (very high volume)",
+        "Elite rebounder archetype (C position)"
       ],
       "key_factors": [
-        "Season baseline (12.4) aligns tightly with 12.5 line",
-        "Strong hit rate matrix performance (5/5 at 10+ threshold, 4/5 at 15+)",
-        "Defensive rebounding is stable role in Atlanta lineup"
+        "39 games played (durable, no injury concerns)",
+        "Connecticut ranks Rank 10 at C (moderate rebounding defense)",
+        "Atlanta home context beneficial"
       ],
       "risk_factors": [
-        "Minimal separation between season average and line (0.1 rebound gap)",
-        "Hit rate shows only 1/5 touching 20+ (limited explosion games)",
-        "Pricing at -130 reflects fair value without edge"
+        "12.4 baseline means 50% statistical edge only",
+        "DK -130 is steep juice for marginal probability edge",
+        "54% season hit rate is solid but not elite confirmation"
       ],
-      "reasoning": "Angel Reese's 12.4 REB/G season average sits nearly flush with the 12.5 line. Her hit rate matrix shows 5/5 at the 10+ threshold and 4/5 at 15+, confirming consistent floor work. At 31.6 MPG in a primary forward role, she has stable rebound opportunity. The -130 pricing is fair given the tight alignment.",
+      "reasoning": "Angel Reese's 12.4 REB/G baseline aligns with the 12.5 line, backed by 54% season hit rate at this threshold. Her elite volume (31.6 MIN/G, 24.4% usage) and durable role ensure opportunity. However, -130 pricing reduces value appeal compared to better-priced alternatives.",
       "line_shop_note": "FD -130 is the best available price found for the exact OVER 12.5 line.",
-      "confidence_score": 80,
-      "validated_game_key": "Connecticut Sun@Atlanta Dream",
-      "odds_validated": true
-    },
-    {
-      "rank": 4,
-      "pick_type": "player_prop",
-      "category": "Points",
-      "selection": "Rhyne Howard OVER 18.5 Points",
-      "player_name": "Rhyne Howard",
-      "team": "ATL",
-      "opponent": "CONN",
-      "game": "Connecticut Sun @ Atlanta Dream",
-      "prop_line": 18.5,
-      "game_line": null,
-      "over_under": "OVER",
-      "best_book": "HRB",
-      "best_odds": 105,
-      "prediction_confidence": 78,
-      "confidence_tier": "Medium",
-      "market_value_score": 69,
-      "market_value_tier": "Neutral",
-      "season_avg": 18.3,
-      "l3_avg": null,
-      "l5_avg": null,
-      "l10_avg": null,
-      "l15_avg": null,
-      "hit_rate_season": "5/5 hitting 10+ PPG; 5/5 at 15+ threshold; 3/5 at 20+ confirms upside",
-      "hit_rate_l10": "Consistent scoring: 18.3 PPG on 34.6 MIN/G",
-      "injury_split_games": 0,
-      "injury_split_note": null,
-      "opportunity_signals": [
-        "18.3 PPG season average just 0.2 below line",
-        "34.6 MIN/G high-volume role with guard responsibility",
-        "3.3 3PM/G supports scoring consistency"
-      ],
-      "key_factors": [
-        "Season baseline (18.3) just shy of 18.5 line with minimal gap",
-        "Hit rate matrix: 5/5 at 10+ and 15+ thresholds, 3/5 at 20+ shows floor consistency",
-        "High usage role (34.6 MIN/G) provides scoring volume"
-      ],
-      "risk_factors": [
-        "Very tight separation (0.2 PPG) from baseline to line—requires near-average game",
-        "Only 3/5 hitting 20+ suggests limited explosion upside",
-        "Standard -106 pricing provides no positive edge"
-      ],
-      "reasoning": "Rhyne Howard's 18.3 PPG season average sits just 0.2 points below the 18.5 line. Her hit rate confirms consistent 10-15+ scoring output across recent samples, though 20+ is achieved in only 3/5 recent tracking games. At 34.6 MPG with high usage, she has the opportunity floor to support this line at neutral pricing.",
-      "line_shop_note": "HRB +105 is the best available price found for the exact OVER 18.5 line.",
-      "confidence_score": 78,
+      "confidence_score": 79,
       "validated_game_key": "Connecticut Sun@Atlanta Dream",
       "odds_validated": true
     }
   ],
   "passes": [
     {
-      "player_name": "Kelsey Plum",
-      "prop": "OVER 21.5 Points or any prop",
-      "reason": "Player listed Out (Lower Leg injury); cannot evaluate."
+      "player_name": "Maddy Siegrist",
+      "prop": "OVER 12.5 Rebounds",
+      "reason": "0/37 season hit rate; massive +3700 discrepancy is insufficient evidence. Never bet props with 0% historical rates despite plus-money."
     },
     {
-      "player_name": "Kahleah Copper",
-      "prop": "OVER 19.5 Points or any prop",
-      "reason": "Player listed GTD (Groin); status uncertain and injury history suggests elevated risk."
+      "player_name": "Sonia Citron",
+      "prop": "OVER 5.5 Assists",
+      "reason": "11/37 (30%) season hit rate; huge +9405 discrepancy but player averages 4.3 AST/G. Discrepancy alone does not justify betting against career baseline."
     },
     {
-      "player_name": "Shakira Austin",
-      "prop": "OVER 17.5 Rebounds",
-      "reason": "Hit rate shows only 1/5 touching 20+ REB despite strong 9.4 REB/G baseline; upside limited for prop requiring explosion."
+      "player_name": "Paige Bueckers",
+      "prop": "OVER 12.5 Rebounds",
+      "reason": "0/38 hit rate; +4500 odds irrelevant. Player averages 4.1 REB/G; line requires 3x baseline. Pass."
     },
     {
-      "player_name": "A'ja Wilson",
-      "prop": "OVER 25.5 Points",
-      "reason": "Hit rate matrix shows only 4/5 hitting 25+ despite 26.0 PPG baseline; 1/5 at 30+ indicates limited consistency above line."
+      "player_name": "Chelsea Gray",
+      "prop": "OVER 14.5 Assists",
+      "reason": "0/40 season hit rate despite +4000 pricing. Gray averages 6.8 AST/G; line requires 114% increase. Historical performance is decisive."
     },
     {
-      "player_name": "Napheesa Collier",
-      "prop": "OVER 18 Points or OVER 14.5 Rebounds",
-      "reason": "Small sample size (12 games played); injury splits show role increase games but insufficient data for reliable projection."
+      "player_name": "Rhyne Howard",
+      "prop": "OVER 9.5 Assists",
+      "reason": "0/39 season hit rate; +4000 odds disqualify this despite large discrepancy. Howard averages 3.6 AST/G; line is fantasy."
     },
     {
-      "player_name": "Brittney Griner",
-      "prop": "Any prop",
-      "reason": "Limited sample (18 games played); insufficient volume data and recent playing time pattern unclear."
-    },
-    {
-      "player_name": "Sabrina Ionescu",
-      "prop": "OVER 15.5 Points",
-      "reason": "Season average 15.5 PPG with only 28 games played; no L10 data and limited opportunity to project performance."
+      "player_name": "Flau'jae Johnson",
+      "prop": "OVER 7.5 Rebounds",
+      "reason": "13% hit rate (5/38) at this threshold; seasonal average 4.8 REB/G. Plus-money pricing (+664) insufficient for weak baseline probability."
     },
     {
       "bet": "Caitlin Clark OVER 8.3 Assists",
       "reason": "Deterministic validation rejection: No external odds found for Caitlin Clark Assists"
     }
   ],
-  "slate_summary": "The 2026-09-17 WNBA slate centers on five games with Atlanta Dream home games generating the strongest prop evidence. Allisha Gray, Jordin Canada, Angel Reese, and Rhyne Howard all play Connecticut Sun in Atlanta, and all have season baselines aligned closely with available lines. The primary challenge is absence of L10 acceleration data in raw form; all picks rely on season baselines, hit rate matrix confirmation, and stable role/minute allocation. No explosive injury-split opportunities are available (samples too small where applicable). Game totals and monelines lack sufficient matchup-specific context to recommend over player props. Confidence across selections is solid but not elite, as tight baseline-to-line alignment means most picks require near-average performance rather than upside.",
-  "best_bet": "Allisha Gray OVER 18.5 Points (HRB -105)",
+  "lotto_longshot_prop_board": [
+    {
+      "game": "Connecticut Sun @ Atlanta Dream",
+      "selection": "Jordin Canada Over 16.5 Points",
+      "player": "Jordin Canada",
+      "market": "player_points_alternate",
+      "line": 16.5,
+      "best_book": "CZS",
+      "best_odds": 425,
+      "confidence": "Moderate",
+      "reasoning": "Jordin Canada OVER 16.5 Points (CZS +425): Canada averages 11.6 PPG but projects elevated scoring in injury-depleted backcourt vs. Connecticut. Her 31.5 MIN/G usage guarantees opportunity. +425 odds warrant consideration given role upside.",
+      "candidate_id": "G1-C3",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Washington Mystics @ Chicago Sky",
+      "selection": "Shakira Austin Over 25.5 Points",
+      "player": "Shakira Austin",
+      "market": "player_points_alternate",
+      "line": 25.5,
+      "best_book": "FAN",
+      "best_odds": 400,
+      "confidence": "Moderate",
+      "reasoning": "Shakira Austin OVER 25.5 Points (FAN +400): Austin's 16.8 PPG baseline requires 52% production boost, but her Rank 4 matchup vs. Rank 14 Chicago centers combined with 29.6 MIN/G elite opportunity could support ceiling game. Low probability but defined role.",
+      "candidate_id": "G2-C3",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Los Angeles Sparks @ Dallas Wings",
+      "selection": "Paige Bueckers Over 39.5 PRA",
+      "player": "Paige Bueckers",
+      "market": "player_points_rebounds_assists_alternate",
+      "line": 39.5,
+      "best_book": "DK",
+      "best_odds": 409,
+      "confidence": "Moderate",
+      "reasoning": "Paige Bueckers OVER 39.5 PRA (DK +409): Bueckers averages 20.5 PPG + 4.1 REB/G + 5.9 AST/G = 30.5 PRA baseline. Line requires +29% ceiling, but her 33 MIN/G elite volume and Rank 2 PG position could sustain 40+ PRA in efficient game. Decent +409 odds.",
+      "candidate_id": "G3-C3",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Las Vegas Aces @ Seattle Storm",
+      "selection": "Flau'jae Johnson Over 20.5 Points",
+      "player": "Flau'jae Johnson",
+      "market": "player_points_alternate",
+      "line": 20.5,
+      "best_book": "FAN",
+      "best_odds": 400,
+      "confidence": "Moderate",
+      "reasoning": "Flau'jae Johnson OVER 20.5 Points (FAN +400): Johnson averages 14.1 PPG with strong recent 42% hit rate (16/38) at 5.5+ REB threshold. Road game context and Seattle's Rank 13 SF defense may elevate her scoring. +400 odds fair for volume upside.",
+      "candidate_id": "G4-C1",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Phoenix Mercury @ Portland Fire",
+      "selection": "Emily Engstler Over 21.5 Points",
+      "player": "Emily Engstler",
+      "market": "player_points_alternate",
+      "line": 21.5,
+      "best_book": "FAN",
+      "best_odds": 425,
+      "confidence": "Moderate",
+      "reasoning": "Emily Engstler OVER 21.5 Points (FAN +425): Engstler's 14.8 PPG baseline requires significant boost, but her Rank 8 PF matchup vs. new-team Portland Fire (unknown defensive metrics) and 26.7 MIN/G elite volume could support ceiling. +425 offers reasonable upside lottery odds.",
+      "candidate_id": "G5-C2",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "slate_summary": "Today's 5-game WNBA slate (2026-09-17) includes one brand-new team (Portland Fire), limiting defensive matchup data. Connecticut-Atlanta, Washington-Chicago, LA-Dallas, Las Vegas-Seattle, and Phoenix-Portland contests offer moderate evidence quality. Strong player baselines dominate qualifying bets. Several high-discrepancy props (Sonia Citron 5.5 AST, Maddy Siegrist 12.5 REB, Paige Bueckers 12.5 REB, Chelsea Gray 14.5 AST) show 0% or 3% season hit rates and are correctly eliminated despite +3000 to +9400 pricing—critical risk discipline prevents value-trap betting. Top picks focus on three high-confidence players near season baselines with solid recent hit rates and favorable home/role contexts.",
+  "best_bet": "Allisha Gray OVER 18.5 Points (DK -110)",
   "picks": [
     {
       "rank": 1,
@@ -247,37 +323,38 @@
       "prop_line": 18.5,
       "game_line": null,
       "over_under": "OVER",
-      "best_book": "HRB",
-      "best_odds": -105,
+      "best_book": "DK",
+      "best_odds": -110,
       "prediction_confidence": 84,
       "confidence_tier": "High",
-      "market_value_score": 72,
-      "market_value_tier": "Neutral",
+      "market_value_score": 76,
+      "market_value_tier": "Positive",
       "season_avg": 19.3,
       "l3_avg": null,
       "l5_avg": null,
       "l10_avg": null,
       "l15_avg": null,
-      "hit_rate_season": "50% (2/4 hitting 20+ in last 5 matchups vs G rank 3)",
-      "hit_rate_l10": "Strong season baseline with 19.3 PPG",
+      "hit_rate_season": "60% (3/5 at 18.5+)",
+      "hit_rate_l10": "60%",
       "injury_split_games": 0,
       "injury_split_note": null,
       "opportunity_signals": [
-        "19.3 PPG season average with 33.0 MIN/G usage",
-        "5/5 hitting 10+ PPG in recent tracking",
-        "Ranked 3rd among guards for scoring matchups"
+        "Season usage 22% with 33 MIN/G for a perimeter scorer",
+        "Rank 7 matchup vs SG favors production",
+        "Consistent 19.3 PPG baseline"
       ],
       "key_factors": [
-        "Reliable 33 MPG defensive workload at home vs Connecticut",
-        "High consistency in season baseline near line",
-        "Hit rate matrix shows 5/5 at 10+ threshold"
+        "Hit 20+ points in 2/5 recent games (40%)",
+        "Atlanta home game context",
+        "3.4 REB/G provides balanced scoring role"
       ],
       "risk_factors": [
-        "Only moderate efficiency cushion above 18.5 line",
-        "Season-long data without L10 acceleration signal"
+        "Line sits at season average; no strong L10 spike evident",
+        "Connecticut defense solid this season",
+        "Only 60% hit rate at this threshold"
       ],
-      "reasoning": "Allisha Gray has established 19.3 PPG on 33 MIN/G throughout the season. At home against Connecticut with a 15.5-16 point spread favoring Atlanta, Gray's defensive role and high opportunity provide solid floor. The 18.5 line sits just below season average with neutral pricing; her consistent 33 MPG usage and 3-point volume (1.9/G) support hitting this threshold.",
-      "line_shop_note": "HRB -105 is the best available price found for the exact OVER 18.5 line.",
+      "reasoning": "Allisha Gray's 19.3 PPG baseline sits just below this line with 60% historical hit rate at 18.5+. She maintains high usage (22%) and minutes (33/game) in a favorable Rank 7 SG matchup at home. The -110 pricing offers neutral-to-positive value for a high-volume perimeter scorer.",
+      "line_shop_note": "DK -110 is the best available price found for the exact OVER 18.5 line.",
       "confidence_score": 84,
       "validated_game_key": "Connecticut Sun@Atlanta Dream",
       "odds_validated": true
@@ -285,52 +362,103 @@
     {
       "rank": 2,
       "pick_type": "player_prop",
-      "category": "Assists",
-      "selection": "Jordin Canada OVER 6.5 Assists",
-      "player_name": "Jordin Canada",
-      "team": "ATL",
-      "opponent": "CONN",
-      "game": "Connecticut Sun @ Atlanta Dream",
-      "prop_line": 6.5,
+      "category": "PRA",
+      "selection": "Shakira Austin OVER 30.5 Points + Rebounds + Assists",
+      "player_name": "Shakira Austin",
+      "team": "WSH",
+      "opponent": "CHI",
+      "game": "Washington Mystics @ Chicago Sky",
+      "prop_line": 30.5,
       "game_line": null,
       "over_under": "OVER",
-      "best_book": "HRB",
-      "best_odds": -130,
+      "best_book": "BetOnline.ag",
+      "best_odds": -115,
       "prediction_confidence": 82,
       "confidence_tier": "High",
-      "market_value_score": 70,
+      "market_value_score": 72,
       "market_value_tier": "Positive",
-      "season_avg": 7.4,
+      "season_avg": 16.8,
       "l3_avg": null,
       "l5_avg": null,
       "l10_avg": null,
       "l15_avg": null,
-      "hit_rate_season": "Hit rate shows strong 10+ AST threshold at 3/5 recent games",
-      "hit_rate_l10": "Season 7.4 AST/G on 31.5 MIN/G",
+      "hit_rate_season": "40% (4/10 games 30.5+)",
+      "hit_rate_l10": "40%",
       "injury_split_games": 0,
       "injury_split_note": null,
       "opportunity_signals": [
-        "7.4 AST/G season average significantly above 6.5 line",
-        "31.5 MIN/G with high-volume passing role",
-        "Hit rate matrix: 3/5 touching 10+ assists in recent samples"
+        "26.1% usage rate (above average)",
+        "29.6 MIN/G provides ample volume",
+        "9.4 REB/G + 2.5 AST/G = strong rebound/assist floor",
+        "2.0 BLK/G adds utility"
       ],
       "key_factors": [
-        "0.8 assist cushion above line relative to season average",
-        "Consistent 31.5 minute allocation in backcourt",
-        "Home game at Atlanta provides normal role continuity"
+        "Season 16.8 PPG + 9.4 REB/G + 2.5 AST/G = 28.7 baseline PRA",
+        "Hit 30.5+ in 4 of last 10 games at Rank 4 C position (best matchup)",
+        "Chicago's Rank 14 center defense vulnerable to high-volume bigs"
       ],
       "risk_factors": [
-        "Slight uptick in pricing (-140) reflects consensus strength",
-        "No L10 acceleration data available in raw tracking"
+        "40% hit rate is moderate, not elite",
+        "WSH @ CHI is road game; slight competitive uncertainty",
+        "Kahleah Copper GTD (groin) creates some lineup flux"
       ],
-      "reasoning": "Jordin Canada's 7.4 AST/G season average sits comfortably 0.8 above the 6.5 line. At 31.5 MPG in a starting backcourt role, her passing volume supports the over. Hit rate matrix confirms recent games touching double-digit assists, and -140 represents fair pricing for a player significantly above the threshold.",
-      "line_shop_note": "HRB -130 is the best available price found for the exact OVER 6.5 line.",
+      "reasoning": "Shakira Austin's season PRA baseline (28.7) sits just below this line, supported by 40% hit rate at 30.5+ threshold. Her elite rebound rate (9.4/game) and high minutes (29.6) create consistent volume. Facing Rank 14 Chicago centers should elevate her ceiling play.",
+      "line_shop_note": "BetOnline.ag -115 is the best available price found for the exact OVER 30.5 line.",
       "confidence_score": 82,
-      "validated_game_key": "Connecticut Sun@Atlanta Dream",
+      "validated_game_key": "Washington Mystics@Chicago Sky",
       "odds_validated": true
     },
     {
       "rank": 3,
+      "pick_type": "player_prop",
+      "category": "Points",
+      "selection": "Nneka Ogwumike OVER 16.5 Points",
+      "player_name": "Nneka Ogwumike",
+      "team": "LA",
+      "opponent": "DAL",
+      "game": "Los Angeles Sparks @ Dallas Wings",
+      "prop_line": 16.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "BetOnline.ag",
+      "best_odds": -102,
+      "prediction_confidence": 80,
+      "confidence_tier": "High",
+      "market_value_score": 70,
+      "market_value_tier": "Positive",
+      "season_avg": 17.2,
+      "l3_avg": null,
+      "l5_avg": null,
+      "l10_avg": null,
+      "l15_avg": null,
+      "hit_rate_season": "77% (3/4 at 16.5+)",
+      "hit_rate_l10": "75%",
+      "injury_split_games": 0,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "Season 17.2 PPG sits just above line",
+        "22.7% usage with 31.0 MIN/G (elite volume)",
+        "8.9 REB/G provides balanced production",
+        "39 games played (durable, consistent)"
+      ],
+      "key_factors": [
+        "Hit 16.5+ in 3 of last 4 games (75%)",
+        "Rank 12 PF matchup vs Dallas (moderate advantage)",
+        "LA home game context favorable"
+      ],
+      "risk_factors": [
+        "Sample size limited for recent L3/L4",
+        "Dallas ranked Rank 5 for PF defense (better than average)",
+        "Line sits at season baseline, not elevated"
+      ],
+      "reasoning": "Nneka Ogwumike's 17.2 PPG season average sits directly above this 16.5 line with strong 75% recent hit rate. Elite usage (22.7%) and minutes (31/game) ensure consistent opportunity. CZS pricing at -120 is fair value for a high-probability play.",
+      "line_shop_note": "BetOnline.ag -102 is the best available price found for the exact OVER 16.5 line.",
+      "confidence_score": 80,
+      "validated_game_key": "Los Angeles Sparks@Dallas Wings",
+      "odds_validated": true
+    },
+    {
+      "rank": 4,
       "pick_type": "player_prop",
       "category": "Rebounds",
       "selection": "Angel Reese OVER 12.5 Rebounds",
@@ -343,85 +471,37 @@
       "over_under": "OVER",
       "best_book": "FD",
       "best_odds": -130,
-      "prediction_confidence": 80,
-      "confidence_tier": "High",
+      "prediction_confidence": 79,
+      "confidence_tier": "Medium",
       "market_value_score": 68,
-      "market_value_tier": "Positive",
+      "market_value_tier": "Neutral",
       "season_avg": 12.4,
       "l3_avg": null,
       "l5_avg": null,
       "l10_avg": null,
       "l15_avg": null,
-      "hit_rate_season": "5/5 at 10+ REB threshold; 4/5 at 15+ threshold confirms consistency",
-      "hit_rate_l10": "Consistent rebounder: 12.4 REB/G season baseline",
+      "hit_rate_season": "54% (4/7+ hits)",
+      "hit_rate_l10": "50%",
       "injury_split_games": 0,
       "injury_split_note": null,
       "opportunity_signals": [
-        "12.4 REB/G season average essentially at line threshold",
-        "31.6 MIN/G with forward position providing rebound opportunity",
-        "5/5 hitting 10+ rebounds in recent sample confirms consistency"
+        "Season 12.4 REB/G sits at line",
+        "24.4% usage with 31.6 MIN/G (very high volume)",
+        "Elite rebounder archetype (C position)"
       ],
       "key_factors": [
-        "Season baseline (12.4) aligns tightly with 12.5 line",
-        "Strong hit rate matrix performance (5/5 at 10+ threshold, 4/5 at 15+)",
-        "Defensive rebounding is stable role in Atlanta lineup"
+        "39 games played (durable, no injury concerns)",
+        "Connecticut ranks Rank 10 at C (moderate rebounding defense)",
+        "Atlanta home context beneficial"
       ],
       "risk_factors": [
-        "Minimal separation between season average and line (0.1 rebound gap)",
-        "Hit rate shows only 1/5 touching 20+ (limited explosion games)",
-        "Pricing at -130 reflects fair value without edge"
+        "12.4 baseline means 50% statistical edge only",
+        "DK -130 is steep juice for marginal probability edge",
+        "54% season hit rate is solid but not elite confirmation"
       ],
-      "reasoning": "Angel Reese's 12.4 REB/G season average sits nearly flush with the 12.5 line. Her hit rate matrix shows 5/5 at the 10+ threshold and 4/5 at 15+, confirming consistent floor work. At 31.6 MPG in a primary forward role, she has stable rebound opportunity. The -130 pricing is fair given the tight alignment.",
+      "reasoning": "Angel Reese's 12.4 REB/G baseline aligns with the 12.5 line, backed by 54% season hit rate at this threshold. Her elite volume (31.6 MIN/G, 24.4% usage) and durable role ensure opportunity. However, -130 pricing reduces value appeal compared to better-priced alternatives.",
       "line_shop_note": "FD -130 is the best available price found for the exact OVER 12.5 line.",
-      "confidence_score": 80,
-      "validated_game_key": "Connecticut Sun@Atlanta Dream",
-      "odds_validated": true
-    },
-    {
-      "rank": 4,
-      "pick_type": "player_prop",
-      "category": "Points",
-      "selection": "Rhyne Howard OVER 18.5 Points",
-      "player_name": "Rhyne Howard",
-      "team": "ATL",
-      "opponent": "CONN",
-      "game": "Connecticut Sun @ Atlanta Dream",
-      "prop_line": 18.5,
-      "game_line": null,
-      "over_under": "OVER",
-      "best_book": "HRB",
-      "best_odds": 105,
-      "prediction_confidence": 78,
-      "confidence_tier": "Medium",
-      "market_value_score": 69,
-      "market_value_tier": "Neutral",
-      "season_avg": 18.3,
-      "l3_avg": null,
-      "l5_avg": null,
-      "l10_avg": null,
-      "l15_avg": null,
-      "hit_rate_season": "5/5 hitting 10+ PPG; 5/5 at 15+ threshold; 3/5 at 20+ confirms upside",
-      "hit_rate_l10": "Consistent scoring: 18.3 PPG on 34.6 MIN/G",
-      "injury_split_games": 0,
-      "injury_split_note": null,
-      "opportunity_signals": [
-        "18.3 PPG season average just 0.2 below line",
-        "34.6 MIN/G high-volume role with guard responsibility",
-        "3.3 3PM/G supports scoring consistency"
-      ],
-      "key_factors": [
-        "Season baseline (18.3) just shy of 18.5 line with minimal gap",
-        "Hit rate matrix: 5/5 at 10+ and 15+ thresholds, 3/5 at 20+ shows floor consistency",
-        "High usage role (34.6 MIN/G) provides scoring volume"
-      ],
-      "risk_factors": [
-        "Very tight separation (0.2 PPG) from baseline to line—requires near-average game",
-        "Only 3/5 hitting 20+ suggests limited explosion upside",
-        "Standard -106 pricing provides no positive edge"
-      ],
-      "reasoning": "Rhyne Howard's 18.3 PPG season average sits just 0.2 points below the 18.5 line. Her hit rate confirms consistent 10-15+ scoring output across recent samples, though 20+ is achieved in only 3/5 recent tracking games. At 34.6 MPG with high usage, she has the opportunity floor to support this line at neutral pricing.",
-      "line_shop_note": "HRB +105 is the best available price found for the exact OVER 18.5 line.",
-      "confidence_score": 78,
+      "confidence_score": 79,
       "validated_game_key": "Connecticut Sun@Atlanta Dream",
       "odds_validated": true
     }
@@ -438,5 +518,130 @@
       "Below Threshold": "0-71"
     },
     "rule": "All recommended bets must match an exact external sportsbook line. Best American odds are selected deterministically for identical wagers."
-  }
+  },
+  "lotto_spread_board": [
+    {
+      "game": "Connecticut Sun @ Atlanta Dream",
+      "selection": "Atlanta Dream -16.5",
+      "team": "Atlanta Dream",
+      "line": -16.5,
+      "best_book": "FD",
+      "best_odds": -105,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Washington Mystics @ Chicago Sky",
+      "selection": "Washington Mystics -1",
+      "team": "Washington Mystics",
+      "line": -1.0,
+      "best_book": "LowVig.ag",
+      "best_odds": -113,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Los Angeles Sparks @ Dallas Wings",
+      "selection": "Dallas Wings -8.5",
+      "team": "Dallas Wings",
+      "line": -8.5,
+      "best_book": "BALLY",
+      "best_odds": -103,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Las Vegas Aces @ Seattle Storm",
+      "selection": "Las Vegas Aces -10.5",
+      "team": "Las Vegas Aces",
+      "line": -10.5,
+      "best_book": "Bovada",
+      "best_odds": -105,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Phoenix Mercury @ Portland Fire",
+      "selection": "Phoenix Mercury -2.5",
+      "team": "Phoenix Mercury",
+      "line": -2.5,
+      "best_book": "CZS",
+      "best_odds": -112,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_total_board": [
+    {
+      "game": "Connecticut Sun @ Atlanta Dream",
+      "selection": "Over 167.5",
+      "over_under": "Over",
+      "line": 167.5,
+      "best_book": "Bovada",
+      "best_odds": -115,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Washington Mystics @ Chicago Sky",
+      "selection": "Over 164.5",
+      "over_under": "Over",
+      "line": 164.5,
+      "best_book": "FD",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Los Angeles Sparks @ Dallas Wings",
+      "selection": "Under 178.5",
+      "over_under": "Under",
+      "line": 178.5,
+      "best_book": "Bovada",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Las Vegas Aces @ Seattle Storm",
+      "selection": "Over 174.5",
+      "over_under": "Over",
+      "line": 174.5,
+      "best_book": "BALLY",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Phoenix Mercury @ Portland Fire",
+      "selection": "Under 172.5",
+      "over_under": "Under",
+      "line": 172.5,
+      "best_book": "FAN",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_notice": "Entertainment-only side boards; excluded from grading and official records."
 }
