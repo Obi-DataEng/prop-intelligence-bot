@@ -4049,8 +4049,13 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": 154
+                "line": 3.5,
+                "odds": -1450
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 1060
               },
               {
                 "side": "Over",
@@ -4064,22 +4069,17 @@
               },
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": -1450
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 1060
-              },
-              {
-                "side": "Over",
                 "line": 13.5,
                 "odds": 3000
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 154
               }
             ],
-            "line": 13.5,
-            "over": 3000
+            "line": 7.5,
+            "over": 154
           },
           "FAN": {
             "offers": [
@@ -4168,6 +4168,16 @@
             "offers": [
               {
                 "side": "Over",
+                "line": 29.5,
+                "odds": 176
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -2200
+              },
+              {
+                "side": "Over",
                 "line": 34.5,
                 "odds": 420
               },
@@ -4175,11 +4185,6 @@
                 "side": "Over",
                 "line": 19.5,
                 "odds": -410
-              },
-              {
-                "side": "Over",
-                "line": 29.5,
-                "odds": 176
               },
               {
                 "side": "Over",
@@ -4200,15 +4205,10 @@
                 "side": "Over",
                 "line": 24.5,
                 "odds": -146
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": -2200
               }
             ],
-            "line": 14.5,
-            "over": -2200
+            "line": 24.5,
+            "over": -146
           },
           "FAN": {
             "offers": [
@@ -4484,17 +4484,17 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": 800
+                "line": 3.5,
+                "odds": 158
               },
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": 158
+                "line": 5.5,
+                "odds": 800
               }
             ],
-            "line": 3.5,
-            "over": 158
+            "line": 5.5,
+            "over": 800
           },
           "FAN": {
             "offers": [
@@ -4585,18 +4585,13 @@
       },
       "player_threes_alternate": {
         "Jalen Brunson": {
-          "line": 4.5,
+          "line": 1.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
-                "line": 1.5,
-                "odds": -265
-              },
-              {
-                "side": "Over",
-                "line": 3.5,
-                "odds": 285
+                "line": 2.5,
+                "odds": 118
               },
               {
                 "side": "Over",
@@ -4610,22 +4605,27 @@
               },
               {
                 "side": "Over",
+                "line": 3.5,
+                "odds": 285
+              },
+              {
+                "side": "Over",
                 "line": 0.5,
                 "odds": -1600
               },
               {
                 "side": "Over",
-                "line": 2.5,
-                "odds": 118
+                "line": 4.5,
+                "odds": 700
               },
               {
                 "side": "Over",
-                "line": 4.5,
-                "odds": 700
+                "line": 1.5,
+                "odds": -265
               }
             ],
-            "line": 4.5,
-            "over": 700
+            "line": 1.5,
+            "over": -265
           }
         }
       }

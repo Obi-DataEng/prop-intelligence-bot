@@ -4,35 +4,35 @@
     {
       "player_name": "Angel Reese",
       "prop": "OVER 12.5 Rebounds",
-      "reason": "No season baseline, L10, L5, L3, or hit-rate data provided. Cannot assess prediction confidence without volume trends."
-    },
-    {
-      "player_name": "Allisha Gray",
-      "prop": "OVER 18.5 Points",
-      "reason": "No season baseline, L10, L5, L3, or hit-rate data provided. Cannot assess prediction confidence without volume trends."
-    },
-    {
-      "player_name": "Rhyne Howard",
-      "prop": "OVER 18.5 Points",
-      "reason": "No season baseline, L10, L5, L3, or hit-rate data provided. Cannot assess prediction confidence without volume trends."
+      "reason": "No season/L10 baseline data provided to validate against the line. Cannot assess reliability."
     },
     {
       "player_name": "Jordin Canada",
       "prop": "OVER 6.5 Assists",
-      "reason": "No season baseline, L10, L5, L3, or hit-rate data provided. Cannot assess prediction confidence without volume trends."
+      "reason": "No season/L10 baseline data provided. Insufficient evidence to evaluate prediction confidence."
+    },
+    {
+      "player_name": "Allisha Gray",
+      "prop": "OVER 18.5 Points",
+      "reason": "No season/L10 baseline data provided. Cannot establish whether odds are attractive relative to true probability."
+    },
+    {
+      "player_name": "Rhyne Howard",
+      "prop": "OVER 18.5 Points",
+      "reason": "No season/L10 baseline data provided. Insufficient volume and opportunity context."
     },
     {
       "player_name": "Connecticut Sun",
       "prop": "Moneyline vs Atlanta Dream",
-      "reason": "No team stats, recent form, injury reports, or game context provided. Cannot assess predictive confidence without win probability data."
+      "reason": "Large spread (15.5) and heavy favorite odds suggest significant skill gap, but no team-level baseline stats, recent form, or injury reports available to validate confidence."
     },
     {
-      "player_name": "Game Total",
-      "prop": "OVER/UNDER 168.5 (Connecticut @ Atlanta)",
-      "reason": "No team offensive/defensive pace, pace-of-play trends, or recent scoring context provided. Cannot differentiate between sportsbook consensus and edge."
+      "player_name": "Las Vegas Aces",
+      "prop": "Spread vs Seattle Storm",
+      "reason": "News suggests Aces have favorable matchups (eliminated teams), but no actual team stats, recent records, or detailed injury status provided to confirm."
     }
   ],
-  "slate_summary": "The provided research dataset lacks critical statistical foundations: no season baselines, L10/L5/L3 volume trends, hit-rate matrices, team stats, or current injury status are populated. Without these core inputs, prediction confidence cannot be established for any player prop or game market. The external odds are present but meaningless without underlying performance data to compare. A responsible analysis requires actual WNBA Research data, player statistics, and injury reports—none of which are substantively available in this submission.",
+  "slate_summary": "The 2026-09-17 WNBA slate lacks critical foundational data required for confident selection. No player season averages, L10/L5/L3 volume trends, or team-level statistics were provided in the research section. While external odds and player prop lines are present, the absence of baseline production data, minutes trends, usage rates, and hit-rate matrices prevents meaningful differentiation between value bets and traps. Game context (playoff implications, seed races) is noted in the news but cannot substitute for quantitative performance evidence. The framework requires prediction confidence to rest on actual statistical performance, not inference from headlines alone. Under these constraints, no bet meets the 72+ confidence threshold.",
   "best_bet": "No bets passed deterministic validation.",
   "picks": [],
   "validation": {
