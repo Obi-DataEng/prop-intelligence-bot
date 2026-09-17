@@ -170,9 +170,25 @@
       "best_odds": -106,
       "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects 53.7 total, creating a 0.8-point edge under the market number. This represents the first official game at Buffalo's new $2.2 billion Highmark Stadium, which could introduce pace-of-play adjustments as teams and officials adapt to the new venue environment. Model support combined with new stadium variable provides modest edge.",
+      "reasoning": "Model projects total of 53.7, creating 0.8 points of value on the Under. Both books aligned at 54.5 confirms sharp consensus. Buffalo's outdoor venue in early September typically plays to form. Model lean combined with favorable number creates modest edge.",
       "projected_total": 53.7,
       "model_edge": 0.8
+    },
+    {
+      "rank": 2,
+      "pick_type": "spread",
+      "game": "Detroit Lions @ Buffalo Bills",
+      "team": "Detroit Lions",
+      "selection": "Detroit Lions +5.5",
+      "line": 5.5,
+      "over_under": null,
+      "best_book": "CZS",
+      "best_odds": -114,
+      "prediction_confidence": 73,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects DET +4.2, while CZS offers +5.5, providing 1.3 points of cushion. Though model gives Detroit only 49% cover probability at +4.5, the extra point at Caesars improves positioning. Buffalo 65% win probability suggests competitive game within this number.",
+      "projected_margin": -4.2,
+      "model_edge": 1.3
     }
   ],
   "picks": [
@@ -328,29 +344,28 @@
       "best_odds": -106,
       "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects 53.7 total, creating a 0.8-point edge under the market number. This represents the first official game at Buffalo's new $2.2 billion Highmark Stadium, which could introduce pace-of-play adjustments as teams and officials adapt to the new venue environment. Model support combined with new stadium variable provides modest edge.",
+      "reasoning": "Model projects total of 53.7, creating 0.8 points of value on the Under. Both books aligned at 54.5 confirms sharp consensus. Buffalo's outdoor venue in early September typically plays to form. Model lean combined with favorable number creates modest edge.",
       "projected_total": 53.7,
       "model_edge": 0.8
+    },
+    {
+      "rank": 2,
+      "pick_type": "spread",
+      "game": "Detroit Lions @ Buffalo Bills",
+      "team": "Detroit Lions",
+      "selection": "Detroit Lions +5.5",
+      "line": 5.5,
+      "over_under": null,
+      "best_book": "CZS",
+      "best_odds": -114,
+      "prediction_confidence": 73,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects DET +4.2, while CZS offers +5.5, providing 1.3 points of cushion. Though model gives Detroit only 49% cover probability at +4.5, the extra point at Caesars improves positioning. Buffalo 65% win probability suggests competitive game within this number.",
+      "projected_margin": -4.2,
+      "model_edge": 1.3
     }
   ],
   "rejected_picks": [
-    {
-      "pick": {
-        "rank": 2,
-        "pick_type": "spread",
-        "game": "Detroit Lions @ Buffalo Bills",
-        "team": "Detroit Lions",
-        "selection": "Detroit Lions +4.5",
-        "line": 4.5,
-        "over_under": null,
-        "best_book": "FD",
-        "best_odds": -105,
-        "prediction_confidence": 73,
-        "confidence_tier": "Medium",
-        "reasoning": "Model projects DET +4.2, showing 49% cover probability at the +4.5 line available at FanDuel. The 0.3-point cushion provides narrow value. Buffalo has strong 60.1% home win rate with +1.1 average spread margin historically, but Lions getting extra half-point at FD versus CZS +5.5 line creates slight advantage in a projected close game (25-29)."
-      },
-      "reason": "spread is not supported by projection (+0.3 point edge)"
-    },
     {
       "pick": {
         "rank": 3,
@@ -364,7 +379,7 @@
         "best_odds": -235,
         "prediction_confidence": 72,
         "confidence_tier": "Medium",
-        "reasoning": "Model projects Buffalo with 65% win probability. At CZS -235, implied probability is 70.1%, creating a 5.1-point gap in the wrong direction. However, at FD -240 (70.6% implied), the gap is worse. Best available price still falls short of threshold for strong moneyline value, but Bills remain projected winner in home opener at new stadium with solid historical 60.1% home win rate."
+        "reasoning": "Model gives Buffalo 65% win probability. At -235, implied probability is 70.1%, creating 5.1 percentage point overlay against our model. Bills at home with strong 60.1% historical win rate and +3.5 average margin at New Era Field. Model supports favorite but price creates narrow margin."
       },
       "reason": "moneyline has no qualifying value: model 65.0% vs implied 70.1% (-5.1% edge)"
     }

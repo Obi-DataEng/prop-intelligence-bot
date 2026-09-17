@@ -4,7 +4,6 @@
   "sport_key": "americanfootball_ncaaf",
   "books": [
     "BALLY",
-    "BR",
     "BetAnything",
     "BetOnline.ag",
     "BetUS",
@@ -62,7 +61,7 @@
           "home_ml": -450,
           "away_ml": 325,
           "home_spread": -10.5,
-          "home_spread_odds": -115,
+          "home_spread_odds": -110,
           "away_spread": 10.5,
           "away_spread_odds": -120,
           "total": 51.5,
@@ -134,17 +133,6 @@
           "total": 51.5,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": -455,
-          "away_ml": 310,
-          "home_spread": -10.0,
-          "home_spread_odds": -112,
-          "away_spread": 10.0,
-          "away_spread_odds": -112,
-          "total": 51.5,
-          "over_odds": -112,
-          "under_odds": -112
         },
         "ReBet": {
           "home_ml": -461,
@@ -243,8 +231,8 @@
       "commence_time": "2026-09-18T23:30:00Z",
       "bookmakers": {
         "DK": {
-          "home_ml": 900,
-          "away_ml": -1600,
+          "home_ml": 850,
+          "away_ml": -1450,
           "home_spread": 21.0,
           "home_spread_odds": -118,
           "away_spread": -21.0,
@@ -276,8 +264,8 @@
           "under_odds": -102
         },
         "MGM": {
-          "home_ml": 1050,
-          "away_ml": -1600,
+          "home_ml": 950,
+          "away_ml": -1400,
           "home_spread": 20.5,
           "home_spread_odds": -105,
           "away_spread": -20.5,
@@ -287,15 +275,15 @@
           "under_odds": -110
         },
         "Courtside": {
-          "home_ml": 953,
-          "away_ml": -1467,
+          "home_ml": 897,
+          "away_ml": -1339,
           "home_spread": null,
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
           "total": 42.5,
           "over_odds": -641,
-          "under_odds": -651
+          "under_odds": -567
         },
         "HRB": {
           "home_ml": 750,
@@ -318,17 +306,6 @@
           "total": 56.0,
           "over_odds": -112,
           "under_odds": -109
-        },
-        "BR": {
-          "home_ml": 900,
-          "away_ml": -2000,
-          "home_spread": 20.5,
-          "home_spread_odds": -107,
-          "away_spread": -20.5,
-          "away_spread_odds": -117,
-          "total": 56.0,
-          "over_odds": -113,
-          "under_odds": -110
         },
         "PARX": {
           "home_ml": 900,
@@ -528,13 +505,13 @@
         "Courtside": {
           "home_ml": -316,
           "away_ml": 267,
-          "home_spread": -7.5,
-          "home_spread_odds": -110,
-          "away_spread": 7.5,
-          "away_spread_odds": -110,
-          "total": 53.5,
-          "over_odds": -107,
-          "under_odds": -119
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 32.5,
+          "over_odds": -1768,
+          "under_odds": -1381
         },
         "theScore Bet": {
           "home_ml": -300,
@@ -568,17 +545,6 @@
           "total": 53.0,
           "over_odds": -112,
           "under_odds": -109
-        },
-        "BR": {
-          "home_ml": -315,
-          "away_ml": 240,
-          "home_spread": -7.5,
-          "home_spread_odds": -113,
-          "away_spread": 7.5,
-          "away_spread_odds": -110,
-          "total": 53.0,
-          "over_odds": -113,
-          "under_odds": -110
         },
         "LowVig.ag": {
           "home_ml": -325,
@@ -614,7 +580,7 @@
           "under_odds": -103
         },
         "MGM": {
-          "home_ml": -300,
+          "home_ml": -325,
           "away_ml": 260,
           "home_spread": -7.5,
           "home_spread_odds": -108,
@@ -731,17 +697,6 @@
           "over_odds": -109,
           "under_odds": -112
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -57.5,
-          "home_spread_odds": -112,
-          "away_spread": 57.5,
-          "away_spread_odds": -112,
-          "total": 68.5,
-          "over_odds": -110,
-          "under_odds": -113
-        },
         "DK": {
           "home_ml": null,
           "away_ml": null,
@@ -845,17 +800,6 @@
           "home_spread_odds": -109,
           "away_spread": 4.0,
           "away_spread_odds": -112,
-          "total": 56.5,
-          "over_odds": -118,
-          "under_odds": -108
-        },
-        "BR": {
-          "home_ml": -175,
-          "away_ml": 138,
-          "home_spread": -4.0,
-          "home_spread_odds": -110,
-          "away_spread": 4.0,
-          "away_spread_odds": -113,
           "total": 56.5,
           "over_odds": -118,
           "under_odds": -108
@@ -1044,17 +988,6 @@
           "over_odds": -109,
           "under_odds": -117
         },
-        "BR": {
-          "home_ml": -10000,
-          "away_ml": 1400,
-          "home_spread": -23.5,
-          "home_spread_odds": -115,
-          "away_spread": 23.5,
-          "away_spread_odds": -108,
-          "total": 49.5,
-          "over_odds": -109,
-          "under_odds": -117
-        },
         "PARX": {
           "home_ml": -5000,
           "away_ml": 1400,
@@ -1073,8 +1006,8 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 30.5,
-          "over_odds": -2043,
+          "total": 29.5,
+          "over_odds": -3093,
           "under_odds": -1535
         },
         "LowVig.ag": {
@@ -1111,11 +1044,11 @@
           "under_odds": -105
         },
         "MyBookie.ag": {
-          "home_ml": -2273,
-          "away_ml": 1000,
-          "home_spread": -24.0,
+          "home_ml": -3366,
+          "away_ml": 1130,
+          "home_spread": -23.5,
           "home_spread_odds": -110,
-          "away_spread": 24.0,
+          "away_spread": 23.5,
           "away_spread_odds": -110,
           "total": 49.0,
           "over_odds": -110,
@@ -1227,17 +1160,6 @@
           "total": 50.5,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": -225,
-          "away_ml": 175,
-          "home_spread": -5.5,
-          "home_spread_odds": -114,
-          "away_spread": 5.5,
-          "away_spread_odds": -109,
-          "total": 50.5,
-          "over_odds": -115,
-          "under_odds": -108
         },
         "BALLY": {
           "home_ml": -225,
@@ -1380,19 +1302,19 @@
           "under_odds": -110
         },
         "DK": {
-          "home_ml": 1200,
-          "away_ml": -2400,
+          "home_ml": 1300,
+          "away_ml": -2800,
           "home_spread": 24.5,
-          "home_spread_odds": -108,
+          "home_spread_odds": -112,
           "away_spread": -24.5,
-          "away_spread_odds": -112,
+          "away_spread_odds": -108,
           "total": 54.5,
           "over_odds": -110,
           "under_odds": -110
         },
         "Fliff": {
-          "home_ml": 1365,
-          "away_ml": -5380,
+          "home_ml": 1390,
+          "away_ml": -5785,
           "home_spread": 24.5,
           "home_spread_odds": -115,
           "away_spread": -24.5,
@@ -1411,17 +1333,6 @@
           "total": 54.0,
           "over_odds": -113,
           "under_odds": -108
-        },
-        "BR": {
-          "home_ml": 1400,
-          "away_ml": -10000,
-          "home_spread": 24.5,
-          "home_spread_odds": -112,
-          "away_spread": -24.5,
-          "away_spread_odds": -112,
-          "total": 54.0,
-          "over_odds": -114,
-          "under_odds": -109
         },
         "PARX": {
           "home_ml": 1500,
@@ -1457,15 +1368,15 @@
           "under_odds": -113
         },
         "Courtside": {
-          "home_ml": 1290,
-          "away_ml": -2122,
+          "home_ml": 1405,
+          "away_ml": -2433,
           "home_spread": null,
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 44.5,
-          "over_odds": -357,
-          "under_odds": -447
+          "total": 36.5,
+          "over_odds": -1551,
+          "under_odds": -3022
         },
         "LowVig.ag": {
           "home_ml": 1296,
@@ -1490,8 +1401,8 @@
           "under_odds": -105
         },
         "MGM": {
-          "home_ml": 1350,
-          "away_ml": -2500,
+          "home_ml": 1500,
+          "away_ml": -3000,
           "home_spread": 24.5,
           "home_spread_odds": -108,
           "away_spread": -24.5,
@@ -1607,17 +1518,6 @@
           "over_odds": -109,
           "under_odds": -119
         },
-        "BR": {
-          "home_ml": -10000,
-          "away_ml": 1400,
-          "home_spread": -23.5,
-          "home_spread_odds": -109,
-          "away_spread": 23.5,
-          "away_spread_odds": -114,
-          "total": 44.5,
-          "over_odds": -108,
-          "under_odds": -118
-        },
         "PARX": {
           "home_ml": -5000,
           "away_ml": 1400,
@@ -1691,9 +1591,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 25.5,
-          "over_odds": -2951,
-          "under_odds": -3507
+          "total": 29.5,
+          "over_odds": -1085,
+          "under_odds": -2509
         },
         "MGM": {
           "home_ml": -2500,
@@ -1835,17 +1735,6 @@
           "over_odds": -109,
           "under_odds": -112
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -40.5,
-          "home_spread_odds": -114,
-          "away_spread": 40.5,
-          "away_spread_odds": -109,
-          "total": 50.0,
-          "over_odds": -110,
-          "under_odds": -113
-        },
         "BALLY": {
           "home_ml": null,
           "away_ml": null,
@@ -1965,15 +1854,15 @@
       "commence_time": "2026-09-19T16:00:00Z",
       "bookmakers": {
         "DK": {
-          "home_ml": -162,
-          "away_ml": 136,
+          "home_ml": -166,
+          "away_ml": 140,
           "home_spread": -3.0,
           "home_spread_odds": -115,
           "away_spread": 3.0,
           "away_spread_odds": -105,
           "total": 43.5,
-          "over_odds": -112,
-          "under_odds": -108
+          "over_odds": -108,
+          "under_odds": -112
         },
         "FD": {
           "home_ml": -166,
@@ -1995,17 +1884,6 @@
           "away_spread_odds": -120,
           "total": 43.5,
           "over_odds": -110,
-          "under_odds": -110
-        },
-        "BR": {
-          "home_ml": -167,
-          "away_ml": 133,
-          "home_spread": -3.0,
-          "home_spread_odds": -120,
-          "away_spread": 3.0,
-          "away_spread_odds": -106,
-          "total": 43.0,
-          "over_odds": -113,
           "under_odds": -110
         },
         "BALLY": {
@@ -2064,15 +1942,15 @@
           "under_odds": -108
         },
         "Courtside": {
-          "home_ml": null,
-          "away_ml": null,
+          "home_ml": -163,
+          "away_ml": 143,
           "home_spread": null,
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 28.5,
-          "over_odds": -861,
-          "under_odds": -1261
+          "total": 29.5,
+          "over_odds": -715,
+          "under_odds": -825
         },
         "LowVig.ag": {
           "home_ml": -160,
@@ -2098,11 +1976,11 @@
         },
         "MGM": {
           "home_ml": -165,
-          "away_ml": 138,
-          "home_spread": -3.0,
-          "home_spread_odds": -118,
-          "away_spread": 3.0,
-          "away_spread_odds": -102,
+          "away_ml": 140,
+          "home_spread": -3.5,
+          "home_spread_odds": -102,
+          "away_spread": 3.5,
+          "away_spread_odds": -118,
           "total": 43.5,
           "over_odds": -108,
           "under_odds": -110
@@ -2203,17 +2081,6 @@
           "over_odds": -109,
           "under_odds": -117
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -41.0,
-          "home_spread_odds": -110,
-          "away_spread": 41.0,
-          "away_spread_odds": -113,
-          "total": 61.5,
-          "over_odds": -109,
-          "under_odds": -117
-        },
         "DK": {
           "home_ml": null,
           "away_ml": null,
@@ -2299,17 +2166,6 @@
           "over_odds": -108,
           "under_odds": -113
         },
-        "BR": {
-          "home_ml": -2000,
-          "away_ml": 850,
-          "home_spread": -20.5,
-          "home_spread_odds": -112,
-          "away_spread": 20.5,
-          "away_spread_odds": -112,
-          "total": 49.5,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "PARX": {
           "home_ml": -1667,
           "away_ml": 900,
@@ -2379,9 +2235,9 @@
         "MyBookie.ag": {
           "home_ml": -2019,
           "away_ml": 895,
-          "home_spread": -21.0,
+          "home_spread": -20.5,
           "home_spread_odds": -110,
-          "away_spread": 21.0,
+          "away_spread": 20.5,
           "away_spread_odds": -110,
           "total": 49.5,
           "over_odds": -110,
@@ -2527,17 +2383,6 @@
           "over_odds": -108,
           "under_odds": -113
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -52.5,
-          "home_spread_odds": -110,
-          "away_spread": 52.5,
-          "away_spread_odds": -113,
-          "total": 59.5,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "MGM": {
           "home_ml": null,
           "away_ml": null,
@@ -2677,17 +2522,6 @@
           "total": 62.5,
           "over_odds": -116,
           "under_odds": -111
-        },
-        "BR": {
-          "home_ml": -150,
-          "away_ml": 120,
-          "home_spread": -3.0,
-          "home_spread_odds": -108,
-          "away_spread": 3.0,
-          "away_spread_odds": -115,
-          "total": 62.5,
-          "over_odds": -110,
-          "under_odds": -115
         },
         "PARX": {
           "home_ml": -150,
@@ -2873,17 +2707,6 @@
           "over_odds": -105,
           "under_odds": -115
         },
-        "BR": {
-          "home_ml": -5000,
-          "away_ml": 1100,
-          "home_spread": -24.5,
-          "home_spread_odds": -110,
-          "away_spread": 24.5,
-          "away_spread_odds": -113,
-          "total": 46.5,
-          "over_odds": -113,
-          "under_odds": -113
-        },
         "PARX": {
           "home_ml": -2500,
           "away_ml": 1100,
@@ -3057,17 +2880,6 @@
           "over_odds": -108,
           "under_odds": -113
         },
-        "BR": {
-          "home_ml": -167,
-          "away_ml": 130,
-          "home_spread": -3.5,
-          "home_spread_odds": -107,
-          "away_spread": 3.5,
-          "away_spread_odds": -117,
-          "total": 51.0,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "BALLY": {
           "home_ml": -167,
           "away_ml": 132,
@@ -3094,9 +2906,9 @@
           "home_ml": -162,
           "away_ml": 136,
           "home_spread": -3.0,
-          "home_spread_odds": -110,
+          "home_spread_odds": -108,
           "away_spread": 3.0,
-          "away_spread_odds": -110,
+          "away_spread_odds": -112,
           "total": 50.5,
           "over_odds": -108,
           "under_odds": -112
@@ -3141,15 +2953,15 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 44.5,
-          "over_odds": -211,
-          "under_odds": -209
+          "total": 33.5,
+          "over_odds": -996,
+          "under_odds": -961
         },
         "MGM": {
           "home_ml": -160,
           "away_ml": 135,
           "home_spread": -3.0,
-          "home_spread_odds": -115,
+          "home_spread_odds": -112,
           "away_spread": 3.0,
           "away_spread_odds": -105,
           "total": 50.5,
@@ -3318,17 +3130,6 @@
           "over_odds": -112,
           "under_odds": -114
         },
-        "BR": {
-          "home_ml": -120,
-          "away_ml": -105,
-          "home_spread": -1.5,
-          "home_spread_odds": -110,
-          "away_spread": 1.5,
-          "away_spread_odds": -113,
-          "total": 39.5,
-          "over_odds": -112,
-          "under_odds": -114
-        },
         "MyBookie.ag": {
           "home_ml": -118,
           "away_ml": -104,
@@ -3447,17 +3248,6 @@
           "over_odds": -110,
           "under_odds": -115
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -38.5,
-          "home_spread_odds": -110,
-          "away_spread": 38.5,
-          "away_spread_odds": -113,
-          "total": 53.5,
-          "over_odds": -110,
-          "under_odds": -115
-        },
         "DK": {
           "home_ml": null,
           "away_ml": null,
@@ -3539,17 +3329,6 @@
           "home_spread_odds": -110,
           "away_spread": 39.0,
           "away_spread_odds": -110,
-          "total": 53.5,
-          "over_odds": -118,
-          "under_odds": -108
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -39.0,
-          "home_spread_odds": -112,
-          "away_spread": 39.0,
-          "away_spread_odds": -112,
           "total": 53.5,
           "over_odds": -118,
           "under_odds": -108
@@ -3682,17 +3461,6 @@
           "total": 35.5,
           "over_odds": -798,
           "under_odds": -1330
-        },
-        "BR": {
-          "home_ml": -240,
-          "away_ml": 188,
-          "home_spread": -6.0,
-          "home_spread_odds": -112,
-          "away_spread": 6.0,
-          "away_spread_odds": -112,
-          "total": 50.5,
-          "over_odds": -114,
-          "under_odds": -112
         },
         "BALLY": {
           "home_ml": -240,
@@ -3870,10 +3638,10 @@
         "Fliff": {
           "home_ml": -1640,
           "away_ml": 830,
-          "home_spread": -18.5,
-          "home_spread_odds": -125,
-          "away_spread": 18.5,
-          "away_spread_odds": -105,
+          "home_spread": -19.5,
+          "home_spread_odds": -120,
+          "away_spread": 19.5,
+          "away_spread_odds": -115,
           "total": 48.5,
           "over_odds": -120,
           "under_odds": -115
@@ -3921,17 +3689,6 @@
           "total": 49.0,
           "over_odds": -108,
           "under_odds": -113
-        },
-        "BR": {
-          "home_ml": -2000,
-          "away_ml": 800,
-          "home_spread": -20.0,
-          "home_spread_odds": -109,
-          "away_spread": 20.0,
-          "away_spread_odds": -114,
-          "total": 49.0,
-          "over_odds": -109,
-          "under_odds": -114
         },
         "LowVig.ag": {
           "home_ml": -1300,
@@ -4117,17 +3874,6 @@
           "over_odds": -110,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": -1000,
-          "away_ml": 600,
-          "home_spread": -14.5,
-          "home_spread_odds": -110,
-          "away_spread": 14.5,
-          "away_spread_odds": -113,
-          "total": 49.5,
-          "over_odds": -113,
-          "under_odds": -113
-        },
         "BALLY": {
           "home_ml": -1000,
           "away_ml": 600,
@@ -4235,17 +3981,6 @@
           "over_odds": -112,
           "under_odds": -108
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -38.0,
-          "home_spread_odds": -112,
-          "away_spread": 38.0,
-          "away_spread_odds": -112,
-          "total": 52.5,
-          "over_odds": -108,
-          "under_odds": -118
-        },
         "PARX": {
           "home_ml": null,
           "away_ml": null,
@@ -4299,8 +4034,8 @@
           "under_odds": -115
         },
         "Fliff": {
-          "home_ml": -940,
-          "away_ml": 580,
+          "home_ml": -930,
+          "away_ml": 575,
           "home_spread": -16.5,
           "home_spread_odds": -125,
           "away_spread": 16.5,
@@ -4321,15 +4056,15 @@
           "under_odds": -110
         },
         "DK": {
-          "home_ml": -850,
-          "away_ml": 575,
-          "home_spread": -17.5,
-          "home_spread_odds": -102,
-          "away_spread": 17.5,
-          "away_spread_odds": -118,
+          "home_ml": -800,
+          "away_ml": 550,
+          "home_spread": -16.5,
+          "home_spread_odds": -118,
+          "away_spread": 16.5,
+          "away_spread_odds": -102,
           "total": 50.5,
-          "over_odds": -108,
-          "under_odds": -112
+          "over_odds": -105,
+          "under_odds": -115
         },
         "MGM": {
           "home_ml": -800,
@@ -4343,15 +4078,15 @@
           "under_odds": -120
         },
         "Courtside": {
-          "home_ml": -807,
-          "away_ml": 599,
+          "home_ml": -761,
+          "away_ml": 572,
           "home_spread": null,
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 47.5,
-          "over_odds": -153,
-          "under_odds": -166
+          "total": 34.5,
+          "over_odds": -979,
+          "under_odds": -1551
         },
         "HRB": {
           "home_ml": -900,
@@ -4374,17 +4109,6 @@
           "total": 49.5,
           "over_odds": -115,
           "under_odds": -105
-        },
-        "BR": {
-          "home_ml": -910,
-          "away_ml": 550,
-          "home_spread": -16.5,
-          "home_spread_odds": -113,
-          "away_spread": 16.5,
-          "away_spread_odds": -110,
-          "total": 50.5,
-          "over_odds": -110,
-          "under_odds": -113
         },
         "PARX": {
           "home_ml": -910,
@@ -4636,17 +4360,6 @@
           "over_odds": -108,
           "under_odds": -113
         },
-        "BR": {
-          "home_ml": -130,
-          "away_ml": 105,
-          "home_spread": -2.0,
-          "home_spread_odds": -109,
-          "away_spread": 2.0,
-          "away_spread_odds": -114,
-          "total": 59.0,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "LowVig.ag": {
           "home_ml": -120,
           "away_ml": 100,
@@ -4786,17 +4499,6 @@
           "total": 37.5,
           "over_odds": -541,
           "under_odds": -483
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -34.5,
-          "home_spread_odds": -115,
-          "away_spread": 34.5,
-          "away_spread_odds": -108,
-          "total": 49.5,
-          "over_odds": -109,
-          "under_odds": -114
         },
         "BALLY": {
           "home_ml": null,
@@ -4942,9 +4644,9 @@
           "home_ml": 1000,
           "away_ml": -1800,
           "home_spread": 22.5,
-          "home_spread_odds": -115,
+          "home_spread_odds": -110,
           "away_spread": -22.5,
-          "away_spread_odds": -105,
+          "away_spread_odds": -110,
           "total": 59.5,
           "over_odds": -110,
           "under_odds": -110
@@ -4974,10 +4676,10 @@
         "Fliff": {
           "home_ml": 1195,
           "away_ml": -3600,
-          "home_spread": 22.5,
-          "home_spread_odds": -115,
-          "away_spread": -22.5,
-          "away_spread_odds": -120,
+          "home_spread": 21.5,
+          "home_spread_odds": 100,
+          "away_spread": -21.5,
+          "away_spread_odds": -130,
           "total": 59.5,
           "over_odds": -120,
           "under_odds": -115
@@ -5000,9 +4702,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 54.5,
-          "over_odds": -217,
-          "under_odds": -241
+          "total": 48.5,
+          "over_odds": -437,
+          "under_odds": -416
         },
         "BALLY": {
           "home_ml": 1300,
@@ -5026,17 +4728,6 @@
           "over_odds": -108,
           "under_odds": -113
         },
-        "BR": {
-          "home_ml": 1300,
-          "away_ml": -5000,
-          "home_spread": 23.5,
-          "home_spread_odds": -109,
-          "away_spread": -23.5,
-          "away_spread_odds": -114,
-          "total": 59.5,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "MGM": {
           "home_ml": 1250,
           "away_ml": -2000,
@@ -5051,9 +4742,9 @@
         "MyBookie.ag": {
           "home_ml": 907,
           "away_ml": -2019,
-          "home_spread": 23.5,
+          "home_spread": 22.5,
           "home_spread_odds": -110,
-          "away_spread": -23.5,
+          "away_spread": -22.5,
           "away_spread_odds": -110,
           "total": 59.5,
           "over_odds": -110,
@@ -5063,9 +4754,9 @@
           "home_ml": 1300,
           "away_ml": -4000,
           "home_spread": 23.5,
-          "home_spread_odds": 100,
+          "home_spread_odds": -105,
           "away_spread": -23.5,
-          "away_spread_odds": -120,
+          "away_spread_odds": -115,
           "total": 59.5,
           "over_odds": -115,
           "under_odds": -105
@@ -5177,17 +4868,6 @@
           "over_odds": -115,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -34.5,
-          "home_spread_odds": -110,
-          "away_spread": 34.5,
-          "away_spread_odds": -113,
-          "total": 49.5,
-          "over_odds": -115,
-          "under_odds": -110
-        },
         "Courtside": {
           "home_ml": null,
           "away_ml": null,
@@ -5283,17 +4963,6 @@
           "total": 56.5,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -28.0,
-          "home_spread_odds": -112,
-          "away_spread": 28.0,
-          "away_spread_odds": -112,
-          "total": 56.5,
-          "over_odds": -112,
-          "under_odds": -112
         },
         "DK": {
           "home_ml": -6500,
@@ -5475,17 +5144,6 @@
           "home_spread_odds": -114,
           "away_spread": 14.0,
           "away_spread_odds": -107,
-          "total": 49.5,
-          "over_odds": -112,
-          "under_odds": -114
-        },
-        "BR": {
-          "home_ml": -835,
-          "away_ml": 525,
-          "home_spread": -14.0,
-          "home_spread_odds": -115,
-          "away_spread": 14.0,
-          "away_spread_odds": -108,
           "total": 49.5,
           "over_odds": -112,
           "under_odds": -114
@@ -5718,17 +5376,6 @@
           "over_odds": -108,
           "under_odds": -118
         },
-        "BR": {
-          "home_ml": -2000,
-          "away_ml": 900,
-          "home_spread": -19.0,
-          "home_spread_odds": -110,
-          "away_spread": 19.0,
-          "away_spread_odds": -113,
-          "total": 53.5,
-          "over_odds": -108,
-          "under_odds": -118
-        },
         "BALLY": {
           "home_ml": -2000,
           "away_ml": 900,
@@ -5913,17 +5560,6 @@
           "over_odds": -110,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": -400,
-          "away_ml": 295,
-          "home_spread": -9.5,
-          "home_spread_odds": -114,
-          "away_spread": 9.5,
-          "away_spread_odds": -109,
-          "total": 50.5,
-          "over_odds": -112,
-          "under_odds": -112
-        },
         "BALLY": {
           "home_ml": -400,
           "away_ml": 300,
@@ -6053,17 +5689,6 @@
           "over_odds": -112,
           "under_odds": -109
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -44.5,
-          "home_spread_odds": -114,
-          "away_spread": 44.5,
-          "away_spread_odds": -109,
-          "total": 61.0,
-          "over_odds": -113,
-          "under_odds": -110
-        },
         "BALLY": {
           "home_ml": null,
           "away_ml": null,
@@ -6117,7 +5742,7 @@
           "away_spread_odds": -110,
           "total": 60.5,
           "over_odds": -115,
-          "under_odds": -105
+          "under_odds": -110
         },
         "BetAnything": {
           "home_ml": null,
@@ -6192,17 +5817,6 @@
           "total": 49.5,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -39.5,
-          "home_spread_odds": -114,
-          "away_spread": 39.5,
-          "away_spread_odds": -109,
-          "total": 49.0,
-          "over_odds": -114,
-          "under_odds": -109
         },
         "PARX": {
           "home_ml": null,
@@ -6332,17 +5946,6 @@
           "total": 58.5,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": -177,
-          "away_ml": 143,
-          "home_spread": -3.5,
-          "home_spread_odds": -113,
-          "away_spread": 3.5,
-          "away_spread_odds": -110,
-          "total": 58.5,
-          "over_odds": -109,
-          "under_odds": -114
         },
         "BALLY": {
           "home_ml": -177,
@@ -6550,17 +6153,6 @@
           "over_odds": -117,
           "under_odds": -109
         },
-        "BR": {
-          "home_ml": -560,
-          "away_ml": 390,
-          "home_spread": -11.5,
-          "home_spread_odds": -110,
-          "away_spread": 11.5,
-          "away_spread_odds": -113,
-          "total": 47.5,
-          "over_odds": -117,
-          "under_odds": -109
-        },
         "BALLY": {
           "home_ml": -560,
           "away_ml": 390,
@@ -6675,17 +6267,6 @@
           "home_spread_odds": -108,
           "away_spread": 18.0,
           "away_spread_odds": -113,
-          "total": 51.5,
-          "over_odds": -112,
-          "under_odds": -114
-        },
-        "BR": {
-          "home_ml": -1667,
-          "away_ml": 800,
-          "home_spread": -18.0,
-          "home_spread_odds": -109,
-          "away_spread": 18.0,
-          "away_spread_odds": -114,
           "total": 51.5,
           "over_odds": -112,
           "under_odds": -114
@@ -6855,17 +6436,6 @@
         "PARX": {
           "home_ml": -157,
           "away_ml": 128,
-          "home_spread": -3.0,
-          "home_spread_odds": -113,
-          "away_spread": 3.0,
-          "away_spread_odds": -109,
-          "total": 49.5,
-          "over_odds": -109,
-          "under_odds": -117
-        },
-        "BR": {
-          "home_ml": -159,
-          "away_ml": 125,
           "home_spread": -3.0,
           "home_spread_odds": -113,
           "away_spread": 3.0,
@@ -7047,17 +6617,6 @@
           "over_odds": -110,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": -286,
-          "away_ml": 220,
-          "home_spread": -6.5,
-          "home_spread_odds": -120,
-          "away_spread": 6.5,
-          "away_spread_odds": -105,
-          "total": 62.5,
-          "over_odds": -108,
-          "under_odds": -117
-        },
         "BALLY": {
           "home_ml": -278,
           "away_ml": 220,
@@ -7220,17 +6779,6 @@
           "over_odds": -110,
           "under_odds": -115
         },
-        "BR": {
-          "home_ml": 163,
-          "away_ml": -210,
-          "home_spread": 5.0,
-          "home_spread_odds": -112,
-          "away_spread": -5.0,
-          "away_spread_odds": -110,
-          "total": 52.5,
-          "over_odds": -110,
-          "under_odds": -115
-        },
         "BALLY": {
           "home_ml": 165,
           "away_ml": -205,
@@ -7382,17 +6930,6 @@
           "over_odds": -108,
           "under_odds": -113
         },
-        "BR": {
-          "home_ml": 114,
-          "away_ml": -141,
-          "home_spread": 2.5,
-          "home_spread_odds": -109,
-          "away_spread": -2.5,
-          "away_spread_odds": -114,
-          "total": 53.5,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "BALLY": {
           "home_ml": 115,
           "away_ml": -139,
@@ -7433,9 +6970,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 43.5,
-          "over_odds": -333,
-          "under_odds": -353
+          "total": 40.5,
+          "over_odds": -496,
+          "under_odds": -660
         },
         "LowVig.ag": {
           "home_ml": 115,
@@ -7543,17 +7080,6 @@
           "total": 62.0,
           "over_odds": -112,
           "under_odds": -109
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -37.5,
-          "home_spread_odds": -110,
-          "away_spread": 37.5,
-          "away_spread_odds": -113,
-          "total": 62.0,
-          "over_odds": -112,
-          "under_odds": -110
         },
         "BALLY": {
           "home_ml": null,
@@ -7728,17 +7254,6 @@
           "over_odds": -110,
           "under_odds": -115
         },
-        "BR": {
-          "home_ml": -162,
-          "away_ml": 128,
-          "home_spread": -3.5,
-          "home_spread_odds": -108,
-          "away_spread": 3.5,
-          "away_spread_odds": -115,
-          "total": 53.5,
-          "over_odds": -110,
-          "under_odds": -115
-        },
         "BetUS": {
           "home_ml": -165,
           "away_ml": 142,
@@ -7875,9 +7390,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 52.5,
-          "over_odds": 120,
-          "under_odds": 121
+          "total": 36.5,
+          "over_odds": -734,
+          "under_odds": -379
         },
         "MGM": {
           "home_ml": -1100,
@@ -7911,17 +7426,6 @@
           "total": 50.5,
           "over_odds": -108,
           "under_odds": -113
-        },
-        "BR": {
-          "home_ml": -1115,
-          "away_ml": 650,
-          "home_spread": -17.5,
-          "home_spread_odds": -109,
-          "away_spread": 17.5,
-          "away_spread_odds": -114,
-          "total": 50.5,
-          "over_odds": -109,
-          "under_odds": -114
         },
         "BALLY": {
           "home_ml": -1000,
@@ -8007,17 +7511,6 @@
           "total": 56.5,
           "over_odds": -105,
           "under_odds": -115
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -35.0,
-          "home_spread_odds": -113,
-          "away_spread": 35.0,
-          "away_spread_odds": -110,
-          "total": 56.5,
-          "over_odds": -113,
-          "under_odds": -110
         },
         "PARX": {
           "home_ml": null,
@@ -8177,17 +7670,6 @@
           "home_spread_odds": -109,
           "away_spread": -4.5,
           "away_spread_odds": -112,
-          "total": 50.5,
-          "over_odds": -117,
-          "under_odds": -109
-        },
-        "BR": {
-          "home_ml": 160,
-          "away_ml": -200,
-          "home_spread": 4.5,
-          "home_spread_odds": -110,
-          "away_spread": -4.5,
-          "away_spread_odds": -113,
           "total": 50.5,
           "over_odds": -117,
           "under_odds": -109
@@ -8354,17 +7836,6 @@
           "over_odds": -106,
           "under_odds": -114
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -26.5,
-          "home_spread_odds": -110,
-          "away_spread": 26.5,
-          "away_spread_odds": -113,
-          "total": 50.5,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "BALLY": {
           "home_ml": null,
           "away_ml": null,
@@ -8505,17 +7976,6 @@
           "over_odds": -112,
           "under_odds": -109
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -56.0,
-          "home_spread_odds": -112,
-          "away_spread": 56.0,
-          "away_spread_odds": -112,
-          "total": 71.0,
-          "over_odds": -113,
-          "under_odds": -110
-        },
         "DK": {
           "home_ml": null,
           "away_ml": null,
@@ -8633,17 +8093,6 @@
           "total": 50.5,
           "over_odds": -112,
           "under_odds": -114
-        },
-        "BR": {
-          "home_ml": -2000,
-          "away_ml": 850,
-          "home_spread": -19.0,
-          "home_spread_odds": -110,
-          "away_spread": 19.0,
-          "away_spread_odds": -113,
-          "total": 50.5,
-          "over_odds": -112,
-          "under_odds": -114
         }
       }
     },
@@ -8740,17 +8189,6 @@
           "total": 49.5,
           "over_odds": -105,
           "under_odds": -115
-        },
-        "BR": {
-          "home_ml": -278,
-          "away_ml": 215,
-          "home_spread": -7.0,
-          "home_spread_odds": -109,
-          "away_spread": 7.0,
-          "away_spread_odds": -114,
-          "total": 49.5,
-          "over_odds": -117,
-          "under_odds": -109
         },
         "BALLY": {
           "home_ml": -278,
@@ -8936,17 +8374,6 @@
           "over_odds": -110,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": 310,
-          "away_ml": -420,
-          "home_spread": 9.5,
-          "home_spread_odds": -112,
-          "away_spread": -9.5,
-          "away_spread_odds": -112,
-          "total": 43.5,
-          "over_odds": -120,
-          "under_odds": -106
-        },
         "BALLY": {
           "home_ml": 310,
           "away_ml": -420,
@@ -9109,17 +8536,6 @@
           "over_odds": -114,
           "under_odds": -112
         },
-        "BR": {
-          "home_ml": 133,
-          "away_ml": -167,
-          "home_spread": 3.5,
-          "home_spread_odds": -115,
-          "away_spread": -3.5,
-          "away_spread_odds": -108,
-          "total": 54.5,
-          "over_odds": -114,
-          "under_odds": -112
-        },
         "BALLY": {
           "home_ml": 135,
           "away_ml": -165,
@@ -9249,17 +8665,6 @@
           "over_odds": -112,
           "under_odds": -109
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -43.0,
-          "home_spread_odds": -113,
-          "away_spread": 43.0,
-          "away_spread_odds": -110,
-          "total": 57.5,
-          "over_odds": -113,
-          "under_odds": -110
-        },
         "PARX": {
           "home_ml": null,
           "away_ml": null,
@@ -9345,17 +8750,6 @@
           "over_odds": -105,
           "under_odds": -115
         },
-        "BR": {
-          "home_ml": -10000,
-          "away_ml": 1500,
-          "home_spread": -25.0,
-          "home_spread_odds": -112,
-          "away_spread": 25.0,
-          "away_spread_odds": -112,
-          "total": 51.0,
-          "over_odds": -114,
-          "under_odds": -109
-        },
         "PARX": {
           "home_ml": -10000,
           "away_ml": 1600,
@@ -9425,7 +8819,7 @@
           "home_spread": 17.5,
           "home_spread_odds": -115,
           "away_spread": -17.5,
-          "away_spread_odds": -120,
+          "away_spread_odds": -115,
           "total": 52.5,
           "over_odds": -115,
           "under_odds": -120
@@ -9460,8 +8854,8 @@
           "away_spread": -17.5,
           "away_spread_odds": -108,
           "total": 52.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "over_odds": -105,
+          "under_odds": -115
         },
         "BetOnline.ag": {
           "home_ml": 709,
@@ -9503,20 +8897,20 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 42.5,
-          "over_odds": -376,
-          "under_odds": -438
+          "total": 43.5,
+          "over_odds": -347,
+          "under_odds": -316
         },
         "MGM": {
           "home_ml": 700,
           "away_ml": -1000,
           "home_spread": 17.5,
-          "home_spread_odds": -108,
+          "home_spread_odds": -110,
           "away_spread": -17.5,
-          "away_spread_odds": -110,
+          "away_spread_odds": -108,
           "total": 52.5,
-          "over_odds": -108,
-          "under_odds": -110
+          "over_odds": -105,
+          "under_odds": -112
         },
         "MyBookie.ag": {
           "home_ml": 610,
@@ -9539,17 +8933,6 @@
           "total": 52.5,
           "over_odds": -109,
           "under_odds": -112
-        },
-        "BR": {
-          "home_ml": 600,
-          "away_ml": -1115,
-          "home_spread": 18.0,
-          "home_spread_odds": -113,
-          "away_spread": -18.0,
-          "away_spread_odds": -110,
-          "total": 52.5,
-          "over_odds": -110,
-          "under_odds": -113
         },
         "PARX": {
           "home_ml": 600,
@@ -9610,9 +8993,9 @@
           "home_ml": 700,
           "away_ml": -1100,
           "home_spread": 17.5,
-          "home_spread_odds": -105,
+          "home_spread_odds": -110,
           "away_spread": -17.5,
-          "away_spread_odds": -115,
+          "away_spread_odds": -110,
           "total": 52.5,
           "over_odds": -105,
           "under_odds": -115
@@ -9723,17 +9106,6 @@
           "total": 48.0,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": -190,
-          "away_ml": 150,
-          "home_spread": -3.5,
-          "home_spread_odds": -114,
-          "away_spread": 3.5,
-          "away_spread_odds": -108,
-          "total": 48.0,
-          "over_odds": -110,
-          "under_odds": -113
         },
         "BALLY": {
           "home_ml": -186,
@@ -9863,17 +9235,6 @@
           "total": 57.5,
           "over_odds": -112,
           "under_odds": -109
-        },
-        "BR": {
-          "home_ml": 110,
-          "away_ml": -136,
-          "home_spread": 2.0,
-          "home_spread_odds": -113,
-          "away_spread": -2.0,
-          "away_spread_odds": -110,
-          "total": 57.5,
-          "over_odds": -113,
-          "under_odds": -110
         },
         "BALLY": {
           "home_ml": 110,
@@ -10070,17 +9431,6 @@
           "over_odds": -110,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": 125,
-          "away_ml": -157,
-          "home_spread": 3.0,
-          "home_spread_odds": -112,
-          "away_spread": -3.0,
-          "away_spread_odds": -112,
-          "total": 53.5,
-          "over_odds": -110,
-          "under_odds": -113
-        },
         "BALLY": {
           "home_ml": 125,
           "away_ml": -155,
@@ -10239,9 +9589,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 36.5,
-          "over_odds": -1121,
-          "under_odds": -1882
+          "total": 48.5,
+          "over_odds": -170,
+          "under_odds": -171
         },
         "HRB": {
           "home_ml": -7000,
@@ -10286,17 +9636,6 @@
           "total": 52.0,
           "over_odds": -113,
           "under_odds": -108
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -30.0,
-          "home_spread_odds": -109,
-          "away_spread": 30.0,
-          "away_spread_odds": -114,
-          "total": 52.0,
-          "over_odds": -114,
-          "under_odds": -109
         },
         "ReBet": {
           "home_ml": -7692,
@@ -10478,9 +9817,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 46.5,
-          "over_odds": -110,
-          "under_odds": -106
+          "total": 27.5,
+          "over_odds": -2356,
+          "under_odds": -1278
         },
         "MGM": {
           "home_ml": -2000,
@@ -10525,17 +9864,6 @@
           "total": 46.5,
           "over_odds": -112,
           "under_odds": -109
-        },
-        "BR": {
-          "home_ml": -5000,
-          "away_ml": 1300,
-          "home_spread": -22.5,
-          "home_spread_odds": -109,
-          "away_spread": 22.5,
-          "away_spread_odds": -114,
-          "total": 46.5,
-          "over_odds": -113,
-          "under_odds": -110
         },
         "BetUS": {
           "home_ml": -2200,
@@ -10629,9 +9957,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 50.5,
-          "over_odds": -166,
-          "under_odds": -166
+          "total": 39.5,
+          "over_odds": -715,
+          "under_odds": -916
         },
         "HRB": {
           "home_ml": 325,
@@ -10654,17 +9982,6 @@
           "total": 54.0,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": 260,
-          "away_ml": -345,
-          "home_spread": 10.5,
-          "home_spread_odds": -112,
-          "away_spread": -10.5,
-          "away_spread_odds": -112,
-          "total": 54.0,
-          "over_odds": -112,
-          "under_odds": -112
         },
         "PARX": {
           "home_ml": 265,
@@ -10905,17 +10222,6 @@
           "over_odds": -110,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -35.5,
-          "home_spread_odds": -110,
-          "away_spread": 35.5,
-          "away_spread_odds": -113,
-          "total": 60.0,
-          "over_odds": -112,
-          "under_odds": -112
-        },
         "BetUS": {
           "home_ml": null,
           "away_ml": null,
@@ -11110,17 +10416,6 @@
           "total": 56.5,
           "over_odds": -112,
           "under_odds": -109
-        },
-        "BR": {
-          "home_ml": -1667,
-          "away_ml": 800,
-          "home_spread": -20.0,
-          "home_spread_odds": -109,
-          "away_spread": 20.0,
-          "away_spread_odds": -114,
-          "total": 56.5,
-          "over_odds": -113,
-          "under_odds": -110
         },
         "BetUS": {
           "home_ml": -1400,
@@ -11336,17 +10631,6 @@
           "over_odds": -115,
           "under_odds": -110
         },
-        "BR": {
-          "home_ml": -375,
-          "away_ml": 280,
-          "home_spread": -8.0,
-          "home_spread_odds": -109,
-          "away_spread": 8.0,
-          "away_spread_odds": -114,
-          "total": 56.5,
-          "over_odds": -115,
-          "under_odds": -110
-        },
         "BetUS": {
           "home_ml": -325,
           "away_ml": 265,
@@ -11453,17 +10737,6 @@
           "total": 58.0,
           "over_odds": -109,
           "under_odds": -112
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -30.5,
-          "home_spread_odds": -115,
-          "away_spread": 30.5,
-          "away_spread_odds": -108,
-          "total": 58.0,
-          "over_odds": -110,
-          "under_odds": -113
         },
         "PARX": {
           "home_ml": null,
@@ -11616,17 +10889,6 @@
           "over_odds": -115,
           "under_odds": -105
         },
-        "BR": {
-          "home_ml": -10000,
-          "away_ml": 1400,
-          "home_spread": -24.5,
-          "home_spread_odds": -110,
-          "away_spread": 24.5,
-          "away_spread_odds": -113,
-          "total": 56.5,
-          "over_odds": -110,
-          "under_odds": -113
-        },
         "PARX": {
           "home_ml": -10000,
           "away_ml": 1500,
@@ -11778,17 +11040,6 @@
           "over_odds": -117,
           "under_odds": -109
         },
-        "BR": {
-          "home_ml": -130,
-          "away_ml": 105,
-          "home_spread": -2.0,
-          "home_spread_odds": -114,
-          "away_spread": 2.0,
-          "away_spread_odds": -109,
-          "total": 46.5,
-          "over_odds": -117,
-          "under_odds": -109
-        },
         "BetUS": {
           "home_ml": -125,
           "away_ml": 105,
@@ -11914,9 +11165,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 34.5,
-          "over_odds": -961,
-          "under_odds": -907
+          "total": 31.5,
+          "over_odds": -1963,
+          "under_odds": -2509
         },
         "CZS": {
           "home_ml": null,
@@ -11950,17 +11201,6 @@
           "total": 50.0,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": -34.5,
-          "home_spread_odds": -112,
-          "away_spread": 34.5,
-          "away_spread_odds": -112,
-          "total": 50.5,
-          "over_odds": -109,
-          "under_odds": -114
         },
         "BALLY": {
           "home_ml": null,
@@ -12135,17 +11375,6 @@
           "over_odds": -107,
           "under_odds": -114
         },
-        "BR": {
-          "home_ml": null,
-          "away_ml": null,
-          "home_spread": 27.5,
-          "home_spread_odds": -114,
-          "away_spread": -27.5,
-          "away_spread_odds": -109,
-          "total": 51.0,
-          "over_odds": -108,
-          "under_odds": -115
-        },
         "Bovada": {
           "home_ml": 1300,
           "away_ml": -6500,
@@ -12297,17 +11526,6 @@
           "over_odds": -114,
           "under_odds": -112
         },
-        "BR": {
-          "home_ml": 235,
-          "away_ml": -305,
-          "home_spread": 7.0,
-          "home_spread_odds": -118,
-          "away_spread": -7.0,
-          "away_spread_odds": -106,
-          "total": 50.5,
-          "over_odds": -114,
-          "under_odds": -112
-        },
         "PARX": {
           "home_ml": 235,
           "away_ml": -305,
@@ -12403,17 +11621,6 @@
           "total": 52.5,
           "over_odds": -110,
           "under_odds": -110
-        },
-        "BR": {
-          "home_ml": -1250,
-          "away_ml": 650,
-          "home_spread": -17.5,
-          "home_spread_odds": -114,
-          "away_spread": 17.5,
-          "away_spread_odds": -109,
-          "total": 53.0,
-          "over_odds": -112,
-          "under_odds": -112
         },
         "BALLY": {
           "home_ml": -1115,
@@ -12511,17 +11718,6 @@
           "over_odds": -108,
           "under_odds": -113
         },
-        "BR": {
-          "home_ml": -770,
-          "away_ml": 475,
-          "home_spread": -14.0,
-          "home_spread_odds": -114,
-          "away_spread": 14.0,
-          "away_spread_odds": -109,
-          "total": 52.5,
-          "over_odds": -109,
-          "under_odds": -114
-        },
         "BALLY": {
           "home_ml": -715,
           "away_ml": 475,
@@ -12573,9 +11769,9 @@
           "home_spread_odds": null,
           "away_spread": null,
           "away_spread_odds": null,
-          "total": 51.5,
-          "over_odds": -131,
-          "under_odds": -131
+          "total": 33.5,
+          "over_odds": -1882,
+          "under_odds": -1635
         },
         "CZS": {
           "home_ml": -675,
@@ -14057,7 +13253,7 @@
         {
           "team": "Pittsburgh Panthers",
           "line": -10.5,
-          "odds": -115,
+          "odds": -110,
           "book": "Fliff"
         },
         {
@@ -15301,378 +14497,6 @@
           "line": 2.5,
           "odds": 250,
           "book": "HRB"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -9.0,
-          "odds": -124,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -3.0,
-          "odds": -375,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -11.5,
-          "odds": 107,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -11.0,
-          "odds": 102,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -14.5,
-          "odds": 150,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -13.5,
-          "odds": 130,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -6.0,
-          "odds": -186,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -17.5,
-          "odds": 195,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -17.0,
-          "odds": 185,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -16.5,
-          "odds": 165,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -9.5,
-          "odds": -121,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -15.0,
-          "odds": 155,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -5.5,
-          "odds": -195,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -13.0,
-          "odds": 125,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -8.5,
-          "odds": -127,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -12.5,
-          "odds": 118,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -4.0,
-          "odds": -240,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -12.0,
-          "odds": 116,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -14.0,
-          "odds": 140,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -15.5,
-          "odds": 160,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -3.5,
-          "odds": -250,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -4.5,
-          "odds": -220,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -16.0,
-          "odds": 165,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -18.0,
-          "odds": 245,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -7.5,
-          "odds": -141,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -10.0,
-          "odds": -112,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -10.5,
-          "odds": -104,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -7.0,
-          "odds": -165,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -6.5,
-          "odds": -177,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -5.0,
-          "odds": -205,
-          "book": "BR"
-        },
-        {
-          "team": "Pittsburgh Panthers",
-          "line": -8.0,
-          "odds": -134,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 9.0,
-          "odds": 100,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 3.0,
-          "odds": 245,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 11.5,
-          "odds": -136,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 11.0,
-          "odds": -127,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 14.5,
-          "odds": -195,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 13.5,
-          "odds": -162,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 6.0,
-          "odds": 143,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 17.5,
-          "odds": -275,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 17.0,
-          "odds": -250,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 16.5,
-          "odds": -225,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 9.5,
-          "odds": -104,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 15.0,
-          "odds": -205,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 5.5,
-          "odds": 155,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 13.0,
-          "odds": -155,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 8.5,
-          "odds": 102,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 12.5,
-          "odds": -148,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 4.0,
-          "odds": 180,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 12.0,
-          "odds": -143,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 14.0,
-          "odds": -180,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 15.5,
-          "odds": -210,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 3.5,
-          "odds": 185,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 4.5,
-          "odds": 165,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 16.0,
-          "odds": -215,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 18.0,
-          "odds": -375,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 7.5,
-          "odds": 115,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 10.0,
-          "odds": -112,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 10.5,
-          "odds": -121,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 7.0,
-          "odds": 130,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 6.5,
-          "odds": 140,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 5.0,
-          "odds": 155,
-          "book": "BR"
-        },
-        {
-          "team": "Syracuse Orange",
-          "line": 8.0,
-          "odds": 108,
-          "book": "BR"
         },
         {
           "team": "Pittsburgh Panthers",
