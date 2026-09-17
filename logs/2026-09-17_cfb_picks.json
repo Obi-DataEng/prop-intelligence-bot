@@ -101,7 +101,22 @@
       "reasoning": "PropFinder rating 79.3; L10 (4/10) and L20 (5/15); L10 average 25.7 at odds -135."
     }
   ],
-  "game_picks": [],
+  "game_picks": [
+    {
+      "rank": 1,
+      "pick_type": "spread",
+      "game": "Syracuse Orange @ Pittsburgh Panthers",
+      "team": "Pittsburgh Panthers",
+      "selection": "Pittsburgh Panthers -9.5",
+      "line": -9.5,
+      "over_under": null,
+      "best_book": "FD",
+      "best_odds": -120,
+      "prediction_confidence": 76,
+      "confidence_tier": "Medium",
+      "reasoning": "Pittsburgh ranks #32 overall while Syracuse sits at #71. The model projects Pitt -11.9 with 53% cover probability, providing 2.4 points of value against the FD line of -9.5. Pitt is 2-0 and has climbed significantly in the power ratings (+28.1 YTD), while Syracuse has dropped (-19.3 YTD). The Panthers' home advantage and superior defensive efficiency (#46 vs #87) should allow them to control this ACC matchup. Model win probability heavily favors Pitt at 76%."
+    }
+  ],
   "picks": [
     {
       "rank": 1,
@@ -186,40 +201,37 @@
       "l20_hit_rate": "(5/15)",
       "season_matchup_rank": "0",
       "reasoning": "PropFinder rating 79.3; L10 (4/10) and L20 (5/15); L10 average 25.7 at odds -135."
+    },
+    {
+      "rank": 1,
+      "pick_type": "spread",
+      "game": "Syracuse Orange @ Pittsburgh Panthers",
+      "team": "Pittsburgh Panthers",
+      "selection": "Pittsburgh Panthers -9.5",
+      "line": -9.5,
+      "over_under": null,
+      "best_book": "FD",
+      "best_odds": -120,
+      "prediction_confidence": 76,
+      "confidence_tier": "Medium",
+      "reasoning": "Pittsburgh ranks #32 overall while Syracuse sits at #71. The model projects Pitt -11.9 with 53% cover probability, providing 2.4 points of value against the FD line of -9.5. Pitt is 2-0 and has climbed significantly in the power ratings (+28.1 YTD), while Syracuse has dropped (-19.3 YTD). The Panthers' home advantage and superior defensive efficiency (#46 vs #87) should allow them to control this ACC matchup. Model win probability heavily favors Pitt at 76%."
     }
   ],
   "rejected_picks": [
     {
       "pick": {
-        "rank": 1,
-        "pick_type": "spread",
-        "game": "West Virginia Mountaineers @ Virginia Cavaliers",
-        "team": "West Virginia Mountaineers",
-        "selection": "West Virginia Mountaineers +10",
-        "line": 10.0,
-        "over_under": null,
-        "best_book": "FD",
-        "best_odds": -105,
-        "prediction_confidence": 76,
-        "confidence_tier": "Medium",
-        "reasoning": "Model projects WVU +7.0, giving 3.5 points of value against the 10-point spread with 58% cover probability. WVU (#51) has won both games and sits slightly undervalued as neutral-site dog against Virginia (#30). Model shows strong edge on this number."
-      },
-      "reason": "could not match game to odds feed"
-    },
-    {
-      "pick": {
         "rank": 2,
         "pick_type": "spread",
-        "game": "Houston Cougars @ Texas Tech Red Raiders",
+        "game": "#25 Houston Cougars @ #11 Texas Tech Red Raiders",
         "team": "Texas Tech Red Raiders",
         "selection": "Texas Tech Red Raiders -7.5",
         "line": -7.5,
         "over_under": null,
-        "best_book": "FD",
+        "best_book": "N/A",
         "best_odds": -105,
         "prediction_confidence": 75,
         "confidence_tier": "Medium",
-        "reasoning": "Model projects TTU -11.3 with 59% cover probability, representing 3.8 points of value. Texas Tech (#11) is a top-15 team hosting Houston (#25). PropFinder shows this as their strongest edge play with significant model disagreement favoring the favorite."
+        "reasoning": "Model projects Texas Tech -11.3 with 59% cover probability, showing significant edge of +3.8 points. TTU ranks #11 overall vs Houston at #25. The Red Raiders have strong offensive efficiency (#18 vs #43 for Houston) and are trending upward (+4.0 WoW). Houston's defensive rating (#41) should struggle against Tech's potent attack. Model gives TTU 75% win probability. The 3.8-point model edge represents substantial value, though this pick relies on model data from games not currently in the supplied odds section."
       },
       "reason": "could not match game to odds feed"
     },
@@ -227,16 +239,16 @@
       "pick": {
         "rank": 3,
         "pick_type": "spread",
-        "game": "Tulane Green Wave @ Kansas State Wildcats",
-        "team": "Tulane Green Wave",
-        "selection": "Tulane Green Wave +20",
-        "line": 20.0,
+        "game": "#51 West Virginia Mountaineers @ #30 Virginia Cavaliers",
+        "team": "West Virginia Mountaineers",
+        "selection": "West Virginia Mountaineers +10",
+        "line": 10.0,
         "over_under": null,
-        "best_book": "FD",
-        "best_odds": -108,
+        "best_book": "N/A",
+        "best_odds": -105,
         "prediction_confidence": 74,
         "confidence_tier": "Medium",
-        "reasoning": "Model projects Tulane +17.2 with 58% cover probability, giving 3.3 points of edge. KSU (#28) is favored but model suggests the line is inflated. Tulane (#82) getting substantial points with meaningful model disagreement supporting the underdog."
+        "reasoning": "Model projects WVU +7.0 with 58% cover probability, providing +3.5 points of edge. This neutral-site matchup features two solid teams, but the market appears to overvalue Virginia's home designation. WVU ranks #51 vs UVA at #30, a closer gap than the 10-point spread suggests. Both teams are 2-0, but West Virginia has been more consistent. The model's 66% win probability for Virginia doesn't justify laying double digits, making the Mountaineers attractive at this number."
       },
       "reason": "could not match game to odds feed"
     },
@@ -244,16 +256,16 @@
       "pick": {
         "rank": 4,
         "pick_type": "spread",
-        "game": "Ohio Bobcats @ South Alabama Jaguars",
-        "team": "Ohio Bobcats",
-        "selection": "Ohio Bobcats +4.5",
-        "line": 4.5,
+        "game": "#82 Tulane Green Wave @ #28 Kansas State Wildcats",
+        "team": "Tulane Green Wave",
+        "selection": "Tulane Green Wave +20",
+        "line": 20.0,
         "over_under": null,
-        "best_book": "FD",
-        "best_odds": -106,
-        "prediction_confidence": 73,
+        "best_book": "N/A",
+        "best_odds": -108,
+        "prediction_confidence": 74,
         "confidence_tier": "Medium",
-        "reasoning": "Model projects Ohio +2.5 with 57% cover probability, providing 2 points of value. Ohio (#107) is close in power ratings to South Alabama (#112) but getting extra points. Model shows solid cover percentage in relatively even matchup."
+        "reasoning": "Model projects Tulane +17.2 with 58% cover probability, showing +3.3 points of edge. Kansas State ranks significantly higher (#28 vs #82), but 20 points appears inflated for a competitive Tulane squad. The Green Wave's offensive efficiency is respectable despite their overall ranking, and K-State's defense (#23) is solid but not dominant enough to justify this large spread. Model gives K-State 84% win probability but suggests a closer margin than the market indicates."
       },
       "reason": "could not match game to odds feed"
     },
@@ -261,16 +273,16 @@
       "pick": {
         "rank": 5,
         "pick_type": "spread",
-        "game": "Western Michigan Broncos @ Rice Owls",
-        "team": "Rice Owls",
-        "selection": "Rice Owls +9.5",
-        "line": 9.5,
+        "game": "#10 LSU Tigers @ #13 Ole Miss Rebels",
+        "team": "Ole Miss Rebels",
+        "selection": "Ole Miss Rebels +2.5",
+        "line": 2.5,
         "over_under": null,
-        "best_book": "CZS",
-        "best_odds": -106,
-        "prediction_confidence": 72,
+        "best_book": "N/A",
+        "best_odds": 100,
+        "prediction_confidence": 73,
         "confidence_tier": "Medium",
-        "reasoning": "Model projects Rice +6.8 with 56% cover probability, showing 2.7 points of edge. WMU (#90) favored over Rice (#121) but model suggests line is too wide. Both teams 1-1, and model indicates Rice getting enough points to stay competitive against spread."
+        "reasoning": "Model projects Ole Miss +0.2 with 57% cover probability in this elite SEC matchup. LSU (#10) and Ole Miss (#13) are closely matched, with the model viewing this as essentially a pick'em. Ole Miss has slightly better offensive efficiency (#10 vs #11) and home field advantage. Both teams are 2-0 and trending upward. The model assigns 50% win probability to each team, making the +2.5 points valuable insurance in what should be a tightly contested game between top-15 teams."
       },
       "reason": "could not match game to odds feed"
     }
