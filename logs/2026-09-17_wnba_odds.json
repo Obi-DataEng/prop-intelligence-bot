@@ -264,7 +264,7 @@
         },
         "ReBet": {
           "home_ml": -101,
-          "away_ml": -126,
+          "away_ml": -127,
           "home_spread": 1.5,
           "home_spread_odds": -114,
           "away_spread": -1.5,
@@ -704,8 +704,8 @@
           "away_spread": -10.5,
           "away_spread_odds": -110,
           "total": 174.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "over_odds": -115,
+          "under_odds": -105
         },
         "Bovada": {
           "home_ml": 375,
@@ -6652,7 +6652,7 @@
               {
                 "side": "Over",
                 "line": 12.5,
-                "odds": 143
+                "odds": 139
               },
               {
                 "side": "Over",
@@ -6667,7 +6667,7 @@
               {
                 "side": "Over",
                 "line": 15.5,
-                "odds": 330
+                "odds": 320
               },
               {
                 "side": "Over",
@@ -15850,14 +15850,9 @@
       },
       "player_assists_alternate": {
         "Natasha Cloud": {
-          "line": 7.5,
+          "line": 3.5,
           "FD": {
             "offers": [
-              {
-                "side": "Over",
-                "line": 5.5,
-                "odds": 220
-              },
               {
                 "side": "Over",
                 "line": 1.5,
@@ -15865,17 +15860,22 @@
               },
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": -215
+                "line": 7.5,
+                "odds": 750
               },
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": 750
+                "line": 5.5,
+                "odds": 220
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -215
               }
             ],
-            "line": 7.5,
-            "over": 750
+            "line": 3.5,
+            "over": -215
           }
         },
         "Georgia Amoore": {
@@ -15884,27 +15884,27 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": 270
-              },
-              {
-                "side": "Over",
                 "line": 1.5,
                 "odds": -1800
               },
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": -158
+                "line": 7.5,
+                "odds": 920
               },
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": 920
+                "line": 5.5,
+                "odds": 270
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -158
               }
             ],
-            "line": 7.5,
-            "over": 920
+            "line": 3.5,
+            "over": -158
           },
           "DK": {
             "offers": [
@@ -15988,12 +15988,12 @@
               {
                 "side": "Over",
                 "line": 2.5,
-                "odds": -500
+                "odds": -450
               },
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": 115
+                "odds": 120
               },
               {
                 "side": "Over",
@@ -16083,13 +16083,13 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": 680
+                "line": 1.5,
+                "odds": -500
               },
               {
                 "side": "Over",
-                "line": 1.5,
-                "odds": -500
+                "line": 5.5,
+                "odds": 680
               },
               {
                 "side": "Over",
@@ -16251,11 +16251,11 @@
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": 280
+                "odds": 300
               }
             ],
             "line": 4.5,
-            "over": 280
+            "over": 300
           },
           "BetOnline.ag": {
             "offers": [
@@ -16453,7 +16453,7 @@
               {
                 "side": "Over",
                 "line": 2.5,
-                "odds": -125
+                "odds": -120
               },
               {
                 "side": "Over",
@@ -16769,154 +16769,6 @@
         }
       },
       "player_points": {
-        "Shakira Austin": {
-          "line": 18.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": -114
-              },
-              {
-                "side": "Under",
-                "line": 18.5,
-                "odds": -114
-              }
-            ],
-            "line": 18.5,
-            "over": -114,
-            "under": -114
-          },
-          "DK": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 17.5,
-                "odds": -127
-              },
-              {
-                "side": "Under",
-                "line": 17.5,
-                "odds": -104
-              }
-            ],
-            "line": 17.5,
-            "over": -127,
-            "under": -104
-          },
-          "ReBet": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": -119
-              },
-              {
-                "side": "Under",
-                "line": 18.5,
-                "odds": -111
-              }
-            ],
-            "line": 18.5,
-            "over": -119,
-            "under": -111
-          },
-          "HRB": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 105
-              },
-              {
-                "side": "Under",
-                "line": 19.5,
-                "odds": -140
-              }
-            ],
-            "line": 19.5,
-            "over": 105,
-            "under": -140
-          },
-          "BR": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": -124
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 100
-              }
-            ],
-            "line": 19.5,
-            "over": 100
-          },
-          "PARX": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": -124
-              },
-              {
-                "side": "Under",
-                "line": 18.5,
-                "odds": -115
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 100
-              },
-              {
-                "side": "Under",
-                "line": 19.5,
-                "odds": -143
-              }
-            ],
-            "line": 19.5,
-            "over": 100,
-            "under": -143
-          },
-          "BetOnline.ag": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": -118
-              },
-              {
-                "side": "Under",
-                "line": 18.5,
-                "odds": -110
-              }
-            ],
-            "line": 18.5,
-            "over": -118,
-            "under": -110
-          },
-          "CZS": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": -117
-              },
-              {
-                "side": "Under",
-                "line": 18.5,
-                "odds": -114
-              }
-            ],
-            "line": 18.5,
-            "over": -117,
-            "under": -114
-          }
-        },
         "Kamilla Cardoso": {
           "line": 13.5,
           "FD": {
@@ -17331,6 +17183,154 @@
             "under": -115
           }
         },
+        "Shakira Austin": {
+          "line": 18.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -114
+              }
+            ],
+            "line": 18.5,
+            "over": -114,
+            "under": -114
+          },
+          "DK": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": -127
+              },
+              {
+                "side": "Under",
+                "line": 17.5,
+                "odds": -104
+              }
+            ],
+            "line": 17.5,
+            "over": -127,
+            "under": -104
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -119
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -111
+              }
+            ],
+            "line": 18.5,
+            "over": -119,
+            "under": -111
+          },
+          "HRB": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 105
+              },
+              {
+                "side": "Under",
+                "line": 19.5,
+                "odds": -140
+              }
+            ],
+            "line": 19.5,
+            "over": 105,
+            "under": -140
+          },
+          "BR": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -124
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 100
+              }
+            ],
+            "line": 19.5,
+            "over": 100
+          },
+          "PARX": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -124
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -115
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 100
+              },
+              {
+                "side": "Under",
+                "line": 19.5,
+                "odds": -143
+              }
+            ],
+            "line": 19.5,
+            "over": 100,
+            "under": -143
+          },
+          "BetOnline.ag": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -118
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -110
+              }
+            ],
+            "line": 18.5,
+            "over": -118,
+            "under": -110
+          },
+          "CZS": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -117
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -114
+              }
+            ],
+            "line": 18.5,
+            "over": -117,
+            "under": -114
+          }
+        },
         "Azura Stevens": {
           "line": 11.5,
           "DK": {
@@ -17589,13 +17589,8 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 24.5,
-                "odds": 490
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -1450
+                "line": 19.5,
+                "odds": 162
               },
               {
                 "side": "Over",
@@ -17604,8 +17599,13 @@
               },
               {
                 "side": "Over",
-                "line": 19.5,
-                "odds": 162
+                "line": 24.5,
+                "odds": 490
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -1450
               },
               {
                 "side": "Over",
@@ -17766,12 +17766,12 @@
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": -900
+                "odds": -800
               },
               {
                 "side": "Over",
                 "line": 14.5,
-                "odds": -275
+                "odds": -260
               },
               {
                 "side": "Over",
@@ -17781,16 +17781,16 @@
               {
                 "side": "Over",
                 "line": 19.5,
-                "odds": 145
+                "odds": 150
               },
               {
                 "side": "Over",
                 "line": 24.5,
-                "odds": 400
+                "odds": 450
               }
             ],
             "line": 24.5,
-            "over": 400
+            "over": 450
           },
           "BetOnline.ag": {
             "offers": [
@@ -17956,13 +17956,8 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 24.5,
-                "odds": 340
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -3000
+                "line": 19.5,
+                "odds": 110
               },
               {
                 "side": "Over",
@@ -17971,8 +17966,13 @@
               },
               {
                 "side": "Over",
-                "line": 19.5,
-                "odds": 110
+                "line": 24.5,
+                "odds": 340
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -3000
               },
               {
                 "side": "Over",
@@ -18158,12 +18158,12 @@
               {
                 "side": "Over",
                 "line": 17.5,
-                "odds": -160
+                "odds": -150
               },
               {
                 "side": "Over",
                 "line": 19.5,
-                "odds": 105
+                "odds": 110
               },
               {
                 "side": "Over",
@@ -18337,10 +18337,299 @@
             "over": 1100
           }
         },
+        "Michaela Onyenwere": {
+          "line": 8.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 1300
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 375
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -108
+              }
+            ],
+            "line": 9.5,
+            "over": -108
+          },
+          "DK": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -515
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -234
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -120
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 153
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 349
+              },
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": 780
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 1300
+              }
+            ],
+            "line": 19.5,
+            "over": 1300
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -300
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -130
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 118
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 187
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 285
+              },
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": 450
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 710
+              },
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": 1150
+              },
+              {
+                "side": "Over",
+                "line": 23.5,
+                "odds": 1950
+              },
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": 3200
+              }
+            ],
+            "line": 25.5,
+            "over": 3200
+          },
+          "theScore Bet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": -1000
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -225
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -115
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 165
+              }
+            ],
+            "line": 11.5,
+            "over": 165
+          },
+          "BetOnline.ag": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 210
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -222
+              },
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": 3500
+              },
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": 1250
+              },
+              {
+                "side": "Over",
+                "line": 23.5,
+                "odds": 2100
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 320
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 775
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 137
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -110
+              },
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": 500
+              }
+            ],
+            "line": 17.5,
+            "over": 500
+          },
+          "CZS": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -117
+              },
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": 108
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 144
+              },
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": 191
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 255
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 340
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 475
+              },
+              {
+                "side": "Over",
+                "line": 16.5,
+                "odds": 675
+              },
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": 1000
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": -750
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -460
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -320
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -218
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -164
+              }
+            ],
+            "line": 8.5,
+            "over": -164
+          }
+        },
         "Kamilla Cardoso": {
           "line": 8.5,
           "FD": {
             "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 470
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 128
+              },
               {
                 "side": "Over",
                 "line": 24.5,
@@ -18350,20 +18639,10 @@
                 "side": "Over",
                 "line": 9.5,
                 "odds": -355
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 128
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 470
               }
             ],
-            "line": 19.5,
-            "over": 470
+            "line": 9.5,
+            "over": -355
           },
           "DK": {
             "offers": [
@@ -18626,17 +18905,17 @@
               {
                 "side": "Over",
                 "line": 9.5,
-                "odds": -425
+                "odds": -450
               },
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": -190
+                "odds": -200
               },
               {
                 "side": "Over",
                 "line": 14.5,
-                "odds": 130
+                "odds": 125
               },
               {
                 "side": "Over",
@@ -18795,565 +19074,14 @@
             "over": -560
           }
         },
-        "Sydney Taylor": {
-          "line": 19.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 24.5,
-                "odds": 1400
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -225
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 182
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 560
-              }
-            ],
-            "line": 19.5,
-            "over": 560
-          }
-        },
-        "Georgia Amoore": {
-          "line": 8.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": 132
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 580
-              }
-            ],
-            "line": 14.5,
-            "over": 580
-          },
-          "DK": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 5.5,
-                "odds": -379
-              },
-              {
-                "side": "Over",
-                "line": 7.5,
-                "odds": -179
-              },
-              {
-                "side": "Over",
-                "line": 8.5,
-                "odds": -128
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": 106
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 194
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 427
-              },
-              {
-                "side": "Over",
-                "line": 17.5,
-                "odds": 950
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 1500
-              }
-            ],
-            "line": 19.5,
-            "over": 1500
-          },
-          "ReBet": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 6.5,
-                "odds": -380
-              },
-              {
-                "side": "Over",
-                "line": 8.5,
-                "odds": -145
-              },
-              {
-                "side": "Over",
-                "line": 10.5,
-                "odds": 114
-              },
-              {
-                "side": "Over",
-                "line": 12.5,
-                "odds": 180
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 260
-              },
-              {
-                "side": "Over",
-                "line": 16.5,
-                "odds": 420
-              },
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": 730
-              },
-              {
-                "side": "Over",
-                "line": 20.5,
-                "odds": 1200
-              },
-              {
-                "side": "Over",
-                "line": 22.5,
-                "odds": 2200
-              },
-              {
-                "side": "Over",
-                "line": 24.5,
-                "odds": 3900
-              }
-            ],
-            "line": 24.5,
-            "over": 3900
-          },
-          "theScore Bet": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 4.5,
-                "odds": -700
-              },
-              {
-                "side": "Over",
-                "line": 7.5,
-                "odds": -180
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": 115
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 200
-              }
-            ],
-            "line": 11.5,
-            "over": 200
-          },
-          "BetOnline.ag": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 20.5,
-                "odds": 1350
-              },
-              {
-                "side": "Over",
-                "line": 16.5,
-                "odds": 500
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 310
-              },
-              {
-                "side": "Over",
-                "line": 22.5,
-                "odds": 2400
-              },
-              {
-                "side": "Over",
-                "line": 10.5,
-                "odds": 129
-              },
-              {
-                "side": "Over",
-                "line": 12.5,
-                "odds": 200
-              },
-              {
-                "side": "Over",
-                "line": 6.5,
-                "odds": -286
-              },
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": 825
-              },
-              {
-                "side": "Over",
-                "line": 8.5,
-                "odds": -123
-              },
-              {
-                "side": "Over",
-                "line": 24.5,
-                "odds": 4200
-              }
-            ],
-            "line": 24.5,
-            "over": 4200
-          },
-          "CZS": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": 117
-              },
-              {
-                "side": "Over",
-                "line": 10.5,
-                "odds": 153
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 210
-              },
-              {
-                "side": "Over",
-                "line": 12.5,
-                "odds": 300
-              },
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 425
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 600
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": 850
-              },
-              {
-                "side": "Over",
-                "line": 4.5,
-                "odds": -530
-              },
-              {
-                "side": "Over",
-                "line": 5.5,
-                "odds": -335
-              },
-              {
-                "side": "Over",
-                "line": 6.5,
-                "odds": -245
-              },
-              {
-                "side": "Over",
-                "line": 7.5,
-                "odds": -170
-              },
-              {
-                "side": "Over",
-                "line": 8.5,
-                "odds": -120
-              }
-            ],
-            "line": 8.5,
-            "over": -120
-          }
-        },
-        "Michaela Onyenwere": {
-          "line": 8.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -108
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 375
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 1300
-              }
-            ],
-            "line": 19.5,
-            "over": 1300
-          },
-          "DK": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 5.5,
-                "odds": -515
-              },
-              {
-                "side": "Over",
-                "line": 7.5,
-                "odds": -234
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -120
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 153
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 349
-              },
-              {
-                "side": "Over",
-                "line": 17.5,
-                "odds": 780
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 1300
-              }
-            ],
-            "line": 19.5,
-            "over": 1300
-          },
-          "ReBet": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 7.5,
-                "odds": -300
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -130
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 118
-              },
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 187
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": 285
-              },
-              {
-                "side": "Over",
-                "line": 17.5,
-                "odds": 450
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 710
-              },
-              {
-                "side": "Over",
-                "line": 21.5,
-                "odds": 1150
-              },
-              {
-                "side": "Over",
-                "line": 23.5,
-                "odds": 1950
-              },
-              {
-                "side": "Over",
-                "line": 25.5,
-                "odds": 3200
-              }
-            ],
-            "line": 25.5,
-            "over": 3200
-          },
-          "BetOnline.ag": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 210
-              },
-              {
-                "side": "Over",
-                "line": 7.5,
-                "odds": -222
-              },
-              {
-                "side": "Over",
-                "line": 25.5,
-                "odds": 3500
-              },
-              {
-                "side": "Over",
-                "line": 21.5,
-                "odds": 1250
-              },
-              {
-                "side": "Over",
-                "line": 23.5,
-                "odds": 2100
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": 320
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": 775
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 137
-              },
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -110
-              },
-              {
-                "side": "Over",
-                "line": 17.5,
-                "odds": 500
-              }
-            ],
-            "line": 17.5,
-            "over": 500
-          },
-          "CZS": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -117
-              },
-              {
-                "side": "Over",
-                "line": 10.5,
-                "odds": 108
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 144
-              },
-              {
-                "side": "Over",
-                "line": 12.5,
-                "odds": 191
-              },
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 255
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": 340
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": 475
-              },
-              {
-                "side": "Over",
-                "line": 16.5,
-                "odds": 650
-              },
-              {
-                "side": "Over",
-                "line": 17.5,
-                "odds": 1000
-              },
-              {
-                "side": "Over",
-                "line": 4.5,
-                "odds": -750
-              },
-              {
-                "side": "Over",
-                "line": 5.5,
-                "odds": -460
-              },
-              {
-                "side": "Over",
-                "line": 6.5,
-                "odds": -320
-              },
-              {
-                "side": "Over",
-                "line": 7.5,
-                "odds": -218
-              },
-              {
-                "side": "Over",
-                "line": 8.5,
-                "odds": -164
-              }
-            ],
-            "line": 8.5,
-            "over": -164
-          }
-        },
         "Natasha Cloud": {
           "line": 8.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
-                "line": 9.5,
-                "odds": -146
+                "line": 19.5,
+                "odds": 1020
               },
               {
                 "side": "Over",
@@ -19362,12 +19090,12 @@
               },
               {
                 "side": "Over",
-                "line": 19.5,
-                "odds": 1020
+                "line": 9.5,
+                "odds": -146
               }
             ],
-            "line": 19.5,
-            "over": 1020
+            "line": 9.5,
+            "over": -146
           },
           "DK": {
             "offers": [
@@ -19582,7 +19310,7 @@
               {
                 "side": "Over",
                 "line": 9.5,
-                "odds": -140
+                "odds": -150
               },
               {
                 "side": "Over",
@@ -19592,11 +19320,11 @@
               {
                 "side": "Over",
                 "line": 14.5,
-                "odds": 320
+                "odds": 310
               }
             ],
             "line": 14.5,
-            "over": 320
+            "over": 310
           },
           "BetOnline.ag": {
             "offers": [
@@ -19736,14 +19464,43 @@
             "over": -205
           }
         },
+        "Sydney Taylor": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 560
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 182
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 1400
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -225
+              }
+            ],
+            "line": 9.5,
+            "over": -225
+          }
+        },
         "Azura Stevens": {
           "line": 8.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
-                "line": 9.5,
-                "odds": -144
+                "line": 19.5,
+                "odds": 980
               },
               {
                 "side": "Over",
@@ -19752,12 +19509,12 @@
               },
               {
                 "side": "Over",
-                "line": 19.5,
-                "odds": 980
+                "line": 9.5,
+                "odds": -144
               }
             ],
-            "line": 19.5,
-            "over": 980
+            "line": 9.5,
+            "over": -144
           },
           "DK": {
             "offers": [
@@ -19962,7 +19719,7 @@
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": -2500
+                "odds": -2000
               },
               {
                 "side": "Over",
@@ -19982,11 +19739,11 @@
               {
                 "side": "Over",
                 "line": 14.5,
-                "odds": 300
+                "odds": 280
               }
             ],
             "line": 14.5,
-            "over": 300
+            "over": 280
           },
           "BetOnline.ag": {
             "offers": [
@@ -20131,6 +19888,275 @@
             "over": -245
           }
         },
+        "Georgia Amoore": {
+          "line": 8.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 580
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 132
+              }
+            ],
+            "line": 9.5,
+            "over": 132
+          },
+          "DK": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -379
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -179
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -128
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 106
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 194
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 427
+              },
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": 950
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 1500
+              }
+            ],
+            "line": 19.5,
+            "over": 1500
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -380
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -145
+              },
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": 114
+              },
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": 180
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 260
+              },
+              {
+                "side": "Over",
+                "line": 16.5,
+                "odds": 420
+              },
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": 730
+              },
+              {
+                "side": "Over",
+                "line": 20.5,
+                "odds": 1200
+              },
+              {
+                "side": "Over",
+                "line": 22.5,
+                "odds": 2200
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 3900
+              }
+            ],
+            "line": 24.5,
+            "over": 3900
+          },
+          "theScore Bet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": -700
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -170
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 110
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 200
+              }
+            ],
+            "line": 11.5,
+            "over": 200
+          },
+          "BetOnline.ag": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 20.5,
+                "odds": 1350
+              },
+              {
+                "side": "Over",
+                "line": 16.5,
+                "odds": 500
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 310
+              },
+              {
+                "side": "Over",
+                "line": 22.5,
+                "odds": 2400
+              },
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": 129
+              },
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": 200
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -286
+              },
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": 825
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -123
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 4200
+              }
+            ],
+            "line": 24.5,
+            "over": 4200
+          },
+          "CZS": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 117
+              },
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": 153
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 210
+              },
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": 300
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 400
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 600
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 850
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": -530
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -335
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -245
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -170
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -120
+              }
+            ],
+            "line": 8.5,
+            "over": -120
+          }
+        },
         "Sonia Citron": {
           "line": 16.5,
           "ReBet": {
@@ -20248,6 +20274,60 @@
         }
       },
       "player_points_rebounds": {
+        "Kiki Iriafen": {
+          "line": 27.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 27.5,
+                "odds": -108
+              },
+              {
+                "side": "Under",
+                "line": 27.5,
+                "odds": -122
+              }
+            ],
+            "line": 27.5,
+            "over": -108,
+            "under": -122
+          },
+          "DK": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 27.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 27.5,
+                "odds": -111
+              }
+            ],
+            "line": 27.5,
+            "over": -122,
+            "under": -111
+          },
+          "PARX": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 27.5,
+                "odds": -118
+              },
+              {
+                "side": "Under",
+                "line": 27.5,
+                "odds": -121
+              }
+            ],
+            "line": 27.5,
+            "over": -118,
+            "under": -121
+          }
+        },
         "Shakira Austin": {
           "line": 28.5,
           "FD": {
@@ -20356,60 +20436,6 @@
             "under": -137
           }
         },
-        "Kiki Iriafen": {
-          "line": 27.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 27.5,
-                "odds": -108
-              },
-              {
-                "side": "Under",
-                "line": 27.5,
-                "odds": -122
-              }
-            ],
-            "line": 27.5,
-            "over": -108,
-            "under": -122
-          },
-          "DK": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 27.5,
-                "odds": -122
-              },
-              {
-                "side": "Under",
-                "line": 27.5,
-                "odds": -111
-              }
-            ],
-            "line": 27.5,
-            "over": -122,
-            "under": -111
-          },
-          "PARX": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 27.5,
-                "odds": -118
-              },
-              {
-                "side": "Under",
-                "line": 27.5,
-                "odds": -121
-              }
-            ],
-            "line": 27.5,
-            "over": -118,
-            "under": -121
-          }
-        },
         "Georgia Amoore": {
           "line": 10.5,
           "DK": {
@@ -20432,86 +20458,86 @@
         }
       },
       "player_points_rebounds_assists": {
-        "Shakira Austin": {
-          "line": 30.5,
+        "Kiki Iriafen": {
+          "line": 28.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
-                "line": 30.5,
-                "odds": -122
+                "line": 28.5,
+                "odds": -130
               },
               {
                 "side": "Under",
-                "line": 30.5,
-                "odds": -108
+                "line": 28.5,
+                "odds": -102
               }
             ],
-            "line": 30.5,
-            "over": -122,
-            "under": -108
+            "line": 28.5,
+            "over": -130,
+            "under": -102
           },
           "DK": {
             "offers": [
               {
                 "side": "Over",
-                "line": 30.5,
-                "odds": -120
+                "line": 29.5,
+                "odds": -117
               },
               {
                 "side": "Under",
-                "line": 30.5,
-                "odds": -113
+                "line": 29.5,
+                "odds": -116
               }
             ],
-            "line": 30.5,
-            "over": -120,
-            "under": -113
+            "line": 29.5,
+            "over": -117,
+            "under": -116
           },
           "BR": {
             "offers": [
               {
                 "side": "Over",
-                "line": 31.5,
-                "odds": -107
+                "line": 29.5,
+                "odds": -115
               }
             ],
-            "line": 31.5,
-            "over": -107
+            "line": 29.5,
+            "over": -115
           },
           "PARX": {
             "offers": [
               {
                 "side": "Over",
-                "line": 31.5,
-                "odds": -107
+                "line": 29.5,
+                "odds": -115
               },
               {
                 "side": "Under",
-                "line": 31.5,
-                "odds": -134
+                "line": 29.5,
+                "odds": -124
               }
             ],
-            "line": 31.5,
-            "over": -107,
-            "under": -134
+            "line": 29.5,
+            "over": -115,
+            "under": -124
           },
           "BetOnline.ag": {
             "offers": [
               {
                 "side": "Over",
-                "line": 30.5,
-                "odds": -114
+                "line": 28.5,
+                "odds": -130
               },
               {
                 "side": "Under",
-                "line": 30.5,
-                "odds": -114
+                "line": 28.5,
+                "odds": 101
               }
             ],
-            "line": 30.5,
-            "over": -114,
-            "under": -114
+            "line": 28.5,
+            "over": -130,
+            "under": 101
           }
         },
         "Kamilla Cardoso": {
@@ -20596,86 +20622,86 @@
             "under": -123
           }
         },
-        "Kiki Iriafen": {
-          "line": 28.5,
+        "Shakira Austin": {
+          "line": 30.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
-                "line": 28.5,
-                "odds": -130
+                "line": 30.5,
+                "odds": -122
               },
               {
                 "side": "Under",
-                "line": 28.5,
-                "odds": -102
+                "line": 30.5,
+                "odds": -108
               }
             ],
-            "line": 28.5,
-            "over": -130,
-            "under": -102
+            "line": 30.5,
+            "over": -122,
+            "under": -108
           },
           "DK": {
             "offers": [
               {
                 "side": "Over",
-                "line": 29.5,
-                "odds": -117
+                "line": 30.5,
+                "odds": -120
               },
               {
                 "side": "Under",
-                "line": 29.5,
-                "odds": -116
+                "line": 30.5,
+                "odds": -113
               }
             ],
-            "line": 29.5,
-            "over": -117,
-            "under": -116
+            "line": 30.5,
+            "over": -120,
+            "under": -113
           },
           "BR": {
             "offers": [
               {
                 "side": "Over",
-                "line": 29.5,
-                "odds": -115
+                "line": 31.5,
+                "odds": -107
               }
             ],
-            "line": 29.5,
-            "over": -115
+            "line": 31.5,
+            "over": -107
           },
           "PARX": {
             "offers": [
               {
                 "side": "Over",
-                "line": 29.5,
-                "odds": -115
+                "line": 31.5,
+                "odds": -107
               },
               {
                 "side": "Under",
-                "line": 29.5,
-                "odds": -124
+                "line": 31.5,
+                "odds": -134
               }
             ],
-            "line": 29.5,
-            "over": -115,
-            "under": -124
+            "line": 31.5,
+            "over": -107,
+            "under": -134
           },
           "BetOnline.ag": {
             "offers": [
               {
                 "side": "Over",
-                "line": 28.5,
-                "odds": -130
+                "line": 30.5,
+                "odds": -114
               },
               {
                 "side": "Under",
-                "line": 28.5,
-                "odds": 101
+                "line": 30.5,
+                "odds": -114
               }
             ],
-            "line": 28.5,
-            "over": -130,
-            "under": 101
+            "line": 30.5,
+            "over": -114,
+            "under": -114
           }
         },
         "Georgia Amoore": {
@@ -20870,139 +20896,6 @@
             "under": -107
           }
         },
-        "Shakira Austin": {
-          "line": 9.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -114
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -114
-              }
-            ],
-            "line": 9.5,
-            "over": -114,
-            "under": -114
-          },
-          "DK": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -125
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -109
-              }
-            ],
-            "line": 9.5,
-            "over": -125,
-            "under": -109
-          },
-          "ReBet": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -116
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -114
-              }
-            ],
-            "line": 9.5,
-            "over": -116,
-            "under": -114
-          },
-          "HRB": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -105
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -135
-              }
-            ],
-            "line": 9.5,
-            "over": -105,
-            "under": -135
-          },
-          "BR": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -106
-              }
-            ],
-            "line": 9.5,
-            "over": -106
-          },
-          "PARX": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -106
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -136
-              }
-            ],
-            "line": 9.5,
-            "over": -106,
-            "under": -136
-          },
-          "BetOnline.ag": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -115
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -112
-              }
-            ],
-            "line": 9.5,
-            "over": -115,
-            "under": -112
-          },
-          "CZS": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -112
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -120
-              }
-            ],
-            "line": 9.5,
-            "over": -112,
-            "under": -120
-          }
-        },
         "Kiki Iriafen": {
           "line": 10.5,
           "FD": {
@@ -21136,6 +21029,139 @@
             "under": -136
           }
         },
+        "Shakira Austin": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -114
+              }
+            ],
+            "line": 9.5,
+            "over": -114,
+            "under": -114
+          },
+          "DK": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -125
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -109
+              }
+            ],
+            "line": 9.5,
+            "over": -125,
+            "under": -109
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -116
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -114
+              }
+            ],
+            "line": 9.5,
+            "over": -116,
+            "under": -114
+          },
+          "HRB": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -105
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -135
+              }
+            ],
+            "line": 9.5,
+            "over": -105,
+            "under": -135
+          },
+          "BR": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -106
+              }
+            ],
+            "line": 9.5,
+            "over": -106
+          },
+          "PARX": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -106
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -136
+              }
+            ],
+            "line": 9.5,
+            "over": -106,
+            "under": -136
+          },
+          "BetOnline.ag": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -115
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -112
+              }
+            ],
+            "line": 9.5,
+            "over": -115,
+            "under": -112
+          },
+          "CZS": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -112
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -120
+              }
+            ],
+            "line": 9.5,
+            "over": -112,
+            "under": -120
+          }
+        },
         "Sonia Citron": {
           "line": 3.5,
           "ReBet": {
@@ -21181,21 +21207,6 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": -2000
-              },
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 470
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": 1000
-              },
-              {
-                "side": "Over",
                 "line": 9.5,
                 "odds": -148
               },
@@ -21208,10 +21219,25 @@
                 "side": "Over",
                 "line": 11.5,
                 "odds": 188
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 1000
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -2000
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 470
               }
             ],
-            "line": 11.5,
-            "over": 188
+            "line": 13.5,
+            "over": 470
           },
           "DK": {
             "offers": [
@@ -21413,12 +21439,12 @@
               {
                 "side": "Over",
                 "line": 9.5,
-                "odds": -160
+                "odds": -150
               },
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": 150
+                "odds": 160
               },
               {
                 "side": "Over",
@@ -21543,21 +21569,6 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": -1450
-              },
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 580
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": 1260
-              },
-              {
-                "side": "Over",
                 "line": 9.5,
                 "odds": -114
               },
@@ -21570,10 +21581,25 @@
                 "side": "Over",
                 "line": 11.5,
                 "odds": 230
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 1260
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -1450
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 580
               }
             ],
-            "line": 11.5,
-            "over": 230
+            "line": 13.5,
+            "over": 580
           },
           "DK": {
             "offers": [
@@ -21765,7 +21791,7 @@
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": 200
+                "odds": 210
               },
               {
                 "side": "Over",
@@ -21890,21 +21916,6 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": -850
-              },
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 750
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": 1500
-              },
-              {
-                "side": "Over",
                 "line": 9.5,
                 "odds": 118
               },
@@ -21917,10 +21928,25 @@
                 "side": "Over",
                 "line": 11.5,
                 "odds": 310
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 1500
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -850
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 750
               }
             ],
-            "line": 11.5,
-            "over": 310
+            "line": 13.5,
+            "over": 750
           },
           "DK": {
             "offers": [
@@ -22168,12 +22194,12 @@
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": -2500
+                "odds": -3000
               },
               {
                 "side": "Over",
                 "line": 6.5,
-                "odds": -425
+                "odds": -450
               },
               {
                 "side": "Over",
@@ -22183,11 +22209,11 @@
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": 300
+                "odds": 280
               }
             ],
             "line": 11.5,
-            "over": 300
+            "over": 280
           },
           "BetOnline.ag": {
             "offers": [
@@ -22298,14 +22324,9 @@
           }
         },
         "Azura Stevens": {
-          "line": 11.5,
+          "line": 5.5,
           "FD": {
             "offers": [
-              {
-                "side": "Over",
-                "line": 5.5,
-                "odds": -158
-              },
               {
                 "side": "Over",
                 "line": 9.5,
@@ -22318,17 +22339,22 @@
               },
               {
                 "side": "Over",
+                "line": 11.5,
+                "odds": 1200
+              },
+              {
+                "side": "Over",
                 "line": 3.5,
                 "odds": -750
               },
               {
                 "side": "Over",
-                "line": 11.5,
-                "odds": 1200
+                "line": 5.5,
+                "odds": -158
               }
             ],
-            "line": 11.5,
-            "over": 1200
+            "line": 5.5,
+            "over": -158
           }
         },
         "Georgia Amoore": {
@@ -22656,11 +22682,6 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 0.5,
-                "odds": -650
-              },
-              {
-                "side": "Over",
                 "line": 2.5,
                 "odds": 265
               },
@@ -22668,6 +22689,11 @@
                 "side": "Over",
                 "line": 1.5,
                 "odds": -122
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -650
               },
               {
                 "side": "Over",
@@ -22824,44 +22850,10 @@
             "over": 600
           }
         },
-        "Sydney Taylor": {
-          "line": 3.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 0.5,
-                "odds": -580
-              },
-              {
-                "side": "Over",
-                "line": 2.5,
-                "odds": 270
-              },
-              {
-                "side": "Over",
-                "line": 1.5,
-                "odds": -112
-              },
-              {
-                "side": "Over",
-                "line": 3.5,
-                "odds": 700
-              }
-            ],
-            "line": 3.5,
-            "over": 700
-          }
-        },
         "Michaela Onyenwere": {
           "line": 3.5,
           "FD": {
             "offers": [
-              {
-                "side": "Over",
-                "line": 0.5,
-                "odds": -580
-              },
               {
                 "side": "Over",
                 "line": 2.5,
@@ -22876,6 +22868,11 @@
                 "side": "Over",
                 "line": 4.5,
                 "odds": 1400
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -580
               },
               {
                 "side": "Over",
@@ -22953,6 +22950,27 @@
             "line": 5.5,
             "over": 2800
           },
+          "theScore Bet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -700
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -135
+              },
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 210
+              }
+            ],
+            "line": 2.5,
+            "over": 210
+          },
           "BetOnline.ag": {
             "offers": [
               {
@@ -23009,6 +23027,35 @@
             ],
             "line": 3.5,
             "over": 600
+          }
+        },
+        "Sydney Taylor": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 270
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -112
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -580
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 700
+              }
+            ],
+            "line": 3.5,
+            "over": 700
           }
         },
         "Sonia Citron": {
@@ -33998,6 +34045,27 @@
             "line": 10.5,
             "over": 900
           },
+          "theScore Bet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": -350
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": 110
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 475
+              }
+            ],
+            "line": 9.5,
+            "over": 475
+          },
           "BetOnline.ag": {
             "offers": [
               {
@@ -36300,6 +36368,27 @@
             ],
             "line": 3.5,
             "over": 800
+          },
+          "theScore Bet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -500
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -105
+              },
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 280
+              }
+            ],
+            "line": 2.5,
+            "over": 280
           },
           "BetOnline.ag": {
             "offers": [
@@ -41382,7 +41471,7 @@
           }
         },
         "Jade Melbourne": {
-          "line": 10.5,
+          "line": 9.5,
           "DK": {
             "offers": [
               {
@@ -41404,18 +41493,18 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 10.5,
-                "odds": -105
+                "line": 9.5,
+                "odds": -130
               },
               {
                 "side": "Under",
-                "line": 10.5,
-                "odds": -140
+                "line": 9.5,
+                "odds": -110
               }
             ],
-            "line": 10.5,
-            "over": -105,
-            "under": -140
+            "line": 9.5,
+            "over": -130,
+            "under": -110
           }
         }
       },
@@ -51604,6 +51693,23 @@
             "over": -133,
             "under": -102
           },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -131
+              },
+              {
+                "side": "Under",
+                "line": 8.5,
+                "odds": -101
+              }
+            ],
+            "line": 8.5,
+            "over": -131,
+            "under": -101
+          },
           "CZS": {
             "offers": [
               {
@@ -51674,6 +51780,23 @@
             "line": 2.5,
             "over": -133,
             "under": -102
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": -127
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": -104
+              }
+            ],
+            "line": 2.5,
+            "over": -127,
+            "under": -104
           },
           "BetOnline.ag": {
             "offers": [
@@ -51805,6 +51928,47 @@
             ],
             "line": 14.5,
             "over": 1580
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -901
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -350
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -153
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 110
+              },
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": 178
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 285
+              },
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": 460
+              }
+            ],
+            "line": 12.5,
+            "over": 460
           },
           "FAN": {
             "offers": [
@@ -51982,6 +52146,42 @@
             ],
             "line": 5.5,
             "over": 940
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -901
+              },
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": -149
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 167
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 390
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 930
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": 1600
+              }
+            ],
+            "line": 6.5,
+            "over": 1600
           },
           "FAN": {
             "offers": [
@@ -52174,6 +52374,23 @@
             "over": -117,
             "under": -113
           },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": -105
+              },
+              {
+                "side": "Under",
+                "line": 15.5,
+                "odds": -126
+              }
+            ],
+            "line": 15.5,
+            "over": -105,
+            "under": -126
+          },
           "CZS": {
             "offers": [
               {
@@ -52245,6 +52462,23 @@
             "over": -109,
             "under": -121
           },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": -130
+              },
+              {
+                "side": "Under",
+                "line": 19.5,
+                "odds": -102
+              }
+            ],
+            "line": 19.5,
+            "over": -130,
+            "under": -102
+          },
           "CZS": {
             "offers": [
               {
@@ -52315,6 +52549,23 @@
             "line": 14.5,
             "over": -112,
             "under": -118
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -134
+              },
+              {
+                "side": "Under",
+                "line": 14.5,
+                "odds": 101
+              }
+            ],
+            "line": 14.5,
+            "over": -134,
+            "under": 101
           },
           "BetOnline.ag": {
             "offers": [
@@ -52468,6 +52719,62 @@
             ],
             "line": 34.5,
             "over": 1560
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": -310
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": -148
+              },
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": 103
+              },
+              {
+                "side": "Over",
+                "line": 23.5,
+                "odds": 150
+              },
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": 220
+              },
+              {
+                "side": "Over",
+                "line": 27.5,
+                "odds": 320
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 490
+              },
+              {
+                "side": "Over",
+                "line": 31.5,
+                "odds": 720
+              },
+              {
+                "side": "Over",
+                "line": 33.5,
+                "odds": 1125
+              },
+              {
+                "side": "Over",
+                "line": 35.5,
+                "odds": 1775
+              }
+            ],
+            "line": 35.5,
+            "over": 1775
           },
           "FAN": {
             "offers": [
@@ -52852,6 +53159,62 @@
             "line": 24.5,
             "over": 1000
           },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": -400
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -157
+              },
+              {
+                "side": "Over",
+                "line": 16.5,
+                "odds": 104
+              },
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": 162
+              },
+              {
+                "side": "Over",
+                "line": 20.5,
+                "odds": 246
+              },
+              {
+                "side": "Over",
+                "line": 22.5,
+                "odds": 390
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 620
+              },
+              {
+                "side": "Over",
+                "line": 26.5,
+                "odds": 970
+              },
+              {
+                "side": "Over",
+                "line": 28.5,
+                "odds": 1675
+              },
+              {
+                "side": "Over",
+                "line": 30.5,
+                "odds": 2800
+              }
+            ],
+            "line": 30.5,
+            "over": 2800
+          },
           "FAN": {
             "offers": [
               {
@@ -53219,6 +53582,62 @@
             ],
             "line": 24.5,
             "over": 750
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": -255
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": -119
+              },
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": 121
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 193
+              },
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": 300
+              },
+              {
+                "side": "Over",
+                "line": 23.5,
+                "odds": 480
+              },
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": 750
+              },
+              {
+                "side": "Over",
+                "line": 27.5,
+                "odds": 1250
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 2100
+              },
+              {
+                "side": "Over",
+                "line": 31.5,
+                "odds": 3700
+              }
+            ],
+            "line": 31.5,
+            "over": 3700
           },
           "FAN": {
             "offers": [
@@ -54274,6 +54693,23 @@
             "over": -103,
             "under": -133
           },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -142
+              },
+              {
+                "side": "Under",
+                "line": 7.5,
+                "odds": 107
+              }
+            ],
+            "line": 7.5,
+            "over": -142,
+            "under": 107
+          },
           "CZS": {
             "offers": [
               {
@@ -54344,6 +54780,23 @@
             "line": 6.5,
             "over": -137,
             "under": 101
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -131
+              },
+              {
+                "side": "Under",
+                "line": 6.5,
+                "odds": -101
+              }
+            ],
+            "line": 6.5,
+            "over": -131,
+            "under": -101
           },
           "CZS": {
             "offers": [
@@ -54487,6 +54940,57 @@
             ],
             "line": 13.5,
             "over": 1120
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -370
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -166
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": 101
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 160
+              },
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": 255
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 390
+              },
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": 630
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 1025
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 1725
+              }
+            ],
+            "line": 14.5,
+            "over": 1725
           },
           "FAN": {
             "offers": [
@@ -54755,6 +55259,57 @@
             ],
             "line": 12.5,
             "over": 1660
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -350
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -162
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 108
+              },
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": 174
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 280
+              },
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": 460
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 740
+              },
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": 1250
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 2100
+              }
+            ],
+            "line": 13.5,
+            "over": 2100
           },
           "FAN": {
             "offers": [
@@ -55045,6 +55600,42 @@
             "line": 6.5,
             "over": 2700
           },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -330
+              },
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 125
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 255
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 580
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 1350
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": 3100
+              }
+            ],
+            "line": 6.5,
+            "over": 3100
+          },
           "FAN": {
             "offers": [
               {
@@ -55202,6 +55793,37 @@
             ],
             "line": 4.5,
             "over": 1600
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -131
+              },
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 197
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 500
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 1250
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 3100
+              }
+            ],
+            "line": 5.5,
+            "over": 3100
           },
           "FAN": {
             "offers": [
@@ -55699,6 +56321,23 @@
             "over": 123,
             "under": -168
           },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 133
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": -179
+              }
+            ],
+            "line": 2.5,
+            "over": 133,
+            "under": -179
+          },
           "CZS": {
             "offers": [
               {
@@ -55769,6 +56408,23 @@
             "line": 1.5,
             "over": -119,
             "under": -114
+          },
+          "ReBet": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -109
+              },
+              {
+                "side": "Under",
+                "line": 1.5,
+                "odds": -121
+              }
+            ],
+            "line": 1.5,
+            "over": -109,
+            "under": -121
           },
           "CZS": {
             "offers": [
@@ -86974,7 +87630,7 @@
         {
           "side": "Over",
           "line": 173.5,
-          "odds": 179,
+          "odds": 184,
           "book": "CZS"
         },
         {
@@ -94916,6 +95572,42 @@
         {
           "team": "Phoenix Mercury",
           "line": -2.5,
+          "odds": -116,
+          "book": "ReBet"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": -1.5,
+          "odds": -133,
+          "book": "ReBet"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": -3.5,
+          "odds": -103,
+          "book": "ReBet"
+        },
+        {
+          "team": "Portland Fire",
+          "line": 2.5,
+          "odds": -111,
+          "book": "ReBet"
+        },
+        {
+          "team": "Portland Fire",
+          "line": 1.5,
+          "odds": 100,
+          "book": "ReBet"
+        },
+        {
+          "team": "Portland Fire",
+          "line": 3.5,
+          "odds": -128,
+          "book": "ReBet"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": -2.5,
           "odds": -110,
           "book": "HRB"
         },
@@ -96090,6 +96782,42 @@
           "line": 197.5,
           "odds": -3500,
           "book": "FD"
+        },
+        {
+          "side": "Over",
+          "line": 172.5,
+          "odds": -111,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 171.5,
+          "odds": -125,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 173.5,
+          "odds": 100,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 172.5,
+          "odds": -116,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 171.5,
+          "odds": -105,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 173.5,
+          "odds": -133,
+          "book": "ReBet"
         },
         {
           "side": "Over",
