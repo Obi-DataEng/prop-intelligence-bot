@@ -394,6 +394,7 @@ def format_wnba_section(
         "best_bet",
         "",
     )
+    lotto_html = format_lotto_boards(wnba_picks)
 
     # --------------------------------------------------------
     # NO GAMES / NO PICKS
@@ -425,6 +426,8 @@ def format_wnba_section(
             '>
                 {summary or best_bet or "No qualifying WNBA bets today."}
             </div>
+
+            {lotto_html}
 
         </div>
         """
@@ -501,6 +504,8 @@ def format_wnba_section(
         </h2>
 
         {picks_html}
+
+        {lotto_html}
 
     </div>
     """
@@ -664,7 +669,9 @@ def format_lotto_boards(picks):
         ("FULL-SLATE O/U CARD", picks.get("lotto_total_board", [])),
     ]
     if "lotto_td_board" in picks:
-        boards.append(("ONE TD SCORER PER GAME", picks.get("lotto_td_board", [])))
+        boards.append(("TWO TD SCORERS PER GAME — ONE PER TEAM", picks.get("lotto_td_board", [])))
+    if "lotto_longshot_prop_board" in picks:
+        boards.append(("ONE +400 PLAYER-PROP OVER PER GAME", picks.get("lotto_longshot_prop_board", [])))
     if "lotto_hr_board" in picks:
         boards.append(("ONE HOME-RUN HITTER PER GAME", picks.get("lotto_hr_board", [])))
 
@@ -680,6 +687,7 @@ def format_lotto_boards(picks):
                 </td>
                 <td style='padding:8px;border-bottom:1px solid #263447;color:#FFFFFF;font-weight:bold;'>
                     {row.get('selection', 'Unavailable')}
+                    {("<div style='margin-top:4px;color:#94A3B8;font-size:11px;font-weight:normal;line-height:1.4;'>" + str(row.get('reasoning')) + "</div>") if row.get('reasoning') else ''}
                 </td>
                 <td style='padding:8px;border-bottom:1px solid #263447;color:#94A3B8;white-space:nowrap;'>
                     {row.get('confidence', '')}
@@ -712,6 +720,46 @@ def format_lotto_boards(picks):
             <div style='color:#FBBF24;font-size:11px;margin-top:5px;'>Entertainment only. These selections are not graded and never affect the tracked record.</div>
             {''.join(sections)}
         </div>
+    """
+
+
+def format_cross_sport_parlay(parlay):
+    """Render the ungraded non-MLB +500 alternate-line parlay."""
+    if not isinstance(parlay, dict):
+        return ""
+    legs = parlay.get("legs", [])
+    if not legs:
+        return f"""
+        <div style='margin:28px 0;border:1px solid #7C3AED;border-radius:12px;padding:18px;background:#151024;'>
+            <h2 style='margin:0 0 8px;color:#C4B5FD;font-size:18px;'>🎰 +500 CROSS-SPORT ALT PARLAY</h2>
+            <div style='color:#F59E0B;font-size:12px;font-weight:bold;'>ENTERTAINMENT ONLY · NOT GRADED · MLB EXCLUDED</div>
+            <div style='color:#CBD5E1;font-size:13px;margin-top:10px;'>{parlay.get('reason', 'No qualified alternate-line combination available.')}</div>
+        </div>
+        """
+    rows = "".join(
+        f"""
+        <tr>
+            <td style='padding:9px;border-bottom:1px solid #312E55;color:#A78BFA;font-weight:bold;'>{index}</td>
+            <td style='padding:9px;border-bottom:1px solid #312E55;color:#CBD5E1;'>
+                <div style='color:#FFFFFF;font-weight:bold;'>{leg.get('selection', '')}</div>
+                <div style='font-size:11px;color:#94A3B8;margin-top:3px;'>{leg.get('league', '')} · {leg.get('game', '')}</div>
+                <div style='font-size:11px;color:#64748B;margin-top:3px;'>{leg.get('reasoning', '')}</div>
+            </td>
+            <td style='padding:9px;border-bottom:1px solid #312E55;color:#F8FAFC;white-space:nowrap;'>{leg.get('book', '')} {leg.get('odds', '')}</td>
+        </tr>
+        """
+        for index, leg in enumerate(legs, start=1)
+    )
+    combined = parlay.get("combined_american_odds")
+    combined_text = f"+{combined}" if isinstance(combined, (int, float)) and combined > 0 else str(combined)
+    return f"""
+    <div style='margin:28px 0;border:1px solid #7C3AED;border-radius:12px;padding:18px;background:#151024;'>
+        <h2 style='margin:0 0 8px;color:#C4B5FD;font-size:18px;'>🎰 +500 CROSS-SPORT ALT PARLAY</h2>
+        <div style='color:#F59E0B;font-size:12px;font-weight:bold;'>ENTERTAINMENT ONLY · NOT GRADED · MLB EXCLUDED</div>
+        <table role='presentation' width='100%' cellspacing='0' cellpadding='0' style='margin-top:12px;border-collapse:collapse;'>{rows}</table>
+        <div style='margin-top:14px;color:#FFFFFF;font-size:15px;font-weight:bold;'>Combined odds: {combined_text} · {parlay.get('leg_count', len(legs))} legs</div>
+        <div style='margin-top:4px;color:#94A3B8;font-size:12px;'>Implied probability: {parlay.get('implied_probability_pct', '')}% · Target range +450 to +600</div>
+    </div>
     """
 
 
@@ -2511,6 +2559,7 @@ def format_picks_email(
     wnba_picks=None,
     cfb_picks=None,
     nfl_picks=None,
+    cross_sport_parlay=None,
 ):
     mlb_picks = picks_data.get("top_picks", [])
     nrfi_picks = picks_data.get("nrfi_picks", [])
@@ -2551,6 +2600,7 @@ def format_picks_email(
     wnba_section = format_wnba_section(wnba_picks)
     cfb_section = format_cfb_section(cfb_picks)
     nfl_section = format_nfl_section(nfl_picks)
+    cross_sport_section = format_cross_sport_parlay(cross_sport_parlay)
     results_section = format_daily_results(graded_summary)
     mlb_section = format_mlb_section(picks_data)
     nrfi_section = format_nrfi_section(nrfi_picks)
@@ -2596,6 +2646,7 @@ def format_picks_email(
     {wnba_section}
     {cfb_section}
     {nfl_section}
+    {cross_sport_section}
     {results_section}
     {mlb_section}
     {nrfi_section}
@@ -2638,6 +2689,7 @@ def send_picks_email(
     wnba_picks=None,
     cfb_picks=None,
     nfl_picks=None,
+    cross_sport_parlay=None,
 ):
 
     sender = os.getenv(
@@ -2755,6 +2807,7 @@ def send_picks_email(
         wnba_picks=wnba_picks,
         cfb_picks=cfb_picks,
         nfl_picks=nfl_picks,
+        cross_sport_parlay=cross_sport_parlay,
     )
 
     msg.attach(
@@ -2818,12 +2871,14 @@ if __name__ == "__main__":
     wnba_picks = None
     cfb_picks = None
     nfl_picks = None
+    cross_sport_parlay = None
 
     picks_file = f"logs/{scrape_date}_picks.json"
     nba_file = f"logs/{scrape_date}_nba_picks.json"
     wnba_file = f"logs/{scrape_date}_wnba_picks.json"
     cfb_file = f"logs/{scrape_date}_cfb_picks.json"
     nfl_file = f"logs/{scrape_date}_nfl_picks.json"
+    parlay_file = f"logs/{scrape_date}_cross_sport_parlay.json"
 
     # ========================================================
     # MLB / NRFI
@@ -2910,6 +2965,13 @@ if __name__ == "__main__":
     else:
         print(f"⚠️ No NFL picks file found at {nfl_file}")
 
+    if os.path.exists(parlay_file):
+        with open(parlay_file, "r", encoding="utf-8") as f:
+            cross_sport_parlay = json.load(f)
+        print(f"✅ Loaded cross-sport parlay: {parlay_file}")
+    else:
+        print(f"⚠️ No cross-sport parlay found at {parlay_file}")
+
     # ========================================================
     # NBA
     # ========================================================
@@ -2970,4 +3032,5 @@ if __name__ == "__main__":
         wnba_picks=wnba_picks,
         cfb_picks=cfb_picks,
         nfl_picks=nfl_picks,
+        cross_sport_parlay=cross_sport_parlay,
     )

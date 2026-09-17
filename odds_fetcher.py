@@ -3,6 +3,7 @@ import os
 import json
 import sys
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -11,14 +12,27 @@ API_KEY = os.getenv("ODDS_API_KEY")
 BASE_URL = "https://api.the-odds-api.com/v4"
 
 GAME_MARKETS = "h2h,spreads,totals"
-BOOKMAKERS = "fanduel,betmgm,williamhill_us,us2espnbet"
+ALTERNATE_GAME_MARKETS = "alternate_spreads,alternate_totals"
+ODDS_REGIONS = "us,us2"
+EASTERN = ZoneInfo("America/New_York")
 
 BOOK_LABELS = {
     "fanduel": "FD",
     "betmgm": "MGM",
     "williamhill_us": "CZS",
     "us2espnbet": "ESPN",
+    "draftkings": "DK",
+    "fanatics": "FAN",
+    "betrivers": "BR",
+    "betparx": "PARX",
+    "ballybet": "BALLY",
+    "hardrockbet": "HRB",
 }
+
+
+def get_book_label(bookmaker):
+    key = bookmaker.get("key", "")
+    return BOOK_LABELS.get(key, bookmaker.get("title") or key)
 
 MLB_PROP_MARKETS = [
     "batter_home_runs",
@@ -39,6 +53,20 @@ BASKETBALL_PROP_MARKETS = [
     "player_rebounds_assists",
     "player_steals",
     "player_blocks",
+]
+
+WNBA_LONGSHOT_PROP_MARKETS = [
+    "player_points_alternate",
+    "player_rebounds_alternate",
+    "player_assists_alternate",
+    "player_blocks_alternate",
+    "player_steals_alternate",
+    "player_turnovers_alternate",
+    "player_threes_alternate",
+    "player_points_assists_alternate",
+    "player_points_rebounds_alternate",
+    "player_rebounds_assists_alternate",
+    "player_points_rebounds_assists_alternate",
 ]
 
 
@@ -64,6 +92,65 @@ def request_json(url, params, label):
     return response.json()
 
 
+def game_is_today_et(game):
+    value = game.get("commence_time")
+    if not value:
+        return False
+    try:
+        start = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return start.astimezone(EASTERN).date() == datetime.now(EASTERN).date()
+    except (TypeError, ValueError):
+        return False
+
+
+def fetch_alternate_game_markets(games, sport_key, league_name):
+    """Fetch exact alternate spreads/totals for each event and sportsbook."""
+    all_markets = {}
+    for game in games:
+        if not game_is_today_et(game):
+            continue
+        game_id = game.get("game_id")
+        away, home = game.get("away_team"), game.get("home_team")
+        if not game_id or not away or not home:
+            continue
+        game_key = f"{away}@{home}"
+        url = f"{BASE_URL}/sports/{sport_key}/events/{game_id}/odds"
+        event_data = request_json(url, {
+            "apiKey": API_KEY,
+            "regions": ODDS_REGIONS,
+            "markets": ALTERNATE_GAME_MARKETS,
+            "oddsFormat": "american",
+        }, f"{league_name} alternate game lines for {game_key}")
+        parsed = {"spreads": [], "totals": []}
+        if event_data:
+            for bookmaker in event_data.get("bookmakers", []):
+                book = get_book_label(bookmaker)
+                for market in bookmaker.get("markets", []):
+                    key = market.get("key")
+                    for outcome in market.get("outcomes", []):
+                        try:
+                            line = float(outcome.get("point"))
+                            odds = int(outcome.get("price"))
+                        except (TypeError, ValueError):
+                            continue
+                        if key == "alternate_spreads" and outcome.get("name") in (away, home):
+                            parsed["spreads"].append({
+                                "team": outcome.get("name"), "line": line,
+                                "odds": odds, "book": book,
+                            })
+                        elif key == "alternate_totals" and outcome.get("name") in ("Over", "Under"):
+                            parsed["totals"].append({
+                                "side": outcome.get("name"), "line": line,
+                                "odds": odds, "book": book,
+                            })
+        all_markets[game_key] = parsed
+        print(
+            f"   ✅ {game_key}: {len(parsed['spreads'])} alternate spreads, "
+            f"{len(parsed['totals'])} alternate totals"
+        )
+    return all_markets
+
+
 # ============================================================
 # MLB
 # ============================================================
@@ -75,9 +162,8 @@ def get_mlb_game_odds():
     url = f"{BASE_URL}/sports/baseball_mlb/odds"
     params = {
         "apiKey": API_KEY,
-        "regions": "us,us2",
+        "regions": ODDS_REGIONS,
         "markets": GAME_MARKETS,
-        "bookmakers": BOOKMAKERS,
         "oddsFormat": "american",
     }
 
@@ -98,7 +184,7 @@ def get_mlb_game_odds():
 
         for bookmaker in game.get("bookmakers", []):
             book_key = bookmaker["key"]
-            book_label = BOOK_LABELS.get(book_key, book_key)
+            book_label = get_book_label(bookmaker)
 
             book_odds = {
                 "ml_home": None,
@@ -174,9 +260,8 @@ def get_mlb_player_props(games):
         url = f"{BASE_URL}/sports/baseball_mlb/events/{game_id}/odds"
         params = {
             "apiKey": API_KEY,
-            "regions": "us,us2",
+            "regions": ODDS_REGIONS,
             "markets": ",".join(MLB_PROP_MARKETS),
-            "bookmakers": BOOKMAKERS,
             "oddsFormat": "american",
         }
 
@@ -195,7 +280,7 @@ def get_mlb_player_props(games):
 
         for bookmaker in data.get("bookmakers", []):
             book_key = bookmaker["key"]
-            book_label = BOOK_LABELS.get(book_key, book_key)
+            book_label = get_book_label(bookmaker)
 
             for market in bookmaker.get("markets", []):
                 for outcome in market.get("outcomes", []):
@@ -245,7 +330,7 @@ def fetch_all_odds():
 
     output = {
         "date": scrape_date,
-        "books": ["FD", "MGM", "CZS", "ESPN"],
+        "books": sorted({book for game in games for book in game.get("odds_by_book", {})}),
         "games": games,
         "player_props": props,
     }
@@ -275,7 +360,7 @@ def parse_basketball_game(game):
     }
 
     for bm in game.get("bookmakers", []):
-        book_label = BOOK_LABELS.get(bm["key"], bm["key"])
+        book_label = get_book_label(bm)
 
         book_data = {
             "home_ml": None,
@@ -349,9 +434,8 @@ def fetch_basketball_game_odds(sport_key, league_name):
     url = f"{BASE_URL}/sports/{sport_key}/odds"
     params = {
         "apiKey": API_KEY,
-        "regions": "us,us2",
+        "regions": ODDS_REGIONS,
         "markets": GAME_MARKETS,
-        "bookmakers": BOOKMAKERS,
         "oddsFormat": "american",
     }
 
@@ -376,9 +460,11 @@ def fetch_basketball_player_props(
     games,
     sport_key,
     league_name,
+    prop_markets=None,
 ):
     ensure_api_key()
     all_props = {}
+    prop_markets = prop_markets or BASKETBALL_PROP_MARKETS
 
     for game in games:
         game_id = game["game_id"]
@@ -393,9 +479,8 @@ def fetch_basketball_player_props(
 
         params = {
             "apiKey": API_KEY,
-            "regions": "us,us2",
-            "markets": ",".join(BASKETBALL_PROP_MARKETS),
-            "bookmakers": BOOKMAKERS,
+            "regions": ODDS_REGIONS,
+            "markets": ",".join(prop_markets),
             "oddsFormat": "american",
         }
 
@@ -411,10 +496,7 @@ def fetch_basketball_player_props(
         game_props = {}
 
         for bm in event_data.get("bookmakers", []):
-            book_label = BOOK_LABELS.get(
-                bm["key"],
-                bm["key"],
-            )
+            book_label = get_book_label(bm)
 
             for market in bm.get("markets", []):
                 market_key = market["key"]
@@ -445,6 +527,18 @@ def fetch_basketball_player_props(
                         book_label,
                         {},
                     )
+
+                    offer = {
+                        "side": side,
+                        "line": point,
+                        "odds": price,
+                    }
+                    offers = game_props[market_key][player][book_label].setdefault(
+                        "offers",
+                        [],
+                    )
+                    if offer not in offers:
+                        offers.append(offer)
 
                     # Preserve each sportsbook's own line. The legacy
                     # top-level "line" remains for backward compatibility.
@@ -519,10 +613,19 @@ def fetch_basketball_odds(
         f"player props..."
     )
 
+    prop_markets = list(BASKETBALL_PROP_MARKETS)
+    if league_name.upper() in {"NBA", "WNBA"}:
+        prop_markets.extend(WNBA_LONGSHOT_PROP_MARKETS)
+
     props = fetch_basketball_player_props(
         games,
         sport_key,
         league_name,
+        prop_markets=prop_markets,
+    )
+
+    alternate_game_markets = fetch_alternate_game_markets(
+        games, sport_key, league_name,
     )
 
     print(
@@ -534,20 +637,16 @@ def fetch_basketball_odds(
         "date": scrape_date,
         "league": league_name,
         "sport_key": sport_key,
-        "books": [
-            "FD",
-            "MGM",
-            "CZS",
-            "ESPN",
-        ],
+        "books": sorted({book for game in games for book in game.get("bookmakers", {})}),
         "game_markets": [
             "moneyline",
             "spread",
             "total",
         ],
-        "player_prop_markets": BASKETBALL_PROP_MARKETS,
+        "player_prop_markets": prop_markets,
         "games": games,
         "player_props": props,
+        "alternate_game_markets": alternate_game_markets,
     }
 
     output_file = (
@@ -599,9 +698,6 @@ def fetch_wnba_odds():
 # CFB / NCAAF — GAME MARKETS ONLY
 # ============================================================
 
-CFB_BOOKMAKERS = "fanduel,williamhill_us"
-
-
 def parse_cfb_game(game):
     """
     Convert The Odds API NCAAF game response into our
@@ -626,11 +722,7 @@ def parse_cfb_game(game):
     }
 
     for bm in game.get("bookmakers", []):
-        book_key = bm["key"]
-        book_label = BOOK_LABELS.get(
-            book_key,
-            book_key,
-        )
+        book_label = get_book_label(bm)
 
         book_data = {
             "home_ml": None,
@@ -705,7 +797,7 @@ def print_cfb_game(game):
 
 def fetch_cfb_odds():
     """
-    Fetch NCAAF/CFB game odds from FanDuel and Caesars only.
+    Fetch NCAAF/CFB game odds from all available US sportsbooks.
 
     Supported markets:
       - Moneyline
@@ -720,7 +812,7 @@ def fetch_cfb_odds():
 
     print(f"\n{'=' * 55}")
     print(f"🏈 Fetching CFB Odds — {scrape_date}")
-    print("📚 Books: FanDuel | Caesars")
+    print("📚 Books: all available US sportsbooks")
     print("🎲 Markets: Moneyline | Spread | Game Total")
     print("🚫 College player props: DISABLED")
     print(f"{'=' * 55}\n")
@@ -732,9 +824,8 @@ def fetch_cfb_odds():
 
     params = {
         "apiKey": API_KEY,
-        "regions": "us,us2",
+        "regions": ODDS_REGIONS,
         "markets": GAME_MARKETS,
-        "bookmakers": CFB_BOOKMAKERS,
         "oddsFormat": "american",
     }
 
@@ -749,7 +840,7 @@ def fetch_cfb_odds():
             "date": scrape_date,
             "league": "CFB",
             "sport_key": "americanfootball_ncaaf",
-            "books": ["FD", "CZS"],
+            "books": [],
             "game_markets": [
                 "moneyline",
                 "spread",
@@ -762,6 +853,11 @@ def fetch_cfb_odds():
         parse_cfb_game(game)
         for game in data
     ]
+    alternate_game_markets = fetch_alternate_game_markets(
+        games,
+        "americanfootball_ncaaf",
+        "CFB",
+    )
 
     print(
         f"✅ {len(games)} CFB games found"
@@ -774,10 +870,7 @@ def fetch_cfb_odds():
         "date": scrape_date,
         "league": "CFB",
         "sport_key": "americanfootball_ncaaf",
-        "books": [
-            "FD",
-            "CZS",
-        ],
+        "books": sorted({book for game in games for book in game.get("bookmakers", {})}),
         "game_markets": [
             "moneyline",
             "spread",
@@ -785,6 +878,7 @@ def fetch_cfb_odds():
         ],
         "player_props_enabled": False,
         "games": games,
+        "alternate_game_markets": alternate_game_markets,
     }
 
     output_file = (
@@ -815,12 +909,49 @@ def fetch_cfb_odds():
 # NFL — GAME MARKETS ONLY
 # ============================================================
 
-NFL_BOOKMAKERS = "fanduel,williamhill_us"
+NFL_TD_MARKET = "player_anytime_td"
+
+
+def fetch_nfl_anytime_td(games):
+    """Fetch all-book anytime-TD prices keyed by exact matchup."""
+    props = {}
+    for game in games:
+        if not game_is_today_et(game):
+            continue
+        game_id = game.get("game_id")
+        away = game.get("away_team")
+        home = game.get("home_team")
+        if not game_id or not away or not home:
+            continue
+        game_key = f"{away}@{home}"
+        url = f"{BASE_URL}/sports/americanfootball_nfl/events/{game_id}/odds"
+        data = request_json(url, {
+            "apiKey": API_KEY,
+            "regions": ODDS_REGIONS,
+            "markets": NFL_TD_MARKET,
+            "oddsFormat": "american",
+        }, f"NFL anytime TD for {game_key}")
+        players = {}
+        if data:
+            for bm in data.get("bookmakers", []):
+                label = get_book_label(bm)
+                for market in bm.get("markets", []):
+                    if market.get("key") != NFL_TD_MARKET:
+                        continue
+                    for outcome in market.get("outcomes", []):
+                        player = outcome.get("description") or outcome.get("name")
+                        side = str(outcome.get("name", "")).lower()
+                        if not player or side == "no":
+                            continue
+                        players.setdefault(player, {})[label] = outcome.get("price")
+        props[game_key] = players
+        print(f"   ✅ {game_key}: {len(players)} anytime-TD players")
+    return props
 
 
 def fetch_nfl_odds():
     """
-    Fetch NFL game odds from FanDuel and Caesars.
+    Fetch NFL markets from all available US sportsbooks.
 
     Player props are supplied by the PropFinder NFL export, so this
     request intentionally fetches only moneyline, spread, and total.
@@ -831,7 +962,7 @@ def fetch_nfl_odds():
 
     print(f"\n{'=' * 55}")
     print(f"🏈 Fetching NFL Odds — {scrape_date}")
-    print("📚 Books: FanDuel | Caesars")
+    print("📚 Books: all available US sportsbooks")
     print("🎲 Markets: Moneyline | Spread | Game Total")
     print("🎯 Player props: supplied by PropFinder export")
     print(f"{'=' * 55}\n")
@@ -839,9 +970,8 @@ def fetch_nfl_odds():
     url = f"{BASE_URL}/sports/americanfootball_nfl/odds"
     params = {
         "apiKey": API_KEY,
-        "regions": "us,us2",
+        "regions": ODDS_REGIONS,
         "markets": GAME_MARKETS,
-        "bookmakers": NFL_BOOKMAKERS,
         "oddsFormat": "american",
     }
 
@@ -852,6 +982,12 @@ def fetch_nfl_odds():
 
     # NFL and CFB use the same normalized football game schema.
     games = [parse_cfb_game(game) for game in data]
+    anytime_td = fetch_nfl_anytime_td(games)
+    alternate_game_markets = fetch_alternate_game_markets(
+        games,
+        "americanfootball_nfl",
+        "NFL",
+    )
 
     print(f"✅ {len(games)} NFL games found")
 
@@ -862,14 +998,16 @@ def fetch_nfl_odds():
         "date": scrape_date,
         "league": "NFL",
         "sport_key": "americanfootball_nfl",
-        "books": ["FD", "CZS"],
+        "books": sorted({book for game in games for book in game.get("bookmakers", {})}),
         "game_markets": [
             "moneyline",
             "spread",
             "total",
         ],
-        "player_props_enabled": False,
-        "player_props_source": "PropFinder",
+        "player_props_enabled": True,
+        "player_props_source": "PropFinder + The Odds API",
+        "anytime_td": anytime_td,
+        "alternate_game_markets": alternate_game_markets,
         "games": games,
     }
 

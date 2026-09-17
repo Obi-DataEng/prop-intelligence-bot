@@ -1358,6 +1358,18 @@ async def run_all():
         }
 
     # ========================================================
+    # +500 CROSS-SPORT ALT PARLAY (NEVER MLB / NEVER GRADED)
+    # ========================================================
+
+    cross_sport_parlay = None
+    print("\n🎰 Building +500 cross-sport alternate parlay...")
+    try:
+        from cross_sport_parlay import build_cross_sport_parlay
+        cross_sport_parlay = build_cross_sport_parlay(scrape_date)
+    except Exception as e:
+        print(f"⚠️ Cross-sport parlay unavailable: {e}")
+
+    # ========================================================
     # EMAIL
     # ========================================================
 
@@ -1427,6 +1439,9 @@ async def run_all():
                 and
                 "nfl_picks"
                 in email_parameters
+                and
+                "cross_sport_parlay"
+                in email_parameters
             ):
 
                 send_picks_email(
@@ -1438,6 +1453,7 @@ async def run_all():
                     wnba_picks=wnba_picks,
                     cfb_picks=cfb_picks,
                     nfl_picks=nfl_picks,
+                    cross_sport_parlay=cross_sport_parlay,
                 )
 
             else:
