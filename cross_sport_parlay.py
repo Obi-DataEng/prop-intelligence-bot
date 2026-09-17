@@ -8,8 +8,8 @@ from zoneinfo import ZoneInfo
 
 EASTERN = ZoneInfo("America/New_York")
 SUPPORTED_LEAGUES = ("WNBA", "CFB", "NFL", "NBA")
-MIN_LEG_ODDS = -650
-MAX_LEG_ODDS = -180
+MIN_LEG_ODDS = -400
+MAX_LEG_ODDS = 300
 TARGET_DECIMAL = 6.0       # +500
 MIN_DECIMAL = 5.5          # +450
 MAX_DECIMAL = 7.0          # +600
@@ -109,6 +109,113 @@ def confidence_score(value):
     if "lean" in text:
         return 68.0
     return 62.0
+
+
+def parse_american_odds(value):
+    if isinstance(value, (int, float)):
+        return int(value)
+    text = str(value or "").strip().upper()
+    if text in {"EVEN", "EV", "PK", "PICK"}:
+        return 100
+    match = re.search(r"[+-]?\d+", text.replace(",", ""))
+    return int(match.group()) if match else None
+
+
+def is_game_market(pick):
+    text = " ".join(
+        str(pick.get(key) or "")
+        for key in ("pick_type", "category", "market")
+    ).lower()
+    return any(token in text for token in (
+        "moneyline", "money line", "game ml", "spread", "game total", "total",
+    ))
+
+
+def pick_allowed_for_league(league, pick):
+    """Apply the user's market rules before a leg reaches the optimizer."""
+    if is_game_market(pick):
+        return True
+
+    pick_type = str(pick.get("pick_type") or "").lower()
+    if "player" not in pick_type and not (
+        pick.get("player") or pick.get("player_name")
+    ):
+        return False
+
+    descriptor = " ".join(
+        str(pick.get(key) or "")
+        for key in ("selection", "category", "market")
+    ).lower()
+
+    # CFB parlay legs are game markets only.
+    if league == "CFB":
+        return False
+
+    # All player markets must represent the full game.
+    partial_game = re.search(
+        r"(?:^|\W)(?:1q|2q|3q|4q|1h|2h)(?:\W|$)|"
+        r"first\s+quarter|second\s+quarter|third\s+quarter|fourth\s+quarter|"
+        r"first\s+half|second\s+half",
+        descriptor,
+    )
+    if partial_game:
+        return False
+
+    if league == "NFL":
+        return not any(term in descriptor for term in (
+            "longest rush", "longest rushing", "longest reception",
+            "longest catch", "tackle", "assist",
+        ))
+
+    if league in {"WNBA", "NBA"}:
+        category = str(pick.get("category") or pick.get("market") or "").lower()
+        category = re.sub(r"[^a-z0-9]+", " ", category).strip()
+        allowed = {
+            "points", "rebounds", "assists", "pra",
+            "points rebounds assists", "pa", "points assists",
+            "pr", "points rebounds",
+        }
+        return category in allowed
+
+    return False
+
+
+def standard_pick_candidate(league, pick):
+    """Convert an analyzer-validated standard-line pick into a parlay leg."""
+    if not isinstance(pick, dict) or pick.get("odds_validated") is False:
+        return None
+    if not pick_allowed_for_league(league, pick):
+        return None
+    selection = str(pick.get("selection") or "").strip()
+    game = str(pick.get("game") or "").strip()
+    odds = parse_american_odds(
+        pick.get("best_odds", pick.get("odds", pick.get("fd_odds")))
+    )
+    if not selection or not game or odds is None or not price_allowed(odds):
+        return None
+    confidence = confidence_score(
+        pick.get(
+            "prediction_confidence",
+            pick.get("confidence_score", pick.get("confidence_tier")),
+        )
+    )
+    return {
+        "league": league,
+        "game": game,
+        "selection": selection,
+        "market_type": pick.get("pick_type") or pick.get("category") or pick.get("market"),
+        "player": pick.get("player_name") or pick.get("player"),
+        "team": pick.get("team"),
+        "direction": pick.get("over_under"),
+        "line": pick.get("prop_line", pick.get("line", pick.get("game_line"))),
+        "book": pick.get("best_book") or pick.get("book") or "Best available",
+        "odds": odds,
+        "support_score": confidence,
+        "confidence_tier": pick.get("confidence_tier"),
+        "reasoning": pick.get("reasoning") or "Analyzer-validated standard-line selection.",
+        "official_pick": False,
+        "track_result": False,
+    }
 
 
 def game_key_from_matchup(matchup):
@@ -246,29 +353,23 @@ def collect_candidates(scrape_date):
     for league in SUPPORTED_LEAGUES:
         slug = league.lower()
         picks = load_json(f"logs/{scrape_date}_{slug}_picks.json")
-        odds = load_json(f"logs/{scrape_date}_{slug}_odds.json")
-        if not picks or not odds:
-            continue
-        daily_keys = {
-            f"{game.get('away_team')}@{game.get('home_team')}"
-            for game in odds.get("games", []) if game_on_date(game, scrape_date)
-        }
-        if not daily_keys:
+        if not picks:
             continue
 
-        if league in {"NBA", "WNBA"}:
-            for pick in picks.get("top_picks", []):
-                candidate = best_player_alt_candidate(league, pick, odds)
-                if candidate and game_key_from_matchup(candidate["game"]) in daily_keys:
-                    candidates.append(candidate)
+        # These collections contain the analyzers' official, validated standard
+        # lines. Lotto boards and alternate-market feeds are intentionally not
+        # used for this separate entertainment-only parlay.
+        rows = []
+        for key in ("top_picks", "player_prop_picks", "game_picks"):
+            value = picks.get(key)
+            if isinstance(value, list):
+                rows.extend(value)
+        if not rows and isinstance(picks.get("picks"), list):
+            rows.extend(picks["picks"])
 
-        for row in picks.get("lotto_spread_board", []):
-            candidate = best_game_alt_candidate(league, row, odds, "spread")
-            if candidate and game_key_from_matchup(candidate["game"]) in daily_keys:
-                candidates.append(candidate)
-        for row in picks.get("lotto_total_board", []):
-            candidate = best_game_alt_candidate(league, row, odds, "total")
-            if candidate and game_key_from_matchup(candidate["game"]) in daily_keys:
+        for pick in rows:
+            candidate = standard_pick_candidate(league, pick)
+            if candidate:
                 candidates.append(candidate)
 
     unique = {}
@@ -350,8 +451,26 @@ def build_cross_sport_parlay(scrape_date=None):
     target_reached = bool(combined_decimal and MIN_DECIMAL <= combined_decimal <= MAX_DECIMAL)
     result = {
         "date": scrape_date,
-        "name": "+500 Cross-Sport Alt Parlay",
+        "name": "+500 Cross-Sport Parlay",
         "sports_allowed": list(SUPPORTED_LEAGUES),
+        "eligible_market_rules": {
+            "CFB": ["moneyline", "spread", "game_total"],
+            "NFL": [
+                "moneyline", "spread", "game_total", "full_game_player_props",
+                "excludes_1Q_1H", "excludes_longest_rush_reception",
+                "excludes_tackles_assists",
+            ],
+            "WNBA": [
+                "moneyline", "spread", "game_total", "full_game_points",
+                "full_game_rebounds", "full_game_assists", "full_game_PRA",
+                "full_game_PA", "full_game_PR",
+            ],
+            "NBA": [
+                "moneyline", "spread", "game_total", "full_game_points",
+                "full_game_rebounds", "full_game_assists", "full_game_PRA",
+                "full_game_PA", "full_game_PR",
+            ],
+        },
         "mlb_excluded": True,
         "target_odds_range": "+450 to +600",
         "available": bool(legs),
@@ -364,21 +483,21 @@ def build_cross_sport_parlay(scrape_date=None):
         "candidate_count": len(candidates),
         "official_pick": False,
         "track_result": False,
-        "notice": "Entertainment-only alternate-line parlay; excluded from grading and official records.",
+        "notice": "Entertainment-only standard-line parlay; excluded from grading and official records.",
     }
     if not legs:
-        result["reason"] = "No verified mixed-sport alternate combination reached the +450 to +600 target."
+        result["reason"] = "No verified standard-line combination reached the +450 to +600 target."
     elif not target_reached:
         result["reason"] = (
             "No verified combination landed inside +450 to +600; showing the "
-            "closest available alternate-line combination instead."
+            "closest available standard-line combination instead."
         )
     os.makedirs("logs", exist_ok=True)
     path = f"logs/{scrape_date}_cross_sport_parlay.json"
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(result, handle, indent=2, ensure_ascii=False)
     print(
-        f"🎰 Cross-sport alt parlay: {len(legs)} leg(s), "
+        f"🎰 Cross-sport parlay: {len(legs)} leg(s), "
         f"{('+' + str(combined_american)) if combined_american is not None and combined_american > 0 else combined_american or 'unavailable'}"
     )
     print(f"💾 Cross-sport parlay saved to {path}")
