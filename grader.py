@@ -13,6 +13,7 @@ load_dotenv()
 
 MLB_STATS_URL = "https://statsapi.mlb.com/api/v1"
 DB_PATH = "data/mlb_picks.db"
+GRADER_HISTORY_PATH = "logs/grader_history.json"
 
 # ─────────────────────────────────────────────
 # NAME MATCHING
@@ -247,10 +248,44 @@ def grade_game_pick(pick, game_results):
     fd_line = pick.get('fd_line')
     ou_pick = (pick.get('over_under_pick') or '').lower()
 
+    mlb_aliases = {
+        'ARI': 'Arizona Diamondbacks', 'ATH': 'Athletics',
+        'ATL': 'Atlanta Braves', 'BAL': 'Baltimore Orioles',
+        'BOS': 'Boston Red Sox', 'CHC': 'Chicago Cubs',
+        'CWS': 'Chicago White Sox', 'CIN': 'Cincinnati Reds',
+        'CLE': 'Cleveland Guardians', 'COL': 'Colorado Rockies',
+        'DET': 'Detroit Tigers', 'HOU': 'Houston Astros',
+        'KC': 'Kansas City Royals', 'LAA': 'Los Angeles Angels',
+        'LAD': 'Los Angeles Dodgers', 'MIA': 'Miami Marlins',
+        'MIL': 'Milwaukee Brewers', 'MIN': 'Minnesota Twins',
+        'NYM': 'New York Mets', 'NYY': 'New York Yankees',
+        'PHI': 'Philadelphia Phillies', 'PIT': 'Pittsburgh Pirates',
+        'SD': 'San Diego Padres', 'SF': 'San Francisco Giants',
+        'SEA': 'Seattle Mariners', 'STL': 'St. Louis Cardinals',
+        'TB': 'Tampa Bay Rays', 'TEX': 'Texas Rangers',
+        'TOR': 'Toronto Blue Jays', 'WSH': 'Washington Nationals',
+    }
+    pick_tokens = {
+        token for token in re.findall(r'\b[A-Z]{2,3}\b', game_str.upper())
+        if token in mlb_aliases
+    }
+
     for game in game_results:
         home = game['home_team']
         away = game['away_team']
-        if not (home in game_str or away in game_str or any(t in game_str for t in [home[:6], away[:6]])):
+        full_name_match = (
+            home.lower() in game_str.lower()
+            or away.lower() in game_str.lower()
+            or home[:6].lower() in game_str.lower()
+            or away[:6].lower() in game_str.lower()
+        )
+        abbreviation_match = any(
+            normalize_name(mlb_aliases[token]) in {
+                normalize_name(home), normalize_name(away)
+            }
+            for token in pick_tokens
+        )
+        if not (full_name_match or abbreviation_match):
             continue
         home_score = game['home_score']
         away_score = game['away_score']
@@ -299,14 +334,138 @@ def init_db():
     conn.commit()
     conn.close()
 
+
+def _json_safe(value):
+    """Return values that can always be serialized by json.dump."""
+    if value is None or isinstance(value, (str, int, float, bool)):
+        return value
+    return str(value)
+
+
+def export_grader_history():
+    """Persist the SQLite grading record as JSON for GitHub Actions runs."""
+    os.makedirs("logs", exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+    pick_rows = [dict(row) for row in cursor.execute(
+        """SELECT pick_date, graded_date, sport, category, player_name, game,
+                  over_under, line, odds, best_book, result, actual_value
+           FROM pick_results ORDER BY pick_date, sport, category, id"""
+    ).fetchall()]
+    parlay_rows = [dict(row) for row in cursor.execute(
+        """SELECT pick_date, graded_date, sport, legs, estimated_odds, result
+           FROM parlay_results ORDER BY pick_date, sport, id"""
+    ).fetchall()]
+    conn.close()
+
+    payload = {
+        "updated_at": datetime.now().isoformat(timespec="seconds"),
+        "pick_results": [
+            {key: _json_safe(value) for key, value in row.items()}
+            for row in pick_rows
+        ],
+        "parlay_results": [
+            {key: _json_safe(value) for key, value in row.items()}
+            for row in parlay_rows
+        ],
+    }
+    with open(GRADER_HISTORY_PATH, "w", encoding="utf-8") as file:
+        json.dump(payload, file, indent=2, ensure_ascii=False)
+    return GRADER_HISTORY_PATH
+
+
+def restore_grader_history():
+    """Restore grading history when a fresh Actions runner has no database."""
+    if not os.path.exists(GRADER_HISTORY_PATH):
+        return 0
+    try:
+        with open(GRADER_HISTORY_PATH, "r", encoding="utf-8") as file:
+            payload = json.load(file)
+    except (OSError, json.JSONDecodeError) as error:
+        print(f"   ⚠️ Could not restore grader history: {error}")
+        return 0
+
+    conn = sqlite3.connect(DB_PATH)
+    cursor = conn.cursor()
+    cursor.execute("SELECT COUNT(*) FROM pick_results")
+    if cursor.fetchone()[0] > 0:
+        conn.close()
+        return 0
+
+    pick_rows = payload.get("pick_results", []) or []
+    for row in pick_rows:
+        cursor.execute(
+            """INSERT INTO pick_results
+               (pick_date, graded_date, sport, category, player_name, game,
+                over_under, line, odds, best_book, result, actual_value)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            tuple(row.get(key) for key in (
+                "pick_date", "graded_date", "sport", "category",
+                "player_name", "game", "over_under", "line", "odds",
+                "best_book", "result", "actual_value",
+            )),
+        )
+    for row in payload.get("parlay_results", []) or []:
+        legs = row.get("legs", "[]")
+        if not isinstance(legs, str):
+            legs = json.dumps(legs)
+        cursor.execute(
+            """INSERT INTO parlay_results
+               (pick_date, graded_date, sport, legs, estimated_odds, result)
+               VALUES (?, ?, ?, ?, ?, ?)""",
+            (
+                row.get("pick_date"), row.get("graded_date"),
+                row.get("sport"), legs, row.get("estimated_odds"),
+                row.get("result"),
+            ),
+        )
+    conn.commit()
+    conn.close()
+    if pick_rows:
+        print(f"   🗃️ Restored {len(pick_rows)} saved grader result(s)")
+    return len(pick_rows)
+
+
+def save_daily_grades(pick_date, graded_date, summary, cumulative):
+    """Write a human-readable daily grades file into logs/."""
+    os.makedirs("logs", exist_ok=True)
+    details = get_daily_pick_details(pick_date)
+    counts = {"wins": 0, "losses": 0, "pushes": 0, "pending": 0}
+    for rows in details.values():
+        for row in rows:
+            result = str(row.get("result") or "pending").lower()
+            key = {
+                "win": "wins", "loss": "losses", "push": "pushes"
+            }.get(result, "pending")
+            counts[key] += 1
+
+    payload = {
+        "pick_date": pick_date,
+        "graded_date": graded_date,
+        "record": counts,
+        "summary": summary or {},
+        "results": details,
+        "cumulative": cumulative or {},
+    }
+    path = f"logs/{pick_date}_grades.json"
+    with open(path, "w", encoding="utf-8") as file:
+        json.dump(payload, file, indent=2, ensure_ascii=False)
+    print(f"\n   💾 Daily grades saved: {path}")
+    print(f"   💾 Grader history saved: {export_grader_history()}")
+    return path
+
 def already_graded(pick_date, sport):
     try:
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
-        cursor.execute('SELECT COUNT(*) FROM pick_results WHERE pick_date = ? AND sport = ?', (pick_date, sport))
-        count = cursor.fetchone()[0]
+        cursor.execute('''SELECT COUNT(*),
+            SUM(CASE WHEN result='pending' THEN 1 ELSE 0 END)
+            FROM pick_results WHERE pick_date = ? AND sport = ?''',
+            (pick_date, sport))
+        count, pending = cursor.fetchone()
         conn.close()
-        return count > 0
+        return count > 0 and (pending or 0) == 0
     except:
         return False
 
@@ -314,10 +473,14 @@ def already_graded_category(pick_date, sport, category):
     try:
         conn = sqlite3.connect(DB_PATH)
         cursor = conn.cursor()
-        cursor.execute('SELECT COUNT(*) FROM pick_results WHERE pick_date = ? AND sport = ? AND category = ?', (pick_date, sport, category))
-        count = cursor.fetchone()[0]
+        cursor.execute('''SELECT COUNT(*),
+            SUM(CASE WHEN result='pending' THEN 1 ELSE 0 END)
+            FROM pick_results
+            WHERE pick_date = ? AND sport = ? AND category = ?''',
+            (pick_date, sport, category))
+        count, pending = cursor.fetchone()
         conn.close()
-        return count > 0
+        return count > 0 and (pending or 0) == 0
     except:
         return False
 
@@ -1244,6 +1407,7 @@ def run_grader():
     yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
     graded_date = datetime.now().strftime("%Y-%m-%d")
     init_db()
+    restore_grader_history()
 
     mlb_picks = None
     nba_picks = None
@@ -1287,7 +1451,9 @@ def run_grader():
             print(f"   ⚠️ No {sport} picks file for {yesterday}")
 
     if not any((mlb_picks, nba_picks, cfb_picks, nfl_picks, wnba_picks)):
-        return None, get_cumulative_stats()
+        cumulative = get_cumulative_stats()
+        save_daily_grades(yesterday, graded_date, {}, cumulative)
+        return None, cumulative
 
     mlb_player_stats, game_results = get_mlb_boxscores(yesterday) if mlb_picks else ({}, [])
     nba_player_stats = get_nba_boxscores(yesterday) if nba_picks else {}
@@ -1380,6 +1546,8 @@ def run_grader():
         o = cumulative['OVERALL']
         print(f"\n  {'OVERALL':25} {o['wins']}W - {o['losses']}L - {o['pushes']}P | {o['win_rate']}%")
 
+    save_daily_grades(yesterday, graded_date, graded_summary, cumulative)
+
     return graded_summary, cumulative
 
 
@@ -1395,6 +1563,7 @@ def reset_grader_records():
     )
     conn.commit()
     conn.close()
+    export_grader_history()
     print("✅ Grader history reset")
     print("   Tracking will restart with the next saved picks.")
     print("   Games, pitchers, batters, and other data were preserved.")

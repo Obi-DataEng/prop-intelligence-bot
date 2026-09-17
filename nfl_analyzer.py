@@ -363,24 +363,70 @@ def _odds_value(value):
         return -10000.0
 
 
+def _implied_probability(odds):
+    try:
+        odds = float(odds)
+    except (TypeError, ValueError):
+        return 0.0
+    return (-odds / (-odds + 100.0)) if odds < 0 else (100.0 / (odds + 100.0))
+
+
+def _best_market_offer(candidates, side):
+    """Choose the most favorable line, then the best price for that line."""
+    if not candidates:
+        return None
+    # More points are better for either spread side. For totals, lower is
+    # better for Over and higher is better for Under.
+    if side == "over":
+        target = min(item["line"] for item in candidates)
+    else:
+        target = max(item["line"] for item in candidates)
+    exact = [item for item in candidates if lines_match(item["line"], target)]
+    return max(exact, key=lambda item: _odds_value(item.get("odds")))
+
+
+def _consensus_number(values):
+    values = sorted(float(value) for value in values if value is not None)
+    return values[len(values) // 2] if values else None
+
+
+def _main_market_price(value):
+    """Reject extreme alternate-market juice accidentally returned as main."""
+    try:
+        value = float(value)
+    except (TypeError, ValueError):
+        return False
+    return -250 <= value <= 250
+
+
 def build_nfl_lotto_boards(games, model_index):
-    """Pick one model-backed spread side and total for every NFL game."""
+    """Pick every game, using the model first and market consensus second."""
     spread_board, total_board = [], []
     for game in games:
         matchup = f"{game.get('away_team')} @ {game.get('home_team')}"
         model = model_for_odds_game(game, model_index)
         books = game.get("bookmakers", {})
+        consensus_home_spread = _consensus_number(
+            market.get("home_spread") for market in books.values()
+        )
+        consensus_total = _consensus_number(
+            market.get("total") for market in books.values()
+        )
 
         spread_candidates = []
         total_candidates = []
-        for book in ("FD", "CZS"):
-            market = books.get(book) or {}
+        for book, market in books.items():
             for side, team_key, line_key, price_key in (
                 ("away", "away_team", "away_spread", "away_spread_odds"),
                 ("home", "home_team", "home_spread", "home_spread_odds"),
             ):
                 line = market.get(line_key)
-                if line is None or not model:
+                price = market.get(price_key)
+                if (
+                    line is None or not model or not _main_market_price(price)
+                    or consensus_home_spread is None
+                    or abs(abs(float(line)) - abs(consensus_home_spread)) > 3.0
+                ):
                     continue
                 abbr = model[f"{side}_abbr"]
                 margin = (
@@ -389,13 +435,13 @@ def build_nfl_lotto_boards(games, model_index):
                     else model[f"{side}_score"] - model[f"{'home' if side == 'away' else 'away'}_score"]
                 )
                 edge = margin + float(line)
-                spread_candidates.append((edge, _odds_value(market.get(price_key)), {
+                spread_candidates.append((edge, _odds_value(price), {
                     "game": matchup,
                     "selection": f"{game.get(team_key)} {float(line):+g}",
                     "team": game.get(team_key),
                     "line": float(line),
                     "best_book": book,
-                    "best_odds": market.get(price_key),
+                    "best_odds": price,
                     "projected_margin": round(margin, 1),
                     "model_edge": round(edge, 1),
                     "confidence": _lotto_grade(edge),
@@ -404,11 +450,13 @@ def build_nfl_lotto_boards(games, model_index):
                 }))
 
             total = market.get("total")
-            if total is not None and model:
+            if total is not None and model and consensus_total is not None:
                 projected = float(model["projected_total"])
                 direction = "Over" if projected >= float(total) else "Under"
                 edge = abs(projected - float(total))
                 price = market.get("over_odds" if direction == "Over" else "under_odds")
+                if abs(float(total) - consensus_total) > 3.0 or not _main_market_price(price):
+                    continue
                 total_candidates.append((edge, _odds_value(price), {
                     "game": matchup,
                     "selection": f"{direction} {float(total):g}",
@@ -426,11 +474,69 @@ def build_nfl_lotto_boards(games, model_index):
         if spread_candidates:
             spread_board.append(max(spread_candidates, key=lambda x: (x[0], x[1]))[2])
         else:
-            spread_board.append({"game": matchup, "selection": "No verified model/line", "available": False, "official_pick": False, "track_result": False})
+            home_offers, away_offers = [], []
+            for book, market in books.items():
+                for side, offers in (("home", home_offers), ("away", away_offers)):
+                    line = market.get(f"{side}_spread")
+                    price = market.get(f"{side}_spread_odds")
+                    if (
+                        line is not None and price is not None
+                        and _main_market_price(price)
+                        and consensus_home_spread is not None
+                        and abs(abs(float(line)) - abs(consensus_home_spread)) <= 3.0
+                    ):
+                        offers.append({"book": book, "line": float(line), "odds": price})
+            all_home_lines = [offer["line"] for offer in home_offers]
+            if all_home_lines:
+                consensus_home = sorted(all_home_lines)[len(all_home_lines) // 2]
+                side = "home" if consensus_home < 0 else "away"
+                offer = _best_market_offer(home_offers if side == "home" else away_offers, side)
+                team = game.get(f"{side}_team")
+                spread_board.append({
+                    "game": matchup, "selection": f"{team} {offer['line']:+g}",
+                    "team": team, "line": offer["line"], "best_book": offer["book"],
+                    "best_odds": offer["odds"], "confidence": "Market consensus",
+                    "selection_source": "market_consensus_fallback", "official_pick": False,
+                    "track_result": False,
+                })
+            else:
+                spread_board.append({"game": matchup, "selection": "No spread market available", "available": False, "official_pick": False, "track_result": False})
         if total_candidates:
             total_board.append(max(total_candidates, key=lambda x: (x[0], x[1]))[2])
         else:
-            total_board.append({"game": matchup, "selection": "No verified model/line", "available": False, "official_pick": False, "track_result": False})
+            over_offers, under_offers = [], []
+            for book, market in books.items():
+                total = market.get("total")
+                if total is None:
+                    continue
+                if (
+                    market.get("over_odds") is not None
+                    and _main_market_price(market.get("over_odds"))
+                    and consensus_total is not None
+                    and abs(float(total) - consensus_total) <= 3.0
+                ):
+                    over_offers.append({"book": book, "line": float(total), "odds": market["over_odds"]})
+                if (
+                    market.get("under_odds") is not None
+                    and _main_market_price(market.get("under_odds"))
+                    and consensus_total is not None
+                    and abs(float(total) - consensus_total) <= 3.0
+                ):
+                    under_offers.append({"book": book, "line": float(total), "odds": market["under_odds"]})
+            over_pressure = sum(_implied_probability(x["odds"]) for x in over_offers) / max(1, len(over_offers))
+            under_pressure = sum(_implied_probability(x["odds"]) for x in under_offers) / max(1, len(under_offers))
+            direction = "Over" if over_pressure >= under_pressure else "Under"
+            offer = _best_market_offer(over_offers if direction == "Over" else under_offers, direction.lower())
+            if offer:
+                total_board.append({
+                    "game": matchup, "selection": f"{direction} {offer['line']:g}",
+                    "over_under": direction, "line": offer["line"], "best_book": offer["book"],
+                    "best_odds": offer["odds"], "confidence": "Market consensus",
+                    "selection_source": "market_consensus_fallback", "official_pick": False,
+                    "track_result": False,
+                })
+            else:
+                total_board.append({"game": matchup, "selection": "No total market available", "available": False, "official_pick": False, "track_result": False})
     return spread_board, total_board
 
 
@@ -442,46 +548,49 @@ def _flatten_text(value):
     return str(value or "")
 
 
-def build_nfl_td_board(games, prop_candidates, redzone_data):
-    """Choose one verified anytime-TD market per game; never grade this board."""
+def build_nfl_td_board(games, prop_candidates, redzone_data, anytime_td=None):
+    """Choose one scorer from each team in every game; never grade it."""
     redzone_text = _flatten_text(redzone_data)
+    anytime_td = anytime_td or {}
     board = []
     for game in games:
         matchup = f"{game.get('away_team')} @ {game.get('home_team')}"
-        teams = {
-            NFL_TEAM_ABBREVIATIONS.get(game.get("away_team", "")),
-            NFL_TEAM_ABBREVIATIONS.get(game.get("home_team", "")),
-        }
-        choices = []
-        for prop in prop_candidates:
-            market = normalize_text(prop.get("market", ""))
-            if prop.get("team") not in teams or "anytime td" not in market:
+        game_prices = anytime_td.get(f"{game.get('away_team')}@{game.get('home_team')}", {})
+        for side in ("away", "home"):
+            team_name = game.get(f"{side}_team")
+            team_abbr = NFL_TEAM_ABBREVIATIONS.get(team_name)
+            choices = []
+            for prop in prop_candidates:
+                if prop.get("team") != team_abbr:
+                    continue
+                player = str(prop.get("player", ""))
+                prices = game_prices.get(player, {})
+                best_market = max(
+                    ({"book": book, "odds": price} for book, price in prices.items() if price is not None),
+                    key=lambda x: _odds_value(x["odds"]), default=None,
+                )
+                market = normalize_text(prop.get("market", ""))
+                if "anytime td" not in market and not best_market:
+                    continue
+                match = re.search(re.escape(player) + r".{0,180}?(\d{1,2})%", redzone_text, re.I | re.S)
+                rz_chance = int(match.group(1)) if match else None
+                score = float(prop.get("prediction_confidence", 0)) + (min(12, rz_chance * 0.25) if rz_chance is not None else 0)
+                price = best_market["odds"] if best_market else prop.get("best_odds")
+                choices.append((score, _odds_value(price), prop, rz_chance, best_market))
+            if not choices:
+                board.append({"game": matchup, "team": team_name, "selection": f"{team_name}: No verified Anytime TD market", "available": False, "official_pick": False, "track_result": False})
                 continue
-            rz_chance = None
-            player = str(prop.get("player", ""))
-            match = re.search(re.escape(player) + r".{0,180}?(\d{1,2})%", redzone_text, re.I | re.S)
-            if match:
-                rz_chance = int(match.group(1))
-            score = float(prop.get("prediction_confidence", 0)) + (min(12, rz_chance * 0.25) if rz_chance is not None else 0)
-            choices.append((score, _odds_value(prop.get("best_odds")), prop, rz_chance))
-
-        if not choices:
-            board.append({"game": matchup, "selection": "No verified Anytime TD market available", "available": False, "official_pick": False, "track_result": False})
-            continue
-        _, _, prop, rz_chance = max(choices, key=lambda x: (x[0], x[1]))
-        board.append({
-            "game": matchup,
-            "selection": f"{prop.get('player')} Anytime TD",
-            "player": prop.get("player"),
-            "team": prop.get("team"),
-            "best_book": prop.get("best_book"),
-            "best_odds": prop.get("best_odds"),
-            "propfinder_rating": prop.get("pf_rating"),
-            "redzone_td_chance": rz_chance,
-            "confidence": "Red-zone supported" if rz_chance is not None else "Prop-history lean",
-            "official_pick": False,
-            "track_result": False,
-        })
+            _, _, prop, rz_chance, best_market = max(choices, key=lambda x: (x[0], x[1]))
+            board.append({
+                "game": matchup, "selection": f"{prop.get('player')} Anytime TD ({team_name})",
+                "player": prop.get("player"), "team": team_name,
+                "best_book": (best_market or {}).get("book") or prop.get("best_book"),
+                "best_odds": (best_market or {}).get("odds") if best_market else prop.get("best_odds"),
+                "propfinder_rating": prop.get("pf_rating"), "redzone_td_chance": rz_chance,
+                "confidence": "Red-zone supported" if rz_chance is not None else "Prop/market lean",
+                "selection_source": "redzone_plus_market" if best_market else "propfinder",
+                "official_pick": False, "track_result": False,
+            })
     return board
 
 
@@ -832,14 +941,7 @@ def format_nfl_odds_for_prompt(games):
             {},
         )
 
-        for book in [
-            "FD",
-            "CZS",
-        ]:
-            odds = bookmakers.get(book)
-
-            if not odds:
-                continue
+        for book, odds in bookmakers.items():
 
             lines.append(
                 (
@@ -1004,12 +1106,8 @@ as meaningful betting evidence.
 SPORTSBOOK RULES
 ============================================================
 
-Only these books exist for this analysis:
-
-FD = FanDuel
-CZS = Caesars
-
-Use ONLY lines supplied below.
+Use any sportsbook explicitly supplied in NFL ODDS. Book codes and names are
+passed through exactly as returned by the odds fetcher. Use no other lines.
 
 The matchups listed in NFL ODDS are the complete and exclusive slate.
 Never select a game that is absent from NFL ODDS, even if it appears in news
@@ -1389,9 +1487,6 @@ def validate_moneyline(
         {},
     ).items():
 
-        if book not in VALID_BOOKS:
-            continue
-
         price = odds.get(
             f"{side}_ml"
         )
@@ -1421,7 +1516,7 @@ def validate_moneyline(
     if best is None:
         return None, (
             "moneyline not available "
-            "at FD or Caesars"
+            "at any available sportsbook"
         )
 
     validated = dict(pick)
@@ -1482,9 +1577,6 @@ def validate_spread(
         "bookmakers",
         {},
     ).items():
-
-        if book not in VALID_BOOKS:
-            continue
 
         book_line = odds.get(
             f"{side}_spread"
@@ -1606,9 +1698,6 @@ def validate_game_total(
         "bookmakers",
         {},
     ).items():
-
-        if book not in VALID_BOOKS:
-            continue
 
         book_total = odds.get(
             "total"
@@ -1751,7 +1840,7 @@ def validate_nfl_picks(
 ):
     print(
         "\n🔎 Validating Claude NFL picks "
-        "against FD/Caesars..."
+        "against all available sportsbooks..."
     )
 
     raw_picks = claude_data.get(
@@ -2172,7 +2261,7 @@ def analyze_nfl(
     )
 
     print(
-        "Books: FanDuel | Caesars | PropFinder prop-price source"
+        "Books: all available Odds API books | PropFinder prop source"
     )
 
     print("NFL player props: ENABLED via PropFinder export")
@@ -2237,7 +2326,8 @@ def analyze_nfl(
         games, model_index
     )
     lotto_td_board = build_nfl_td_board(
-        games, prop_candidates, intelligence.get("redzone", {})
+        games, prop_candidates, intelligence.get("redzone", {}),
+        odds_data.get("anytime_td", {}),
     )
 
     print(

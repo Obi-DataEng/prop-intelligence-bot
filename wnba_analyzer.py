@@ -104,6 +104,10 @@ def format_wnba_odds_for_prompt(odds_data):
             text += "  PLAYER PROPS:\n"
 
             for market, players in props.items():
+                # Alternate lines are reserved for the ungraded +400 board so
+                # they cannot leak into the official top-five recommendations.
+                if market.endswith("_alternate"):
+                    continue
                 label = market_labels.get(market, market)
                 text += f"    {label}:\n"
 
@@ -320,7 +324,7 @@ def build_wnba_prompt(
     )
 
     discrepancies = odds_discrepancy_text(data)
-
+    longshot_candidates = format_wnba_longshot_candidates(odds_data)
     news_text = safe_load_news(scrape_date)
 
     games_today = [
@@ -391,6 +395,16 @@ probability that a prop will hit.
 
 === EXTERNAL SPORTSBOOK ODDS ===
 {odds_text}
+
+=== VERIFIED +400 ALTERNATE-PROP CANDIDATES ===
+This is an entertainment-only side board and is never an official pick.
+For each game, select at most one candidate only when the player stats, recent
+volume, hit rates, role, injuries and matchup provide affirmative support for
+that exact alternate line. Do not choose merely because the odds are +400.
+Use the candidate_id exactly as supplied. If no candidate is adequately
+supported for a game, omit that game from lotto_longshot_prop_board. Never
+invent a candidate, player, line, sportsbook or price.
+{longshot_candidates}
 
 === RECENT WNBA NEWS ===
 {news_text}
@@ -572,6 +586,14 @@ Return ONLY valid JSON. No markdown fences and no prose outside JSON.
       "reason": "Large odds discrepancy but 0/37 season hit rate."
     }}
   ],
+  "lotto_longshot_prop_board": [
+    {{
+      "game": "AWAY @ HOME",
+      "candidate_id": "G1-C3",
+      "reasoning": "Concise evidence supporting this exact long-shot line",
+      "evidence_grade": "Strong | Moderate"
+    }}
+  ],
   "slate_summary": "Brief assessment of the WNBA slate and evidence quality.",
   "best_bet": "Single best WNBA bet in one sentence, or No qualifying bet."
 }}
@@ -595,6 +617,204 @@ def parse_json_response(response_text):
             clean = clean.split("```", 1)[0]
 
     return json.loads(clean.strip())
+
+
+def _american_probability(odds):
+    try:
+        odds = float(odds)
+    except (TypeError, ValueError):
+        return 0.0
+    return (-odds / (-odds + 100.0)) if odds < 0 else (100.0 / (odds + 100.0))
+
+
+def _best_wnba_offer(offers, direction):
+    if not offers:
+        return None
+    if direction == "over":
+        line = min(row["line"] for row in offers)
+    else:
+        line = max(row["line"] for row in offers)
+    exact = [row for row in offers if abs(row["line"] - line) < 0.001]
+    return max(exact, key=lambda row: float(row.get("odds", -10000)))
+
+
+def build_wnba_lotto_boards(odds_data):
+    """Build an ungraded spread and O/U lean for every priced WNBA game."""
+    spread_board, total_board = [], []
+    for game in odds_data.get("games", []):
+        away, home = game.get("away_team"), game.get("home_team")
+        matchup = f"{away} @ {home}"
+        books = game.get("bookmakers", {})
+        home_offers, away_offers, over_offers, under_offers = [], [], [], []
+        for book, market in books.items():
+            for side, offers in (("home", home_offers), ("away", away_offers)):
+                line, price = market.get(f"{side}_spread"), market.get(f"{side}_spread_odds")
+                if line is not None and price is not None:
+                    offers.append({"book": book, "line": float(line), "odds": price})
+            total = market.get("total")
+            if total is not None and market.get("over_odds") is not None:
+                over_offers.append({"book": book, "line": float(total), "odds": market["over_odds"]})
+            if total is not None and market.get("under_odds") is not None:
+                under_offers.append({"book": book, "line": float(total), "odds": market["under_odds"]})
+
+        if home_offers:
+            median_home = sorted(x["line"] for x in home_offers)[len(home_offers) // 2]
+            side = "home" if median_home < 0 else "away"
+            offer = _best_wnba_offer(home_offers if side == "home" else away_offers, side)
+            team = home if side == "home" else away
+            spread_board.append({
+                "game": matchup, "selection": f"{team} {offer['line']:+g}",
+                "team": team, "line": offer["line"], "best_book": offer["book"],
+                "best_odds": offer["odds"], "confidence": "Market consensus",
+                "selection_source": "all_book_market_consensus", "official_pick": False,
+                "track_result": False,
+            })
+        else:
+            spread_board.append({"game": matchup, "selection": "No spread market available", "available": False, "official_pick": False, "track_result": False})
+
+        over_pressure = sum(_american_probability(x["odds"]) for x in over_offers) / max(1, len(over_offers))
+        under_pressure = sum(_american_probability(x["odds"]) for x in under_offers) / max(1, len(under_offers))
+        direction = "Over" if over_pressure >= under_pressure else "Under"
+        offer = _best_wnba_offer(over_offers if direction == "Over" else under_offers, direction.lower())
+        if offer:
+            total_board.append({
+                "game": matchup, "selection": f"{direction} {offer['line']:g}",
+                "over_under": direction, "line": offer["line"], "best_book": offer["book"],
+                "best_odds": offer["odds"], "confidence": "Market consensus",
+                "selection_source": "all_book_market_consensus", "official_pick": False,
+                "track_result": False,
+            })
+        else:
+            total_board.append({"game": matchup, "selection": "No total market available", "available": False, "official_pick": False, "track_result": False})
+    return spread_board, total_board
+
+
+WNBA_LONGSHOT_LABELS = {
+    "player_points_alternate": "Points",
+    "player_rebounds_alternate": "Rebounds",
+    "player_assists_alternate": "Assists",
+    "player_blocks_alternate": "Blocks",
+    "player_steals_alternate": "Steals",
+    "player_turnovers_alternate": "Turnovers",
+    "player_threes_alternate": "3-Pointers Made",
+    "player_points_assists_alternate": "Points + Assists",
+    "player_points_rebounds_alternate": "Points + Rebounds",
+    "player_rebounds_assists_alternate": "Rebounds + Assists",
+    "player_points_rebounds_assists_alternate": "PRA",
+}
+
+
+def collect_wnba_longshot_candidates(odds_data, minimum_odds=400, per_game_limit=20):
+    """Return deduplicated, verified +400 alternate Over candidates by game."""
+    result = {}
+    props_by_game = odds_data.get("player_props", {})
+
+    for game_number, game in enumerate(odds_data.get("games", []), start=1):
+        away, home = game.get("away_team"), game.get("home_team")
+        matchup = f"{away} @ {home}"
+        game_key = f"{away}@{home}"
+        grouped = {}
+
+        for market, players in props_by_game.get(game_key, {}).items():
+            if market not in WNBA_LONGSHOT_LABELS or not isinstance(players, dict):
+                continue
+            for player, prop_data in players.items():
+                if not isinstance(prop_data, dict):
+                    continue
+                for book, book_data in prop_data.items():
+                    if book == "line" or not isinstance(book_data, dict):
+                        continue
+                    offers = book_data.get("offers", [])
+                    # Backward compatibility for older snapshots.
+                    if not offers and book_data.get("over") is not None:
+                        offers = [{
+                            "side": "Over", "line": book_data.get("line", prop_data.get("line")),
+                            "odds": book_data.get("over"),
+                        }]
+                    for offer in offers:
+                        try:
+                            price = int(offer.get("odds"))
+                            line = float(offer.get("line"))
+                        except (TypeError, ValueError):
+                            continue
+                        if str(offer.get("side", "")).lower() == "over" and price >= minimum_odds:
+                            key = (str(player).strip(), market, line)
+                            candidate = {
+                                "player": player, "market": market, "line": line,
+                                "best_book": book, "best_odds": price,
+                            }
+                            current = grouped.get(key)
+                            if current is None or price > current["best_odds"]:
+                                grouped[key] = candidate
+
+        candidates = sorted(
+            grouped.values(),
+            key=lambda row: (row["best_odds"], row["line"], row["player"]),
+        )[:per_game_limit]
+        for candidate_number, candidate in enumerate(candidates, start=1):
+            candidate["candidate_id"] = f"G{game_number}-C{candidate_number}"
+            candidate["game"] = matchup
+            candidate["label"] = WNBA_LONGSHOT_LABELS[candidate["market"]]
+        result[matchup] = candidates
+    return result
+
+
+def format_wnba_longshot_candidates(odds_data):
+    candidate_map = collect_wnba_longshot_candidates(odds_data)
+    lines = []
+    for matchup, candidates in candidate_map.items():
+        lines.append(f"\n{matchup}")
+        if not candidates:
+            lines.append("  No verified +400 alternate Over markets")
+            continue
+        for row in candidates:
+            lines.append(
+                f"  {row['candidate_id']} | {row['player']} Over {row['line']:g} "
+                f"{row['label']} | {row['best_book']} +{row['best_odds']}"
+            )
+    return "\n".join(lines)[:18000]
+
+
+def build_wnba_longshot_prop_board(odds_data, model_rows, minimum_odds=400):
+    """Validate evidence-backed model selections against exact API candidates."""
+    rows = []
+    candidate_map = collect_wnba_longshot_candidates(odds_data, minimum_odds)
+    selected_by_game = {
+        normalize_text(row.get("game")): row
+        for row in (model_rows or [])
+        if isinstance(row, dict) and row.get("game")
+    }
+
+    for matchup, candidates in candidate_map.items():
+        model_row = selected_by_game.get(normalize_text(matchup), {})
+        requested_id = str(model_row.get("candidate_id") or "").strip()
+        pick = next(
+            (candidate for candidate in candidates if candidate["candidate_id"] == requested_id),
+            None,
+        )
+        if pick:
+            rows.append({
+                "game": matchup,
+                "selection": f"{pick['player']} Over {pick['line']:g} {pick['label']}",
+                "player": pick["player"], "market": pick["market"],
+                "line": pick["line"], "best_book": pick["best_book"],
+                "best_odds": pick["best_odds"],
+                "confidence": model_row.get("evidence_grade") or "Evidence-backed long shot",
+                "reasoning": model_row.get("reasoning") or "Supported by the available WNBA evidence.",
+                "candidate_id": pick["candidate_id"],
+                "selection_source": "The Odds API alternate props + model evidence",
+                "official_pick": False, "track_result": False,
+            })
+        else:
+            rows.append({
+                "game": matchup,
+                "selection": "No supported +400 player-prop Over",
+                "available": False,
+                "confidence": "Pass",
+                "selection_source": "The Odds API alternate props + model evidence",
+                "official_pick": False, "track_result": False,
+            })
+    return rows
 
 
 def run_wnba_analyzer(scrape_date=None, odds_data=None):
@@ -689,6 +909,17 @@ def run_wnba_analyzer(scrape_date=None, odds_data=None):
             f"{response_text[:1000]}"
         )
         return None
+
+    lotto_spread_board, lotto_total_board = build_wnba_lotto_boards(odds_data)
+    picks_data["lotto_spread_board"] = lotto_spread_board
+    picks_data["lotto_total_board"] = lotto_total_board
+    picks_data["lotto_longshot_prop_board"] = build_wnba_longshot_prop_board(
+        odds_data,
+        picks_data.get("lotto_longshot_prop_board", []),
+    )
+    picks_data["lotto_notice"] = (
+        "Entertainment-only side boards; excluded from grading and official records."
+    )
 
     top_picks = picks_data.get(
         "top_picks",

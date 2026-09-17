@@ -1908,6 +1908,181 @@ async def scrape_wnba_odds_discrepancies(page, url):
     return data
 
 
+async def scrape_wnba_first_basket(page, url):
+    """Capture every First Basket matchup card and its player/team context."""
+    print("\n📄 Scraping wnba_first_basket...")
+    await navigate(page, url, 9000)
+    # This page defaults to "None selected" even when games exist. Open the
+    # MUI game selector and explicitly choose every matchup before scraping.
+    selected_all = False
+    trigger = page.locator("[role='combobox']").filter(has_text="None selected")
+    if await trigger.count():
+        try:
+            # MUI Select opens on a real pointer/mousedown sequence. A DOM
+            # element.click() can report success without opening its portal.
+            control = trigger.last
+            await control.scroll_into_view_if_needed()
+            await control.click(force=True)
+            await page.wait_for_timeout(900)
+
+            listbox = page.locator("[role='listbox']:visible")
+            if await listbox.count() == 0:
+                await control.dispatch_event("mousedown")
+                await page.wait_for_timeout(700)
+            if await listbox.count() == 0:
+                await control.focus()
+                await control.press("Enter")
+                await page.wait_for_timeout(700)
+
+            opened = await listbox.count() > 0
+            expanded = await control.get_attribute("aria-expanded")
+            disabled = await control.get_attribute("aria-disabled")
+            print(
+                f"   🔎 First Basket selector opened: {opened} "
+                f"(expanded={expanded}, disabled={disabled})"
+            )
+        except Exception as error:
+            print(f"   ⚠️ Could not open First Basket selector: {error}")
+
+    # If the portal still is not visible, try the standard combobox shortcut
+    # while focus remains on the select control.
+    if await page.locator("[role='listbox']:visible").count() == 0 and await trigger.count():
+        await trigger.last.focus()
+        await trigger.last.press("Alt+ArrowDown")
+        await page.wait_for_timeout(700)
+    await page.screenshot(
+        path="logs/wnba_first_basket_selector_open.png",
+        full_page=True,
+    )
+
+    selector_debug = await page.evaluate(
+        """() => Array.from(document.querySelectorAll('body *'))
+            .filter(el => {
+                const style = getComputedStyle(el);
+                const rect = el.getBoundingClientRect();
+                const text = (el.innerText || '').trim();
+                return text && text.length < 180 && rect.width > 0 && rect.height > 0 &&
+                    style.visibility !== 'hidden' && style.display !== 'none' &&
+                    (style.position === 'fixed' || style.position === 'absolute' ||
+                     el.getAttribute('role') || el.tagName === 'BUTTON' || el.tagName === 'LI');
+            })
+            .map(el => ({
+                tag: el.tagName,
+                text: (el.innerText || '').trim(),
+                role: el.getAttribute('role'),
+                ariaSelected: el.getAttribute('aria-selected'),
+                ariaChecked: el.getAttribute('aria-checked'),
+                className: String(el.className || '').slice(0, 220)
+            }))
+            .slice(0, 250)"""
+    )
+    with open(
+        "logs/wnba_first_basket_selector_debug.json",
+        "w",
+        encoding="utf-8",
+    ) as debug_file:
+        json.dump(selector_debug, debug_file, indent=2, ensure_ascii=False)
+    popup_text = " | ".join(
+        item.get("text", "") for item in selector_debug
+        if item.get("text") not in ("GAMES", "None selected")
+    )
+    print(f"   🔎 Visible selector text: {popup_text[:500] or 'none'}")
+
+    # Check every matchup in the open popover/listbox. Some builds expose
+    # native checkbox inputs; others expose only aria-selected option rows.
+    checkboxes = page.locator(
+        "[role='presentation'] input[type='checkbox'], "
+        "[role='listbox'] input[type='checkbox'], "
+        ".MuiPopover-root input[type='checkbox']"
+    )
+    checkbox_count = await checkboxes.count()
+    option_count = 0
+    custom_count = 0
+    for index in range(checkbox_count):
+        box = checkboxes.nth(index)
+        try:
+            if await box.is_visible() and not await box.is_checked():
+                await box.check(force=True)
+                selected_all = True
+        except Exception:
+            pass
+
+    if checkbox_count == 0:
+        options = page.locator(
+            "[role='listbox'] [role='option'], "
+            ".MuiPopover-root [role='option'], "
+            ".MuiPopover-root .MuiMenuItem-root"
+        )
+        option_count = await options.count()
+        for index in range(option_count):
+            option = options.nth(index)
+            try:
+                if not await option.is_visible():
+                    continue
+                aria_selected = await option.get_attribute("aria-selected")
+                aria_checked = await option.get_attribute("aria-checked")
+                if aria_selected != "true" and aria_checked != "true":
+                    await option.click(force=True)
+                    selected_all = True
+                    await page.wait_for_timeout(250)
+            except Exception:
+                pass
+
+    # Final fallback for custom dropdown libraries that do not expose native
+    # checkboxes or standard role=option elements.
+    if not selected_all:
+        custom_options = page.locator(
+            "[data-radix-popper-content-wrapper] button, "
+            "[data-radix-popper-content-wrapper] [data-value], "
+            "[data-state='open'] button, "
+            "[class*='dropdown'] [class*='option'], "
+            "[class*='Dropdown'] [class*='Option']"
+        )
+        custom_count = await custom_options.count()
+        for index in range(custom_count):
+            option = custom_options.nth(index)
+            try:
+                text = clean_text(await option.inner_text())
+                if (
+                    await option.is_visible()
+                    and text
+                    and text not in {"GAMES", "None selected"}
+                ):
+                    await option.click(force=True)
+                    selected_all = True
+                    await page.wait_for_timeout(250)
+            except Exception:
+                pass
+
+    print(
+        f"   🔎 First Basket options: {checkbox_count} checkbox(es), "
+        f"{option_count} standard option(s), {custom_count} custom option(s); "
+        f"selection attempted={selected_all}"
+    )
+    await page.wait_for_timeout(1800)
+
+    await page.keyboard.press("Escape")
+    await page.wait_for_timeout(1200)
+    current_text = await page.locator("body").inner_text()
+    if "None selected" in current_text:
+        print("   ⚠️ First Basket game selector is still set to None selected")
+    else:
+        print("   ✅ First Basket games selected")
+    # The page is card-based and lazy-loads vertically, so collect after a
+    # progressive scroll as well as retaining the full page text.
+    for scroll_pos in (600, 1200, 1800, 2600, 3600, 4800):
+        await page.evaluate(f"window.scrollTo(0, {scroll_pos})")
+        await page.wait_for_timeout(500)
+    await page.evaluate("window.scrollTo(0, 0)")
+    data = await extract_structured_page(page)
+    await page.screenshot(path="logs/wnba_first_basket.png", full_page=True)
+    print(
+        f"   ✅ wnba_first_basket: {len(data['html_rows'])} HTML rows, "
+        f"{len(data['grid_rows'])} grid rows, {len(data['fullText'])} chars"
+    )
+    return data
+
+
 # ─────────────────────────────────────────────
 # MLB MAIN RUNNER
 # ─────────────────────────────────────────────

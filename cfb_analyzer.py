@@ -565,14 +565,7 @@ def format_cfb_odds_for_prompt(games):
             {},
         )
 
-        for book in [
-            "FD",
-            "CZS",
-        ]:
-            odds = bookmakers.get(book)
-
-            if not odds:
-                continue
+        for book, odds in bookmakers.items():
 
             lines.append(
                 (
@@ -729,12 +722,8 @@ as meaningful betting evidence.
 SPORTSBOOK RULES
 ============================================================
 
-Only these books exist for this analysis:
-
-FD = FanDuel
-CZS = Caesars
-
-Use ONLY lines supplied below.
+Use any sportsbook explicitly supplied in CFB ODDS. Book codes and names are
+passed through exactly as returned by the odds fetcher. Use no other lines.
 
 Never invent:
 
@@ -1110,9 +1099,6 @@ def validate_moneyline(
         {},
     ).items():
 
-        if book not in VALID_BOOKS:
-            continue
-
         price = odds.get(
             f"{side}_ml"
         )
@@ -1142,7 +1128,7 @@ def validate_moneyline(
     if best is None:
         return None, (
             "moneyline not available "
-            "at FD or Caesars"
+            "at any available sportsbook"
         )
 
     validated = dict(pick)
@@ -1203,9 +1189,6 @@ def validate_spread(
         "bookmakers",
         {},
     ).items():
-
-        if book not in VALID_BOOKS:
-            continue
 
         book_line = odds.get(
             f"{side}_spread"
@@ -1328,9 +1311,6 @@ def validate_game_total(
         {},
     ).items():
 
-        if book not in VALID_BOOKS:
-            continue
-
         book_total = odds.get(
             "total"
         )
@@ -1417,7 +1397,7 @@ def validate_cfb_picks(
 ):
     print(
         "\n🔎 Validating Claude CFB picks "
-        "against FD/Caesars..."
+        "against all available sportsbooks..."
     )
 
     raw_picks = claude_data.get(
@@ -1816,7 +1796,7 @@ def analyze_cfb(
     )
 
     print(
-        "Books: FanDuel | Caesars | PropFinder prop-price source"
+        "Books: all available Odds API books | PropFinder prop source"
     )
 
     print("College player props: ENABLED via PropFinder export")
