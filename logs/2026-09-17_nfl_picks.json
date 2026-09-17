@@ -1,0 +1,102 @@
+{
+  "date": "2026-09-17",
+  "league": "NFL",
+  "markets": [
+    "moneyline",
+    "spread",
+    "game_total",
+    "player_prop"
+  ],
+  "player_props_enabled": true,
+  "books": [
+    "FD",
+    "CZS",
+    "PropFinder (player-prop price source; book name unavailable in CSV)"
+  ],
+  "games_analyzed": 1,
+  "props_analyzed": 0,
+  "player_prop_picks": [],
+  "game_picks": [],
+  "picks": [],
+  "rejected_picks": [
+    {
+      "pick": {
+        "rank": 1,
+        "pick_type": "spread",
+        "game": "Detroit Lions @ Buffalo Bills",
+        "team": "Detroit Lions",
+        "selection": "Detroit Lions +5.5",
+        "line": 5.5,
+        "over_under": null,
+        "best_book": "CZS",
+        "best_odds": -114,
+        "prediction_confidence": 76,
+        "confidence_tier": "Medium",
+        "reasoning": "Detroit gets an extra point at CZS (+5.5 vs +4.5 at FD) in a primetime divisional matchup. The Lions are a competitive team capable of staying within a field goal plus hook against Buffalo. The larger spread provides critical value in what should be a competitive Thursday night game between two playoff-caliber teams."
+      },
+      "reason": "no matching PropFinder projection for edge validation"
+    },
+    {
+      "pick": {
+        "rank": 2,
+        "pick_type": "game_total",
+        "game": "Detroit Lions @ Buffalo Bills",
+        "team": null,
+        "selection": "Over 54.5",
+        "line": 54.5,
+        "over_under": "Over",
+        "best_book": "CZS",
+        "best_odds": -112,
+        "prediction_confidence": 74,
+        "confidence_tier": "Medium",
+        "reasoning": "Both teams feature high-powered offenses with Detroit's aerial attack and Buffalo's Josh Allen-led unit. The 54.5 total is elevated but justified given both teams' offensive firepower. Thursday night games in Week 2 with well-rested teams often produce offensive output, and neither defense projects as dominant enough to suppress scoring below this threshold."
+      },
+      "reason": "no matching PropFinder projection for edge validation"
+    },
+    {
+      "pick": {
+        "rank": 3,
+        "pick_type": "spread",
+        "game": "Detroit Lions @ Buffalo Bills",
+        "team": "Buffalo Bills",
+        "selection": "Buffalo Bills -4.5",
+        "line": -4.5,
+        "over_under": null,
+        "best_book": "FD",
+        "best_odds": -115,
+        "prediction_confidence": 73,
+        "confidence_tier": "Medium",
+        "reasoning": "Buffalo at home in New Era Field with a 60.1% home win rate and +3.5 average margin historically. The Bills getting less than a touchdown at -4.5 (compared to -5.5 at CZS) provides value. Josh Allen leads a potent offense, and the home environment on Thursday night favors the Bills covering the smaller number against a Lions team traveling east on short rest."
+      },
+      "reason": "no matching PropFinder projection for edge validation"
+    }
+  ],
+  "lotto_spread_board": [
+    {
+      "game": "Detroit Lions @ Buffalo Bills",
+      "selection": "No verified model/line",
+      "available": false,
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_total_board": [
+    {
+      "game": "Detroit Lions @ Buffalo Bills",
+      "selection": "No verified model/line",
+      "available": false,
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_td_board": [
+    {
+      "game": "Detroit Lions @ Buffalo Bills",
+      "selection": "No verified Anytime TD market available",
+      "available": false,
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_notice": "Entertainment-only side boards; excluded from grading and official records."
+}
