@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-18",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": true,
+  "legs": [
+    {
+      "league": "WNBA",
+      "game": "Indiana Fever @ Toronto Tempo",
+      "selection": "Kelsey Mitchell Over 25.5 Points",
+      "market_type": "player_prop",
+      "player": "Kelsey Mitchell",
+      "team": "IND",
+      "direction": "OVER",
+      "line": 25.5,
+      "book": "CZS",
+      "odds": -115,
+      "support_score": 84.0,
+      "confidence_tier": "High",
+      "reasoning": "Mitchell has been a scoring machine over the past two weeks, averaging 28.1 PPG in L10 and 31.0 PPG in L5, well above the 25.5 line. Her L3 average of 29.7 PPG and elite 55.3% FG% in L10 represent sustained improvement, not a variance spike. Perfect 5/5 hit rate against this line on the season with increased opportunity and efficiency across all recent windows.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "CFB",
+      "game": "Houston Cougars @ Texas Tech Red Raiders",
+      "selection": "Texas Tech Red Raiders -7.5",
+      "market_type": "spread",
+      "player": null,
+      "team": "Texas Tech Red Raiders",
+      "direction": null,
+      "line": -7.5,
+      "book": "Bovada",
+      "odds": -105,
+      "support_score": 82.0,
+      "confidence_tier": "High",
+      "reasoning": "PropFinder model projects TTU -11.2 with 58% cover probability, creating a +3.7 edge against the -7.5 market line. Texas Tech is significantly undervalued at home as the #11 ranked team at +24.6 SPR facing a #25 Houston team at +14.9. The Red Raiders have strong win probability (74%) and should control this Big 12 opener. Multiple books offering -7.5 provides excellent value compared to the model's double-digit spread expectation.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Indiana Fever @ Toronto Tempo",
+      "selection": "Caitlin Clark Over 22.5 Points",
+      "market_type": "player_prop",
+      "player": "Caitlin Clark",
+      "team": "IND",
+      "direction": "OVER",
+      "line": 22.5,
+      "book": "CZS",
+      "odds": -124,
+      "support_score": 81.0,
+      "confidence_tier": "High",
+      "reasoning": "Clark's return from World Cup shows immediate offensive elevation with 30.7 PPG in L3 at elite 55.8% FG%. While L10 averages 24.9 PPG, the recent L3 data post-World Cup suggests elevated aggression that could persist against an expansion team. Hit rate strong at 80% season-wide with multiple thresholds cleared in recent games.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 6.594,
+  "combined_american_odds": 559,
+  "implied_probability_pct": 15.2,
+  "candidate_count": 8,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records."
+}
