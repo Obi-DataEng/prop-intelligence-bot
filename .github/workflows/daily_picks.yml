@@ -96,6 +96,7 @@ jobs:
           git config user.name "Picks Bot"
           git add -f logs/*.json
           git diff --cached --quiet || git commit -m "Add picks logs for $(date +%Y-%m-%d)"
+          git stash push -m "runner state before log sync"
           git pull --rebase origin main
           git push origin HEAD:main
         env:
