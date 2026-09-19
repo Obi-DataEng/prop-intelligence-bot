@@ -3,9 +3,9 @@
   "graded_date": "2026-09-19",
   "record": {
     "wins": 8,
-    "losses": 6,
+    "losses": 7,
     "pushes": 0,
-    "pending": 6
+    "pending": 5
   },
   "summary": {
     "MLB - HR": {
@@ -108,9 +108,9 @@
     },
     "CFB - Game OU": {
       "wins": 1,
-      "losses": 0,
+      "losses": 1,
       "pushes": 0,
-      "pending": 1,
+      "pending": 0,
       "profit": 0
     },
     "WNBA - Player Prop": {
@@ -132,8 +132,8 @@
         "line": 69.5,
         "odds": "102",
         "best_book": "Courtside",
-        "result": "pending",
-        "actual_value": null
+        "result": "loss",
+        "actual_value": 84.0
       },
       {
         "sport": "CFB",
@@ -394,9 +394,9 @@
       "sport": "CFB",
       "category": "Game OU",
       "wins": 1,
-      "losses": 0,
+      "losses": 1,
       "pushes": 0,
-      "win_rate": 100.0
+      "win_rate": 50.0
     },
     "CFB - Game Spread": {
       "sport": "CFB",
@@ -480,9 +480,9 @@
     },
     "OVERALL": {
       "wins": 10,
-      "losses": 8,
+      "losses": 9,
       "pushes": 0,
-      "win_rate": 55.6
+      "win_rate": 52.6
     }
   }
 }

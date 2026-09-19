@@ -3,13 +3,11 @@
   "league": "WNBA",
   "sources": {
     "wnba_research": {
-      "status": "success",
-      "html_rows": 0,
-      "grid_rows": 0
+      "status": "failed_or_timed_out"
     },
     "wnba_player_stats": {
       "status": "success",
-      "html_rows": 0,
+      "html_rows": 93,
       "grid_rows": 0
     },
     "wnba_team_stats": {
@@ -20,11 +18,11 @@
     "wnba_hit_rate": {
       "status": "success",
       "html_rows": 0,
-      "grid_rows": 0
+      "grid_rows": 21
     },
     "wnba_injury_reports": {
       "status": "success",
-      "html_rows": 21,
+      "html_rows": 16,
       "grid_rows": 0
     },
     "wnba_volume_trends": {
@@ -32,22 +30,22 @@
       "primary_recent_window": "L10",
       "windows": {
         "L3": {
-          "html_rows": 137,
+          "html_rows": 106,
           "grid_rows": 0,
           "selected": true
         },
         "L5": {
-          "html_rows": 137,
+          "html_rows": 106,
           "grid_rows": 0,
           "selected": true
         },
         "L10": {
-          "html_rows": 137,
+          "html_rows": 106,
           "grid_rows": 0,
           "selected": true
         },
         "L15": {
-          "html_rows": 137,
+          "html_rows": 106,
           "grid_rows": 0,
           "selected": true
         }
@@ -60,7 +58,7 @@
     },
     "wnba_odds_discrepancies": {
       "status": "success",
-      "html_rows": 17,
+      "html_rows": 29,
       "grid_rows": 0
     }
   }
