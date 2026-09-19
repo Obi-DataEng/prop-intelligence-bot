@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-19",
+  "league": "WNBA",
+  "sources": {
+    "wnba_research": {
+      "status": "success",
+      "html_rows": 0,
+      "grid_rows": 0
+    },
+    "wnba_player_stats": {
+      "status": "success",
+      "html_rows": 0,
+      "grid_rows": 0
+    },
+    "wnba_team_stats": {
+      "status": "success",
+      "html_rows": 0,
+      "grid_rows": 0
+    },
+    "wnba_hit_rate": {
+      "status": "success",
+      "html_rows": 0,
+      "grid_rows": 0
+    },
+    "wnba_injury_reports": {
+      "status": "success",
+      "html_rows": 21,
+      "grid_rows": 0
+    },
+    "wnba_volume_trends": {
+      "status": "success",
+      "primary_recent_window": "L10",
+      "windows": {
+        "L3": {
+          "html_rows": 137,
+          "grid_rows": 0,
+          "selected": true
+        },
+        "L5": {
+          "html_rows": 137,
+          "grid_rows": 0,
+          "selected": true
+        },
+        "L10": {
+          "html_rows": 137,
+          "grid_rows": 0,
+          "selected": true
+        },
+        "L15": {
+          "html_rows": 137,
+          "grid_rows": 0,
+          "selected": true
+        }
+      }
+    },
+    "wnba_injury_splits": {
+      "status": "success",
+      "html_rows": 9,
+      "grid_rows": 0
+    },
+    "wnba_odds_discrepancies": {
+      "status": "success",
+      "html_rows": 17,
+      "grid_rows": 0
+    }
+  }
+}
