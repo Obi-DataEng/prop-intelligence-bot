@@ -1,0 +1,1833 @@
+{
+  "date": "2026-09-20",
+  "league": "CFB",
+  "sport_key": "americanfootball_ncaaf",
+  "books": [
+    "BALLY",
+    "BR",
+    "Bovada",
+    "CZS",
+    "Courtside",
+    "DK",
+    "FD",
+    "Fliff",
+    "HRB",
+    "MGM",
+    "MyBookie.ag",
+    "PARX",
+    "theScore Bet"
+  ],
+  "game_markets": [
+    "moneyline",
+    "spread",
+    "total"
+  ],
+  "player_props_enabled": false,
+  "games": [
+    {
+      "game_id": "3db3de2fb9101f01f676c1f319837667",
+      "home_team": "Appalachian State Mountaineers",
+      "away_team": "Charlotte 49ers",
+      "commence_time": "2026-09-20T01:32:03Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -11.5,
+          "home_spread_odds": 137,
+          "away_spread": 11.5,
+          "away_spread_odds": -183,
+          "total": 46.5,
+          "over_odds": -124,
+          "under_odds": -107
+        },
+        "Courtside": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 43.5,
+          "over_odds": -109,
+          "under_odds": -122
+        },
+        "FD": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -13.5,
+          "home_spread_odds": -114,
+          "away_spread": 13.5,
+          "away_spread_odds": -114,
+          "total": 47.5,
+          "over_odds": -136,
+          "under_odds": 102
+        },
+        "MyBookie.ag": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 47.5,
+          "over_odds": 100,
+          "under_odds": -133
+        },
+        "PARX": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -11.5,
+          "home_spread_odds": -108,
+          "away_spread": 11.5,
+          "away_spread_odds": -122,
+          "total": 46.5,
+          "over_odds": -137,
+          "under_odds": 102
+        },
+        "BALLY": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -11.5,
+          "home_spread_odds": -112,
+          "away_spread": 11.5,
+          "away_spread_odds": -127,
+          "total": 46.5,
+          "over_odds": -143,
+          "under_odds": 100
+        },
+        "Bovada": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -11.5,
+          "home_spread_odds": 130,
+          "away_spread": 11.5,
+          "away_spread_odds": -170,
+          "total": 46.5,
+          "over_odds": -115,
+          "under_odds": -115
+        },
+        "HRB": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -11.5,
+          "home_spread_odds": 115,
+          "away_spread": 11.5,
+          "away_spread_odds": -145,
+          "total": 46.5,
+          "over_odds": -135,
+          "under_odds": 105
+        },
+        "theScore Bet": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -11.5,
+          "home_spread_odds": 100,
+          "away_spread": 11.5,
+          "away_spread_odds": -130,
+          "total": 47.5,
+          "over_odds": -110,
+          "under_odds": -120
+        }
+      }
+    },
+    {
+      "game_id": "6d109b8538a3588ad21a393896d32efc",
+      "home_team": "Boise State Broncos",
+      "away_team": "South Dakota Coyotes",
+      "commence_time": "2026-09-20T02:10:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -10000,
+          "away_ml": 1800,
+          "home_spread": -17.5,
+          "home_spread_odds": 108,
+          "away_spread": 17.5,
+          "away_spread_odds": -144,
+          "total": 59.5,
+          "over_odds": 106,
+          "under_odds": -140
+        },
+        "HRB": {
+          "home_ml": -8000,
+          "away_ml": 1600,
+          "home_spread": -17.5,
+          "home_spread_odds": -105,
+          "away_spread": 17.5,
+          "away_spread_odds": -120,
+          "total": 59.5,
+          "over_odds": -105,
+          "under_odds": -125
+        },
+        "theScore Bet": {
+          "home_ml": -7500,
+          "away_ml": 2000,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 58.5,
+          "over_odds": -115,
+          "under_odds": -115
+        },
+        "PARX": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -17.5,
+          "home_spread_odds": -110,
+          "away_spread": 17.5,
+          "away_spread_odds": -118,
+          "total": 58.5,
+          "over_odds": -127,
+          "under_odds": -104
+        },
+        "BALLY": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -17.5,
+          "home_spread_odds": -114,
+          "away_spread": 17.5,
+          "away_spread_odds": -122,
+          "total": 58.5,
+          "over_odds": -132,
+          "under_odds": -107
+        },
+        "DK": {
+          "home_ml": -8400,
+          "away_ml": 2000,
+          "home_spread": -17.5,
+          "home_spread_odds": 102,
+          "away_spread": 17.5,
+          "away_spread_odds": -136,
+          "total": 59.5,
+          "over_odds": 109,
+          "under_odds": -145
+        },
+        "Courtside": {
+          "home_ml": -6400,
+          "away_ml": 2200,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 56.5,
+          "over_odds": -220,
+          "under_odds": -1000
+        },
+        "MGM": {
+          "home_ml": -2500,
+          "away_ml": 1100,
+          "home_spread": -16.5,
+          "home_spread_odds": -135,
+          "away_spread": 16.5,
+          "away_spread_odds": 105,
+          "total": 59.5,
+          "over_odds": 110,
+          "under_odds": -135
+        },
+        "Bovada": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -17.5,
+          "home_spread_odds": 105,
+          "away_spread": 17.5,
+          "away_spread_odds": -135,
+          "total": 59.5,
+          "over_odds": 110,
+          "under_odds": -145
+        },
+        "Fliff": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -17.5,
+          "home_spread_odds": -105,
+          "away_spread": 17.5,
+          "away_spread_odds": -130,
+          "total": 58.5,
+          "over_odds": -145,
+          "under_odds": 100
+        },
+        "MyBookie.ag": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -17.5,
+          "home_spread_odds": -111,
+          "away_spread": 17.5,
+          "away_spread_odds": -111,
+          "total": 59.5,
+          "over_odds": -111,
+          "under_odds": -111
+        }
+      }
+    },
+    {
+      "game_id": "0cdf27f150204b8512bca1e2d7cce051",
+      "home_team": "San Diego State Aztecs",
+      "away_team": "James Madison Dukes",
+      "commence_time": "2026-09-20T02:16:02Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": 1780,
+          "away_ml": -4800,
+          "home_spread": 17.5,
+          "home_spread_odds": -111,
+          "away_spread": -17.5,
+          "away_spread_odds": -120,
+          "total": 42.5,
+          "over_odds": -111,
+          "under_odds": -119
+        },
+        "Fliff": {
+          "home_ml": 940,
+          "away_ml": -3680,
+          "home_spread": 15.5,
+          "home_spread_odds": -120,
+          "away_spread": -15.5,
+          "away_spread_odds": -115,
+          "total": 41.5,
+          "over_odds": -120,
+          "under_odds": -120
+        },
+        "Courtside": {
+          "home_ml": 1460,
+          "away_ml": -3200,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 35.5,
+          "over_odds": -350,
+          "under_odds": -550
+        },
+        "CZS": {
+          "home_ml": 1400,
+          "away_ml": -5000,
+          "home_spread": 15.5,
+          "home_spread_odds": -102,
+          "away_spread": -15.5,
+          "away_spread_odds": -125,
+          "total": 41.5,
+          "over_odds": -105,
+          "under_odds": -127
+        },
+        "MGM": {
+          "home_ml": 1050,
+          "away_ml": -2000,
+          "home_spread": 16.5,
+          "home_spread_odds": -118,
+          "away_spread": -16.5,
+          "away_spread_odds": -112,
+          "total": 41.5,
+          "over_odds": -110,
+          "under_odds": -108
+        },
+        "MyBookie.ag": {
+          "home_ml": 1075,
+          "away_ml": -2500,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 41.5,
+          "over_odds": -105,
+          "under_odds": -118
+        },
+        "FD": {
+          "home_ml": 1060,
+          "away_ml": -3500,
+          "home_spread": 16.5,
+          "home_spread_odds": -125,
+          "away_spread": -16.5,
+          "away_spread_odds": -106,
+          "total": 41.5,
+          "over_odds": -108,
+          "under_odds": -122
+        },
+        "BALLY": {
+          "home_ml": 950,
+          "away_ml": -5000,
+          "home_spread": 16.5,
+          "home_spread_odds": -130,
+          "away_spread": -16.5,
+          "away_spread_odds": -110,
+          "total": 41.5,
+          "over_odds": -115,
+          "under_odds": -122
+        },
+        "PARX": {
+          "home_ml": 950,
+          "away_ml": -2500,
+          "home_spread": 15.5,
+          "home_spread_odds": -107,
+          "away_spread": -15.5,
+          "away_spread_odds": -125,
+          "total": 41.5,
+          "over_odds": -112,
+          "under_odds": -118
+        },
+        "Bovada": {
+          "home_ml": 1400,
+          "away_ml": -5000,
+          "home_spread": 15.5,
+          "home_spread_odds": -130,
+          "away_spread": -15.5,
+          "away_spread_odds": 100,
+          "total": 41.5,
+          "over_odds": -120,
+          "under_odds": -110
+        },
+        "HRB": {
+          "home_ml": 1000,
+          "away_ml": -2500,
+          "home_spread": 15.5,
+          "home_spread_odds": -120,
+          "away_spread": -15.5,
+          "away_spread_odds": -110,
+          "total": 41.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "theScore Bet": {
+          "home_ml": 1000,
+          "away_ml": -3000,
+          "home_spread": 15.5,
+          "home_spread_odds": -115,
+          "away_spread": -15.5,
+          "away_spread_odds": -115,
+          "total": 41.5,
+          "over_odds": -115,
+          "under_odds": -120
+        }
+      }
+    },
+    {
+      "game_id": "93de8127b5d37170dff2b88deca0b95e",
+      "home_team": "Arizona Wildcats",
+      "away_team": "Northern Illinois Huskies",
+      "commence_time": "2026-09-20T02:32:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": 104,
+          "away_spread": 32.5,
+          "away_spread_odds": -138,
+          "total": 61.5,
+          "over_odds": -114,
+          "under_odds": -114
+        },
+        "Fliff": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": -105,
+          "away_spread": 32.5,
+          "away_spread_odds": -130,
+          "total": 61.5,
+          "over_odds": -120,
+          "under_odds": -125
+        },
+        "HRB": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": -110,
+          "away_spread": 32.5,
+          "away_spread_odds": -120,
+          "total": 61.5,
+          "over_odds": -105,
+          "under_odds": -120
+        },
+        "DK": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": -104,
+          "away_spread": 32.5,
+          "away_spread_odds": -127,
+          "total": 61.5,
+          "over_odds": -114,
+          "under_odds": -117
+        },
+        "Courtside": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 51.5,
+          "over_odds": -700,
+          "under_odds": -600
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": 104,
+          "away_spread": 32.5,
+          "away_spread_odds": -132,
+          "total": 60.5,
+          "over_odds": -122,
+          "under_odds": -106
+        },
+        "MGM": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -31.5,
+          "home_spread_odds": -140,
+          "away_spread": 31.5,
+          "away_spread_odds": 105,
+          "total": 61.5,
+          "over_odds": -120,
+          "under_odds": -110
+        },
+        "BALLY": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.0,
+          "home_spread_odds": -117,
+          "away_spread": 32.0,
+          "away_spread_odds": -118,
+          "total": 61.0,
+          "over_odds": -117,
+          "under_odds": -120
+        },
+        "PARX": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.0,
+          "home_spread_odds": -114,
+          "away_spread": 32.0,
+          "away_spread_odds": -114,
+          "total": 61.0,
+          "over_odds": -113,
+          "under_odds": -115
+        },
+        "Bovada": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": -105,
+          "away_spread": 32.5,
+          "away_spread_odds": -125,
+          "total": 61.5,
+          "over_odds": -115,
+          "under_odds": -115
+        },
+        "theScore Bet": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": -115,
+          "away_spread": 32.5,
+          "away_spread_odds": -115,
+          "total": 61.5,
+          "over_odds": -110,
+          "under_odds": -120
+        },
+        "MyBookie.ag": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": 100,
+          "away_spread": 32.5,
+          "away_spread_odds": -125,
+          "total": 60.5,
+          "over_odds": -111,
+          "under_odds": -111
+        }
+      }
+    },
+    {
+      "game_id": "0c7583234f964dbb7d9803a27d6b6dae",
+      "home_team": "Sacramento State Hornets",
+      "away_team": "North Dakota State Bison",
+      "commence_time": "2026-09-20T02:40:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 39.5,
+          "home_spread_odds": -134,
+          "away_spread": -39.5,
+          "away_spread_odds": 101,
+          "total": 56.5,
+          "over_odds": -118,
+          "under_odds": -112
+        },
+        "Courtside": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 60.5,
+          "over_odds": 145,
+          "under_odds": 135
+        },
+        "Fliff": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 37.5,
+          "home_spread_odds": -120,
+          "away_spread": -37.5,
+          "away_spread_odds": -115,
+          "total": 55.5,
+          "over_odds": -120,
+          "under_odds": -125
+        },
+        "MGM": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 38.5,
+          "home_spread_odds": 105,
+          "away_spread": -38.5,
+          "away_spread_odds": -135,
+          "total": 55.5,
+          "over_odds": -108,
+          "under_odds": -125
+        },
+        "MyBookie.ag": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 39.5,
+          "home_spread_odds": -111,
+          "away_spread": -39.5,
+          "away_spread_odds": -111,
+          "total": 58.5,
+          "over_odds": -105,
+          "under_odds": -125
+        },
+        "FD": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 38.5,
+          "home_spread_odds": 102,
+          "away_spread": -38.5,
+          "away_spread_odds": -136,
+          "total": 55.5,
+          "over_odds": 100,
+          "under_odds": -132
+        },
+        "PARX": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 37.5,
+          "home_spread_odds": -115,
+          "away_spread": -37.5,
+          "away_spread_odds": -115,
+          "total": null,
+          "over_odds": null,
+          "under_odds": null
+        },
+        "BALLY": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 37.5,
+          "home_spread_odds": -118,
+          "away_spread": -37.5,
+          "away_spread_odds": -120,
+          "total": null,
+          "over_odds": null,
+          "under_odds": null
+        },
+        "Bovada": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 39.5,
+          "home_spread_odds": -130,
+          "away_spread": -39.5,
+          "away_spread_odds": 100,
+          "total": 56.5,
+          "over_odds": -120,
+          "under_odds": -110
+        },
+        "HRB": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 39.5,
+          "home_spread_odds": -125,
+          "away_spread": -39.5,
+          "away_spread_odds": -105,
+          "total": 56.5,
+          "over_odds": -120,
+          "under_odds": -110
+        },
+        "theScore Bet": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 38.5,
+          "home_spread_odds": -110,
+          "away_spread": -38.5,
+          "away_spread_odds": -120,
+          "total": 55.5,
+          "over_odds": -115,
+          "under_odds": -115
+        },
+        "CZS": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": 35.5,
+          "home_spread_odds": 102,
+          "away_spread": -35.5,
+          "away_spread_odds": -130,
+          "total": 58.5,
+          "over_odds": -109,
+          "under_odds": -117
+        }
+      }
+    },
+    {
+      "game_id": "f6db4e789ff9341a9c94befc751c5f53",
+      "home_team": "San Jose State Spartans",
+      "away_team": "Fresno State Bulldogs",
+      "commence_time": "2026-09-20T03:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 134,
+          "away_ml": -172,
+          "home_spread": 3.5,
+          "home_spread_odds": -136,
+          "away_spread": -3.5,
+          "away_spread_odds": 102,
+          "total": 36.5,
+          "over_odds": -108,
+          "under_odds": -122
+        },
+        "Fliff": {
+          "home_ml": 135,
+          "away_ml": -190,
+          "home_spread": 3.5,
+          "home_spread_odds": -130,
+          "away_spread": -3.5,
+          "away_spread_odds": -105,
+          "total": 35.5,
+          "over_odds": -110,
+          "under_odds": -135
+        },
+        "HRB": {
+          "home_ml": 135,
+          "away_ml": -175,
+          "home_spread": 3.5,
+          "home_spread_odds": -125,
+          "away_spread": -3.5,
+          "away_spread_odds": 100,
+          "total": 35.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "DK": {
+          "home_ml": 150,
+          "away_ml": -202,
+          "home_spread": 3.5,
+          "home_spread_odds": -121,
+          "away_spread": -3.5,
+          "away_spread_odds": -110,
+          "total": 35.5,
+          "over_odds": -112,
+          "under_odds": -118
+        },
+        "CZS": {
+          "home_ml": 148,
+          "away_ml": -193,
+          "home_spread": 3.5,
+          "home_spread_odds": -112,
+          "away_spread": -3.5,
+          "away_spread_odds": -115,
+          "total": 37.5,
+          "over_odds": -109,
+          "under_odds": -120
+        },
+        "Courtside": {
+          "home_ml": 142,
+          "away_ml": -191,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 29.5,
+          "over_odds": -255,
+          "under_odds": -175
+        },
+        "MGM": {
+          "home_ml": 120,
+          "away_ml": -160,
+          "home_spread": 2.5,
+          "home_spread_odds": 105,
+          "away_spread": -2.5,
+          "away_spread_odds": -125,
+          "total": 33.5,
+          "over_odds": -108,
+          "under_odds": -110
+        },
+        "MyBookie.ag": {
+          "home_ml": 125,
+          "away_ml": -154,
+          "home_spread": 2.5,
+          "home_spread_odds": -105,
+          "away_spread": -2.5,
+          "away_spread_odds": -125,
+          "total": 35.5,
+          "over_odds": -111,
+          "under_odds": -118
+        },
+        "BALLY": {
+          "home_ml": 145,
+          "away_ml": -210,
+          "home_spread": 3.5,
+          "home_spread_odds": -122,
+          "away_spread": -3.5,
+          "away_spread_odds": -117,
+          "total": 33.5,
+          "over_odds": -112,
+          "under_odds": -129
+        },
+        "PARX": {
+          "home_ml": 150,
+          "away_ml": -200,
+          "home_spread": 3.5,
+          "home_spread_odds": -118,
+          "away_spread": -3.5,
+          "away_spread_odds": -113,
+          "total": 33.5,
+          "over_odds": -108,
+          "under_odds": -124
+        },
+        "Bovada": {
+          "home_ml": 150,
+          "away_ml": -200,
+          "home_spread": 3.5,
+          "home_spread_odds": -120,
+          "away_spread": -3.5,
+          "away_spread_odds": -110,
+          "total": 35.5,
+          "over_odds": -110,
+          "under_odds": -120
+        },
+        "theScore Bet": {
+          "home_ml": 130,
+          "away_ml": -165,
+          "home_spread": 2.5,
+          "home_spread_odds": 100,
+          "away_spread": -2.5,
+          "away_spread_odds": -130,
+          "total": 36.5,
+          "over_odds": -110,
+          "under_odds": -120
+        }
+      }
+    },
+    {
+      "game_id": "381e5c97af94a83e03eae0ac6f11ed38",
+      "home_team": "Oregon State Beavers",
+      "away_team": "Montana Grizzlies",
+      "commence_time": "2026-09-20T03:07:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -31.5,
+          "home_spread_odds": -102,
+          "away_spread": 31.5,
+          "away_spread_odds": -130,
+          "total": 59.5,
+          "over_odds": -118,
+          "under_odds": -112
+        },
+        "HRB": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -31.5,
+          "home_spread_odds": -120,
+          "away_spread": 31.5,
+          "away_spread_odds": -110,
+          "total": 60.5,
+          "over_odds": -105,
+          "under_odds": -120
+        },
+        "theScore Bet": {
+          "home_ml": -50000,
+          "away_ml": 3000,
+          "home_spread": -31.5,
+          "home_spread_odds": -120,
+          "away_spread": 31.5,
+          "away_spread_odds": -110,
+          "total": 61.5,
+          "over_odds": -110,
+          "under_odds": -120
+        },
+        "BALLY": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -31.0,
+          "home_spread_odds": -120,
+          "away_spread": 31.0,
+          "away_spread_odds": -117,
+          "total": 59.5,
+          "over_odds": -120,
+          "under_odds": -115
+        },
+        "PARX": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -31.0,
+          "home_spread_odds": -115,
+          "away_spread": 31.0,
+          "away_spread_odds": -113,
+          "total": 59.5,
+          "over_odds": -117,
+          "under_odds": -112
+        },
+        "DK": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -30.5,
+          "home_spread_odds": -119,
+          "away_spread": 30.5,
+          "away_spread_odds": -112,
+          "total": 58.5,
+          "over_odds": -121,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 61.5,
+          "over_odds": -109,
+          "under_odds": -550
+        },
+        "MGM": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -32.5,
+          "home_spread_odds": -102,
+          "away_spread": 32.5,
+          "away_spread_odds": -130,
+          "total": 61.5,
+          "over_odds": -110,
+          "under_odds": -120
+        },
+        "Bovada": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -31.5,
+          "home_spread_odds": -105,
+          "away_spread": 31.5,
+          "away_spread_odds": -125,
+          "total": 59.5,
+          "over_odds": -115,
+          "under_odds": -115
+        },
+        "Fliff": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -31.5,
+          "home_spread_odds": -120,
+          "away_spread": 31.5,
+          "away_spread_odds": -115,
+          "total": 59.5,
+          "over_odds": -125,
+          "under_odds": -115
+        },
+        "MyBookie.ag": {
+          "home_ml": null,
+          "away_ml": null,
+          "home_spread": -28.5,
+          "home_spread_odds": -105,
+          "away_spread": 28.5,
+          "away_spread_odds": -118,
+          "total": 58.5,
+          "over_odds": -111,
+          "under_odds": -111
+        }
+      }
+    },
+    {
+      "game_id": "7a6a2035bf5d7abd30d6cc8b76d59e3e",
+      "home_team": "UCLA Bruins",
+      "away_team": "Purdue Boilermakers",
+      "commence_time": "2026-09-20T03:10:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -1600,
+          "away_ml": 800,
+          "home_spread": -14.5,
+          "home_spread_odds": -122,
+          "away_spread": 14.5,
+          "away_spread_odds": -108,
+          "total": 72.5,
+          "over_odds": 100,
+          "under_odds": -132
+        },
+        "Fliff": {
+          "home_ml": -2270,
+          "away_ml": 790,
+          "home_spread": -15.5,
+          "home_spread_odds": -115,
+          "away_spread": 15.5,
+          "away_spread_odds": -120,
+          "total": 71.5,
+          "over_odds": -120,
+          "under_odds": -120
+        },
+        "HRB": {
+          "home_ml": -1200,
+          "away_ml": 600,
+          "home_spread": -14.5,
+          "home_spread_odds": -110,
+          "away_spread": 14.5,
+          "away_spread_odds": -110,
+          "total": 71.5,
+          "over_odds": -120,
+          "under_odds": -105
+        },
+        "theScore Bet": {
+          "home_ml": -2000,
+          "away_ml": 900,
+          "home_spread": -15.5,
+          "home_spread_odds": -110,
+          "away_spread": 15.5,
+          "away_spread_odds": -120,
+          "total": 71.5,
+          "over_odds": -110,
+          "under_odds": -120
+        },
+        "PARX": {
+          "home_ml": -2000,
+          "away_ml": 850,
+          "home_spread": -14.0,
+          "home_spread_odds": -118,
+          "away_spread": 14.0,
+          "away_spread_odds": -110,
+          "total": 70.5,
+          "over_odds": -115,
+          "under_odds": -113
+        },
+        "BALLY": {
+          "home_ml": -2500,
+          "away_ml": 750,
+          "home_spread": -14.0,
+          "home_spread_odds": -122,
+          "away_spread": 14.0,
+          "away_spread_odds": -114,
+          "total": 70.5,
+          "over_odds": -120,
+          "under_odds": -117
+        },
+        "DK": {
+          "home_ml": -1420,
+          "away_ml": 810,
+          "home_spread": -15.5,
+          "home_spread_odds": -111,
+          "away_spread": 15.5,
+          "away_spread_odds": -120,
+          "total": 71.5,
+          "over_odds": -118,
+          "under_odds": -113
+        },
+        "Courtside": {
+          "home_ml": -1780,
+          "away_ml": 970,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 66.5,
+          "over_odds": -230,
+          "under_odds": -255
+        },
+        "CZS": {
+          "home_ml": -1000,
+          "away_ml": 550,
+          "home_spread": -13.5,
+          "home_spread_odds": -122,
+          "away_spread": 13.5,
+          "away_spread_odds": -106,
+          "total": 72.5,
+          "over_odds": -127,
+          "under_odds": -102
+        },
+        "MGM": {
+          "home_ml": -1600,
+          "away_ml": 850,
+          "home_spread": -16.5,
+          "home_spread_odds": -110,
+          "away_spread": 16.5,
+          "away_spread_odds": -108,
+          "total": 71.5,
+          "over_odds": -120,
+          "under_odds": -110
+        },
+        "MyBookie.ag": {
+          "home_ml": -714,
+          "away_ml": 475,
+          "home_spread": -13.5,
+          "home_spread_odds": -143,
+          "away_spread": 13.5,
+          "away_spread_odds": -111,
+          "total": 73.5,
+          "over_odds": -111,
+          "under_odds": -118
+        },
+        "Bovada": {
+          "home_ml": -900,
+          "away_ml": 500,
+          "home_spread": -14.5,
+          "home_spread_odds": -110,
+          "away_spread": 14.5,
+          "away_spread_odds": -120,
+          "total": 73.0,
+          "over_odds": -110,
+          "under_odds": -120
+        }
+      }
+    },
+    {
+      "game_id": "6de44361bd6b6afc20b9bbefcc219f2a",
+      "home_team": "Ohio State Buckeyes",
+      "away_team": "Illinois Fighting Illini",
+      "commence_time": "2026-09-26T16:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -4500,
+          "away_ml": 1600,
+          "home_spread": -26.5,
+          "home_spread_odds": -110,
+          "away_spread": 26.5,
+          "away_spread_odds": -110,
+          "total": 52.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "DK": {
+          "home_ml": -6500,
+          "away_ml": 2000,
+          "home_spread": -27.5,
+          "home_spread_odds": -110,
+          "away_spread": 27.5,
+          "away_spread_odds": -110,
+          "total": 53.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": -4862,
+          "away_ml": 2246,
+          "home_spread": -27.5,
+          "home_spread_odds": -108,
+          "away_spread": 27.5,
+          "away_spread_odds": -108,
+          "total": 53.5,
+          "over_odds": -108,
+          "under_odds": -108
+        },
+        "BALLY": {
+          "home_ml": -5000,
+          "away_ml": 1500,
+          "home_spread": -26.5,
+          "home_spread_odds": -110,
+          "away_spread": 26.5,
+          "away_spread_odds": -110,
+          "total": 53.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "PARX": {
+          "home_ml": -5000,
+          "away_ml": 1500,
+          "home_spread": -26.5,
+          "home_spread_odds": -110,
+          "away_spread": 26.5,
+          "away_spread_odds": -110,
+          "total": 53.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "BR": {
+          "home_ml": -5000,
+          "away_ml": 1400,
+          "home_spread": -26.5,
+          "home_spread_odds": -112,
+          "away_spread": 26.5,
+          "away_spread_odds": -112,
+          "total": 53.5,
+          "over_odds": -113,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "f6b6590d0b66bbb4fcbb391289794963",
+      "home_team": "Louisville Cardinals",
+      "away_team": "Wake Forest Demon Deacons",
+      "commence_time": "2026-09-26T16:00:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -650,
+          "away_ml": 470,
+          "home_spread": -13.5,
+          "home_spread_odds": -110,
+          "away_spread": 13.5,
+          "away_spread_odds": -110,
+          "total": 58.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": -623,
+          "away_ml": 487,
+          "home_spread": -13.5,
+          "home_spread_odds": -108,
+          "away_spread": 13.5,
+          "away_spread_odds": -108,
+          "total": 58.5,
+          "over_odds": -108,
+          "under_odds": -108
+        },
+        "MyBookie.ag": {
+          "home_ml": -599,
+          "away_ml": 400,
+          "home_spread": -13.5,
+          "home_spread_odds": -110,
+          "away_spread": 13.5,
+          "away_spread_odds": -110,
+          "total": null,
+          "over_odds": null,
+          "under_odds": null
+        },
+        "BALLY": {
+          "home_ml": -625,
+          "away_ml": 450,
+          "home_spread": -13.5,
+          "home_spread_odds": -110,
+          "away_spread": 13.5,
+          "away_spread_odds": -110,
+          "total": 58.0,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "BR": {
+          "home_ml": -625,
+          "away_ml": 425,
+          "home_spread": -13.5,
+          "home_spread_odds": -112,
+          "away_spread": 13.5,
+          "away_spread_odds": -112,
+          "total": 58.0,
+          "over_odds": -113,
+          "under_odds": -110
+        },
+        "PARX": {
+          "home_ml": -625,
+          "away_ml": 450,
+          "home_spread": -13.5,
+          "home_spread_odds": -110,
+          "away_spread": 13.5,
+          "away_spread_odds": -110,
+          "total": 58.0,
+          "over_odds": -112,
+          "under_odds": -109
+        }
+      }
+    },
+    {
+      "game_id": "69b1a0ff5fb2c67c6627b5c8cf8368cb",
+      "home_team": "Tennessee Volunteers",
+      "away_team": "Texas Longhorns",
+      "commence_time": "2026-09-26T16:00:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": 170,
+          "away_ml": -205,
+          "home_spread": 5.5,
+          "home_spread_odds": -110,
+          "away_spread": -5.5,
+          "away_spread_odds": -110,
+          "total": 57.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "BALLY": {
+          "home_ml": 185,
+          "away_ml": -230,
+          "home_spread": 6.0,
+          "home_spread_odds": -108,
+          "away_spread": -6.0,
+          "away_spread_odds": -113,
+          "total": 56.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "BR": {
+          "home_ml": 180,
+          "away_ml": -235,
+          "home_spread": 6.0,
+          "home_spread_odds": -109,
+          "away_spread": -6.0,
+          "away_spread_odds": -114,
+          "total": 56.5,
+          "over_odds": -112,
+          "under_odds": -112
+        },
+        "PARX": {
+          "home_ml": 185,
+          "away_ml": -230,
+          "home_spread": 6.0,
+          "home_spread_odds": -108,
+          "away_spread": -6.0,
+          "away_spread_odds": -113,
+          "total": 56.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": 174,
+          "away_ml": -200,
+          "home_spread": 5.5,
+          "home_spread_odds": -108,
+          "away_spread": -5.5,
+          "away_spread_odds": -108,
+          "total": 57.5,
+          "over_odds": -108,
+          "under_odds": -108
+        }
+      }
+    },
+    {
+      "game_id": "886538e98f0884df3d655d9d2d2ca567",
+      "home_team": "Florida Gators",
+      "away_team": "Ole Miss Rebels",
+      "commence_time": "2026-09-26T19:30:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -105,
+          "away_ml": -115,
+          "home_spread": 1.5,
+          "home_spread_odds": -115,
+          "away_spread": -1.5,
+          "away_spread_odds": -105,
+          "total": 58.5,
+          "over_odds": -102,
+          "under_odds": -118
+        },
+        "MyBookie.ag": {
+          "home_ml": -110,
+          "away_ml": -116,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 58.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": -103,
+          "away_ml": -113,
+          "home_spread": 1.5,
+          "home_spread_odds": -113,
+          "away_spread": -1.5,
+          "away_spread_odds": -103,
+          "total": 58.5,
+          "over_odds": 100,
+          "under_odds": -116
+        }
+      }
+    },
+    {
+      "game_id": "3848eaee7484034f3604aed922649c4e",
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Oklahoma Sooners",
+      "commence_time": "2026-09-26T19:30:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -550,
+          "away_ml": 410,
+          "home_spread": -14.0,
+          "home_spread_odds": -110,
+          "away_spread": 14.0,
+          "away_spread_odds": -110,
+          "total": 47.5,
+          "over_odds": -120,
+          "under_odds": 100
+        },
+        "PARX": {
+          "home_ml": -625,
+          "away_ml": 430,
+          "home_spread": -14.0,
+          "home_spread_odds": -109,
+          "away_spread": 14.0,
+          "away_spread_odds": -112,
+          "total": 47.0,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "BALLY": {
+          "home_ml": -625,
+          "away_ml": 430,
+          "home_spread": -14.0,
+          "home_spread_odds": -109,
+          "away_spread": 14.0,
+          "away_spread_odds": -112,
+          "total": 47.0,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "BR": {
+          "home_ml": -625,
+          "away_ml": 430,
+          "home_spread": -14.0,
+          "home_spread_odds": -110,
+          "away_spread": 14.0,
+          "away_spread_odds": -113,
+          "total": 47.0,
+          "over_odds": -113,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": -530,
+          "away_ml": 423,
+          "home_spread": -14.0,
+          "home_spread_odds": -108,
+          "away_spread": 14.0,
+          "away_spread_odds": -108,
+          "total": 47.5,
+          "over_odds": -118,
+          "under_odds": 102
+        }
+      }
+    },
+    {
+      "game_id": "39a3d3075172036a2b3f7d47913779b8",
+      "home_team": "Michigan Wolverines",
+      "away_team": "Iowa Hawkeyes",
+      "commence_time": "2026-09-26T19:30:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -192,
+          "away_ml": 160,
+          "home_spread": -4.5,
+          "home_spread_odds": -110,
+          "away_spread": 4.5,
+          "away_spread_odds": -110,
+          "total": 37.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MyBookie.ag": {
+          "home_ml": -228,
+          "away_ml": 174,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": null,
+          "over_odds": null,
+          "under_odds": null
+        },
+        "Courtside": {
+          "home_ml": -188,
+          "away_ml": 163,
+          "home_spread": -4.5,
+          "home_spread_odds": -108,
+          "away_spread": 4.5,
+          "away_spread_odds": -108,
+          "total": 37.5,
+          "over_odds": -108,
+          "under_odds": -108
+        },
+        "BR": {
+          "home_ml": -210,
+          "away_ml": 163,
+          "home_spread": -4.5,
+          "home_spread_odds": -112,
+          "away_spread": 4.5,
+          "away_spread_odds": -112,
+          "total": 37.5,
+          "over_odds": -113,
+          "under_odds": -110
+        },
+        "BALLY": {
+          "home_ml": -205,
+          "away_ml": 165,
+          "home_spread": -4.5,
+          "home_spread_odds": -110,
+          "away_spread": 4.5,
+          "away_spread_odds": -110,
+          "total": 37.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "PARX": {
+          "home_ml": -205,
+          "away_ml": 165,
+          "home_spread": -4.5,
+          "home_spread_odds": -110,
+          "away_spread": 4.5,
+          "away_spread_odds": -110,
+          "total": 37.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "HRB": {
+          "home_ml": -225,
+          "away_ml": 175,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 37.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "edf8d3e3699aa5cb34c50ac7de992d37",
+      "home_team": "Auburn Tigers",
+      "away_team": "Vanderbilt Commodores",
+      "commence_time": "2026-09-26T20:15:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -360,
+          "away_ml": 285,
+          "home_spread": -9.5,
+          "home_spread_odds": -110,
+          "away_spread": 9.5,
+          "away_spread_odds": -110,
+          "total": 52.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "023386f1b92db2259c7d52b2f244182f",
+      "home_team": "Michigan State Spartans",
+      "away_team": "Nebraska Cornhuskers",
+      "commence_time": "2026-09-26T21:00:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": 160,
+          "away_ml": -192,
+          "home_spread": 4.5,
+          "home_spread_odds": -110,
+          "away_spread": -4.5,
+          "away_spread_odds": -110,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "9c5cf55e5371dd6178da97dcaef2bff5",
+      "home_team": "Penn State Nittany Lions",
+      "away_team": "Wisconsin Badgers",
+      "commence_time": "2026-09-26T21:00:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -500,
+          "away_ml": 380,
+          "home_spread": -10.5,
+          "home_spread_odds": -115,
+          "away_spread": 10.5,
+          "away_spread_odds": -105,
+          "total": 43.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "FD": {
+          "home_ml": -465,
+          "away_ml": 350,
+          "home_spread": -10.5,
+          "home_spread_odds": -112,
+          "away_spread": 10.5,
+          "away_spread_odds": -108,
+          "total": 44.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": -483,
+          "away_ml": 392,
+          "home_spread": -10.5,
+          "home_spread_odds": -113,
+          "away_spread": 10.5,
+          "away_spread_odds": -103,
+          "total": 43.5,
+          "over_odds": -103,
+          "under_odds": -113
+        },
+        "PARX": {
+          "home_ml": -530,
+          "away_ml": 375,
+          "home_spread": -11.5,
+          "home_spread_odds": -109,
+          "away_spread": 11.5,
+          "away_spread_odds": -112,
+          "total": 43.0,
+          "over_odds": -108,
+          "under_odds": -113
+        },
+        "BALLY": {
+          "home_ml": -530,
+          "away_ml": 375,
+          "home_spread": -11.5,
+          "home_spread_odds": -109,
+          "away_spread": 11.5,
+          "away_spread_odds": -112,
+          "total": 43.0,
+          "over_odds": -108,
+          "under_odds": -113
+        },
+        "BR": {
+          "home_ml": -530,
+          "away_ml": 375,
+          "home_spread": -11.5,
+          "home_spread_odds": -110,
+          "away_spread": 11.5,
+          "away_spread_odds": -113,
+          "total": 43.0,
+          "over_odds": -109,
+          "under_odds": -114
+        },
+        "MyBookie.ag": {
+          "home_ml": -575,
+          "away_ml": 380,
+          "home_spread": -11.5,
+          "home_spread_odds": -110,
+          "away_spread": 11.5,
+          "away_spread_odds": -110,
+          "total": 43.0,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "c843a3f97a410eedafcfbad440774ad2",
+      "home_team": "Alabama Crimson Tide",
+      "away_team": "South Carolina Gamecocks",
+      "commence_time": "2026-09-26T23:00:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -500,
+          "away_ml": 380,
+          "home_spread": -11.5,
+          "home_spread_odds": -110,
+          "away_spread": 11.5,
+          "away_spread_odds": -110,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MyBookie.ag": {
+          "home_ml": -549,
+          "away_ml": 360,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": -483,
+          "away_ml": 392,
+          "home_spread": -11.5,
+          "home_spread_odds": -108,
+          "away_spread": 11.5,
+          "away_spread_odds": -108,
+          "total": 51.5,
+          "over_odds": -108,
+          "under_odds": -108
+        },
+        "PARX": {
+          "home_ml": -560,
+          "away_ml": 400,
+          "home_spread": -12.5,
+          "home_spread_odds": -109,
+          "away_spread": 12.5,
+          "away_spread_odds": -112,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "BALLY": {
+          "home_ml": -560,
+          "away_ml": 400,
+          "home_spread": -12.5,
+          "home_spread_odds": -109,
+          "away_spread": 12.5,
+          "away_spread_odds": -112,
+          "total": 51.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "BR": {
+          "home_ml": -590,
+          "away_ml": 400,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -113,
+          "total": 51.5,
+          "over_odds": -112,
+          "under_odds": -112
+        }
+      }
+    },
+    {
+      "game_id": "6c95114d806556a04a0d719e62c042d7",
+      "home_team": "West Virginia Mountaineers",
+      "away_team": "Oklahoma State Cowboys",
+      "commence_time": "2026-09-26T23:00:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -102,
+          "away_ml": -118,
+          "home_spread": 1.5,
+          "home_spread_odds": -110,
+          "away_spread": -1.5,
+          "away_spread_odds": -110,
+          "total": 58.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "0c71c3230f930f30ac34160b38dbbaf0",
+      "home_team": "LSU Tigers",
+      "away_team": "Texas A&M Aggies",
+      "commence_time": "2026-09-26T23:30:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -395,
+          "away_ml": 310,
+          "home_spread": -8.5,
+          "home_spread_odds": -105,
+          "away_spread": 8.5,
+          "away_spread_odds": -115,
+          "total": 53.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Courtside": {
+          "home_ml": -383,
+          "away_ml": 319,
+          "home_spread": -8.5,
+          "home_spread_odds": -103,
+          "away_spread": 8.5,
+          "away_spread_odds": -113,
+          "total": 53.5,
+          "over_odds": -108,
+          "under_odds": -108
+        }
+      }
+    },
+    {
+      "game_id": "83516ad7ba3e8ef9f90498cfcaf10eb5",
+      "home_team": "USC Trojans",
+      "away_team": "Oregon Ducks",
+      "commence_time": "2026-09-26T23:30:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -118,
+          "away_ml": -102,
+          "home_spread": -1.5,
+          "home_spread_odds": -110,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 63.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "BALLY": {
+          "home_ml": -125,
+          "away_ml": 104,
+          "home_spread": -1.5,
+          "home_spread_odds": -112,
+          "away_spread": 1.5,
+          "away_spread_odds": -109,
+          "total": 63.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "BR": {
+          "home_ml": -127,
+          "away_ml": 102,
+          "home_spread": -1.5,
+          "home_spread_odds": -113,
+          "away_spread": 1.5,
+          "away_spread_odds": -110,
+          "total": 63.5,
+          "over_odds": -113,
+          "under_odds": -110
+        },
+        "PARX": {
+          "home_ml": -125,
+          "away_ml": 104,
+          "home_spread": -1.5,
+          "home_spread_odds": -112,
+          "away_spread": 1.5,
+          "away_spread_odds": -109,
+          "total": 63.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "Courtside": {
+          "home_ml": -116,
+          "away_ml": 100,
+          "home_spread": -1.5,
+          "home_spread_odds": -108,
+          "away_spread": 1.5,
+          "away_spread_odds": -108,
+          "total": 63.5,
+          "over_odds": -108,
+          "under_odds": -108
+        }
+      }
+    },
+    {
+      "game_id": "f154381c89953d3b0bd409a6bc4e28a6",
+      "home_team": "Mississippi State Bulldogs",
+      "away_team": "Missouri Tigers",
+      "commence_time": "2026-09-26T23:45:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -130,
+          "away_ml": 110,
+          "home_spread": -2.5,
+          "home_spread_odds": -110,
+          "away_spread": 2.5,
+          "away_spread_odds": -110,
+          "total": 57.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MyBookie.ag": {
+          "home_ml": -135,
+          "away_ml": 106,
+          "home_spread": null,
+          "home_spread_odds": null,
+          "away_spread": null,
+          "away_spread_odds": null,
+          "total": null,
+          "over_odds": null,
+          "under_odds": null
+        }
+      }
+    }
+  ],
+  "alternate_game_markets": {}
+}

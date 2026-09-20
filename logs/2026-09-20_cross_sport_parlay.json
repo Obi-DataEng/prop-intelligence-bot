@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-20",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": true,
+  "legs": [
+    {
+      "league": "NFL",
+      "game": "SEA game",
+      "selection": "George Holani Under 44.5 Rushing + Receiving Yds",
+      "market_type": "player_prop",
+      "player": "George Holani",
+      "team": "SEA",
+      "direction": "Under",
+      "line": 44.5,
+      "book": "PropFinder",
+      "odds": -137,
+      "support_score": 92.0,
+      "confidence_tier": "Elite",
+      "reasoning": "PropFinder rating 96.9; L10 (10/10) and L20 (15/15); prior/current season (13/13) / (1/1) with Week 2 weighting 15%/85%; L10 average 11.9 at odds -137.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Washington Mystics @ Indiana Fever",
+      "selection": "Kelsey Mitchell OVER 24.5 Points",
+      "market_type": "player_prop",
+      "player": "Kelsey Mitchell",
+      "team": "IND",
+      "direction": "OVER",
+      "line": 24.5,
+      "book": "FD",
+      "odds": -128,
+      "support_score": 88.0,
+      "confidence_tier": "Elite",
+      "reasoning": "Mitchell has averaged 32.3 PPG over last 3 games and 28.6 over L10, well above the 24.5 line. Season baseline of 25.2 combined with L10 elevated efficiency (56.8% FG, 54.6% 3P) and consistent 33+ minute roles creates strong conviction. Record-breaking performance yesterday signals sustained elite scoring status.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "NFL",
+      "game": "New Orleans Saints @ Baltimore Ravens",
+      "selection": "Over 46.5",
+      "market_type": "game_total",
+      "player": null,
+      "team": null,
+      "direction": "Over",
+      "line": 46.5,
+      "book": "FD",
+      "odds": -104,
+      "support_score": 81.0,
+      "confidence_tier": "High",
+      "reasoning": "Model projects 48.4 total (+1.9 edge vs 46.5 market). Ravens ranked #1 in home field advantage historically at M&T Bank with elite offensive capabilities. Derrick Henry receiving praise as 'modern-day Jim Brown' signals strong ground game effectiveness. Week 1 saw record scoring across NFL. Model shows consistent over projection above all market totals (45.0-46.5 range).",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 6.044,
+  "combined_american_odds": 504,
+  "implied_probability_pct": 16.5,
+  "candidate_count": 10,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records."
+}
