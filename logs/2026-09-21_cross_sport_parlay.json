@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-21",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": true,
+  "legs": [
+    {
+      "league": "NFL",
+      "game": "NYG game",
+      "selection": "Devin Singletary Over 4.5 Rush Att.",
+      "market_type": "player_prop",
+      "player": "Devin Singletary",
+      "team": "NYG",
+      "direction": "Over",
+      "line": 4.5,
+      "book": "PropFinder",
+      "odds": -105,
+      "support_score": 89.0,
+      "confidence_tier": "Elite",
+      "reasoning": "PropFinder rating 79.7; L10 (10/10) and L20 (12/18); prior/current season (11/17) / (1/1) with Week 2 weighting 15%/85%; L10 average 9.7 at odds -105.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Dallas Wings @ Phoenix Mercury",
+      "selection": "Kahleah Copper OVER 18.5 Points",
+      "market_type": "player_prop",
+      "player": "Kahleah Copper",
+      "team": "PHX",
+      "direction": "OVER",
+      "line": 18.5,
+      "book": "FD",
+      "odds": -128,
+      "support_score": 81.0,
+      "confidence_tier": "High",
+      "reasoning": "Copper is posting 30.7 PPG in L3 and averages 21.3 for the season—well above the 18.5 line. Her 82% hit rate above 18.5 is strong. Monitor GTD status pre-game, but if she plays, the over is well-supported by both recent surge and season baseline.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Atlanta Dream @ New York Liberty",
+      "selection": "Angel Reese OVER 11.5 Rebounds",
+      "market_type": "player_prop",
+      "player": "Angel Reese",
+      "team": "ATL",
+      "direction": "OVER",
+      "line": 11.5,
+      "book": "CZS",
+      "odds": -137,
+      "support_score": 79.0,
+      "confidence_tier": "Medium",
+      "reasoning": "Reese is an elite rebounder averaging 12.3 per game with a 73% hit rate above 11.5. The line sits safely below her season baseline, and L10 data (12.4 RPG) confirms sustained performance. Price is fair but not exceptional given the limited variance.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 6.016,
+  "combined_american_odds": 502,
+  "implied_probability_pct": 16.6,
+  "candidate_count": 8,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records."
+}

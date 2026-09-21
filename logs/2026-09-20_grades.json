@@ -1,0 +1,474 @@
+{
+  "pick_date": "2026-09-20",
+  "graded_date": "2026-09-21",
+  "record": {
+    "wins": 4,
+    "losses": 8,
+    "pushes": 0,
+    "pending": 8
+  },
+  "summary": {
+    "MLB - HR": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Hits": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - TB": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - K": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game ML": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game Spread": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game OU": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - NRFI": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "NFL - Player Receptions - 1Q": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "NFL - Player Receiving Yds - 1Q": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "NFL - Player Rushing + Receiving Yds": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "NFL - Player Interceptions": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "NFL - Player Longest Rush": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "NFL - Game OU": {
+      "wins": 0,
+      "losses": 3,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "NFL - Game Spread": {
+      "wins": 0,
+      "losses": 2,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "WNBA - Player Prop": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 3,
+      "profit": 0
+    }
+  },
+  "results": {
+    "MLB - Game ML": [
+      {
+        "sport": "MLB",
+        "category": "Game ML",
+        "player_name": "Milwaukee Brewers",
+        "game": "MIL @ BAL",
+        "over_under": "",
+        "line": "ML",
+        "odds": "-186",
+        "best_book": "FD",
+        "result": "win",
+        "actual_value": null
+      }
+    ],
+    "MLB - Game OU": [
+      {
+        "sport": "MLB",
+        "category": "Game OU",
+        "player_name": "TB @ BOS Total",
+        "game": "BOS @ TB",
+        "over_under": "under",
+        "line": "8.0 Under",
+        "odds": "-118",
+        "best_book": "FD",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "MLB - Game Spread": [
+      {
+        "sport": "MLB",
+        "category": "Game Spread",
+        "player_name": "Cleveland Guardians",
+        "game": "ATH @ CLE",
+        "over_under": "",
+        "line": -1.5,
+        "odds": "-120",
+        "best_book": "FD",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - Hits": [
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Alec Bohm",
+        "game": "PHI @ NYM",
+        "over_under": "over",
+        "line": 0.5,
+        "odds": "-227",
+        "best_book": "BetOnline.ag",
+        "result": "win",
+        "actual_value": 2.0
+      }
+    ],
+    "MLB - NRFI": [
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Eury Perez / Casey Mize",
+        "game": "Miami Marlins @ San Diego Padres",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "win",
+        "actual_value": null
+      },
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Noah Cameron / Bubba Chandler",
+        "game": "Kansas City Royals @ Pittsburgh Pirates",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - TB": [
+      {
+        "sport": "MLB",
+        "category": "TB",
+        "player_name": "Yordan Alvarez",
+        "game": "ATL @ HOU",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "-103",
+        "best_book": "DK",
+        "result": "win",
+        "actual_value": 2.0
+      }
+    ],
+    "NFL - Game OU": [
+      {
+        "sport": "NFL",
+        "category": "Game OU",
+        "player_name": "Over 41.5",
+        "game": "Seattle Seahawks @ Arizona Cardinals",
+        "over_under": "Over",
+        "line": 41.5,
+        "odds": "-102",
+        "best_book": "FD",
+        "result": "loss",
+        "actual_value": 38.0
+      },
+      {
+        "sport": "NFL",
+        "category": "Game OU",
+        "player_name": "Over 46.5",
+        "game": "New Orleans Saints @ Baltimore Ravens",
+        "over_under": "Over",
+        "line": 46.5,
+        "odds": "-104",
+        "best_book": "FD",
+        "result": "loss",
+        "actual_value": 41.0
+      },
+      {
+        "sport": "NFL",
+        "category": "Game OU",
+        "player_name": "Over 45.5",
+        "game": "Cincinnati Bengals @ Houston Texans",
+        "over_under": "Over",
+        "line": 45.5,
+        "odds": "-105",
+        "best_book": "LowVig.ag",
+        "result": "loss",
+        "actual_value": 26.0
+      }
+    ],
+    "NFL - Game Spread": [
+      {
+        "sport": "NFL",
+        "category": "Game Spread",
+        "player_name": "Chicago Bears",
+        "game": "Minnesota Vikings @ Chicago Bears",
+        "over_under": "",
+        "line": -4.5,
+        "odds": "-103",
+        "best_book": "LowVig.ag",
+        "result": "loss",
+        "actual_value": -6.0
+      },
+      {
+        "sport": "NFL",
+        "category": "Game Spread",
+        "player_name": "Washington Commanders",
+        "game": "Washington Commanders @ Dallas Cowboys",
+        "over_under": "",
+        "line": 3.5,
+        "odds": "100",
+        "best_book": "DK",
+        "result": "loss",
+        "actual_value": -17.0
+      }
+    ],
+    "NFL - Player Interceptions": [
+      {
+        "sport": "NFL",
+        "category": "Player Interceptions",
+        "player_name": "Jalen Hurts",
+        "game": "PHI game",
+        "over_under": "under",
+        "line": 0.5,
+        "odds": "-122",
+        "best_book": "PropFinder",
+        "result": "loss",
+        "actual_value": 2.0
+      }
+    ],
+    "NFL - Player Longest Rush": [
+      {
+        "sport": "NFL",
+        "category": "Player Longest Rush",
+        "player_name": "George Holani",
+        "game": "SEA game",
+        "over_under": "under",
+        "line": 10.5,
+        "odds": "-137",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "NFL - Player Receiving Yds - 1Q": [
+      {
+        "sport": "NFL",
+        "category": "Player Receiving Yds - 1Q",
+        "player_name": "George Holani",
+        "game": "SEA game",
+        "over_under": "under",
+        "line": 0.5,
+        "odds": "-152",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "NFL - Player Receptions - 1Q": [
+      {
+        "sport": "NFL",
+        "category": "Player Receptions - 1Q",
+        "player_name": "George Holani",
+        "game": "SEA game",
+        "over_under": "under",
+        "line": 0.5,
+        "odds": "-145",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "NFL - Player Rushing + Receiving Yds": [
+      {
+        "sport": "NFL",
+        "category": "Player Rushing + Receiving Yds",
+        "player_name": "George Holani",
+        "game": "SEA game",
+        "over_under": "under",
+        "line": 44.5,
+        "odds": "-137",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "WNBA - Player Prop": [
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Kelsey Mitchell",
+        "game": "Washington Mystics @ Indiana Fever",
+        "over_under": "over",
+        "line": 24.5,
+        "odds": "-128",
+        "best_book": "FD",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Caitlin Clark",
+        "game": "Washington Mystics @ Indiana Fever",
+        "over_under": "over",
+        "line": 9.5,
+        "odds": "108",
+        "best_book": "FD",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Olivia Miles",
+        "game": "Minnesota Lynx @ Connecticut Sun",
+        "over_under": "over",
+        "line": 6.5,
+        "odds": "113",
+        "best_book": "BetOnline.ag",
+        "result": "pending",
+        "actual_value": null
+      }
+    ]
+  },
+  "cumulative": {
+    "MLB - Game ML": {
+      "sport": "MLB",
+      "category": "Game ML",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - Game Spread": {
+      "sport": "MLB",
+      "category": "Game Spread",
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "MLB - Hits": {
+      "sport": "MLB",
+      "category": "Hits",
+      "wins": 2,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - K": {
+      "sport": "MLB",
+      "category": "K",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - NRFI": {
+      "sport": "MLB",
+      "category": "NRFI",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - TB": {
+      "sport": "MLB",
+      "category": "TB",
+      "wins": 1,
+      "losses": 2,
+      "pushes": 0,
+      "win_rate": 33.3
+    },
+    "NFL - Game OU": {
+      "sport": "NFL",
+      "category": "Game OU",
+      "wins": 0,
+      "losses": 3,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "NFL - Game Spread": {
+      "sport": "NFL",
+      "category": "Game Spread",
+      "wins": 0,
+      "losses": 2,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "NFL - Player Interceptions": {
+      "sport": "NFL",
+      "category": "Player Interceptions",
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "OVERALL": {
+      "wins": 6,
+      "losses": 10,
+      "pushes": 0,
+      "win_rate": 37.5
+    }
+  }
+}
