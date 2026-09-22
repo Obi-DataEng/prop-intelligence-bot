@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-22",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": true,
+  "legs": [
+    {
+      "league": "WNBA",
+      "game": "Minnesota Lynx @ Indiana Fever",
+      "selection": "Kelsey Mitchell OVER 25.5 Points",
+      "market_type": "player_prop",
+      "player": "Kelsey Mitchell",
+      "team": "IND",
+      "direction": "OVER",
+      "line": 25.5,
+      "book": "DK",
+      "odds": -119,
+      "support_score": 84.0,
+      "confidence_tier": "High",
+      "reasoning": "Mitchell's season 25.1 PPG average sits just below the 25.5 line, and her usage rate (25.7%) and minutes (32.9) are stable. She projects as a core offensive option for Indiana and should see consistent shot volume against Minnesota. The modest juice (-122) reflects fair market pricing for a player operating right at her baseline.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Los Angeles Sparks @ Las Vegas Aces",
+      "selection": "A'ja Wilson OVER 26.5 Points",
+      "market_type": "player_prop",
+      "player": "A'ja Wilson",
+      "team": "LV",
+      "direction": "OVER",
+      "line": 26.5,
+      "book": "HRB",
+      "odds": -110,
+      "support_score": 80.0,
+      "confidence_tier": "High",
+      "reasoning": "Wilson's 26.2 PPG season average with 30.3% usage and 31.9 minutes forms a strong foundation for clearing 26.5. As Las Vegas's primary offensive engine, she should generate consistent scoring volume. The -114 pricing reflects fair value for a player operating near her baseline.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Connecticut Sun @ Washington Mystics",
+      "selection": "Sonia Citron OVER 24.5 PRA",
+      "market_type": "player_prop",
+      "player": "Sonia Citron",
+      "team": "WSH",
+      "direction": "OVER",
+      "line": 24.5,
+      "book": "FD",
+      "odds": -108,
+      "support_score": 76.0,
+      "confidence_tier": "Medium",
+      "reasoning": "Citron's 24.0 season PRA combines efficient scoring (16.8), solid rebounding (3.7), and strong playmaking (4.4 AST/G). With 33.2 minutes, she has multiple paths to clearing 24.5 PRA. The -121 odds reflect good value for a multi-category producer with demonstrated consistency.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 6.766,
+  "combined_american_odds": 577,
+  "implied_probability_pct": 14.8,
+  "candidate_count": 4,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records."
+}
