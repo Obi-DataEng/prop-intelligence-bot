@@ -3,9 +3,7 @@
   "league": "WNBA",
   "sources": {
     "wnba_research": {
-      "status": "success",
-      "html_rows": 0,
-      "grid_rows": 0
+      "status": "failed_or_timed_out"
     },
     "wnba_player_stats": {
       "status": "success",
@@ -60,7 +58,7 @@
     },
     "wnba_odds_discrepancies": {
       "status": "success",
-      "html_rows": 26,
+      "html_rows": 20,
       "grid_rows": 0
     }
   }
