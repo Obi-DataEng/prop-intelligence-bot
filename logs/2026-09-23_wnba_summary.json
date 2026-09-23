@@ -3,7 +3,9 @@
   "league": "WNBA",
   "sources": {
     "wnba_research": {
-      "status": "failed_or_timed_out"
+      "status": "success",
+      "html_rows": 0,
+      "grid_rows": 0
     },
     "wnba_player_stats": {
       "status": "success",
@@ -18,7 +20,7 @@
     "wnba_hit_rate": {
       "status": "success",
       "html_rows": 0,
-      "grid_rows": 17
+      "grid_rows": 19
     },
     "wnba_injury_reports": {
       "status": "success",
@@ -58,7 +60,7 @@
     },
     "wnba_odds_discrepancies": {
       "status": "success",
-      "html_rows": 33,
+      "html_rows": 26,
       "grid_rows": 0
     }
   }
