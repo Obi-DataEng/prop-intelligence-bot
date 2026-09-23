@@ -1,0 +1,279 @@
+{
+  "pick_date": "2026-09-22",
+  "graded_date": "2026-09-23",
+  "record": {
+    "wins": 3,
+    "losses": 2,
+    "pushes": 2,
+    "pending": 4
+  },
+  "summary": {
+    "MLB - HR": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Hits": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 1,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - TB": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - K": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 1,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game ML": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game Spread": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game OU": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - NRFI": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "WNBA - Player Prop": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 4,
+      "profit": 0
+    }
+  },
+  "results": {
+    "MLB - Game ML": [
+      {
+        "sport": "MLB",
+        "category": "Game ML",
+        "player_name": "Atlanta Braves",
+        "game": "CIN @ ATL",
+        "over_under": "",
+        "line": null,
+        "odds": "-174",
+        "best_book": "FD",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - Game OU": [
+      {
+        "sport": "MLB",
+        "category": "Game OU",
+        "player_name": "NYM @ TEX",
+        "game": "NYM @ TEX",
+        "over_under": "over",
+        "line": 8.0,
+        "odds": "104",
+        "best_book": "FAN",
+        "result": "win",
+        "actual_value": null
+      }
+    ],
+    "MLB - Hits": [
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Vladimir Guerrero Jr.",
+        "game": "TOR @ BAL",
+        "over_under": "over",
+        "line": 0.5,
+        "odds": "-240",
+        "best_book": "FAN",
+        "result": "push",
+        "actual_value": 0.0
+      }
+    ],
+    "MLB - K": [
+      {
+        "sport": "MLB",
+        "category": "K",
+        "player_name": "Chris Bassitt",
+        "game": "TOR @ BAL",
+        "over_under": "under",
+        "line": 3.5,
+        "odds": "-125",
+        "best_book": "FD",
+        "result": "push",
+        "actual_value": 0.0
+      }
+    ],
+    "MLB - NRFI": [
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Jared Jones / Andre Pallante",
+        "game": "Pittsburgh Pirates @ St. Louis Cardinals",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "win",
+        "actual_value": null
+      },
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Cristian Javier / Logan Gilbert",
+        "game": "Houston Astros @ Seattle Mariners",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - TB": [
+      {
+        "sport": "MLB",
+        "category": "TB",
+        "player_name": "Mookie Betts",
+        "game": "SD @ LAD",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "110",
+        "best_book": "CZS",
+        "result": "win",
+        "actual_value": 2.0
+      }
+    ],
+    "WNBA - Player Prop": [
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Kelsey Mitchell",
+        "game": "Minnesota Lynx @ Indiana Fever",
+        "over_under": "over",
+        "line": 25.5,
+        "odds": "-119",
+        "best_book": "DK",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Caitlin Clark",
+        "game": "Minnesota Lynx @ Indiana Fever",
+        "over_under": "over",
+        "line": 9.5,
+        "odds": "107",
+        "best_book": "DK",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "A'ja Wilson",
+        "game": "Los Angeles Sparks @ Las Vegas Aces",
+        "over_under": "over",
+        "line": 26.5,
+        "odds": "-110",
+        "best_book": "HRB",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Sonia Citron",
+        "game": "Connecticut Sun @ Washington Mystics",
+        "over_under": "over",
+        "line": 24.5,
+        "odds": "-108",
+        "best_book": "FD",
+        "result": "pending",
+        "actual_value": null
+      }
+    ]
+  },
+  "cumulative": {
+    "MLB - Game ML": {
+      "sport": "MLB",
+      "category": "Game ML",
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "MLB - Game OU": {
+      "sport": "MLB",
+      "category": "Game OU",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - Hits": {
+      "sport": "MLB",
+      "category": "Hits",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 1,
+      "win_rate": 100.0
+    },
+    "MLB - K": {
+      "sport": "MLB",
+      "category": "K",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 1,
+      "win_rate": 100.0
+    },
+    "MLB - NRFI": {
+      "sport": "MLB",
+      "category": "NRFI",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - TB": {
+      "sport": "MLB",
+      "category": "TB",
+      "wins": 1,
+      "losses": 2,
+      "pushes": 0,
+      "win_rate": 33.3
+    },
+    "OVERALL": {
+      "wins": 5,
+      "losses": 4,
+      "pushes": 2,
+      "win_rate": 55.6
+    }
+  }
+}

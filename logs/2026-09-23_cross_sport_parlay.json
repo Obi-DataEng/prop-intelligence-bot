@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-23",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": true,
+  "legs": [
+    {
+      "league": "WNBA",
+      "game": "Atlanta Dream @ New York Liberty",
+      "selection": "Paige Bueckers OVER 20.5 Points",
+      "market_type": "player_prop",
+      "player": "Paige Bueckers",
+      "team": "NY",
+      "direction": "OVER",
+      "line": 20.5,
+      "book": "DK",
+      "odds": -124,
+      "support_score": 84.0,
+      "confidence_tier": "High",
+      "reasoning": "Paige Bueckers has accelerated dramatically in the last 3 games (25.0 PPG) on improved efficiency and volume, with L5 at 22.4 PPG. Perfect recent hit rate combined with sustained 30+ minute usage and elevated opportunities justify backing the OVER at a season-average line.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Atlanta Dream @ New York Liberty",
+      "selection": "Angel Reese OVER 15.5 Points",
+      "market_type": "player_prop",
+      "player": "Angel Reese",
+      "team": "ATL",
+      "direction": "OVER",
+      "line": 15.5,
+      "book": "HRB",
+      "odds": -105,
+      "support_score": 80.0,
+      "confidence_tier": "High",
+      "reasoning": "Angel Reese has averaged 20.0+ PPG over her last 10 games with strong efficiency and opportunity, marking sustained elevation above season average. The 15.5 line sits well below both her recent average and season baseline, making this a clean overlay.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "WNBA",
+      "game": "Atlanta Dream @ New York Liberty",
+      "selection": "Jordin Canada OVER 6.5 Assists",
+      "market_type": "player_prop",
+      "player": "Jordin Canada",
+      "team": "ATL",
+      "direction": "OVER",
+      "line": 6.5,
+      "book": "HRB",
+      "odds": -140,
+      "support_score": 77.0,
+      "confidence_tier": "Medium",
+      "reasoning": "Jordin Canada's season baseline (7.3 AST) and L10 average (6.7 AST) both exceed the 6.5 line, with 71% historical hit rate above this threshold. Recent L3/L5 decline warrants caution, but the disconnect between line and season/L10 data suggests short-term variance rather than role change.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 6.046,
+  "combined_american_odds": 505,
+  "implied_probability_pct": 16.5,
+  "candidate_count": 5,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records."
+}
