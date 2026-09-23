@@ -859,7 +859,7 @@ def run_wnba_analyzer(scrape_date=None, odds_data=None):
 
     message = client.messages.create(
         model="claude-haiku-4-5",
-        max_tokens=5000,
+        max_tokens=7000,
         messages=[
             {
                 "role": "user",
@@ -882,33 +882,46 @@ def run_wnba_analyzer(scrape_date=None, odds_data=None):
     )
 
     try:
-        picks_data = parse_json_response(
-            response_text
-        )
-
+        picks_data = parse_json_response(response_text)
         print("✅ JSON parsed successfully")
-
-        print("\n🔎 Validating Claude picks against external odds...")
-
-        picks_data = validate_and_correct_picks(
-            picks_data,
-            odds_data,
-            )
-
-        validation = picks_data.get("validation", {})
-
-        print(
-            f"   ✅ {validation.get('validated_count', 0)} validated | "
-            f"❌ {validation.get('rejected_count', 0)} rejected"
-        )
-
     except json.JSONDecodeError as e:
-        print(f"❌ JSON parse error: {e}")
-        print(
-            f"Raw response: "
-            f"{response_text[:1000]}"
+        print(f"⚠️ First JSON parse failed: {e}")
+        print("🔄 Asking Claude to regenerate valid JSON...")
+        retry_message = client.messages.create(
+            model="claude-haiku-4-5",
+            max_tokens=7000,
+            messages=[
+                {"role": "user", "content": prompt},
+                {"role": "assistant", "content": response_text},
+                {
+                    "role": "user",
+                    "content": (
+                        "Your previous response was not valid JSON. "
+                        "Regenerate the complete analysis from scratch. "
+                        "Return ONLY one complete valid JSON object. "
+                        "Do not use markdown fences. "
+                        "Do not truncate strings or omit closing brackets/braces. "
+                        "Preserve the required schema and betting rules."
+                    ),
+                },
+            ],
         )
-        return None
+        response_text = retry_message.content[0].text
+        try:
+            picks_data = parse_json_response(response_text)
+            print("✅ Retry JSON parsed successfully")
+        except json.JSONDecodeError as retry_error:
+            print(f"❌ Retry JSON parse failed: {retry_error}")
+            print(f"Raw retry response: {response_text[:1000]}")
+            return None
+
+    print("\n🔎 Validating Claude picks against external odds...")
+    picks_data = validate_and_correct_picks(picks_data, odds_data)
+    validation = picks_data.get("validation", {})
+    print(
+        f"   ✅ {validation.get('validated_count', 0)} validated | "
+        f"❌ {validation.get('rejected_count', 0)} rejected"
+    )
 
     lotto_spread_board, lotto_total_board = build_wnba_lotto_boards(odds_data)
     picks_data["lotto_spread_board"] = lotto_spread_board

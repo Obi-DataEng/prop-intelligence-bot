@@ -52,20 +52,11 @@ def fetch_articles_for_query(query, max_articles=3):
 
             return [
                 {
-                    "title": a.get("title", ""),
-                    "description": a.get(
-                        "description",
-                        "",
-                    ),
-                    "source": a.get(
-                        "source",
-                        {},
-                    ).get("name", ""),
-                    "publishedAt": a.get(
-                        "publishedAt",
-                        "",
-                    )[:10],
-                    "url": a.get("url", ""),
+                    "title": a.get("title") or "",
+                    "description": a.get("description") or "",
+                    "source": (a.get("source") or {}).get("name") or "",
+                    "publishedAt": (a.get("publishedAt") or "")[:10],
+                    "url": a.get("url") or "",
                 }
                 for a in articles
                 if (
@@ -369,25 +360,21 @@ def format_news_for_prompt(
         seen_titles = set()
 
         for article in articles[:4]:
-            title = article.get(
-                "title",
-                "",
+            title = str(
+                article.get("title") or ""
             ).strip()
 
-            description = article.get(
-                "description",
-                "",
+            description = str(
+                article.get("description") or ""
             ).strip()
 
-            source = article.get(
-                "source",
-                "",
-            )
+            source = str(
+                article.get("source") or ""
+            ).strip()
 
-            published_date = article.get(
-                "publishedAt",
-                "",
-            )
+            published_date = str(
+                article.get("publishedAt") or ""
+            ).strip()
 
             if (
                 not title
