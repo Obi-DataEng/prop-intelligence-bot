@@ -1,0 +1,245 @@
+{
+  "pick_date": "2026-09-23",
+  "graded_date": "2026-09-24",
+  "record": {
+    "wins": 2,
+    "losses": 3,
+    "pushes": 0,
+    "pending": 4
+  },
+  "summary": {
+    "MLB - HR": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Hits": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - TB": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - K": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "MLB - Game ML": {
+      "wins": 2,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game Spread": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game OU": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - NRFI": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "WNBA - Player Prop": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 3,
+      "profit": 0
+    }
+  },
+  "results": {
+    "MLB - Game ML": [
+      {
+        "sport": "MLB",
+        "category": "Game ML",
+        "player_name": "Milwaukee Brewers",
+        "game": "MIL @ PHI",
+        "over_under": "",
+        "line": null,
+        "odds": "-126",
+        "best_book": "LowVig.ag",
+        "result": "win",
+        "actual_value": null
+      },
+      {
+        "sport": "MLB",
+        "category": "Game ML",
+        "player_name": "Atlanta Braves",
+        "game": "CIN @ ATL",
+        "over_under": "",
+        "line": null,
+        "odds": "-245",
+        "best_book": "LowVig.ag",
+        "result": "win",
+        "actual_value": null
+      }
+    ],
+    "MLB - Hits": [
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Pete Crow-Armstrong",
+        "game": "MIA @ CHC",
+        "over_under": "over",
+        "line": 0.5,
+        "odds": "+110",
+        "best_book": "theScore Bet",
+        "result": "loss",
+        "actual_value": 0.0
+      }
+    ],
+    "MLB - K": [
+      {
+        "sport": "MLB",
+        "category": "K",
+        "player_name": "George Kirby",
+        "game": "HOU @ SEA",
+        "over_under": "over",
+        "line": 4.5,
+        "odds": "-130",
+        "best_book": "Bovada",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "MLB - NRFI": [
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Ryan Gusto / Kevin Gausman",
+        "game": "Miami Marlins @ Chicago Cubs",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - TB": [
+      {
+        "sport": "MLB",
+        "category": "TB",
+        "player_name": "Junior Caminero",
+        "game": "TB @ NYY",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "130",
+        "best_book": "Bovada",
+        "result": "loss",
+        "actual_value": 0.0
+      }
+    ],
+    "WNBA - Player Prop": [
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Angel Reese",
+        "game": "Atlanta Dream @ New York Liberty",
+        "over_under": "over",
+        "line": 27.5,
+        "odds": "-110",
+        "best_book": "FD",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Paige Bueckers",
+        "game": "Dallas Wings @ Seattle Storm",
+        "over_under": "over",
+        "line": 20.5,
+        "odds": "-130",
+        "best_book": "theScore Bet",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "DeWanna Bonner",
+        "game": "Atlanta Dream @ New York Liberty",
+        "over_under": "over",
+        "line": 3.5,
+        "odds": "-162",
+        "best_book": "ReBet",
+        "result": "pending",
+        "actual_value": null
+      }
+    ]
+  },
+  "cumulative": {
+    "MLB - Game ML": {
+      "sport": "MLB",
+      "category": "Game ML",
+      "wins": 2,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - Hits": {
+      "sport": "MLB",
+      "category": "Hits",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - K": {
+      "sport": "MLB",
+      "category": "K",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - NRFI": {
+      "sport": "MLB",
+      "category": "NRFI",
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "MLB - TB": {
+      "sport": "MLB",
+      "category": "TB",
+      "wins": 0,
+      "losses": 3,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "OVERALL": {
+      "wins": 4,
+      "losses": 5,
+      "pushes": 0,
+      "win_rate": 44.4
+    }
+  }
+}

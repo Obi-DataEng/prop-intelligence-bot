@@ -1,0 +1,8434 @@
+{
+  "date": "2026-09-24",
+  "league": "WNBA",
+  "sport_key": "basketball_wnba",
+  "books": [
+    "CZS",
+    "DK",
+    "FAN",
+    "FD",
+    "Fliff",
+    "HRB",
+    "MGM",
+    "ReBet",
+    "theScore Bet"
+  ],
+  "game_markets": [
+    "moneyline",
+    "spread",
+    "total"
+  ],
+  "player_prop_markets": [
+    "player_points",
+    "player_rebounds",
+    "player_assists",
+    "player_threes",
+    "player_points_rebounds_assists",
+    "player_points_rebounds",
+    "player_points_assists",
+    "player_rebounds_assists",
+    "player_steals",
+    "player_blocks",
+    "player_points_alternate",
+    "player_rebounds_alternate",
+    "player_assists_alternate",
+    "player_blocks_alternate",
+    "player_steals_alternate",
+    "player_turnovers_alternate",
+    "player_threes_alternate",
+    "player_points_assists_alternate",
+    "player_points_rebounds_alternate",
+    "player_rebounds_assists_alternate",
+    "player_points_rebounds_assists_alternate"
+  ],
+  "games": [
+    {
+      "game_id": "b9e3da30ad1be1c0da86727747acd4a8",
+      "home_team": "Washington Mystics",
+      "away_team": "Chicago Sky",
+      "commence_time": "2026-09-24T23:30:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": -900,
+          "away_ml": 570,
+          "home_spread": -13.5,
+          "home_spread_odds": -104,
+          "away_spread": 13.5,
+          "away_spread_odds": -118,
+          "total": 167.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "theScore Bet": {
+          "home_ml": -1000,
+          "away_ml": 550,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -110,
+          "total": 167.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "FAN": {
+          "home_ml": -850,
+          "away_ml": 575,
+          "home_spread": -13.0,
+          "home_spread_odds": -110,
+          "away_spread": 13.0,
+          "away_spread_odds": -110,
+          "total": 167.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "HRB": {
+          "home_ml": -850,
+          "away_ml": 550,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -110,
+          "total": 166.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "ReBet": {
+          "home_ml": -901,
+          "away_ml": 530,
+          "home_spread": -12.5,
+          "home_spread_odds": -116,
+          "away_spread": 12.5,
+          "away_spread_odds": -111,
+          "total": 167.5,
+          "over_odds": -111,
+          "under_odds": -116
+        },
+        "DK": {
+          "home_ml": -850,
+          "away_ml": 575,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -110,
+          "total": 166.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "CZS": {
+          "home_ml": -850,
+          "away_ml": 575,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -109,
+          "total": 167.5,
+          "over_odds": -106,
+          "under_odds": -114
+        },
+        "MGM": {
+          "home_ml": -800,
+          "away_ml": 550,
+          "home_spread": -12.5,
+          "home_spread_odds": -110,
+          "away_spread": 12.5,
+          "away_spread_odds": -110,
+          "total": 167.5,
+          "over_odds": -110,
+          "under_odds": -110
+        }
+      }
+    },
+    {
+      "game_id": "02322b02e336b41d9c97a97cc1c19ac4",
+      "home_team": "Minnesota Lynx",
+      "away_team": "Indiana Fever",
+      "commence_time": "2026-09-25T00:00:00Z",
+      "bookmakers": {
+        "ReBet": {
+          "home_ml": 109,
+          "away_ml": -139,
+          "home_spread": 2.5,
+          "home_spread_odds": -119,
+          "away_spread": -2.5,
+          "away_spread_odds": -109,
+          "total": 183.5,
+          "over_odds": -111,
+          "under_odds": -116
+        },
+        "FAN": {
+          "home_ml": 110,
+          "away_ml": -130,
+          "home_spread": 2.0,
+          "home_spread_odds": -110,
+          "away_spread": -2.0,
+          "away_spread_odds": -110,
+          "total": 183.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "FD": {
+          "home_ml": 122,
+          "away_ml": -150,
+          "home_spread": 2.5,
+          "home_spread_odds": -106,
+          "away_spread": -2.5,
+          "away_spread_odds": -114,
+          "total": 183.5,
+          "over_odds": -106,
+          "under_odds": -114
+        },
+        "theScore Bet": {
+          "home_ml": 120,
+          "away_ml": -140,
+          "home_spread": 2.5,
+          "home_spread_odds": -110,
+          "away_spread": -2.5,
+          "away_spread_odds": -110,
+          "total": 183.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "HRB": {
+          "home_ml": 115,
+          "away_ml": -135,
+          "home_spread": 2.5,
+          "home_spread_odds": -115,
+          "away_spread": -2.5,
+          "away_spread_odds": -105,
+          "total": 183.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "DK": {
+          "home_ml": 114,
+          "away_ml": -135,
+          "home_spread": 2.5,
+          "home_spread_odds": -112,
+          "away_spread": -2.5,
+          "away_spread_odds": -108,
+          "total": 183.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 117,
+          "away_ml": -139,
+          "home_spread": 2.5,
+          "home_spread_odds": -113,
+          "away_spread": -2.5,
+          "away_spread_odds": -107,
+          "total": 183.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "MGM": {
+          "home_ml": 115,
+          "away_ml": -135,
+          "home_spread": 2.5,
+          "home_spread_odds": -110,
+          "away_spread": -2.5,
+          "away_spread_odds": -110,
+          "total": 183.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "Fliff": {
+          "home_ml": 115,
+          "away_ml": -150,
+          "home_spread": 2.5,
+          "home_spread_odds": -125,
+          "away_spread": -2.5,
+          "away_spread_odds": -105,
+          "total": 183.5,
+          "over_odds": -115,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "game_id": "46d3018eb0f1401b922e9c3e63a83d20",
+      "home_team": "Los Angeles Sparks",
+      "away_team": "Golden State Valkyries",
+      "commence_time": "2026-09-25T02:00:00Z",
+      "bookmakers": {
+        "theScore Bet": {
+          "home_ml": 425,
+          "away_ml": -650,
+          "home_spread": 11.5,
+          "home_spread_odds": -110,
+          "away_spread": -11.5,
+          "away_spread_odds": -110,
+          "total": 158.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "HRB": {
+          "home_ml": 450,
+          "away_ml": -650,
+          "home_spread": 11.5,
+          "home_spread_odds": -110,
+          "away_spread": -11.5,
+          "away_spread_odds": -110,
+          "total": 158.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "ReBet": {
+          "home_ml": 440,
+          "away_ml": -699,
+          "home_spread": 11.5,
+          "home_spread_odds": -111,
+          "away_spread": -11.5,
+          "away_spread_odds": -116,
+          "total": 158.5,
+          "over_odds": -116,
+          "under_odds": -111
+        },
+        "FAN": {
+          "home_ml": 500,
+          "away_ml": -700,
+          "home_spread": 12.0,
+          "home_spread_odds": -110,
+          "away_spread": -12.0,
+          "away_spread_odds": -110,
+          "total": 159.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "FD": {
+          "home_ml": 420,
+          "away_ml": -600,
+          "home_spread": 11.5,
+          "home_spread_odds": -110,
+          "away_spread": -11.5,
+          "away_spread_odds": -110,
+          "total": 159.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "DK": {
+          "home_ml": 470,
+          "away_ml": -650,
+          "home_spread": 11.5,
+          "home_spread_odds": -110,
+          "away_spread": -11.5,
+          "away_spread_odds": -110,
+          "total": 158.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "CZS": {
+          "home_ml": 450,
+          "away_ml": -675,
+          "home_spread": 11.5,
+          "home_spread_odds": -108,
+          "away_spread": -11.5,
+          "away_spread_odds": -112,
+          "total": 158.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "Fliff": {
+          "home_ml": 420,
+          "away_ml": -630,
+          "home_spread": 11.5,
+          "home_spread_odds": -115,
+          "away_spread": -11.5,
+          "away_spread_odds": -115,
+          "total": 159.5,
+          "over_odds": -110,
+          "under_odds": -120
+        }
+      }
+    },
+    {
+      "game_id": "0b0555e14adea7a477fb8eff891d4d08",
+      "home_team": "Phoenix Mercury",
+      "away_team": "Las Vegas Aces",
+      "commence_time": "2026-09-25T02:00:00Z",
+      "bookmakers": {
+        "FD": {
+          "home_ml": 340,
+          "away_ml": -470,
+          "home_spread": 9.5,
+          "home_spread_odds": -104,
+          "away_spread": -9.5,
+          "away_spread_odds": -118,
+          "total": 174.5,
+          "over_odds": -106,
+          "under_odds": -114
+        },
+        "theScore Bet": {
+          "home_ml": 340,
+          "away_ml": -450,
+          "home_spread": 9.5,
+          "home_spread_odds": -105,
+          "away_spread": -9.5,
+          "away_spread_odds": -115,
+          "total": 174.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "FAN": {
+          "home_ml": 320,
+          "away_ml": -420,
+          "home_spread": 9.5,
+          "home_spread_odds": -105,
+          "away_spread": -9.5,
+          "away_spread_odds": -115,
+          "total": 174.0,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "HRB": {
+          "home_ml": 350,
+          "away_ml": -475,
+          "home_spread": 9.5,
+          "home_spread_odds": -105,
+          "away_spread": -9.5,
+          "away_spread_odds": -115,
+          "total": 174.5,
+          "over_odds": -115,
+          "under_odds": -105
+        },
+        "DK": {
+          "home_ml": 330,
+          "away_ml": -425,
+          "home_spread": 9.5,
+          "home_spread_odds": -110,
+          "away_spread": -9.5,
+          "away_spread_odds": -110,
+          "total": 175.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "CZS": {
+          "home_ml": 360,
+          "away_ml": -480,
+          "home_spread": 9.5,
+          "home_spread_odds": -106,
+          "away_spread": -9.5,
+          "away_spread_odds": -114,
+          "total": 174.5,
+          "over_odds": -114,
+          "under_odds": -106
+        },
+        "ReBet": {
+          "home_ml": 330,
+          "away_ml": -481,
+          "home_spread": 9.5,
+          "home_spread_odds": -109,
+          "away_spread": -9.5,
+          "away_spread_odds": -119,
+          "total": 174.5,
+          "over_odds": -119,
+          "under_odds": -109
+        },
+        "MGM": {
+          "home_ml": 350,
+          "away_ml": -450,
+          "home_spread": 9.5,
+          "home_spread_odds": -110,
+          "away_spread": -9.5,
+          "away_spread_odds": -110,
+          "total": 175.5,
+          "over_odds": -105,
+          "under_odds": -115
+        },
+        "Fliff": {
+          "home_ml": 320,
+          "away_ml": -465,
+          "home_spread": 9.5,
+          "home_spread_odds": -110,
+          "away_spread": -9.5,
+          "away_spread_odds": -120,
+          "total": 174.5,
+          "over_odds": -115,
+          "under_odds": -115
+        }
+      }
+    },
+    {
+      "game_id": "4a5f7b77830bdea66bedfe80560e7082",
+      "home_team": "Minnesota Lynx",
+      "away_team": "New York Liberty",
+      "commence_time": "2026-09-27T18:00:00Z",
+      "bookmakers": {
+        "DK": {
+          "home_ml": -270,
+          "away_ml": 220,
+          "home_spread": -6.5,
+          "home_spread_odds": -108,
+          "away_spread": 6.5,
+          "away_spread_odds": -112,
+          "total": 173.5,
+          "over_odds": -110,
+          "under_odds": -110
+        },
+        "FD": {
+          "home_ml": -300,
+          "away_ml": 235,
+          "home_spread": -7.5,
+          "home_spread_odds": -106,
+          "away_spread": 7.5,
+          "away_spread_odds": -114,
+          "total": 173.5,
+          "over_odds": -108,
+          "under_odds": -112
+        }
+      }
+    }
+  ],
+  "player_props": {
+    "Chicago Sky@Washington Mystics": {},
+    "Indiana Fever@Minnesota Lynx": {},
+    "Golden State Valkyries@Los Angeles Sparks": {},
+    "Las Vegas Aces@Phoenix Mercury": {},
+    "New York Liberty@Minnesota Lynx": {
+      "player_assists": {
+        "Napheesa Collier": {
+          "line": 2.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": -125
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": -106
+              }
+            ],
+            "line": 2.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Kayla McBride": {
+          "line": 2.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 146
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": -198
+              }
+            ],
+            "line": 2.5,
+            "over": 146,
+            "under": -198
+          }
+        },
+        "Breanna Stewart": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -102
+              },
+              {
+                "side": "Under",
+                "line": 3.5,
+                "odds": -130
+              }
+            ],
+            "line": 3.5,
+            "over": -102,
+            "under": -130
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 4.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": -158
+              },
+              {
+                "side": "Under",
+                "line": 4.5,
+                "odds": 118
+              }
+            ],
+            "line": 4.5,
+            "over": -158,
+            "under": 118
+          }
+        },
+        "Jonquel Jones": {
+          "line": 2.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": -144
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": 108
+              }
+            ],
+            "line": 2.5,
+            "over": -144,
+            "under": 108
+          }
+        },
+        "Pauline Astier": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 146
+              },
+              {
+                "side": "Under",
+                "line": 3.5,
+                "odds": -198
+              }
+            ],
+            "line": 3.5,
+            "over": 146,
+            "under": -198
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 2.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 100
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": -132
+              }
+            ],
+            "line": 2.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Olivia Miles": {
+          "line": 6.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": 118
+              },
+              {
+                "side": "Under",
+                "line": 6.5,
+                "odds": -158
+              }
+            ],
+            "line": 6.5,
+            "over": 118,
+            "under": -158
+          }
+        }
+      },
+      "player_assists_alternate": {
+        "Olivia Miles": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 640
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -174
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 225
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -1100
+              }
+            ],
+            "line": 3.5,
+            "over": -1100
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 1280
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 138
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 550
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -400
+              }
+            ],
+            "line": 3.5,
+            "over": -400
+          }
+        },
+        "Courtney Williams": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 270
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 1100
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -186
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -2500
+              }
+            ],
+            "line": 1.5,
+            "over": -2500
+          }
+        },
+        "Breanna Stewart": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 490
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -102
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -1100
+              }
+            ],
+            "line": 1.5,
+            "over": -1100
+          }
+        },
+        "Pauline Astier": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 640
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 146
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -600
+              }
+            ],
+            "line": 1.5,
+            "over": -600
+          }
+        },
+        "Jonquel Jones": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 880
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 188
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -450
+              }
+            ],
+            "line": 1.5,
+            "over": -450
+          }
+        },
+        "Natasha Howard": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 880
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 178
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -500
+              }
+            ],
+            "line": 1.5,
+            "over": -500
+          }
+        },
+        "Napheesa Collier": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 220
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -420
+              }
+            ],
+            "line": 1.5,
+            "over": -420
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 270
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -330
+              }
+            ],
+            "line": 1.5,
+            "over": -330
+          }
+        },
+        "Kayla McBride": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 370
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -220
+              }
+            ],
+            "line": 1.5,
+            "over": -220
+          }
+        }
+      },
+      "player_points": {
+        "Pauline Astier": {
+          "line": 8.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 8.5,
+                "odds": -110
+              },
+              {
+                "side": "Under",
+                "line": 8.5,
+                "odds": -118
+              }
+            ],
+            "line": 8.5,
+            "over": -110,
+            "under": -118
+          }
+        },
+        "Breanna Stewart": {
+          "line": 21.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 21.5,
+                "odds": -106
+              }
+            ],
+            "line": 21.5,
+            "over": -122,
+            "under": -106
+          }
+        },
+        "Napheesa Collier": {
+          "line": 18.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -128
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -102
+              }
+            ],
+            "line": 18.5,
+            "over": -128,
+            "under": -102
+          }
+        },
+        "Olivia Miles": {
+          "line": 18.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -120
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -108
+              }
+            ],
+            "line": 18.5,
+            "over": -120,
+            "under": -108
+          }
+        },
+        "Kayla McBride": {
+          "line": 17.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": -106
+              },
+              {
+                "side": "Under",
+                "line": 17.5,
+                "odds": -122
+              }
+            ],
+            "line": 17.5,
+            "over": -106,
+            "under": -122
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 7.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 7.5,
+                "odds": -106
+              }
+            ],
+            "line": 7.5,
+            "over": -122,
+            "under": -106
+          }
+        },
+        "Natasha Howard": {
+          "line": 11.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": -110
+              },
+              {
+                "side": "Under",
+                "line": 11.5,
+                "odds": -118
+              }
+            ],
+            "line": 11.5,
+            "over": -110,
+            "under": -118
+          }
+        },
+        "Jonquel Jones": {
+          "line": 15.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": -110
+              },
+              {
+                "side": "Under",
+                "line": 15.5,
+                "odds": -118
+              }
+            ],
+            "line": 15.5,
+            "over": -110,
+            "under": -118
+          }
+        },
+        "Courtney Williams": {
+          "line": 12.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 12.5,
+                "odds": -114
+              }
+            ],
+            "line": 12.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 16.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 16.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 16.5,
+                "odds": -106
+              }
+            ],
+            "line": 16.5,
+            "over": -122,
+            "under": -106
+          }
+        }
+      },
+      "player_points_alternate": {
+        "Breanna Stewart": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": -210
+              },
+              {
+                "side": "Over",
+                "line": 34.5,
+                "odds": 1350
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 168
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 500
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -1050
+              }
+            ],
+            "line": 14.5,
+            "over": -1050
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 175
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -1450
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 550
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 1400
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -215
+              }
+            ],
+            "line": 14.5,
+            "over": -215
+          }
+        },
+        "Jonquel Jones": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 260
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -780
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 830
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 2500
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -146
+              }
+            ],
+            "line": 14.5,
+            "over": -146
+          }
+        },
+        "Olivia Miles": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 108
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -4500
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 365
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 1100
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -405
+              }
+            ],
+            "line": 14.5,
+            "over": -405
+          }
+        },
+        "Napheesa Collier": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 104
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -4500
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 365
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 1020
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -415
+              }
+            ],
+            "line": 14.5,
+            "over": -415
+          }
+        },
+        "Kayla McBride": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 162
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -1600
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": 530
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 1400
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -240
+              }
+            ],
+            "line": 14.5,
+            "over": -240
+          }
+        },
+        "Courtney Williams": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 630
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -320
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 162
+              }
+            ],
+            "line": 14.5,
+            "over": 162
+          }
+        },
+        "Natasha Howard": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": 880
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -225
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 225
+              }
+            ],
+            "line": 14.5,
+            "over": 225
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 168
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 790
+              }
+            ],
+            "line": 14.5,
+            "over": 790
+          }
+        },
+        "Pauline Astier": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 132
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": 630
+              }
+            ],
+            "line": 14.5,
+            "over": 630
+          }
+        }
+      },
+      "player_points_assists": {
+        "Pauline Astier": {
+          "line": 11.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": -118
+              },
+              {
+                "side": "Under",
+                "line": 11.5,
+                "odds": -112
+              }
+            ],
+            "line": 11.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Napheesa Collier": {
+          "line": 21.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 21.5,
+                "odds": -108
+              }
+            ],
+            "line": 21.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 21.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": -130
+              },
+              {
+                "side": "Under",
+                "line": 21.5,
+                "odds": -102
+              }
+            ],
+            "line": 21.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Breanna Stewart": {
+          "line": 25.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": -112
+              },
+              {
+                "side": "Under",
+                "line": 25.5,
+                "odds": -118
+              }
+            ],
+            "line": 25.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Olivia Miles": {
+          "line": 25.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": -102
+              },
+              {
+                "side": "Under",
+                "line": 25.5,
+                "odds": -130
+              }
+            ],
+            "line": 25.5,
+            "over": -102,
+            "under": -130
+          }
+        },
+        "Kayla McBride": {
+          "line": 19.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 19.5,
+                "odds": -114
+              }
+            ],
+            "line": 19.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 10.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": -104
+              },
+              {
+                "side": "Under",
+                "line": 10.5,
+                "odds": -128
+              }
+            ],
+            "line": 10.5,
+            "over": -104,
+            "under": -128
+          }
+        },
+        "Jonquel Jones": {
+          "line": 18.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -108
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -122
+              }
+            ],
+            "line": 18.5,
+            "over": -108,
+            "under": -122
+          }
+        }
+      },
+      "player_points_rebounds": {
+        "Napheesa Collier": {
+          "line": 26.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 26.5,
+                "odds": -130
+              },
+              {
+                "side": "Under",
+                "line": 26.5,
+                "odds": -102
+              }
+            ],
+            "line": 26.5,
+            "over": -130,
+            "under": -102
+          }
+        },
+        "Pauline Astier": {
+          "line": 11.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": -125
+              },
+              {
+                "side": "Under",
+                "line": 11.5,
+                "odds": -106
+              }
+            ],
+            "line": 11.5,
+            "over": -125,
+            "under": -106
+          }
+        },
+        "Jonquel Jones": {
+          "line": 25.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": -108
+              },
+              {
+                "side": "Under",
+                "line": 25.5,
+                "odds": -122
+              }
+            ],
+            "line": 25.5,
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Breanna Stewart": {
+          "line": 30.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 30.5,
+                "odds": -128
+              },
+              {
+                "side": "Under",
+                "line": 30.5,
+                "odds": -104
+              }
+            ],
+            "line": 30.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 21.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": 100
+              },
+              {
+                "side": "Under",
+                "line": 21.5,
+                "odds": -132
+              }
+            ],
+            "line": 21.5,
+            "over": 100,
+            "under": -132
+          }
+        },
+        "Courtney Williams": {
+          "line": 16.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 16.5,
+                "odds": -128
+              },
+              {
+                "side": "Under",
+                "line": 16.5,
+                "odds": -104
+              }
+            ],
+            "line": 16.5,
+            "over": -128,
+            "under": -104
+          }
+        },
+        "Natasha Howard": {
+          "line": 18.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -102
+              },
+              {
+                "side": "Under",
+                "line": 18.5,
+                "odds": -130
+              }
+            ],
+            "line": 18.5,
+            "over": -102,
+            "under": -130
+          }
+        },
+        "Kayla McBride": {
+          "line": 20.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 20.5,
+                "odds": -106
+              },
+              {
+                "side": "Under",
+                "line": 20.5,
+                "odds": -125
+              }
+            ],
+            "line": 20.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 11.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 100
+              },
+              {
+                "side": "Under",
+                "line": 11.5,
+                "odds": -132
+              }
+            ],
+            "line": 11.5,
+            "over": 100,
+            "under": -132
+          }
+        }
+      },
+      "player_points_rebounds_assists": {
+        "Napheesa Collier": {
+          "line": 29.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 29.5,
+                "odds": -108
+              }
+            ],
+            "line": 29.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Pauline Astier": {
+          "line": 14.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -132
+              },
+              {
+                "side": "Under",
+                "line": 14.5,
+                "odds": 100
+              }
+            ],
+            "line": 14.5,
+            "over": -132,
+            "under": 100
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 26.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 26.5,
+                "odds": -106
+              },
+              {
+                "side": "Under",
+                "line": 26.5,
+                "odds": -125
+              }
+            ],
+            "line": 26.5,
+            "over": -106,
+            "under": -125
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 13.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 13.5,
+                "odds": -108
+              }
+            ],
+            "line": 13.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Olivia Miles": {
+          "line": 29.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 29.5,
+                "odds": -114
+              }
+            ],
+            "line": 29.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Breanna Stewart": {
+          "line": 34.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 34.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 34.5,
+                "odds": -114
+              }
+            ],
+            "line": 34.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Kayla McBride": {
+          "line": 22.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 22.5,
+                "odds": -112
+              },
+              {
+                "side": "Under",
+                "line": 22.5,
+                "odds": -118
+              }
+            ],
+            "line": 22.5,
+            "over": -112,
+            "under": -118
+          }
+        },
+        "Jonquel Jones": {
+          "line": 28.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 28.5,
+                "odds": -106
+              },
+              {
+                "side": "Under",
+                "line": 28.5,
+                "odds": -125
+              }
+            ],
+            "line": 28.5,
+            "over": -106,
+            "under": -125
+          }
+        }
+      },
+      "player_rebounds": {
+        "Pauline Astier": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 126
+              },
+              {
+                "side": "Under",
+                "line": 3.5,
+                "odds": -168
+              }
+            ],
+            "line": 3.5,
+            "over": 126,
+            "under": -168
+          }
+        },
+        "Napheesa Collier": {
+          "line": 7.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -138
+              },
+              {
+                "side": "Under",
+                "line": 7.5,
+                "odds": 104
+              }
+            ],
+            "line": 7.5,
+            "over": -138,
+            "under": 104
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 4.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 128
+              },
+              {
+                "side": "Under",
+                "line": 4.5,
+                "odds": -172
+              }
+            ],
+            "line": 4.5,
+            "over": 128,
+            "under": -172
+          }
+        },
+        "Breanna Stewart": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 110
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -146
+              }
+            ],
+            "line": 9.5,
+            "over": 110,
+            "under": -146
+          }
+        },
+        "Olivia Miles": {
+          "line": 4.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 108
+              },
+              {
+                "side": "Under",
+                "line": 4.5,
+                "odds": -144
+              }
+            ],
+            "line": 4.5,
+            "over": 108,
+            "under": -144
+          }
+        },
+        "Kayla McBride": {
+          "line": 2.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": -162
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": 122
+              }
+            ],
+            "line": 2.5,
+            "over": -162,
+            "under": 122
+          }
+        },
+        "Natasha Howard": {
+          "line": 6.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": -108
+              },
+              {
+                "side": "Under",
+                "line": 6.5,
+                "odds": -122
+              }
+            ],
+            "line": 6.5,
+            "over": -108,
+            "under": -122
+          }
+        },
+        "Jonquel Jones": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -136
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": 102
+              }
+            ],
+            "line": 9.5,
+            "over": -136,
+            "under": 102
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 118
+              },
+              {
+                "side": "Under",
+                "line": 3.5,
+                "odds": -158
+              }
+            ],
+            "line": 3.5,
+            "over": 118,
+            "under": -158
+          }
+        },
+        "Courtney Williams": {
+          "line": 4.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 116
+              },
+              {
+                "side": "Under",
+                "line": 4.5,
+                "odds": -154
+              }
+            ],
+            "line": 4.5,
+            "over": 116,
+            "under": -154
+          }
+        }
+      },
+      "player_rebounds_alternate": {
+        "Jonquel Jones": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 1200
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -2000
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 198
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 520
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -350
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -136
+              }
+            ],
+            "line": 9.5,
+            "over": -136
+          }
+        },
+        "Breanna Stewart": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": 2000
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -1200
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 310
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 800
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -250
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 110
+              }
+            ],
+            "line": 9.5,
+            "over": 110
+          }
+        },
+        "Napheesa Collier": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -580
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 550
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 1260
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": -138
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 194
+              }
+            ],
+            "line": 9.5,
+            "over": 194
+          }
+        },
+        "Natasha Howard": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -220
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 1200
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -1450
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 178
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 450
+              }
+            ],
+            "line": 9.5,
+            "over": 450
+          }
+        },
+        "Olivia Miles": {
+          "line": 7.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 225
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -230
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 880
+              }
+            ],
+            "line": 7.5,
+            "over": 880
+          }
+        },
+        "Courtney Williams": {
+          "line": 7.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 240
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -205
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 880
+              }
+            ],
+            "line": 7.5,
+            "over": 880
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 7.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 270
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": -188
+              },
+              {
+                "side": "Over",
+                "line": 7.5,
+                "odds": 920
+              }
+            ],
+            "line": 7.5,
+            "over": 920
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 550
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 118
+              }
+            ],
+            "line": 3.5,
+            "over": 118
+          }
+        },
+        "Pauline Astier": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 580
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 126
+              }
+            ],
+            "line": 3.5,
+            "over": 126
+          }
+        },
+        "Kayla McBride": {
+          "line": 3.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 750
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 158
+              }
+            ],
+            "line": 3.5,
+            "over": 158
+          }
+        }
+      },
+      "player_rebounds_assists": {
+        "Pauline Astier": {
+          "line": 6.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": 106
+              },
+              {
+                "side": "Under",
+                "line": 6.5,
+                "odds": -140
+              }
+            ],
+            "line": 6.5,
+            "over": 106,
+            "under": -140
+          }
+        },
+        "Napheesa Collier": {
+          "line": 10.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": -122
+              },
+              {
+                "side": "Under",
+                "line": 10.5,
+                "odds": -108
+              }
+            ],
+            "line": 10.5,
+            "over": -122,
+            "under": -108
+          }
+        },
+        "Breanna Stewart": {
+          "line": 12.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 12.5,
+                "odds": -114
+              }
+            ],
+            "line": 12.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Olivia Miles": {
+          "line": 10.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 10.5,
+                "odds": -114
+              },
+              {
+                "side": "Under",
+                "line": 10.5,
+                "odds": -114
+              }
+            ],
+            "line": 10.5,
+            "over": -114,
+            "under": -114
+          }
+        },
+        "Jonquel Jones": {
+          "line": 12.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 12.5,
+                "odds": -118
+              },
+              {
+                "side": "Under",
+                "line": 12.5,
+                "odds": -112
+              }
+            ],
+            "line": 12.5,
+            "over": -118,
+            "under": -112
+          }
+        },
+        "Kayla McBride": {
+          "line": 5.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 120
+              },
+              {
+                "side": "Under",
+                "line": 5.5,
+                "odds": -160
+              }
+            ],
+            "line": 5.5,
+            "over": 120,
+            "under": -160
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 5.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -136
+              },
+              {
+                "side": "Under",
+                "line": 5.5,
+                "odds": 102
+              }
+            ],
+            "line": 5.5,
+            "over": -136,
+            "under": 102
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": 110
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -146
+              }
+            ],
+            "line": 9.5,
+            "over": 110,
+            "under": -146
+          }
+        }
+      },
+      "player_threes": {
+        "Breanna Stewart": {
+          "line": 0.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -146
+              },
+              {
+                "side": "Under",
+                "line": 0.5,
+                "odds": 110
+              }
+            ],
+            "line": 0.5,
+            "over": -146,
+            "under": 110
+          }
+        },
+        "Pauline Astier": {
+          "line": 0.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -132
+              },
+              {
+                "side": "Under",
+                "line": 0.5,
+                "odds": 100
+              }
+            ],
+            "line": 0.5,
+            "over": -132,
+            "under": 100
+          }
+        },
+        "Napheesa Collier": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 116
+              },
+              {
+                "side": "Under",
+                "line": 1.5,
+                "odds": -158
+              }
+            ],
+            "line": 1.5,
+            "over": 116,
+            "under": -158
+          }
+        },
+        "Olivia Miles": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 108
+              },
+              {
+                "side": "Under",
+                "line": 1.5,
+                "odds": -144
+              }
+            ],
+            "line": 1.5,
+            "over": 108,
+            "under": -144
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 2.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 152
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": -205
+              }
+            ],
+            "line": 2.5,
+            "over": 152,
+            "under": -205
+          }
+        },
+        "Jonquel Jones": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -154
+              },
+              {
+                "side": "Under",
+                "line": 1.5,
+                "odds": 116
+              }
+            ],
+            "line": 1.5,
+            "over": -154,
+            "under": 116
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 130
+              },
+              {
+                "side": "Under",
+                "line": 1.5,
+                "odds": -174
+              }
+            ],
+            "line": 1.5,
+            "over": 130,
+            "under": -174
+          }
+        },
+        "Kayla McBride": {
+          "line": 2.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": -172
+              },
+              {
+                "side": "Under",
+                "line": 2.5,
+                "odds": 128
+              }
+            ],
+            "line": 2.5,
+            "over": -172,
+            "under": 128
+          }
+        }
+      },
+      "player_threes_alternate": {
+        "Kayla McBride": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": -172
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 360
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 750
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 154
+              },
+              {
+                "side": "Over",
+                "line": 6.5,
+                "odds": 1400
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -600
+              }
+            ],
+            "line": 1.5,
+            "over": -600
+          }
+        },
+        "Sabrina Ionescu": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 152
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 880
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 1700
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -1400
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 390
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -220
+              }
+            ],
+            "line": 1.5,
+            "over": -220
+          }
+        },
+        "Jonquel Jones": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 225
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 1280
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -750
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 580
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": -154
+              }
+            ],
+            "line": 1.5,
+            "over": -154
+          }
+        },
+        "Olivia Miles": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 350
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -470
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 880
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 108
+              }
+            ],
+            "line": 1.5,
+            "over": 108
+          }
+        },
+        "Napheesa Collier": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 370
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -450
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 920
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 116
+              }
+            ],
+            "line": 1.5,
+            "over": 116
+          }
+        },
+        "Leonie Fiebich": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 390
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -400
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 920
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 130
+              }
+            ],
+            "line": 1.5,
+            "over": 130
+          }
+        },
+        "Courtney Williams": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 630
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -270
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 194
+              }
+            ],
+            "line": 1.5,
+            "over": 194
+          }
+        },
+        "Breanna Stewart": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -146
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 360
+              }
+            ],
+            "line": 1.5,
+            "over": 360
+          }
+        },
+        "Pauline Astier": {
+          "line": 1.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -132
+              },
+              {
+                "side": "Over",
+                "line": 1.5,
+                "odds": 390
+              }
+            ],
+            "line": 1.5,
+            "over": 390
+          }
+        }
+      }
+    }
+  },
+  "alternate_game_markets": {
+    "Chicago Sky@Washington Mystics": {
+      "spreads": [
+        {
+          "team": "Chicago Sky",
+          "line": 10.5,
+          "odds": 130,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 13.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 16.5,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 19.5,
+          "odds": -255,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 11.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 14.5,
+          "odds": -135,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 17.5,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 9.5,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 6.5,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 13.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 22.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 3.5,
+          "odds": 380,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 4.5,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 20.5,
+          "odds": -300,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 7.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 23.5,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 1.5,
+          "odds": 500,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 12.5,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 15.5,
+          "odds": -150,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 18.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 8.5,
+          "odds": 180,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 5.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 21.5,
+          "odds": -350,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 2.5,
+          "odds": 430,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 24.5,
+          "odds": -525,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -10.5,
+          "odds": -160,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -13.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -16.5,
+          "odds": 145,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -19.5,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -11.5,
+          "odds": -135,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -14.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -17.5,
+          "odds": 165,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -9.5,
+          "odds": -185,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -6.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -13.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -22.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -3.5,
+          "odds": -550,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -4.5,
+          "odds": -475,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -20.5,
+          "odds": 230,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -7.5,
+          "odds": -270,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -23.5,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -1.5,
+          "odds": -800,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -12.5,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -15.5,
+          "odds": 125,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -18.5,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -8.5,
+          "odds": -225,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -5.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -21.5,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -2.5,
+          "odds": -650,
+          "book": "FAN"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -24.5,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 16.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 11.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 10.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 13.5,
+          "odds": -120,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 12.5,
+          "odds": -110,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 15.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 14.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 8.5,
+          "odds": 160,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 9.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -16.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -11.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -10.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -13.5,
+          "odds": 100,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -12.5,
+          "odds": -110,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -15.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -14.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -8.5,
+          "odds": -210,
+          "book": "HRB"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -9.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 12.5,
+          "odds": -111,
+          "book": "ReBet"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 11.5,
+          "odds": 100,
+          "book": "ReBet"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 13.5,
+          "odds": -128,
+          "book": "ReBet"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -12.5,
+          "odds": -116,
+          "book": "ReBet"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -11.5,
+          "odds": -133,
+          "book": "ReBet"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -13.5,
+          "odds": -103,
+          "book": "ReBet"
+        },
+        {
+          "team": "Chicago Sky",
+          "line": 12.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "team": "Washington Mystics",
+          "line": -12.5,
+          "odds": -110,
+          "book": "MGM"
+        }
+      ],
+      "totals": [
+        {
+          "side": "Over",
+          "line": 156.5,
+          "odds": -350,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 155.0,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 177.5,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 158.0,
+          "odds": -300,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 171.5,
+          "odds": 140,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 153.0,
+          "odds": -550,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 179.5,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 161.0,
+          "odds": -215,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 154.0,
+          "odds": -500,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 154.5,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 164.0,
+          "odds": -155,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 157.0,
+          "odds": -340,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 165.5,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 175.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 158.5,
+          "odds": -280,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 167.0,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 173.5,
+          "odds": 170,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 180.5,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 156.0,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 152.5,
+          "odds": -575,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.0,
+          "odds": 120,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 160.0,
+          "odds": -245,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 159.0,
+          "odds": -275,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 173.0,
+          "odds": 165,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 167.5,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 176.0,
+          "odds": 225,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 162.0,
+          "odds": -195,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 163.0,
+          "odds": -175,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 153.5,
+          "odds": -500,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 166.0,
+          "odds": -125,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 179.0,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 165.0,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 169.0,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 159.5,
+          "odds": -245,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.5,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 168.0,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 182.5,
+          "odds": 420,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 182.0,
+          "odds": 420,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 161.5,
+          "odds": -200,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 169.5,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 168.5,
+          "odds": 105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 172.0,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 162.5,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 175.0,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 163.5,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 155.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 171.0,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 178.0,
+          "odds": 275,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 176.5,
+          "odds": 230,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.0,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.5,
+          "odds": 125,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 181.0,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 177.0,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 164.5,
+          "odds": -145,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 178.5,
+          "odds": 275,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 157.5,
+          "odds": -320,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 172.5,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 180.0,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 166.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 181.5,
+          "odds": 390,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 160.5,
+          "odds": -225,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 156.5,
+          "odds": 275,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 155.0,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 177.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 158.0,
+          "odds": 240,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 171.5,
+          "odds": -170,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 153.0,
+          "odds": 400,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 179.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 161.0,
+          "odds": 175,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 154.0,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 154.5,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 164.0,
+          "odds": 130,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 157.0,
+          "odds": 265,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 165.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 175.5,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 158.5,
+          "odds": 225,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 167.0,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 173.5,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 180.5,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 156.0,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 152.5,
+          "odds": 420,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 170.0,
+          "odds": -145,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 160.0,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 159.0,
+          "odds": 220,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 173.0,
+          "odds": -200,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 167.5,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 176.0,
+          "odds": -280,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 162.0,
+          "odds": 160,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 163.0,
+          "odds": 145,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 153.5,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 166.0,
+          "odds": 105,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 179.0,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 165.0,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 169.0,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 159.5,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 168.0,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 182.5,
+          "odds": -575,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 182.0,
+          "odds": -575,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 161.5,
+          "odds": 165,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 169.5,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 168.5,
+          "odds": -125,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 172.0,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 162.5,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 175.0,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 163.5,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 155.5,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 171.0,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 178.0,
+          "odds": -350,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 176.5,
+          "odds": -285,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.0,
+          "odds": -225,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 170.5,
+          "odds": -150,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 181.0,
+          "odds": -500,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 177.0,
+          "odds": -320,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 164.5,
+          "odds": 120,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 178.5,
+          "odds": -350,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 157.5,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 172.5,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 180.0,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 166.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 181.5,
+          "odds": -525,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 160.5,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 171.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 169.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 167.5,
+          "odds": -105,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 168.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 165.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 166.5,
+          "odds": -115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 163.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 164.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 170.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 171.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 169.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 167.5,
+          "odds": -115,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 168.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 165.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 166.5,
+          "odds": -105,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 163.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 164.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 167.5,
+          "odds": -111,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 166.5,
+          "odds": -125,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 168.5,
+          "odds": 100,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 167.5,
+          "odds": -116,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 166.5,
+          "odds": -105,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 168.5,
+          "odds": -133,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 167.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "side": "Under",
+          "line": 167.5,
+          "odds": -110,
+          "book": "MGM"
+        }
+      ]
+    },
+    "Indiana Fever@Minnesota Lynx": {
+      "spreads": [
+        {
+          "team": "Indiana Fever",
+          "line": -2.5,
+          "odds": -109,
+          "book": "ReBet"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -1.5,
+          "odds": -128,
+          "book": "ReBet"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -3.5,
+          "odds": 102,
+          "book": "ReBet"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 2.5,
+          "odds": -119,
+          "book": "ReBet"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 1.5,
+          "odds": -103,
+          "book": "ReBet"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 3.5,
+          "odds": -137,
+          "book": "ReBet"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -7.5,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -1.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -4.5,
+          "odds": 120,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 9.5,
+          "odds": -550,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 4.5,
+          "odds": -220,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 7.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 6.5,
+          "odds": -310,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 3.5,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 1.5,
+          "odds": -145,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -12.5,
+          "odds": 380,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -10.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -9.5,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -2.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -3.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -6.5,
+          "odds": 160,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -8.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 8.5,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 5.5,
+          "odds": -255,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -2.5,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 2.5,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -11.5,
+          "odds": 320,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -5.5,
+          "odds": 140,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -13.5,
+          "odds": 430,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 7.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 1.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 4.5,
+          "odds": -145,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -9.5,
+          "odds": 380,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -4.5,
+          "odds": 175,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -7.5,
+          "odds": 280,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -6.5,
+          "odds": 235,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -3.5,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -1.5,
+          "odds": 120,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 12.5,
+          "odds": -550,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 10.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 9.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 2.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 3.5,
+          "odds": -135,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 6.5,
+          "odds": -200,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 8.5,
+          "odds": -270,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -8.5,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -5.5,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 2.5,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -2.5,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 11.5,
+          "odds": -445,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 5.5,
+          "odds": -170,
+          "book": "FAN"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 13.5,
+          "odds": -650,
+          "book": "FAN"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -7.5,
+          "odds": 180,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -1.5,
+          "odds": -120,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -6.5,
+          "odds": 175,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -3.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -2.5,
+          "odds": -105,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -5.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -4.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 1.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": 2.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 7.5,
+          "odds": -250,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 1.5,
+          "odds": 100,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 6.5,
+          "odds": -230,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 3.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 2.5,
+          "odds": -115,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 5.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 4.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -1.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": -2.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -2.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 2.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "team": "Indiana Fever",
+          "line": -2.5,
+          "odds": -105,
+          "book": "Fliff"
+        },
+        {
+          "team": "Minnesota Lynx",
+          "line": 2.5,
+          "odds": -125,
+          "book": "Fliff"
+        }
+      ],
+      "totals": [
+        {
+          "side": "Over",
+          "line": 183.5,
+          "odds": -111,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 182.5,
+          "odds": -125,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 184.5,
+          "odds": -103,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 183.5,
+          "odds": -116,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 182.5,
+          "odds": -105,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 184.5,
+          "odds": -128,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 191.0,
+          "odds": 175,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 177.5,
+          "odds": -195,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 171.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 186.5,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 180.5,
+          "odds": -150,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 175.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.0,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 173.0,
+          "odds": -320,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 176.0,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 190.5,
+          "odds": 170,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 179.0,
+          "odds": -175,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.5,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 182.0,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 190.0,
+          "odds": 160,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 185.0,
+          "odds": 105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 188.0,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 179.5,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 189.5,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 168.5,
+          "odds": -500,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 173.5,
+          "odds": -300,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 183.5,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 169.5,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 184.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 171.0,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 188.5,
+          "odds": 140,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.0,
+          "odds": -285,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 169.0,
+          "odds": -500,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 177.0,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 182.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 178.5,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 172.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 172.0,
+          "odds": -350,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 180.0,
+          "odds": -155,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 175.0,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 183.0,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 178.0,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 186.0,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 176.5,
+          "odds": -220,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 189.0,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 181.0,
+          "odds": -145,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 187.5,
+          "odds": 130,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 184.0,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 181.5,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 187.0,
+          "odds": 125,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 185.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 191.5,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 192.5,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 192.0,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 195.0,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 194.0,
+          "odds": 230,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 198.0,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 193.5,
+          "odds": 220,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 193.0,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 197.0,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 196.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 196.0,
+          "odds": 275,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 198.5,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 197.5,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 194.5,
+          "odds": 240,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 195.5,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 191.0,
+          "odds": -215,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 177.5,
+          "odds": 160,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 171.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 186.5,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 180.5,
+          "odds": 125,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 175.5,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 170.0,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 173.0,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 176.0,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 190.5,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 179.0,
+          "odds": 145,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 182.0,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 190.0,
+          "odds": -195,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 185.0,
+          "odds": -125,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 188.0,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 179.5,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 189.5,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 168.5,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 173.5,
+          "odds": 240,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 183.5,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 169.5,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 184.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 171.0,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 188.5,
+          "odds": -170,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.0,
+          "odds": 230,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 169.0,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 177.0,
+          "odds": 170,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 182.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 178.5,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 172.5,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 172.0,
+          "odds": 275,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 180.0,
+          "odds": 130,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 175.0,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 183.0,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 178.0,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 186.0,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 176.5,
+          "odds": 180,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 170.5,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 189.0,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 181.0,
+          "odds": 120,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 187.5,
+          "odds": -155,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 184.0,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 181.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 187.0,
+          "odds": -150,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 185.5,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 191.5,
+          "odds": -225,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 192.5,
+          "odds": -245,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 192.0,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 195.0,
+          "odds": -320,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 194.0,
+          "odds": -285,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 198.0,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 193.5,
+          "odds": -275,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 193.0,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 197.0,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 196.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 196.0,
+          "odds": -350,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 198.5,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 197.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 194.5,
+          "odds": -300,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 195.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 185.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 187.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 186.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 179.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 184.5,
+          "odds": 100,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 183.5,
+          "odds": -110,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 182.5,
+          "odds": -120,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 181.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 180.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 185.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 187.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 186.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 179.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 184.5,
+          "odds": -120,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 183.5,
+          "odds": -110,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 182.5,
+          "odds": 100,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 181.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 180.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 183.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "side": "Under",
+          "line": 183.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "side": "Over",
+          "line": 183.5,
+          "odds": -115,
+          "book": "Fliff"
+        },
+        {
+          "side": "Under",
+          "line": 183.5,
+          "odds": -115,
+          "book": "Fliff"
+        }
+      ]
+    },
+    "Golden State Valkyries@Los Angeles Sparks": {
+      "spreads": [
+        {
+          "team": "Golden State Valkyries",
+          "line": -12.5,
+          "odds": 100,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -13.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -14.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -15.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -8.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -7.5,
+          "odds": -210,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -9.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -10.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -11.5,
+          "odds": -110,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 12.5,
+          "odds": -120,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 13.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 14.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 15.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 8.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 7.5,
+          "odds": 160,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 9.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 10.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 11.5,
+          "odds": -110,
+          "book": "HRB"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -11.5,
+          "odds": -116,
+          "book": "ReBet"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -10.5,
+          "odds": -137,
+          "book": "ReBet"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -12.5,
+          "odds": -103,
+          "book": "ReBet"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 11.5,
+          "odds": -111,
+          "book": "ReBet"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 10.5,
+          "odds": 102,
+          "book": "ReBet"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 12.5,
+          "odds": -128,
+          "book": "ReBet"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -7.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -18.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -1.5,
+          "odds": -650,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -4.5,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -15.5,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -12.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -9.5,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -8.5,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -20.5,
+          "odds": 280,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -3.5,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -17.5,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -12.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -6.5,
+          "odds": -285,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -14.5,
+          "odds": 130,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -2.5,
+          "odds": -550,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -19.5,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -11.5,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -5.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -16.5,
+          "odds": 165,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -13.5,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -10.5,
+          "odds": -135,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -21.5,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -23.5,
+          "odds": 390,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -22.5,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 7.5,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 18.5,
+          "odds": -270,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 1.5,
+          "odds": 430,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 4.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 15.5,
+          "odds": -185,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 12.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 9.5,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 8.5,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 20.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 3.5,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 17.5,
+          "odds": -240,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 12.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 6.5,
+          "odds": 220,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 14.5,
+          "odds": -160,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 2.5,
+          "odds": 380,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 19.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 11.5,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 5.5,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 16.5,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 13.5,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 10.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 21.5,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 23.5,
+          "odds": -575,
+          "book": "FAN"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 22.5,
+          "odds": -475,
+          "book": "FAN"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": 1.5,
+          "odds": -833,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -1.5,
+          "odds": -476,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -2.5,
+          "odds": -370,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -3.5,
+          "odds": -323,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -4.5,
+          "odds": -270,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -5.5,
+          "odds": -238,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -6.5,
+          "odds": -200,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -7.5,
+          "odds": -175,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -8.5,
+          "odds": -156,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -9.5,
+          "odds": -135,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -10.5,
+          "odds": -118,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -11.5,
+          "odds": -112,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -12.5,
+          "odds": 110,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -13.5,
+          "odds": 125,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -14.5,
+          "odds": 143,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -15.5,
+          "odds": 162,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -16.5,
+          "odds": 181,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -17.5,
+          "odds": 210,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -18.5,
+          "odds": 240,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -19.5,
+          "odds": 280,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -20.5,
+          "odds": 325,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -21.5,
+          "odds": 380,
+          "book": "CZS"
+        },
+        {
+          "team": "Golden State Valkyries",
+          "line": -22.5,
+          "odds": 425,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": -1.5,
+          "odds": 475,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 1.5,
+          "odds": 300,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 2.5,
+          "odds": 260,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 3.5,
+          "odds": 220,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 4.5,
+          "odds": 197,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 5.5,
+          "odds": 171,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 6.5,
+          "odds": 150,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 7.5,
+          "odds": 131,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 8.5,
+          "odds": 114,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 9.5,
+          "odds": 100,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 10.5,
+          "odds": -114,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 11.5,
+          "odds": -108,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 12.5,
+          "odds": -147,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 13.5,
+          "odds": -169,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 14.5,
+          "odds": -196,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 15.5,
+          "odds": -227,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 16.5,
+          "odds": -256,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 17.5,
+          "odds": -303,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 18.5,
+          "odds": -357,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 19.5,
+          "odds": -435,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 20.5,
+          "odds": -526,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 21.5,
+          "odds": -714,
+          "book": "CZS"
+        },
+        {
+          "team": "Los Angeles Sparks",
+          "line": 22.5,
+          "odds": -833,
+          "book": "CZS"
+        }
+      ],
+      "totals": [
+        {
+          "side": "Over",
+          "line": 154.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 155.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 157.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 162.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 160.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 159.5,
+          "odds": 100,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 156.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 161.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 158.5,
+          "odds": -115,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 154.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 155.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 157.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 162.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 160.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 159.5,
+          "odds": -120,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 156.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 161.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 158.5,
+          "odds": -105,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 158.5,
+          "odds": -116,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 157.5,
+          "odds": -133,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 159.5,
+          "odds": -105,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 158.5,
+          "odds": -111,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 157.5,
+          "odds": 100,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 159.5,
+          "odds": -125,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 156.5,
+          "odds": -150,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 152.0,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 150.0,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 155.0,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 153.0,
+          "odds": -225,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 158.0,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 154.5,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 171.5,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 156.0,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 150.5,
+          "odds": -300,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 159.0,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 161.0,
+          "odds": 105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 162.0,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 164.0,
+          "odds": 145,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 165.0,
+          "odds": 165,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 165.5,
+          "odds": 170,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 168.0,
+          "odds": 225,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 167.0,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 148.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.0,
+          "odds": 275,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 169.5,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 173.0,
+          "odds": 390,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 163.5,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 171.0,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 153.5,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.0,
+          "odds": 420,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 159.5,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 157.5,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.5,
+          "odds": 430,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 151.0,
+          "odds": -285,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 172.5,
+          "odds": 360,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 146.0,
+          "odds": -550,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 151.5,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 147.5,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 154.0,
+          "odds": -200,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 145.5,
+          "odds": -575,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 168.5,
+          "odds": 230,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 166.5,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 149.0,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 147.0,
+          "odds": -475,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 157.0,
+          "odds": -145,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 160.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 162.5,
+          "odds": 125,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 158.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 173.5,
+          "odds": 390,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 152.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 160.0,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 167.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 163.0,
+          "odds": 130,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 166.0,
+          "odds": 180,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 169.0,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 146.5,
+          "odds": -500,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 161.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 172.0,
+          "odds": 340,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 155.5,
+          "odds": -170,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 164.5,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 149.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 145.0,
+          "odds": -650,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 148.0,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 144.5,
+          "odds": -650,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 156.5,
+          "odds": 125,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 152.0,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 150.0,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 155.0,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 153.0,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 158.0,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 154.5,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 171.5,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 156.0,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 150.5,
+          "odds": 240,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 159.0,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 161.0,
+          "odds": -125,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 162.0,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 164.0,
+          "odds": -175,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 165.0,
+          "odds": -200,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 165.5,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 168.0,
+          "odds": -280,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 167.0,
+          "odds": -245,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 148.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 170.0,
+          "odds": -350,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 169.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 173.0,
+          "odds": -525,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 163.5,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 171.0,
+          "odds": -400,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 153.5,
+          "odds": 170,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.0,
+          "odds": -575,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 159.5,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 157.5,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.5,
+          "odds": -600,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 151.0,
+          "odds": 230,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 172.5,
+          "odds": -475,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 146.0,
+          "odds": 400,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 151.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 147.5,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 154.0,
+          "odds": 165,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 145.5,
+          "odds": 420,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 168.5,
+          "odds": -285,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 166.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 149.0,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 147.0,
+          "odds": 360,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 157.0,
+          "odds": 120,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 160.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 162.5,
+          "odds": -150,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 158.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 173.5,
+          "odds": -525,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 152.5,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 160.0,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 167.5,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 163.0,
+          "odds": -155,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 166.0,
+          "odds": -220,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 169.0,
+          "odds": -320,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 146.5,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 161.5,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 172.0,
+          "odds": -450,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 155.5,
+          "odds": 140,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 170.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 164.5,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 149.5,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 145.0,
+          "odds": 460,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 148.0,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 144.5,
+          "odds": 460,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 153.5,
+          "odds": -250,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 154.5,
+          "odds": -217,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 155.5,
+          "odds": -196,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 156.5,
+          "odds": -175,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 157.5,
+          "odds": -159,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 158.5,
+          "odds": -115,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 159.5,
+          "odds": -125,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 160.5,
+          "odds": -114,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 161.5,
+          "odds": -101,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 162.5,
+          "odds": 108,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 163.5,
+          "odds": 121,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 164.5,
+          "odds": 133,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 165.5,
+          "odds": 148,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 166.5,
+          "odds": 164,
+          "book": "CZS"
+        },
+        {
+          "side": "Over",
+          "line": 167.5,
+          "odds": 181,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 153.5,
+          "odds": 181,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 154.5,
+          "odds": 164,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 155.5,
+          "odds": 148,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 156.5,
+          "odds": 134,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 157.5,
+          "odds": 120,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 158.5,
+          "odds": -105,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 159.5,
+          "odds": -104,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 160.5,
+          "odds": -115,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 161.5,
+          "odds": -128,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 162.5,
+          "odds": -141,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 163.5,
+          "odds": -161,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 164.5,
+          "odds": -175,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 165.5,
+          "odds": -196,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 166.5,
+          "odds": -217,
+          "book": "CZS"
+        },
+        {
+          "side": "Under",
+          "line": 167.5,
+          "odds": -250,
+          "book": "CZS"
+        }
+      ]
+    },
+    "Las Vegas Aces@Phoenix Mercury": {
+      "spreads": [
+        {
+          "team": "Las Vegas Aces",
+          "line": -7.5,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -9.5,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -1.5,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -4.5,
+          "odds": -270,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -3.5,
+          "odds": -310,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -19.5,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -6.5,
+          "odds": -200,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -18.5,
+          "odds": 280,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": 1.5,
+          "odds": -525,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -16.5,
+          "odds": 220,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -15.5,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -13.5,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -10.5,
+          "odds": 100,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -12.5,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -8.5,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -20.5,
+          "odds": 350,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -10.0,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -17.5,
+          "odds": 250,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -14.5,
+          "odds": 175,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -2.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -11.5,
+          "odds": 120,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -5.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -21.5,
+          "odds": 390,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 7.5,
+          "odds": 135,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 9.5,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 1.5,
+          "odds": 310,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 4.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 3.5,
+          "odds": 235,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 19.5,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 6.5,
+          "odds": 160,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 18.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": -1.5,
+          "odds": 370,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 16.5,
+          "odds": -285,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 15.5,
+          "odds": -255,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 13.5,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 10.5,
+          "odds": -120,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 12.5,
+          "odds": -165,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 8.5,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 20.5,
+          "odds": -500,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 10.0,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 17.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 14.5,
+          "odds": -220,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 2.5,
+          "odds": 280,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 11.5,
+          "odds": -145,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 5.5,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 21.5,
+          "odds": -575,
+          "book": "FAN"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -13.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -7.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -6.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -9.5,
+          "odds": -115,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -8.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -5.5,
+          "odds": -230,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -11.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -12.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -10.5,
+          "odds": 100,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 13.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 7.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 6.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 9.5,
+          "odds": -105,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 8.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 5.5,
+          "odds": 175,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 11.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 12.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 10.5,
+          "odds": -120,
+          "book": "HRB"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -9.5,
+          "odds": -119,
+          "book": "ReBet"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -10.5,
+          "odds": -105,
+          "book": "ReBet"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -8.5,
+          "odds": -143,
+          "book": "ReBet"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 9.5,
+          "odds": -109,
+          "book": "ReBet"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 10.5,
+          "odds": -125,
+          "book": "ReBet"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 8.5,
+          "odds": 105,
+          "book": "ReBet"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -9.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 9.5,
+          "odds": -110,
+          "book": "MGM"
+        },
+        {
+          "team": "Las Vegas Aces",
+          "line": -9.5,
+          "odds": -120,
+          "book": "Fliff"
+        },
+        {
+          "team": "Phoenix Mercury",
+          "line": 9.5,
+          "odds": -110,
+          "book": "Fliff"
+        }
+      ],
+      "totals": [
+        {
+          "side": "Over",
+          "line": 177.5,
+          "odds": 125,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 171.5,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 175.5,
+          "odds": 105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 165.5,
+          "odds": -260,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 186.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 169.5,
+          "odds": -170,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 184.5,
+          "odds": 240,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 179.5,
+          "odds": 150,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 180.5,
+          "odds": 165,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 163.5,
+          "odds": -330,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 173.5,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 167.5,
+          "odds": -205,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 178.5,
+          "odds": 140,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 159.5,
+          "odds": -525,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 172.5,
+          "odds": -130,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 174.5,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 188.5,
+          "odds": 360,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 182.5,
+          "odds": 200,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 166.5,
+          "odds": -235,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 161.5,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 189.5,
+          "odds": 390,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 168.5,
+          "odds": -190,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 187.5,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 183.5,
+          "odds": 220,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 181.5,
+          "odds": 185,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 162.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 160.5,
+          "odds": -475,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 176.5,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 170.5,
+          "odds": -155,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 164.5,
+          "odds": -300,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 185.5,
+          "odds": 265,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 177.5,
+          "odds": -150,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 171.5,
+          "odds": 115,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 175.5,
+          "odds": -125,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 165.5,
+          "odds": 210,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 186.5,
+          "odds": -375,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 169.5,
+          "odds": 140,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 184.5,
+          "odds": -300,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 179.5,
+          "odds": -180,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 180.5,
+          "odds": -200,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 163.5,
+          "odds": 260,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 173.5,
+          "odds": -105,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.0,
+          "odds": -110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 167.5,
+          "odds": 170,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 178.5,
+          "odds": -170,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 159.5,
+          "odds": 390,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 172.5,
+          "odds": 110,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 174.5,
+          "odds": -115,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 188.5,
+          "odds": -475,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 182.5,
+          "odds": -245,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 166.5,
+          "odds": 190,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 161.5,
+          "odds": 325,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 189.5,
+          "odds": -525,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 168.5,
+          "odds": 155,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 187.5,
+          "odds": -425,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 183.5,
+          "odds": -275,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 181.5,
+          "odds": -225,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 162.5,
+          "odds": 290,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 160.5,
+          "odds": 360,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 176.5,
+          "odds": -140,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 170.5,
+          "odds": 130,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 164.5,
+          "odds": 240,
+          "book": "FAN"
+        },
+        {
+          "side": "Under",
+          "line": 185.5,
+          "odds": -340,
+          "book": "FAN"
+        },
+        {
+          "side": "Over",
+          "line": 178.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 176.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 177.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 174.5,
+          "odds": -115,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 175.5,
+          "odds": -105,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 172.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 173.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 170.5,
+          "odds": -185,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 171.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 178.5,
+          "odds": -165,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 176.5,
+          "odds": -130,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 177.5,
+          "odds": -145,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 174.5,
+          "odds": -105,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 175.5,
+          "odds": -115,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 172.5,
+          "odds": 115,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 173.5,
+          "odds": 105,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 170.5,
+          "odds": 140,
+          "book": "HRB"
+        },
+        {
+          "side": "Under",
+          "line": 171.5,
+          "odds": 130,
+          "book": "HRB"
+        },
+        {
+          "side": "Over",
+          "line": 174.5,
+          "odds": -119,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 173.5,
+          "odds": -133,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 175.5,
+          "odds": -109,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 174.5,
+          "odds": -109,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 173.5,
+          "odds": 100,
+          "book": "ReBet"
+        },
+        {
+          "side": "Under",
+          "line": 175.5,
+          "odds": -119,
+          "book": "ReBet"
+        },
+        {
+          "side": "Over",
+          "line": 175.5,
+          "odds": -105,
+          "book": "MGM"
+        },
+        {
+          "side": "Under",
+          "line": 175.5,
+          "odds": -115,
+          "book": "MGM"
+        },
+        {
+          "side": "Over",
+          "line": 174.5,
+          "odds": -115,
+          "book": "Fliff"
+        },
+        {
+          "side": "Under",
+          "line": 174.5,
+          "odds": -115,
+          "book": "Fliff"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-24",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": true,
+  "legs": [
+    {
+      "league": "NFL",
+      "game": "GB game",
+      "selection": "Kaleb Johnson Under 10.5 Rush Att.",
+      "market_type": "player_prop",
+      "player": "Kaleb Johnson",
+      "team": "GB",
+      "direction": "Under",
+      "line": 10.5,
+      "book": "PropFinder",
+      "odds": -111,
+      "support_score": 92.0,
+      "confidence_tier": "Elite",
+      "reasoning": "PropFinder rating 90.6; L10 (10/10) and L20 (12/12); prior/current season (10/10) / (2/2) with Week 3 weighting 15%/85%; L10 average 3.4 at odds -111.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "NFL",
+      "game": "GB game",
+      "selection": "Kaleb Johnson Under 34.5 Rushing Yds",
+      "market_type": "player_prop",
+      "player": "Kaleb Johnson",
+      "team": "GB",
+      "direction": "Under",
+      "line": 34.5,
+      "book": "PropFinder",
+      "odds": -113,
+      "support_score": 92.0,
+      "confidence_tier": "Elite",
+      "reasoning": "PropFinder rating 93.1; L10 (10/10) and L20 (12/12); prior/current season (10/10) / (2/2) with Week 3 weighting 15%/85%; L10 average 10.2 at odds -113.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "NFL",
+      "game": "GB game",
+      "selection": "Kaleb Johnson Under 43.5 Rushing + Receiving Yds",
+      "market_type": "player_prop",
+      "player": "Kaleb Johnson",
+      "team": "GB",
+      "direction": "Under",
+      "line": 43.5,
+      "book": "PropFinder",
+      "odds": -137,
+      "support_score": 92.0,
+      "confidence_tier": "Elite",
+      "reasoning": "PropFinder rating 91.2; L10 (10/10) and L20 (12/12); prior/current season (10/10) / (2/2) with Week 3 weighting 15%/85%; L10 average 11.1 at odds -137.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 6.199,
+  "combined_american_odds": 520,
+  "implied_probability_pct": 16.1,
+  "candidate_count": 5,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records."
+}

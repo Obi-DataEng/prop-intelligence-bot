@@ -1,0 +1,200 @@
+{
+  "top_picks": [],
+  "passes": [
+    {
+      "player_name": "Dominique Malonga",
+      "prop": "OVER 26.5 Points + Rebounds + Assists",
+      "reason": "Despite L10 average of 27.6, season hit rate only 11% (2/18 games). L10 hit rate 60% offers some support, but the volatility and small sample of above-line games create unacceptable variance for the conservative line pricing (-120)."
+    },
+    {
+      "player_name": "Natisha Hiedeman",
+      "prop": "OVER 17.5 Points + Assists",
+      "reason": "L10 average 17.7 marginally above line, but L5 (15.0) and L3 (11.7) show sharp deceleration. Season hit rate only 36% on this line; recent form does not support conviction."
+    },
+    {
+      "player_name": "Paige Bueckers",
+      "prop": "OVER 2.5 Three Pointers",
+      "reason": "Huge odds discrepancy (+246 best vs +30 second) but season hit rate only 30% (6/20) and L10 hit rate 30% (3/10). Large plus-money pricing on a fundamentally low-probability event; violates longshot safety rule."
+    },
+    {
+      "player_name": "Flau'jae Johnson",
+      "prop": "OVER 5.5 Rebounds",
+      "reason": "Season average 4.0 rebounds well below line. Despite some elevated performance in injury-absence games, limited sample and season baseline insufficient to support +205 longshot pricing."
+    },
+    {
+      "bet": "Paige Bueckers OVER 19.5 Points",
+      "reason": "Deterministic validation rejection: No external odds found for Paige Bueckers Points"
+    },
+    {
+      "bet": "Paige Bueckers OVER 27.5 Points + Assists",
+      "reason": "Deterministic validation rejection: No external odds found for Paige Bueckers PRA"
+    },
+    {
+      "bet": "Flau'jae Johnson OVER 7.5 Rebounds + Assists",
+      "reason": "Deterministic validation rejection: No external odds found for Flau'jae Johnson Rebounds + Assists"
+    },
+    {
+      "bet": "Jessica Shepard OVER 14.5 Points",
+      "reason": "Deterministic validation rejection: No external odds found for Jessica Shepard Points"
+    },
+    {
+      "bet": "Arike Ogunbowale OVER 19.5 Points + Rebounds",
+      "reason": "Deterministic validation rejection: No external odds found for Arike Ogunbowale Points + Rebounds"
+    }
+  ],
+  "lotto_longshot_prop_board": [
+    {
+      "game": "Chicago Sky @ Washington Mystics",
+      "selection": "No supported +400 player-prop Over",
+      "available": false,
+      "confidence": "Pass",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Indiana Fever @ Minnesota Lynx",
+      "selection": "No supported +400 player-prop Over",
+      "available": false,
+      "confidence": "Pass",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Golden State Valkyries @ Los Angeles Sparks",
+      "selection": "No supported +400 player-prop Over",
+      "available": false,
+      "confidence": "Pass",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Las Vegas Aces @ Phoenix Mercury",
+      "selection": "No supported +400 player-prop Over",
+      "available": false,
+      "confidence": "Pass",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "slate_summary": "The Dallas Wings vs Seattle Storm matchup provides the strongest player prop evidence on today's slate. Paige Bueckers' elevated scoring (L10: 22.9 PPG, L3: 25.0 PPG) and improved 3PT shooting (40.5% L10) support both points-only and combo props. Flau'jae Johnson shows season-long consistency in Reb+Ast (7.7 avg), though recent decline warrants caution. Jessica Shepard offers value at +135 points despite inconsistency. The other two games lack player-level data or contain insufficient volume/opportunity signals to generate qualified picks. No game-level spreads or totals provide edge beyond the player prop evidence.",
+  "best_bet": "No bets passed deterministic validation.",
+  "picks": [],
+  "validation": {
+    "enabled": true,
+    "validated_count": 0,
+    "rejected_count": 5,
+    "minimum_confidence": 72,
+    "confidence_tiers": {
+      "Elite": "88-100",
+      "High": "80-87",
+      "Medium": "72-79",
+      "Below Threshold": "0-71"
+    },
+    "rule": "All recommended bets must match an exact external sportsbook line. Best American odds are selected deterministically for identical wagers."
+  },
+  "lotto_spread_board": [
+    {
+      "game": "Chicago Sky @ Washington Mystics",
+      "selection": "Washington Mystics -12.5",
+      "team": "Washington Mystics",
+      "line": -12.5,
+      "best_book": "theScore Bet",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Indiana Fever @ Minnesota Lynx",
+      "selection": "Indiana Fever -2",
+      "team": "Indiana Fever",
+      "line": -2.0,
+      "best_book": "FAN",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Golden State Valkyries @ Los Angeles Sparks",
+      "selection": "Golden State Valkyries -11.5",
+      "team": "Golden State Valkyries",
+      "line": -11.5,
+      "best_book": "theScore Bet",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Las Vegas Aces @ Phoenix Mercury",
+      "selection": "Las Vegas Aces -9.5",
+      "team": "Las Vegas Aces",
+      "line": -9.5,
+      "best_book": "DK",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_total_board": [
+    {
+      "game": "Chicago Sky @ Washington Mystics",
+      "selection": "Under 167.5",
+      "over_under": "Under",
+      "line": 167.5,
+      "best_book": "FD",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Indiana Fever @ Minnesota Lynx",
+      "selection": "Under 183.5",
+      "over_under": "Under",
+      "line": 183.5,
+      "best_book": "FAN",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Golden State Valkyries @ Los Angeles Sparks",
+      "selection": "Over 158.5",
+      "over_under": "Over",
+      "line": 158.5,
+      "best_book": "DK",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Las Vegas Aces @ Phoenix Mercury",
+      "selection": "Over 174",
+      "over_under": "Over",
+      "line": 174.0,
+      "best_book": "FAN",
+      "best_odds": -110,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_notice": "Entertainment-only side boards; excluded from grading and official records."
+}
