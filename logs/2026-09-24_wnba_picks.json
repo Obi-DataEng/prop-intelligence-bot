@@ -1,50 +1,150 @@
 {
-  "top_picks": [],
+  "top_picks": [
+    {
+      "rank": 1,
+      "pick_type": "player_prop",
+      "category": "Points",
+      "selection": "Caitlin Clark OVER 19.5 Points",
+      "player_name": "Caitlin Clark",
+      "team": "IND",
+      "opponent": "MIN",
+      "game": "Indiana Fever @ Minnesota Lynx",
+      "prop_line": 19.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "ReBet",
+      "best_odds": -151,
+      "prediction_confidence": 88,
+      "confidence_tier": "Elite",
+      "market_value_score": 72,
+      "market_value_tier": "Neutral",
+      "season_avg": 22.8,
+      "l3_avg": 26.7,
+      "l5_avg": 30.2,
+      "l10_avg": 26.1,
+      "l15_avg": 24.9,
+      "hit_rate_season": "5/5 100%",
+      "hit_rate_l10": "9/10 90%",
+      "injury_split_games": null,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "L5 avg 30.2 PPG significantly above season 22.8",
+        "L10 avg 26.1 PPG above line, 90% hit rate in L10",
+        "Minutes up 3.1 to 34.4 in L10",
+        "Usage up 1.0% to 21.6% in L10 vs season 28.6%",
+        "FGA up 2.6 to 18.3 in L10, 3P% at 37.2%"
+      ],
+      "key_factors": [
+        "Dominant recent form: 30.2 PPG L5, 100% hit rate vs this line",
+        "Season baseline 22.8 PPG already 3.3 points above line",
+        "Strong shooting: 47.1% FG, 37.2% 3P in L10",
+        "Matchup advantage: MIN ranks 13 vs PG defensively",
+        "5/5 games over 25.5 PPG suggests 19.5 is conservative"
+      ],
+      "risk_factors": [
+        "Playoff pressure may alter game script",
+        "MIN has strong defensive infrastructure despite rank"
+      ],
+      "reasoning": "Clark is in elite form with 30.2 PPG over L5 and 26.1 PPG in L10, both well above the 19.5 line. She has hit this exact line in 5 consecutive games with 100% frequency. Season baseline of 22.8 PPG already exceeds the prop, and L10 shooting efficiency (47.1% FG, 37.2% 3P) supports continued production.",
+      "line_shop_note": "ReBet -151 is the best available price found for the exact OVER 19.5 line.",
+      "confidence_score": 88,
+      "validated_game_key": "Indiana Fever@Minnesota Lynx",
+      "odds_validated": true
+    },
+    {
+      "rank": 2,
+      "pick_type": "player_prop",
+      "category": "Points",
+      "selection": "Kelsey Mitchell OVER 24.5 Points",
+      "player_name": "Kelsey Mitchell",
+      "team": "IND",
+      "opponent": "MIN",
+      "game": "Indiana Fever @ Minnesota Lynx",
+      "prop_line": 24.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "Fliff",
+      "best_odds": -115,
+      "prediction_confidence": 84,
+      "confidence_tier": "High",
+      "market_value_score": 70,
+      "market_value_tier": "Neutral",
+      "season_avg": 25.0,
+      "l3_avg": 25.0,
+      "l5_avg": 27.8,
+      "l10_avg": 27.3,
+      "l15_avg": 27.9,
+      "hit_rate_season": "5/5 100%",
+      "hit_rate_l10": "24/43 56%",
+      "injury_split_games": null,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "L5 avg 27.8 PPG above season 25.0",
+        "L10 avg 27.3 PPG above season 25.0",
+        "Minutes up 0.4 to 32.5 in L10",
+        "FGA up 1.5 to 18.0 in L10",
+        "3P% at 47.1% in L10, up 4.9% from season 42.3%"
+      ],
+      "key_factors": [
+        "L10 and L5 averages at 27.3-27.8 PPG exceed 24.5 line",
+        "Season baseline 25.0 PPG already 0.5 points above line",
+        "Perfect 5/5 hit rate at this exact line",
+        "Elite recent 3P shooting: 47.1% in L10 vs 42.3% season",
+        "MIN ranks 13 vs SG defensively, favorable matchup"
+      ],
+      "risk_factors": [
+        "56% L10 hit rate indicates some volatility",
+        "Playoff intensity may compress scoring"
+      ],
+      "reasoning": "Mitchell is performing above season baseline with 27.3 PPG in L10 and 27.8 PPG in L5, both comfortably above 24.5. She has hit this exact line in all 5 recent games with 100% frequency. Season average of 25.0 PPG already exceeds the prop, and her 3P shooting has accelerated to 47.1% in L10.",
+      "line_shop_note": "Fliff -115 is the best available price found for the exact OVER 24.5 line.",
+      "confidence_score": 84,
+      "validated_game_key": "Indiana Fever@Minnesota Lynx",
+      "odds_validated": true
+    }
+  ],
   "passes": [
     {
-      "player_name": "Dominique Malonga",
-      "prop": "OVER 26.5 Points + Rebounds + Assists",
-      "reason": "Despite L10 average of 27.6, season hit rate only 11% (2/18 games). L10 hit rate 60% offers some support, but the volatility and small sample of above-line games create unacceptable variance for the conservative line pricing (-120)."
+      "player_name": "Alyssa Thomas",
+      "prop": "OVER 0.5 Double Double",
+      "reason": "Despite -190 odds suggesting high probability, season baseline shows 0.6 DDL rate (34% historical hit). Recent L10 shows only 34% hit rate. Playoff environment may suppress assist volume below 2.5 APG threshold needed for DD."
     },
     {
-      "player_name": "Natisha Hiedeman",
-      "prop": "OVER 17.5 Points + Assists",
-      "reason": "L10 average 17.7 marginally above line, but L5 (15.0) and L3 (11.7) show sharp deceleration. Season hit rate only 36% on this line; recent form does not support conviction."
+      "player_name": "Shakira Austin",
+      "prop": "OVER 9.5 Rebounds",
+      "reason": "Season average 9.4 RPG is at line and recent form shows declining rebounding. L10 avg 8.0 RPG is 1.5 boards below line. Hit rate of 52% in L10 indicates insufficient edge. Better rebounding props available at higher confidence."
     },
     {
-      "player_name": "Paige Bueckers",
-      "prop": "OVER 2.5 Three Pointers",
-      "reason": "Huge odds discrepancy (+246 best vs +30 second) but season hit rate only 30% (6/20) and L10 hit rate 30% (3/10). Large plus-money pricing on a fundamentally low-probability event; violates longshot safety rule."
+      "player_name": "Sonia Citron",
+      "prop": "OVER 5.5 Assists",
+      "reason": "+140 pricing implies low probability despite L10 avg of 6.2 APG. Season hit rate only 31% at this line. Sample size concerns with limited 5-game reference window. Market discrepancy large but historical data does not support pick."
     },
     {
-      "player_name": "Flau'jae Johnson",
-      "prop": "OVER 5.5 Rebounds",
-      "reason": "Season average 4.0 rebounds well below line. Despite some elevated performance in injury-absence games, limited sample and season baseline insufficient to support +205 longshot pricing."
+      "player_name": "Gabby Williams",
+      "prop": "OVER 14.5 Points",
+      "reason": "Season baseline 14.4 PPG barely above line. L10 avg 13.5 PPG below threshold. Hit rate of 61% in L10 is moderate. GSV vs LAS matchup offers no particular advantage. Better player props available with stronger fundamentals."
     },
     {
-      "bet": "Paige Bueckers OVER 19.5 Points",
-      "reason": "Deterministic validation rejection: No external odds found for Paige Bueckers Points"
+      "player_name": "Kiki Iriafen",
+      "prop": "OVER 25.5 Pts + Reb",
+      "reason": "L10 avg 27.6 PPR exceeds line, but season baseline 24.8 shows recent acceleration may be temporary. Hit rate of 50% in L10 is borderline. Recent form (L5: 25.4) suggests possible regression. Prefer other IND props with higher confidence."
     },
     {
-      "bet": "Paige Bueckers OVER 27.5 Points + Assists",
-      "reason": "Deterministic validation rejection: No external odds found for Paige Bueckers PRA"
+      "bet": "Jackie Young OVER 21.5 Points",
+      "reason": "Deterministic validation rejection: Exact external line not found: Jackie Young OVER 21.5 Points"
     },
     {
-      "bet": "Flau'jae Johnson OVER 7.5 Rebounds + Assists",
-      "reason": "Deterministic validation rejection: No external odds found for Flau'jae Johnson Rebounds + Assists"
+      "bet": "Caitlin Clark OVER 34.0 Pts + Reb + Ast",
+      "reason": "Deterministic validation rejection: Exact external line not found: Caitlin Clark OVER 34.0 Points + Rebounds + Assists"
     },
     {
-      "bet": "Jessica Shepard OVER 14.5 Points",
-      "reason": "Deterministic validation rejection: No external odds found for Jessica Shepard Points"
-    },
-    {
-      "bet": "Arike Ogunbowale OVER 19.5 Points + Rebounds",
-      "reason": "Deterministic validation rejection: No external odds found for Arike Ogunbowale Points + Rebounds"
+      "bet": "A'ja Wilson OVER 34.5 Pts + Reb",
+      "reason": "Deterministic validation rejection: No external odds found for A'ja Wilson Points + Rebounds"
     }
   ],
   "lotto_longshot_prop_board": [
     {
-      "game": "Chicago Sky @ Washington Mystics",
+      "game": "Toronto Tempo @ Connecticut Sun",
       "selection": "No supported +400 player-prop Over",
       "available": false,
       "confidence": "Pass",
@@ -53,10 +153,31 @@
       "track_result": false
     },
     {
+      "game": "Chicago Sky @ Washington Mystics",
+      "selection": "Kiki Iriafen Over 34.5 Points + Rebounds",
+      "player": "Kiki Iriafen",
+      "market": "player_points_rebounds_alternate",
+      "line": 34.5,
+      "best_book": "DK",
+      "best_odds": 412,
+      "confidence": "Moderate",
+      "reasoning": "Kiki Iriafen OVER 34.5 Pts + Reb: L10 avg 27.6 PPR exceeds season 24.8. Recent form shows scoring spike (L10 17.0 PPG vs season 15.3) and rebounding remains elite (10.6 RPG L10). +412 odds create value if recent +2.8 point and +1.6 rebound elevation sustains.",
+      "candidate_id": "G2-C10",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
       "game": "Indiana Fever @ Minnesota Lynx",
-      "selection": "No supported +400 player-prop Over",
-      "available": false,
-      "confidence": "Pass",
+      "selection": "Caitlin Clark Over 45.5 PRA",
+      "player": "Caitlin Clark",
+      "market": "player_points_rebounds_assists_alternate",
+      "line": 45.5,
+      "best_book": "BetOnline.ag",
+      "best_odds": 425,
+      "confidence": "Moderate",
+      "reasoning": "Caitlin Clark OVER 45.5 PRA: L5 avg 44.8 PRA is within 0.7 of this line. Season baseline 35.1 is below, but recent elite form (39.3 L10, 44.8 L5) suggests strong upside in playoff game where she may dominate pace. 3/5 recent games exceed 42 PRA threshold.",
+      "candidate_id": "G3-C3",
       "selection_source": "The Odds API alternate props + model evidence",
       "official_pick": false,
       "track_result": false
@@ -72,21 +193,130 @@
     },
     {
       "game": "Las Vegas Aces @ Phoenix Mercury",
-      "selection": "No supported +400 player-prop Over",
-      "available": false,
-      "confidence": "Pass",
+      "selection": "Kahleah Copper Over 27.5 Points",
+      "player": "Kahleah Copper",
+      "market": "player_points_alternate",
+      "line": 27.5,
+      "best_book": "CZS",
+      "best_odds": 400,
+      "confidence": "Moderate",
+      "reasoning": "Kahleah Copper OVER 27.5 Points: Recent L5 avg 28.4 PPG and L10 avg 23.6 PPG show recent acceleration. Recent 3-game avg 28.3 PPG indicates strong current form. +400 pricing offers value if 27.5 line represents fair-to-low market assessment of her elevated play.",
+      "candidate_id": "G5-C1",
       "selection_source": "The Odds API alternate props + model evidence",
       "official_pick": false,
       "track_result": false
     }
   ],
-  "slate_summary": "The Dallas Wings vs Seattle Storm matchup provides the strongest player prop evidence on today's slate. Paige Bueckers' elevated scoring (L10: 22.9 PPG, L3: 25.0 PPG) and improved 3PT shooting (40.5% L10) support both points-only and combo props. Flau'jae Johnson shows season-long consistency in Reb+Ast (7.7 avg), though recent decline warrants caution. Jessica Shepard offers value at +135 points despite inconsistency. The other two games lack player-level data or contain insufficient volume/opportunity signals to generate qualified picks. No game-level spreads or totals provide edge beyond the player prop evidence.",
-  "best_bet": "No bets passed deterministic validation.",
-  "picks": [],
+  "slate_summary": "The 2026 WNBA playoff slate presents strong evidence concentrated in the Indiana Fever vs Minnesota Lynx game, where both Caitlin Clark and Kelsey Mitchell show elite recent form with L10/L5 averages significantly exceeding their prop lines. Clark benefits from exceptional volume elevation (+3.1 minutes, FGA up 2.6) and shooting efficiency (37.2% 3P in L10). Jackie Young and A'ja Wilson offer reliable production in the Las Vegas vs Phoenix matchup, though with slightly lower confidence floors. The Chicago vs Washington and Golden State vs LA games lack player-level evidence strength sufficient for top-5 placement. Market pricing is generally fair across all qualified props, with no extreme discrepancies creating additional value. Historical hit rates consistently support the selected plays, with multiple 60%+ confirmation thresholds across L10 windows.",
+  "best_bet": "Caitlin Clark OVER 19.5 Points (ReBet -151)",
+  "picks": [
+    {
+      "rank": 1,
+      "pick_type": "player_prop",
+      "category": "Points",
+      "selection": "Caitlin Clark OVER 19.5 Points",
+      "player_name": "Caitlin Clark",
+      "team": "IND",
+      "opponent": "MIN",
+      "game": "Indiana Fever @ Minnesota Lynx",
+      "prop_line": 19.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "ReBet",
+      "best_odds": -151,
+      "prediction_confidence": 88,
+      "confidence_tier": "Elite",
+      "market_value_score": 72,
+      "market_value_tier": "Neutral",
+      "season_avg": 22.8,
+      "l3_avg": 26.7,
+      "l5_avg": 30.2,
+      "l10_avg": 26.1,
+      "l15_avg": 24.9,
+      "hit_rate_season": "5/5 100%",
+      "hit_rate_l10": "9/10 90%",
+      "injury_split_games": null,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "L5 avg 30.2 PPG significantly above season 22.8",
+        "L10 avg 26.1 PPG above line, 90% hit rate in L10",
+        "Minutes up 3.1 to 34.4 in L10",
+        "Usage up 1.0% to 21.6% in L10 vs season 28.6%",
+        "FGA up 2.6 to 18.3 in L10, 3P% at 37.2%"
+      ],
+      "key_factors": [
+        "Dominant recent form: 30.2 PPG L5, 100% hit rate vs this line",
+        "Season baseline 22.8 PPG already 3.3 points above line",
+        "Strong shooting: 47.1% FG, 37.2% 3P in L10",
+        "Matchup advantage: MIN ranks 13 vs PG defensively",
+        "5/5 games over 25.5 PPG suggests 19.5 is conservative"
+      ],
+      "risk_factors": [
+        "Playoff pressure may alter game script",
+        "MIN has strong defensive infrastructure despite rank"
+      ],
+      "reasoning": "Clark is in elite form with 30.2 PPG over L5 and 26.1 PPG in L10, both well above the 19.5 line. She has hit this exact line in 5 consecutive games with 100% frequency. Season baseline of 22.8 PPG already exceeds the prop, and L10 shooting efficiency (47.1% FG, 37.2% 3P) supports continued production.",
+      "line_shop_note": "ReBet -151 is the best available price found for the exact OVER 19.5 line.",
+      "confidence_score": 88,
+      "validated_game_key": "Indiana Fever@Minnesota Lynx",
+      "odds_validated": true
+    },
+    {
+      "rank": 2,
+      "pick_type": "player_prop",
+      "category": "Points",
+      "selection": "Kelsey Mitchell OVER 24.5 Points",
+      "player_name": "Kelsey Mitchell",
+      "team": "IND",
+      "opponent": "MIN",
+      "game": "Indiana Fever @ Minnesota Lynx",
+      "prop_line": 24.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "Fliff",
+      "best_odds": -115,
+      "prediction_confidence": 84,
+      "confidence_tier": "High",
+      "market_value_score": 70,
+      "market_value_tier": "Neutral",
+      "season_avg": 25.0,
+      "l3_avg": 25.0,
+      "l5_avg": 27.8,
+      "l10_avg": 27.3,
+      "l15_avg": 27.9,
+      "hit_rate_season": "5/5 100%",
+      "hit_rate_l10": "24/43 56%",
+      "injury_split_games": null,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "L5 avg 27.8 PPG above season 25.0",
+        "L10 avg 27.3 PPG above season 25.0",
+        "Minutes up 0.4 to 32.5 in L10",
+        "FGA up 1.5 to 18.0 in L10",
+        "3P% at 47.1% in L10, up 4.9% from season 42.3%"
+      ],
+      "key_factors": [
+        "L10 and L5 averages at 27.3-27.8 PPG exceed 24.5 line",
+        "Season baseline 25.0 PPG already 0.5 points above line",
+        "Perfect 5/5 hit rate at this exact line",
+        "Elite recent 3P shooting: 47.1% in L10 vs 42.3% season",
+        "MIN ranks 13 vs SG defensively, favorable matchup"
+      ],
+      "risk_factors": [
+        "56% L10 hit rate indicates some volatility",
+        "Playoff intensity may compress scoring"
+      ],
+      "reasoning": "Mitchell is performing above season baseline with 27.3 PPG in L10 and 27.8 PPG in L5, both comfortably above 24.5. She has hit this exact line in all 5 recent games with 100% frequency. Season average of 25.0 PPG already exceeds the prop, and her 3P shooting has accelerated to 47.1% in L10.",
+      "line_shop_note": "Fliff -115 is the best available price found for the exact OVER 24.5 line.",
+      "confidence_score": 84,
+      "validated_game_key": "Indiana Fever@Minnesota Lynx",
+      "odds_validated": true
+    }
+  ],
   "validation": {
     "enabled": true,
-    "validated_count": 0,
-    "rejected_count": 5,
+    "validated_count": 2,
+    "rejected_count": 3,
     "minimum_confidence": 72,
     "confidence_tiers": {
       "Elite": "88-100",
@@ -98,11 +328,23 @@
   },
   "lotto_spread_board": [
     {
+      "game": "Toronto Tempo @ Connecticut Sun",
+      "selection": "Connecticut Sun -2.5",
+      "team": "Connecticut Sun",
+      "line": -2.5,
+      "best_book": "MGM",
+      "best_odds": -105,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
       "game": "Chicago Sky @ Washington Mystics",
-      "selection": "Washington Mystics -12.5",
+      "selection": "Washington Mystics -13",
       "team": "Washington Mystics",
-      "line": -12.5,
-      "best_book": "theScore Bet",
+      "line": -13.0,
+      "best_book": "MyBookie.ag",
       "best_odds": -110,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",
@@ -111,11 +353,11 @@
     },
     {
       "game": "Indiana Fever @ Minnesota Lynx",
-      "selection": "Indiana Fever -2",
+      "selection": "Indiana Fever -3.5",
       "team": "Indiana Fever",
-      "line": -2.0,
-      "best_book": "FAN",
-      "best_odds": -110,
+      "line": -3.5,
+      "best_book": "MGM",
+      "best_odds": -118,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",
       "official_pick": false,
@@ -123,11 +365,11 @@
     },
     {
       "game": "Golden State Valkyries @ Los Angeles Sparks",
-      "selection": "Golden State Valkyries -11.5",
+      "selection": "Golden State Valkyries -11",
       "team": "Golden State Valkyries",
-      "line": -11.5,
-      "best_book": "theScore Bet",
-      "best_odds": -110,
+      "line": -11.0,
+      "best_book": "LowVig.ag",
+      "best_odds": -108,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",
       "official_pick": false,
@@ -138,8 +380,8 @@
       "selection": "Las Vegas Aces -9.5",
       "team": "Las Vegas Aces",
       "line": -9.5,
-      "best_book": "DK",
-      "best_odds": -110,
+      "best_book": "LowVig.ag",
+      "best_odds": -108,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",
       "official_pick": false,
@@ -148,12 +390,24 @@
   ],
   "lotto_total_board": [
     {
+      "game": "Toronto Tempo @ Connecticut Sun",
+      "selection": "Over 166.5",
+      "over_under": "Over",
+      "line": 166.5,
+      "best_book": "PARX",
+      "best_odds": -137,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
       "game": "Chicago Sky @ Washington Mystics",
-      "selection": "Under 167.5",
-      "over_under": "Under",
+      "selection": "Over 167.5",
+      "over_under": "Over",
       "line": 167.5,
-      "best_book": "FD",
-      "best_odds": -110,
+      "best_book": "BR",
+      "best_odds": -117,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",
       "official_pick": false,
@@ -164,7 +418,7 @@
       "selection": "Under 183.5",
       "over_under": "Under",
       "line": 183.5,
-      "best_book": "FAN",
+      "best_book": "theScore Bet",
       "best_odds": -110,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",
@@ -176,7 +430,7 @@
       "selection": "Over 158.5",
       "over_under": "Over",
       "line": 158.5,
-      "best_book": "DK",
+      "best_book": "theScore Bet",
       "best_odds": -110,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",
@@ -185,10 +439,10 @@
     },
     {
       "game": "Las Vegas Aces @ Phoenix Mercury",
-      "selection": "Over 174",
-      "over_under": "Over",
-      "line": 174.0,
-      "best_book": "FAN",
+      "selection": "Under 175.5",
+      "over_under": "Under",
+      "line": 175.5,
+      "best_book": "MGM",
       "best_odds": -110,
       "confidence": "Market consensus",
       "selection_source": "all_book_market_consensus",

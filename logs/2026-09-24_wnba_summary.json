@@ -9,7 +9,7 @@
     },
     "wnba_player_stats": {
       "status": "success",
-      "html_rows": 34,
+      "html_rows": 158,
       "grid_rows": 0
     },
     "wnba_team_stats": {
@@ -20,11 +20,11 @@
     "wnba_hit_rate": {
       "status": "success",
       "html_rows": 0,
-      "grid_rows": 6
+      "grid_rows": 24
     },
     "wnba_injury_reports": {
       "status": "success",
-      "html_rows": 5,
+      "html_rows": 17,
       "grid_rows": 0
     },
     "wnba_volume_trends": {
@@ -32,22 +32,22 @@
       "primary_recent_window": "L10",
       "windows": {
         "L3": {
-          "html_rows": 40,
+          "html_rows": 182,
           "grid_rows": 0,
           "selected": true
         },
         "L5": {
-          "html_rows": 40,
+          "html_rows": 182,
           "grid_rows": 0,
           "selected": true
         },
         "L10": {
-          "html_rows": 40,
+          "html_rows": 182,
           "grid_rows": 0,
           "selected": true
         },
         "L15": {
-          "html_rows": 40,
+          "html_rows": 182,
           "grid_rows": 0,
           "selected": true
         }
@@ -55,12 +55,12 @@
     },
     "wnba_injury_splits": {
       "status": "success",
-      "html_rows": 8,
+      "html_rows": 9,
       "grid_rows": 0
     },
     "wnba_odds_discrepancies": {
       "status": "success",
-      "html_rows": 16,
+      "html_rows": 52,
       "grid_rows": 0
     }
   }

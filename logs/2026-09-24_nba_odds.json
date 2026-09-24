@@ -168,9 +168,9 @@
           "home_ml": -125,
           "away_ml": 105,
           "home_spread": -1.5,
-          "home_spread_odds": -110,
+          "home_spread_odds": -115,
           "away_spread": 1.5,
-          "away_spread_odds": -110,
+          "away_spread_odds": -105,
           "total": 222.0,
           "over_odds": -110,
           "under_odds": -110
@@ -338,13 +338,13 @@
           "under_odds": -110
         },
         "FAN": {
-          "home_ml": -195,
-          "away_ml": 160,
-          "home_spread": -5.0,
-          "home_spread_odds": -120,
-          "away_spread": 5.0,
-          "away_spread_odds": 100,
-          "total": 233.5,
+          "home_ml": -200,
+          "away_ml": 165,
+          "home_spread": -6.0,
+          "home_spread_odds": -105,
+          "away_spread": 6.0,
+          "away_spread_odds": -115,
+          "total": 233.0,
           "over_odds": -110,
           "under_odds": -110
         },
@@ -528,9 +528,9 @@
           "home_spread_odds": -115,
           "away_spread": 1.5,
           "away_spread_odds": -105,
-          "total": 231.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "total": 230.5,
+          "over_odds": -115,
+          "under_odds": -105
         },
         "ReBet": {
           "home_ml": -128,
@@ -540,8 +540,8 @@
           "away_spread": 1.5,
           "away_spread_odds": -111,
           "total": 230.5,
-          "over_odds": -119,
-          "under_odds": -109
+          "over_odds": -116,
+          "under_odds": -111
         },
         "Hard Rock Bet (OH)": {
           "home_ml": -125,
@@ -660,6 +660,39 @@
           "total": 233.5,
           "over_odds": -107,
           "under_odds": -107
+        },
+        "BALLY": {
+          "home_ml": -136,
+          "away_ml": 112,
+          "home_spread": -2.5,
+          "home_spread_odds": -110,
+          "away_spread": 2.5,
+          "away_spread_odds": -110,
+          "total": 233.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "PARX": {
+          "home_ml": -136,
+          "away_ml": 112,
+          "home_spread": -2.5,
+          "home_spread_odds": -110,
+          "away_spread": 2.5,
+          "away_spread_odds": -110,
+          "total": 233.5,
+          "over_odds": -112,
+          "under_odds": -109
+        },
+        "BR": {
+          "home_ml": -137,
+          "away_ml": 110,
+          "home_spread": -2.5,
+          "home_spread_odds": -112,
+          "away_spread": 2.5,
+          "away_spread_odds": -112,
+          "total": 233.5,
+          "over_odds": -113,
+          "under_odds": -110
         }
       }
     },
@@ -670,15 +703,15 @@
       "commence_time": "2026-10-21T23:10:00Z",
       "bookmakers": {
         "DK": {
-          "home_ml": -230,
-          "away_ml": 190,
+          "home_ml": -238,
+          "away_ml": 195,
           "home_spread": -6.5,
           "home_spread_odds": -110,
           "away_spread": 6.5,
           "away_spread_odds": -110,
-          "total": 238.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "total": 237.5,
+          "over_odds": -115,
+          "under_odds": -105
         },
         "Bovada": {
           "home_ml": -230,
@@ -687,9 +720,9 @@
           "home_spread_odds": -110,
           "away_spread": 6.5,
           "away_spread_odds": -110,
-          "total": 238.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "total": 237.5,
+          "over_odds": -115,
+          "under_odds": -105
         },
         "MGM": {
           "home_ml": -220,
@@ -766,26 +799,26 @@
       "commence_time": "2026-10-21T23:40:00Z",
       "bookmakers": {
         "DK": {
-          "home_ml": 142,
-          "away_ml": -170,
+          "home_ml": 140,
+          "away_ml": -166,
           "home_spread": 4.5,
           "home_spread_odds": -110,
           "away_spread": -4.5,
           "away_spread_odds": -110,
-          "total": 226.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "total": 225.5,
+          "over_odds": -115,
+          "under_odds": -105
         },
         "Bovada": {
-          "home_ml": 145,
-          "away_ml": -170,
+          "home_ml": 140,
+          "away_ml": -165,
           "home_spread": 4.5,
           "home_spread_odds": -110,
           "away_spread": -4.5,
           "away_spread_odds": -110,
-          "total": 226.5,
-          "over_odds": -105,
-          "under_odds": -115
+          "total": 225.5,
+          "over_odds": -115,
+          "under_odds": -105
         },
         "MGM": {
           "home_ml": 140,
@@ -821,12 +854,12 @@
           "under_odds": -109
         },
         "theScore Bet": {
-          "home_ml": 145,
-          "away_ml": -170,
+          "home_ml": 140,
+          "away_ml": -165,
           "home_spread": 4.5,
-          "home_spread_odds": -110,
+          "home_spread_odds": -115,
           "away_spread": -4.5,
-          "away_spread_odds": -110,
+          "away_spread_odds": -105,
           "total": 225.5,
           "over_odds": -115,
           "under_odds": -105
@@ -971,24 +1004,24 @@
         "DK": {
           "home_ml": 136,
           "away_ml": -162,
-          "home_spread": 3.5,
-          "home_spread_odds": -102,
-          "away_spread": -3.5,
-          "away_spread_odds": -118,
-          "total": 242.5,
-          "over_odds": -115,
-          "under_odds": -105
+          "home_spread": 4.5,
+          "home_spread_odds": -118,
+          "away_spread": -4.5,
+          "away_spread_odds": -102,
+          "total": 243.5,
+          "over_odds": -105,
+          "under_odds": -115
         },
         "Bovada": {
           "home_ml": 135,
           "away_ml": -160,
-          "home_spread": 3.5,
-          "home_spread_odds": 100,
-          "away_spread": -3.5,
-          "away_spread_odds": -120,
-          "total": 242.5,
-          "over_odds": -115,
-          "under_odds": -105
+          "home_spread": 4.5,
+          "home_spread_odds": -120,
+          "away_spread": -4.5,
+          "away_spread_odds": 100,
+          "total": 243.5,
+          "over_odds": -105,
+          "under_odds": -115
         },
         "MGM": {
           "home_ml": 140,
@@ -1005,9 +1038,9 @@
           "home_ml": 140,
           "away_ml": -165,
           "home_spread": 3.5,
-          "home_spread_odds": -105,
+          "home_spread_odds": -110,
           "away_spread": -3.5,
-          "away_spread_odds": -115,
+          "away_spread_odds": -110,
           "total": 242.5,
           "over_odds": -110,
           "under_odds": -110
@@ -1275,8 +1308,8 @@
           "away_spread": 4.5,
           "away_spread_odds": -109,
           "total": 235.5,
-          "over_odds": -116,
-          "under_odds": -111
+          "over_odds": -114,
+          "under_odds": -114
         },
         "Bovada": {
           "home_ml": -180,
@@ -1319,8 +1352,8 @@
           "away_spread": 4.5,
           "away_spread_odds": -105,
           "total": 235.5,
-          "over_odds": -115,
-          "under_odds": -105
+          "over_odds": -110,
+          "under_odds": -110
         },
         "LowVig.ag": {
           "home_ml": null,
@@ -2390,8 +2423,8 @@
           "away_spread": 1.5,
           "away_spread_odds": -120,
           "total": 237.5,
-          "over_odds": -110,
-          "under_odds": -110
+          "over_odds": -105,
+          "under_odds": -115
         },
         "ReBet": {
           "home_ml": -118,
@@ -2401,8 +2434,8 @@
           "away_spread": 1.5,
           "away_spread_odds": -119,
           "total": 237.5,
-          "over_odds": -114,
-          "under_odds": -114
+          "over_odds": -111,
+          "under_odds": -116
         },
         "Hard Rock Bet (OH)": {
           "home_ml": -115,
@@ -2679,6 +2712,26 @@
   "player_props": {
     "Boston Celtics@Detroit Pistons": {
       "player_assists": {
+        "Cade Cunningham": {
+          "line": 9.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -108
+              },
+              {
+                "side": "Under",
+                "line": 9.5,
+                "odds": -122
+              }
+            ],
+            "line": 9.5,
+            "over": -108,
+            "under": -122
+          }
+        },
         "Jayson Tatum": {
           "line": 5.5,
           "FD": {
@@ -2703,37 +2756,17 @@
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": -140
+                "odds": -130
               },
               {
                 "side": "Under",
                 "line": 5.5,
-                "odds": 105
+                "odds": 100
               }
             ],
             "line": 5.5,
-            "over": -140,
-            "under": 105
-          }
-        },
-        "Cade Cunningham": {
-          "line": 9.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -108
-              },
-              {
-                "side": "Under",
-                "line": 9.5,
-                "odds": -122
-              }
-            ],
-            "line": 9.5,
-            "over": -108,
-            "under": -122
+            "over": -130,
+            "under": 100
           }
         }
       },
@@ -2744,13 +2777,13 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": -1200
+                "line": 13.5,
+                "odds": 680
               },
               {
                 "side": "Over",
-                "line": 13.5,
-                "odds": 680
+                "line": 7.5,
+                "odds": -280
               },
               {
                 "side": "Over",
@@ -2759,8 +2792,8 @@
               },
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": -280
+                "line": 5.5,
+                "odds": -1200
               },
               {
                 "side": "Over",
@@ -2801,22 +2834,22 @@
               {
                 "side": "Over",
                 "line": 10.5,
-                "odds": 135
+                "odds": 140
               },
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": 210
+                "odds": 225
               },
               {
                 "side": "Over",
                 "line": 12.5,
-                "odds": 340
+                "odds": 350
               },
               {
                 "side": "Over",
                 "line": 13.5,
-                "odds": 500
+                "odds": 550
               },
               {
                 "side": "Over",
@@ -2844,13 +2877,13 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": -132
+                "line": 3.5,
+                "odds": -650
               },
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": -650
+                "line": 7.5,
+                "odds": 280
               },
               {
                 "side": "Over",
@@ -2859,8 +2892,8 @@
               },
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": 280
+                "line": 5.5,
+                "odds": -132
               },
               {
                 "side": "Over",
@@ -2876,22 +2909,22 @@
               {
                 "side": "Over",
                 "line": 2.5,
-                "odds": -2000
+                "odds": -1800
               },
               {
                 "side": "Over",
                 "line": 3.5,
-                "odds": -700
+                "odds": -650
               },
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": -325
+                "odds": -300
               },
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": -140
+                "odds": -130
               },
               {
                 "side": "Over",
@@ -2901,7 +2934,7 @@
               {
                 "side": "Over",
                 "line": 7.5,
-                "odds": 225
+                "odds": 230
               },
               {
                 "side": "Over",
@@ -2921,15 +2954,35 @@
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": 1800
+                "odds": 1900
               }
             ],
             "line": 11.5,
-            "over": 1800
+            "over": 1900
           }
         }
       },
       "player_points": {
+        "Cade Cunningham": {
+          "line": 24.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": -108
+              },
+              {
+                "side": "Under",
+                "line": 24.5,
+                "odds": -122
+              }
+            ],
+            "line": 24.5,
+            "over": -108,
+            "under": -122
+          }
+        },
         "Jayson Tatum": {
           "line": 26.5,
           "FD": {
@@ -2966,237 +3019,22 @@
             "over": -115,
             "under": -115
           }
-        },
-        "Cade Cunningham": {
-          "line": 24.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 24.5,
-                "odds": -108
-              },
-              {
-                "side": "Under",
-                "line": 24.5,
-                "odds": -122
-              }
-            ],
-            "line": 24.5,
-            "over": -108,
-            "under": -122
-          }
         }
       },
       "player_points_alternate": {
-        "Cade Cunningham": {
-          "line": 39.5,
-          "FD": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 9.5,
-                "odds": -10000
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": -320
-              },
-              {
-                "side": "Over",
-                "line": 34.5,
-                "odds": 600
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": -1400
-              },
-              {
-                "side": "Over",
-                "line": 49.5,
-                "odds": 7000
-              },
-              {
-                "side": "Over",
-                "line": 44.5,
-                "odds": 3500
-              },
-              {
-                "side": "Over",
-                "line": 29.5,
-                "odds": 250
-              },
-              {
-                "side": "Over",
-                "line": 39.5,
-                "odds": 1300
-              },
-              {
-                "side": "Over",
-                "line": 24.5,
-                "odds": -106
-              }
-            ],
-            "line": 24.5,
-            "over": -106
-          },
-          "FAN": {
-            "offers": [
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": -2500
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": -1800
-              },
-              {
-                "side": "Over",
-                "line": 15.5,
-                "odds": -1300
-              },
-              {
-                "side": "Over",
-                "line": 16.5,
-                "odds": -900
-              },
-              {
-                "side": "Over",
-                "line": 17.5,
-                "odds": -700
-              },
-              {
-                "side": "Over",
-                "line": 18.5,
-                "odds": -525
-              },
-              {
-                "side": "Over",
-                "line": 19.5,
-                "odds": -400
-              },
-              {
-                "side": "Over",
-                "line": 20.5,
-                "odds": -300
-              },
-              {
-                "side": "Over",
-                "line": 21.5,
-                "odds": -240
-              },
-              {
-                "side": "Over",
-                "line": 22.5,
-                "odds": -175
-              },
-              {
-                "side": "Over",
-                "line": 23.5,
-                "odds": -140
-              },
-              {
-                "side": "Over",
-                "line": 24.5,
-                "odds": -105
-              },
-              {
-                "side": "Over",
-                "line": 25.5,
-                "odds": 115
-              },
-              {
-                "side": "Over",
-                "line": 26.5,
-                "odds": 130
-              },
-              {
-                "side": "Over",
-                "line": 27.5,
-                "odds": 155
-              },
-              {
-                "side": "Over",
-                "line": 28.5,
-                "odds": 190
-              },
-              {
-                "side": "Over",
-                "line": 29.5,
-                "odds": 230
-              },
-              {
-                "side": "Over",
-                "line": 30.5,
-                "odds": 290
-              },
-              {
-                "side": "Over",
-                "line": 31.5,
-                "odds": 340
-              },
-              {
-                "side": "Over",
-                "line": 32.5,
-                "odds": 400
-              },
-              {
-                "side": "Over",
-                "line": 33.5,
-                "odds": 475
-              },
-              {
-                "side": "Over",
-                "line": 34.5,
-                "odds": 600
-              },
-              {
-                "side": "Over",
-                "line": 35.5,
-                "odds": 750
-              },
-              {
-                "side": "Over",
-                "line": 36.5,
-                "odds": 900
-              },
-              {
-                "side": "Over",
-                "line": 37.5,
-                "odds": 1000
-              },
-              {
-                "side": "Over",
-                "line": 38.5,
-                "odds": 1100
-              },
-              {
-                "side": "Over",
-                "line": 39.5,
-                "odds": 1400
-              }
-            ],
-            "line": 39.5,
-            "over": 1400
-          }
-        },
         "Jayson Tatum": {
           "line": 40.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
-                "line": 19.5,
-                "odds": -500
+                "line": 34.5,
+                "odds": 340
               },
               {
                 "side": "Over",
-                "line": 34.5,
-                "odds": 340
+                "line": 44.5,
+                "odds": 1500
               },
               {
                 "side": "Over",
@@ -3210,8 +3048,13 @@
               },
               {
                 "side": "Over",
-                "line": 44.5,
-                "odds": 1500
+                "line": 39.5,
+                "odds": 800
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": -172
               },
               {
                 "side": "Over",
@@ -3220,24 +3063,19 @@
               },
               {
                 "side": "Over",
-                "line": 39.5,
-                "odds": 800
-              },
-              {
-                "side": "Over",
-                "line": 24.5,
-                "odds": -172
+                "line": 19.5,
+                "odds": -500
               }
             ],
-            "line": 24.5,
-            "over": -172
+            "line": 19.5,
+            "over": -500
           },
           "FAN": {
             "offers": [
               {
                 "side": "Over",
                 "line": 15.5,
-                "odds": -2000
+                "odds": -1800
               },
               {
                 "side": "Over",
@@ -3277,7 +3115,7 @@
               {
                 "side": "Over",
                 "line": 23.5,
-                "odds": -240
+                "odds": -225
               },
               {
                 "side": "Over",
@@ -3297,7 +3135,7 @@
               {
                 "side": "Over",
                 "line": 27.5,
-                "odds": 105
+                "odds": 110
               },
               {
                 "side": "Over",
@@ -3317,7 +3155,7 @@
               {
                 "side": "Over",
                 "line": 31.5,
-                "odds": 225
+                "odds": 210
               },
               {
                 "side": "Over",
@@ -3332,7 +3170,7 @@
               {
                 "side": "Over",
                 "line": 34.5,
-                "odds": 350
+                "odds": 375
               },
               {
                 "side": "Over",
@@ -3367,6 +3205,201 @@
             ],
             "line": 40.5,
             "over": 1000
+          }
+        },
+        "Cade Cunningham": {
+          "line": 39.5,
+          "FD": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 34.5,
+                "odds": 600
+              },
+              {
+                "side": "Over",
+                "line": 9.5,
+                "odds": -10000
+              },
+              {
+                "side": "Over",
+                "line": 44.5,
+                "odds": 3500
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -1400
+              },
+              {
+                "side": "Over",
+                "line": 49.5,
+                "odds": 7000
+              },
+              {
+                "side": "Over",
+                "line": 39.5,
+                "odds": 1300
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": -106
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 250
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": -320
+              }
+            ],
+            "line": 19.5,
+            "over": -320
+          },
+          "FAN": {
+            "offers": [
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": -2500
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -1700
+              },
+              {
+                "side": "Over",
+                "line": 15.5,
+                "odds": -1200
+              },
+              {
+                "side": "Over",
+                "line": 16.5,
+                "odds": -900
+              },
+              {
+                "side": "Over",
+                "line": 17.5,
+                "odds": -650
+              },
+              {
+                "side": "Over",
+                "line": 18.5,
+                "odds": -475
+              },
+              {
+                "side": "Over",
+                "line": 19.5,
+                "odds": -375
+              },
+              {
+                "side": "Over",
+                "line": 20.5,
+                "odds": -300
+              },
+              {
+                "side": "Over",
+                "line": 21.5,
+                "odds": -225
+              },
+              {
+                "side": "Over",
+                "line": 22.5,
+                "odds": -165
+              },
+              {
+                "side": "Over",
+                "line": 23.5,
+                "odds": -130
+              },
+              {
+                "side": "Over",
+                "line": 24.5,
+                "odds": -105
+              },
+              {
+                "side": "Over",
+                "line": 25.5,
+                "odds": 120
+              },
+              {
+                "side": "Over",
+                "line": 26.5,
+                "odds": 135
+              },
+              {
+                "side": "Over",
+                "line": 27.5,
+                "odds": 160
+              },
+              {
+                "side": "Over",
+                "line": 28.5,
+                "odds": 190
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 240
+              },
+              {
+                "side": "Over",
+                "line": 30.5,
+                "odds": 300
+              },
+              {
+                "side": "Over",
+                "line": 31.5,
+                "odds": 350
+              },
+              {
+                "side": "Over",
+                "line": 32.5,
+                "odds": 400
+              },
+              {
+                "side": "Over",
+                "line": 33.5,
+                "odds": 500
+              },
+              {
+                "side": "Over",
+                "line": 34.5,
+                "odds": 650
+              },
+              {
+                "side": "Over",
+                "line": 35.5,
+                "odds": 800
+              },
+              {
+                "side": "Over",
+                "line": 36.5,
+                "odds": 950
+              },
+              {
+                "side": "Over",
+                "line": 37.5,
+                "odds": 1100
+              },
+              {
+                "side": "Over",
+                "line": 38.5,
+                "odds": 1200
+              },
+              {
+                "side": "Over",
+                "line": 39.5,
+                "odds": 1500
+              }
+            ],
+            "line": 39.5,
+            "over": 1500
           }
         }
       },
@@ -3632,8 +3665,18 @@
             "offers": [
               {
                 "side": "Over",
+                "line": 13.5,
+                "odds": 680
+              },
+              {
+                "side": "Over",
                 "line": 9.5,
                 "odds": 100
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": -1000
               },
               {
                 "side": "Over",
@@ -3642,27 +3685,17 @@
               },
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": -250
-              },
-              {
-                "side": "Over",
-                "line": 13.5,
-                "odds": 680
-              },
-              {
-                "side": "Over",
                 "line": 15.5,
                 "odds": 1500
               },
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": -1000
+                "line": 7.5,
+                "odds": -250
               }
             ],
-            "line": 5.5,
-            "over": -1000
+            "line": 7.5,
+            "over": -250
           },
           "FAN": {
             "offers": [
@@ -3674,17 +3707,17 @@
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": -1000
+                "odds": -900
               },
               {
                 "side": "Over",
                 "line": 6.5,
-                "odds": -475
+                "odds": -450
               },
               {
                 "side": "Over",
                 "line": 7.5,
-                "odds": -275
+                "odds": -250
               },
               {
                 "side": "Over",
@@ -3714,7 +3747,7 @@
               {
                 "side": "Over",
                 "line": 13.5,
-                "odds": 650
+                "odds": 700
               },
               {
                 "side": "Over",
@@ -3737,13 +3770,18 @@
           }
         },
         "Cade Cunningham": {
-          "line": 10.5,
+          "line": 11.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
                 "line": 9.5,
                 "odds": 830
+              },
+              {
+                "side": "Over",
+                "line": 5.5,
+                "odds": 106
               },
               {
                 "side": "Over",
@@ -3754,11 +3792,6 @@
                 "side": "Over",
                 "line": 7.5,
                 "odds": 370
-              },
-              {
-                "side": "Over",
-                "line": 5.5,
-                "odds": 106
               },
               {
                 "side": "Over",
@@ -3815,10 +3848,15 @@
                 "side": "Over",
                 "line": 10.5,
                 "odds": 1400
+              },
+              {
+                "side": "Over",
+                "line": 11.5,
+                "odds": 2200
               }
             ],
-            "line": 10.5,
-            "over": 1400
+            "line": 11.5,
+            "over": 2200
           }
         }
       },
@@ -3925,7 +3963,7 @@
       },
       "player_threes_alternate": {
         "Jayson Tatum": {
-          "line": 7.5,
+          "line": 3.5,
           "FD": {
             "offers": [
               {
@@ -3935,8 +3973,8 @@
               },
               {
                 "side": "Over",
-                "line": 1.5,
-                "odds": -430
+                "line": 2.5,
+                "odds": -138
               },
               {
                 "side": "Over",
@@ -3945,8 +3983,8 @@
               },
               {
                 "side": "Over",
-                "line": 2.5,
-                "odds": -138
+                "line": 7.5,
+                "odds": 3500
               },
               {
                 "side": "Over",
@@ -3960,17 +3998,17 @@
               },
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": 190
+                "line": 1.5,
+                "odds": -430
               },
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": 3500
+                "line": 3.5,
+                "odds": 190
               }
             ],
-            "line": 7.5,
-            "over": 3500
+            "line": 3.5,
+            "over": 190
           }
         },
         "Cade Cunningham": {
@@ -3984,8 +4022,8 @@
               },
               {
                 "side": "Over",
-                "line": 1.5,
-                "odds": -192
+                "line": 2.5,
+                "odds": 158
               },
               {
                 "side": "Over",
@@ -3994,13 +4032,13 @@
               },
               {
                 "side": "Over",
-                "line": 2.5,
-                "odds": 158
+                "line": 0.5,
+                "odds": -1000
               },
               {
                 "side": "Over",
-                "line": 0.5,
-                "odds": -1000
+                "line": 1.5,
+                "odds": -192
               },
               {
                 "side": "Over",
@@ -4044,13 +4082,8 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": -1450
-              },
-              {
-                "side": "Over",
-                "line": 11.5,
-                "odds": 1060
+                "line": 7.5,
+                "odds": 154
               },
               {
                 "side": "Over",
@@ -4064,29 +4097,34 @@
               },
               {
                 "side": "Over",
-                "line": 13.5,
-                "odds": 3000
+                "line": 3.5,
+                "odds": -1450
               },
               {
                 "side": "Over",
-                "line": 7.5,
-                "odds": 154
+                "line": 11.5,
+                "odds": 1060
+              },
+              {
+                "side": "Over",
+                "line": 13.5,
+                "odds": 3000
               }
             ],
-            "line": 7.5,
-            "over": 154
+            "line": 13.5,
+            "over": 3000
           },
           "FAN": {
             "offers": [
               {
                 "side": "Over",
                 "line": 3.5,
-                "odds": -1100
+                "odds": -1200
               },
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": -450
+                "odds": -475
               },
               {
                 "side": "Over",
@@ -4096,27 +4134,27 @@
               {
                 "side": "Over",
                 "line": 6.5,
-                "odds": -115
+                "odds": -120
               },
               {
                 "side": "Over",
                 "line": 7.5,
-                "odds": 140
+                "odds": 135
               },
               {
                 "side": "Over",
                 "line": 8.5,
-                "odds": 230
+                "odds": 225
               },
               {
                 "side": "Over",
                 "line": 9.5,
-                "odds": 350
+                "odds": 375
               },
               {
                 "side": "Over",
                 "line": 10.5,
-                "odds": 600
+                "odds": 650
               },
               {
                 "side": "Over",
@@ -4126,7 +4164,7 @@
               {
                 "side": "Over",
                 "line": 12.5,
-                "odds": 1500
+                "odds": 1400
               },
               {
                 "side": "Over",
@@ -4168,16 +4206,6 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 29.5,
-                "odds": 176
-              },
-              {
-                "side": "Over",
-                "line": 14.5,
-                "odds": -2200
-              },
-              {
-                "side": "Over",
                 "line": 34.5,
                 "odds": 420
               },
@@ -4185,6 +4213,11 @@
                 "side": "Over",
                 "line": 19.5,
                 "odds": -410
+              },
+              {
+                "side": "Over",
+                "line": 29.5,
+                "odds": 176
               },
               {
                 "side": "Over",
@@ -4205,22 +4238,32 @@
                 "side": "Over",
                 "line": 24.5,
                 "odds": -146
+              },
+              {
+                "side": "Over",
+                "line": 14.5,
+                "odds": -2200
               }
             ],
-            "line": 24.5,
-            "over": -146
+            "line": 14.5,
+            "over": -2200
           },
           "FAN": {
             "offers": [
               {
                 "side": "Over",
+                "line": 13.5,
+                "odds": -2500
+              },
+              {
+                "side": "Over",
                 "line": 14.5,
-                "odds": -2200
+                "odds": -1800
               },
               {
                 "side": "Over",
                 "line": 15.5,
-                "odds": -1500
+                "odds": -1400
               },
               {
                 "side": "Over",
@@ -4230,12 +4273,12 @@
               {
                 "side": "Over",
                 "line": 17.5,
-                "odds": -900
+                "odds": -800
               },
               {
                 "side": "Over",
                 "line": 18.5,
-                "odds": -650
+                "odds": -630
               },
               {
                 "side": "Over",
@@ -4260,22 +4303,22 @@
               {
                 "side": "Over",
                 "line": 23.5,
-                "odds": -190
+                "odds": -175
               },
               {
                 "side": "Over",
                 "line": 24.5,
-                "odds": -145
+                "odds": -140
               },
               {
                 "side": "Over",
                 "line": 25.5,
-                "odds": -120
+                "odds": -115
               },
               {
                 "side": "Over",
                 "line": 26.5,
-                "odds": 105
+                "odds": 110
               },
               {
                 "side": "Over",
@@ -4285,47 +4328,47 @@
               {
                 "side": "Over",
                 "line": 28.5,
-                "odds": 140
+                "odds": 150
               },
               {
                 "side": "Over",
                 "line": 29.5,
-                "odds": 170
+                "odds": 175
               },
               {
                 "side": "Over",
                 "line": 30.5,
-                "odds": 200
+                "odds": 210
               },
               {
                 "side": "Over",
                 "line": 31.5,
-                "odds": 240
+                "odds": 260
               },
               {
                 "side": "Over",
                 "line": 32.5,
-                "odds": 290
+                "odds": 300
               },
               {
                 "side": "Over",
                 "line": 33.5,
-                "odds": 320
+                "odds": 350
               },
               {
                 "side": "Over",
                 "line": 34.5,
-                "odds": 375
+                "odds": 400
               },
               {
                 "side": "Over",
                 "line": 35.5,
-                "odds": 475
+                "odds": 500
               },
               {
                 "side": "Over",
                 "line": 36.5,
-                "odds": 600
+                "odds": 650
               },
               {
                 "side": "Over",
@@ -4335,12 +4378,12 @@
               {
                 "side": "Over",
                 "line": 38.5,
-                "odds": 850
+                "odds": 900
               },
               {
                 "side": "Over",
                 "line": 39.5,
-                "odds": 950
+                "odds": 1000
               },
               {
                 "side": "Over",
@@ -4484,17 +4527,17 @@
             "offers": [
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": 158
+                "line": 5.5,
+                "odds": 800
               },
               {
                 "side": "Over",
-                "line": 5.5,
-                "odds": 800
+                "line": 3.5,
+                "odds": 158
               }
             ],
-            "line": 5.5,
-            "over": 800
+            "line": 3.5,
+            "over": 158
           },
           "FAN": {
             "offers": [
@@ -4516,26 +4559,26 @@
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": 270
+                "odds": 290
               },
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": 500
+                "odds": 550
               },
               {
                 "side": "Over",
                 "line": 6.5,
-                "odds": 950
+                "odds": 1000
               },
               {
                 "side": "Over",
                 "line": 7.5,
-                "odds": 1900
+                "odds": 2000
               }
             ],
             "line": 7.5,
-            "over": 1900
+            "over": 2000
           }
         }
       },
@@ -4585,13 +4628,18 @@
       },
       "player_threes_alternate": {
         "Jalen Brunson": {
-          "line": 1.5,
+          "line": 4.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
-                "line": 2.5,
-                "odds": 118
+                "line": 1.5,
+                "odds": -265
+              },
+              {
+                "side": "Over",
+                "line": 3.5,
+                "odds": 285
               },
               {
                 "side": "Over",
@@ -4605,27 +4653,22 @@
               },
               {
                 "side": "Over",
-                "line": 3.5,
-                "odds": 285
-              },
-              {
-                "side": "Over",
                 "line": 0.5,
                 "odds": -1600
               },
               {
                 "side": "Over",
-                "line": 4.5,
-                "odds": 700
+                "line": 2.5,
+                "odds": 118
               },
               {
                 "side": "Over",
-                "line": 1.5,
-                "odds": -265
+                "line": 4.5,
+                "odds": 700
               }
             ],
-            "line": 1.5,
-            "over": -265
+            "line": 4.5,
+            "over": 700
           }
         }
       }
@@ -4676,17 +4719,17 @@
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": -145
+                "odds": -140
               },
               {
                 "side": "Under",
                 "line": 5.5,
-                "odds": 110
+                "odds": 105
               }
             ],
             "line": 5.5,
-            "over": -145,
-            "under": 110
+            "over": -140,
+            "under": 105
           }
         }
       },
@@ -4749,27 +4792,27 @@
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": -145
+                "odds": -140
               },
               {
                 "side": "Over",
                 "line": 6.5,
-                "odds": 125
+                "odds": 130
               },
               {
                 "side": "Over",
                 "line": 7.5,
-                "odds": 210
+                "odds": 225
               },
               {
                 "side": "Over",
                 "line": 8.5,
-                "odds": 350
+                "odds": 375
               },
               {
                 "side": "Over",
                 "line": 9.5,
-                "odds": 650
+                "odds": 600
               },
               {
                 "side": "Over",
@@ -4779,11 +4822,11 @@
               {
                 "side": "Over",
                 "line": 11.5,
-                "odds": 1600
+                "odds": 1800
               }
             ],
             "line": 11.5,
-            "over": 1600
+            "over": 1800
           }
         },
         "Victor Wembanyama": {
@@ -4819,41 +4862,41 @@
               {
                 "side": "Over",
                 "line": 1.5,
-                "odds": -650
+                "odds": -630
               },
               {
                 "side": "Over",
                 "line": 2.5,
-                "odds": -210
+                "odds": -190
               },
               {
                 "side": "Over",
                 "line": 3.5,
-                "odds": 120
+                "odds": 125
               },
               {
                 "side": "Over",
                 "line": 4.5,
-                "odds": 230
+                "odds": 240
               },
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": 425
+                "odds": 475
               },
               {
                 "side": "Over",
                 "line": 6.5,
-                "odds": 900
+                "odds": 950
               },
               {
                 "side": "Over",
                 "line": 7.5,
-                "odds": 1500
+                "odds": 1600
               }
             ],
             "line": 7.5,
-            "over": 1500
+            "over": 1600
           }
         }
       },
@@ -5028,22 +5071,22 @@
               {
                 "side": "Over",
                 "line": 17.5,
-                "odds": -2500
+                "odds": -2200
               },
               {
                 "side": "Over",
                 "line": 18.5,
-                "odds": -2000
+                "odds": -1700
               },
               {
                 "side": "Over",
                 "line": 19.5,
-                "odds": -1400
+                "odds": -1300
               },
               {
                 "side": "Over",
                 "line": 20.5,
-                "odds": -1100
+                "odds": -1000
               },
               {
                 "side": "Over",
@@ -5073,7 +5116,7 @@
               {
                 "side": "Over",
                 "line": 26.5,
-                "odds": -250
+                "odds": -240
               },
               {
                 "side": "Over",
@@ -5083,12 +5126,12 @@
               {
                 "side": "Over",
                 "line": 28.5,
-                "odds": -150
+                "odds": -145
               },
               {
                 "side": "Over",
                 "line": 29.5,
-                "odds": -125
+                "odds": -120
               },
               {
                 "side": "Over",
@@ -5108,7 +5151,7 @@
               {
                 "side": "Over",
                 "line": 33.5,
-                "odds": 155
+                "odds": 160
               },
               {
                 "side": "Over",
@@ -5118,7 +5161,7 @@
               {
                 "side": "Over",
                 "line": 35.5,
-                "odds": 225
+                "odds": 230
               },
               {
                 "side": "Over",
@@ -5153,7 +5196,7 @@
               {
                 "side": "Over",
                 "line": 42.5,
-                "odds": 750
+                "odds": 800
               },
               {
                 "side": "Over",
@@ -5163,11 +5206,11 @@
               {
                 "side": "Over",
                 "line": 44.5,
-                "odds": 950
+                "odds": 1000
               }
             ],
             "line": 44.5,
-            "over": 950
+            "over": 1000
           }
         },
         "Victor Wembanyama": {
@@ -5222,13 +5265,18 @@
             "offers": [
               {
                 "side": "Over",
+                "line": 13.5,
+                "odds": -2500
+              },
+              {
+                "side": "Over",
                 "line": 14.5,
                 "odds": -2000
               },
               {
                 "side": "Over",
                 "line": 15.5,
-                "odds": -1500
+                "odds": -1400
               },
               {
                 "side": "Over",
@@ -5238,12 +5286,12 @@
               {
                 "side": "Over",
                 "line": 17.5,
-                "odds": -800
+                "odds": -900
               },
               {
                 "side": "Over",
                 "line": 18.5,
-                "odds": -630
+                "odds": -650
               },
               {
                 "side": "Over",
@@ -5273,7 +5321,7 @@
               {
                 "side": "Over",
                 "line": 24.5,
-                "odds": -145
+                "odds": -150
               },
               {
                 "side": "Over",
@@ -5283,7 +5331,7 @@
               {
                 "side": "Over",
                 "line": 26.5,
-                "odds": 105
+                "odds": 100
               },
               {
                 "side": "Over",
@@ -5293,7 +5341,7 @@
               {
                 "side": "Over",
                 "line": 28.5,
-                "odds": 140
+                "odds": 135
               },
               {
                 "side": "Over",
@@ -5313,7 +5361,7 @@
               {
                 "side": "Over",
                 "line": 32.5,
-                "odds": 290
+                "odds": 270
               },
               {
                 "side": "Over",
@@ -5323,7 +5371,7 @@
               {
                 "side": "Over",
                 "line": 34.5,
-                "odds": 400
+                "odds": 375
               },
               {
                 "side": "Over",
@@ -5338,7 +5386,7 @@
               {
                 "side": "Over",
                 "line": 37.5,
-                "odds": 750
+                "odds": 700
               },
               {
                 "side": "Over",
@@ -5670,7 +5718,7 @@
               {
                 "side": "Over",
                 "line": 7.5,
-                "odds": -650
+                "odds": -700
               },
               {
                 "side": "Over",
@@ -5700,7 +5748,7 @@
               {
                 "side": "Over",
                 "line": 13.5,
-                "odds": 225
+                "odds": 230
               },
               {
                 "side": "Over",
@@ -5710,7 +5758,7 @@
               {
                 "side": "Over",
                 "line": 15.5,
-                "odds": 425
+                "odds": 475
               },
               {
                 "side": "Over",
@@ -5730,11 +5778,11 @@
               {
                 "side": "Over",
                 "line": 19.5,
-                "odds": 1900
+                "odds": 1800
               }
             ],
             "line": 19.5,
-            "over": 1900
+            "over": 1800
           }
         },
         "Shai Gilgeous-Alexander": {
@@ -5765,17 +5813,17 @@
               {
                 "side": "Over",
                 "line": 1.5,
-                "odds": -1300
+                "odds": -1200
               },
               {
                 "side": "Over",
                 "line": 2.5,
-                "odds": -400
+                "odds": -375
               },
               {
                 "side": "Over",
                 "line": 3.5,
-                "odds": -150
+                "odds": -145
               },
               {
                 "side": "Over",
@@ -5785,7 +5833,7 @@
               {
                 "side": "Over",
                 "line": 5.5,
-                "odds": 260
+                "odds": 240
               },
               {
                 "side": "Over",
@@ -5800,16 +5848,16 @@
               {
                 "side": "Over",
                 "line": 8.5,
-                "odds": 1200
+                "odds": 1400
               },
               {
                 "side": "Over",
                 "line": 9.5,
-                "odds": 2000
+                "odds": 2200
               }
             ],
             "line": 9.5,
-            "over": 2000
+            "over": 2200
           }
         }
       },
@@ -5916,13 +5964,28 @@
       },
       "player_threes_alternate": {
         "Victor Wembanyama": {
-          "line": 0.5,
+          "line": 5.5,
           "FD": {
             "offers": [
               {
                 "side": "Over",
                 "line": 3.5,
                 "odds": 420
+              },
+              {
+                "side": "Over",
+                "line": 4.5,
+                "odds": 950
+              },
+              {
+                "side": "Over",
+                "line": 0.5,
+                "odds": -900
+              },
+              {
+                "side": "Over",
+                "line": 2.5,
+                "odds": 168
               },
               {
                 "side": "Over",
@@ -5933,29 +5996,14 @@
                 "side": "Over",
                 "line": 5.5,
                 "odds": 1700
-              },
-              {
-                "side": "Over",
-                "line": 4.5,
-                "odds": 950
-              },
-              {
-                "side": "Over",
-                "line": 2.5,
-                "odds": 168
-              },
-              {
-                "side": "Over",
-                "line": 0.5,
-                "odds": -900
               }
             ],
-            "line": 0.5,
-            "over": -900
+            "line": 5.5,
+            "over": 1700
           }
         },
         "Shai Gilgeous-Alexander": {
-          "line": 0.5,
+          "line": 1.5,
           "FD": {
             "offers": [
               {
@@ -5965,13 +6013,13 @@
               },
               {
                 "side": "Over",
-                "line": 1.5,
-                "odds": 102
+                "line": 4.5,
+                "odds": 2000
               },
               {
                 "side": "Over",
-                "line": 4.5,
-                "odds": 2000
+                "line": 0.5,
+                "odds": -460
               },
               {
                 "side": "Over",
@@ -5980,12 +6028,12 @@
               },
               {
                 "side": "Over",
-                "line": 0.5,
-                "odds": -460
+                "line": 1.5,
+                "odds": 102
               }
             ],
-            "line": 0.5,
-            "over": -460
+            "line": 1.5,
+            "over": 102
           }
         }
       }

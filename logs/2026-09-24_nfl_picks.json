@@ -14,7 +14,7 @@
     "PropFinder (player-prop price source; book name unavailable in CSV)"
   ],
   "games_analyzed": 1,
-  "props_analyzed": 56,
+  "props_analyzed": 68,
   "player_prop_picks": [
     {
       "rank": 1,
@@ -23,8 +23,8 @@
       "team": "GB",
       "player": "Kaleb Johnson",
       "market": "Rushing Yds",
-      "selection": "Kaleb Johnson Under 34.5 Rushing Yds",
-      "line": 34.5,
+      "selection": "Kaleb Johnson Under 37.5 Rushing Yds",
+      "line": 37.5,
       "over_under": "Under",
       "best_book": "PropFinder",
       "best_odds": -113,
@@ -79,8 +79,8 @@
       "team": "GB",
       "player": "Kaleb Johnson",
       "market": "Rushing + Receiving Yds",
-      "selection": "Kaleb Johnson Under 43.5 Rushing + Receiving Yds",
-      "line": 43.5,
+      "selection": "Kaleb Johnson Under 40.5 Rushing + Receiving Yds",
+      "line": 40.5,
       "over_under": "Under",
       "best_book": "PropFinder",
       "best_odds": -137,
@@ -107,11 +107,11 @@
       "team": "GB",
       "player": "Kaleb Johnson",
       "market": "Rush Att.",
-      "selection": "Kaleb Johnson Under 10.5 Rush Att.",
-      "line": 10.5,
+      "selection": "Kaleb Johnson Under 9.5 Rush Att.",
+      "line": 9.5,
       "over_under": "Under",
       "best_book": "PropFinder",
-      "best_odds": -111,
+      "best_odds": 109,
       "prediction_confidence": 92,
       "confidence_tier": "Elite",
       "pf_rating": 90.6,
@@ -126,7 +126,7 @@
       "current_season_weight": 0.85,
       "current_season_sample": 2,
       "historical_only": false,
-      "reasoning": "PropFinder rating 90.6; L10 (10/10) and L20 (12/12); prior/current season (10/10) / (2/2) with Week 3 weighting 15%/85%; L10 average 3.4 at odds -111."
+      "reasoning": "PropFinder rating 90.6; L10 (10/10) and L20 (12/12); prior/current season (10/10) / (2/2) with Week 3 weighting 15%/85%; L10 average 3.4 at odds +109."
     },
     {
       "rank": 5,
@@ -139,7 +139,7 @@
       "line": 0.5,
       "over_under": "Under",
       "best_book": "PropFinder",
-      "best_odds": -147,
+      "best_odds": -149,
       "prediction_confidence": 92,
       "confidence_tier": "Elite",
       "pf_rating": 90.4,
@@ -154,28 +154,12 @@
       "current_season_weight": 0.85,
       "current_season_sample": 2,
       "historical_only": false,
-      "reasoning": "PropFinder rating 90.4; L10 (9/10) and L20 (19/20); prior/current season (17/18) / (2/2) with Week 3 weighting 15%/85%; L10 average 0.3 at odds -147."
+      "reasoning": "PropFinder rating 90.4; L10 (9/10) and L20 (19/20); prior/current season (17/18) / (2/2) with Week 3 weighting 15%/85%; L10 average 0.3 at odds -149."
     }
   ],
   "game_picks": [
     {
       "rank": 1,
-      "pick_type": "spread",
-      "game": "Atlanta Falcons @ Green Bay Packers",
-      "team": "Green Bay Packers",
-      "selection": "Green Bay Packers -4.5",
-      "line": -4.5,
-      "over_under": null,
-      "best_book": "LowVig.ag",
-      "best_odds": -105,
-      "prediction_confidence": 79,
-      "confidence_tier": "Medium",
-      "reasoning": "Model projects GB -6.3, giving 1.8 points of value on the -4.5 line. Atlanta missing star CB A.J. Terrell (IR, groin) severely weakens their pass defense against a Packers offense at Lambeau Field, where Green Bay owns a 70.3% home win rate with +7.0 average margin and +1.7 ATS edge. Model gives GB 71% win probability with 50% cover rate at -5.5, improving to higher cover probability at the shorter -4.5 number.",
-      "projected_margin": 6.3,
-      "model_edge": 1.8
-    },
-    {
-      "rank": 2,
       "pick_type": "game_total",
       "game": "Atlanta Falcons @ Green Bay Packers",
       "team": null,
@@ -186,9 +170,9 @@
       "best_odds": 100,
       "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects 44.8 total, giving 1.3 points of value on Over 43.5. Terrell's absence weakens Atlanta's secondary, likely allowing more Green Bay passing production. Model individual projections (ATL 19, GB 26) sum to 45, supporting the over. Thursday night divisional games can be higher-scoring when defensive personnel is compromised.",
-      "projected_total": 44.8,
-      "model_edge": 1.3
+      "reasoning": "Model projects total of 44.3, providing 0.8 points of edge over the 43.5 line at DraftKings and theScore. Model shows ATL 19, GB 25 for 44 combined points. Best price at -102 on DK compared to -104 at FD or worse at other books. Despite Packers offensive line issues mentioned in news, model still anticipates sufficient scoring to exceed this total.",
+      "projected_total": 44.3,
+      "model_edge": 0.8
     }
   ],
   "picks": [
@@ -199,8 +183,8 @@
       "team": "GB",
       "player": "Kaleb Johnson",
       "market": "Rushing Yds",
-      "selection": "Kaleb Johnson Under 34.5 Rushing Yds",
-      "line": 34.5,
+      "selection": "Kaleb Johnson Under 37.5 Rushing Yds",
+      "line": 37.5,
       "over_under": "Under",
       "best_book": "PropFinder",
       "best_odds": -113,
@@ -255,8 +239,8 @@
       "team": "GB",
       "player": "Kaleb Johnson",
       "market": "Rushing + Receiving Yds",
-      "selection": "Kaleb Johnson Under 43.5 Rushing + Receiving Yds",
-      "line": 43.5,
+      "selection": "Kaleb Johnson Under 40.5 Rushing + Receiving Yds",
+      "line": 40.5,
       "over_under": "Under",
       "best_book": "PropFinder",
       "best_odds": -137,
@@ -283,11 +267,11 @@
       "team": "GB",
       "player": "Kaleb Johnson",
       "market": "Rush Att.",
-      "selection": "Kaleb Johnson Under 10.5 Rush Att.",
-      "line": 10.5,
+      "selection": "Kaleb Johnson Under 9.5 Rush Att.",
+      "line": 9.5,
       "over_under": "Under",
       "best_book": "PropFinder",
-      "best_odds": -111,
+      "best_odds": 109,
       "prediction_confidence": 92,
       "confidence_tier": "Elite",
       "pf_rating": 90.6,
@@ -302,7 +286,7 @@
       "current_season_weight": 0.85,
       "current_season_sample": 2,
       "historical_only": false,
-      "reasoning": "PropFinder rating 90.6; L10 (10/10) and L20 (12/12); prior/current season (10/10) / (2/2) with Week 3 weighting 15%/85%; L10 average 3.4 at odds -111."
+      "reasoning": "PropFinder rating 90.6; L10 (10/10) and L20 (12/12); prior/current season (10/10) / (2/2) with Week 3 weighting 15%/85%; L10 average 3.4 at odds +109."
     },
     {
       "rank": 5,
@@ -315,7 +299,7 @@
       "line": 0.5,
       "over_under": "Under",
       "best_book": "PropFinder",
-      "best_odds": -147,
+      "best_odds": -149,
       "prediction_confidence": 92,
       "confidence_tier": "Elite",
       "pf_rating": 90.4,
@@ -330,26 +314,10 @@
       "current_season_weight": 0.85,
       "current_season_sample": 2,
       "historical_only": false,
-      "reasoning": "PropFinder rating 90.4; L10 (9/10) and L20 (19/20); prior/current season (17/18) / (2/2) with Week 3 weighting 15%/85%; L10 average 0.3 at odds -147."
+      "reasoning": "PropFinder rating 90.4; L10 (9/10) and L20 (19/20); prior/current season (17/18) / (2/2) with Week 3 weighting 15%/85%; L10 average 0.3 at odds -149."
     },
     {
       "rank": 1,
-      "pick_type": "spread",
-      "game": "Atlanta Falcons @ Green Bay Packers",
-      "team": "Green Bay Packers",
-      "selection": "Green Bay Packers -4.5",
-      "line": -4.5,
-      "over_under": null,
-      "best_book": "LowVig.ag",
-      "best_odds": -105,
-      "prediction_confidence": 79,
-      "confidence_tier": "Medium",
-      "reasoning": "Model projects GB -6.3, giving 1.8 points of value on the -4.5 line. Atlanta missing star CB A.J. Terrell (IR, groin) severely weakens their pass defense against a Packers offense at Lambeau Field, where Green Bay owns a 70.3% home win rate with +7.0 average margin and +1.7 ATS edge. Model gives GB 71% win probability with 50% cover rate at -5.5, improving to higher cover probability at the shorter -4.5 number.",
-      "projected_margin": 6.3,
-      "model_edge": 1.8
-    },
-    {
-      "rank": 2,
       "pick_type": "game_total",
       "game": "Atlanta Falcons @ Green Bay Packers",
       "team": null,
@@ -360,26 +328,43 @@
       "best_odds": 100,
       "prediction_confidence": 74,
       "confidence_tier": "Medium",
-      "reasoning": "Model projects 44.8 total, giving 1.3 points of value on Over 43.5. Terrell's absence weakens Atlanta's secondary, likely allowing more Green Bay passing production. Model individual projections (ATL 19, GB 26) sum to 45, supporting the over. Thursday night divisional games can be higher-scoring when defensive personnel is compromised.",
-      "projected_total": 44.8,
-      "model_edge": 1.3
+      "reasoning": "Model projects total of 44.3, providing 0.8 points of edge over the 43.5 line at DraftKings and theScore. Model shows ATL 19, GB 25 for 44 combined points. Best price at -102 on DK compared to -104 at FD or worse at other books. Despite Packers offensive line issues mentioned in news, model still anticipates sufficient scoring to exceed this total.",
+      "projected_total": 44.3,
+      "model_edge": 0.8
     }
   ],
   "rejected_picks": [
     {
       "pick": {
-        "rank": 2,
+        "rank": 1,
+        "pick_type": "spread",
+        "game": "Atlanta Falcons @ Green Bay Packers",
+        "team": "Atlanta Falcons",
+        "selection": "Atlanta Falcons +5.5",
+        "line": 5.5,
+        "over_under": null,
+        "best_book": "DK",
+        "best_odds": -115,
+        "prediction_confidence": 76,
+        "confidence_tier": "Medium",
+        "reasoning": "Model projects GB -6.3 but Falcons +5.5 available at DraftKings provides 0.8 points of value. Recent news indicates Packers offensive line in trouble heading into Thursday night, while Michael Penix Jr. set to take over at QB for Atlanta suggests offensive change that could provide unpredictability. Model gives GB only 53% cover probability at -5.5, creating narrow margin. Falcons catching full touchdown at some books but +5.5 offers best combination of key number proximity and price."
+      },
+      "reason": "spread is not supported by projection (-0.8 point edge)"
+    },
+    {
+      "pick": {
+        "rank": 3,
         "pick_type": "moneyline",
         "game": "Atlanta Falcons @ Green Bay Packers",
         "team": "Green Bay Packers",
         "selection": "Green Bay Packers moneyline",
         "line": null,
         "over_under": null,
-        "best_book": "FD",
+        "best_book": "BetOnline.ag",
         "best_odds": -240,
-        "prediction_confidence": 76,
+        "prediction_confidence": 73,
         "confidence_tier": "Medium",
-        "reasoning": "Model projects 71% win probability for Green Bay, which exceeds the 70.6% implied probability at -240. Terrell's absence creates significant defensive vulnerability for Atlanta against Green Bay's passing attack. Lambeau Field advantage is substantial with 70.3% historical win rate, and Thursday night road games are notoriously difficult for visitors."
+        "reasoning": "Model projects 71% win probability for Packers. At -240 odds (70.6% implied), this creates minimal 0.4% edge but still positive expected value. BetOnline and LowVig offer best -240 price versus -245 to -270 elsewhere. Packers 70.3% home win rate at Lambeau with +7.0 average margin supports projection. Despite offensive line concerns and 'dire situation' reporting, model maintains strong GB win expectation against Falcons transitioning to backup QB Penix."
       },
       "reason": "moneyline has no qualifying value: model 71.0% vs implied 70.5% (+0.5% edge)"
     }
@@ -390,8 +375,8 @@
       "selection": "Green Bay Packers -4.5",
       "team": "Green Bay Packers",
       "line": -4.5,
-      "best_book": "LowVig.ag",
-      "best_odds": -105,
+      "best_book": "BetUS",
+      "best_odds": -110,
       "projected_margin": 6.3,
       "model_edge": 1.8,
       "confidence": "Moderate",
@@ -402,14 +387,14 @@
   "lotto_total_board": [
     {
       "game": "Atlanta Falcons @ Green Bay Packers",
-      "selection": "Over 42.5",
+      "selection": "Over 43",
       "over_under": "Over",
-      "line": 42.5,
-      "best_book": "DK",
-      "best_odds": -118,
-      "projected_total": 44.8,
-      "model_edge": 2.3,
-      "confidence": "Moderate",
+      "line": 43.0,
+      "best_book": "LowVig.ag",
+      "best_odds": -108,
+      "projected_total": 44.3,
+      "model_edge": 1.3,
+      "confidence": "Lean",
       "official_pick": false,
       "track_result": false
     }
@@ -417,25 +402,25 @@
   "lotto_td_board": [
     {
       "game": "Atlanta Falcons @ Green Bay Packers",
-      "selection": "Bijan Robinson Anytime TD (Atlanta Falcons)",
-      "player": "Bijan Robinson",
+      "selection": "Jahan Dotson Anytime TD (Atlanta Falcons)",
+      "player": "Jahan Dotson",
       "team": "Atlanta Falcons",
-      "best_book": "FD",
-      "best_odds": -150,
-      "propfinder_rating": 79.9,
-      "redzone_td_chance": 45,
-      "confidence": "Red-zone supported",
+      "best_book": "DK",
+      "best_odds": 750,
+      "propfinder_rating": 90.4,
+      "redzone_td_chance": null,
+      "confidence": "Prop/market lean",
       "selection_source": "redzone_plus_market",
       "official_pick": false,
       "track_result": false
     },
     {
       "game": "Atlanta Falcons @ Green Bay Packers",
-      "selection": "Matthew Golden Anytime TD (Green Bay Packers)",
-      "player": "Matthew Golden",
+      "selection": "Kaleb Johnson Anytime TD (Green Bay Packers)",
+      "player": "Kaleb Johnson",
       "team": "Green Bay Packers",
-      "best_book": "DK",
-      "best_odds": 210,
+      "best_book": "FAN",
+      "best_odds": 240,
       "propfinder_rating": 93.1,
       "redzone_td_chance": null,
       "confidence": "Prop/market lean",
