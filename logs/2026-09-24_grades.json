@@ -1,0 +1,544 @@
+{
+  "pick_date": "2026-09-24",
+  "graded_date": "2026-09-25",
+  "record": {
+    "wins": 10,
+    "losses": 5,
+    "pushes": 0,
+    "pending": 6
+  },
+  "summary": {
+    "MLB - HR": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Hits": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - TB": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - K": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game ML": {
+      "wins": 0,
+      "losses": 2,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game Spread": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game OU": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - NRFI": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Player Longest Reception": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Player Anytime TD": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Player Receiving Yds": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Player Longest Completion": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "CFB - Game Spread": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "NFL - Player Rushing Yds": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "NFL - Player Anytime TD - 1H": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "NFL - Player Rushing + Receiving Yds": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "NFL - Player Rush Att.": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "NFL - Player Receiving Yds - 1Q": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "NFL - Game OU": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "WNBA - Player Prop": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 2,
+      "profit": 0
+    }
+  },
+  "results": {
+    "CFB - Game Spread": [
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Liberty Flames",
+        "game": "Liberty Flames @ Coastal Carolina Chanticleers",
+        "over_under": "",
+        "line": -2.5,
+        "odds": "-105",
+        "best_book": "DK",
+        "result": "win",
+        "actual_value": 17.0
+      }
+    ],
+    "CFB - Player Anytime TD": [
+      {
+        "sport": "CFB",
+        "category": "Player Anytime TD",
+        "player_name": "Peyton Jones",
+        "game": "LIB game",
+        "over_under": "under",
+        "line": 0.5,
+        "odds": "-137",
+        "best_book": "PropFinder",
+        "result": "win",
+        "actual_value": 0.0
+      },
+      {
+        "sport": "CFB",
+        "category": "Player Anytime TD",
+        "player_name": "Kam Davis",
+        "game": "LIB game",
+        "over_under": "under",
+        "line": 0.5,
+        "odds": "-137",
+        "best_book": "PropFinder",
+        "result": "loss",
+        "actual_value": 1.0
+      }
+    ],
+    "CFB - Player Longest Completion": [
+      {
+        "sport": "CFB",
+        "category": "Player Longest Completion",
+        "player_name": "Deuce Bailey",
+        "game": "CCAR game",
+        "over_under": "over",
+        "line": 42.5,
+        "odds": "-125",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "CFB - Player Longest Reception": [
+      {
+        "sport": "CFB",
+        "category": "Player Longest Reception",
+        "player_name": "Makai Jackson",
+        "game": "LIB game",
+        "over_under": "over",
+        "line": 31.5,
+        "odds": "-125",
+        "best_book": "PropFinder",
+        "result": "win",
+        "actual_value": 58.0
+      }
+    ],
+    "CFB - Player Receiving Yds": [
+      {
+        "sport": "CFB",
+        "category": "Player Receiving Yds",
+        "player_name": "Makai Jackson",
+        "game": "LIB game",
+        "over_under": "over",
+        "line": 50.5,
+        "odds": "-112",
+        "best_book": "PropFinder",
+        "result": "win",
+        "actual_value": 149.0
+      }
+    ],
+    "MLB - Game ML": [
+      {
+        "sport": "MLB",
+        "category": "Game ML",
+        "player_name": "Atlanta Braves",
+        "game": "CIN @ ATL",
+        "over_under": "",
+        "line": null,
+        "odds": "-212",
+        "best_book": "FD",
+        "result": "loss",
+        "actual_value": null
+      },
+      {
+        "sport": "MLB",
+        "category": "Game ML",
+        "player_name": "Los Angeles Dodgers",
+        "game": "SD @ LAD",
+        "over_under": "",
+        "line": null,
+        "odds": "-162",
+        "best_book": "FD",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - Hits": [
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Luis Arraez",
+        "game": "MIL @ PHI",
+        "over_under": "over",
+        "line": 0.5,
+        "odds": "-285",
+        "best_book": "FD",
+        "result": "loss",
+        "actual_value": 0.0
+      }
+    ],
+    "MLB - K": [
+      {
+        "sport": "MLB",
+        "category": "K",
+        "player_name": "Tyler Glasnow",
+        "game": "SD @ LAD",
+        "over_under": "over",
+        "line": 6.5,
+        "odds": "-140",
+        "best_book": "FD",
+        "result": "win",
+        "actual_value": 11.0
+      }
+    ],
+    "MLB - NRFI": [
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Nick Pivetta / Tyler Glasnow",
+        "game": "San Diego @ Los Angeles",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "win",
+        "actual_value": null
+      },
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Randy Dobnak / David Sandlin",
+        "game": "Kansas City @ Chicago White Sox",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - TB": [
+      {
+        "sport": "MLB",
+        "category": "TB",
+        "player_name": "Ronald Acuña Jr.",
+        "game": "CIN @ ATL",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "110",
+        "best_book": "Bovada",
+        "result": "win",
+        "actual_value": 2.0
+      }
+    ],
+    "NFL - Game OU": [
+      {
+        "sport": "NFL",
+        "category": "Game OU",
+        "player_name": "Over 43.5",
+        "game": "Atlanta Falcons @ Green Bay Packers",
+        "over_under": "Over",
+        "line": 43.5,
+        "odds": "100",
+        "best_book": "theScore Bet",
+        "result": "win",
+        "actual_value": 49.0
+      }
+    ],
+    "NFL - Player Anytime TD - 1H": [
+      {
+        "sport": "NFL",
+        "category": "Player Anytime TD - 1H",
+        "player_name": "Matthew Golden",
+        "game": "GB game",
+        "over_under": "under",
+        "line": 0.5,
+        "odds": "-167",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "NFL - Player Receiving Yds - 1Q": [
+      {
+        "sport": "NFL",
+        "category": "Player Receiving Yds - 1Q",
+        "player_name": "Jahan Dotson",
+        "game": "ATL game",
+        "over_under": "under",
+        "line": 0.5,
+        "odds": "-149",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "NFL - Player Rush Att.": [
+      {
+        "sport": "NFL",
+        "category": "Player Rush Att.",
+        "player_name": "Kaleb Johnson",
+        "game": "GB game",
+        "over_under": "under",
+        "line": 9.5,
+        "odds": "109",
+        "best_book": "PropFinder",
+        "result": "win",
+        "actual_value": 4.0
+      }
+    ],
+    "NFL - Player Rushing + Receiving Yds": [
+      {
+        "sport": "NFL",
+        "category": "Player Rushing + Receiving Yds",
+        "player_name": "Kaleb Johnson",
+        "game": "GB game",
+        "over_under": "under",
+        "line": 40.5,
+        "odds": "-137",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "NFL - Player Rushing Yds": [
+      {
+        "sport": "NFL",
+        "category": "Player Rushing Yds",
+        "player_name": "Kaleb Johnson",
+        "game": "GB game",
+        "over_under": "under",
+        "line": 37.5,
+        "odds": "-113",
+        "best_book": "PropFinder",
+        "result": "win",
+        "actual_value": 6.0
+      }
+    ],
+    "WNBA - Player Prop": [
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Caitlin Clark",
+        "game": "Indiana Fever @ Minnesota Lynx",
+        "over_under": "over",
+        "line": 19.5,
+        "odds": "-151",
+        "best_book": "ReBet",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "WNBA",
+        "category": "Player Prop",
+        "player_name": "Kelsey Mitchell",
+        "game": "Indiana Fever @ Minnesota Lynx",
+        "over_under": "over",
+        "line": 24.5,
+        "odds": "-115",
+        "best_book": "Fliff",
+        "result": "pending",
+        "actual_value": null
+      }
+    ]
+  },
+  "cumulative": {
+    "CFB - Game Spread": {
+      "sport": "CFB",
+      "category": "Game Spread",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "CFB - Player Anytime TD": {
+      "sport": "CFB",
+      "category": "Player Anytime TD",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "CFB - Player Longest Reception": {
+      "sport": "CFB",
+      "category": "Player Longest Reception",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "CFB - Player Receiving Yds": {
+      "sport": "CFB",
+      "category": "Player Receiving Yds",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - Game ML": {
+      "sport": "MLB",
+      "category": "Game ML",
+      "wins": 0,
+      "losses": 2,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "MLB - Hits": {
+      "sport": "MLB",
+      "category": "Hits",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - K": {
+      "sport": "MLB",
+      "category": "K",
+      "wins": 2,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - NRFI": {
+      "sport": "MLB",
+      "category": "NRFI",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - TB": {
+      "sport": "MLB",
+      "category": "TB",
+      "wins": 1,
+      "losses": 2,
+      "pushes": 0,
+      "win_rate": 33.3
+    },
+    "NFL - Game OU": {
+      "sport": "NFL",
+      "category": "Game OU",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "NFL - Player Rush Att.": {
+      "sport": "NFL",
+      "category": "Player Rush Att.",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "NFL - Player Rushing Yds": {
+      "sport": "NFL",
+      "category": "Player Rushing Yds",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "OVERALL": {
+      "wins": 12,
+      "losses": 7,
+      "pushes": 0,
+      "win_rate": 63.2
+    }
+  }
+}

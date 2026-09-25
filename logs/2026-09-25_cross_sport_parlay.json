@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-25",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": false,
+  "legs": [
+    {
+      "league": "CFB",
+      "game": "Army Black Knights @ Temple Owls",
+      "selection": "Temple Owls +4",
+      "market_type": "spread",
+      "player": null,
+      "team": "Temple Owls",
+      "direction": null,
+      "line": 4.0,
+      "book": "MyBookie.ag",
+      "odds": -110,
+      "support_score": 76.0,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects Army -4.8 with 53% cover probability, but Temple getting +4.0 creates meaningful value. Army ranked #72, Temple #99, but the extra half-point of cushion at the +4 line provides solid value. Multiple books offering +4 suggests market settling here, creating opportunity against the model's -4.8 projection. Temple at home getting more than a field goal against an Army triple-option attack that can struggle to cover larger spreads.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "CFB",
+      "game": "Northwestern Wildcats @ Indiana Hoosiers",
+      "selection": "Indiana Hoosiers -20.5",
+      "market_type": "spread",
+      "player": null,
+      "team": "Indiana Hoosiers",
+      "direction": null,
+      "line": -20.5,
+      "book": "Bovada",
+      "odds": -105,
+      "support_score": 74.0,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects Indiana -22.0 with 54% cover probability. Indiana ranked #6 with elite offense (#7, +11.7) and defense (#2, +11.9) hosting Northwestern (#41). Recent court ruling cleared two Indiana defensive linemen to play, strengthening an already dominant defense. Indiana 3-0 with +29.4 rating versus Northwestern 2-0 at +10.2. The -20.5 line at Bovada -105 provides 1.5 points of value against model projection.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "CFB",
+      "game": "Clemson Tigers @ California Golden Bears",
+      "selection": "Clemson Tigers -2.5",
+      "market_type": "spread",
+      "player": null,
+      "team": "Clemson Tigers",
+      "direction": null,
+      "line": -2.5,
+      "book": "LowVig.ag",
+      "odds": -109,
+      "support_score": 73.0,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects Clemson -3.6 with 53% cover probability, providing 1.1 points of value at -2.5. Clemson (#32) at 1950+12.8 rating faces California (#56) at 1580+5.5. Despite being road favorites, Clemson's balanced profile (neutral offense, solid defense #34) should handle Cal's inconsistent performance. Market disagrees with spread ranging from -1.0 to -2.5, suggesting sharper value at the higher number. DK offers clean -110 price at -2.5.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 7.147,
+  "combined_american_odds": 615,
+  "implied_probability_pct": 14.0,
+  "candidate_count": 5,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records.",
+  "reason": "No verified combination landed inside +450 to +600; showing the closest available standard-line combination instead."
+}
