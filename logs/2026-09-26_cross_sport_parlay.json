@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-26",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": false,
+  "legs": [
+    {
+      "league": "CFB",
+      "game": "Tulsa Golden Hurricane @ Arkansas Razorbacks",
+      "selection": "Tulsa Golden Hurricane +7.5",
+      "market_type": "spread",
+      "player": null,
+      "team": "Tulsa Golden Hurricane",
+      "direction": null,
+      "line": 7.5,
+      "book": "HRB",
+      "odds": -115,
+      "support_score": 78.0,
+      "confidence_tier": "Medium",
+      "reasoning": "PropFinder model projects Tulsa +3.7 with 58% cover probability and identifies a 3.3-point edge on the +7 line. The model sees value in the inflated spread, as Tulsa (3-0, ranked 67th) has exceeded expectations with a 2.2 rating while Arkansas (1-2, ranked 66th) sits at 2.9. Market appears to overvalue Arkansas' home advantage. Getting 7.5 provides additional cushion in what projects as a one-possession game.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "CFB",
+      "game": "Troy Trojans @ Utah State Aggies",
+      "selection": "Troy Trojans +2.5",
+      "market_type": "spread",
+      "player": null,
+      "team": "Troy Trojans",
+      "direction": null,
+      "line": 2.5,
+      "book": "FD",
+      "odds": 100,
+      "support_score": 77.0,
+      "confidence_tier": "Medium",
+      "reasoning": "PropFinder identifies significant edge with Troy projected at -0.6 (effectively pick'em) while getting +2.5. The model shows 58% cover probability and 3.6-point edge. Troy (2-1, ranked 96th) rates slightly ahead of Utah State (0-3, ranked 111th). Utah State has struggled defensively, ranking 108th, while Troy presents offensive balance. Getting plus money at +100 on FD provides additional value in a competitive Sun Belt vs Pac-12 matchup.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "CFB",
+      "game": "Texas A&M Aggies @ LSU Tigers",
+      "selection": "Texas A&M Aggies +8.5",
+      "market_type": "spread",
+      "player": null,
+      "team": "Texas A&M Aggies",
+      "direction": null,
+      "line": 8.5,
+      "book": "HRB",
+      "odds": -105,
+      "support_score": 76.0,
+      "confidence_tier": "Medium",
+      "reasoning": "PropFinder model projects Texas A&M +5.5 with 57% cover probability, identifying 3.0-point edge at +8. Both teams rank in top 17 nationally (A&M 17th, LSU 11th) but A&M's defensive ranking (#3 nationally at +11.9) gives them ability to keep this competitive. LSU dropped 35.6 points week-over-week in power rating after home loss. A&M has shown defensive resilience despite offensive struggles. Getting 8.5 in SEC matchup between quality opponents provides value.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 3,
+  "combined_decimal_odds": 7.3,
+  "combined_american_odds": 630,
+  "implied_probability_pct": 13.7,
+  "candidate_count": 5,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records.",
+  "reason": "No verified combination landed inside +450 to +600; showing the closest available standard-line combination instead."
+}

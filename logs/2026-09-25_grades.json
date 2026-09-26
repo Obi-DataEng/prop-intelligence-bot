@@ -1,0 +1,352 @@
+{
+  "pick_date": "2026-09-25",
+  "graded_date": "2026-09-26",
+  "record": {
+    "wins": 6,
+    "losses": 6,
+    "pushes": 1,
+    "pending": 0
+  },
+  "summary": {
+    "MLB - HR": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Hits": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - TB": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - K": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game ML": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game Spread": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game OU": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - NRFI": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Player Passing Tds": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Player Receiving Yds": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Game Spread": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 1,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Game OU": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    }
+  },
+  "results": {
+    "CFB - Game OU": [
+      {
+        "sport": "CFB",
+        "category": "Game OU",
+        "player_name": "Over 51.5",
+        "game": "Navy Midshipmen @ UAB Blazers",
+        "over_under": "Over",
+        "line": 51.5,
+        "odds": "-103",
+        "best_book": "LowVig.ag",
+        "result": "loss",
+        "actual_value": 44.0
+      },
+      {
+        "sport": "CFB",
+        "category": "Game OU",
+        "player_name": "Under 48.5",
+        "game": "Army Black Knights @ Temple Owls",
+        "over_under": "Under",
+        "line": 48.5,
+        "odds": "-105",
+        "best_book": "DK",
+        "result": "win",
+        "actual_value": 38.0
+      }
+    ],
+    "CFB - Game Spread": [
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Temple Owls",
+        "game": "Army Black Knights @ Temple Owls",
+        "over_under": "",
+        "line": 4.0,
+        "odds": "-110",
+        "best_book": "MyBookie.ag",
+        "result": "push",
+        "actual_value": -4.0
+      },
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Indiana Hoosiers",
+        "game": "Northwestern Wildcats @ Indiana Hoosiers",
+        "over_under": "",
+        "line": -20.5,
+        "odds": "-105",
+        "best_book": "Bovada",
+        "result": "loss",
+        "actual_value": 6.0
+      },
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Clemson Tigers",
+        "game": "Clemson Tigers @ California Golden Bears",
+        "over_under": "",
+        "line": -2.5,
+        "odds": "-109",
+        "best_book": "LowVig.ag",
+        "result": "win",
+        "actual_value": 14.0
+      }
+    ],
+    "CFB - Player Passing Tds": [
+      {
+        "sport": "CFB",
+        "category": "Player Passing Tds",
+        "player_name": "Cale Hellums",
+        "game": "ARMY game",
+        "over_under": "over",
+        "line": 0.5,
+        "odds": "-102",
+        "best_book": "PropFinder",
+        "result": "loss",
+        "actual_value": 0.0
+      }
+    ],
+    "CFB - Player Receiving Yds": [
+      {
+        "sport": "CFB",
+        "category": "Player Receiving Yds",
+        "player_name": "KJ Duff",
+        "game": "RUTG game",
+        "over_under": "over",
+        "line": 113.5,
+        "odds": "-114",
+        "best_book": "PropFinder",
+        "result": "win",
+        "actual_value": 131.0
+      }
+    ],
+    "MLB - Game ML": [
+      {
+        "sport": "MLB",
+        "category": "Game ML",
+        "player_name": "Toronto Blue Jays",
+        "game": "CIN @ TOR",
+        "over_under": "",
+        "line": null,
+        "odds": "-138",
+        "best_book": "FAN",
+        "result": "win",
+        "actual_value": null
+      }
+    ],
+    "MLB - Hits": [
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Vladimir Guerrero Jr.",
+        "game": "CIN @ TOR",
+        "over_under": "over",
+        "line": 0.5,
+        "odds": "-245",
+        "best_book": "FAN",
+        "result": "win",
+        "actual_value": 1.0
+      },
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Manny Machado",
+        "game": "ARI @ SD",
+        "over_under": "over",
+        "line": 0.5,
+        "odds": "-220",
+        "best_book": "FAN",
+        "result": "loss",
+        "actual_value": 0.0
+      }
+    ],
+    "MLB - K": [
+      {
+        "sport": "MLB",
+        "category": "K",
+        "player_name": "Gavin Williams",
+        "game": "CLE @ KC",
+        "over_under": "over",
+        "line": 6.5,
+        "odds": "-132",
+        "best_book": "DK",
+        "result": "loss",
+        "actual_value": 4.0
+      }
+    ],
+    "MLB - NRFI": [
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Andrew Alvarez / TBD",
+        "game": "Washington Nationals @ New York Mets",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "win",
+        "actual_value": null
+      }
+    ],
+    "MLB - TB": [
+      {
+        "sport": "MLB",
+        "category": "TB",
+        "player_name": "Ty France",
+        "game": "ARI @ SD",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "134",
+        "best_book": "BetOnline.ag",
+        "result": "loss",
+        "actual_value": 0.0
+      }
+    ]
+  },
+  "cumulative": {
+    "CFB - Game OU": {
+      "sport": "CFB",
+      "category": "Game OU",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "CFB - Game Spread": {
+      "sport": "CFB",
+      "category": "Game Spread",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 1,
+      "win_rate": 50.0
+    },
+    "CFB - Player Passing Tds": {
+      "sport": "CFB",
+      "category": "Player Passing Tds",
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "CFB - Player Receiving Yds": {
+      "sport": "CFB",
+      "category": "Player Receiving Yds",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - Game ML": {
+      "sport": "MLB",
+      "category": "Game ML",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - Hits": {
+      "sport": "MLB",
+      "category": "Hits",
+      "wins": 2,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 66.7
+    },
+    "MLB - K": {
+      "sport": "MLB",
+      "category": "K",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - NRFI": {
+      "sport": "MLB",
+      "category": "NRFI",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - TB": {
+      "sport": "MLB",
+      "category": "TB",
+      "wins": 0,
+      "losses": 3,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "OVERALL": {
+      "wins": 8,
+      "losses": 8,
+      "pushes": 1,
+      "win_rate": 50.0
+    }
+  }
+}
