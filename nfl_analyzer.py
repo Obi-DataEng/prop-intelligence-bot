@@ -245,11 +245,14 @@ def nfl_week_from_intelligence(intelligence):
 
 
 def season_weights(week):
-    # if week <= 1:
-    #     return 0.70, 0.30
-    # if week <= 4:
-    #     return 0.40, 0.60
-    return 0.15, 0.85
+    """Shift aggressively toward the live season as 2026 evidence arrives."""
+    if week <= 1:
+        return 0.60, 0.40
+    if week == 2:
+        return 0.30, 0.70
+    if week <= 4:
+        return 0.10, 0.90
+    return 0.05, 0.95
 
 
 def teams_on_prop_finder_slate(game_cards, target_date):
@@ -593,6 +596,291 @@ def build_nfl_td_board(games, prop_candidates, redzone_data, anytime_td=None):
             })
     return board
 
+
+def _american_to_decimal(odds):
+    """Convert American odds to decimal odds for an independent-leg estimate."""
+    try:
+        odds = float(odds)
+    except (TypeError, ValueError):
+        return None
+    if odds == 0:
+        return None
+    return (1.0 + odds / 100.0) if odds > 0 else (1.0 + 100.0 / abs(odds))
+
+
+def _decimal_to_american(decimal_odds):
+    """Convert decimal odds back to rounded American odds."""
+    try:
+        decimal_odds = float(decimal_odds)
+    except (TypeError, ValueError):
+        return None
+    if decimal_odds <= 1.0:
+        return None
+    if decimal_odds >= 2.0:
+        return int(round((decimal_odds - 1.0) * 100.0))
+    return int(round(-100.0 / (decimal_odds - 1.0)))
+
+
+def _nfl_non_td_market_label(market):
+    """Human-readable NFL player-prop market label."""
+    label = str(market or "").replace("_alternate", "").replace("player_", "")
+    return label.replace("_", " ").title()
+
+
+def collect_nfl_non_td_builder_candidates(
+    odds_data,
+    prop_candidates,
+    minimum_odds=200,
+    per_game_limit=40,
+):
+    """Collect verified non-TD player props at +200 or longer for each NFL game.
+
+    The odds snapshot is the pricing authority. PropFinder is used only as an
+    evidence layer/ranking signal; it never creates a sportsbook line or price.
+    """
+    props_by_game = odds_data.get("player_props", {})
+    evidence_by_player = {}
+    for row in prop_candidates:
+        player_key = normalize_text(row.get("player"))
+        if not player_key:
+            continue
+        evidence_by_player.setdefault(player_key, []).append(row)
+
+    result = {}
+    for game in odds_data.get("games", []):
+        away, home = game.get("away_team"), game.get("home_team")
+        matchup = f"{away} @ {home}"
+        game_key = f"{away}@{home}"
+        grouped = {}
+
+        for market, players in props_by_game.get(game_key, {}).items():
+            market_lower = str(market).lower()
+            # This board is intentionally separate from the TD board.
+            if any(token in market_lower for token in ("touchdown", "anytime_td", "first_td", "td_scorer")):
+                continue
+            if not isinstance(players, dict):
+                continue
+
+            for player, prop_data in players.items():
+                if not isinstance(prop_data, dict):
+                    continue
+                for book, book_data in prop_data.items():
+                    if book == "line" or not isinstance(book_data, dict):
+                        continue
+
+                    offers = book_data.get("offers", [])
+                    # Backward compatibility for snapshots that store one line
+                    # plus over/under prices instead of an offers list.
+                    if not offers:
+                        fallback_line = book_data.get("line", prop_data.get("line"))
+                        offers = []
+                        if book_data.get("over") is not None:
+                            offers.append({"side": "Over", "line": fallback_line, "odds": book_data.get("over")})
+                        if book_data.get("under") is not None:
+                            offers.append({"side": "Under", "line": fallback_line, "odds": book_data.get("under")})
+
+                    for offer in offers:
+                        try:
+                            price = int(round(float(offer.get("odds"))))
+                            line = float(offer.get("line"))
+                        except (TypeError, ValueError):
+                            continue
+                        side = str(offer.get("side", "")).title()
+                        if side not in {"Over", "Under"} or price < minimum_odds:
+                            continue
+
+                        player_evidence = evidence_by_player.get(normalize_text(player), [])
+                        matching = [
+                            row for row in player_evidence
+                            if str(row.get("over_under", "")).lower() == side.lower()
+                        ]
+                        best_evidence = max(
+                            matching or player_evidence,
+                            key=lambda row: (
+                                float(row.get("prediction_confidence", 0) or 0),
+                                float(row.get("pf_rating", 0) or 0),
+                            ),
+                            default={},
+                        )
+                        confidence = float(best_evidence.get("prediction_confidence", 0) or 0)
+                        pf_rating = float(best_evidence.get("pf_rating", 0) or 0)
+                        evidence_score = confidence + min(10.0, pf_rating * 0.05)
+
+                        key = (normalize_text(player), market_lower, side.lower(), line)
+                        candidate = {
+                            "game": matchup,
+                            "player": player,
+                            "market": market,
+                            "market_label": _nfl_non_td_market_label(market),
+                            "side": side,
+                            "line": line,
+                            "best_book": book,
+                            "best_odds": price,
+                            "prediction_confidence": best_evidence.get("prediction_confidence"),
+                            "pf_rating": best_evidence.get("pf_rating"),
+                            "current_season_hit_rate": best_evidence.get("current_season_hit_rate"),
+                            "evidence_score": evidence_score,
+                        }
+                        current = grouped.get(key)
+                        if current is None or price > current["best_odds"]:
+                            grouped[key] = candidate
+
+        # Evidence first, then the better sportsbook price. Require some
+        # PropFinder support so the board does not become a pure odds lottery.
+        candidates = [row for row in grouped.values() if row["evidence_score"] > 0]
+        candidates.sort(
+            key=lambda row: (row["evidence_score"], row["best_odds"]),
+            reverse=True,
+        )
+        result[matchup] = candidates[:per_game_limit]
+
+    return result
+
+
+def build_nfl_longshot_prop_board(
+    games,
+    odds_data,
+    prop_candidates,
+    minimum_odds=200,
+):
+    """Build two forced non-touchdown player-prop legs for every NFL game.
+
+    Priority is two verified +200-or-longer legs. If that is not possible, the
+    board falls back to the strongest verified non-TD offers available for that
+    matchup. It never returns PASS solely because the +200 threshold was not met.
+    Sportsbook prices are never invented.
+    """
+    # Pull the full verified non-TD market, then treat +200 as a preference rather
+    # than a hard filter so every game can receive the strongest available pair.
+    candidate_map = collect_nfl_non_td_builder_candidates(
+        odds_data, prop_candidates, minimum_odds=-100000, per_game_limit=200
+    )
+    board = []
+
+    def choose_pair(rows):
+        for i, first in enumerate(rows):
+            for second in rows[i + 1:]:
+                if (
+                    normalize_text(first["player"]) == normalize_text(second["player"])
+                    and first["market"] == second["market"]
+                    and first["side"] == second["side"]
+                    and abs(float(first["line"]) - float(second["line"])) < 0.001
+                ):
+                    continue
+                return first, second
+        return None
+
+    for game in games:
+        away, home = game.get("away_team"), game.get("home_team")
+        matchup = f"{away} @ {home}"
+        all_candidates = candidate_map.get(matchup, [])
+
+        preferred = [r for r in all_candidates if r["best_odds"] >= minimum_odds]
+        # First try to satisfy the user's +200-per-leg target.
+        pair = choose_pair(preferred)
+        used_fallback = False
+
+        # If fewer than two +200 legs exist, force the strongest verified pair
+        # available instead of returning PASS. Keep +200 candidates at the front.
+        if not pair:
+            ranked = sorted(
+                all_candidates,
+                key=lambda r: (r["best_odds"] >= minimum_odds, r["evidence_score"], r["best_odds"]),
+                reverse=True,
+            )
+            pair = choose_pair(ranked)
+            used_fallback = True
+
+        # Extremely rare data-feed fallback: force two PropFinder non-TD plays
+        # even when the sportsbook snapshot has fewer than two priced offers.
+        # These are explicitly marked UNPRICED rather than fabricating odds.
+        if not pair:
+            slate_abbr = {NFL_TEAM_ABBREVIATIONS.get(away), NFL_TEAM_ABBREVIATIONS.get(home)}
+            pf_rows = [r for r in prop_candidates if r.get("team") in slate_abbr]
+            pf_rows.sort(key=lambda r: (float(r.get("prediction_confidence", 0) or 0), float(r.get("pf_rating", 0) or 0)), reverse=True)
+            synthetic = []
+            for r in pf_rows:
+                player = str(r.get("player", "")).strip()
+                side = str(r.get("over_under", "Over")).title()
+                line = r.get("line")
+                market = r.get("market") or "Player Prop"
+                if (
+                    not player or line is None
+                    or any(t in str(market).lower() for t in (
+                        "touchdown", "anytime_td", "first_td", "td_scorer", " td"
+                    ))
+                ):
+                    continue
+                try:
+                    line = float(line)
+                except (TypeError, ValueError):
+                    continue
+                synthetic.append({
+                    "game": matchup, "player": player, "market": str(market),
+                    "market_label": _nfl_non_td_market_label(market), "side": side,
+                    "line": line, "best_book": r.get("best_book") or "PropFinder",
+                    "best_odds": r.get("best_odds"),
+                    "prediction_confidence": r.get("prediction_confidence"),
+                    "pf_rating": r.get("pf_rating"),
+                    "current_season_hit_rate": r.get("current_season_hit_rate"),
+                    "evidence_score": float(r.get("prediction_confidence", 0) or 0),
+                })
+                if len(synthetic) >= 12:
+                    break
+            pair = choose_pair(synthetic)
+            used_fallback = True
+
+        # If the upstream feeds truly contain fewer than two non-TD plays, retain
+        # a diagnostic row rather than inventing a player, line, or price.
+        if not pair:
+            board.append({
+                "game": matchup,
+                "selection": "DATA ERROR — fewer than two non-TD plays exist in the source feeds",
+                "available": False,
+                "confidence": "Source data incomplete",
+                "reasoning": "Forced-pick mode was enabled, but the source feeds did not contain two real non-touchdown player props. No player, line, or sportsbook price was fabricated.",
+                "selection_source": "forced_non_td_builder_source_error",
+                "official_pick": False, "track_result": False,
+            })
+            continue
+
+        first, second = pair
+        priced = first.get("best_odds") is not None and second.get("best_odds") is not None
+        dec1 = _american_to_decimal(first["best_odds"]) if first.get("best_odds") is not None else None
+        dec2 = _american_to_decimal(second["best_odds"]) if second.get("best_odds") is not None else None
+        combined = _decimal_to_american(dec1 * dec2) if dec1 and dec2 else None
+
+        def leg_text(number, row):
+            price = row.get("best_odds")
+            odds_text = "UNPRICED" if price is None else (f"+{price}" if price > 0 else str(price))
+            return f"Leg {number}: {row['player']} {row['side']} {row['line']:g} {row['market_label']} ({row['best_book']} {odds_text})"
+
+        evidence = []
+        for number, row in enumerate(pair, start=1):
+            parts=[]
+            if row.get("prediction_confidence") is not None: parts.append(f"confidence {row['prediction_confidence']}")
+            if row.get("pf_rating") is not None: parts.append(f"PF {row['pf_rating']}")
+            if row.get("current_season_hit_rate"): parts.append(f"2026 {row['current_season_hit_rate']}")
+            if parts: evidence.append(f"L{number}: " + ", ".join(parts))
+
+        combined_text = f"+{combined}" if combined is not None and combined > 0 else (str(combined) if combined is not None else "unpriced")
+        target_met = all(r.get("best_odds") is not None and r["best_odds"] >= minimum_odds for r in pair)
+        status = "TARGET MET: both legs +200 or longer" if target_met else "FORCED FALLBACK: strongest available non-TD legs"
+        board.append({
+            "game": matchup,
+            "selection": f"{leg_text(1, first)} | {leg_text(2, second)}",
+            "legs": [first, second],
+            "minimum_leg_odds_target": minimum_odds,
+            "target_met": target_met,
+            "forced_fallback": used_fallback or not target_met,
+            "estimated_independent_combined_odds": combined,
+            "confidence": f"{status} · est. {combined_text}",
+            "reasoning": (("; ".join(evidence) + ". " if evidence else "") + "Two picks are forced for every game. +200-or-longer legs are preferred; otherwise the strongest available verified non-TD props are used. Combined price is an independent-odds estimate only; verify the actual SGP price and eligibility at the sportsbook."),
+            "selection_source": "forced_verified_non_td_player_props_plus_propfinder",
+            "official_pick": False, "track_result": False,
+        })
+
+    return board
 
 def american_implied_probability(odds):
     odds = float(odds)
@@ -1074,8 +1362,24 @@ evidence that it is a good bet.
 EVIDENCE PRIORITY
 ============================================================
 
+CURRENT-SEASON PRIORITY (IMPORTANT):
+
+For Week 3 and later, the current NFL season is the primary truth source.
+Weeks 1-2 have now provided meaningful evidence about actual 2026 personnel,
+roles, coaching tendencies, pace, pass/run rates, target distribution, red-zone
+usage, offensive-line performance and defensive strengths/weaknesses.
+
+- Prefer 2026 regular-season evidence over 2025 results when they conflict.
+- Treat prior-season data as a stabilizing prior, not the main projection.
+- Do not assume an offseason depth-chart role still exists if Weeks 1-2 show otherwise.
+- Separate sustainable usage/opportunity from noisy early efficiency and touchdowns.
+- Two games are still a small sample: strongly weight role/volume changes, but be more
+  cautious with completion rate, yards per carry, turnover rate, explosive plays and TD rate.
+- Matchup-specific 2026 evidence is especially valuable when supported by personnel/news.
+
 Prioritize relevant evidence such as:
 
+- 2026 usage, role and efficiency through the completed current-season games
 - current injuries
 - quarterback availability
 - offensive line availability
@@ -2079,6 +2383,7 @@ def save_nfl_picks(
     lotto_spread_board=None,
     lotto_total_board=None,
     lotto_td_board=None,
+    lotto_longshot_prop_board=None,
 ):
     player_prop_picks = [
         pick for pick in validated
@@ -2113,6 +2418,7 @@ def save_nfl_picks(
         "lotto_spread_board": lotto_spread_board or [],
         "lotto_total_board": lotto_total_board or [],
         "lotto_td_board": lotto_td_board or [],
+        "lotto_longshot_prop_board": lotto_longshot_prop_board or [],
         "lotto_notice": "Entertainment-only side boards; excluded from grading and official records.",
     }
 
@@ -2329,6 +2635,12 @@ def analyze_nfl(
         games, prop_candidates, intelligence.get("redzone", {}),
         odds_data.get("anytime_td", {}),
     )
+    lotto_longshot_prop_board = build_nfl_longshot_prop_board(
+        games,
+        odds_data,
+        prop_candidates,
+        minimum_odds=200,
+    )
 
     print(
         f"📅 NFL games on "
@@ -2359,6 +2671,7 @@ def analyze_nfl(
             lotto_spread_board,
             lotto_total_board,
             lotto_td_board,
+            lotto_longshot_prop_board,
         )
 
     # --------------------------------------------------------
@@ -2439,6 +2752,7 @@ def analyze_nfl(
         lotto_spread_board,
         lotto_total_board,
         lotto_td_board,
+        lotto_longshot_prop_board,
     )
 
     # --------------------------------------------------------

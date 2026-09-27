@@ -381,7 +381,7 @@ def format_wnba_section(
     if not wnba_picks:
         return ""
 
-    top_picks = get_top_picks(
+    top_picks = wnba_picks.get("player_prop_picks") or get_top_picks(
         wnba_picks
     )
 
@@ -671,7 +671,7 @@ def format_lotto_boards(picks):
     if "lotto_td_board" in picks:
         boards.append(("TWO TD SCORERS PER GAME — ONE PER TEAM", picks.get("lotto_td_board", [])))
     if "lotto_longshot_prop_board" in picks:
-        boards.append(("ONE +400 PLAYER-PROP OVER PER GAME", picks.get("lotto_longshot_prop_board", [])))
+        boards.append(("TWO-LEG NON-TD LONGSHOT BUILDER — EACH LEG +200 OR LONGER", picks.get("lotto_longshot_prop_board", [])))
     if "lotto_hr_board" in picks:
         boards.append(("ONE HOME-RUN HITTER PER GAME", picks.get("lotto_hr_board", [])))
 

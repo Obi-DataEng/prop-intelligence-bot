@@ -348,7 +348,7 @@ You are an expert WNBA betting analyst evaluating the complete betting slate,
 including player props, moneylines, spreads, and game totals. 
 Today is {scrape_date}.
 
-Your objective is NOT to force bets. Return up to the 5 strongest qualified WNBA bets across ALL supported markets.
+Your objective is to build a deep candidate pool for deterministic validation. Return 10 ranked WNBA candidates when the slate contains enough real markets. Include at least 5 player-prop candidates when at least 5 exact sportsbook player props are available. The final Python validator will keep the strongest 5 valid bets.
 
 DATE: {scrape_date}
 
@@ -364,7 +364,9 @@ by the scraper rather than assuming a column order.
 {player_stats}
 
 === VOLUME TRENDS ===
-L10 IS THE PRIMARY RECENT-FORM WINDOW.
+PLAYOFF NOTE: during the WNBA postseason, raw L10 is context rather than an automatic primary signal.
+Same-series games and games against the current playoff opponent should receive extra weight when identifiable.
+L10 remains the broad recent-form baseline, but playoff rotation and matchup evidence can override it when well supported.
 L3 and L5 are short-term acceleration signals.
 L15 and season data help determine whether the change is persistent.
 Prefer trends supported by opportunity metrics such as minutes, usage,
@@ -411,6 +413,25 @@ invent a candidate, player, line, sportsbook or price.
 
 ANALYSIS FRAMEWORK
 
+WNBA PLAYOFF CONTEXT (IMPORTANT)
+
+When the supplied slate is postseason basketball, analyze it as a playoff series rather than
+as an ordinary regular-season slate.
+- Prioritize current-series evidence and opponent-specific matchup adjustments.
+- Expect tighter rotations and heavier starter minutes; downgrade regular-season bench roles
+  that are no longer receiving comparable playoff minutes.
+- Track whether usage, shot profile, rebounding chances, potential assists, defensive assignment
+  or pace has changed in the series.
+- Distinguish a repeatable tactical adjustment from one-game shooting variance.
+- Account for elimination/closeout context when supported by the current slate/news, but never
+  invent a series score or game number.
+- Previous head-to-head games against the same opponent are more relevant than generic L10 games,
+  especially when the same core rotation was available.
+- Injuries and return-to-play limitations matter more because shortened rotations can concentrate usage.
+- Market lines may adjust quickly after each playoff game; do not blindly chase the previous game's box score.
+- For props, opportunity (minutes, usage, attempts, touches/chances) should outweigh a single hot/cold shooting game.
+- For spreads/totals, consider playoff pace, rotation compression and demonstrated series matchup before season averages.
+
 Keep two concepts separate:
 
 1. PREDICTION CONFIDENCE
@@ -418,7 +439,9 @@ Keep two concepts separate:
 
    Weight the evidence conceptually in this order:
    - WNBA Research / actual prop line
-   - L10 Volume Trends
+   - Current playoff-series / same-opponent evidence when available
+   - Current playoff minutes, role and opportunity
+   - L10 Volume Trends as the broader recent-form baseline
    - Player season baseline
    - Injury Splits when the relevant teammate absence applies
    - Hit Rate Matrix
@@ -493,9 +516,9 @@ SELECTION RULES
 2. Rank every qualified betting opportunity against every other opportunity,
    regardless of market type. Do NOT reserve slots for any category.
 
-3. Return up to 5 of the strongest bets on the entire slate.
-   It is acceptable to return fewer than 5 when fewer than 5 bets meet the
-   confidence and evidence requirements.
+3. Return up to 10 ranked candidates so deterministic validation has enough depth to produce a full final card.
+   When at least 5 exact player-prop markets are available, include at least 5 player-prop candidates in those 10.
+   Do not stop after one or two strong bets; continue ranking the next-best real, supportable markets.
 
 4. A player prop should beat a game market only when its evidence is stronger.
    A moneyline, spread, or game total should beat a player prop when its
@@ -1789,6 +1812,12 @@ def validate_and_correct_picks(picks_data, odds_data):
 
     picks_data["top_picks"] = validated
     picks_data["picks"] = validated
+    picks_data["player_prop_picks"] = [
+        pick for pick in validated if pick.get("pick_type") == "player_prop"
+    ][:5]
+    picks_data["game_picks"] = [
+        pick for pick in validated if pick.get("pick_type") != "player_prop"
+    ][:5]
 
     # Add rejected picks to passes so we preserve WHY they failed.
     passes = picks_data.get("passes", [])
