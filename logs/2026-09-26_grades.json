@@ -1,0 +1,374 @@
+{
+  "pick_date": "2026-09-26",
+  "graded_date": "2026-09-27",
+  "record": {
+    "wins": 3,
+    "losses": 4,
+    "pushes": 1,
+    "pending": 9
+  },
+  "summary": {
+    "MLB - HR": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Hits": {
+      "wins": 1,
+      "losses": 2,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - TB": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 1,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - K": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game ML": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game Spread": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - Game OU": {
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "MLB - NRFI": {
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 0,
+      "profit": 0
+    },
+    "CFB - Player Longest Reception": {
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "pending": 2,
+      "profit": 0
+    },
+    "CFB - Player Longest Rush": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "CFB - Player Longest Completion": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 1,
+      "profit": 0
+    },
+    "CFB - Game Spread": {
+      "wins": 0,
+      "losses": 0,
+      "pushes": 0,
+      "pending": 5,
+      "profit": 0
+    }
+  },
+  "results": {
+    "CFB - Game Spread": [
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Tulsa Golden Hurricane",
+        "game": "Tulsa Golden Hurricane @ Arkansas Razorbacks",
+        "over_under": "",
+        "line": 7.5,
+        "odds": "-115",
+        "best_book": "HRB",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Troy Trojans",
+        "game": "Troy Trojans @ Utah State Aggies",
+        "over_under": "",
+        "line": 2.5,
+        "odds": "100",
+        "best_book": "FD",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Texas A&M Aggies",
+        "game": "Texas A&M Aggies @ LSU Tigers",
+        "over_under": "",
+        "line": 8.5,
+        "odds": "-105",
+        "best_book": "HRB",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "UTEP Miners",
+        "game": "Oregon State Beavers @ UTEP Miners",
+        "over_under": "",
+        "line": 10.5,
+        "odds": "-101",
+        "best_book": "LowVig.ag",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "CFB",
+        "category": "Game Spread",
+        "player_name": "Louisiana Ragin Cajuns",
+        "game": "Louisiana Ragin Cajuns @ Charlotte 49ers",
+        "over_under": "",
+        "line": -10.5,
+        "odds": "100",
+        "best_book": "FD",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "CFB - Player Longest Completion": [
+      {
+        "sport": "CFB",
+        "category": "Player Longest Completion",
+        "player_name": "Katin Houser",
+        "game": "ILL game",
+        "over_under": "over",
+        "line": 34.5,
+        "odds": "-135",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "CFB - Player Longest Reception": [
+      {
+        "sport": "CFB",
+        "category": "Player Longest Reception",
+        "player_name": "Raleek Brown",
+        "game": "TEX game",
+        "over_under": "over",
+        "line": 6.5,
+        "odds": "-130",
+        "best_book": "PropFinder",
+        "result": "loss",
+        "actual_value": 6.0
+      },
+      {
+        "sport": "CFB",
+        "category": "Player Longest Reception",
+        "player_name": "George Burhenn",
+        "game": "PUR game",
+        "over_under": "over",
+        "line": 8.5,
+        "odds": "-130",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      },
+      {
+        "sport": "CFB",
+        "category": "Player Longest Reception",
+        "player_name": "Da'Shawn Martin",
+        "game": "UVA game",
+        "over_under": "over",
+        "line": 12.5,
+        "odds": "-130",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "CFB - Player Longest Rush": [
+      {
+        "sport": "CFB",
+        "category": "Player Longest Rush",
+        "player_name": "Byrum Brown",
+        "game": "AUB game",
+        "over_under": "over",
+        "line": 19.5,
+        "odds": "-120",
+        "best_book": "PropFinder",
+        "result": "pending",
+        "actual_value": null
+      }
+    ],
+    "MLB - Game OU": [
+      {
+        "sport": "MLB",
+        "category": "Game OU",
+        "player_name": "CWS vs COL",
+        "game": "COL @ CWS",
+        "over_under": "over",
+        "line": 8.0,
+        "odds": "-108",
+        "best_book": "DK",
+        "result": "win",
+        "actual_value": null
+      }
+    ],
+    "MLB - Hits": [
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Steven Kwan",
+        "game": "CLE @ KC",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "161",
+        "best_book": "DK",
+        "result": "win",
+        "actual_value": 3.0
+      },
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Jose Ramirez",
+        "game": "CLE @ KC",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "194",
+        "best_book": "DK",
+        "result": "loss",
+        "actual_value": 0.0
+      },
+      {
+        "sport": "MLB",
+        "category": "Hits",
+        "player_name": "Dominic Canzone",
+        "game": "LAA @ SEA",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "122",
+        "best_book": "DK",
+        "result": "loss",
+        "actual_value": 1.0
+      }
+    ],
+    "MLB - NRFI": [
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Blake Snell / Matt Wilkinson",
+        "game": "Los Angeles Dodgers @ San Francisco Giants",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "win",
+        "actual_value": null
+      },
+      {
+        "sport": "MLB",
+        "category": "NRFI",
+        "player_name": "Walker Buehler / TBD",
+        "game": "San Diego Padres @ Arizona Diamondbacks",
+        "over_under": "NRFI",
+        "line": null,
+        "odds": null,
+        "best_book": "N/A",
+        "result": "loss",
+        "actual_value": null
+      }
+    ],
+    "MLB - TB": [
+      {
+        "sport": "MLB",
+        "category": "TB",
+        "player_name": "Julio Rodriguez",
+        "game": "LAA @ SEA",
+        "over_under": "over",
+        "line": 1.5,
+        "odds": "110",
+        "best_book": "DK",
+        "result": "push",
+        "actual_value": 0.0
+      }
+    ]
+  },
+  "cumulative": {
+    "CFB - Player Longest Reception": {
+      "sport": "CFB",
+      "category": "Player Longest Reception",
+      "wins": 0,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 0.0
+    },
+    "MLB - Game OU": {
+      "sport": "MLB",
+      "category": "Game OU",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - Hits": {
+      "sport": "MLB",
+      "category": "Hits",
+      "wins": 2,
+      "losses": 2,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - K": {
+      "sport": "MLB",
+      "category": "K",
+      "wins": 1,
+      "losses": 0,
+      "pushes": 0,
+      "win_rate": 100.0
+    },
+    "MLB - NRFI": {
+      "sport": "MLB",
+      "category": "NRFI",
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "win_rate": 50.0
+    },
+    "MLB - TB": {
+      "sport": "MLB",
+      "category": "TB",
+      "wins": 0,
+      "losses": 2,
+      "pushes": 1,
+      "win_rate": 0.0
+    },
+    "OVERALL": {
+      "wins": 5,
+      "losses": 6,
+      "pushes": 1,
+      "win_rate": 45.5
+    }
+  }
+}

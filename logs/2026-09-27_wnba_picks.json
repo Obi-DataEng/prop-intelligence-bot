@@ -1,0 +1,326 @@
+{
+  "top_picks": [
+    {
+      "rank": 1,
+      "pick_type": "player_prop",
+      "category": "Assists",
+      "selection": "Olivia Miles OVER 6.5 Assists",
+      "player_name": "Olivia Miles",
+      "team": "IND",
+      "opponent": "LV",
+      "game": "Indiana Fever @ Las Vegas Aces",
+      "prop_line": 6.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": 118,
+      "prediction_confidence": 82,
+      "confidence_tier": "High",
+      "market_value_score": 72,
+      "market_value_tier": "Positive",
+      "season_avg": 8.3,
+      "l3_avg": 5.7,
+      "l5_avg": 8.6,
+      "l10_avg": 8.5,
+      "l15_avg": 8.9,
+      "hit_rate_season": "65%",
+      "hit_rate_l10": "70%",
+      "injury_split_games": null,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "8.3 AST/G season, 8.5 L10",
+        "31.0 MIN/G season, 31.9 L10",
+        "25.2% USG% season",
+        "L5 average 8.6 AST/G"
+      ],
+      "key_factors": [
+        "Primary playmaker for Fever in playoff rotation",
+        "Consistent 31+ minute usage",
+        "65% season hit rate above 6.5",
+        "L10 and L5 both well above the line (8.5 and 8.6)"
+      ],
+      "risk_factors": [
+        "L3 dipped to 5.7 AST/G (short-term volatility)",
+        "Playoff defenses may tighten ball movement",
+        "Vegas defense is above-average"
+      ],
+      "reasoning": "Olivia Miles is a high-volume playmaker averaging 8.3 AST/G for the season with 65% hit rate above 6.5. Her L10 (8.5) and L5 (8.6) averages remain well above the line despite a dip to 5.7 in L3. She maintains 31+ minutes and will be relied upon heavily as Indiana's floor general in a playoff setting.",
+      "line_shop_note": "FD +118 is the best available price found for the exact OVER 6.5 line.",
+      "confidence_score": 82,
+      "validated_game_key": "New York Liberty@Minnesota Lynx",
+      "odds_validated": true
+    }
+  ],
+  "passes": [
+    {
+      "player_name": "Chelsea Gray",
+      "prop": "OVER 5.5 Three Pointers",
+      "reason": "Only 5% season hit rate (2/44) with massive odds discrepancy (+2562 average). Extremely unreliable prop with terrible historical probability."
+    },
+    {
+      "player_name": "Rhyne Howard",
+      "prop": "OVER 32.5 Points",
+      "reason": "Only 2% season hit rate (1/43) despite +1412 average odds. L10 average of 17.5 PPG shows significant shortfall from line. Poor hit rate and weak recent volume make this unplayable."
+    },
+    {
+      "player_name": "Allisha Gray",
+      "prop": "OVER 34.5 Points",
+      "reason": "0% season hit rate (0/44) with +2600 odds discrepancy. Never hit this line in full season despite elevated pricing. Clear pass."
+    },
+    {
+      "player_name": "Aliyah Boston",
+      "prop": "OVER 29.5 Points",
+      "reason": "Only 3% season hit rate (1/40) with +3000 odds despite strong market discrepancy. L10 average of 15.2 PPG is far below line. Massive odds gap reflects inherent difficulty, not value."
+    },
+    {
+      "player_name": "Jonquel Jones",
+      "prop": "OVER 15.5 Rebounds",
+      "reason": "Injured (Ankle, GTD status). Avoid until confirmed healthy and return timeline established."
+    },
+    {
+      "player_name": "Sabrina Ionescu",
+      "prop": "OVER 21.5 Points",
+      "reason": "L10 average of 12.3 PPG is significantly below the line. Recent sharp decline from L5 (9.4 PPG) and L3 form shows negative trend. Limited role in playoff rotation vs higher-volume scorers on Liberty."
+    },
+    {
+      "bet": "A'ja Wilson OVER 25.5 Points",
+      "reason": "Deterministic validation rejection: Exact external line not found: A'ja Wilson OVER 25.5 Points"
+    },
+    {
+      "bet": "Kelsey Mitchell OVER 22.5 Points",
+      "reason": "Deterministic validation rejection: Exact external line not found: Kelsey Mitchell OVER 22.5 Points"
+    },
+    {
+      "bet": "Paige Bueckers OVER 20.5 Points",
+      "reason": "Deterministic validation rejection: Exact external line not found: Paige Bueckers OVER 20.5 Points"
+    },
+    {
+      "bet": "Angel Reese OVER 11.5 Rebounds",
+      "reason": "Deterministic validation rejection: Exact external line not found: Angel Reese OVER 11.5 Rebounds"
+    }
+  ],
+  "lotto_longshot_prop_board": [
+    {
+      "game": "New York Liberty @ Minnesota Lynx",
+      "selection": "Napheesa Collier Over 4.5 Assists",
+      "player": "Napheesa Collier",
+      "market": "player_assists_alternate",
+      "line": 4.5,
+      "best_book": "DK",
+      "best_odds": 404,
+      "confidence": "Moderate",
+      "reasoning": "Napheesa Collier OVER 4.5 Assists at +404. Collier is averaging 2.9 AST/G season with elevated usage. In L10 she averaged 3.6 AST/G (up from season 2.9) showing recent improvement. Lynx playoff rotation may see her handle more playmaking load alongside veteran guards. Limited historical precedent but recent volume trend is supportive.",
+      "candidate_id": "G1-C6",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Indiana Fever @ Las Vegas Aces",
+      "selection": "A'ja Wilson Over 35.5 Points",
+      "player": "A'ja Wilson",
+      "market": "player_points_alternate",
+      "line": 35.5,
+      "best_book": "CZS",
+      "best_odds": 400,
+      "confidence": "Moderate",
+      "reasoning": "A'ja Wilson OVER 35.5 Points at +400. Wilson is averaging 25.9 L10 and 27.6 L5, but in playoff elimination games she can elevate. Her L3 performance of 27.3 PPG is encouraging, and elevated usage in clutch playoff moments could push her into the mid-30s range. Odds reflect reasonable variance for a high-volume scorer in a single game.",
+      "candidate_id": "G2-C5",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Washington Mystics @ Atlanta Dream",
+      "selection": "Shakira Austin Over 25.5 Points",
+      "player": "Shakira Austin",
+      "market": "player_points_alternate",
+      "line": 25.5,
+      "best_book": "CZS",
+      "best_odds": 400,
+      "confidence": "Moderate",
+      "reasoning": "Shakira Austin OVER 25.5 Points at +400. Austin is averaging 17.0 PTS/G season but showed 17.7 PPG L10 and 14.9 L3. In an Atlanta home playoff game with elevated usage potential, and given her 23.6% USG% season mark, she could spike scoring in a concentrated effort. High-variance single-game play.",
+      "candidate_id": "G3-C5",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Dallas Wings @ Golden State Valkyries",
+      "selection": "No supported +400 player-prop Over",
+      "available": false,
+      "confidence": "Pass",
+      "selection_source": "The Odds API alternate props + model evidence",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "slate_summary": "The 2026 WNBA playoff slate offers four high-stakes matchups with mixed data quality. Indiana vs. Las Vegas features elite volume from A'ja Wilson and strong consistency from supporting cast (Olivia Miles, Kelsey Mitchell). New York vs. Minnesota benefits from Paige Bueckers' recent hot stretch. Atlanta vs. Washington highlights Angel Reese's remarkable rebounding consistency. Overall, player prop evidence is stronger than game-level lines, driven by recent playoff-form acceleration and elevated usage in elimination settings. Several over-under and spread lines lack sufficient differentiation from season norms to justify strong conviction. Market pricing on elite scorers is mostly fair; value exists in role-player consistency plays and assist-based props where recent volume increases support the lines.",
+  "best_bet": "Olivia Miles OVER 6.5 Assists (FD +118)",
+  "picks": [
+    {
+      "rank": 1,
+      "pick_type": "player_prop",
+      "category": "Assists",
+      "selection": "Olivia Miles OVER 6.5 Assists",
+      "player_name": "Olivia Miles",
+      "team": "IND",
+      "opponent": "LV",
+      "game": "Indiana Fever @ Las Vegas Aces",
+      "prop_line": 6.5,
+      "game_line": null,
+      "over_under": "OVER",
+      "best_book": "FD",
+      "best_odds": 118,
+      "prediction_confidence": 82,
+      "confidence_tier": "High",
+      "market_value_score": 72,
+      "market_value_tier": "Positive",
+      "season_avg": 8.3,
+      "l3_avg": 5.7,
+      "l5_avg": 8.6,
+      "l10_avg": 8.5,
+      "l15_avg": 8.9,
+      "hit_rate_season": "65%",
+      "hit_rate_l10": "70%",
+      "injury_split_games": null,
+      "injury_split_note": null,
+      "opportunity_signals": [
+        "8.3 AST/G season, 8.5 L10",
+        "31.0 MIN/G season, 31.9 L10",
+        "25.2% USG% season",
+        "L5 average 8.6 AST/G"
+      ],
+      "key_factors": [
+        "Primary playmaker for Fever in playoff rotation",
+        "Consistent 31+ minute usage",
+        "65% season hit rate above 6.5",
+        "L10 and L5 both well above the line (8.5 and 8.6)"
+      ],
+      "risk_factors": [
+        "L3 dipped to 5.7 AST/G (short-term volatility)",
+        "Playoff defenses may tighten ball movement",
+        "Vegas defense is above-average"
+      ],
+      "reasoning": "Olivia Miles is a high-volume playmaker averaging 8.3 AST/G for the season with 65% hit rate above 6.5. Her L10 (8.5) and L5 (8.6) averages remain well above the line despite a dip to 5.7 in L3. She maintains 31+ minutes and will be relied upon heavily as Indiana's floor general in a playoff setting.",
+      "line_shop_note": "FD +118 is the best available price found for the exact OVER 6.5 line.",
+      "confidence_score": 82,
+      "validated_game_key": "New York Liberty@Minnesota Lynx",
+      "odds_validated": true
+    }
+  ],
+  "validation": {
+    "enabled": true,
+    "validated_count": 1,
+    "rejected_count": 4,
+    "minimum_confidence": 72,
+    "confidence_tiers": {
+      "Elite": "88-100",
+      "High": "80-87",
+      "Medium": "72-79",
+      "Below Threshold": "0-71"
+    },
+    "rule": "All recommended bets must match an exact external sportsbook line. Best American odds are selected deterministically for identical wagers."
+  },
+  "lotto_spread_board": [
+    {
+      "game": "New York Liberty @ Minnesota Lynx",
+      "selection": "Minnesota Lynx -6.5",
+      "team": "Minnesota Lynx",
+      "line": -6.5,
+      "best_book": "FD",
+      "best_odds": -114,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Indiana Fever @ Las Vegas Aces",
+      "selection": "Las Vegas Aces -2.5",
+      "team": "Las Vegas Aces",
+      "line": -2.5,
+      "best_book": "PARX",
+      "best_odds": -121,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Washington Mystics @ Atlanta Dream",
+      "selection": "Atlanta Dream -6.5",
+      "team": "Atlanta Dream",
+      "line": -6.5,
+      "best_book": "HRB",
+      "best_odds": -105,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Dallas Wings @ Golden State Valkyries",
+      "selection": "Golden State Valkyries -6.5",
+      "team": "Golden State Valkyries",
+      "line": -6.5,
+      "best_book": "PARX",
+      "best_odds": -115,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_total_board": [
+    {
+      "game": "New York Liberty @ Minnesota Lynx",
+      "selection": "Under 173.5",
+      "over_under": "Under",
+      "line": 173.5,
+      "best_book": "PARX",
+      "best_odds": -109,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Indiana Fever @ Las Vegas Aces",
+      "selection": "Under 182.5",
+      "over_under": "Under",
+      "line": 182.5,
+      "best_book": "LowVig.ag",
+      "best_odds": -108,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Washington Mystics @ Atlanta Dream",
+      "selection": "Under 164.5",
+      "over_under": "Under",
+      "line": 164.5,
+      "best_book": "LowVig.ag",
+      "best_odds": -108,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "game": "Dallas Wings @ Golden State Valkyries",
+      "selection": "Under 154.5",
+      "over_under": "Under",
+      "line": 154.5,
+      "best_book": "LowVig.ag",
+      "best_odds": -108,
+      "confidence": "Market consensus",
+      "selection_source": "all_book_market_consensus",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "lotto_notice": "Entertainment-only side boards; excluded from grading and official records."
+}

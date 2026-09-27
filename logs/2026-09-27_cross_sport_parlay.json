@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-27",
+  "name": "+500 Cross-Sport Parlay",
+  "sports_allowed": [
+    "WNBA",
+    "CFB",
+    "NFL",
+    "NBA"
+  ],
+  "eligible_market_rules": {
+    "CFB": [
+      "moneyline",
+      "spread",
+      "game_total"
+    ],
+    "NFL": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_player_props",
+      "excludes_1Q_1H",
+      "excludes_longest_rush_reception",
+      "excludes_tackles_assists"
+    ],
+    "WNBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ],
+    "NBA": [
+      "moneyline",
+      "spread",
+      "game_total",
+      "full_game_points",
+      "full_game_rebounds",
+      "full_game_assists",
+      "full_game_PRA",
+      "full_game_PA",
+      "full_game_PR"
+    ]
+  },
+  "mlb_excluded": true,
+  "target_odds_range": "+450 to +600",
+  "available": true,
+  "target_reached": false,
+  "legs": [
+    {
+      "league": "WNBA",
+      "game": "Indiana Fever @ Las Vegas Aces",
+      "selection": "Olivia Miles OVER 6.5 Assists",
+      "market_type": "player_prop",
+      "player": "Olivia Miles",
+      "team": "IND",
+      "direction": "OVER",
+      "line": 6.5,
+      "book": "FD",
+      "odds": 118,
+      "support_score": 82.0,
+      "confidence_tier": "High",
+      "reasoning": "Olivia Miles is a high-volume playmaker averaging 8.3 AST/G for the season with 65% hit rate above 6.5. Her L10 (8.5) and L5 (8.6) averages remain well above the line despite a dip to 5.7 in L3. She maintains 31+ minutes and will be relied upon heavily as Indiana's floor general in a playoff setting.",
+      "official_pick": false,
+      "track_result": false
+    },
+    {
+      "league": "NFL",
+      "game": "Tennessee Titans @ New York Giants",
+      "selection": "New York Giants -2.5",
+      "market_type": "spread",
+      "player": null,
+      "team": "New York Giants",
+      "direction": null,
+      "line": -2.5,
+      "book": "LowVig.ag",
+      "odds": 100,
+      "support_score": 79.0,
+      "confidence_tier": "Medium",
+      "reasoning": "Model projects NYG -6.1 with 58% cover probability, providing a 3.6-point edge over the -2.5 spread. The Giants are 71% to win outright in a projected 23-17 game. Despite quarterback concerns with Jaxson Dart injured and reports of targeting a veteran QB, the model still heavily favors the Giants. Tennessee projects to only 17 points, and the Giants should control this game even at a neutral MetLife Stadium.",
+      "official_pick": false,
+      "track_result": false
+    }
+  ],
+  "leg_count": 2,
+  "combined_decimal_odds": 4.36,
+  "combined_american_odds": 336,
+  "implied_probability_pct": 22.9,
+  "candidate_count": 6,
+  "official_pick": false,
+  "track_result": false,
+  "notice": "Entertainment-only standard-line parlay; excluded from grading and official records.",
+  "reason": "No verified combination landed inside +450 to +600; showing the closest available standard-line combination instead."
+}
